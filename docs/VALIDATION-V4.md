@@ -1,0 +1,7 @@
+# Version 4 — native rules and rune audit
+
+91 targeted tests passed: 32legacyengine,19legacyability,12source/core,4projection,24newnative/rune tests. New tests cover owned stands, duplicate taxes, replacement/destruction, adjacent rune attacks for all classes, Mojo/card-draw/health/Haste effects, old-save migration, distant-summon rejection on both public and AI paths, no fabricated resurrection, zero-cost non-retaliating basic attacks, exact four native hero profiles, separate shield/body armour, weapon class restrictions, Elf purity, uncapped Orc synergy, high hand cap, Armageddon, uncapped healing, and valid starter/AI decks for five deck formats.
+
+Browser QA exercised the Rune tutorial, targeted placement onto an owned stand,15HP tooltip,resourcepayment andnextupkeep resourceincrease. Original Rune textures and front/back character sprites render in the non-WebGL fallback. WebGL is unavailable in the cloud browser; GPU rendering remains visually unverified. Standalone HTML resources are embedded and statically verified; desktop direct file-open behavior is not browser-tested here.
+
+Full evidence, decoded original CSVs and global parameters are in reference/native-rules/. RULES-AUDIT-V4.md describes recovered facts, implementation choices, exceptions not implemented and remaining prototype content. This is not a claim that every original card and special ability is now implemented. The original monster/spell catalogue has been decoded and retained for future migration; the current playable subset retains most prototype monster/spell definitions.

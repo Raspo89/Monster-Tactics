@@ -1,0 +1,28 @@
+Card Tag,Rarity,Mojo,Name,Short Name,Armour,Perk 1,Value,Perk 2,Value,Helmet Model,Helmet Texture,Shoulder Model,Shoulder Texture,Chest Model,Chest Texture,Extra description for large card display.
+,,,,,,,,,,,,,,,,
+A_WETPAPER,C,1,Wet Paper,Wet Paper,1,BC_NONE,0,BC_NONE,0,basic/helmet,basic/armour_helmet_leather,leather/shoulder,leather/armour_shoulder_leather,leather/chest,leather/armour_chest_leather,ARMOUR_WET_PAPER
+A_TINFOIL,C,3,Tinfoil,Tinfoil,1,BC_HEALTH,2,BC_NONE,0,heavy/helmet,heavy/armour_helmet_medium,medium/shoulder,medium/armour_shoulder_medium,medium/chest,medium/armour_chest_medium,ARMOUR_BERZERKER
+A_RUBBISH,C,2,Feeble Armour,Feeble,2,BC_HEALTH,2,BC_POWER,-2,basic/helmet,basic/armour_helmet_basic_02,basic/shoulder,basic/armour_shoulder_basic_02,basic/chest,basic/armour_chest_basic_02,ARMOUR_FEEBLE
+A_POXY,U,6,Sensible Armour,Sensible,2,BC_HEALTH,2,BC_MANA,1,basic/helmet,basic/armour_helmet_basic,basic/shoulder,basic/armour_shoulder_basic,basic/chest,basic/armour_chest_basic,ARMOUR_SENSIBLE
+A_SKIN,C,6,Second Skin,Skin,1,BC_HEALTH,5,BC_NONE,0,glass/helmet,glass/armour_helmet_glass,leather/shoulder,leather/armour_shoulder_glass,basic/chest,basic/armour_chest_glass,ARMOUR_SKIN
+A_FACTOR,U,4,Swagger,Swagger,2,BC_HEALTH,1,BC_POWER,1,heavy/helmet,heavy/armour_helmet_bane,medium/shoulder,medium/armour_shoulder_medium_02,medium/chest,medium/armour_chest_medium_02,ARMOUR_SWAG
+A_HAVE,U,4,Power Armour,Power,1,BC_NONE,0,BC_POWER,3,spiked/helmet_spiked,spiked/armour_helmet_spiked,basic/shoulder,basic/armour_shoulder_basic_02,basic/chest,basic/armour_chest_basic_02,ARMOUR_POWER
+A_DESPERATE,R,6,Uber Defendage,Defend,5,BC_HEALTH,3,BC_NONE,0,heavy/helmet,heavy/armour_helmet_heavy,heavy/shoulder,heavy/armour_shoulder_heavy,heavy/chest,heavy/armour_chest_heavy,ARMOUR_DEFENDAGE
+A_DEFENDAGE,R,6,Spikey Commander,Spikey,2,BC_MANA,1,BC_POWER,2,spiked/helmet_spiked,spiked/armour_helmet_spiked_02,leather/shoulder,leather/armour_shoulder_leather_02,leather/chest,leather/armour_chest_leather_02,ARMOUR_COMMAND
+A_CLOTHES,U,5,The Khan,Khan,2,BC_NONE,0,BC_POWER,3,glass/helmet,glass/armour_helmet_skin,basic/shoulder,basic/armour_shoulder_barbarian,leather/chest,leather/armour_chest_barbarian,ARMOUR_ULTIMATE
+A_RIDICULOUS,C,2,Bad Idea Armour,Bad Idea,4,BC_NONE,0,BC_POWER,-2,glass/helmet,glass/armour_helmet_mongol,medium/shoulder,medium/armour_shoulder_medium_02,medium/chest,medium/armour_chest_medium_02,ARMOUR_BAD_IDEA
+A_ULTIMATE,L,5,Emperor Armour,Emperor,4,BC_HEALTH,3,BC_MANA,1,roman/helmet_roman,roman/armour_helmet_roman,leather/shoulder,leather/armour_shoulder_roman,leather/chest,leather/armour_chest_roman,ARMOUR_EMPEROR
+A_ULTIMATE2,L,5,Mojo Armour,Mojo,3,BC_NONE,0,BC_MANA,2,roman/helmet_roman,roman/armour_helmet_roman_02,leather/shoulder,leather/armour_shoulder_roman_02,leather/chest,leather/armour_chest_roman_02,ARMOUR_MOJO
+A_NEW02,C,3,Animal Hide,Hide,1,BC_HEALTH,1,BC_POWER,1,morion/helmet,morion/armour_helmet_morion,morion/shoulder,morion/armour_shoulder_morion,morion/chest,morion/armour_chest_morion,ARMOUR_HIDE
+A_NEW03,R,4,Golden Morion,Morion,3,BC_HEALTH,2,BC_POWER,1,morion/helmet,morion/armour_helmet_morion_02,morion/shoulder,morion/armour_shoulder_morion_02,morion/chest,morion/armour_chest_morion_02,ARMOUR_MORION
+A_ULTIMATE3,L,4,Triple Bagger,Tripler,3,BC_HEALTH,3,BC_POWER,3,roman/helmet_roman,roman/armour_helmet_roman_03,leather/shoulder,leather/armour_shoulder_roman_03,leather/chest,leather/armour_chest_roman_03,ARMOUR_TRIPLER
+A_NEW05,R,6,Much Buffage,Buffage,4,BC_HEALTH,6,BC_NONE,0,morion/helmet,morion/armour_helmet_morion_03,morion/shoulder,morion/armour_shoulder_morion_03,morion/chest,morion/armour_chest_morion_03,ARMOUR_BUFFAGE
+A_NEW06,U,5,Healthy Armour,Healthy,3,BC_HEALTH,5,BC_NONE,0,roundhead/helmet,roundhead/armour_helmet_roundhead,roundhead/shoulder,roundhead/armour_shoulder_roundhead,roundhead/chest,roundhead/armour_chest_roundhead,ARMOUR_NEW06
+A_NEW07,U,4,Decent Armour,Decent,2,BC_HEALTH,3,BC_NONE,0,roundhead/helmet,roundhead/armour_helmet_roundhead_02,roundhead/shoulder,roundhead/armour_shoulder_roundhead_02,roundhead/chest,roundhead/armour_chest_roundhead_02,ARMOUR_DECENT
+A_NEW08,R,6,Uber Armour,Uber,6,BC_NONE,0,BC_NONE,0,roundhead/helmet,roundhead/armour_helmet_roundhead_03,roundhead/shoulder,roundhead/armour_shoulder_roundhead_03,roundhead/chest,roundhead/armour_chest_roundhead_03,ARMOUR_UBER
+A_NEW09,L,5,Armour of Ownage,Ownage,4,BC_HEALTH,2,BC_POWER,4,ridged/helmet,ridged/armour_helmet_ridged,ridged/shoulder,ridged/armour_shoulder_ridged,ridged/chest,ridged/armour_chest_ridged,ARMOUR_OWNAGE
+A_NEW10,L,2,Armour of Excellence,Excellence,3,BC_HEALTH,3,BC_NONE,0,ridged/helmet,ridged/armour_helmet_ridged_02,ridged/shoulder,ridged/armour_shoulder_ridged_02,ridged/chest,ridged/armour_chest_ridged_02,ARMOUR_NEW10
+A_NEW11,R,2,Armour of Cheapness,Cheapo,3,BC_NONE,0,BC_POWER,-1,ridged/helmet,ridged/armour_helmet_ridged_03,ridged/shoulder,ridged/armour_shoulder_ridged_03,ridged/chest,ridged/armour_chest_ridged_03,ARMOUR_NEW11
+A_NEW12,U,2,Armour of Tattiness,Tat,1,BC_NONE,0,BC_POWER,1,ridged/helmet,ridged/armour_helmet_ridged_04,ridged/shoulder,ridged/armour_shoulder_ridged_04,ridged/chest,ridged/armour_chest_ridged_04,ARMOUR_NEW12
+A_NEW13,U,4,Stick Pigger,Pigger,3,BC_NONE,0,BC_NONE,0,spiked/helmet_spiked,spiked/armour_helmet_spiked_03,basic/shoulder,basic/armour_shoulder_basic_03,basic/chest,basic/armour_chest_basic_03,ARMOUR_NEW13
+A_NEW14,C,5,Pointy Armour,Pointy,3,BC_NONE,0,BC_NONE,0,spiked/helmet_spiked,spiked/armour_helmet_spiked_04,basic/shoulder,basic/armour_shoulder_basic_04,basic/chest,basic/armour_chest_basic_04,ARMOUR_NEW14

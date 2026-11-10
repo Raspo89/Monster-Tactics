@@ -1,0 +1,760 @@
+
+### CTileItem_RuneDais::NotifyRunePlayed() 0x20c2a4 56
+0020c2a4: push     {r4, lr}
+0020c2a8: mov      r4, r0
+0020c2ac: ldr      r3, [r0, #0x80]
+0020c2b0: cmp      r3, #0
+0020c2b4: popne    {r4, pc}
+0020c2b8: ldr      r3, [pc, #0x18]
+0020c2bc: ldr      r3, [pc, r3]
+0020c2c0: ldr      r0, [r3]
+0020c2c4: bl       #0x148978 ; CGame::GetBattle()
+0020c2c8: ldr      r1, [r4, #0x84]
+0020c2cc: ldr      r2, [r4, #0x88]
+0020c2d0: pop      {r4, lr}
+0020c2d4: b        #0x110bb8 ; CBattle::NotifyOtherRuneJustPlayed(eTeam, eTeam)
+
+### CArchetypeMgr::PermanentInit() 0x101d88 2972
+00101d88: ldr      r3, [pc, #0xb6c]
+00101d8c: movw     r1, #0xcc8
+00101d90: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+00101d94: sub      sp, sp, #0x134
+00101d98: add      r3, pc, r3
+00101d9c: add      r4, r0, #0x870
+00101da0: str      r0, [sp, #0x1c]
+00101da4: sub      r0, r3, #0x3a8
+00101da8: add      r4, r4, #0xc
+00101dac: str      r4, [sp, #0x18]
+00101db0: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+00101db4: ldr      r5, [sp, #0x1c]
+00101db8: movw     r1, #0xcc8
+00101dbc: add      r8, sp, #0x74
+00101dc0: add      r5, r5, #0x60
+00101dc4: str      r5, [sp, #0x38]
+00101dc8: add      sl, sp, #0xd4
+00101dcc: mov      r6, #0
+00101dd0: ldr      r5, [pc, #0xb28]
+00101dd4: add      sb, sp, #0xa4
+00101dd8: mov      fp, sl
+00101ddc: add      r5, pc, r5
+00101de0: mov      r4, r0
+00101de4: bl       #0x290b04 ; RZTable::LoadFromPtr(unsigned char*, int)
+00101de8: mov      r7, r0
+00101dec: mov      r0, r4
+00101df0: bl       #0x2585a4 ; RZMemory::Free(void*)
+00101df4: ldr      r0, [pc, #0xb08]
+00101df8: add      r4, sp, #0xbc
+00101dfc: add      r0, pc, r0
+00101e00: bl       #0x231d3c ; RZContainer::Load(char*)
+00101e04: add      ip, sp, #0x8c
+00101e08: str      r8, [sp, #0x24]
+00101e0c: movw     r3, #0xb57c
+00101e10: ldr      r8, [sp, #0x1c]
+00101e14: movt     r3, #2
+00101e18: str      ip, [sp, #0x28]
+00101e1c: mov      sl, ip
+00101e20: ldr      ip, [sp, #0x18]
+00101e24: str      r6, [sp, #0x34]
+00101e28: str      r4, [sp, #0x14]
+00101e2c: add      r4, sp, #0xec
+00101e30: ldr      r6, [pc, #0xad0]
+00101e34: str      r5, [sp, #0x2c]
+00101e38: add      r6, pc, r6
+00101e3c: str      sb, [sp, #4]
+00101e40: str      r6, [sp, #0x30]
+00101e44: str      r0, [r8, r3]
+00101e48: add      r8, sp, #0x74
+00101e4c: ldr      r6, [sp, #0x18]
+00101e50: mov      sb, r8
+00101e54: ldr      r5, [sp, #0x18]
+00101e58: mov      r8, fp
+00101e5c: add      r6, r6, #0xa900
+00101e60: str      ip, [sp, #0x10]
+00101e64: add      r6, r6, #0x3c
+00101e68: add      r5, r5, #0xaa00
+00101e6c: str      r6, [sp, #8]
+00101e70: add      r5, r5, #0xa0
+00101e74: ldr      r6, [sp, #0x38]
+00101e78: mov      ip, #0
+00101e7c: str      r5, [sp, #0xc]
+00101e80: mov      fp, ip
+00101e84: ldr      r5, [sp, #0x34]
+00101e88: add      r5, r5, #2
+00101e8c: str      r5, [sp, #0x20]
+00101e90: ldr      ip, [sp, #0x20]
+00101e94: mov      r0, sb
+00101e98: ldr      r1, [sp, #0x2c]
+00101e9c: add      r5, ip, fp
+00101ea0: bl       #0x28f634 ; RZString::RZString(char const*)
+00101ea4: mov      r3, #4
+00101ea8: mov      r0, sl
+00101eac: mov      r1, r7
+00101eb0: mov      r2, r5
+00101eb4: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00101eb8: ldr      r0, [sp, #4]
+00101ebc: mov      r1, sb
+00101ec0: mov      r2, sl
+00101ec4: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+00101ec8: add      r0, sp, #0xbc
+00101ecc: ldr      r1, [sp, #4]
+00101ed0: add      fp, fp, #1
+00101ed4: ldr      r2, [sp, #0x30]
+00101ed8: bl       #0x28e354 ; RZString::operator+(char const*) const
+00101edc: mov      r3, #5
+00101ee0: mov      r0, r8
+00101ee4: mov      r1, r7
+00101ee8: mov      r2, r5
+00101eec: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00101ef0: mov      r2, r8
+00101ef4: mov      r0, r4
+00101ef8: add      r1, sp, #0xbc
+00101efc: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+00101f00: mov      r1, r4
+00101f04: mov      r0, r6
+00101f08: bl       #0x28e730 ; RZString::operator=(RZString const&)
+00101f0c: mov      r0, r4
+00101f10: bl       #0x28cecc ; RZString::~RZString()
+00101f14: mov      r0, r8
+00101f18: bl       #0x28cecc ; RZString::~RZString()
+00101f1c: add      r0, sp, #0xbc
+00101f20: bl       #0x28cecc ; RZString::~RZString()
+00101f24: ldr      r0, [sp, #4]
+00101f28: bl       #0x28cecc ; RZString::~RZString()
+00101f2c: mov      r0, sl
+00101f30: bl       #0x28cecc ; RZString::~RZString()
+00101f34: mov      r0, sb
+00101f38: bl       #0x28cecc ; RZString::~RZString()
+00101f3c: mov      r0, r6
+00101f40: bl       #0x28fd18 ; RZString::ToASCII()
+00101f44: bl       #0x262298 ; RZModel_Base::Load(char*)
+00101f48: ldr      ip, [sp, #0x10]
+00101f4c: mov      r1, r5
+00101f50: mov      r2, #2
+00101f54: str      r0, [ip, #4]!
+00101f58: mov      r0, r7
+00101f5c: str      ip, [sp, #0x10]
+00101f60: bl       #0x290d28 ; RZTable::GetValueAsF32(int, int)
+00101f64: ldr      ip, [sp, #8]
+00101f68: mov      r2, r5
+00101f6c: mov      r1, r7
+00101f70: mov      r3, #3
+00101f74: str      r0, [ip], #4
+00101f78: mov      r0, r4
+00101f7c: str      ip, [sp, #8]
+00101f80: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00101f84: mov      r0, r4
+00101f88: bl       #0xffab4 ; CArchetypeMgr::Parse_Gender(RZString const&)
+00101f8c: ldr      ip, [sp, #0xc]
+00101f90: str      r0, [ip, #4]!
+00101f94: mov      r0, r4
+00101f98: str      ip, [sp, #0xc]
+00101f9c: bl       #0x28cecc ; RZString::~RZString()
+00101fa0: mov      r2, r5
+00101fa4: mov      r3, #4
+00101fa8: mov      r0, r4
+00101fac: mov      r1, r7
+00101fb0: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00101fb4: add      r0, r6, #0xab00
+00101fb8: mov      r1, r4
+00101fbc: add      r0, r0, #0x48
+00101fc0: bl       #0x28e730 ; RZString::operator=(RZString const&)
+00101fc4: mov      r0, r4
+00101fc8: bl       #0x28cecc ; RZString::~RZString()
+00101fcc: cmp      fp, #4
+00101fd0: add      r6, r6, #0x18
+00101fd4: bne      #0x101e90
+00101fd8: ldr      r5, [sp, #0x34]
+00101fdc: mov      fp, r8
+00101fe0: ldr      r6, [sp, #0x38]
+00101fe4: mov      r8, sb
+00101fe8: add      r5, r5, #4
+00101fec: ldr      ip, [sp, #0x18]
+00101ff0: cmp      r5, #0x40
+00101ff4: add      r6, r6, #0x60
+00101ff8: add      ip, ip, #0x10
+00101ffc: str      r5, [sp, #0x34]
+00102000: str      r6, [sp, #0x38]
+00102004: str      ip, [sp, #0x18]
+00102008: bne      #0x101e4c
+0010200c: cmp      r7, #0
+00102010: mov      sl, fp
+00102014: ldr      sb, [sp, #4]
+00102018: beq      #0x10202c
+0010201c: mov      r0, r7
+00102020: bl       #0x29096c ; RZTable::~RZTable()
+00102024: mov      r0, r7
+00102028: bl       #0x2cb8c0 ; operator delete(void*)
+0010202c: ldr      r0, [pc, #0x8d8]
+00102030: movw     r1, #0x693
+00102034: ldr      r7, [sp, #0x1c]
+00102038: add      r0, pc, r0
+0010203c: ldr      r8, [pc, #0x8cc]
+00102040: sub      r0, r0, #0xa10
+00102044: ldr      r6, [sp, #0x1c]
+00102048: add      r7, r7, #0xa900
+0010204c: add      r8, pc, r8
+00102050: str      r7, [sp, #0x38]
+00102054: add      r6, r6, #0xb200
+00102058: str      r8, [sp, #0x30]
+0010205c: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+00102060: ldr      fp, [pc, #0x8ac]
+00102064: movw     r1, #0x693
+00102068: add      r8, sp, #0x44
+0010206c: add      r6, r6, #0xb8
+00102070: add      fp, pc, fp
+00102074: str      fp, [sp, #0x34]
+00102078: add      fp, sp, #0x5c
+0010207c: mov      r5, r0
+00102080: bl       #0x290b04 ; RZTable::LoadFromPtr(unsigned char*, int)
+00102084: mov      r7, r0
+00102088: mov      r0, r5
+0010208c: bl       #0x2585a4 ; RZMemory::Free(void*)
+00102090: ldr      r5, [sp, #0x38]
+00102094: ldr      ip, [sp, #0x1c]
+00102098: add      r5, r5, #0x38
+0010209c: str      r8, [sp, #0xc]
+001020a0: str      r5, [sp, #0x38]
+001020a4: mov      r8, #0
+001020a8: str      fp, [sp, #0x10]
+001020ac: add      r5, sp, #0x8c
+001020b0: str      r8, [sp, #4]
+001020b4: add      fp, sp, #0x74
+001020b8: add      r8, sp, #0xbc
+001020bc: add      r3, ip, #0x29c00
+001020c0: str      r6, [sp, #0x20]
+001020c4: add      r6, ip, #0x660
+001020c8: str      r6, [sp, #0x3c]
+001020cc: mov      r6, #2
+001020d0: add      r3, r3, #0x2d0
+001020d4: str      ip, [sp, #8]
+001020d8: str      r3, [sp, #0x2c]
+001020dc: ldr      r1, [sp, #0x30]
+001020e0: mov      r0, fp
+001020e4: bl       #0x28f634 ; RZString::RZString(char const*)
+001020e8: ldr      lr, [sp, #4]
+001020ec: ldr      ip, [sp, #0x3c]
+001020f0: mov      r3, #4
+001020f4: mov      r2, r6
+001020f8: mov      r0, r5
+001020fc: mov      r1, r7
+00102100: add      ip, ip, lr
+00102104: str      ip, [sp, #0x18]
+00102108: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+0010210c: mov      r0, sb
+00102110: mov      r1, fp
+00102114: mov      r2, r5
+00102118: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+0010211c: mov      r0, r8
+00102120: mov      r1, sb
+00102124: ldr      r2, [sp, #0x34]
+00102128: bl       #0x28e354 ; RZString::operator+(char const*) const
+0010212c: mov      r3, #5
+00102130: mov      r2, r6
+00102134: mov      r0, sl
+00102138: mov      r1, r7
+0010213c: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102140: mov      r2, sl
+00102144: mov      r0, r4
+00102148: mov      r1, r8
+0010214c: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+00102150: mov      r1, r4
+00102154: ldr      r0, [sp, #0x18]
+00102158: bl       #0x28e730 ; RZString::operator=(RZString const&)
+0010215c: mov      r0, r4
+00102160: bl       #0x28cecc ; RZString::~RZString()
+00102164: mov      r0, sl
+00102168: bl       #0x28cecc ; RZString::~RZString()
+0010216c: mov      r0, r8
+00102170: bl       #0x28cecc ; RZString::~RZString()
+00102174: mov      r0, sb
+00102178: bl       #0x28cecc ; RZString::~RZString()
+0010217c: mov      r0, r5
+00102180: bl       #0x28cecc ; RZString::~RZString()
+00102184: mov      r0, fp
+00102188: bl       #0x28cecc ; RZString::~RZString()
+0010218c: ldr      r1, [sp, #0x18]
+00102190: add      r0, sp, #0x44
+00102194: bl       #0x28e6d8 ; RZString::RZString(RZString const&)
+00102198: add      r0, sp, #0x44
+0010219c: bl       #0x28fd18 ; RZString::ToASCII()
+001021a0: bl       #0x262298 ; RZModel_Base::Load(char*)
+001021a4: ldr      ip, [sp, #8]
+001021a8: mov      r1, r6
+001021ac: mov      r2, #2
+001021b0: str      r0, [ip, #0x980]
+001021b4: mov      r0, r7
+001021b8: bl       #0x290d28 ; RZTable::GetValueAsF32(int, int)
+001021bc: ldr      ip, [sp, #0x20]
+001021c0: mov      r2, r6
+001021c4: mov      r1, r7
+001021c8: mov      r3, #3
+001021cc: str      r0, [ip], #4
+001021d0: mov      r0, r4
+001021d4: str      ip, [sp, #0x20]
+001021d8: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001021dc: mov      r0, r4
+001021e0: bl       #0xffab4 ; CArchetypeMgr::Parse_Gender(RZString const&)
+001021e4: ldr      ip, [sp, #8]
+001021e8: add      r3, ip, #0xb400
+001021ec: add      ip, ip, #4
+001021f0: str      ip, [sp, #8]
+001021f4: str      r0, [r3, #0x20]
+001021f8: mov      r0, r4
+001021fc: bl       #0x28cecc ; RZString::~RZString()
+00102200: mov      r2, r6
+00102204: mov      r3, #1
+00102208: mov      r1, r7
+0010220c: ldr      r0, [sp, #0x10]
+00102210: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102214: ldr      r0, [sp, #0x10]
+00102218: bl       #0x101cf4 ; CArchetypeMgr::Parse_ClassType(RZString&)
+0010221c: ldr      ip, [sp, #0x2c]
+00102220: ldr      r1, [sp, #0x30]
+00102224: str      r0, [ip], #0x48
+00102228: mov      r0, fp
+0010222c: str      ip, [sp, #0x2c]
+00102230: bl       #0x28f634 ; RZString::RZString(char const*)
+00102234: mov      r3, #4
+00102238: mov      r2, r6
+0010223c: mov      r0, r5
+00102240: mov      r1, r7
+00102244: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102248: mov      r0, sb
+0010224c: mov      r1, fp
+00102250: mov      r2, r5
+00102254: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+00102258: mov      r0, r8
+0010225c: mov      r1, sb
+00102260: ldr      r2, [sp, #0x34]
+00102264: bl       #0x28e354 ; RZString::operator+(char const*) const
+00102268: mov      r3, #6
+0010226c: mov      r2, r6
+00102270: mov      r0, sl
+00102274: mov      r1, r7
+00102278: add      r6, r6, #1
+0010227c: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102280: mov      r2, sl
+00102284: mov      r0, r4
+00102288: mov      r1, r8
+0010228c: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+00102290: ldr      ip, [sp, #0x38]
+00102294: ldr      lr, [sp, #4]
+00102298: mov      r1, r4
+0010229c: add      r0, ip, lr
+001022a0: add      lr, lr, #0x18
+001022a4: str      lr, [sp, #4]
+001022a8: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001022ac: mov      r0, r4
+001022b0: bl       #0x28cecc ; RZString::~RZString()
+001022b4: mov      r0, sl
+001022b8: bl       #0x28cecc ; RZString::~RZString()
+001022bc: mov      r0, r8
+001022c0: bl       #0x28cecc ; RZString::~RZString()
+001022c4: mov      r0, sb
+001022c8: bl       #0x28cecc ; RZString::~RZString()
+001022cc: mov      r0, r5
+001022d0: bl       #0x28cecc ; RZString::~RZString()
+001022d4: mov      r0, fp
+001022d8: bl       #0x28cecc ; RZString::~RZString()
+001022dc: ldr      r0, [sp, #0x10]
+001022e0: bl       #0x28cecc ; RZString::~RZString()
+001022e4: add      r0, sp, #0x44
+001022e8: bl       #0x28cecc ; RZString::~RZString()
+001022ec: ldr      ip, [sp, #4]
+001022f0: cmp      ip, #0x210
+001022f4: bne      #0x1020dc
+001022f8: cmp      r7, #0
+001022fc: beq      #0x102310
+00102300: mov      r0, r7
+00102304: bl       #0x29096c ; RZTable::~RZTable()
+00102308: mov      r0, r7
+0010230c: bl       #0x2cb8c0 ; operator delete(void*)
+00102310: ldr      r0, [pc, #0x600]
+00102314: movw     r1, #0x499
+00102318: ldr      r5, [sp, #0x1c]
+0010231c: add      r0, pc, r0
+00102320: add      r0, r0, #0x318
+00102324: add      fp, r5, #0xb400
+00102328: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+0010232c: movw     r1, #0x499
+00102330: add      r8, r5, #0xb500
+00102334: add      r6, fp, #0xcc
+00102338: add      r8, r8, #0x1c
+0010233c: mov      r5, r0
+00102340: bl       #0x290b04 ; RZTable::LoadFromPtr(unsigned char*, int)
+00102344: mov      r7, r0
+00102348: mov      r0, r5
+0010234c: bl       #0x2585a4 ; RZMemory::Free(void*)
+00102350: mov      r5, #1
+00102354: add      r5, r5, #1
+00102358: mov      r3, #1
+0010235c: mov      r0, r4
+00102360: mov      r1, r7
+00102364: mov      r2, r5
+00102368: add      r8, r8, #0x54
+0010236c: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102370: mov      r1, r4
+00102374: mov      r0, r6
+00102378: bl       #0x28e730 ; RZString::operator=(RZString const&)
+0010237c: mov      r0, r4
+00102380: bl       #0x28cecc ; RZString::~RZString()
+00102384: mov      r2, r5
+00102388: mov      r3, #2
+0010238c: mov      r0, r4
+00102390: mov      r1, r7
+00102394: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102398: mov      r1, r4
+0010239c: add      r0, r6, #0x18
+001023a0: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001023a4: mov      r0, r4
+001023a8: bl       #0x28cecc ; RZString::~RZString()
+001023ac: mov      r3, #3
+001023b0: mov      r2, r5
+001023b4: mov      r0, r4
+001023b8: mov      r1, r7
+001023bc: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001023c0: mov      r1, r4
+001023c4: add      r0, r6, #0x30
+001023c8: add      r6, r6, #0x54
+001023cc: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001023d0: mov      r0, r4
+001023d4: bl       #0x28cecc ; RZString::~RZString()
+001023d8: mov      r1, r5
+001023dc: mov      r2, #4
+001023e0: mov      r0, r7
+001023e4: bl       #0x290d28 ; RZTable::GetValueAsF32(int, int)
+001023e8: mov      r2, r5
+001023ec: mov      r1, r7
+001023f0: mov      r3, #5
+001023f4: str      r0, [r8, #-0x58]
+001023f8: mov      r0, r4
+001023fc: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102400: mov      r0, r4
+00102404: bl       #0x101874 ; CArchetypeMgr::Parse_eRaceBonus(RZString&)
+00102408: str      r0, [r6, #-4]
+0010240c: mov      r0, r4
+00102410: bl       #0x28cecc ; RZString::~RZString()
+00102414: cmp      r5, #0x11
+00102418: bne      #0x102354
+0010241c: cmp      r7, #0
+00102420: beq      #0x102434
+00102424: mov      r0, r7
+00102428: bl       #0x29096c ; RZTable::~RZTable()
+0010242c: mov      r0, r7
+00102430: bl       #0x2cb8c0 ; operator delete(void*)
+00102434: add      r6, sp, #0xe8
+00102438: ldr      r8, [sp, #0x1c]
+0010243c: mov      r7, #0
+00102440: str      r4, [sp, #0x10]
+00102444: mov      r5, r6
+00102448: mov      r4, r7
+0010244c: add      fp, fp, #0xe4
+00102450: str      r6, [sp, #0xc]
+00102454: stmib    sp, {r7, fp}
+00102458: str      sl, [sp, #0x18]
+0010245c: str      sb, [sp, #0x20]
+00102460: add      r7, r7, #1
+00102464: str      r4, [r5, #4]!
+00102468: cmp      r7, #0x11
+0010246c: str      r5, [sp, #0xc]
+00102470: beq      #0x1024f0
+00102474: ldr      r6, [sp, #8]
+00102478: mov      r4, #0
+0010247c: ldr      r5, [sp, #0x10]
+00102480: str      r7, [sp, #4]
+00102484: mov      r0, r6
+00102488: add      r4, r4, #1
+0010248c: bl       #0x28fd18 ; RZString::ToASCII()
+00102490: ldr      sl, [r5], #4
+00102494: mov      ip, #0x54
+00102498: mla      sb, ip, sl, r8
+0010249c: add      sb, sb, #0xb400
+001024a0: add      sb, sb, #0x90
+001024a4: mov      fp, r0
+001024a8: mov      r0, sb
+001024ac: bl       #0x28fd18 ; RZString::ToASCII()
+001024b0: mov      r1, r0
+001024b4: mov      r0, fp
+001024b8: bl       #0xb9868 ; strcasecmp
+001024bc: cmp      r0, #0
+001024c0: ldrlt    r2, [sp, #4]
+001024c4: movlt    r6, sb
+001024c8: strlt    sl, [sp, #4]
+001024cc: strlt    r2, [r5, #-4]
+001024d0: cmp      r4, r7
+001024d4: bne      #0x102484
+001024d8: ldr      r3, [sp, #8]
+001024dc: ldr      r5, [sp, #0xc]
+001024e0: add      r3, r3, #0x54
+001024e4: ldr      r4, [sp, #4]
+001024e8: str      r3, [sp, #8]
+001024ec: b        #0x102460 ; 
+001024f0: ldr      r7, [sp, #0x1c]
+001024f4: mov      r2, #0x54
+001024f8: ldr      r0, [sp, #0xec]
+001024fc: movw     r3, #0xb4c0
+00102500: ldr      r4, [sp, #0xf0]
+00102504: mov      r5, #0
+00102508: ldr      lr, [sp, #0xf4]
+0010250c: movw     r1, #0x32f
+00102510: mla      r0, r2, r0, r7
+00102514: ldr      ip, [sp, #0xf8]
+00102518: mla      r4, r2, r4, r7
+0010251c: ldr      r6, [sp, #0xfc]
+00102520: mla      lr, r2, lr, r7
+00102524: ldr      fp, [sp, #0x108]
+00102528: str      r5, [r0, r3]
+0010252c: mov      r5, #1
+00102530: mla      ip, r2, ip, r7
+00102534: str      r5, [r4, r3]
+00102538: ldr      r8, [sp, #0x100]
+0010253c: ldr      r4, [sp, #0x104]
+00102540: mla      r0, r2, r6, r7
+00102544: ldr      sl, [sp, #0x18]
+00102548: mla      r6, r2, r8, r7
+0010254c: ldr      r8, [sp, #0x10c]
+00102550: mla      r5, r2, r4, r7
+00102554: mov      r4, #2
+00102558: mla      r7, r2, fp, r7
+0010255c: ldr      fp, [sp, #0x1c]
+00102560: str      r4, [lr, r3]
+00102564: mov      lr, #3
+00102568: str      lr, [ip, r3]
+0010256c: mov      ip, #4
+00102570: mla      r8, r2, r8, fp
+00102574: ldr      lr, [sp, #0x1c]
+00102578: ldr      fp, [sp, #0x110]
+0010257c: str      ip, [r0, r3]
+00102580: mov      r0, #5
+00102584: str      r0, [r6, r3]
+00102588: mov      r0, #6
+0010258c: ldr      r6, [sp, #0x1c]
+00102590: mla      fp, r2, fp, lr
+00102594: ldr      lr, [sp, #0x114]
+00102598: str      r0, [r5, r3]
+0010259c: mov      r0, #7
+001025a0: str      r0, [r7, r3]
+001025a4: mov      r0, #8
+001025a8: mla      ip, r2, lr, r6
+001025ac: ldr      lr, [sp, #0x118]
+001025b0: str      r0, [r8, r3]
+001025b4: mov      r0, #9
+001025b8: ldr      r8, [sp, #0x1c]
+001025bc: mla      r5, r2, lr, r6
+001025c0: ldr      lr, [sp, #0x11c]
+001025c4: str      r0, [fp, r3]
+001025c8: mov      r0, #0xa
+001025cc: ldr      sb, [sp, #0x20]
+001025d0: mla      r7, r2, lr, r6
+001025d4: ldr      lr, [sp, #0x120]
+001025d8: ldr      r6, [sp, #0x124]
+001025dc: mla      lr, r2, lr, r8
+001025e0: mla      r6, r2, r6, r8
+001025e4: ldr      r8, [sp, #0x128]
+001025e8: str      r0, [ip, r3]
+001025ec: mov      r0, #0xb
+001025f0: ldr      fp, [sp, #0x1c]
+001025f4: str      r0, [r5, r3]
+001025f8: mov      r5, #0xc
+001025fc: ldr      r0, [sp, #0x12c]
+00102600: mla      ip, r2, r8, fp
+00102604: str      r5, [r7, r3]
+00102608: mla      r2, r2, r0, fp
+0010260c: ldr      r0, [pc, #0x308]
+00102610: mov      r5, #0xd
+00102614: str      r5, [lr, r3]
+00102618: add      r0, pc, r0
+0010261c: mov      lr, #0xe
+00102620: add      r0, r0, #0xc50
+00102624: str      lr, [r6, r3]
+00102628: mov      lr, #0xf
+0010262c: str      lr, [ip, r3]
+00102630: mov      ip, #0x10
+00102634: str      ip, [r2, r3]
+00102638: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+0010263c: movw     r1, #0x32f
+00102640: add      r5, fp, #0xba00
+00102644: add      r5, r5, #0xc
+00102648: mov      r7, r0
+0010264c: bl       #0x290b04 ; RZTable::LoadFromPtr(unsigned char*, int)
+00102650: mov      r6, r0
+00102654: mov      r0, r7
+00102658: bl       #0x2585a4 ; RZMemory::Free(void*)
+0010265c: mov      r2, r4
+00102660: mov      r3, #1
+00102664: mov      r0, sl
+00102668: mov      r1, r6
+0010266c: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102670: mov      r1, sl
+00102674: mov      r0, r5
+00102678: bl       #0x28e730 ; RZString::operator=(RZString const&)
+0010267c: mov      r0, sl
+00102680: bl       #0x28cecc ; RZString::~RZString()
+00102684: mov      r2, r4
+00102688: mov      r3, #2
+0010268c: mov      r0, sl
+00102690: mov      r1, r6
+00102694: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102698: mov      r1, sl
+0010269c: add      r0, r5, #0x18
+001026a0: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001026a4: mov      r0, sl
+001026a8: bl       #0x28cecc ; RZString::~RZString()
+001026ac: mov      r2, r4
+001026b0: mov      r3, #3
+001026b4: mov      r0, sl
+001026b8: mov      r1, r6
+001026bc: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001026c0: mov      r1, sl
+001026c4: add      r0, r5, #0x30
+001026c8: add      r5, r5, #0x4c
+001026cc: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001026d0: mov      r0, sl
+001026d4: bl       #0x28cecc ; RZString::~RZString()
+001026d8: mov      r1, r4
+001026dc: mov      r0, r6
+001026e0: mov      r2, #4
+001026e4: bl       #0x290d28 ; RZTable::GetValueAsF32(int, int)
+001026e8: add      r4, r4, #1
+001026ec: cmp      r4, #0x18
+001026f0: str      r0, [r5, #-4]
+001026f4: bne      #0x10265c
+001026f8: cmp      r6, #0
+001026fc: beq      #0x102710
+00102700: mov      r0, r6
+00102704: bl       #0x29096c ; RZTable::~RZTable()
+00102708: mov      r0, r6
+0010270c: bl       #0x2cb8c0 ; operator delete(void*)
+00102710: ldr      r0, [sp, #0x1c]
+00102714: add      r8, sp, #0xbc
+00102718: bl       #0x101070 ; CArchetypeMgr::LoadMonsterStats()
+0010271c: ldr      r0, [sp, #0x1c]
+00102720: bl       #0x10172c ; CArchetypeMgr::LoadHeroStats()
+00102724: ldr      r0, [pc, #0x1f4]
+00102728: movw     r1, #0x1725
+0010272c: mov      r7, #0
+00102730: add      r0, pc, r0
+00102734: sub      r0, r0, #0xd40
+00102738: sub      r0, r0, #8
+0010273c: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+00102740: movw     r1, #0x1725
+00102744: mov      r4, r0
+00102748: bl       #0x290b04 ; RZTable::LoadFromPtr(unsigned char*, int)
+0010274c: mov      r5, r0
+00102750: mov      r0, r4
+00102754: bl       #0x2585a4 ; RZMemory::Free(void*)
+00102758: ldr      r4, [sp, #0x1c]
+0010275c: add      r6, r4, #0x2a400
+00102760: add      r6, r6, #0xfc
+00102764: add      r4, r7, #2
+00102768: add      r0, sp, #0x74
+0010276c: mov      r1, r5
+00102770: mov      r3, #0
+00102774: mov      r2, r4
+00102778: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+0010277c: add      r0, sp, #0x8c
+00102780: mov      r1, r5
+00102784: mov      r2, r4
+00102788: mov      r3, #1
+0010278c: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102790: mov      r2, r4
+00102794: mov      r3, #1
+00102798: mov      r0, sl
+0010279c: mov      r1, r5
+001027a0: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001027a4: mov      r1, sl
+001027a8: mov      r0, r6
+001027ac: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001027b0: mov      r0, sl
+001027b4: bl       #0x28cecc ; RZString::~RZString()
+001027b8: mov      r1, r5
+001027bc: mov      r2, r4
+001027c0: mov      r3, #2
+001027c4: mov      r0, sb
+001027c8: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001027cc: ldr      fp, [sp, #0x1c]
+001027d0: add      ip, r7, r7, lsl #3
+001027d4: mov      r0, sb
+001027d8: add      r7, r7, #1
+001027dc: add      ip, fp, ip, lsl #3
+001027e0: add      fp, ip, #0x2a400
+001027e4: bl       #0xffa14 ; CArchetypeMgr::Parse_Icon(RZString&)
+001027e8: mov      r3, #3
+001027ec: mov      r2, r4
+001027f0: mov      r1, r5
+001027f4: str      r0, [fp, #0xf0]
+001027f8: mov      r0, sl
+001027fc: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+00102800: mov      r1, sl
+00102804: mov      r0, sb
+00102808: bl       #0x28e730 ; RZString::operator=(RZString const&)
+0010280c: mov      r0, sl
+00102810: bl       #0x28cecc ; RZString::~RZString()
+00102814: mov      r0, sb
+00102818: bl       #0xffb58 ; CArchetypeMgr::Parse_eUseOn(RZString&)
+0010281c: mov      r1, r4
+00102820: mov      r2, #4
+00102824: str      r0, [r6, #-0x18]
+00102828: mov      r0, r5
+0010282c: bl       #0x290c74 ; RZTable::GetValueAsINT(int, int)
+00102830: mov      r1, r4
+00102834: mov      r2, #5
+00102838: adds     r3, r0, #0
+0010283c: mov      r0, r5
+00102840: movne    r3, #1
+00102844: str      r3, [r6, #-8]
+00102848: bl       #0x290c74 ; RZTable::GetValueAsINT(int, int)
+0010284c: mov      r1, r4
+00102850: mov      r2, #6
+00102854: str      r0, [r6, #-4]
+00102858: mov      r0, r5
+0010285c: bl       #0x290c74 ; RZTable::GetValueAsINT(int, int)
+00102860: mov      r1, r4
+00102864: mov      r2, #7
+00102868: str      r0, [r6, #-0x14]
+0010286c: mov      r0, r5
+00102870: bl       #0x290c74 ; RZTable::GetValueAsINT(int, int)
+00102874: mov      r3, #8
+00102878: mov      r2, r4
+0010287c: mov      r1, r5
+00102880: str      r0, [r6, #-0x10]
+00102884: mov      r0, r8
+00102888: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+0010288c: mov      r2, r8
+00102890: mov      r0, sl
+00102894: ldr      r1, [sp, #0x1c]
+00102898: bl       #0xff7c8 ; CArchetypeMgr::BuildAbilityToolTip(RZString const&)
+0010289c: mov      r1, sl
+001028a0: add      r0, r6, #0x18
+001028a4: add      r6, r6, #0x48
+001028a8: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001028ac: mov      r0, sl
+001028b0: bl       #0x28cecc ; RZString::~RZString()
+001028b4: mov      r0, r8
+001028b8: bl       #0x28cecc ; RZString::~RZString()
+001028bc: mov      r0, sb
+001028c0: bl       #0x28cecc ; RZString::~RZString()
+001028c4: add      r0, sp, #0x8c
+001028c8: bl       #0x28cecc ; RZString::~RZString()
+001028cc: add      r0, sp, #0x74
+001028d0: bl       #0x28cecc ; RZString::~RZString()
+001028d4: cmp      r7, #0x3a
+001028d8: bne      #0x102764
+001028dc: cmp      r5, #0
+001028e0: beq      #0x1028f4
+001028e4: mov      r0, r5
+001028e8: bl       #0x29096c ; RZTable::~RZTable()
+001028ec: mov      r0, r5
+001028f0: bl       #0x2cb8c0 ; operator delete(void*)
+001028f4: add      sp, sp, #0x134
+001028f8: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+001028fc: eoreq    ip, r3, r0, lsl #22
+00102900: eoreq    r3, r4, r4, ror #3
+00102904: eoreq    r3, r4, r0, lsl #8
+00102908: eoreq    ip, pc, ip, asr #17
+0010290c: eoreq    lr, r3, r8, asr r8
+00102910: eoreq    r2, r4, r4, ror pc
+00102914: mlaeq    pc, r4, r6, ip
+00102918: eoreq    lr, r3, r4, ror r5
+0010291c: eoreq    lr, r3, r8, ror r2
+00102920: eoreq    r0, r4, r8, asr r1

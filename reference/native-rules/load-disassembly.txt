@@ -1,0 +1,342 @@
+
+### CRuneMgr::LoadRuneStats() 0x1d6554 920
+001d6554: mov      r3, r0
+001d6558: ldr      r0, [pc, #0x380]
+001d655c: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+001d6560: sub      sp, sp, #0xdc
+001d6564: movw     r1, #0xa174
+001d6568: add      r0, pc, r0
+001d656c: add      r3, r3, #0x30
+001d6570: str      r3, [sp, #0x2c]
+001d6574: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+001d6578: ldr      ip, [pc, #0x364]
+001d657c: movw     r1, #0xa174
+001d6580: add      r5, sp, #0xc0
+001d6584: add      ip, pc, ip
+001d6588: str      ip, [sp, #0x1c]
+001d658c: add      sl, sp, #0xa8
+001d6590: mov      r6, #0
+001d6594: mov      r4, r0
+001d6598: bl       #0x290b04 ; RZTable::LoadFromPtr(unsigned char*, int)
+001d659c: mov      sb, r0
+001d65a0: mov      r0, r4
+001d65a4: bl       #0x2585a4 ; RZMemory::Free(void*)
+001d65a8: ldr      r7, [sp, #0x2c]
+001d65ac: ldr      ip, [pc, #0x334]
+001d65b0: add      r4, sp, #0x30
+001d65b4: add      ip, pc, ip
+001d65b8: str      ip, [sp, #0x14]
+001d65bc: add      ip, sp, #0x48
+001d65c0: str      ip, [sp, #0x10]
+001d65c4: add      ip, sp, #0x60
+001d65c8: str      ip, [sp, #8]
+001d65cc: add      ip, sp, #0x78
+001d65d0: str      ip, [sp, #0xc]
+001d65d4: add      ip, sp, #0x90
+001d65d8: str      ip, [sp, #4]
+001d65dc: add      r8, r6, #2
+001d65e0: mov      r3, #0
+001d65e4: mov      r0, r4
+001d65e8: mov      r1, sb
+001d65ec: mov      r2, r8
+001d65f0: sub      ip, r7, #0x30
+001d65f4: str      ip, [sp, #0x18]
+001d65f8: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d65fc: mov      r1, r4
+001d6600: mov      r0, r7
+001d6604: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6608: mov      r3, #1
+001d660c: mov      r1, sb
+001d6610: mov      r2, r8
+001d6614: add      r0, sp, #0x48
+001d6618: add      ip, r7, #0x30
+001d661c: str      ip, [sp]
+001d6620: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6624: add      r0, sp, #0x48
+001d6628: add      fp, r7, #0x18
+001d662c: bl       #0xffb00 ; CArchetypeMgr::Parse_Rarity(RZString const&)
+001d6630: mov      r1, r8
+001d6634: mov      r2, #2
+001d6638: str      r0, [r7, #0x48]
+001d663c: mov      r0, sb
+001d6640: bl       #0x290c74 ; RZTable::GetValueAsINT(int, int)
+001d6644: mov      r3, #5
+001d6648: mov      r2, r8
+001d664c: mov      r1, sb
+001d6650: str      r0, [r7, #0x4c]
+001d6654: add      r0, sp, #0x60
+001d6658: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d665c: ldr      r1, [sp, #0x1c]
+001d6660: mov      r0, r5
+001d6664: bl       #0x28f634 ; RZString::RZString(char const*)
+001d6668: add      r2, sp, #0x60
+001d666c: mov      r1, r5
+001d6670: add      r0, sp, #0x78
+001d6674: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+001d6678: mov      r0, r5
+001d667c: bl       #0x28cecc ; RZString::~RZString()
+001d6680: add      r0, sp, #0x78
+001d6684: bl       #0x28fd18 ; RZString::ToASCII()
+001d6688: bl       #0x262298 ; RZModel_Base::Load(char*)
+001d668c: ldr      r1, [sp, #0x1c]
+001d6690: str      r0, [r7, #0x50]
+001d6694: add      r0, sp, #0x90
+001d6698: bl       #0x28f634 ; RZString::RZString(char const*)
+001d669c: mov      r3, #6
+001d66a0: mov      r0, sl
+001d66a4: mov      r1, sb
+001d66a8: mov      r2, r8
+001d66ac: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d66b0: mov      r2, sl
+001d66b4: mov      r0, r5
+001d66b8: add      r1, sp, #0x90
+001d66bc: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+001d66c0: mov      r1, r5
+001d66c4: add      r0, r7, #0x54
+001d66c8: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d66cc: mov      r0, r5
+001d66d0: bl       #0x28cecc ; RZString::~RZString()
+001d66d4: mov      r0, sl
+001d66d8: bl       #0x28cecc ; RZString::~RZString()
+001d66dc: add      r0, sp, #0x90
+001d66e0: bl       #0x28cecc ; RZString::~RZString()
+001d66e4: mov      r2, r8
+001d66e8: mov      r3, #3
+001d66ec: mov      r0, r5
+001d66f0: mov      r1, sb
+001d66f4: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d66f8: mov      r1, r5
+001d66fc: ldr      r0, [sp, #0x18]
+001d6700: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6704: mov      r0, r5
+001d6708: bl       #0x28cecc ; RZString::~RZString()
+001d670c: mov      r2, r8
+001d6710: mov      r3, #4
+001d6714: mov      r0, r5
+001d6718: mov      r1, sb
+001d671c: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6720: mov      r1, r5
+001d6724: sub      r0, r7, #0x18
+001d6728: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d672c: mov      r0, r5
+001d6730: bl       #0x28cecc ; RZString::~RZString()
+001d6734: mov      r2, r8
+001d6738: mov      r3, #7
+001d673c: mov      r0, sl
+001d6740: mov      r1, sb
+001d6744: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6748: ldr      ip, [sp]
+001d674c: mov      r1, sl
+001d6750: mov      r0, ip
+001d6754: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6758: ldr      ip, [sp]
+001d675c: mov      r0, ip
+001d6760: bl       #0x28d840 ; RZString::ApplyMetaChars()
+001d6764: mov      r3, #8
+001d6768: mov      r0, r5
+001d676c: mov      r1, sb
+001d6770: mov      r2, r8
+001d6774: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6778: mov      r2, #0x2c
+001d677c: mov      r0, r5
+001d6780: mov      r1, #0x23
+001d6784: bl       #0x28d7e4 ; RZString::SubstituteChar(char, char)
+001d6788: mov      r1, r5
+001d678c: mov      r0, fp
+001d6790: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6794: mov      r0, fp
+001d6798: bl       #0x28d840 ; RZString::ApplyMetaChars()
+001d679c: cmp      r6, #0
+001d67a0: beq      #0x1d68a4
+001d67a4: mov      fp, #0
+001d67a8: str      r7, [sp, #0x24]
+001d67ac: str      r5, [sp, #0x28]
+001d67b0: mov      r7, fp
+001d67b4: ldr      r8, [sp, #0x2c]
+001d67b8: mov      fp, sl
+001d67bc: str      sb, [sp, #0x20]
+001d67c0: ldr      r5, [sp, #0x18]
+001d67c4: b        #0x1d67d4 ; 
+001d67c8: cmp      r7, r6
+001d67cc: add      r8, r8, #0x9c
+001d67d0: beq      #0x1d682c
+001d67d4: mov      r0, r4
+001d67d8: mov      r1, r8
+001d67dc: bl       #0x28d5b0 ; RZString::operator==(RZString const&)
+001d67e0: add      r7, r7, #1
+001d67e4: cmp      r0, #0
+001d67e8: beq      #0x1d67c8
+001d67ec: mov      r0, r4
+001d67f0: bl       #0x28fd18 ; RZString::ToASCII()
+001d67f4: mov      sl, r0
+001d67f8: mov      r0, r5
+001d67fc: bl       #0x28fd18 ; RZString::ToASCII()
+001d6800: mov      sb, r0
+001d6804: sub      r0, r8, #0x30
+001d6808: bl       #0x28fd18 ; RZString::ToASCII()
+001d680c: mov      r1, sl
+001d6810: mov      r2, sb
+001d6814: add      r8, r8, #0x9c
+001d6818: mov      r3, r0
+001d681c: ldr      r0, [sp, #0x14]
+001d6820: bl       #0x237f74 ; RZDebug::Printf(char*, ...)
+001d6824: cmp      r7, r6
+001d6828: bne      #0x1d67d4
+001d682c: ldr      r5, [sp, #0x28]
+001d6830: mov      sl, fp
+001d6834: ldr      sb, [sp, #0x20]
+001d6838: mov      fp, r7
+001d683c: ldr      r7, [sp, #0x24]
+001d6840: add      r6, fp, #1
+001d6844: mov      r0, r5
+001d6848: bl       #0x28cecc ; RZString::~RZString()
+001d684c: mov      r0, sl
+001d6850: bl       #0x28cecc ; RZString::~RZString()
+001d6854: add      r0, sp, #0x78
+001d6858: bl       #0x28cecc ; RZString::~RZString()
+001d685c: add      r0, sp, #0x60
+001d6860: bl       #0x28cecc ; RZString::~RZString()
+001d6864: add      r0, sp, #0x48
+001d6868: bl       #0x28cecc ; RZString::~RZString()
+001d686c: mov      r0, r4
+001d6870: bl       #0x28cecc ; RZString::~RZString()
+001d6874: movw     r3, #0x10b
+001d6878: cmp      r6, r3
+001d687c: add      r7, r7, #0x9c
+001d6880: bne      #0x1d65dc
+001d6884: cmp      sb, #0
+001d6888: beq      #0x1d689c
+001d688c: mov      r0, sb
+001d6890: bl       #0x29096c ; RZTable::~RZTable()
+001d6894: mov      r0, sb
+001d6898: bl       #0x2cb8c0 ; operator delete(void*)
+001d689c: add      sp, sp, #0xdc
+001d68a0: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+001d68a4: mov      r0, r5
+001d68a8: add      r7, r7, #0x9c
+001d68ac: bl       #0x28cecc ; RZString::~RZString()
+001d68b0: mov      r0, sl
+001d68b4: bl       #0x28cecc ; RZString::~RZString()
+001d68b8: add      r0, sp, #0x78
+001d68bc: bl       #0x28cecc ; RZString::~RZString()
+001d68c0: add      r0, sp, #0x60
+001d68c4: bl       #0x28cecc ; RZString::~RZString()
+001d68c8: add      r0, sp, #0x48
+001d68cc: bl       #0x28cecc ; RZString::~RZString()
+001d68d0: mov      r0, r4
+001d68d4: bl       #0x28cecc ; RZString::~RZString()
+001d68d8: mov      r6, #1
+001d68dc: b        #0x1d65dc ; 
+001d68e0: ldrsbeq  r6, [sp], -r8
+001d68e4: andseq   sl, lr, r4, lsr #19
+001d68e8: andseq   r1, r7, r4, ror #27
+
+### CArchetypeMgr::GetAbilityData(eAbilityType) 0x102ae0 20
+00102ae0: add      r1, r1, r1, lsl #3
+00102ae4: add      r0, r0, r1, lsl #3
+00102ae8: add      r0, r0, #0x2a400
+00102aec: add      r0, r0, #0xe4
+00102af0: bx       lr
+
+### CCharacterMin::GetAbility(int) 0x13413c 132
+0013413c: push     {r3, r4, r5, lr}
+00134140: mov      r5, r1
+00134144: mov      r4, r0
+00134148: bl       #0x133504 ; CCharacterMin::GetIsHero()
+0013414c: ldr      r3, [pc, #0x64]
+00134150: add      r3, pc, r3
+00134154: subs     r1, r0, #0
+00134158: beq      #0x134180
+0013415c: cmp      r5, #0
+00134160: beq      #0x1341a0
+00134164: ldr      r0, [pc, #0x50]
+00134168: mov      r1, #0
+0013416c: ldrb     r2, [r4, #0x2a]
+00134170: ldr      r3, [r3, r0]
+00134174: ldr      r0, [r3]
+00134178: pop      {r3, r4, r5, lr}
+0013417c: b        #0xff7e0 ; CArchetypeMgr::GetSpecialAbility(int, eHeroType)
+00134180: cmp      r5, #1
+00134184: bne      #0x1341a0
+00134188: ldr      r0, [pc, #0x2c]
+0013418c: add      r2, r4, #0x28
+00134190: ldr      r3, [r3, r0]
+00134194: ldr      r0, [r3]
+00134198: pop      {r3, r4, r5, lr}
+0013419c: b        #0xff7f8 ; CArchetypeMgr::GetSpecialAbility(int, tMONSTERINDEX const&)
+001341a0: ldr      r2, [pc, #0x14]
+001341a4: ldrb     r1, [r4, #0x29]
+001341a8: ldr      r3, [r3, r2]
+001341ac: ldr      r0, [r3]
+001341b0: pop      {r3, r4, r5, lr}
+001341b4: b        #0xff834 ; CArchetypeMgr::GetDefaultAbility(eClassType)
+001341b8: eorseq   r5, r0, r0, lsl fp
+001341bc: andeq    r0, r0, r0, lsr r6
+
+### CHand::DrawCards(int) 0x1576f0 112
+001576f0: push     {r4, r5, r6, lr}
+001576f4: subs     r6, r1, #0
+001576f8: mov      r4, r0
+001576fc: ble      #0x157758
+00157700: ldr      r3, [r0, #0x324]
+00157704: mov      r5, #0
+00157708: cmp      r3, #0xc7
+0015770c: ble      #0x15773c
+00157710: b        #0x157750 ; 
+00157714: ldr      r3, [r4, #0x324]
+00157718: add      r5, r5, #1
+0015771c: cmp      r5, r6
+00157720: add      r2, r3, #1
+00157724: str      r2, [r4, #0x324]
+00157728: add      r3, r4, r3, lsl #2
+0015772c: str      r0, [r3, #4]
+00157730: beq      #0x157750
+00157734: cmp      r2, #0xc7
+00157738: bgt      #0x157750
+0015773c: ldr      r0, [r4]
+00157740: mov      r1, #0
+00157744: bl       #0x13c200 ; CDeck::DrawCard(int)
+00157748: cmp      r0, #0
+0015774c: bne      #0x157714
+00157750: mov      r0, r5
+00157754: pop      {r4, r5, r6, pc}
+00157758: mov      r5, #0
+0015775c: b        #0x157750 ; 
+
+### CRuneDaisList::PermanentInit() 0x1d2698 96
+001d2698: push     {r3, r4, r5, r6, r7, lr}
+001d269c: ldr      r7, [pc, #0x4c]
+001d26a0: ldr      r7, [pc, r7]
+001d26a4: ldr      r1, [r7]
+001d26a8: cmp      r1, #0
+001d26ac: popne    {r3, r4, r5, r6, r7, pc}
+001d26b0: ldr      r5, [pc, #0x3c]
+001d26b4: movw     r2, #0x42c
+001d26b8: mov      r4, #1
+001d26bc: movw     r6, #0x10b
+001d26c0: ldr      r5, [pc, r5]
+001d26c4: mov      r0, r5
+001d26c8: bl       #0x258668 ; RZMemory::Fill(void*, unsigned char, unsigned int)
+001d26cc: mov      r0, r4
+001d26d0: add      r4, r4, #1
+001d26d4: bl       #0x1d6e98 ; CRune_Base::CreateRune(eRune)
+001d26d8: cmp      r4, r6
+001d26dc: str      r0, [r5, #4]!
+001d26e0: bne      #0x1d26cc
+001d26e4: mov      r3, #1
+001d26e8: str      r3, [r7]
+001d26ec: pop      {r3, r4, r5, r6, r7, pc}
+001d26f0: eoreq    r8, r6, r0, ror r7
+
+### CCharacterMin::SetHasAttackedThisTurn() 0x134424 44
+00134424: push     {r4, lr}
+00134428: mov      r4, r0
+0013442c: ldrb     r3, [r0, #0x3a]
+00134430: orr      r3, r3, #2
+00134434: strb     r3, [r0, #0x3a]
+00134438: bl       #0x1343c0 ; CCharacterMin::GetClassType()
+0013443c: cmp      r0, #3
+00134440: ldrbeq   r3, [r4, #0x3a]
+00134444: orreq    r3, r3, #1
+00134448: strbeq   r3, [r4, #0x3a]
+0013444c: pop      {r4, pc}

@@ -1,0 +1,24 @@
+eRaceType enum,Name - Adjective,Name - Singular,Name - Plural,Race Scale
+,,,,
+HT_DUNGEONMASTER,Dungeon Master,Dungeon Master,Dungeon Masters,1
+HT_BAUS,Hero,Hero,Heroes,1.4
+HT_CYCLOPS,Hero,Hero,Heroes,1.4
+HT_LAVALEM,Hero,Hero,Heroes,1.4
+HT_DEAN,Hero,Hero,Heroes,1.4
+HT_NOIGLE,Hero,Hero,Heroes,1.4
+HT_SHAQ,Hero,Hero,Heroes,1.4
+HT_BONEYARD,Hero,Hero,Heroes,1.4
+HT_WOOMPH,Hero,Hero,Heroes,1.4
+HT_ALPHEDIA,Hero,Hero,Heroes,1.4
+HT_KONGE,Hero,Hero,Heroes,1.4
+HT_QUEENY,Hero,Hero,Heroes,1.4
+HT_STUNK,Hero,Hero,Heroes,1.4
+HT_ERNOLD,Hero,Hero,Heroes,1.4
+HT_MAMBO,Hero,Hero,Heroes,1.4
+HT_MACHLI,Hero,Hero,Heroes,1.4
+HT_MINOTRIX,Hero,Hero,Heroes,1.4
+HT_SLIME,Hero,Hero,Heroes,1.4
+HT_MUMMY,Hero,Hero,Heroes,1.4
+HT_ARTIL1,Hero,Hero,Heroes,1.4
+HT_ARTIL2,Hero,Hero,Heroes,1.4
+HT_ARTIL3,Hero,Hero,Heroes,1.4

@@ -1,0 +1,366 @@
+rune	R_MINORHEROBASH	All your monsters receive RU_MinorheroBash_Power against heroes.
+rune	R_MAJORHEROBASH	All your monsters receive RU_MajorheroBash_Power against heroes.
+rune	R_REAPER	Receive RU_Reaper_Mojo whenever a monster dies.
+rune	R_WITCHHUNT	All spells cost an extra RU_Hunt_Mojo to play.
+rune	R_IMPOTENT_RAGE	All your monsters receive RU_impotentRage_Power but cannot move.
+rune	R_STAND_FAST	All your monsters receive RU_StandFast_Health but cannot move.
+rune	R_BANKERS_DELIGHT	Your opponent's cards cost an extra RU_BankersDelight_Mojo to play from hand.
+rune	R_ACCOUNTING	All your monster abilities cost RU_Accounting_Mojo to activate.
+rune	R_PUNISHMENT	Whenever an opponent plays a spell# their hero suffers RU_Punishment_Health.
+rune	R_BLANK	Does nothing.
+rune	R_CARD_MAESTRO	Draw a card each time you kill a monster.
+rune	R_GRAVITY	All monsters suffer RU_Gravity_Health for each piece of equipment on them.
+rune	R_LONE_HERO	Your hero gains RU_Lonehero_Health on your upkeep if there are no adjacent creatures.
+rune	R_WAR_HERO	Your hero gains RU_Warhero_Power for each adjacent enemy creature.
+rune	R_HERO_SPIKE	Enemy creatures adjacent to your hero suffer RU_heroSpike_Damage damage on your upkeep.
+rune	R_SLYNEGLECT	Enemy Armour does not recharge during upkeep.
+rune	R_ACCOUNTING2	All your monster abilities cost RU_Accounting2_Mojo less to activate.
+rune	R_NOMOVE	All your monsters cannot move.
+rune	R_NOSPECIALABILITY	All your monsters cannot use their special abilities.
+rune	R_NOATTACKS	All your monsters cannot perform their basic attack.
+rune	R_REGEN	All your monsters come into play afflicted with @C[1]Regen@C[0].
+rune	R_SHIELD	All your monsters come into play afflicted with @C[1]Shield@C[0].
+rune	R_FLAME	All your monsters come into play afflicted with @C[1]Flame@C[0].
+rune	R_TILEDOUBLER	All bonus map spaces give double benefit to all creatures. (does not stack.)
+rune	R_SLYTILEDOUBLER	All bonus map spaces give double benefit to your creatures only. (does not stack.)
+rune	R_PUNISHMENTMINI	Whenever an opponent plays a spell# their hero suffers @X[19]@C[6]-1@C[0].
+rune	R_RUNEBACKFIREMINI	Whenever an opponent plays a rune# their hero suffers @X[19]@C[6]-1@C[0].
+rune	R_RUNEBACKFIRE	Whenever an opponent plays a rune# their hero suffers @X[19]@C[6]-2@C[0].
+rune	R_RUNEHUNT	All runes cost an extra RU_Hunt_Mojo to play.
+rune	R_NOAFF_FIRE	Your creatures do not become afflicted with @C[1]Flame@C[0].
+rune	R_NOAFF_ICE	Your creatures do not become afflicted with @C[1]Ice Block@C[0].
+rune	R_NOAFF_DM	Your creatures do not become afflicted with @C[1]Death Mark@C[0].
+rune	R_NOAFF_STUN	Your creatures do not become afflicted with @C[1]Dazed@C[0].
+rune	R_NOAFF_SNARE	Your creatures do not become afflicted with @C[1]Snared@C[0].
+rune	R_TOOMANYCARDS	At upkeep# each enemy hero suffers @X[17]@C[4]X@C[0]# where X is '4 minus number of cards in owner's hand'.
+rune	R_TOOFEWCARDS	At upkeep# each enemy hero suffers @X[17]@C[4]X@C[0]# where X is 'number of cards in owner's hand minus 10' (and capped at 5).
+rune	R_HEALTHCARDS	At the start of your upkeep# your hero gains RU_Health1_Health for each card in your hand above 5# capped at 8.
+rune	R_HB_BAUS	Your Doc Pain hero is protected from all bad afflictions.
+rune	R_HB_CYCLOPS	Your Ouranus hero is protected from all bad afflictions.
+rune	R_HB_LAVALEM	Your Lavalem hero is protected from all bad afflictions.
+rune	R_HB_DEAN	Your Dean hero is protected from all bad afflictions.
+rune	R_HB_NOIGLE	Your Noigle hero is protected from all bad afflictions.
+rune	R_HB_SHAQ	Your Shaq hero is protected from all bad afflictions.
+rune	R_HB_BONEYARD	Your Boneyard hero is protected from all bad afflictions.
+rune	R_HB_WOOMPH	Your Silvanus hero is protected from all bad afflictions.
+rune	R_HB_ALPHEDIA	Your Alphedia hero is protected from all bad afflictions.
+rune	R_HB_KONGE	Your Raeynor hero is protected from all bad afflictions.
+rune	R_HB_QUEENY	Your Hyssta hero is protected from all bad afflictions.
+rune	R_HB_STUNK	Your Clank hero is protected from all bad afflictions.
+rune	R_HB_ERNOLD	Your Ernold hero is protected from all bad afflictions.
+rune	R_HB_MAMBO	Your Mambo hero is protected from all bad afflictions.
+rune	R_HB_MACHLI	Your Machli hero is protected from all bad afflictions.
+rune	R_MHB_BAUS	Your Doc Pain hero is protected from all afflictions.
+rune	R_MHB_CYCLOPS	Your Ouranus hero is protected from all afflictions.
+rune	R_MHB_LAVALEM	Your Lavalem hero is protected from all afflictions.
+rune	R_MHB_DEAN	Your Dean hero is protected from all afflictions.
+rune	R_MHB_NOIGLE	Your Noigle hero is protected from all afflictions.
+rune	R_MHB_SHAQ	Your Shaq hero is protected from all afflictions.
+rune	R_MHB_BONEYARD	Your Boneyard hero is protected from all afflictions.
+rune	R_MHB_WOOMPH	Your Silvanus hero is protected from all afflictions.
+rune	R_MHB_ALPHEDIA	Your Alphedia hero is protected from all afflictions.
+rune	R_MHB_KONGE	Your Raeynor hero is protected from all afflictions.
+rune	R_MHB_QUEENY	Your Hyssta hero is protected from all afflictions.
+rune	R_MHB_STUNK	Your Clank hero is protected from all afflictions.
+rune	R_MHB_ERNOLD	Your Ernold hero is protected from all afflictions.
+rune	R_MHB_MAMBO	Your Mambo hero is protected from all afflictions.
+rune	R_MHB_MACHLI	Your Machli hero is protected from all afflictions.
+rune	R_RNOAFF_FIRE	All monsters do not become afflicted with @C[1]Flame@C[0].
+rune	R_RNOAFF_ICE	All monsters do not become afflicted with @C[1]Ice Block@C[0].
+rune	R_RNOAFF_DM	All monsters do not become afflicted with @C[1]Death Mark@C[0].
+rune	R_RNOAFF_STUN	All monsters do not become afflicted with @C[1]Dazed@C[0].
+rune	R_RNOAFF_SNARE	All monsters do not become afflicted with @C[1]Snared@C[0].
+rune	R_NOAFF_BERSERK	Your creatures do not become afflicted with @C[1]Berserk@C[0].
+rune	R_RNOAFF_BERSERK	All monsters do not become afflicted with @C[1]Berserk@C[0].
+rune	R_MIGHTY	All your monsters come into play afflicted with @C[1]Mighty@C[0].
+rune	R_GETORFMYLAND	Other players cannot play runes onto your daises.
+rune	R_EXTRA2CARDS	Draw an additional two cards during your upkeep.
+rune	R_EXTRA3CARDS	Draw an additional three cards during your upkeep.
+rune	R_OPENSEASON	You can play runes onto any player's dais. (They behave as if the target player had played them.)
+rune	R_DRAW_ONSPELL	Each time you play a spell# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+rune	R_DRAW_ONRUNE	Each time you play a rune# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+rune	R_DRAW_ONEQUIP	Each time you play some equipment# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+rune	R_DRAW_ONMONSTER	Each time you play a monster# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+rune	R_REFUND_ONSPELL	Each time you play a spell# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health.
+rune	R_REFUND_ONRUNE	Each time you play a rune# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health.
+rune	R_REFUND_ONEQUIP	Each time you play some equipment# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health.
+rune	R_REFUND_ONMONSTER	Each time you play a monster# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health damage.
+rune	R_MONSTER_HUNT	All monsters cost an extra RU_Hunt_Mojo to play.
+rune	R_EQUIP_HUNT	All equipment costs an extra RU_Hunt_Mojo to play.
+rune	R_CARD_HUNT	All cards cost an extra RU_BankersDelight_Mojo to play from hand.
+rune	R_ABUNDANCE	All players draw an additional card during upkeep.
+rune	R_OVERABUNDANCE	All players draw an additional two cards during upkeep.
+rune	R_MONSTER_PUNISHMENT	Whenever an opponent plays a monster# their hero suffers @X[19]@C[6]-2@C[0].
+rune	R_MONSTER_PUNISHMENTMINI	Whenever an opponent plays a monster# their hero suffers @X[19]@C[6]-1@C[0].
+rune	R_EQUIP_PUNISHMENT	Whenever an opponent plays an equip# their hero suffers @X[19]@C[6]-2@C[0].
+rune	R_EQUIP_PUNISHMENTMINI	Whenever an opponent plays an equip# their hero suffers @X[19]@C[6]-1@C[0].
+rune	R_WBUFF_HUMAN	All humans gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_ELF	All elves gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_ORC	All orcs gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_UNDEAD	All zombies gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_LIZARD	All lizards gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_DWARF	All dwarves gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_MINOTAUR	All minotaurs gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_WEREWOLF	All werewolves gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_GOLEM	All golem gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_ELEMENTAL	All elementals gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_CYCLOPS	All cyclops gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_SKELETON	All skeletons gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_ROBOT	All robots gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_IMP	All imps gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_WBUFF_SPECTRE	All spectres gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_RBUFF_HUMAN	All your humans gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_ELF	All your elves gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_ORC	All your orcs gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_UNDEAD	All your zombies gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_LIZARD	All your lizards gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_DWARF	All your dwarves gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_MINOTAUR	All your minotaurs gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_WEREWOLF	All your werewolves gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_GOLEM	All your golem gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_ELEMENTAL	All your elementals gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_CYCLOPS	All your cyclops gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_SKELETON	All your skeletons gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_ROBOT	All your robots gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_IMP	All your imps gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_RBUFF_SPECTRE	All your spectres gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_BOMB_OPPDMG1	Whoever destroys this bomb# all their enemys' monsters suffer SP_Just5_Damage damage.
+rune	R_BOMB_OPPDMG2	Whoever destroys this bomb# all their enemys' monsters suffer SP_Just8_Damage damage.
+rune	R_BOMB_OPPLIFE1	Whoever destroys this bomb# all their enemys' monsters suffer SP_JustMinus3_Health.
+rune	R_BOMB_OPPLIFE2	Whoever destroys this bomb# all their enemys' monsters suffer SP_JustMinus5_Health.
+rune	R_BOMB_SWINDLE	Whoever destroys this bomb# all their enemys' creatures lose all equipment.
+rune	R_BOMB_GOODNEWS	Whoever destroys this bomb# all their creatures gain @C[1]Mighty@C[0]# @C[1]Regen@C[0] and @C[1]Shield@C[0].
+rune	R_BOMB_HEAL1	Whoever destroys this bomb# all their creatures gain SP_Just5_Health.
+rune	R_BOMB_HEAL2	Whoever destroys this bomb# all their creatures gain SP_Just10_Health.
+rune	R_BOMB_PWR1	Whoever destroys this bomb# all their creatures gain SP_Just2_Power.
+rune	R_BOMB_PWR2	Whoever destroys this bomb# all their creatures gain SP_Just4_Power.
+rune	R_BOMB_BADNEWS	Whoever destroys this bomb# all their enemys' creatures suffer @C[1]Dazed@C[0]# @C[1]Snared@C[0] and @C[1]Death Mark@C[0].
+rune	R_BOMB_MOJO1	Whoever destroys this bomb gains SP_Mojo5_Mojo
+rune	R_BOMB_MOJO2	Whoever destroys this bomb gains SP_Mojo8_Mojo
+rune	R_BOMB_MOJO3	Whoever destroys this bomb gains SP_Mojo12_Mojo
+rune	R_BOMB_DRAW1	Whoever destroys this bomb draws three cards.
+rune	R_BOMB_DRAW2	Whoever destroys this bomb draws five cards.
+rune	R_BOMB_DRAW3	Whoever destroys this bomb draws seven cards.
+rune	R_BOMB_REVENGE	Whoever destroys this bomb# all their own creatures suffer SP_Just5_Damage damage.
+rune	R_HB_MINOTRIX	Your Minotrix hero is protected from all bad afflictions.
+rune	R_MHB_MINOTRIX	Your Minotrix hero is protected from all afflictions.
+rune	R_HB_BOOGA	Your Booga hero is protected from all bad afflictions.
+rune	R_MHB_BOOGA	Your Booga hero is protected from all afflictions.
+rune	R_HB_TUT	Your Tut hero is protected from all bad afflictions.
+rune	R_MHB_TUT	Your Tut hero is protected from all afflictions.
+rune	R_RBUFF_VAMPIRE	All your vampires gain RU_Attack2_Power. All other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+rune	R_WBUFF_VAMPIRE	All vampires gain RU_Attack2_Power. All other races suffer RU_AttackMinus1_Power.
+rune	R_MYBUFF_VAMPIRE	All Your vampires gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+rune	R_MY_NOSMASH	Your runes are not affected by rune destruction spells.
+rune	R_NOSMASH	Runes are not affected by rune destruction spells.
+rune	R_HEALTH_REAPER	Your hero gains RU_HealthReaper_Health whenever any monster dies.
+rune	R_MY_HEALTH_REAPER	Your hero gains RU_MyHealthReaper_Health whenever a monster you control dies.
+rune	R_DEBOUNCE_ALL	Monsters are not affected by bounce spells.
+rune	R_DEBOUNCE_THIERS	Enemy monsters are not affected by bounce spells.
+rune	R_DEBOUNCE_MINE	Your monsters are not affected by bounce spells.
+rune	R_DISCARD_PENALTY	For each card a player makes you discard# their hero suffers RU_DiscardPenalty_Health.
+rune	R_HEX	All monsters suffer SP_JustMinus1_Health on their controller's upkeep# and your hero suffers SP_JustMinus2_Health on yours.
+rune	R_CURSE	All monsters suffer SP_Just1_Damage damage on their controller's upkeep# and your hero suffers SP_Just2_Damage damage on yours.
+rune	R_SLYHEX	Enemy monsters suffer SP_JustMinus1_Health on their controller's upkeep# and your hero suffers SP_JustMinus5_Health on yours.
+rune	R_SLYCURSE	Enemy monsters suffer SP_Just1_Damage damage on their controller's upkeep# and your hero suffers SP_Just5_Damage damage on yours.
+rune	R_HERO_HEX	Heroes suffer SP_JustMinus1_Health on their controller's upkeep.
+rune	R_HERO_CURSE	Heroes suffer SP_Just1_Damage damage on their controller's upkeep.
+rune	R_SLYHERO_HEX	Enemy heroes suffer SP_JustMinus1_Health on their controller's upkeep.
+rune	R_SLYHERO_CURSE	Enemy heroes suffer SP_Just1_Damage damage on their controller's upkeep.
+rune	R_HEALING	Monsters gain SP_Just2_Health on their controller's upkeep.
+rune	R_RESTORE	Monsters gain SP_Just1_Health on their controller's upkeep.
+rune	R_MYHEALING	Your monsters gain SP_Just2_Health on your upkeep.
+rune	R_MYRESTORE	Your monsters gain SP_Just1_Health on your upkeep.
+rune	R_HERO_HEALING	Heroes gain SP_Just2_Health on their controller's upkeep.
+rune	R_HERO_RESTORE	Heroes gain SP_Just1_Health on their controller's upkeep.
+rune	R_MYHERO_HEALING	Your hero gains SP_Just2_Health on your upkeep.
+rune	R_MYHERO_RESTORE	Your hero gains SP_Just1_Health on your upkeep.
+rune	R_GRIMREAPER	Whenever you kill a monster: Draw a card# gain RU_Reaper_Mojo# and your hero gains RU_HealthReaper_Health.
+rune	R_NEGLECT	Armour does not recharge during upkeep.
+rune	R_HB_OCULARUS	Your Ocularus hero is protected from all bad afflictions.
+rune	R_HB_KARGADAN	Your Kargadan hero is protected from all bad afflictions.
+rune	R_HB_GRUMSNIK	Your Grumsnik hero is protected from all bad afflictions.
+rune	R_MHB_OCULARUS	Your Ocularus hero is protected from all afflictions.
+rune	R_MHB_KARGADAN	Your Kargadan hero is protected from all afflictions.
+rune	R_MHB_GRUMSNIK	Your Grumsnik hero is protected from all afflictions.
+spell	SP_RUNEBANE	For every rune each enemy has in play# each of their monsters receives SP_runeBane_Damage damage.
+spell	SP_RUNEPAIN	For every rune in play# each enemy monster receives SP_runePain_Damage damage.
+spell	SP_MOJOBOOST	Receive SP_MojoBoost_Mojo for each of your runes in play.
+spell	SP_MOJOTURBO	Receive SP_MojoTurbo_Mojo for every rune in play.
+spell	SP_LAVAVENT	Lava erupts from SP_LavaVent_Count random tiles# dealing SP_LavaVent_Damage damage to any creature stood there.
+spell	SP_ERUPTION	Lava erupts from SP_Eruption_Count random tiles# dealing SP_Eruption_Damage damage to any creature stood there.
+spell	SP_MAGMA	Lava erupts from SP_Magma_Count random tiles# dealing SP_Magma_Damage damage to any creature stood there.
+spell	SP_DISMANTLE	All creatures lose all defensive equipment (shields & armour).
+spell	SP_SEPARATE	All enemy creatures lose all defensive equipment (shields & armour).
+spell	SP_CORROSION	All creatures lose all weapon upgrades.
+spell	SP_CRUMBLE	All enemy creatures lose all weapon upgrades.
+spell	SP_TORNADO	Move one enemy monster to a random position up to SP_Hurricane_MaxRange spaces away.
+spell	SP_HURRICANE	Move one enemy hero to a random position up to SP_Hurricane_MaxRange spaces away.
+spell	SP_SWINDLE	All enemy heroes lose all equipment.
+spell	SP_MULLIGAN	Discard your hand# then draw 4 new cards.
+spell	SP_RUNEFULLRAND	Randomly reassign control of all runes in play.
+spell	SP_RUNESLEFT	All players pass their runes to the player on their left.
+spell	SP_RUNESRIGHT	All players pass their runes to the player on their right.
+spell	SP_NEXTSPELL	Draw the next spell in your deck. (If there is one.)
+spell	SP_NEXTRUNE	Draw the next rune in your deck. (If there is one.)
+spell	SP_NEXTMONSTER	Draw the next monster in your deck. (If there is one.)
+spell	SP_NEXTWEAPON	Draw the next weapon in your deck. (If there is one.)
+spell	SP_NEXTARMOUR	Draw the next armour in your deck. (If there is one.)
+spell	SP_NEXTSHIELD	Draw the next shield in your deck. (If there is one.)
+spell	SP_ALLDISC_RUNES	All players discard all rune cards from their hand.
+spell	SP_ALLDISC_SPELLS	All players discard all spell cards from their hand.
+spell	SP_ALLDISC_MONSTERS	All players discard all monster cards from their hand.
+spell	SP_ALLDISC_EQUIPMENT	All players discard all equipment cards from their hand.
+spell	SP_ALLDISC_ALL	All players discard their hand.
+spell	SP_SLYDISC_RUNES	All opponents discard all rune cards from their hand. Your hero suffers SP_JustMinus1_Health for each card discarded.
+spell	SP_SLYDISC_SPELLS	All opponents discard all spell cards from their hand. Your hero suffers SP_JustMinus1_Health for each card discarded.
+spell	SP_SLYDISC_MONSTERS	All opponents discard all monster cards from their hand. Your hero suffers SP_JustMinus1_Health for each card discarded.
+spell	SP_SLYDISC_EQUIPMENT	All opponents discard all equipment cards from their hand. Your hero suffers SP_JustMinus1_Health for each card discarded.
+spell	SP_SLYDISC_ALL	All opponents discard their hand. Your hero suffers SP_JustMinus1_Health for each card discarded.
+spell	SP_DISCARD1	All players discard 1 card at random from their hand.
+spell	SP_DISCARD3	All players discard 3 cards at random from their hand.
+spell	SP_SLYDISCARD1	All opponents discard 1 card at random from their hand. Your hero suffers SP_JustMinus1_Health for each card discarded.
+spell	SP_SLYDISCARD3	All opponents discard 3 cards at random from their hand. Your hero suffers SP_JustMinus1_Health for each card discarded.
+spell	SP_M_AFF_STUN	All monsters become afflicted with @C[1]Dazed@C[0].
+spell	SP_M_AFF_MIGHTY	All monsters become afflicted with @C[1]Mighty@C[0].
+spell	SP_M_AFF_BERSERK	All monsters become afflicted with @C[1]Berserk@C[0] and cannot attack this turn.
+spell	SP_M_AFF_SNARED	All monsters become afflicted with @C[1]Snared@C[0].
+spell	SP_M_AFF_REGEN	All monsters become afflicted with @C[1]Regen@C[0].
+spell	SP_M_AFF_DEATHMARK	All monsters become afflicted with @C[1]Death Mark@C[0].
+spell	SP_M_AFF_ICEBLOCK	All monsters become afflicted with @C[1]Ice Block@C[0].
+spell	SP_M_AFF_FLAME	All monsters become afflicted with @C[1]Flame@C[0].
+spell	SP_M_AFF_VENGEANCE	All monsters become afflicted with @C[1]Vengeance@C[0].
+spell	SP_M_AFF_MAGICSHIELD	All monsters become afflicted with @C[1]Magic shield@C[0].
+spell	SP_SM_AFF_STUN	All enemy monsters become afflicted with @C[1]Dazed@C[0].
+spell	SP_SM_AFF_MIGHTY	All enemy monsters become afflicted with @C[1]Mighty@C[0].
+spell	SP_SM_AFF_BERSERK	All enemy monsters become afflicted with @C[1]Berserk@C[0].
+spell	SP_SM_AFF_SNARED	All enemy monsters become afflicted with @C[1]Snared@C[0].
+spell	SP_SM_AFF_REGEN	All enemy monsters become afflicted with @C[1]Regen@C[0].
+spell	SP_SM_AFF_DEATHMARK	All enemy monsters become afflicted with @C[1]Death Mark@C[0].
+spell	SP_SM_AFF_ICEBLOCK	All enemy monsters become afflicted with @C[1]Ice Block@C[0].
+spell	SP_SM_AFF_FLAME	All enemy monsters become afflicted with @C[1]Flame@C[0].
+spell	SP_SM_AFF_VENGEANCE	All enemy monsters become afflicted with @C[1]Vengeance@C[0].
+spell	SP_SM_AFF_MAGICSHIELD	All enemy monsters become afflicted with @C[1]Magic shield@C[0].
+spell	SP_KILL_AFF_STUN	Destroy all monsters afflicted with @C[1]Dazed@C[0].
+spell	SP_KILL_AFF_MIGHTY	Destroy all monsters afflicted with @C[1]Mighty@C[0].
+spell	SP_KILL_AFF_BERSERK	Destroy all monsters afflicted with @C[1]Berserk@C[0].
+spell	SP_KILL_AFF_SNARED	Destroy all monsters afflicted with @C[1]Snared@C[0].
+spell	SP_KILL_AFF_REGEN	Destroy all monsters afflicted with @C[1]Regen@C[0].
+spell	SP_KILL_AFF_DEATHMARK	Destroy all monsters afflicted with @C[1]Death Mark@C[0].
+spell	SP_KILL_AFF_FLAME	Destroy all monsters afflicted with @C[1]Flame@C[0].
+spell	SP_KILL_AFF_VENGEANCE	Destroy all monsters afflicted with @C[1]Vengeance@C[0].
+spell	SP_KILL_AFF_MAGICSHIELD	Destroy all monsters afflicted with @C[1]Magic shield@C[0].
+spell	SP_KILL_AFF_ALL	Destroy all afflicted monsters.
+spell	SP_SLYKILL_AFF_STUN	Destroy all enemy monsters afflicted with @C[1]Dazed@C[0].
+spell	SP_SLYKILL_AFF_MIGHTY	Destroy all enemy monsters afflicted with @C[1]Mighty@C[0].
+spell	SP_SLYKILL_AFF_BERSERK	Destroy all enemy monsters afflicted with @C[1]Berserk@C[0].
+spell	SP_SLYKILL_AFF_SNARED	Destroy all enemy monsters afflicted with @C[1]Snared@C[0].
+spell	SP_SLYKILL_AFF_REGEN	Destroy all enemy monsters afflicted with @C[1]Regen@C[0].
+spell	SP_SLYKILL_AFF_DEATHMARK	Destroy all enemy monsters afflicted with @C[1]Death Mark@C[0].
+spell	SP_SLYKILL_AFF_FLAME	Destroy all enemy monsters afflicted with @C[1]Flame@C[0].
+spell	SP_SLYKILL_AFF_VENGEANCE	Destroy all enemy monsters afflicted with @C[1]Vengeance@C[0].
+spell	SP_SLYKILL_AFF_MAGICSHIELD	Destroy all enemy monsters afflicted with @C[1]Magic shield@C[0].
+spell	SP_SLYKILL_AFF_ALL	Destroy all afflicted enemy monsters.
+spell	SP_FIZZLE	Does nothing.
+spell	SP_WISH_MONSTER	Pick any monster you own# reveal it and place it in your hand.
+spell	SP_WISH_SPELL	Pick any spell you own# reveal it and place it in your hand.
+spell	SP_WISH_RUNE	Pick any rune you own# reveal it and place it in your hand.
+spell	SP_WISH_ARMOUR	Pick any piece of armour you own# reveal it and place it in your hand.
+spell	SP_WISH_SHIELD	Pick any shield you own# reveal it and place it in your hand.
+spell	SP_WISH_WEAPON	Pick any weapon you own# reveal it and place it in your hand.
+spell	SP_WISHRAND_MONSTER	Draw and reveal a random monster from your collection.
+spell	SP_WISHRAND_SPELL	Draw and reveal a random spell from your collection.
+spell	SP_WISHRAND_RUNE	Draw and reveal a random rune from your collection.
+spell	SP_WISHRAND_ARMOUR	Draw and reveal a random piece of armour from your collection.
+spell	SP_WISHRAND_SHIELD	Draw and reveal a random shield from your collection.
+spell	SP_WISHRAND_WEAPON_ANY	Draw and reveal a random weapon from your collection.
+spell	SP_WISHRAND_WEAPON_WARRIOR	Draw and reveal a random warrior weapon from your collection.
+spell	SP_WISHRAND_WEAPON_ARCHER	Draw and reveal a random archer weapon from your collection.
+spell	SP_WISHRAND_WEAPON_MAGE	Draw and reveal a random mage weapon from your collection.
+spell	SP_MOJO_DOUBLER	Double your remaining Mojo. Your hero suffers @X[19]@C[6]-X@C[0]# where X is the amount of mojo gained.
+spell	SP_MOJO_TRIPLER	Triple your remaining Mojo. Your hero suffers @X[19]@C[6]-X@C[0]# where X is the amount of mojo gained.
+spell	SP_HERO_HEALTH_M1	Your hero receives SP_heroHealth1_Health for each Mojo remaining. (Capped at 8)
+spell	SP_HERO_HEALTH_M2	Your hero receives SP_heroHealth2_Health for each Mojo remaining. (Capped at 12)
+spell	SP_BOUNCE_YOU_DWARF	All you dwarves are returned to your hand. (Includes carried equipment.)
+spell	SP_ABSORB_YOU_1	Your hero absorbs SP_Just1_AbsHealth from each of your monsters.
+spell	SP_ABSORB_YOU_2	Your hero absorbs up to SP_Just2_AbsHealth from each of your monsters.
+spell	SP_ABSORB_YOU_3	Your hero absorbs up to SP_Just3_AbsHealth from each of your monsters.
+spell	SP_SPIKE1	Each of your monsters drains SP_JustMinus2_Health from your hero to gain SP_Just1_Power.
+spell	SP_SPIKE2	Each of your monsters drains SP_JustMinus1_Health from your hero to gain SP_Just1_Power.
+spell	SP_SPIKE3	Each of your monsters drains SP_JustMinus3_Health from your hero to gain SP_Just2_Power.
+spell	SP_RUNE_MUNGE1	All runes set to @X[19]@C[6]1@C[0].
+spell	SP_RUNE_MUNGE2	All enemy runes set to @X[19]@C[6]1@C[0].
+spell	SP_RUNE_MUNGE3	Your runes get SP_runeBoon_Health.
+spell	SP_RUNE_MUNGE4	All runes get SP_runeBoon_Health.
+spell	SP_RUNE_MUNGE5	Your runes get SP_GreatruneBoon_Health.
+spell	SP_RUNE_MUNGE6	All runes get SP_GreatruneBoon_Health.
+spell	SP_MYRUNESMASH	Destroy all your own runes.
+spell	SP_KILLMONS_BIG	Destroy all monsters with SP_KillAllMonsMax_AbsHealth or more.
+spell	SP_KILLMONS_SMALL	Destroy all monsters with SP_KillAllMonsMin_AbsHealth or less.
+spell	SP_KILL_AFF_ICEBLOCK	Destroy all monsters afflicted with @C[1]Ice Block@C[0].
+spell	SP_SLYKILL_AFF_ICEBLOCK	Destroy all enemy monsters afflicted with @C[1]Ice Block@C[0].
+spell	SP_WISHRAND_WEAPON_ART	Draw and reveal a random artillery weapon from your collection.
+spell	SPT_TERMINATE	Destroy target monster.
+spell	SPT_BOUNCE	Target monster is returned to it's owner's hand. (Includes carried equipment.)
+spell	SPT_DISMANTLE	Target monster loses all defensive equipment (shields & armour).
+spell	SPT_CORROSION	Target monster loses any weapon upgrades.
+spell	SPT_DENUDE	Target monster loses all equipment.
+spell	SPT_HAFF_STUN	Target hero becomes afflicted with @C[1]Dazed@C[0].
+spell	SPT_HAFF_MIGHTY	Target hero becomes afflicted with @C[1]Mighty@C[0].
+spell	SPT_HAFF_BERSERK	Target hero becomes afflicted with @C[1]Berserk@C[0].
+spell	SPT_HAFF_SNARED	Target hero becomes afflicted with @C[1]Snared@C[0].
+spell	SPT_HAFF_REGEN	Target hero becomes afflicted with @C[1]Regen@C[0].
+spell	SPT_HAFF_DEATHMARK	Target hero becomes afflicted with @C[1]Death Mark@C[0].
+spell	SPT_HAFF_ICEBLOCK	Target hero becomes afflicted with @C[1]Ice Block@C[0].
+spell	SPT_HAFF_FLAME	Target hero becomes afflicted with @C[1]Flame@C[0].
+spell	SPT_HAFF_VENGEANCE	Target hero becomes afflicted with @C[1]Vengeance@C[0].
+spell	SPT_HAFF_MAGICSHIELD	Target hero becomes afflicted with @C[1]Magic shield@C[0].
+spell	SPT_CAFF_STUN	Target creature becomes afflicted with @C[1]Dazed@C[0].
+spell	SPT_CAFF_MIGHTY	Target creature becomes afflicted with @C[1]Mighty@C[0].
+spell	SPT_CAFF_BERSERK	Target creature becomes afflicted with @C[1]Berserk@C[0].
+spell	SPT_CAFF_SNARED	Target creature becomes afflicted with @C[1]Snared@C[0].
+spell	SPT_CAFF_REGEN	Target creature becomes afflicted with @C[1]Regen@C[0].
+spell	SPT_CAFF_DEATHMARK	Target creature becomes afflicted with @C[1]Death Mark@C[0].
+spell	SPT_CAFF_ICEBLOCK	Target creature becomes afflicted with @C[1]Ice Block@C[0].
+spell	SPT_CAFF_FLAME	Target creature becomes afflicted with @C[1]Flame@C[0].
+spell	SPT_CAFF_VENGEANCE	Target creature becomes afflicted with @C[1]Vengeance@C[0].
+spell	SPT_CAFF_MAGICSHIELD	Target creature becomes afflicted with @C[1]Magic shield@C[0].
+spell	SPT_SMASH	Destroy target rune.
+spell	SPT_2NDWIND	Target monster takes another turn.
+spell	SPT_SLYCURE	Target creature loses all bad afflictions.
+spell	SPT_UNCURE	Target creature loses all good afflictions.
+spell	SPT_SHATTER	Target creature loses all afflictions.
+spell	SPT_ABSORB	Your hero gains the health of target monster.
+spell	SPT_SPIKE	Target monster drains SP_JustMinus5_Health from your hero to gain SP_Just5_Power.
+spell	SP_EXPUNGE_ALL	Destroy all monsters that are on any special map tile.
+spell	SP_EXPUNGE_MOJO	Destroy all monsters that are on a mojo map tile.
+spell	SP_EXPUNGE_PWR	Destroy all monsters that are on a power map tile.
+spell	SP_EXPUNGE_ARM	Destroy all monsters that are on an armour map tile.
+spell	SP_EXPUNGE_DRAW	Destroy all monsters that are on a card draw map tile.
+spell	SP_EXPUNGE_REGEN	Destroy all monsters that are on a regen map tile.
+spell	SP_SHATTER_HERO_ALL	All heroes lose all afflictions.
+spell	SP_SHATTER_HERO_ENEMYGOOD	All enemy heroes lose all good afflictions.
+spell	SP_SHATTER_HERO_MYBAD	All friendly heroes lose all bad afflictions.
+spell	SP_BOUNCEALL_REGEN	All monsters afflicted with @C[1]Regen@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_VENGEANCE	All monsters afflicted with @C[1]Vengeance@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_FLAME	All monsters afflicted with @C[1]Flame@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_STUN	All monsters afflicted with @C[1]Dazed@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_MIGHTY	All monsters afflicted with @C[1]Mighty@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_BERSERK	All monsters afflicted with @C[1]Berserk@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_SNARED	All monsters afflicted with @C[1]Snared@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_ICEBLOCK	All monsters afflicted with @C[1]Ice Block@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_DEATHMARK	All monsters afflicted with @C[1]Death Mark@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCEALL_MAGICSHIELD	All monsters afflicted with @C[1]Magic shield@C[0] are returned to their owners hands. (Includes carried equipment.)
+spell	SP_BOUNCESLY_REGEN	All enemy monsters afflicted with @C[1]Regen@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_VENGEANCE	All enemy monsters afflicted with @C[1]Vengeance@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_FLAME	All enemy monsters afflicted with @C[1]Flame@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_STUN	All enemy monsters afflicted with @C[1]Dazed@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_MIGHTY	All enemy monsters afflicted with @C[1]Mighty@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_BERSERK	All enemy monsters afflicted with @C[1]Berserk@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_SNARED	All enemy monsters afflicted with @C[1]Snared@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_ICEBLOCK	All enemy monsters afflicted with @C[1]Ice Block@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_DEATHMARK	All enemy monsters afflicted with @C[1]Death Mark@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SP_BOUNCESLY_MAGICSHIELD	All enemy monsters afflicted with @C[1]Magic shield@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce. (Includes carried equipment.)
+spell	SPT_DRAW1	Target player draws 1 card. (Target their hero.)
+spell	SPT_DRAW2	Target player draws 2 cards. (Target their hero.)
+spell	SPT_DRAW3	Target player draws 3 cards. (Target their hero.)

@@ -1,0 +1,133 @@
+
+### CRuneDaisList::GetRuneDaisIsTargetableByMe(tHEXLOC&, eTeam) 0x1d5eb0 228
+001d5eb0: ldr      r3, [pc, #0xd4]
+001d5eb4: push     {r4, r5, r6, r7, r8, sb, lr}
+001d5eb8: ldr      r3, [pc, r3]
+001d5ebc: sub      sp, sp, #0xc
+001d5ec0: mov      r7, r0
+001d5ec4: ldr      r0, [r3]
+001d5ec8: mov      r6, r1
+001d5ecc: mov      r8, r2
+001d5ed0: bl       #0x148978 ; CGame::GetBattle()
+001d5ed4: subs     r5, r0, #0
+001d5ed8: beq      #0x1d5f28
+001d5edc: bl       #0x10e2ac ; CBattle::GetTileItemMgr()
+001d5ee0: mov      r4, r0
+001d5ee4: mov      r0, r5
+001d5ee8: bl       #0x10e158 ; CBattle::GetMap()
+001d5eec: add      r5, sp, #4
+001d5ef0: mov      r1, r6
+001d5ef4: mov      sb, r0
+001d5ef8: mov      r0, r5
+001d5efc: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+001d5f00: mov      r2, r5
+001d5f04: mov      r1, sb
+001d5f08: mov      r0, r4
+001d5f0c: bl       #0x209fd8 ; CTileItemMgr::GetItemsAt(CMap*, tHEXLOC) const
+001d5f10: mov      r5, r0
+001d5f14: mov      r0, r4
+001d5f18: mov      r1, r5
+001d5f1c: bl       #0x20ad38 ; CTileItemMgr::ItemsCanHoldCard(unsigned int) const
+001d5f20: cmp      r0, #0
+001d5f24: bne      #0x1d5f34
+001d5f28: mov      r0, #0
+001d5f2c: add      sp, sp, #0xc
+001d5f30: pop      {r4, r5, r6, r7, r8, sb, pc}
+001d5f34: mov      r1, r6
+001d5f38: mov      r0, r7
+001d5f3c: bl       #0x1d5e60 ; CRuneDaisList::GetTeamThatOwnsDaisAtLocation(tHEXLOC&)
+001d5f40: mov      r1, r8
+001d5f44: mov      r4, r0
+001d5f48: mov      r0, r7
+001d5f4c: mov      r2, r4
+001d5f50: bl       #0x1d3bd8 ; CRuneDaisList::GetTeamCanPlayRuneOnTeamsDais(eTeam, eTeam)
+001d5f54: cmp      r0, #0
+001d5f58: bne      #0x1d5f70
+001d5f5c: cmp      r4, #5
+001d5f60: ldrls    r3, [pc, #0x28]
+001d5f64: addls    r3, pc, r3
+001d5f68: ldrls    r1, [r3, r4, lsl #2]
+001d5f6c: bls      #0x1d5f74
+001d5f70: mov      r1, #0xfc00000
+001d5f74: mov      r0, r5
+001d5f78: bl       #0x20a2e0 ; CTileItemMgr::TestItemType(unsigned int, eTileItemType)
+001d5f7c: adds     r0, r0, #0
+001d5f80: movne    r0, #1
+001d5f84: add      sp, sp, #0xc
+001d5f88: pop      {r4, r5, r6, r7, r8, sb, pc}
+
+### CTileItem_RuneDais::CTileItem_RuneDais(eTileItemType, tHEXLOC, int) 0x20bf88 144
+0020bf88: push     {r4, r5, r6, r7, r8, lr}
+0020bf8c: sub      sp, sp, #0x10
+0020bf90: add      r6, sp, #0xc
+0020bf94: mov      r4, r0
+0020bf98: mov      r7, r1
+0020bf9c: mov      r1, r2
+0020bfa0: mov      r0, r6
+0020bfa4: mov      r8, r3
+0020bfa8: mov      r5, #6
+0020bfac: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020bfb0: mov      r2, r6
+0020bfb4: str      r8, [sp, #4]
+0020bfb8: mov      r1, r7
+0020bfbc: mov      r0, r4
+0020bfc0: str      r5, [sp]
+0020bfc4: mvn      r3, #0
+0020bfc8: bl       #0x2098d8 ; CTileItem::CTileItem(eTileItemType, tHEXLOC, int, eTeam, int)
+0020bfcc: ldr      r2, [pc, #0x40]
+0020bfd0: mov      r3, #0
+0020bfd4: mov      r0, r4
+0020bfd8: ldr      r2, [pc, r2]
+0020bfdc: str      r5, [r4, #0x84]
+0020bfe0: add      r2, r2, #8
+0020bfe4: str      r5, [r4, #0x88]
+0020bfe8: str      r3, [r4, #0x34]
+0020bfec: str      r2, [r4]
+0020bff0: str      r3, [r4, #0x38]
+0020bff4: str      r3, [r4, #0x3c]
+0020bff8: str      r3, [r4, #0x40]
+0020bffc: str      r3, [r4, #0x54]
+0020c000: str      r3, [r4, #0x78]
+0020c004: str      r3, [r4, #0x7c]
+0020c008: str      r3, [r4, #0x80]
+0020c00c: add      sp, sp, #0x10
+0020c010: pop      {r4, r5, r6, r7, r8, pc}
+0020c014: eoreq    lr, r2, ip, lsr #20
+
+### CTileItem_RuneDais::CTileItem_RuneDais(eTileItemType, tHEXLOC, int) 0x20bf88 144
+0020bf88: push     {r4, r5, r6, r7, r8, lr}
+0020bf8c: sub      sp, sp, #0x10
+0020bf90: add      r6, sp, #0xc
+0020bf94: mov      r4, r0
+0020bf98: mov      r7, r1
+0020bf9c: mov      r1, r2
+0020bfa0: mov      r0, r6
+0020bfa4: mov      r8, r3
+0020bfa8: mov      r5, #6
+0020bfac: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020bfb0: mov      r2, r6
+0020bfb4: str      r8, [sp, #4]
+0020bfb8: mov      r1, r7
+0020bfbc: mov      r0, r4
+0020bfc0: str      r5, [sp]
+0020bfc4: mvn      r3, #0
+0020bfc8: bl       #0x2098d8 ; CTileItem::CTileItem(eTileItemType, tHEXLOC, int, eTeam, int)
+0020bfcc: ldr      r2, [pc, #0x40]
+0020bfd0: mov      r3, #0
+0020bfd4: mov      r0, r4
+0020bfd8: ldr      r2, [pc, r2]
+0020bfdc: str      r5, [r4, #0x84]
+0020bfe0: add      r2, r2, #8
+0020bfe4: str      r5, [r4, #0x88]
+0020bfe8: str      r3, [r4, #0x34]
+0020bfec: str      r2, [r4]
+0020bff0: str      r3, [r4, #0x38]
+0020bff4: str      r3, [r4, #0x3c]
+0020bff8: str      r3, [r4, #0x40]
+0020bffc: str      r3, [r4, #0x54]
+0020c000: str      r3, [r4, #0x78]
+0020c004: str      r3, [r4, #0x7c]
+0020c008: str      r3, [r4, #0x80]
+0020c00c: add      sp, sp, #0x10
+0020c010: pop      {r4, r5, r6, r7, r8, pc}
+0020c014: eoreq    lr, r2, ip, lsr #20

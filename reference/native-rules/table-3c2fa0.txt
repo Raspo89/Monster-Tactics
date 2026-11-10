@@ -1,0 +1,44 @@
+Tag Name,Rarity,Mojo,Name,Short Name,Model Name,Texture Name,Armour,Perk 1,Value,Perk 2,Value,Flavour,Shield Class
+,,,,,,,,,,,,,
+S_WOOD,C,1,Wooden Shield ,Wooden,Round/shield_round,Round/shield_round_wood,1,BC_NONE,0,BC_NONE,0,SHEILD_WOOD,BSC_WOOD
+S_RUNIC,R,5,Runic Shield,Runic,Scutum/shield_scutum,Scutum/Shield_scutum,2,BC_MANA,2,BC_POWER,-2,SHEILD_RUNIC,BSC_METAL
+S_BULWARK,C,2,Steel Bulwark,Bulwark,Round/shield_round,Round/shield_round,2,BC_NONE,0,BC_NONE,0,SHEILD_BULWARK,BSC_WOOD
+S_GLASS,C,4,Defender,Defender,Octagon/shield_octagon,octagon/shield_octagon_02,4,BC_NONE,0,BC_NONE,0,SHEILD_DEFENDER,BSC_METAL
+S_NIGHTMARE,C,4,Nightmare,Nightmare,Octagon/shield_octagon,octagon/shield_octagon_03,2,BC_NONE,0,BC_POWER,3,SHEILD_NIGHTMARE,BSC_METAL
+S_VOODOO,C,3,Voodoo Protector,Voodoo,Greek/shield_greek,greek/shield_greek_03,1,BC_HEALTH,4,BC_NONE,0,SHEILD_VOODOO,BSC_WOOD
+S_HEROIC,U,5,Heroic Shield,Heroic,Heater/shield_heater,Heater/Shield_heater_glass,4,BC_NONE,0,BC_POWER,1,SHEILD_HEROIC,BSC_METAL
+S_REINFORCED,U,5,Tough Shield,Tough,Scutum/shield_scutum,Scutum/Shield_scutum_02,5,BC_NONE,0,BC_NONE,0,SHEILD_REINFORCED,BSC_METAL
+S_BULLSEYE,U,2,Bullseye,Bullseye,Round/shield_round,Round/shield_round_02,4,BC_HEALTH,-4,BC_NONE,0,SHEILD_BULLSEYE,BSC_METAL
+S_FORTRESS,L,5,Fortress,Fortress,fortress/shield_fortress,fortress/shield_fortress,7,BC_NONE,0,BC_NONE,0,SHEILD_FORTRESS,BSC_METAL
+S_DEATH,R,3,Death Shield,Death,Heater/shield_heater,Heater/Shield_heater_02,2,BC_HEALTH,-3,BC_POWER,2,SHEILD_DEATH,BSC_METAL
+S_NIGHTSTALKER,R,6,NightStalker Shield,Stalker,Greek/shield_greek,greek/shield_greek,5,BC_NONE,0,BC_POWER,3,SHEILD_NIGHT_STALKER,BSC_WOOD
+S_SPARTAN,C,2,Spartan,Spartan,Greek/shield_greek,greek/shield_greek_02,1,BC_NONE,0,BC_POWER,1,SHEILD_SPARTAN,BSC_WOOD
+S_RUBI,U,3,Rubi Shield,Rubi,Heater/shield_heater,Heater/Shield_heater,5,BC_MANA,-1,BC_NONE,0,SHEILD_RUBI,BSC_METAL
+S_NEW,U,3,Glass Shield ,Glass,badge/shield_badge,badge/Shield_badge,1,BC_MANA,1,BC_POWER,-1,SHEILD_GLASS,BSC_METAL
+S_NEW_02,C,4,Bouncer,Bouncer,badge/shield_badge,badge/Shield_badge_02,3,BC_NONE,0,BC_POWER,2,SHEILD_BOUNCER,BSC_METAL
+S_NEW01,C,3,Pretty Shield,Pretty,Octagon/shield_octagon,octagon/shield_octagon,2,BC_HEALTH,2,BC_NONE,0,SHEILD_NEW01,BSC_METAL
+S_NEW02,L,4,Shield of No Death,Death Proof,Electric/shield_electric,electric/shield_electric,5,BC_HEALTH,2,BC_PROT_DEATHMARK,0,SHEILD_NEW02,BSC_METAL
+S_NEW03,L,4,Shield of No Flame,Flame Proof,Electric/shield_fire,electric/shield_fire,5,BC_HEALTH,2,BC_PROT_FLAME,0,SHEILD_NEW03,BSC_METAL
+S_NEW04,U,6,Rock Shield,Rock,spikey/shield_spikey,spikey/shield_spikey,5,BC_HEALTH,1,BC_NONE,0,SHEILD_NEW04,BSC_METAL
+S_NEW05,U,5,Turtle Shield,Turtle,spikey/shield_spikey,spikey/shield_spikey_02,3,BC_HEALTH,5,BC_NONE,0,SHEILD_NEW05,BSC_METAL
+S_NEW06,C,2,Barricade,Barricade,wood/shield_wood,wood/shield_wood,2,BC_NONE,0,BC_NONE,0,SHEILD_NEW06,BSC_WOOD
+S_NEW07,L,4,Shield of No Ice Block,Ice Proof,Electric/shield_spark,electric/shield_spark,5,BC_HEALTH,2,BC_PROT_ICEBLOCK,0,SHEILD_NEW07,BSC_METAL
+S_NEW08,L,5,Ultimate Shield,Ultimate,spikey/shield_spikey,spikey/shield_spikey_03,4,BC_HEALTH,5,BC_POWER,2,SHEILD_NEW08,BSC_METAL
+S_NEW09,C,2,Paper Shield ,Paper,Round/shield_round,Round/shield_round_paper,1,BC_HEALTH,2,BC_NONE,0,SHEILD_NEW09,BSC_WOOD
+S_NEW10,U,2,Cheap Shield ,Cheap,cheap/shield_cheap,cheap/shield_cheap,2,BC_HEALTH,1,BC_NONE,0,SHEILD_NEW10,BSC_METAL
+S_NEW11,U,1,Silver Shield ,Silver,cheap/shield_cheap,cheap/shield_cheap_02,1,BC_HEALTH,1,BC_NONE,0,SHEILD_NEW11,BSC_METAL
+S_NEW12,R,4,Laurel Shield ,Laurel,cheap/shield_cheap,cheap/shield_cheap_03,3,BC_PROT_DEATHMARK,0,BC_NONE,0,SHEILD_NEW12,BSC_METAL
+S_NEW13,R,3,Anti-Daze,Anti-Daze,protect/shield_protect_05,protect/shield_protect_05,2,BC_HEALTH,4,BC_PROT_STUN,0,SHEILD_NEW14,BSC_METAL
+S_NEW14,R,3,Anti-Death,Anti-Death,protect/shield_protect_02,protect/shield_protect_02,2,BC_HEALTH,4,BC_PROT_DEATHMARK,0,SHEILD_NEW14,BSC_METAL
+S_NEW15,R,5,Lead Shield ,Lead,cheap/shield_cheap,cheap/shield_cheap_04,3,BC_PROT_STUN,0,BC_PROT_FLAME,0,SHEILD_NEW15,BSC_METAL
+S_NEW16,L,4,Shield of No Snare,Snare Proof,Electric/shield_snare,electric/shield_snare,5,BC_HEALTH,2,BC_PROT_SNARE,0,SHEILD_NEW16,BSC_METAL
+S_NEW17,L,4,Shield of No Dazed,Daze Proof,Electric/shield_stun,electric/shield_stun,5,BC_HEALTH,2,BC_PROT_STUN,0,SHEILD_NEW17,BSC_METAL
+S_NEW18,R,3,Anti-Snare,Anti-Snare,protect/shield_protect_03,protect/shield_protect_03,2,BC_HEALTH,4,BC_PROT_SNARE,0,SHEILD_NEW18,BSC_METAL
+S_NEW19,R,3,Anti-Freeze,Anti-Freeze,protect/shield_protect_04,protect/shield_protect_04,2,BC_HEALTH,4,BC_PROT_ICEBLOCK,0,SHEILD_NEW19,BSC_METAL
+S_NEW20,R,3,Anti-Flame,Anti-Flame,protect/shield_protect,protect/shield_protect,2,BC_HEALTH,4,BC_PROT_FLAME,0,SHEILD_NEW20,BSC_METAL
+S_NOAFF1,L,4,Shield of Health Magic,Health Magic,Lozenge/shield_lozenge,Lozenge/Shield_lozenge,4,BC_HEALTH,6,BC_PROT_BAD,0,SHEILD_HEALTHMAGIC,BSC_METAL
+S_NOAFF2,L,5,Shield of Mojo Magic,Mojo Magic,Lozenge/shield_lozenge,Lozenge/Shield_lozenge_02,3,BC_MANA,2,BC_PROT_BAD,0,SHEILD_MOJOMAGIC,BSC_METAL
+S_NOAFF3,L,0,Shield of Nothing,Nothing,German/shield_german,German/Shield_german,0,BC_NONE,0,BC_NONE,0,SHEILD_BLANK,BSC_METAL
+S_NOAFF4,U,3,Basic Shield,Basic,German/shield_german,German/Shield_german_02,3,BC_NONE,0,BC_NONE,0,SHEILD_BASIC,BSC_METAL
+S_NOAFF5,R,5,Mojo Ward Shield,Mojo Ward,War/shield_war,War/Shield_war,2,BC_MANA,1,BC_PROT_ALL,0,SHEILD_MOJOWARD,BSC_METAL
+S_NOAFF6,R,5,Power Ward Shield,Power Ward,War/shield_war,War/Shield_war_02,2,BC_PROT_ALL,0,BC_POWER,3,SHEILD_POWERWARD,BSC_METAL

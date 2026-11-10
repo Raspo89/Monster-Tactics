@@ -1,0 +1,319 @@
+
+### CTileItem_RuneDais::TriggerAction(tITEMACTION&) 0x20cf98 1268
+0020cf98: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0020cf9c: mov      r4, r0
+0020cfa0: ldr      r6, [pc, #0x4d0]
+0020cfa4: sub      sp, sp, #0x3c
+0020cfa8: ldr      r3, [r1, #0x40]
+0020cfac: mov      r5, r1
+0020cfb0: ldr      r2, [pc, #0x4c4]
+0020cfb4: add      r6, pc, r6
+0020cfb8: str      r3, [r0, #0x80]
+0020cfbc: ldr      r7, [r6, r2]
+0020cfc0: ldr      r0, [r7]
+0020cfc4: bl       #0x148978 ; CGame::GetBattle()
+0020cfc8: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+0020cfcc: str      r0, [r4, #0x84]
+0020cfd0: mov      r0, r4
+0020cfd4: bl       #0x20c018 ; CTileItem_RuneDais::GetDaisTeam()
+0020cfd8: str      r0, [r4, #0x88]
+0020cfdc: ldr      r1, [r5]
+0020cfe0: sub      r3, r1, #5
+0020cfe4: cmp      r3, #6
+0020cfe8: addls    pc, pc, r3, lsl #2
+0020cfec: b        #0x20d160 ; 
+0020cff0: b        #0x20d00c ; 
+0020cff4: b        #0x20d00c ; 
+0020cff8: b        #0x20d168 ; 
+0020cffc: b        #0x20d168 ; 
+0020d000: b        #0x20d288 ; 
+0020d004: b        #0x20d390 ; 
+0020d008: b        #0x20d390 ; 
+0020d00c: ldr      r0, [r5, #4]
+0020d010: mov      r3, #1
+0020d014: ldr      r1, [r5, #0x20]
+0020d018: ldr      r2, [r5, #0x24]
+0020d01c: bl       #0x133708 ; CCharacterMin::GetPower(CRuneDaisList*, CAIBattleState*, int)
+0020d020: subs     sl, r0, #0
+0020d024: ble      #0x20d3c8
+0020d028: add      r0, sp, #0x28
+0020d02c: add      r8, sp, #0x14
+0020d030: bl       #0x15ae20 ; tHEXLOC::tHEXLOC()
+0020d034: ldr      r3, [r4, #8]
+0020d038: mov      r0, r4
+0020d03c: add      r2, sp, #0x24
+0020d040: str      r2, [sp, #0xc]
+0020d044: add      sb, r4, #8
+0020d048: str      r3, [sp, #0x28]
+0020d04c: bl       #0x20c018 ; CTileItem_RuneDais::GetDaisTeam()
+0020d050: ldr      fp, [r5, #0x20]
+0020d054: mov      r1, sb
+0020d058: str      r0, [sp, #0x2c]
+0020d05c: mov      r0, r8
+0020d060: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d064: mov      r1, r8
+0020d068: mov      r0, fp
+0020d06c: bl       #0x1d2a44 ; CRuneDaisList::GetRuneType(tHEXLOC)
+0020d070: mov      r1, sb
+0020d074: ldr      sb, [r5, #0x20]
+0020d078: str      r0, [sp, #0x24]
+0020d07c: mov      r0, r8
+0020d080: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d084: mov      r0, sb
+0020d088: mov      r2, r8
+0020d08c: sxth     r1, sl
+0020d090: bl       #0x1d2ab0 ; CRuneDaisList::DealDamage(short, tHEXLOC)
+0020d094: cmp      r0, #0
+0020d098: bne      #0x20d3e0
+0020d09c: ldr      r2, [r5, #0x24]
+0020d0a0: ldr      r3, [r5]
+0020d0a4: cmp      r2, #0
+0020d0a8: beq      #0x20d3ac
+0020d0ac: cmp      r3, #5
+0020d0b0: bne      #0x20d160
+0020d0b4: ldr      r0, [r4, #0x3c]
+0020d0b8: cmp      r0, #0
+0020d0bc: beq      #0x20d0d8
+0020d0c0: ldr      r2, [pc, #0x3b8]
+0020d0c4: ldr      r3, [r0]
+0020d0c8: add      r2, pc, r2
+0020d0cc: ldr      r3, [r3, #0x3c]
+0020d0d0: ldr      r1, [r2, #0x14]
+0020d0d4: blx      r3
+0020d0d8: ldr      r3, [pc, #0x3a4]
+0020d0dc: mov      r2, #1
+0020d0e0: mov      r1, #0x60
+0020d0e4: ldr      r3, [r6, r3]
+0020d0e8: ldr      r0, [r3]
+0020d0ec: bl       #0x1dd078 ; CRZParticleMgr::StartNewEffect(eRZParticleType, int)
+0020d0f0: mov      r1, #0
+0020d0f4: movt     r1, #0xc2b4
+0020d0f8: mov      r5, r0
+0020d0fc: bl       #0x21fdec ; RZMatrix34::SetXRotation(float)
+0020d100: add      r1, r4, #8
+0020d104: add      r4, sp, #0x14
+0020d108: mov      r0, r4
+0020d10c: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d110: mov      r1, r4
+0020d114: add      r0, sp, #0x24
+0020d118: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+0020d11c: vmov.f32 s14, #5.000000e-01
+0020d120: vldr     s13, [sp, #0x28]
+0020d124: vldr     s11, [sp, #0x2c]
+0020d128: vldr     s12, [sp, #0x24]
+0020d12c: vldr     s15, [pc, #0x340]
+0020d130: ldr      r0, [r7]
+0020d134: vadd.f32 s12, s12, s15
+0020d138: vadd.f32 s14, s13, s14
+0020d13c: vstr     s12, [r5, #0x30]
+0020d140: vadd.f32 s15, s11, s15
+0020d144: vstr     s14, [r5, #0x34]
+0020d148: vstr     s15, [r5, #0x38]
+0020d14c: bl       #0x148978 ; CGame::GetBattle()
+0020d150: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020d154: mov      r1, r0
+0020d158: mov      r0, r5
+0020d15c: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020d160: add      sp, sp, #0x3c
+0020d164: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0020d168: ldr      r3, [r4, #0x3c]
+0020d16c: cmp      r3, #0
+0020d170: beq      #0x20d17c
+0020d174: mov      r0, r4
+0020d178: bl       #0x20cd48 ; CTileItem_RuneDais::ThrowRuneCardAway()
+0020d17c: add      r2, r5, #0x18
+0020d180: add      r3, r5, #0xc
+0020d184: add      r6, sp, #0x24
+0020d188: ldm      r2, {r0, r1}
+0020d18c: stm      sp, {r0, r1}
+0020d190: mov      r0, r4
+0020d194: ldm      r3, {r1, r2, r3}
+0020d198: bl       #0x209e34 ; CTileItem::SetCardDesc(tCARDDESC)
+0020d19c: mov      r0, r6
+0020d1a0: mov      r1, r4
+0020d1a4: bl       #0x209e68 ; CTileItem::GetCardDesc() const
+0020d1a8: mov      r0, r6
+0020d1ac: bl       #0x124ba4 ; CCard::MakeNewCard(tCARDDESC&)
+0020d1b0: mov      r1, #1
+0020d1b4: str      r0, [r4, #0x3c]
+0020d1b8: ldr      r3, [r0]
+0020d1bc: ldr      r3, [r3, #8]
+0020d1c0: blx      r3
+0020d1c4: mov      r6, r0
+0020d1c8: ldr      r0, [r7]
+0020d1cc: bl       #0x148978 ; CGame::GetBattle()
+0020d1d0: add      r7, sp, #0x10
+0020d1d4: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020d1d8: mov      r1, r0
+0020d1dc: mov      r0, r6
+0020d1e0: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020d1e4: ldr      r0, [r4, #0x3c]
+0020d1e8: mov      r1, #1
+0020d1ec: ldr      r3, [r0]
+0020d1f0: ldr      r3, [r3, #8]
+0020d1f4: blx      r3
+0020d1f8: add      r1, r4, #8
+0020d1fc: mov      r6, r0
+0020d200: mov      r0, r7
+0020d204: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d208: mov      r1, r7
+0020d20c: add      r0, sp, #0x14
+0020d210: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+0020d214: vmov.f32 s14, #7.500000e-01
+0020d218: vldr     s13, [sp, #0x18]
+0020d21c: vldr     s11, [sp, #0x1c]
+0020d220: vldr     s12, [sp, #0x14]
+0020d224: vldr     s15, [pc, #0x248]
+0020d228: mov      r1, #0
+0020d22c: mov      r2, r1
+0020d230: vadd.f32 s12, s12, s15
+0020d234: vadd.f32 s14, s13, s14
+0020d238: vstr     s12, [r6, #0x30]
+0020d23c: vadd.f32 s15, s11, s15
+0020d240: vstr     s14, [r6, #0x34]
+0020d244: vstr     s15, [r6, #0x38]
+0020d248: ldr      r0, [r4, #0x3c]
+0020d24c: bl       #0x1d0f2c ; CRune::FinaliseForRender(int, int)
+0020d250: ldr      r3, [r5]
+0020d254: cmp      r3, #7
+0020d258: beq      #0x20d3d0
+0020d25c: mov      r2, #0
+0020d260: add      r1, r5, #0x30
+0020d264: mov      r0, r4
+0020d268: movt     r2, #0x4248
+0020d26c: bl       #0x20c4e4 ; CTileItem_RuneDais::StartDropping(RZVector3&, float)
+0020d270: mov      r0, r4
+0020d274: mov      r1, #0xa7
+0020d278: mov      r2, #0
+0020d27c: bl       #0x20c2dc ; CTileItem_RuneDais::SetDaisParticles(eRZParticleType, int)
+0020d280: add      sp, sp, #0x3c
+0020d284: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0020d288: mov      r0, r4
+0020d28c: mov      r1, #1
+0020d290: bl       #0x20ce6c ; CTileItem_RuneDais::RemoveCard(int)
+0020d294: add      r3, r5, #0x18
+0020d298: add      r5, r5, #0xc
+0020d29c: add      r6, sp, #0x10
+0020d2a0: ldm      r3, {r0, r1}
+0020d2a4: stm      sp, {r0, r1}
+0020d2a8: mov      r0, r4
+0020d2ac: ldm      r5, {r1, r2, r3}
+0020d2b0: add      r5, sp, #0x24
+0020d2b4: bl       #0x209e34 ; CTileItem::SetCardDesc(tCARDDESC)
+0020d2b8: mov      r1, r4
+0020d2bc: mov      r0, r5
+0020d2c0: bl       #0x209e68 ; CTileItem::GetCardDesc() const
+0020d2c4: mov      r0, r5
+0020d2c8: bl       #0x124ba4 ; CCard::MakeNewCard(tCARDDESC&)
+0020d2cc: mov      r1, #1
+0020d2d0: str      r0, [r4, #0x3c]
+0020d2d4: ldr      r3, [r0]
+0020d2d8: ldr      r3, [r3, #8]
+0020d2dc: blx      r3
+0020d2e0: mov      r5, r0
+0020d2e4: ldr      r0, [r7]
+0020d2e8: bl       #0x148978 ; CGame::GetBattle()
+0020d2ec: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020d2f0: mov      r1, r0
+0020d2f4: mov      r0, r5
+0020d2f8: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020d2fc: ldr      r0, [r4, #0x3c]
+0020d300: mov      r1, #1
+0020d304: ldr      r3, [r0]
+0020d308: ldr      r3, [r3, #8]
+0020d30c: blx      r3
+0020d310: add      r1, r4, #8
+0020d314: mov      r5, r0
+0020d318: mov      r0, r6
+0020d31c: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d320: mov      r1, r6
+0020d324: add      r0, sp, #0x14
+0020d328: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+0020d32c: vmov.f32 s14, #7.500000e-01
+0020d330: vldr     s13, [sp, #0x18]
+0020d334: vldr     s11, [sp, #0x1c]
+0020d338: vldr     s12, [sp, #0x14]
+0020d33c: vldr     s15, [pc, #0x130]
+0020d340: mov      r1, #0
+0020d344: mov      r2, r1
+0020d348: vadd.f32 s12, s12, s15
+0020d34c: vadd.f32 s14, s13, s14
+0020d350: vstr     s12, [r5, #0x30]
+0020d354: vadd.f32 s15, s11, s15
+0020d358: vstr     s14, [r5, #0x34]
+0020d35c: vstr     s15, [r5, #0x38]
+0020d360: ldr      r0, [r4, #0x3c]
+0020d364: bl       #0x1d0f2c ; CRune::FinaliseForRender(int, int)
+0020d368: mov      r3, #0
+0020d36c: mov      r2, r3
+0020d370: str      r3, [r4, #0x78]
+0020d374: mov      r0, r4
+0020d378: mov      r1, #0xa6
+0020d37c: bl       #0x20c2dc ; CTileItem_RuneDais::SetDaisParticles(eRZParticleType, int)
+0020d380: mov      r0, r4
+0020d384: bl       #0x20c2a4 ; CTileItem_RuneDais::NotifyRunePlayed()
+0020d388: add      sp, sp, #0x3c
+0020d38c: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0020d390: subs     r3, r1, #0xb
+0020d394: mov      r0, r4
+0020d398: rsbs     r1, r3, #0
+0020d39c: adcs     r1, r1, r3
+0020d3a0: bl       #0x20ce6c ; CTileItem_RuneDais::RemoveCard(int)
+0020d3a4: add      sp, sp, #0x3c
+0020d3a8: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0020d3ac: cmp      r3, #5
+0020d3b0: bne      #0x20d0ac
+0020d3b4: ldr      r3, [pc, #0xcc]
+0020d3b8: mov      r1, #0x20
+0020d3bc: ldr      r3, [r6, r3]
+0020d3c0: ldr      r0, [r3]
+0020d3c4: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+0020d3c8: ldr      r3, [r5]
+0020d3cc: b        #0x20d0ac ; 
+0020d3d0: add      r1, r5, #0x28
+0020d3d4: mov      r0, r4
+0020d3d8: bl       #0x20c6a0 ; CTileItem_RuneDais::StartDropping(tPOINT&)
+0020d3dc: b        #0x20d270 ; 
+0020d3e0: mov      r0, r4
+0020d3e4: mov      r1, #1
+0020d3e8: bl       #0x20ce6c ; CTileItem_RuneDais::RemoveCard(int)
+0020d3ec: ldr      r8, [r5, #0x24]
+0020d3f0: cmp      r8, #0
+0020d3f4: beq      #0x20d424
+0020d3f8: ldr      r0, [r5, #4]
+0020d3fc: bl       #0x131c44 ; CCharacterMin::GetTeam()
+0020d400: ldr      ip, [r5, #4]
+0020d404: add      r1, sp, #0x24
+0020d408: mov      r2, #1
+0020d40c: str      ip, [sp]
+0020d410: mov      r3, r0
+0020d414: mov      r0, r8
+0020d418: bl       #0xf962c ; CAIBattleState::NotifyRunesJustDestroyed(tDESTROYEDRUNE*, int, eTeam, CCharacterMin*)
+0020d41c: ldr      r3, [r5]
+0020d420: b        #0x20d0ac ; 
+0020d424: ldr      r3, [pc, #0x5c]
+0020d428: mov      r2, r8
+0020d42c: mov      r1, #0x21
+0020d430: ldr      r3, [r6, r3]
+0020d434: ldr      r0, [r3]
+0020d438: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+0020d43c: ldr      r0, [r7]
+0020d440: bl       #0x148978 ; CGame::GetBattle()
+0020d444: mov      r8, r0
+0020d448: ldr      r0, [r5, #4]
+0020d44c: bl       #0x131c44 ; CCharacterMin::GetTeam()
+0020d450: ldr      ip, [r5, #8]
+0020d454: add      r1, sp, #0x24
+0020d458: mov      r2, #1
+0020d45c: str      ip, [sp]
+0020d460: mov      r3, r0
+0020d464: mov      r0, r8
+0020d468: bl       #0x1104fc ; CBattle::NotifyRunesJustDestroyed(tDESTROYEDRUNE*, int, eTeam, CCharacter*)
+0020d46c: ldr      r3, [r5]
+0020d470: b        #0x20d0ac ; 
+0020d474: andeq    r0, r0, r0
+0020d478: eoreq    ip, r2, ip, lsr #25
+0020d47c: andeq    r0, r0, r0, lsl r5
+0020d480: eoreq    r1, r4, r0, lsr #23
+0020d484: andeq    r1, r0, ip
+0020d488: andeq    r0, r0, r0, ror r7

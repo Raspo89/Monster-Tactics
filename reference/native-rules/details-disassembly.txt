@@ -1,0 +1,538 @@
+
+### CCharacterMin::GetCanUseAbility(int, CRuneDaisList*, int) 0x1341ec 240
+001341ec: push     {r3, r4, r5, r6, r7, r8, sb, lr}
+001341f0: mov      r6, r1
+001341f4: mov      r1, r2
+001341f8: mov      r5, r2
+001341fc: mov      r7, r3
+00134200: mov      r4, r0
+00134204: bl       #0x1326f4 ; CCharacterMin::CanDoAtLeastOneAbility(CRuneDaisList*)
+00134208: cmp      r0, #0
+0013420c: beq      #0x1342cc
+00134210: cmp      r6, #0
+00134214: mov      r0, r5
+00134218: mov      r1, r4
+0013421c: bne      #0x1342c0
+00134220: bl       #0x1d3880 ; CRuneDaisList::GetAttackingPreventedByRunes(CCharacterMin*)
+00134224: cmp      r0, #0
+00134228: bne      #0x1342cc
+0013422c: ldr      r3, [pc, #0xa0]
+00134230: mov      r1, r6
+00134234: mov      r0, r4
+00134238: ldr      r3, [pc, r3]
+0013423c: ldr      r5, [r3]
+00134240: bl       #0x13413c ; CCharacterMin::GetAbility(int)
+00134244: mov      r1, r0
+00134248: mov      r0, r5
+0013424c: bl       #0x102ae0 ; CArchetypeMgr::GetAbilityData(eAbilityType)
+00134250: ldr      r3, [pc, #0x80]
+00134254: ldr      r3, [pc, r3]
+00134258: mov      r5, r0
+0013425c: ldr      r0, [r3]
+00134260: bl       #0x148978 ; CGame::GetBattle()
+00134264: ldr      r5, [r5, #0x14]
+00134268: bl       #0x10f7fc ; CBattle::GetRuneDaisList()
+0013426c: mov      r1, r6
+00134270: mov      r8, r0
+00134274: mov      r0, r4
+00134278: bl       #0x13413c ; CCharacterMin::GetAbility(int)
+0013427c: mov      sb, r0
+00134280: mov      r0, r4
+00134284: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134288: mov      r6, r0
+0013428c: mov      r0, r4
+00134290: bl       #0x133504 ; CCharacterMin::GetIsHero()
+00134294: mov      r1, sb
+00134298: mov      r2, r6
+0013429c: mov      r3, r0
+001342a0: mov      r0, r8
+001342a4: bl       #0x1d3520 ; CRuneDaisList::GetAbilityCostChangeFromRunes(eAbilityType, eTeam, int)
+001342a8: add      r0, r5, r0
+001342ac: bic      r0, r0, r0, asr #31
+001342b0: cmp      r7, r0
+001342b4: movlt    r0, #0
+001342b8: movge    r0, #1
+001342bc: pop      {r3, r4, r5, r6, r7, r8, sb, pc}
+001342c0: bl       #0x1d3a2c ; CRuneDaisList::GetSpecialAbilityPreventedByRunes(CCharacterMin*)
+001342c4: cmp      r0, #0
+001342c8: beq      #0x13422c
+001342cc: mov      r0, #0
+001342d0: pop      {r3, r4, r5, r6, r7, r8, sb, pc}
+001342d4: eorseq   r6, r0, r8, asr r0
+001342d8: eorseq   r5, r0, ip, lsl pc
+
+### CCharacterMin::DealCombatDamageTo(CCharacterMin*, CRuneDaisList*, CAIBattleState*, int, eCombatDamageSource) 0x13464c 508
+0013464c: push     {r4, r5, r6, r7, r8, sb, sl, lr}
+00134650: mov      r6, r0
+00134654: sub      sp, sp, #0x18
+00134658: mov      r0, r1
+0013465c: mov      r4, r1
+00134660: mov      r8, r2
+00134664: mov      r7, r3
+00134668: bl       #0x13199c ; CCharacterMin::CanTakeBattleDamage()
+0013466c: ldr      r5, [pc, #0x1c4]
+00134670: add      r5, pc, r5
+00134674: cmp      r0, #0
+00134678: bne      #0x134684
+0013467c: add      sp, sp, #0x18
+00134680: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134684: mov      r1, r8
+00134688: mov      r2, r7
+0013468c: mov      r3, #0
+00134690: mov      r0, r6
+00134694: bl       #0x133708 ; CCharacterMin::GetPower(CRuneDaisList*, CAIBattleState*, int)
+00134698: ldr      r3, [sp, #0x38]
+0013469c: mov      r1, #0xa
+001346a0: add      sb, r0, r3
+001346a4: mov      r0, r4
+001346a8: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+001346ac: cmp      r0, #0
+001346b0: bne      #0x1347a8
+001346b4: mov      r0, r4
+001346b8: mov      r1, #0xd
+001346bc: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+001346c0: cmp      r0, #0
+001346c4: bne      #0x134780
+001346c8: mov      r0, r8
+001346cc: mov      r1, r6
+001346d0: mov      r2, r4
+001346d4: bl       #0x1d3fe0 ; CRuneDaisList::GetAttackingDamageBonusFromRunes(CCharacterMin*, CCharacterMin*)
+001346d8: ldr      r3, [sp, #0x3c]
+001346dc: cmp      r3, #1
+001346e0: add      r0, sb, r0
+001346e4: bic      sb, r0, r0, asr #31
+001346e8: beq      #0x1347fc
+001346ec: mov      r2, r8
+001346f0: add      r3, sp, #8
+001346f4: mov      r0, r4
+001346f8: str      r3, [sp]
+001346fc: mov      r1, sb
+00134700: add      r3, sp, #0x10
+00134704: str      r3, [sp, #4]
+00134708: mov      r3, r7
+0013470c: mov      ip, #0
+00134710: str      ip, [sp, #8]
+00134714: str      ip, [sp, #0x10]
+00134718: bl       #0x134028 ; CCharacterMin::DealDamageTo(int, CRuneDaisList*, CAIBattleState*, int*, int*)
+0013471c: cmp      r7, #0
+00134720: mov      r8, r0
+00134724: beq      #0x1347d0
+00134728: cmp      sb, #0
+0013472c: beq      #0x134738
+00134730: mov      r0, r6
+00134734: bl       #0x1345c0 ; CCharacterMin::CreditMeWithCausingDamage()
+00134738: ldr      r1, [sp, #0x10]
+0013473c: cmp      r1, #0
+00134740: ble      #0x13474c
+00134744: mov      r0, r6
+00134748: bl       #0x13456c ; CCharacterMin::CreditMeWithCausingLifeLoss(int)
+0013474c: cmp      r8, #0
+00134750: beq      #0x13476c
+00134754: mov      r0, r6
+00134758: mov      r1, r4
+0013475c: bl       #0x1345c4 ; CCharacterMin::CreditMeWithAKill(CCharacterMin*)
+00134760: mov      r0, r8
+00134764: add      sp, sp, #0x18
+00134768: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+0013476c: mov      r0, r4
+00134770: bl       #0x134520 ; CCharacterMin::CreditMeWithSurvivingAnAttack()
+00134774: mov      r0, r8
+00134778: add      sp, sp, #0x18
+0013477c: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134780: ldr      r3, [pc, #0xb4]
+00134784: mov      r1, #0x14
+00134788: ldr      r2, [pc, #0xb0]
+0013478c: ldr      r3, [r5, r3]
+00134790: ldr      r2, [r5, r2]
+00134794: ldr      r3, [r3, #0x10]
+00134798: ldr      r0, [r2]
+0013479c: add      sb, sb, r3
+001347a0: bl       #0x145844 ; CFactoidMgr::Trigger(eFactoid)
+001347a4: b        #0x1346c8 ; 
+001347a8: ldr      r3, [pc, #0x8c]
+001347ac: mov      r1, #0x13
+001347b0: ldr      r2, [pc, #0x88]
+001347b4: ldr      r3, [r5, r3]
+001347b8: ldr      r2, [r5, r2]
+001347bc: ldr      r3, [r3, #4]
+001347c0: ldr      r0, [r2]
+001347c4: add      sb, sb, r3
+001347c8: bl       #0x145844 ; CFactoidMgr::Trigger(eFactoid)
+001347cc: b        #0x1346b4 ; 
+001347d0: ldr      r3, [sp, #8]
+001347d4: cmp      r3, #0
+001347d8: beq      #0x134728
+001347dc: cmp      r0, #0
+001347e0: bne      #0x134728
+001347e4: ldr      r3, [pc, #0x54]
+001347e8: mov      r1, #0x15
+001347ec: ldr      r3, [r5, r3]
+001347f0: ldr      r0, [r3]
+001347f4: bl       #0x145844 ; CFactoidMgr::Trigger(eFactoid)
+001347f8: b        #0x134728 ; 
+001347fc: mov      r0, r6
+00134800: bl       #0x132908 ; CCharacterMin::GetIsHoldingDefaultWeapon()
+00134804: cmp      r0, #0
+00134808: beq      #0x1346ec
+0013480c: ldr      r3, [pc, #0x30]
+00134810: mov      r0, r4
+00134814: ldr      r3, [r5, r3]
+00134818: ldr      sl, [r3]
+0013481c: bl       #0x132a50 ; CCharacterMin::GetRaceType()
+00134820: mov      r1, r0
+00134824: mov      r0, sl
+00134828: bl       #0x103050 ; CArchetypeMgr::GetRaceBonus(eRaceType)
+0013482c: cmp      r0, #0xf
+00134830: moveq    sb, #0
+00134834: b        #0x1346ec ; 
+00134838: ldrshteq r5, [r0], -r0
+0013483c: andeq    r0, r0, r4, asr #18
+00134840: strdeq   r1, r2, [r0], -r0
+00134844: andeq    r0, r0, r0, lsr r6
+
+### CRuneMgr::LoadRuneStats() 0x1d6554 920
+001d6554: mov      r3, r0
+001d6558: ldr      r0, [pc, #0x380]
+001d655c: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+001d6560: sub      sp, sp, #0xdc
+001d6564: movw     r1, #0xa174
+001d6568: add      r0, pc, r0
+001d656c: add      r3, r3, #0x30
+001d6570: str      r3, [sp, #0x2c]
+001d6574: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+001d6578: ldr      ip, [pc, #0x364]
+001d657c: movw     r1, #0xa174
+001d6580: add      r5, sp, #0xc0
+001d6584: add      ip, pc, ip
+001d6588: str      ip, [sp, #0x1c]
+001d658c: add      sl, sp, #0xa8
+001d6590: mov      r6, #0
+001d6594: mov      r4, r0
+001d6598: bl       #0x290b04 ; RZTable::LoadFromPtr(unsigned char*, int)
+001d659c: mov      sb, r0
+001d65a0: mov      r0, r4
+001d65a4: bl       #0x2585a4 ; RZMemory::Free(void*)
+001d65a8: ldr      r7, [sp, #0x2c]
+001d65ac: ldr      ip, [pc, #0x334]
+001d65b0: add      r4, sp, #0x30
+001d65b4: add      ip, pc, ip
+001d65b8: str      ip, [sp, #0x14]
+001d65bc: add      ip, sp, #0x48
+001d65c0: str      ip, [sp, #0x10]
+001d65c4: add      ip, sp, #0x60
+001d65c8: str      ip, [sp, #8]
+001d65cc: add      ip, sp, #0x78
+001d65d0: str      ip, [sp, #0xc]
+001d65d4: add      ip, sp, #0x90
+001d65d8: str      ip, [sp, #4]
+001d65dc: add      r8, r6, #2
+001d65e0: mov      r3, #0
+001d65e4: mov      r0, r4
+001d65e8: mov      r1, sb
+001d65ec: mov      r2, r8
+001d65f0: sub      ip, r7, #0x30
+001d65f4: str      ip, [sp, #0x18]
+001d65f8: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d65fc: mov      r1, r4
+001d6600: mov      r0, r7
+001d6604: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6608: mov      r3, #1
+001d660c: mov      r1, sb
+001d6610: mov      r2, r8
+001d6614: add      r0, sp, #0x48
+001d6618: add      ip, r7, #0x30
+001d661c: str      ip, [sp]
+001d6620: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6624: add      r0, sp, #0x48
+001d6628: add      fp, r7, #0x18
+001d662c: bl       #0xffb00 ; CArchetypeMgr::Parse_Rarity(RZString const&)
+001d6630: mov      r1, r8
+001d6634: mov      r2, #2
+001d6638: str      r0, [r7, #0x48]
+001d663c: mov      r0, sb
+001d6640: bl       #0x290c74 ; RZTable::GetValueAsINT(int, int)
+001d6644: mov      r3, #5
+001d6648: mov      r2, r8
+001d664c: mov      r1, sb
+001d6650: str      r0, [r7, #0x4c]
+001d6654: add      r0, sp, #0x60
+001d6658: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d665c: ldr      r1, [sp, #0x1c]
+001d6660: mov      r0, r5
+001d6664: bl       #0x28f634 ; RZString::RZString(char const*)
+001d6668: add      r2, sp, #0x60
+001d666c: mov      r1, r5
+001d6670: add      r0, sp, #0x78
+001d6674: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+001d6678: mov      r0, r5
+001d667c: bl       #0x28cecc ; RZString::~RZString()
+001d6680: add      r0, sp, #0x78
+001d6684: bl       #0x28fd18 ; RZString::ToASCII()
+001d6688: bl       #0x262298 ; RZModel_Base::Load(char*)
+001d668c: ldr      r1, [sp, #0x1c]
+001d6690: str      r0, [r7, #0x50]
+001d6694: add      r0, sp, #0x90
+001d6698: bl       #0x28f634 ; RZString::RZString(char const*)
+001d669c: mov      r3, #6
+001d66a0: mov      r0, sl
+001d66a4: mov      r1, sb
+001d66a8: mov      r2, r8
+001d66ac: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d66b0: mov      r2, sl
+001d66b4: mov      r0, r5
+001d66b8: add      r1, sp, #0x90
+001d66bc: bl       #0x28e294 ; RZString::operator+(RZString const&) const
+001d66c0: mov      r1, r5
+001d66c4: add      r0, r7, #0x54
+001d66c8: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d66cc: mov      r0, r5
+001d66d0: bl       #0x28cecc ; RZString::~RZString()
+001d66d4: mov      r0, sl
+001d66d8: bl       #0x28cecc ; RZString::~RZString()
+001d66dc: add      r0, sp, #0x90
+001d66e0: bl       #0x28cecc ; RZString::~RZString()
+001d66e4: mov      r2, r8
+001d66e8: mov      r3, #3
+001d66ec: mov      r0, r5
+001d66f0: mov      r1, sb
+001d66f4: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d66f8: mov      r1, r5
+001d66fc: ldr      r0, [sp, #0x18]
+001d6700: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6704: mov      r0, r5
+001d6708: bl       #0x28cecc ; RZString::~RZString()
+001d670c: mov      r2, r8
+001d6710: mov      r3, #4
+001d6714: mov      r0, r5
+001d6718: mov      r1, sb
+001d671c: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6720: mov      r1, r5
+001d6724: sub      r0, r7, #0x18
+001d6728: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d672c: mov      r0, r5
+001d6730: bl       #0x28cecc ; RZString::~RZString()
+001d6734: mov      r2, r8
+001d6738: mov      r3, #7
+001d673c: mov      r0, sl
+001d6740: mov      r1, sb
+001d6744: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6748: ldr      ip, [sp]
+001d674c: mov      r1, sl
+001d6750: mov      r0, ip
+001d6754: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6758: ldr      ip, [sp]
+001d675c: mov      r0, ip
+001d6760: bl       #0x28d840 ; RZString::ApplyMetaChars()
+001d6764: mov      r3, #8
+001d6768: mov      r0, r5
+001d676c: mov      r1, sb
+001d6770: mov      r2, r8
+001d6774: bl       #0x290bc4 ; RZTable::GetValue(int, int)
+001d6778: mov      r2, #0x2c
+001d677c: mov      r0, r5
+001d6780: mov      r1, #0x23
+001d6784: bl       #0x28d7e4 ; RZString::SubstituteChar(char, char)
+001d6788: mov      r1, r5
+001d678c: mov      r0, fp
+001d6790: bl       #0x28e730 ; RZString::operator=(RZString const&)
+001d6794: mov      r0, fp
+001d6798: bl       #0x28d840 ; RZString::ApplyMetaChars()
+001d679c: cmp      r6, #0
+001d67a0: beq      #0x1d68a4
+001d67a4: mov      fp, #0
+001d67a8: str      r7, [sp, #0x24]
+001d67ac: str      r5, [sp, #0x28]
+001d67b0: mov      r7, fp
+001d67b4: ldr      r8, [sp, #0x2c]
+001d67b8: mov      fp, sl
+001d67bc: str      sb, [sp, #0x20]
+001d67c0: ldr      r5, [sp, #0x18]
+001d67c4: b        #0x1d67d4 ; 
+001d67c8: cmp      r7, r6
+001d67cc: add      r8, r8, #0x9c
+001d67d0: beq      #0x1d682c
+001d67d4: mov      r0, r4
+001d67d8: mov      r1, r8
+001d67dc: bl       #0x28d5b0 ; RZString::operator==(RZString const&)
+001d67e0: add      r7, r7, #1
+001d67e4: cmp      r0, #0
+001d67e8: beq      #0x1d67c8
+001d67ec: mov      r0, r4
+001d67f0: bl       #0x28fd18 ; RZString::ToASCII()
+001d67f4: mov      sl, r0
+001d67f8: mov      r0, r5
+001d67fc: bl       #0x28fd18 ; RZString::ToASCII()
+001d6800: mov      sb, r0
+001d6804: sub      r0, r8, #0x30
+001d6808: bl       #0x28fd18 ; RZString::ToASCII()
+001d680c: mov      r1, sl
+001d6810: mov      r2, sb
+001d6814: add      r8, r8, #0x9c
+001d6818: mov      r3, r0
+001d681c: ldr      r0, [sp, #0x14]
+001d6820: bl       #0x237f74 ; RZDebug::Printf(char*, ...)
+001d6824: cmp      r7, r6
+001d6828: bne      #0x1d67d4
+001d682c: ldr      r5, [sp, #0x28]
+001d6830: mov      sl, fp
+001d6834: ldr      sb, [sp, #0x20]
+001d6838: mov      fp, r7
+001d683c: ldr      r7, [sp, #0x24]
+001d6840: add      r6, fp, #1
+001d6844: mov      r0, r5
+001d6848: bl       #0x28cecc ; RZString::~RZString()
+001d684c: mov      r0, sl
+001d6850: bl       #0x28cecc ; RZString::~RZString()
+001d6854: add      r0, sp, #0x78
+001d6858: bl       #0x28cecc ; RZString::~RZString()
+001d685c: add      r0, sp, #0x60
+001d6860: bl       #0x28cecc ; RZString::~RZString()
+001d6864: add      r0, sp, #0x48
+001d6868: bl       #0x28cecc ; RZString::~RZString()
+001d686c: mov      r0, r4
+001d6870: bl       #0x28cecc ; RZString::~RZString()
+001d6874: movw     r3, #0x10b
+001d6878: cmp      r6, r3
+001d687c: add      r7, r7, #0x9c
+001d6880: bne      #0x1d65dc
+001d6884: cmp      sb, #0
+001d6888: beq      #0x1d689c
+001d688c: mov      r0, sb
+001d6890: bl       #0x29096c ; RZTable::~RZTable()
+001d6894: mov      r0, sb
+001d6898: bl       #0x2cb8c0 ; operator delete(void*)
+001d689c: add      sp, sp, #0xdc
+001d68a0: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+001d68a4: mov      r0, r5
+001d68a8: add      r7, r7, #0x9c
+001d68ac: bl       #0x28cecc ; RZString::~RZString()
+001d68b0: mov      r0, sl
+001d68b4: bl       #0x28cecc ; RZString::~RZString()
+001d68b8: add      r0, sp, #0x78
+001d68bc: bl       #0x28cecc ; RZString::~RZString()
+001d68c0: add      r0, sp, #0x60
+001d68c4: bl       #0x28cecc ; RZString::~RZString()
+001d68c8: add      r0, sp, #0x48
+001d68cc: bl       #0x28cecc ; RZString::~RZString()
+001d68d0: mov      r0, r4
+001d68d4: bl       #0x28cecc ; RZString::~RZString()
+001d68d8: mov      r6, #1
+001d68dc: b        #0x1d65dc ; 
+001d68e0: ldrsbeq  r6, [sp], -r8
+001d68e4: andseq   sl, lr, r4, lsr #19
+001d68e8: andseq   r1, r7, r4, ror #27
+
+### CCharacterMin::GetTallyBasedBonuses_Health(eRaceType, CAIBattleState*) 0x134a44 452
+00134a44: push     {r4, r5, r6, r7, r8, sb, sl, lr}
+00134a48: mov      r7, r1
+00134a4c: mov      r5, r2
+00134a50: mov      r6, r0
+00134a54: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+00134a58: ldr      r4, [pc, #0x198]
+00134a5c: add      r4, pc, r4
+00134a60: cmp      r0, #0
+00134a64: popeq    {r4, r5, r6, r7, r8, sb, sl, pc}
+00134a68: ldr      r3, [pc, #0x18c]
+00134a6c: mov      r1, r7
+00134a70: ldr      r3, [r4, r3]
+00134a74: ldr      r0, [r3]
+00134a78: bl       #0x103050 ; CArchetypeMgr::GetRaceBonus(eRaceType)
+00134a7c: cmp      r0, #6
+00134a80: beq      #0x134ad8
+00134a84: cmp      r0, #7
+00134a88: bne      #0x134ac8
+00134a8c: cmp      r5, #0
+00134a90: beq      #0x134ba0
+00134a94: mov      r0, r5
+00134a98: mov      r1, r6
+00134a9c: bl       #0xf925c ; CAIBattleState::CountFriendlyCreaturesAroundMe(CCharacterMin*)
+00134aa0: ldr      r3, [pc, #0x158]
+00134aa4: ldr      r3, [r4, r3]
+00134aa8: ldr      r7, [r3, #0x418]
+00134aac: mul      r7, r7, r0
+00134ab0: add      r0, r5, #0x290
+00134ab4: mov      r1, r6
+00134ab8: mov      r2, r5
+00134abc: bl       #0x1d2fac ; CRuneDaisList::GetHealthBonusForTallyFromRunes(CCharacterMin*, CAIBattleState*)
+00134ac0: add      r0, r7, r0
+00134ac4: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134ac8: cmp      r5, #0
+00134acc: beq      #0x134be8
+00134ad0: mov      r7, #0
+00134ad4: b        #0x134ab0 ; 
+00134ad8: cmp      r5, #0
+00134adc: beq      #0x134b28
+00134ae0: mov      r0, r6
+00134ae4: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134ae8: mov      r1, r0
+00134aec: mov      r0, r5
+00134af0: bl       #0xf8e68 ; CAIBattleState::CountFriendlyMonsters(eTeam)
+00134af4: mov      r8, r0
+00134af8: mov      r0, r6
+00134afc: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134b00: mov      r2, r7
+00134b04: mov      r1, r0
+00134b08: mov      r0, r5
+00134b0c: bl       #0xf8e7c ; CAIBattleState::CountFriendlyRaceMonsters(eTeam, eRaceType)
+00134b10: cmp      r8, r0
+00134b14: bne      #0x134ad0
+00134b18: ldr      r3, [pc, #0xe0]
+00134b1c: ldr      r3, [r4, r3]
+00134b20: ldr      r7, [r3, #0x410]
+00134b24: b        #0x134ab0 ; 
+00134b28: ldr      r3, [pc, #0xd4]
+00134b2c: ldr      r8, [r4, r3]
+00134b30: ldr      r0, [r8]
+00134b34: bl       #0x148978 ; CGame::GetBattle()
+00134b38: subs     sb, r0, #0
+00134b3c: beq      #0x134b78
+00134b40: mov      r0, r6
+00134b44: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134b48: mov      r1, r0
+00134b4c: mov      r0, sb
+00134b50: bl       #0x110294 ; CBattle::CountFriendlyMonsters(eTeam)
+00134b54: mov      sl, r0
+00134b58: mov      r0, r6
+00134b5c: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134b60: mov      r2, r7
+00134b64: mov      r1, r0
+00134b68: mov      r0, sb
+00134b6c: bl       #0x1102a0 ; CBattle::CountFriendlyRaceMonsters(eTeam, eRaceType)
+00134b70: cmp      sl, r0
+00134b74: beq      #0x134bd8
+00134b78: mov      r7, #0
+00134b7c: ldr      r0, [r8]
+00134b80: bl       #0x148978 ; CGame::GetBattle()
+00134b84: cmp      r0, #0
+00134b88: beq      #0x134b98
+00134b8c: bl       #0x10f7fc ; CBattle::GetRuneDaisList()
+00134b90: cmp      r0, #0
+00134b94: bne      #0x134ab4
+00134b98: mov      r0, r7
+00134b9c: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134ba0: ldr      r3, [pc, #0x5c]
+00134ba4: ldr      r8, [r4, r3]
+00134ba8: ldr      r0, [r8]
+00134bac: bl       #0x148978 ; CGame::GetBattle()
+00134bb0: cmp      r0, #0
+00134bb4: moveq    r7, r5
+00134bb8: beq      #0x134b7c
+00134bbc: mov      r1, r6
+00134bc0: bl       #0x1133ac ; CBattle::CountFriendlyCreaturesAroundMe(CCharacterMin*)
+00134bc4: ldr      r3, [pc, #0x34]
+00134bc8: ldr      r3, [r4, r3]
+00134bcc: ldr      r7, [r3, #0x418]
+00134bd0: mul      r7, r7, r0
+00134bd4: b        #0x134b7c ; 
+00134bd8: ldr      r3, [pc, #0x20]
+00134bdc: ldr      r3, [r4, r3]
+00134be0: ldr      r7, [r3, #0x410]
+00134be4: b        #0x134b7c ; 
+00134be8: ldr      r3, [pc, #0x14]
+00134bec: mov      r7, r5
+00134bf0: ldr      r8, [r4, r3]
+00134bf4: b        #0x134b7c ; 
+00134bf8: eorseq   r5, r0, r4, lsl #4
+00134bfc: andeq    r0, r0, r0, lsr r6
+00134c00: andeq    r0, r0, r4, asr #18
+00134c04: andeq    r0, r0, r0, lsl r5

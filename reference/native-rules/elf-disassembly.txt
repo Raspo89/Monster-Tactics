@@ -1,0 +1,115 @@
+
+### CCharacterMin::GetTallyBasedBonuses_Health(eRaceType, CAIBattleState*) 0x134a44 452
+00134a44: push     {r4, r5, r6, r7, r8, sb, sl, lr}
+00134a48: mov      r7, r1
+00134a4c: mov      r5, r2
+00134a50: mov      r6, r0
+00134a54: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+00134a58: ldr      r4, [pc, #0x198]
+00134a5c: add      r4, pc, r4
+00134a60: cmp      r0, #0
+00134a64: popeq    {r4, r5, r6, r7, r8, sb, sl, pc}
+00134a68: ldr      r3, [pc, #0x18c]
+00134a6c: mov      r1, r7
+00134a70: ldr      r3, [r4, r3]
+00134a74: ldr      r0, [r3]
+00134a78: bl       #0x103050 ; CArchetypeMgr::GetRaceBonus(eRaceType)
+00134a7c: cmp      r0, #6
+00134a80: beq      #0x134ad8
+00134a84: cmp      r0, #7
+00134a88: bne      #0x134ac8
+00134a8c: cmp      r5, #0
+00134a90: beq      #0x134ba0
+00134a94: mov      r0, r5
+00134a98: mov      r1, r6
+00134a9c: bl       #0xf925c ; CAIBattleState::CountFriendlyCreaturesAroundMe(CCharacterMin*)
+00134aa0: ldr      r3, [pc, #0x158]
+00134aa4: ldr      r3, [r4, r3]
+00134aa8: ldr      r7, [r3, #0x418]
+00134aac: mul      r7, r7, r0
+00134ab0: add      r0, r5, #0x290
+00134ab4: mov      r1, r6
+00134ab8: mov      r2, r5
+00134abc: bl       #0x1d2fac ; CRuneDaisList::GetHealthBonusForTallyFromRunes(CCharacterMin*, CAIBattleState*)
+00134ac0: add      r0, r7, r0
+00134ac4: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134ac8: cmp      r5, #0
+00134acc: beq      #0x134be8
+00134ad0: mov      r7, #0
+00134ad4: b        #0x134ab0 ; 
+00134ad8: cmp      r5, #0
+00134adc: beq      #0x134b28
+00134ae0: mov      r0, r6
+00134ae4: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134ae8: mov      r1, r0
+00134aec: mov      r0, r5
+00134af0: bl       #0xf8e68 ; CAIBattleState::CountFriendlyMonsters(eTeam)
+00134af4: mov      r8, r0
+00134af8: mov      r0, r6
+00134afc: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134b00: mov      r2, r7
+00134b04: mov      r1, r0
+00134b08: mov      r0, r5
+00134b0c: bl       #0xf8e7c ; CAIBattleState::CountFriendlyRaceMonsters(eTeam, eRaceType)
+00134b10: cmp      r8, r0
+00134b14: bne      #0x134ad0
+00134b18: ldr      r3, [pc, #0xe0]
+00134b1c: ldr      r3, [r4, r3]
+00134b20: ldr      r7, [r3, #0x410]
+00134b24: b        #0x134ab0 ; 
+00134b28: ldr      r3, [pc, #0xd4]
+00134b2c: ldr      r8, [r4, r3]
+00134b30: ldr      r0, [r8]
+00134b34: bl       #0x148978 ; CGame::GetBattle()
+00134b38: subs     sb, r0, #0
+00134b3c: beq      #0x134b78
+00134b40: mov      r0, r6
+00134b44: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134b48: mov      r1, r0
+00134b4c: mov      r0, sb
+00134b50: bl       #0x110294 ; CBattle::CountFriendlyMonsters(eTeam)
+00134b54: mov      sl, r0
+00134b58: mov      r0, r6
+00134b5c: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134b60: mov      r2, r7
+00134b64: mov      r1, r0
+00134b68: mov      r0, sb
+00134b6c: bl       #0x1102a0 ; CBattle::CountFriendlyRaceMonsters(eTeam, eRaceType)
+00134b70: cmp      sl, r0
+00134b74: beq      #0x134bd8
+00134b78: mov      r7, #0
+00134b7c: ldr      r0, [r8]
+00134b80: bl       #0x148978 ; CGame::GetBattle()
+00134b84: cmp      r0, #0
+00134b88: beq      #0x134b98
+00134b8c: bl       #0x10f7fc ; CBattle::GetRuneDaisList()
+00134b90: cmp      r0, #0
+00134b94: bne      #0x134ab4
+00134b98: mov      r0, r7
+00134b9c: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134ba0: ldr      r3, [pc, #0x5c]
+00134ba4: ldr      r8, [r4, r3]
+00134ba8: ldr      r0, [r8]
+00134bac: bl       #0x148978 ; CGame::GetBattle()
+00134bb0: cmp      r0, #0
+00134bb4: moveq    r7, r5
+00134bb8: beq      #0x134b7c
+00134bbc: mov      r1, r6
+00134bc0: bl       #0x1133ac ; CBattle::CountFriendlyCreaturesAroundMe(CCharacterMin*)
+00134bc4: ldr      r3, [pc, #0x34]
+00134bc8: ldr      r3, [r4, r3]
+00134bcc: ldr      r7, [r3, #0x418]
+00134bd0: mul      r7, r7, r0
+00134bd4: b        #0x134b7c ; 
+00134bd8: ldr      r3, [pc, #0x20]
+00134bdc: ldr      r3, [r4, r3]
+00134be0: ldr      r7, [r3, #0x410]
+00134be4: b        #0x134b7c ; 
+00134be8: ldr      r3, [pc, #0x14]
+00134bec: mov      r7, r5
+00134bf0: ldr      r8, [r4, r3]
+00134bf4: b        #0x134b7c ; 
+00134bf8: eorseq   r5, r0, r4, lsl #4
+00134bfc: andeq    r0, r0, r0, lsr r6
+00134c00: andeq    r0, r0, r4, asr #18
+00134c04: andeq    r0, r0, r0, lsl r5

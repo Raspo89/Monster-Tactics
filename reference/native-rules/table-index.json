@@ -1,0 +1,114 @@
+[
+  {
+    "file": "table-33ddc8.txt",
+    "address": "0x33ddc8",
+    "length": 920,
+    "call": "0x101754",
+    "function": "_ZN13CArchetypeMgr13LoadHeroStatsEv",
+    "head": "Race,Name,Power,Health,Armour,Mojo generated,Ability\r\n,,,,,,\r\nHT_DUNGEONMASTER,Blart,1,2,0,0,AT_NONE"
+  },
+  {
+    "file": "table-345730.txt",
+    "address": "0x345730",
+    "length": 5660,
+    "call": "0x109ea8",
+    "function": "_ZN10CArmourMgr15LoadArmourStatsEv",
+    "head": "Card Tag,Rarity,Mojo,Name,Short Name,Armour,Perk 1,Value,Perk 2,Value,Helmet Model,Helmet Texture,Sh"
+  },
+  {
+    "file": "table-3f05e0.txt",
+    "address": "0x3f05e0",
+    "length": 25845,
+    "call": "0x21a244",
+    "function": "_ZN10CWeaponMgr15LoadWeaponStatsEv",
+    "head": "Tag Name,Rarity,Mojo,Name,Short Name,eBasicWeaponType,Model Name,Texture Name,Power,Perk 1,Value,Per"
+  },
+  {
+    "file": "table-3acc48.txt",
+    "address": "0x3acc48",
+    "length": 41332,
+    "call": "0x1d6574",
+    "function": "_ZN8CRuneMgr13LoadRuneStatsEv",
+    "head": "Tag Name,Rarity,Mojo,Name,Short Name,Model Name,Texture Name,Filters,Tooltip\r\n,,,,,,,,\r\nx,C,0,None,x"
+  },
+  {
+    "file": "table-33e4f8.txt",
+    "address": "0x33e4f8",
+    "length": 3272,
+    "call": "0x101db0",
+    "function": "_ZN13CArchetypeMgr13PermanentInitEv",
+    "head": "eRaceType enum,,Helmet Scale Factor,Gender,Folder Name,Model\r\n,,,,,\r\nRT_HUMAN,F,0.9,M,Human_Fighter,"
+  },
+  {
+    "file": "table-33fe88.txt",
+    "address": "0x33fe88",
+    "length": 1683,
+    "call": "0x10205c",
+    "function": "_ZN13CArchetypeMgr13PermanentInitEv",
+    "head": "eHeroType enum,,Helmet Scale Factor,Gender,Folder Name,Model,Texture 1\r\n,,,,,,\r\nHT_DUNGEONMASTER,CT_"
+  },
+  {
+    "file": "table-340bb0.txt",
+    "address": "0x340bb0",
+    "length": 1177,
+    "call": "0x102328",
+    "function": "_ZN13CArchetypeMgr13PermanentInitEv",
+    "head": "eRaceType enum,Name - Adjective,Name - Singular,Name - Plural,Race Scale,Bonus (Passive ability)\r\n,,"
+  },
+  {
+    "file": "table-3414e8.txt",
+    "address": "0x3414e8",
+    "length": 815,
+    "call": "0x102638",
+    "function": "_ZN13CArchetypeMgr13PermanentInitEv",
+    "head": "eRaceType enum,Name - Adjective,Name - Singular,Name - Plural,Race Scale\r\n,,,,\r\nHT_DUNGEONMASTER,Dun"
+  },
+  {
+    "file": "table-341b48.txt",
+    "address": "0x341b48",
+    "length": 5925,
+    "call": "0x10273c",
+    "function": "_ZN13CArchetypeMgr13PermanentInitEv",
+    "head": "eAbilityType enum,Name,Icon,Use On,Is Offensive,Mojo,Min Range,Max Range,Tooltip\r\n,,,,,,,,\r\nAT_NONE,"
+  },
+  {
+    "file": "table-3189a0.txt",
+    "address": "0x3189a0",
+    "length": 76308,
+    "call": "0x10109c",
+    "function": "_ZN13CArchetypeMgr16LoadMonsterStatsEv",
+    "head": "Race,Class,Rarity,Name,Power,Health,Ability,Mojo,Texture Name\r\n,,,,,,,,\r\nRT_HUMAN,CT_FIGHTER,C,Avand"
+  },
+  {
+    "file": "table-3c2fa0.txt",
+    "address": "0x3c2fa0",
+    "length": 5593,
+    "call": "0x1e26dc",
+    "function": "_ZN10CShieldMgr15LoadShieldStatsEv",
+    "head": "Tag Name,Rarity,Mojo,Name,Short Name,Model Name,Texture Name,Armour,Perk 1,Value,Perk 2,Value,Flavou"
+  },
+  {
+    "file": "table-349a00.txt",
+    "address": "0x349a00",
+    "length": 3155,
+    "call": "0x14523c",
+    "function": "_ZN13CEnemyDeckMgr4InitEv",
+    "head": "2P_Orcs\r\n2P_Zombies\r\n50_1\r\n50_2\r\n50_3\r\n50_Humans\r\n50_Mages\r\n50_Orcs\r\n50___Cyclops\r\n50___Elementals\r\n"
+  },
+  {
+    "file": "table-3c7f50.txt",
+    "address": "0x3c7f50",
+    "length": 75086,
+    "call": "0x1e92bc",
+    "function": "_ZN9CSpellMgr14LoadSpellStatsEv",
+    "head": "Tag Name,Rarity,Mojo,Use On,Name,Model Name,Texture Name,Filters,Tooltip\r\n,,,,,,,,\r\nx,C,0,UO_NOT_NEE"
+  },
+  {
+    "file": "table-34b638.txt",
+    "address": "0x34b638",
+    "length": 17727,
+    "call": "0x14ef94",
+    "function": "_ZN5CGame19LoadGlobalVariablesEv",
+    "head": "// AFFLICTIONS\r\n\t\t \r\n// IMPORTANT NOTE !!!\r\n// Turns values are decremented in the upkeep of the cha"
+  }
+]

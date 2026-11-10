@@ -1,0 +1,572 @@
+{
+  "AT_ATTACK": {
+    "name": "هجوم",
+    "nameEnglish": "Attack",
+    "cost": 0,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم هدفًا ملاصقًا بقوتك الحالية."
+  },
+  "AT_SMASH": {
+    "name": "تحطيم",
+    "nameEnglish": "Smash",
+    "cost": 3,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية مع +3 قوة."
+  },
+  "AT_HEROICSHOUT": {
+    "name": "صيحة البطولة",
+    "nameEnglish": "Heroic Shout",
+    "cost": 4,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_TEAM_MINE",
+    "offensive": false,
+    "description": "امنح مخلوقاتك حالة القوة: +2 قوة."
+  },
+  "AT_SAVAGESTRIKE": {
+    "name": "ضربة وحشية",
+    "nameEnglish": "Savage Beating",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية مع +1 قوة."
+  },
+  "AT_ENCOURAGE": {
+    "name": "رقصة الموجو",
+    "nameEnglish": "Mojo Dance",
+    "cost": 0,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_SELF",
+    "offensive": false,
+    "description": "ولّد نقطة موجو واحدة."
+  },
+  "AT_BERSERK": {
+    "name": "هياج",
+    "nameEnglish": "Berserk",
+    "cost": 0,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_SELF",
+    "offensive": false,
+    "description": "اكسب +5 قوة؛ الهجمات الواردة ضدك تحصل على +2 قوة."
+  },
+  "AT_FURIOUSASSAULT": {
+    "name": "هجوم غاضب",
+    "nameEnglish": "Furious Assault",
+    "cost": 4,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم كل الأعداء في المدى بقوتك الحالية."
+  },
+  "AT_RALLY": {
+    "name": "حشد",
+    "nameEnglish": "Rally",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_SELF",
+    "offensive": false,
+    "description": "ولّد نقطة موجو لكل مخلوق صديق مجاور."
+  },
+  "AT_VENGEANCE": {
+    "name": "انتقام",
+    "nameEnglish": "Vengeance",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": false,
+    "description": "أصب الهدف بالانتقام: يفقد 5 صحة في المرة القادمة التي يهاجم فيها."
+  },
+  "AT_ENERGISINGSTRIKE": {
+    "name": "ضربة منعشة",
+    "nameEnglish": "Cheap shot",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية واكسب 3 صحة."
+  },
+  "AT_INSPIRINGSTRIKE": {
+    "name": "ضربة ملهمة",
+    "nameEnglish": "Inspiring Strike",
+    "cost": 3,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية ثم امنح وحوشك نقطتي صحة."
+  },
+  "AT_MIGHTYBLOW": {
+    "name": "ضربة عاتية",
+    "nameEnglish": "Mighty Blow",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +1 قوة وادفع الهدف خانة واحدة بعيدًا."
+  },
+  "AT_HEAVE": {
+    "name": "دفع",
+    "nameEnglish": "Heave",
+    "cost": 0,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ANYBODY_ELSE",
+    "offensive": false,
+    "description": "ادفع مخلوقًا آخر خانة واحدة بعيدًا."
+  },
+  "AT_CRUSH": {
+    "name": "سحق",
+    "nameEnglish": "Crush",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية وأصب الهدف بالذهول ليُمنع من الهجوم واستخدام القدرات لدور واحد."
+  },
+  "AT_PHALANX": {
+    "name": "تشكيل الرماح",
+    "nameEnglish": "Phalanx",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +2 قوة لكل وحش صديق مجاور لك."
+  },
+  "AT_DEMOLISH": {
+    "name": "طعن القائد",
+    "nameEnglish": "Shank",
+    "cost": 3,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY_HERO",
+    "offensive": true,
+    "description": "هاجم قائد العدو مع +5 قوة."
+  },
+  "AT_DESPERATESTRIKE": {
+    "name": "ضربة يائسة",
+    "nameEnglish": "Desperate Strike",
+    "cost": 3,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +4 قوة، لكنك تفقد نقطتي صحة."
+  },
+  "AT_BLOODLUST": {
+    "name": "تعطّش الدم",
+    "nameEnglish": "Blood Lust",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +2 قوة لكل وحش عدو مجاور لك."
+  },
+  "AT_COLOSSUSSMASH": {
+    "name": "ضربة العملاق",
+    "nameEnglish": "Colossus Smash",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_SELF",
+    "offensive": true,
+    "description": "اضرب جميع المخلوقات المحيطة مع +1 قوة وادفعها بعيدًا."
+  },
+  "AT_LEVIATHANBLOW": {
+    "name": "ضربة الحرق",
+    "nameEnglish": "Immolate",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +1 قوة وأشعل الهدف."
+  },
+  "AT_BLAST": {
+    "name": "قذف سحري",
+    "nameEnglish": "Blast",
+    "cost": 0,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم هدفًا على بعد خانتين كحد أقصى بقوتك الحالية."
+  },
+  "AT_FIREBALL": {
+    "name": "كرة نارية",
+    "nameEnglish": "Fireball",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية وأشعل الهدف؛ يفقد صحة واحدة في بداية كل دور له."
+  },
+  "AT_LIGHTNING": {
+    "name": "برق",
+    "nameEnglish": "Lightning",
+    "cost": 4,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم الهدف بقوتك الحالية والأعداء المحيطين به بقوتك ناقص 1."
+  },
+  "AT_METEOR": {
+    "name": "نيزك",
+    "nameEnglish": "Meteor",
+    "cost": 4,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_INRANGE_TILE",
+    "offensive": true,
+    "description": "اضرب المخلوقات في الخانة المحددة وحولها بقوتك ناقص 2 وأشعلها."
+  },
+  "AT_HEAL": {
+    "name": "علاج",
+    "nameEnglish": "Heal",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_FRIEND",
+    "offensive": false,
+    "description": "امنح مخلوقًا صديقًا 3 صحة."
+  },
+  "AT_CURE": {
+    "name": "تطهير",
+    "nameEnglish": "Cure",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_FRIEND",
+    "offensive": false,
+    "description": "أزل جميع الحالات الضارة عن الهدف الصديق."
+  },
+  "AT_MASSHEAL": {
+    "name": "علاج جماعي",
+    "nameEnglish": "Mass Heal",
+    "cost": 4,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_FRIEND",
+    "offensive": false,
+    "description": "امنح الأصدقاء ضمن خانتين من الهدف نقطتي صحة."
+  },
+  "AT_REGEN": {
+    "name": "تجدد",
+    "nameEnglish": "Regen Buff",
+    "cost": 3,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_FRIEND",
+    "offensive": false,
+    "description": "امنح الهدف نقطتي صحة وحالة تجدد تستعيد نقطة صحة في بداية دوره."
+  },
+  "AT_MAGICSHIELD": {
+    "name": "حاجز سحري",
+    "nameEnglish": "Magic Shield",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_FRIEND",
+    "offensive": false,
+    "description": "امنع جميع أضرار الهجمة التالية عن الهدف الصديق."
+  },
+  "AT_ICEBLOCK": {
+    "name": "كتلة جليدية",
+    "nameEnglish": "Ice Block",
+    "cost": 3,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_ANYBODY",
+    "offensive": false,
+    "description": "جمّد الهدف: لا يستطيع تنفيذ أفعال أو تلقي الضرر لمدة دور واحد."
+  },
+  "AT_LIFESTEAL": {
+    "name": "سرقة الحياة",
+    "nameEnglish": "Life Steal",
+    "cost": 3,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +2 قوة واكسب نقطتي صحة."
+  },
+  "AT_BARRIER": {
+    "name": "حاجز دفاعي",
+    "nameEnglish": "Barrier",
+    "cost": 1,
+    "minRange": 1,
+    "maxRange": 2,
+    "useOn": "UO_UNOBSTRUCTED_TILE",
+    "offensive": false,
+    "description": "ضع حاجزًا يمنح +3 دفاع على خانة فارغة لمدة جولتين."
+  },
+  "AT_BLINK": {
+    "name": "وميض",
+    "nameEnglish": "Blink",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 3,
+    "useOn": "UO_UNOBSTRUCTED_TILE",
+    "offensive": false,
+    "description": "انتقل إلى خانة فارغة ضمن 3 خانات."
+  },
+  "AT_FASTHEAL": {
+    "name": "علاج سريع",
+    "nameEnglish": "Mini Heal",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_FRIEND",
+    "offensive": false,
+    "description": "امنح هدفًا صديقًا نقطة صحة واحدة."
+  },
+  "AT_EXPLODE": {
+    "name": "انفجار",
+    "nameEnglish": "Explode",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_SELF",
+    "offensive": true,
+    "description": "أوقع ضررًا بقوتك الحالية على نفسك وجميع المخلوقات الملاصقة لك."
+  },
+  "AT_ZAP": {
+    "name": "صعقة",
+    "nameEnglish": "Zap",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "أصب الهدف بالذهول ليُمنع من الهجوم واستخدام القدرات لدور واحد، دون ضرر مباشر."
+  },
+  "AT_COMBUSTION": {
+    "name": "احتراق",
+    "nameEnglish": "Combustion",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية، مع +5 قوة إذا كان الهدف مشتعلًا."
+  },
+  "AT_SHOOT": {
+    "name": "رماية",
+    "nameEnglish": "Shoot",
+    "cost": 0,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم هدفًا على بعد خانتين أو ثلاث بقوتك الحالية."
+  },
+  "AT_BARRAGE": {
+    "name": "وابل",
+    "nameEnglish": "Barrage",
+    "cost": 6,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم جميع الأعداء في المدى بقوتك الحالية."
+  },
+  "AT_HEADSHOT": {
+    "name": "إصابة الرأس",
+    "nameEnglish": "Head Shot",
+    "cost": 2,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +2 قوة."
+  },
+  "AT_SHATTER": {
+    "name": "تبديد",
+    "nameEnglish": "Shatter",
+    "cost": 2,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية وأزل جميع الحالات المفيدة عن الهدف."
+  },
+  "AT_DEATHMARK": {
+    "name": "علامة الموت",
+    "nameEnglish": "Death Mark",
+    "cost": 3,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "علّم الهدف بالموت: جميع الهجمات المستقبلية عليه تحصل على +1 قوة، دون ضرر مباشر."
+  },
+  "AT_TRICKSHOT": {
+    "name": "تسديدة ماكرة",
+    "nameEnglish": "Trick Shot",
+    "cost": 1,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "ولّد نقطة موجو لكل عدو ضمن خانة واحدة من هدفك، دون ضرر مباشر."
+  },
+  "AT_SNIPE": {
+    "name": "قنص",
+    "nameEnglish": "Snipe",
+    "cost": 3,
+    "minRange": 2,
+    "maxRange": 4,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم بقوتك الحالية على بعد 2 إلى 4 خانات."
+  },
+  "AT_TRAP": {
+    "name": "فخ",
+    "nameEnglish": "Trap",
+    "cost": 2,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_UNOBSTRUCTED_TILE",
+    "offensive": true,
+    "description": "ضع فخًا على خانة فارغة يسبب فقدان 5 صحة لمن يدوسه."
+  },
+  "AT_IGNITE": {
+    "name": "إشعال",
+    "nameEnglish": "Ignite",
+    "cost": 1,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_UNOBSTRUCTED_TILE",
+    "offensive": true,
+    "description": "أشعل خانة فارغة لمدة جولتين؛ تسبب خسارة صحة عند المرور عليها."
+  },
+  "AT_SNARE": {
+    "name": "تقييد",
+    "nameEnglish": "Suppress",
+    "cost": 2,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "امنع حركة الهدف لدور واحد."
+  },
+  "AT_LONERANGER": {
+    "name": "رامي وحيد",
+    "nameEnglish": "Lone Ranger",
+    "cost": 5,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم مع +1 قوة لكل خانة فارغة ملاصقة لك."
+  },
+  "AT_FIRSTAID": {
+    "name": "تصويب",
+    "nameEnglish": "Take Aim",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_SELF",
+    "offensive": false,
+    "description": "اكسب +2 قوة دائمة."
+  },
+  "AT_INFERNO": {
+    "name": "جحيم",
+    "nameEnglish": "Inferno",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_SELF",
+    "offensive": true,
+    "description": "أشعل خانتك والخانات المحيطة بها."
+  },
+  "AT_SPRINT": {
+    "name": "اندفاع",
+    "nameEnglish": "Sprint",
+    "cost": 1,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_SELF_MOVED",
+    "offensive": false,
+    "description": "استعد حركة إضافية لهذا الدور بعد أن تتحرك."
+  },
+  "AT_SUPERSPRINT": {
+    "name": "تشجيع الحركة",
+    "nameEnglish": "Encourage",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 2,
+    "useOn": "UO_TEAM_MOVED",
+    "offensive": false,
+    "description": "اسمح لمخلوق صديق سبق له التحرك بأن يتحرك مرة إضافية."
+  },
+  "AT_DISARM": {
+    "name": "نزع السلاح",
+    "nameEnglish": "Disarm",
+    "cost": 4,
+    "minRange": 2,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "انزع جميع معدات الهدف، دون ضرر مباشر."
+  },
+  "AT_SELFCURE": {
+    "name": "تطهير ذاتي",
+    "nameEnglish": "Self Cure",
+    "cost": 0,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_SELF",
+    "offensive": false,
+    "description": "أزل جميع الحالات الضارة عن نفسك."
+  },
+  "AT_DRAWCARD": {
+    "name": "سحب بطاقة",
+    "nameEnglish": "Card Draw",
+    "cost": 2,
+    "minRange": 0,
+    "maxRange": 0,
+    "useOn": "UO_SELF",
+    "offensive": false,
+    "description": "اسحب بطاقة واحدة من مجموعتك."
+  },
+  "AT_BOO": {
+    "name": "إخافة",
+    "nameEnglish": "Boo!",
+    "cost": 4,
+    "minRange": 0,
+    "maxRange": 1,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "ادفع الهدف خانة واحدة بعيدًا وانزع جميع معداته."
+  },
+  "AT_LOB": {
+    "name": "قذيفة",
+    "nameEnglish": "Lob",
+    "cost": 0,
+    "minRange": 3,
+    "maxRange": 3,
+    "useOn": "UO_ENEMY",
+    "offensive": true,
+    "description": "هاجم هدفًا على بعد 3 خانات تمامًا بقوتك الحالية."
+  }
+}

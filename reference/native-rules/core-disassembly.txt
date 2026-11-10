@@ -1,0 +1,136 @@
+
+### CCharacterMin::GetCanMoveThisTurn() 0x134450 92
+00134450: push     {r4, lr}
+00134454: mov      r4, r0
+00134458: ldrb     r3, [r0, #0x3a]
+0013445c: tst      r3, #4
+00134460: beq      #0x13446c
+00134464: mov      r0, #0
+00134468: pop      {r4, pc}
+0013446c: bl       #0x1343c0 ; CCharacterMin::GetClassType()
+00134470: cmp      r0, #0
+00134474: ldrbne   r0, [r4, #0x3a]
+00134478: beq      #0x134488
+0013447c: and      r0, r0, #1
+00134480: eor      r0, r0, #1
+00134484: pop      {r4, pc}
+00134488: mov      r0, r4
+0013448c: bl       #0x133504 ; CCharacterMin::GetIsHero()
+00134490: cmp      r0, #0
+00134494: ldrb     r0, [r4, #0x3a]
+00134498: bne      #0x13447c
+0013449c: tst      r0, #2
+001344a0: bne      #0x13447c
+001344a4: mov      r0, #1
+001344a8: pop      {r4, pc}
+
+### CCharacterMin::SetHasMovedThisTurn() 0x1343f8 44
+001343f8: push     {r4, lr}
+001343fc: mov      r4, r0
+00134400: ldrb     r3, [r0, #0x3a]
+00134404: orr      r3, r3, #1
+00134408: strb     r3, [r0, #0x3a]
+0013440c: bl       #0x1343c0 ; CCharacterMin::GetClassType()
+00134410: cmp      r0, #3
+00134414: ldrbeq   r3, [r4, #0x3a]
+00134418: orreq    r3, r3, #2
+0013441c: strbeq   r3, [r4, #0x3a]
+00134420: pop      {r4, pc}
+
+### CCharacterMin::GetCanAttackThisTurn() 0x1326e4 16
+001326e4: ldrb     r0, [r0, #0x3a]
+001326e8: eor      r0, r0, #2
+001326ec: ubfx     r0, r0, #1, #1
+001326f0: bx       lr
+
+### CAbility_Attack::DoAbilityToPrimaryTarget(CCharacterMin*, CAIBattleState*) 0xd75bc 152
+000d75bc: ldr      ip, [pc, #0x8c]
+000d75c0: push     {r4, r5, r6, r7, r8, lr}
+000d75c4: ldr      ip, [pc, ip]
+000d75c8: sub      sp, sp, #8
+000d75cc: mov      r5, r2
+000d75d0: ldr      r7, [ip, #0x70]
+000d75d4: mov      r4, r0
+000d75d8: mov      r6, r1
+000d75dc: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000d75e0: mov      r8, r0
+000d75e4: mov      r0, r4
+000d75e8: bl       #0xda3d4 ; CAbility_Base::GetAbilityType() const
+000d75ec: mov      r1, r0
+000d75f0: mov      r0, r8
+000d75f4: bl       #0x132a04 ; CCharacterMin::GetWeaponBonusForAbility(eAbilityType)
+000d75f8: add      r7, r7, r0
+000d75fc: mov      r0, r4
+000d7600: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000d7604: ldr      r2, [r4, #0x14]
+000d7608: mov      ip, #1
+000d760c: str      r7, [sp]
+000d7610: mov      r1, r6
+000d7614: mov      r3, r5
+000d7618: str      ip, [sp, #4]
+000d761c: bl       #0x13464c ; CCharacterMin::DealCombatDamageTo(CCharacterMin*, CRuneDaisList*, CAIBattleState*, int, eCombatDamageSource)
+000d7620: subs     r7, r0, #0
+000d7624: bne      #0xd7644
+000d7628: mov      r0, r4
+000d762c: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000d7630: ldr      r2, [r4, #0x14]
+000d7634: mov      r3, r5
+000d7638: mov      r1, r0
+000d763c: mov      r0, r6
+000d7640: bl       #0x134ed0 ; CCharacterMin::ApplyAnyAfflictionsFromProtagonist(CCharacterMin*, CRuneDaisList*, CAIBattleState*)
+000d7644: mov      r0, r7
+000d7648: add      sp, sp, #8
+000d764c: pop      {r4, r5, r6, r7, r8, pc}
+000d7650: eorseq   r2, r6, r0, ror #31
+
+### CAbility_Attack::CAbility_Attack(CCharacter*, tHEXLOC) 0xd77dc 96
+000d77dc: push     {r4, r5, r6, lr}
+000d77e0: sub      sp, sp, #8
+000d77e4: add      r5, sp, #4
+000d77e8: mov      r4, r0
+000d77ec: mov      r6, r1
+000d77f0: mov      r1, r2
+000d77f4: mov      r0, r5
+000d77f8: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+000d77fc: mov      r2, r6
+000d7800: mov      r3, r5
+000d7804: mov      r0, r4
+000d7808: mov      r1, #1
+000d780c: bl       #0xd9798 ; CAbility_Base::CAbility_Base(eAbilityType, CCharacter*, tHEXLOC)
+000d7810: ldr      r3, [pc, #0x20]
+000d7814: mov      r2, #0
+000d7818: mov      r0, r4
+000d781c: ldr      r3, [pc, r3]
+000d7820: str      r2, [r4, #0x690]
+000d7824: add      r3, r3, #8
+000d7828: str      r2, [r4, #0x694]
+000d782c: str      r3, [r4]
+000d7830: add      sp, sp, #8
+000d7834: pop      {r4, r5, r6, pc}
+000d7838: eorseq   r2, r6, r0, lsr lr
+
+### CAbility_Attack::CAbility_Attack(CCharacter*, tHEXLOC) 0xd77dc 96
+000d77dc: push     {r4, r5, r6, lr}
+000d77e0: sub      sp, sp, #8
+000d77e4: add      r5, sp, #4
+000d77e8: mov      r4, r0
+000d77ec: mov      r6, r1
+000d77f0: mov      r1, r2
+000d77f4: mov      r0, r5
+000d77f8: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+000d77fc: mov      r2, r6
+000d7800: mov      r3, r5
+000d7804: mov      r0, r4
+000d7808: mov      r1, #1
+000d780c: bl       #0xd9798 ; CAbility_Base::CAbility_Base(eAbilityType, CCharacter*, tHEXLOC)
+000d7810: ldr      r3, [pc, #0x20]
+000d7814: mov      r2, #0
+000d7818: mov      r0, r4
+000d781c: ldr      r3, [pc, r3]
+000d7820: str      r2, [r4, #0x690]
+000d7824: add      r3, r3, #8
+000d7828: str      r2, [r4, #0x694]
+000d782c: str      r3, [r4]
+000d7830: add      sp, sp, #8
+000d7834: pop      {r4, r5, r6, pc}
+000d7838: eorseq   r2, r6, r0, lsr lr

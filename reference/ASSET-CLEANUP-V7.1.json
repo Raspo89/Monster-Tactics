@@ -1,0 +1,3125 @@
+{
+  "removed": [
+    {
+      "path": "public/original3d/models/skeleton_rogue/2.png",
+      "bytes": 71351
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/10.png",
+      "bytes": 70371
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/1.png",
+      "bytes": 82518
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/9.png",
+      "bytes": 84916
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/4.png",
+      "bytes": 87253
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/5.png",
+      "bytes": 73310
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/7.png",
+      "bytes": 72737
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/3.png",
+      "bytes": 80380
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/2.png",
+      "bytes": 89281
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/10.png",
+      "bytes": 87328
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/11.png",
+      "bytes": 72433
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/1.png",
+      "bytes": 90978
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/9.png",
+      "bytes": 92256
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/8.png",
+      "bytes": 84674
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/4.png",
+      "bytes": 83795
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/5.png",
+      "bytes": 93817
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/7.png",
+      "bytes": 82180
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/3.png",
+      "bytes": 86158
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/2.png",
+      "bytes": 84365
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/10.png",
+      "bytes": 81355
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/1.png",
+      "bytes": 76116
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/9.png",
+      "bytes": 68652
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/6.png",
+      "bytes": 88769
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/4.png",
+      "bytes": 75911
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/5.png",
+      "bytes": 73839
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/3.png",
+      "bytes": 84321
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/2.png",
+      "bytes": 60194
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/10.png",
+      "bytes": 65006
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/11.png",
+      "bytes": 70619
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/0.png",
+      "bytes": 65274
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/1.png",
+      "bytes": 65046
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/9.png",
+      "bytes": 67528
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/6.png",
+      "bytes": 68199
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/7.png",
+      "bytes": 64793
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/2.png",
+      "bytes": 34181
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/11.png",
+      "bytes": 56956
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/0.png",
+      "bytes": 68785
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/1.png",
+      "bytes": 45821
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/9.png",
+      "bytes": 47310
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/6.png",
+      "bytes": 48986
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/4.png",
+      "bytes": 73750
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/5.png",
+      "bytes": 54913
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/3.png",
+      "bytes": 55074
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/11.png",
+      "bytes": 68467
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/0.png",
+      "bytes": 76560
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/1.png",
+      "bytes": 66656
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/9.png",
+      "bytes": 65716
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/Cyclops_Skin_wizard_cape.png",
+      "bytes": 41306
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/8.png",
+      "bytes": 78862
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/4.png",
+      "bytes": 74006
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/5.png",
+      "bytes": 71988
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/3.png",
+      "bytes": 78809
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/10.png",
+      "bytes": 59769
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/11.png",
+      "bytes": 71524
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/1.png",
+      "bytes": 65148
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/9.png",
+      "bytes": 63019
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/8.png",
+      "bytes": 61110
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/6.png",
+      "bytes": 60276
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/4.png",
+      "bytes": 66533
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/5.png",
+      "bytes": 63517
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/7.png",
+      "bytes": 69867
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/3.png",
+      "bytes": 69467
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/2.png",
+      "bytes": 72680
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/10.png",
+      "bytes": 73261
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/0.png",
+      "bytes": 56109
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/9.png",
+      "bytes": 68151
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/Imp_Skin_spellcaster_wings.png",
+      "bytes": 35271
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/6.png",
+      "bytes": 58808
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/5.png",
+      "bytes": 59433
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/7.png",
+      "bytes": 62434
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/3.png",
+      "bytes": 65490
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/2.png",
+      "bytes": 71879
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/10.png",
+      "bytes": 71084
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/11.png",
+      "bytes": 68423
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/1.png",
+      "bytes": 61295
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/9.png",
+      "bytes": 65931
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/8.png",
+      "bytes": 64334
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/4.png",
+      "bytes": 68327
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/5.png",
+      "bytes": 63041
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/7.png",
+      "bytes": 72508
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/3.png",
+      "bytes": 72342
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/2.png",
+      "bytes": 77472
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/10.png",
+      "bytes": 84464
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/11.png",
+      "bytes": 66242
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/1.png",
+      "bytes": 76657
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/9.png",
+      "bytes": 81416
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/8.png",
+      "bytes": 80006
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/4.png",
+      "bytes": 79185
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/5.png",
+      "bytes": 76643
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/3.png",
+      "bytes": 78660
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/2.png",
+      "bytes": 69500
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/10.png",
+      "bytes": 98405
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/11.png",
+      "bytes": 90563
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/1.png",
+      "bytes": 85653
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/9.png",
+      "bytes": 70723
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/8.png",
+      "bytes": 97384
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/6.png",
+      "bytes": 89092
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/4.png",
+      "bytes": 90652
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/5.png",
+      "bytes": 97192
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/7.png",
+      "bytes": 89909
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/3.png",
+      "bytes": 84658
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/0.png",
+      "bytes": 59287
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/1.png",
+      "bytes": 61430
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/9.png",
+      "bytes": 63815
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/8.png",
+      "bytes": 61072
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/6.png",
+      "bytes": 64379
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/5.png",
+      "bytes": 59718
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/7.png",
+      "bytes": 73753
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/3.png",
+      "bytes": 70791
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/2.png",
+      "bytes": 64512
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/0.png",
+      "bytes": 64849
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/1.png",
+      "bytes": 57176
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/9.png",
+      "bytes": 68873
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/Minotaur_Skin_wizard_cape.png",
+      "bytes": 43971
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/6.png",
+      "bytes": 71463
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/5.png",
+      "bytes": 62104
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/7.png",
+      "bytes": 59863
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/3.png",
+      "bytes": 62272
+    },
+    {
+      "path": "public/original3d/models/vampire_artillery/9.png",
+      "bytes": 67814
+    },
+    {
+      "path": "public/original3d/models/vampire_artillery/8.png",
+      "bytes": 60898
+    },
+    {
+      "path": "public/original3d/models/vampire_artillery/5.png",
+      "bytes": 66033
+    },
+    {
+      "path": "public/original3d/models/vampire_artillery/3.png",
+      "bytes": 62860
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/2.png",
+      "bytes": 69249
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/10.png",
+      "bytes": 73976
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/0.png",
+      "bytes": 80789
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/1.png",
+      "bytes": 70115
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/9.png",
+      "bytes": 66938
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/6.png",
+      "bytes": 67846
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/4.png",
+      "bytes": 74708
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/7.png",
+      "bytes": 65959
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/3.png",
+      "bytes": 67063
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/2.png",
+      "bytes": 71713
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/10.png",
+      "bytes": 80572
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/11.png",
+      "bytes": 58796
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/0.png",
+      "bytes": 59581
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/1.png",
+      "bytes": 82380
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/8.png",
+      "bytes": 71668
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/Elemental_Skin_wizard_cape.png",
+      "bytes": 40977
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/4.png",
+      "bytes": 74885
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/5.png",
+      "bytes": 73955
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/7.png",
+      "bytes": 64621
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/3.png",
+      "bytes": 74292
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/10.png",
+      "bytes": 63042
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/11.png",
+      "bytes": 66947
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/1.png",
+      "bytes": 60793
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/9.png",
+      "bytes": 56931
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/8.png",
+      "bytes": 61462
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/6.png",
+      "bytes": 69685
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/4.png",
+      "bytes": 58378
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/5.png",
+      "bytes": 59332
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/7.png",
+      "bytes": 61574
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/3.png",
+      "bytes": 64376
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/2.png",
+      "bytes": 50032
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/10.png",
+      "bytes": 59958
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/11.png",
+      "bytes": 52958
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/1.png",
+      "bytes": 62815
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/9.png",
+      "bytes": 71835
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/8.png",
+      "bytes": 64988
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/6.png",
+      "bytes": 56882
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/4.png",
+      "bytes": 57922
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/5.png",
+      "bytes": 65813
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/7.png",
+      "bytes": 46049
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/3.png",
+      "bytes": 55065
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/2.png",
+      "bytes": 74985
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/10.png",
+      "bytes": 68834
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/11.png",
+      "bytes": 82377
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/1.png",
+      "bytes": 74930
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/9.png",
+      "bytes": 87981
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/4.png",
+      "bytes": 83572
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/5.png",
+      "bytes": 86488
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/7.png",
+      "bytes": 73472
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/10.png",
+      "bytes": 77642
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/11.png",
+      "bytes": 80779
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/0.png",
+      "bytes": 73901
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/9.png",
+      "bytes": 76474
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/6.png",
+      "bytes": 82683
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/5.png",
+      "bytes": 80566
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/7.png",
+      "bytes": 75667
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/3.png",
+      "bytes": 84389
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/2.png",
+      "bytes": 73703
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/11.png",
+      "bytes": 80709
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/0.png",
+      "bytes": 84760
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/1.png",
+      "bytes": 68687
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/9.png",
+      "bytes": 84388
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/Golem_Skin_wizard_cape.png",
+      "bytes": 47025
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/6.png",
+      "bytes": 75163
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/4.png",
+      "bytes": 78767
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/5.png",
+      "bytes": 79719
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/7.png",
+      "bytes": 83681
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/2.png",
+      "bytes": 69500
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/10.png",
+      "bytes": 98405
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/11.png",
+      "bytes": 90563
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/9.png",
+      "bytes": 70723
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/8.png",
+      "bytes": 97384
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/5.png",
+      "bytes": 97192
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/7.png",
+      "bytes": 89909
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/3.png",
+      "bytes": 84658
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/2.png",
+      "bytes": 78218
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/10.png",
+      "bytes": 64673
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/1.png",
+      "bytes": 69911
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/9.png",
+      "bytes": 71877
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/Werewolf_Skin_wizard_cape.png",
+      "bytes": 30277
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/8.png",
+      "bytes": 78031
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/6.png",
+      "bytes": 57918
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/5.png",
+      "bytes": 61737
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/7.png",
+      "bytes": 64758
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/2.png",
+      "bytes": 34181
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/10.png",
+      "bytes": 53400
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/11.png",
+      "bytes": 56956
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/1.png",
+      "bytes": 45821
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/9.png",
+      "bytes": 47310
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/8.png",
+      "bytes": 70513
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/6.png",
+      "bytes": 48986
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/4.png",
+      "bytes": 73750
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/5.png",
+      "bytes": 54913
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/7.png",
+      "bytes": 55962
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/3.png",
+      "bytes": 55074
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/2.png",
+      "bytes": 64310
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/10.png",
+      "bytes": 69889
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/11.png",
+      "bytes": 86427
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/1.png",
+      "bytes": 82759
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/9.png",
+      "bytes": 84923
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/8.png",
+      "bytes": 75708
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/4.png",
+      "bytes": 71677
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/5.png",
+      "bytes": 69425
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/7.png",
+      "bytes": 85521
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/3.png",
+      "bytes": 87089
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/2.png",
+      "bytes": 63670
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/10.png",
+      "bytes": 60764
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/11.png",
+      "bytes": 57104
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/1.png",
+      "bytes": 59578
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/9.png",
+      "bytes": 54332
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/8.png",
+      "bytes": 53992
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/4.png",
+      "bytes": 56461
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/5.png",
+      "bytes": 61676
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/7.png",
+      "bytes": 61632
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/3.png",
+      "bytes": 58468
+    },
+    {
+      "path": "public/original3d/models/undead_fighter/10.png",
+      "bytes": 64718
+    },
+    {
+      "path": "public/original3d/models/undead_fighter/0.png",
+      "bytes": 65117
+    },
+    {
+      "path": "public/original3d/models/undead_fighter/9.png",
+      "bytes": 72118
+    },
+    {
+      "path": "public/original3d/models/undead_fighter/6.png",
+      "bytes": 69945
+    },
+    {
+      "path": "public/original3d/models/undead_fighter/7.png",
+      "bytes": 67219
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/2.png",
+      "bytes": 77821
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/10.png",
+      "bytes": 83429
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/11.png",
+      "bytes": 69142
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/1.png",
+      "bytes": 67027
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/9.png",
+      "bytes": 68612
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/8.png",
+      "bytes": 60621
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/4.png",
+      "bytes": 72063
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/5.png",
+      "bytes": 69573
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/3.png",
+      "bytes": 66787
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/2.png",
+      "bytes": 76218
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/10.png",
+      "bytes": 75394
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/11.png",
+      "bytes": 69865
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/1.png",
+      "bytes": 83689
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/9.png",
+      "bytes": 78610
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/8.png",
+      "bytes": 66383
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/5.png",
+      "bytes": 77800
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/3.png",
+      "bytes": 68948
+    },
+    {
+      "path": "public/original3d/models/elf_fighter/2.png",
+      "bytes": 77545
+    },
+    {
+      "path": "public/original3d/models/elf_fighter/0.png",
+      "bytes": 67806
+    },
+    {
+      "path": "public/original3d/models/elf_fighter/9.png",
+      "bytes": 65319
+    },
+    {
+      "path": "public/original3d/models/elf_fighter/5.png",
+      "bytes": 61235
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/2.png",
+      "bytes": 59471
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/10.png",
+      "bytes": 65019
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/0.png",
+      "bytes": 71470
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/1.png",
+      "bytes": 77833
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/9.png",
+      "bytes": 73097
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/6.png",
+      "bytes": 68109
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/5.png",
+      "bytes": 80174
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/7.png",
+      "bytes": 57833
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/3.png",
+      "bytes": 61380
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/2.png",
+      "bytes": 61185
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/10.png",
+      "bytes": 53114
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/0.png",
+      "bytes": 63498
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/1.png",
+      "bytes": 75702
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/9.png",
+      "bytes": 77759
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/6.png",
+      "bytes": 59662
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/4.png",
+      "bytes": 62863
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/Robotron_Skin_rogue_eyes.png",
+      "bytes": 2786
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/5.png",
+      "bytes": 75444
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/7.png",
+      "bytes": 67592
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/3.png",
+      "bytes": 64984
+    },
+    {
+      "path": "public/original3d/models/orc_fighter/10.png",
+      "bytes": 70459
+    },
+    {
+      "path": "public/original3d/models/orc_fighter/9.png",
+      "bytes": 84585
+    },
+    {
+      "path": "public/original3d/models/orc_fighter/3.png",
+      "bytes": 76773
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/2.png",
+      "bytes": 81822
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/10.png",
+      "bytes": 82494
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/1.png",
+      "bytes": 55136
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/9.png",
+      "bytes": 86791
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/8.png",
+      "bytes": 89149
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/5.png",
+      "bytes": 70014
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/7.png",
+      "bytes": 101180
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/3.png",
+      "bytes": 103215
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/11.png",
+      "bytes": 76787
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/0.png",
+      "bytes": 100305
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/1.png",
+      "bytes": 77886
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/9.png",
+      "bytes": 82065
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/6.png",
+      "bytes": 51369
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/4.png",
+      "bytes": 87876
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/5.png",
+      "bytes": 83614
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/3.png",
+      "bytes": 69158
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/Spectre_Skin_wizard_cape.png",
+      "bytes": 59393
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/2.png",
+      "bytes": 74955
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/10.png",
+      "bytes": 81227
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/11.png",
+      "bytes": 61143
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/1.png",
+      "bytes": 54140
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/9.png",
+      "bytes": 64141
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/8.png",
+      "bytes": 82723
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/6.png",
+      "bytes": 54637
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/4.png",
+      "bytes": 81806
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/7.png",
+      "bytes": 80051
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/3.png",
+      "bytes": 45189
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/2.png",
+      "bytes": 52915
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/10.png",
+      "bytes": 61346
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/11.png",
+      "bytes": 57318
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/1.png",
+      "bytes": 60290
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/9.png",
+      "bytes": 63710
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/Human_Skin_wizard_cape.png",
+      "bytes": 45963
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/8.png",
+      "bytes": 56348
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/6.png",
+      "bytes": 55947
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/3.png",
+      "bytes": 76602
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/2.png",
+      "bytes": 67887
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/10.png",
+      "bytes": 72991
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/0.png",
+      "bytes": 61103
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/1.png",
+      "bytes": 75946
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/9.png",
+      "bytes": 86937
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/4.png",
+      "bytes": 77693
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/5.png",
+      "bytes": 75651
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/7.png",
+      "bytes": 89163
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/2.png",
+      "bytes": 61464
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/10.png",
+      "bytes": 63249
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/1.png",
+      "bytes": 66573
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/6.png",
+      "bytes": 63870
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/4.png",
+      "bytes": 67857
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/5.png",
+      "bytes": 56105
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/7.png",
+      "bytes": 66021
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/3.png",
+      "bytes": 66339
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/2.png",
+      "bytes": 70876
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/10.png",
+      "bytes": 63818
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/11.png",
+      "bytes": 63524
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/1.png",
+      "bytes": 59090
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/9.png",
+      "bytes": 65693
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/8.png",
+      "bytes": 64826
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/4.png",
+      "bytes": 66212
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/5.png",
+      "bytes": 61557
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/7.png",
+      "bytes": 63380
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/3.png",
+      "bytes": 55560
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/2.png",
+      "bytes": 74567
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/10.png",
+      "bytes": 72864
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/0.png",
+      "bytes": 63290
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/9.png",
+      "bytes": 74783
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/6.png",
+      "bytes": 68805
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/4.png",
+      "bytes": 63804
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/5.png",
+      "bytes": 71121
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/7.png",
+      "bytes": 59928
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/3.png",
+      "bytes": 54708
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/0.png",
+      "bytes": 60469
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/1.png",
+      "bytes": 60911
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/9.png",
+      "bytes": 55181
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/6.png",
+      "bytes": 66299
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/4.png",
+      "bytes": 58583
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/5.png",
+      "bytes": 56416
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/7.png",
+      "bytes": 45534
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/3.png",
+      "bytes": 43533
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/2.png",
+      "bytes": 53306
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/10.png",
+      "bytes": 55262
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/11.png",
+      "bytes": 53791
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/9.png",
+      "bytes": 75982
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/8.png",
+      "bytes": 51879
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/6.png",
+      "bytes": 57368
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/4.png",
+      "bytes": 49010
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/5.png",
+      "bytes": 66903
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/7.png",
+      "bytes": 50655
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/3.png",
+      "bytes": 52428
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/Vampire_Skin_wizard_cape.png",
+      "bytes": 36336
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/10.png",
+      "bytes": 72091
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/0.png",
+      "bytes": 92957
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/1.png",
+      "bytes": 93482
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/Skeleton_Skin_wizard_cape.png",
+      "bytes": 58256
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/9.png",
+      "bytes": 81214
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/8.png",
+      "bytes": 96835
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/4.png",
+      "bytes": 72572
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/5.png",
+      "bytes": 98928
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/7.png",
+      "bytes": 93387
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/3.png",
+      "bytes": 82620
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/2.png",
+      "bytes": 66931
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/10.png",
+      "bytes": 61946
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/11.png",
+      "bytes": 70140
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/Imp_Skin_artillery_wings.png",
+      "bytes": 47231
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/1.png",
+      "bytes": 71596
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/9.png",
+      "bytes": 71221
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/8.png",
+      "bytes": 70080
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/4.png",
+      "bytes": 70999
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/5.png",
+      "bytes": 72204
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/7.png",
+      "bytes": 64184
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/3.png",
+      "bytes": 74676
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/11.png",
+      "bytes": 68710
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/0.png",
+      "bytes": 81484
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/1.png",
+      "bytes": 63011
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/9.png",
+      "bytes": 67108
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/6.png",
+      "bytes": 67916
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/5.png",
+      "bytes": 61239
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/3.png",
+      "bytes": 71759
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/2.png",
+      "bytes": 81829
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/10.png",
+      "bytes": 68321
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/11.png",
+      "bytes": 86430
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/1.png",
+      "bytes": 88077
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/9.png",
+      "bytes": 92675
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/8.png",
+      "bytes": 91254
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/4.png",
+      "bytes": 90166
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/5.png",
+      "bytes": 90948
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/7.png",
+      "bytes": 87628
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/3.png",
+      "bytes": 78111
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/10.png",
+      "bytes": 95365
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/0.png",
+      "bytes": 102429
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/1.png",
+      "bytes": 51548
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/9.png",
+      "bytes": 50249
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/8.png",
+      "bytes": 107509
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/6.png",
+      "bytes": 93387
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/4.png",
+      "bytes": 100501
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/7.png",
+      "bytes": 108464
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/3.png",
+      "bytes": 106279
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/Elemental_Skin_artillery_eyes.png",
+      "bytes": 17655
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/2.png",
+      "bytes": 76785
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/10.png",
+      "bytes": 71111
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/0.png",
+      "bytes": 88382
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/1.png",
+      "bytes": 63953
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/9.png",
+      "bytes": 51436
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/Robotron_Skin_fighter_eyes.png",
+      "bytes": 3425
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/8.png",
+      "bytes": 88722
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/6.png",
+      "bytes": 83522
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/4.png",
+      "bytes": 88076
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/5.png",
+      "bytes": 62000
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/7.png",
+      "bytes": 70818
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/2.png",
+      "bytes": 92482
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/11.png",
+      "bytes": 64648
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/0.png",
+      "bytes": 91819
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/1.png",
+      "bytes": 105819
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/9.png",
+      "bytes": 84502
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/6.png",
+      "bytes": 94375
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/5.png",
+      "bytes": 93631
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/7.png",
+      "bytes": 62162
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/2.png",
+      "bytes": 80094
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/Imp_Skin_fighter_wings.png",
+      "bytes": 46021
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/0.png",
+      "bytes": 62625
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/1.png",
+      "bytes": 60297
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/9.png",
+      "bytes": 64349
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/8.png",
+      "bytes": 65429
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/5.png",
+      "bytes": 61594
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/7.png",
+      "bytes": 69990
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/3.png",
+      "bytes": 80845
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/2.png",
+      "bytes": 78546
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/10.png",
+      "bytes": 76155
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/11.png",
+      "bytes": 67269
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/1.png",
+      "bytes": 72659
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/9.png",
+      "bytes": 72458
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/8.png",
+      "bytes": 65561
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/4.png",
+      "bytes": 66953
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/5.png",
+      "bytes": 69199
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/7.png",
+      "bytes": 62619
+    },
+    {
+      "path": "public/original3d/models/human_artillery/2.png",
+      "bytes": 51259
+    },
+    {
+      "path": "public/original3d/models/human_artillery/10.png",
+      "bytes": 54792
+    },
+    {
+      "path": "public/original3d/models/human_artillery/11.png",
+      "bytes": 66847
+    },
+    {
+      "path": "public/original3d/models/human_artillery/1.png",
+      "bytes": 62793
+    },
+    {
+      "path": "public/original3d/models/human_artillery/9.png",
+      "bytes": 66115
+    },
+    {
+      "path": "public/original3d/models/human_artillery/8.png",
+      "bytes": 46550
+    },
+    {
+      "path": "public/original3d/models/human_artillery/4.png",
+      "bytes": 52850
+    },
+    {
+      "path": "public/original3d/models/human_artillery/5.png",
+      "bytes": 52959
+    },
+    {
+      "path": "public/original3d/models/human_artillery/3.png",
+      "bytes": 69405
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/2.png",
+      "bytes": 84365
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/10.png",
+      "bytes": 81355
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/11.png",
+      "bytes": 79837
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/1.png",
+      "bytes": 76116
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/9.png",
+      "bytes": 68652
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/8.png",
+      "bytes": 82004
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/6.png",
+      "bytes": 88769
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/4.png",
+      "bytes": 75911
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/5.png",
+      "bytes": 73839
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/7.png",
+      "bytes": 74339
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/3.png",
+      "bytes": 84321
+    },
+    {
+      "path": "public/original3d/models/human_rogue/2.png",
+      "bytes": 50032
+    },
+    {
+      "path": "public/original3d/models/human_rogue/10.png",
+      "bytes": 59958
+    },
+    {
+      "path": "public/original3d/models/human_rogue/11.png",
+      "bytes": 52958
+    },
+    {
+      "path": "public/original3d/models/human_rogue/1.png",
+      "bytes": 62815
+    },
+    {
+      "path": "public/original3d/models/human_rogue/9.png",
+      "bytes": 71835
+    },
+    {
+      "path": "public/original3d/models/human_rogue/6.png",
+      "bytes": 56882
+    },
+    {
+      "path": "public/original3d/models/human_rogue/5.png",
+      "bytes": 65813
+    },
+    {
+      "path": "public/original3d/models/human_rogue/7.png",
+      "bytes": 46049
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/2.png",
+      "bytes": 83366
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/10.png",
+      "bytes": 82231
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/11.png",
+      "bytes": 57152
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/0.png",
+      "bytes": 68445
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/Lizard_Skin_wizard_cape.png",
+      "bytes": 44229
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/9.png",
+      "bytes": 73749
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/4.png",
+      "bytes": 69897
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/5.png",
+      "bytes": 78562
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/7.png",
+      "bytes": 69001
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/3.png",
+      "bytes": 57450
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/2.png",
+      "bytes": 69235
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/10.png",
+      "bytes": 78485
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/11.png",
+      "bytes": 61445
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/0.png",
+      "bytes": 73169
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/1.png",
+      "bytes": 79757
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/9.png",
+      "bytes": 68790
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/5.png",
+      "bytes": 85905
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/7.png",
+      "bytes": 53081
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/3.png",
+      "bytes": 58738
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/2.png",
+      "bytes": 62569
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/10.png",
+      "bytes": 71510
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/11.png",
+      "bytes": 70471
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/1.png",
+      "bytes": 50070
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/9.png",
+      "bytes": 74132
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/8.png",
+      "bytes": 63416
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/4.png",
+      "bytes": 64242
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/5.png",
+      "bytes": 76299
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/3.png",
+      "bytes": 55792
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/2.png",
+      "bytes": 76538
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/10.png",
+      "bytes": 62259
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/0.png",
+      "bytes": 60396
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/1.png",
+      "bytes": 68181
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/9.png",
+      "bytes": 82677
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/8.png",
+      "bytes": 73707
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/6.png",
+      "bytes": 77146
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/5.png",
+      "bytes": 81339
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/3.png",
+      "bytes": 86960
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/2.png",
+      "bytes": 63577
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/10.png",
+      "bytes": 73361
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/11.png",
+      "bytes": 70330
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/1.png",
+      "bytes": 59750
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/9.png",
+      "bytes": 74248
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/8.png",
+      "bytes": 73640
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/Undead_Skin_wizard_cape.png",
+      "bytes": 86267
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/5.png",
+      "bytes": 74938
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/3.png",
+      "bytes": 77297
+    },
+    {
+      "path": "public/original3d/models/human_fighter/10.png",
+      "bytes": 70806
+    },
+    {
+      "path": "public/original3d/models/human_fighter/0.png",
+      "bytes": 54111
+    },
+    {
+      "path": "public/original3d/models/human_fighter/9.png",
+      "bytes": 59016
+    },
+    {
+      "path": "public/original3d/models/human_fighter/5.png",
+      "bytes": 59104
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/2.png",
+      "bytes": 69203
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/10.png",
+      "bytes": 71652
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/11.png",
+      "bytes": 61448
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/1.png",
+      "bytes": 96001
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/9.png",
+      "bytes": 77890
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/8.png",
+      "bytes": 74305
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/4.png",
+      "bytes": 76498
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/5.png",
+      "bytes": 93121
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/7.png",
+      "bytes": 61058
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/Robotron_Skin_artillery_eyes.png",
+      "bytes": 13251
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/3.png",
+      "bytes": 61555
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/2.png",
+      "bytes": 87315
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/10.png",
+      "bytes": 89891
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/0.png",
+      "bytes": 69847
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/1.png",
+      "bytes": 61147
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/Robotron_Skin_wizard_eyes.png",
+      "bytes": 3619
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/9.png",
+      "bytes": 61202
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/8.png",
+      "bytes": 74159
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/6.png",
+      "bytes": 82936
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/4.png",
+      "bytes": 72948
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/5.png",
+      "bytes": 66534
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/7.png",
+      "bytes": 58864
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/2.png",
+      "bytes": 64898
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/10.png",
+      "bytes": 75105
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/11.png",
+      "bytes": 66348
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/1.png",
+      "bytes": 75680
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/9.png",
+      "bytes": 69802
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/8.png",
+      "bytes": 65348
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/4.png",
+      "bytes": 66986
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/5.png",
+      "bytes": 65958
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/7.png",
+      "bytes": 76387
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/3.png",
+      "bytes": 73711
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/2.png",
+      "bytes": 68137
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/10.png",
+      "bytes": 70155
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/0.png",
+      "bytes": 52624
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/Imp_Skin_rogue_wings.png",
+      "bytes": 46357
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/1.png",
+      "bytes": 68795
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/9.png",
+      "bytes": 66181
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/6.png",
+      "bytes": 64240
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/5.png",
+      "bytes": 72606
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/7.png",
+      "bytes": 67251
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/10.png",
+      "bytes": 68749
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/0.png",
+      "bytes": 71104
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/Orc_Skin_wizard_cape.png",
+      "bytes": 37132
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/9.png",
+      "bytes": 67875
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/8.png",
+      "bytes": 67886
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/6.png",
+      "bytes": 75949
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/5.png",
+      "bytes": 67155
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/7.png",
+      "bytes": 72460
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/3.png",
+      "bytes": 68171
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/2.png",
+      "bytes": 69149
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/10.png",
+      "bytes": 72347
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/11.png",
+      "bytes": 92505
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/1.png",
+      "bytes": 87771
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/9.png",
+      "bytes": 88531
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/8.png",
+      "bytes": 87721
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/7.png",
+      "bytes": 94586
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/3.png",
+      "bytes": 71300
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/2.png",
+      "bytes": 61746
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/11.png",
+      "bytes": 60966
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/Elf_Skin_wizard_cape.png",
+      "bytes": 40564
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/1.png",
+      "bytes": 57589
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/9.png",
+      "bytes": 65129
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/6.png",
+      "bytes": 58031
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/7.png",
+      "bytes": 58620
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/3.png",
+      "bytes": 72755
+    },
+    {
+      "path": "public/original3d/world/weapon_staff/Weapon_staff.png",
+      "bytes": 52537
+    },
+    {
+      "path": "public/original3d/world/weapon_staff/weapon_staff.json",
+      "bytes": 13450
+    },
+    {
+      "path": "public/original3d/world/arena_3/CM_Mountain_bits.png",
+      "bytes": 45619
+    },
+    {
+      "path": "public/original3d/world/arena_3/Fan_mountain_sky.png",
+      "bytes": 136734
+    },
+    {
+      "path": "public/original3d/world/arena_3/Fan_mountain_clouds.png",
+      "bytes": 16312
+    },
+    {
+      "path": "public/original3d/world/arena_3/StreakHard.png",
+      "bytes": 1197
+    },
+    {
+      "path": "public/original3d/world/arena_3/GLWG_poof_sparkles.png",
+      "bytes": 1334
+    },
+    {
+      "path": "public/original3d/world/arena_3/CM_Mountain_arena.png",
+      "bytes": 1148100
+    },
+    {
+      "path": "public/original3d/world/arena_3/CM_mountain_floor_01.png",
+      "bytes": 627865
+    },
+    {
+      "path": "public/original3d/world/arena_3/Fan_mountain_sky_sunset.png",
+      "bytes": 5523
+    },
+    {
+      "path": "public/original3d/world/arena_3/arena_03.json",
+      "bytes": 844006
+    },
+    {
+      "path": "public/original3d/world/arena_3/Fan_mountain_crystals_shine.png",
+      "bytes": 11696
+    },
+    {
+      "path": "public/original3d/world/weapon_sword/Weapon_sword.png",
+      "bytes": 62275
+    },
+    {
+      "path": "public/original3d/world/weapon_sword/weapon_sword.json",
+      "bytes": 17377
+    },
+    {
+      "path": "public/original3d/world/weapon_dagger/Weapon_dagger.png",
+      "bytes": 120544
+    },
+    {
+      "path": "public/original3d/world/weapon_dagger/weapon_dagger.json",
+      "bytes": 12865
+    },
+    {
+      "path": "public/original3d/world/weapon_bow/Weapon_bow.png",
+      "bytes": 122194
+    },
+    {
+      "path": "public/original3d/world/weapon_bow/weapon_bow.json",
+      "bytes": 12707
+    },
+    {
+      "path": "public/original3d/world/arena_2/arena_02.json",
+      "bytes": 1350825
+    },
+    {
+      "path": "public/original3d/world/arena_2/Fan_mountain_clouds.png",
+      "bytes": 16312
+    },
+    {
+      "path": "public/original3d/world/arena_2/GLWG_poof_sparkles.png",
+      "bytes": 1334
+    },
+    {
+      "path": "public/original3d/world/arena_2/particle_dust.png",
+      "bytes": 5954
+    },
+    {
+      "path": "public/original3d/world/arena_2/CM_forest_arena.png",
+      "bytes": 713431
+    },
+    {
+      "path": "public/original3d/world/arena_2/CM_forest_floor_01.png",
+      "bytes": 632444
+    },
+    {
+      "path": "public/original3d/world/arena_2/Fan_leaf.png",
+      "bytes": 33054
+    },
+    {
+      "path": "public/original3d/world/arena_2/Fan_forest_glow.png",
+      "bytes": 4318
+    },
+    {
+      "path": "public/original3d/world/arena_2/Fan_forest_sky.png",
+      "bytes": 117011
+    },
+    {
+      "path": "public/original3d/world/weapon_axe/weapon_axe.json",
+      "bytes": 21612
+    },
+    {
+      "path": "public/original3d/world/weapon_axe/Weapon_axe.png",
+      "bytes": 126981
+    },
+    {
+      "path": "public/original3d/world/arena_4/CM_desert_arena.png",
+      "bytes": 961926
+    },
+    {
+      "path": "public/original3d/world/arena_4/CM_desert_floor_01.png",
+      "bytes": 544437
+    },
+    {
+      "path": "public/original3d/world/arena_4/arena_04.json",
+      "bytes": 1608340
+    },
+    {
+      "path": "public/original3d/world/arena_4/Fan_desert_sky.png",
+      "bytes": 94448
+    },
+    {
+      "path": "public/original3d/world/arena_4/GLWG_poof_sparkles.png",
+      "bytes": 1334
+    },
+    {
+      "path": "public/original3d/world/arena_4/Fan_flies.png",
+      "bytes": 5405
+    },
+    {
+      "path": "public/original3d/world/arena_1/CM_lava_floor_01.png",
+      "bytes": 573552
+    },
+    {
+      "path": "public/original3d/world/arena_1/Fan_lava_clouds_flash.png",
+      "bytes": 6227
+    },
+    {
+      "path": "public/original3d/world/arena_1/CM_lava_arena.png",
+      "bytes": 863861
+    },
+    {
+      "path": "public/original3d/world/arena_1/Fan_stained_glass_glow.png",
+      "bytes": 6304
+    },
+    {
+      "path": "public/original3d/world/arena_1/Fan_lava_clouds.png",
+      "bytes": 28045
+    },
+    {
+      "path": "public/original3d/world/arena_1/particle_dust.png",
+      "bytes": 5954
+    },
+    {
+      "path": "public/original3d/world/arena_1/Fan_smoke.png",
+      "bytes": 20849
+    },
+    {
+      "path": "public/original3d/world/arena_1/Fan_lava_sky.png",
+      "bytes": 106697
+    },
+    {
+      "path": "public/original3d/world/arena_1/Fan_lava.png",
+      "bytes": 103244
+    },
+    {
+      "path": "public/original3d/world/arena_1/particle_explosion.png",
+      "bytes": 15264
+    },
+    {
+      "path": "public/original3d/world/arena_1/arena_01.json",
+      "bytes": 818150
+    },
+    {
+      "path": "public/original3d/props/source-dais/dais.json",
+      "bytes": 24712
+    },
+    {
+      "path": "public/original3d/props/source-dais/fan_furniture_dais_shine.png",
+      "bytes": 4752
+    },
+    {
+      "path": "public/original3d/props/source-dais/fan_furniture_dais.png",
+      "bytes": 163420
+    },
+    {
+      "path": "public/original3d/props/source-crystal2/fan_furniture_crystals.png",
+      "bytes": 40827
+    },
+    {
+      "path": "public/original3d/props/source-crystal2/Fan_furniture_crystals_shine.png",
+      "bytes": 11696
+    },
+    {
+      "path": "public/original3d/props/source-crystal2/crystal_02.json",
+      "bytes": 17977
+    },
+    {
+      "path": "public/original3d/props/source-rock/fan_furniture_rock.png",
+      "bytes": 112911
+    },
+    {
+      "path": "public/original3d/props/source-rock/rock_01.json",
+      "bytes": 33022
+    },
+    {
+      "path": "public/original3d/props/source-crystal/fan_furniture_crystals.png",
+      "bytes": 40827
+    },
+    {
+      "path": "public/original3d/props/source-crystal/crystal_01.json",
+      "bytes": 22216
+    },
+    {
+      "path": "public/original3d/props/source-crystal/Fan_furniture_crystals_shine.png",
+      "bytes": 11696
+    },
+    {
+      "path": "public/assets/original/sheets/undead_artillery.webp",
+      "bytes": 72510
+    },
+    {
+      "path": "public/assets/original/sheets/orc_artillery.webp",
+      "bytes": 82616
+    },
+    {
+      "path": "public/assets/original/sheets/elf_artillery.webp",
+      "bytes": 81550
+    },
+    {
+      "path": "public/assets/original/sheets/undead_fighter.webp",
+      "bytes": 72664
+    },
+    {
+      "path": "public/assets/original/sheets/human_fighter.webp",
+      "bytes": 62938
+    },
+    {
+      "path": "public/assets/original/sheets/undead_spellcaster.webp",
+      "bytes": 73424
+    },
+    {
+      "path": "public/assets/original/sheets/human_artillery.webp",
+      "bytes": 62254
+    },
+    {
+      "path": "public/assets/original/sheets/orc_fighter.webp",
+      "bytes": 84454
+    },
+    {
+      "path": "public/assets/original/sheets/elf_fighter.webp",
+      "bytes": 70628
+    },
+    {
+      "path": "public/assets/original/sheets/orc_rogue.webp",
+      "bytes": 75460
+    },
+    {
+      "path": "public/assets/original/sheets/leader_human.webp",
+      "bytes": 62938
+    },
+    {
+      "path": "public/assets/original/sheets/leader_orc.webp",
+      "bytes": 86240
+    },
+    {
+      "path": "public/assets/original/sheets/human_spellcaster.webp",
+      "bytes": 67946
+    },
+    {
+      "path": "public/assets/original/sheets/orc_spellcaster.webp",
+      "bytes": 78340
+    },
+    {
+      "path": "public/assets/original/sheets/human_rogue.webp",
+      "bytes": 54872
+    },
+    {
+      "path": "public/assets/original/sheets/leader_elf.webp",
+      "bytes": 89540
+    },
+    {
+      "path": "public/assets/original/sheets/undead_rogue.webp",
+      "bytes": 72316
+    },
+    {
+      "path": "public/assets/original/sheets/neutral_assassin.webp",
+      "bytes": 51122
+    },
+    {
+      "path": "public/assets/original/sheets/neutral_mercenary.webp",
+      "bytes": 54872
+    },
+    {
+      "path": "public/assets/original/sheets/neutral_golem.webp",
+      "bytes": 103282
+    },
+    {
+      "path": "public/assets/original/sheets/elf_spellcaster.webp",
+      "bytes": 76452
+    },
+    {
+      "path": "public/assets/original/sheets/leader_zombie.webp",
+      "bytes": 75764
+    },
+    {
+      "path": "public/assets/original/sheets/neutral_dragon.webp",
+      "bytes": 77548
+    },
+    {
+      "path": "public/assets/original/sheets/elf_rogue.webp",
+      "bytes": 81960
+    },
+    {
+      "path": "public/original3d/world-manifest.json",
+      "bytes": 1389
+    },
+    {
+      "path": "public/original3d/animation-source.txt",
+      "bytes": 17923
+    }
+  ],
+  "compacted": [
+    {
+      "path": "public/original3d/models/human_fighter/human_fighter.json",
+      "before": 634300,
+      "after": 539979
+    },
+    {
+      "path": "public/original3d/models/human_rogue/human_rogue.json",
+      "before": 684128,
+      "after": 582905
+    },
+    {
+      "path": "public/original3d/models/human_artillery/human_artillery.json",
+      "before": 637536,
+      "after": 540513
+    },
+    {
+      "path": "public/original3d/models/human_spellcaster/human_spellcaster.json",
+      "before": 717198,
+      "after": 613300
+    },
+    {
+      "path": "public/original3d/models/undead_fighter/undead_fighter.json",
+      "before": 622837,
+      "after": 528745
+    },
+    {
+      "path": "public/original3d/models/undead_rogue/undead_rogue.json",
+      "before": 661647,
+      "after": 562309
+    },
+    {
+      "path": "public/original3d/models/undead_artillery/undead_artillery.json",
+      "before": 663655,
+      "after": 561453
+    },
+    {
+      "path": "public/original3d/models/undead_spellcaster/undead_spellcaster.json",
+      "before": 661055,
+      "after": 561510
+    },
+    {
+      "path": "public/original3d/models/orc_fighter/orc_fighter.json",
+      "before": 584448,
+      "after": 498136
+    },
+    {
+      "path": "public/original3d/models/orc_rogue/orc_rogue.json",
+      "before": 631045,
+      "after": 538718
+    },
+    {
+      "path": "public/original3d/models/orc_artillery/orc_artillery.json",
+      "before": 397036,
+      "after": 383993
+    },
+    {
+      "path": "public/original3d/models/orc_spellcaster/orc_spellcaster.json",
+      "before": 669290,
+      "after": 573184
+    },
+    {
+      "path": "public/original3d/models/elf_fighter/elf_fighter.json",
+      "before": 655983,
+      "after": 561504
+    },
+    {
+      "path": "public/original3d/models/elf_rogue/elf_rogue.json",
+      "before": 656919,
+      "after": 561339
+    },
+    {
+      "path": "public/original3d/models/elf_artillery/elf_artillery.json",
+      "before": 751202,
+      "after": 640757
+    },
+    {
+      "path": "public/original3d/models/elf_spellcaster/elf_spellcaster.json",
+      "before": 665859,
+      "after": 567227
+    },
+    {
+      "path": "public/original3d/models/leader_human/boss_dean.json",
+      "before": 555941,
+      "after": 471508
+    },
+    {
+      "path": "public/original3d/models/leader_zombie/boss_mummy.json",
+      "before": 637722,
+      "after": 540167
+    },
+    {
+      "path": "public/original3d/models/leader_orc/boss_orcqueen.json",
+      "before": 767768,
+      "after": 653336
+    },
+    {
+      "path": "public/original3d/models/leader_elf/boss_elverkonge.json",
+      "before": 714601,
+      "after": 607902
+    },
+    {
+      "path": "public/original3d/models/neutral_golem/golem_fighter.json",
+      "before": 642014,
+      "after": 548653
+    },
+    {
+      "path": "public/original3d/models/neutral_mercenary/human_rogue.json",
+      "before": 684128,
+      "after": 582905
+    },
+    {
+      "path": "public/original3d/models/neutral_assassin/spectre_rogue.json",
+      "before": 142782,
+      "after": 115835
+    },
+    {
+      "path": "public/original3d/models/neutral_dragon/lizard_fighter.json",
+      "before": 589722,
+      "after": 503319
+    },
+    {
+      "path": "public/original3d/models/lizard_fighter/lizard_fighter.json",
+      "before": 589722,
+      "after": 503319
+    },
+    {
+      "path": "public/original3d/models/lizard_rogue/lizard_rogue.json",
+      "before": 623552,
+      "after": 530691
+    },
+    {
+      "path": "public/original3d/models/lizard_spellcaster/lizard_spellcaster.json",
+      "before": 643222,
+      "after": 546510
+    },
+    {
+      "path": "public/original3d/models/lizard_artillery/lizard_artillery.json",
+      "before": 676826,
+      "after": 575842
+    },
+    {
+      "path": "public/original3d/models/dwarf_fighter/dwarf_fighter.json",
+      "before": 665360,
+      "after": 568333
+    },
+    {
+      "path": "public/original3d/models/dwarf_rogue/dwarf_rogue.json",
+      "before": 629705,
+      "after": 536705
+    },
+    {
+      "path": "public/original3d/models/dwarf_spellcaster/dwarf_spellcaster.json",
+      "before": 620125,
+      "after": 527487
+    },
+    {
+      "path": "public/original3d/models/dwarf_artillery/dwarf_artillery.json",
+      "before": 655286,
+      "after": 554735
+    },
+    {
+      "path": "public/original3d/models/minotaur_fighter/minotaur_fighter.json",
+      "before": 522716,
+      "after": 444237
+    },
+    {
+      "path": "public/original3d/models/minotaur_rogue/minotaur_rogue.json",
+      "before": 513915,
+      "after": 436246
+    },
+    {
+      "path": "public/original3d/models/minotaur_spellcaster/minotaur_spellcaster.json",
+      "before": 546395,
+      "after": 462679
+    },
+    {
+      "path": "public/original3d/models/minotaur_artillery/minotaur_artillery.json",
+      "before": 565362,
+      "after": 478244
+    },
+    {
+      "path": "public/original3d/models/werewolf_fighter/werewolf_fighter.json",
+      "before": 556263,
+      "after": 472272
+    },
+    {
+      "path": "public/original3d/models/werewolf_rogue/werewolf_rogue.json",
+      "before": 582305,
+      "after": 495245
+    },
+    {
+      "path": "public/original3d/models/werewolf_spellcaster/werewolf_spellcaster.json",
+      "before": 638480,
+      "after": 543265
+    },
+    {
+      "path": "public/original3d/models/werewolf_artillery/werewolf_artillery.json",
+      "before": 617100,
+      "after": 522997
+    },
+    {
+      "path": "public/original3d/models/golem_fighter/golem_fighter.json",
+      "before": 425744,
+      "after": 415918
+    },
+    {
+      "path": "public/original3d/models/golem_rogue/golem_rogue.json",
+      "before": 654487,
+      "after": 557724
+    },
+    {
+      "path": "public/original3d/models/golem_spellcaster/golem_spellcaster.json",
+      "before": 615576,
+      "after": 522131
+    },
+    {
+      "path": "public/original3d/models/golem_artillery/golem_artillery.json",
+      "before": 736171,
+      "after": 629110
+    },
+    {
+      "path": "public/original3d/models/elemental_fighter/elemental_fighter.json",
+      "before": 217251,
+      "after": 179191
+    },
+    {
+      "path": "public/original3d/models/elemental_artillery/elemental_artillery.json",
+      "before": 285971,
+      "after": 235545
+    },
+    {
+      "path": "public/original3d/models/cyclops_fighter/cyclops_fighter.json",
+      "before": 509395,
+      "after": 432778
+    },
+    {
+      "path": "public/original3d/models/cyclops_rogue/cyclops_rogue.json",
+      "before": 536721,
+      "after": 456234
+    },
+    {
+      "path": "public/original3d/models/cyclops_spellcaster/cyclops_spellcaster.json",
+      "before": 572156,
+      "after": 485899
+    },
+    {
+      "path": "public/original3d/models/cyclops_artillery/cyclops_artillery.json",
+      "before": 387121,
+      "after": 374073
+    },
+    {
+      "path": "public/original3d/models/skeleton_fighter/skeleton_fighter.json",
+      "before": 652918,
+      "after": 554153
+    },
+    {
+      "path": "public/original3d/models/skeleton_rogue/skeleton_rogue.json",
+      "before": 916179,
+      "after": 642535
+    },
+    {
+      "path": "public/original3d/models/skeleton_spellcaster/skeleton_spellcaster.json",
+      "before": 851029,
+      "after": 593444
+    },
+    {
+      "path": "public/original3d/models/skeleton_artillery/skeleton_artillery.json",
+      "before": 584130,
+      "after": 492330
+    },
+    {
+      "path": "public/original3d/models/robot_fighter/robotron_fighter.json",
+      "before": 599481,
+      "after": 509490
+    },
+    {
+      "path": "public/original3d/models/robot_rogue/robotron_rogue.json",
+      "before": 586382,
+      "after": 498084
+    },
+    {
+      "path": "public/original3d/models/robot_spellcaster/robotron_spellcaster.json",
+      "before": 608235,
+      "after": 517410
+    },
+    {
+      "path": "public/original3d/models/robot_artillery/robotron_artillery.json",
+      "before": 640669,
+      "after": 543178
+    },
+    {
+      "path": "public/original3d/models/imp_fighter/imp_fighter.json",
+      "before": 694218,
+      "after": 588007
+    },
+    {
+      "path": "public/original3d/models/imp_rogue/imp_rogue.json",
+      "before": 725429,
+      "after": 615206
+    },
+    {
+      "path": "public/original3d/models/imp_spellcaster/imp_spellcaster.json",
+      "before": 488901,
+      "after": 475651
+    },
+    {
+      "path": "public/original3d/models/imp_artillery/imp_artillery.json",
+      "before": 717056,
+      "after": 608796
+    },
+    {
+      "path": "public/original3d/models/spectre_fighter/spectre_fighter.json",
+      "before": 144353,
+      "after": 117347
+    },
+    {
+      "path": "public/original3d/models/spectre_rogue/spectre_rogue.json",
+      "before": 142782,
+      "after": 115835
+    },
+    {
+      "path": "public/original3d/models/spectre_spellcaster/spectre_spellcaster.json",
+      "before": 160680,
+      "after": 128494
+    },
+    {
+      "path": "public/original3d/models/spectre_artillery/spectre_artillery.json",
+      "before": 296272,
+      "after": 117685
+    },
+    {
+      "path": "public/original3d/models/vampire_artillery/vampire_artillery.json",
+      "before": 711284,
+      "after": 605976
+    },
+    {
+      "path": "public/original3d/models/elemental_rogue/elemental_rogue.json",
+      "before": 317705,
+      "after": 265609
+    },
+    {
+      "path": "public/original3d/models/elemental_spellcaster/elemental_spellcaster.json",
+      "before": 262660,
+      "after": 218563
+    },
+    {
+      "path": "public/original3d/models/vampire_fighter/vampire_fighter.json",
+      "before": 631969,
+      "after": 536893
+    },
+    {
+      "path": "public/original3d/models/vampire_rogue/vampire_rogue.json",
+      "before": 715586,
+      "after": 608305
+    },
+    {
+      "path": "public/original3d/models/vampire_spellcaster/vampire_spellcaster.json",
+      "before": 678013,
+      "after": 574873
+    },
+    {
+      "path": "public/original3d/animations.json",
+      "before": 300803,
+      "after": 148110
+    }
+  ],
+  "removedBytes": 56423877,
+  "compactedBytes": 6639896
+}

@@ -1,0 +1,24 @@
+eHeroType enum,,Helmet Scale Factor,Gender,Folder Name,Model,Texture 1
+,,,,,,
+HT_DUNGEONMASTER,CT_FIGHTER,1,M,bosses/Dungeon_master,dungeon_master,Dungeon_master_Skin
+HT_BAUS,CT_FIGHTER,1,M,bosses/baus,boss_baus,Boss_Skin_baus
+HT_CYCLOPS,CT_FIGHTER,1,M,bosses/cyclops,boss_cyclops,boss_skin_cyclops
+HT_LAVALEM,CT_FIGHTER,1.1,M,bosses/Lavagolem,boss_lavagolem,Boss_Skin_lavagolem
+HT_DEAN,CT_FIGHTER,1,M,bosses/dean,boss_dean,Boss_Skin_dean
+HT_NOIGLE,CT_RANGER,1,M,bosses/noigle,boss_noigle,Boss_Skin_noigle
+HT_SHAQ,CT_RANGER,0.85,F,bosses/angel,boss_angel,Boss_Skin_angel
+HT_BONEYARD,CT_RANGER,1,M,bosses/boneyard,boss_boneyard,Boss_Skin_boneyard
+HT_WOOMPH,CT_RANGER,1,M,bosses/greenman,boss_greenman,Boss_Skin_greenman
+HT_ALPHEDIA,CT_MAGE,1.1,M,bosses/alphedia,boss_alphedia,Boss_Skin_alphedia
+HT_KONGE,CT_MAGE,1,M,bosses/elverkonge,boss_elverkonge,Boss_Skin_elverkonge
+HT_QUEENY,CT_MAGE,1,F,bosses/Serpentqueen,boss_Serpentqueen,Boss_Skin_Serpentqueen
+HT_STUNK,CT_MAGE,1,M,bosses/steampunk,boss_steampunk,Boss_Skin_steampunk
+HT_ERNOLD,CT_FIGHTER,1,M,bosses/cockadoo,boss_cockadoo,Boss_Skin_Cockadoo
+HT_MAMBO,CT_RANGER,1,M,bosses/hisstor,boss_hisstor,Boss_Skin_Hisstor
+HT_MACHLI,CT_MAGE,1.1,F,bosses/tigress,boss_tigress,Boss_Skin_tigress
+HT_MINOTRIX,CT_FIGHTER,1,F,bosses/Minotrix,boss_Minotrix,Boss_Skin_Minotrix
+HT_SLIME,CT_RANGER,1,M,bosses/Brainslime,Boss_Brainslime,Boss_Skin_Brainslime
+HT_MUMMY,CT_MAGE,1,M,bosses/Mummy,boss_mummy,Boss_Skin_Mummy
+HT_ARTIL1,CT_ARTIL,1,F,bosses/Ocular,boss_ocular,Boss_Skin_ocular
+HT_ARTIL2,CT_ARTIL,1.1,M,bosses/Rhino,boss_rhino,Boss_Skin_rhino
+HT_ARTIL3,CT_ARTIL,1.2,F,bosses/Orcqueen,boss_orcqueen,Boss_Skin_orcqueen

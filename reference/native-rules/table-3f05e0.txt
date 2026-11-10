@@ -1,0 +1,139 @@
+Tag Name,Rarity,Mojo,Name,Short Name,eBasicWeaponType,Model Name,Texture Name,Power,Perk 1,Value,Perk 2,Value,TrailOffset_0,TrailOffset_1,TrailColour,Flavour Text,Boosts Ability Type,Ability Boost Value,Splash
+,,,,,,,,,,,,,,,,,,,
+WS_WOOD,C,0,Wooden Sword,Wooden,BWT_SWORD,sword/weapon_sword,sword/weapon_sword_wood,0,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_WOODEN,AT_NONE,0,0
+WB_WOOD,C,0,Wooden Bow,Wood Bow,BWT_BOW,bow/weapon_bow,bow/Weapon_bow,0,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_WOODBOW,AT_NONE,0,0
+WST_WOOD,C,0,Wooden Staff,Wood Staff,BWT_STAFF,staff_wood/weapon_staff,staff_wood/Weapon_staff_wood,0,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_WOODSTAFF,AT_NONE,0,0
+WD_DAGGER,C,1,Dagger,Dagger,BWT_DAGGER,dagger/weapon_dagger,dagger/weapon_dagger,1,BC_NONE,0,BC_NONE,0,0.153/0.0/0.0,0/0/0,0x7febff,WEAPON_DAGGER,AT_NONE,0,0
+WD_DEATH,L,2,Death Dagger,Death,BWT_DAGGER,dagger/weapon_dagger,dagger/weapon_dagger_02,2,BC_AFFLICTION_DEATHMARK,100,BC_NONE,0,0.153/0.0/0.0,0/0/0,0x7febff,WEAPON_DEATH_DAGGER,AT_NONE,0,0
+WD_STRONG,U,2,Stiletto,Stiletto,BWT_DAGGER,dagger_stiletto/weapon_stiletto,dagger_stiletto/Weapon_dagger_stiletto,1,BC_HEALTH,1,BC_ARMOUR,1,0.153/0.0/0.0,0/0/0,0x7febff,WEAPON_STILETTO,AT_NONE,0,0
+WD_CUTPURSE,R,3,Cutpurse Dagger,Cutpurse,BWT_DAGGER,dagger_cutpurse/weapon_cutpurse,dagger_cutpurse/Weapon_dagger_cutpurse,2,BC_NONE,0,BC_NONE,0,0.153/0.0/0.0,0/0/0,0xffa800,WEAPON_CUTPURSE,AT_DEMOLISH,3,0
+WD_ICE,C,3,Ice Dagger,Ice,BWT_DAGGER,dagger_stiletto/weapon_stiletto,dagger_stiletto/Weapon_dagger_stiletto_02,1,BC_AFFLICTION_ICEBLOCK,100,BC_NONE,0,0.153/0.0/0.0,0/0/0,0x7febff,WEAPON_ICE,AT_NONE,0,0
+WD_VOODOO,C,3,Voodoo Dagger,Voodoo,BWT_DAGGER,dagger_cross/weapon_cross,dagger_cross/Weapon_dagger_cross,1,BC_AFFLICTION_FLAME,100,BC_NONE,0,0.153/0.0/0.0,0/0/0,0xb0b0fb,WEAPON_VOODOO,AT_NONE,0,0
+WD_SAPPING,U,1,Sapping Dagger ,Sapping,BWT_DAGGER,dagger_cross/weapon_cross,dagger_cross/Weapon_dagger_cross_02,4,BC_HEALTH,-3,BC_NONE,0,0.153/0.0/0.0,0/0/0,0xb0b0fb,WEAPON_SAPPING,AT_NONE,0,0
+WS_SCIMITAR,C,2,Scimitar ,Scimitar ,BWT_SWORD,sword_scimitar/weapon_scimitar,sword_scimitar/Weapon_sword_scimitar,1,BC_HEALTH,1,BC_NONE,0,0.184/0.0/-0.873,0.034/0/-0.435,0xffb1b1,WEAPON_SCIMITAR,AT_NONE,0,0
+WS_FALCHION,C,3,Falchion,Falchion,BWT_SWORD,sword_scimitar/weapon_scimitar,sword_scimitar/Weapon_sword_scimitar_02,2,BC_ARMOUR,1,BC_NONE,0,0.184/0.0/-0.873,0.034/0/-0.435,0xffb1b1,WEAPON_FALCHION,AT_NONE,0,0
+WS_POWER,U,5,Legion Sword,Legion,BWT_SWORD,sword/weapon_sword,sword/weapon_sword_02,3,BC_ARMOUR,2,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfffc03,WEAPON_POWER_SWORD,AT_NONE,0,0
+WS_LEGION,U,3,Power Sword,Power,BWT_SWORD,sword_master/weapon_sword_master,sword_master/Weapon_sword_power,2,BC_HEALTH,2,BC_NONE,0,0.0/0.0/-0.95,0.0/0.0/-0.15,0xeef3fa,WEAPON_LEGION_SWORD,AT_NONE,0,0
+WS_HERO,U,5,Hero Sword,Hero,BWT_SWORD,sword/weapon_sword,sword/weapon_sword,3,BC_HEALTH,3,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0x877c7c,WEAPON_HERO,AT_NONE,0,0
+WS_TITAN,R,6,Titan ,Titan ,BWT_SWORD,sword_titan/weapon_sword,sword_titan/Weapon_sword_titan,5,BC_ARMOUR,2,BC_NONE,0,0.184/0.0/-0.873,0.034/0/-0.435,0xff40c2,WEAPON_TITAN,AT_NONE,0,0
+WS_DEMON,R,4,Demon Sword,Demon,BWT_SWORD,sword_demon/weapon_sword_demon,sword_demon/Weapon_sword_demon,4,BC_AFFLICTION_FLAME,100,BC_NONE,0,0.184/0.0/-0.873,0.034/0/-0.435,FlameSword,WEAPON_DEMON,AT_NONE,0,0
+WS_COLOSSUS,R,6,Colossus,Colossus,BWT_SWORD,sword_titan/weapon_sword,sword_titan/Weapon_sword_mighty,4,BC_HEALTH,4,BC_NONE,0,0.184/0.0/-0.873,0.034/0/-0.435,Colosus,WEAPON_COLOSSUS,AT_NONE,0,0
+WS_ENDER,L,5,World Ender,Ender,BWT_SWORD,sword_master/weapon_sword_master,sword_master/Weapon_sword_master,6,BC_ARMOUR,2,BC_NONE,0,0.0/0.0/-0.95,0.0/0.0/-0.15,0xeef3fa,WEAPON_ENDER,AT_NONE,0,0
+WA_BUTCHER,C,2,Butcher,Butcher,BWT_AXE,axe_cleaver/weapon_cleaver,axe_cleaver/Weapon_axe_cleaver_02,2,BC_NONE,0,BC_NONE,0,0.238/0/-0.215,0.238/0/-0.622,0xff1e1e,WEAPON_BUTCHER,AT_NONE,0,0
+WA_HATCHET,C,2,Hatchet,Hatchet,BWT_AXE,axe_hatchet/weapon_hatchet,axe_hatchet/Weapon_axe_hatchet,3,BC_HEALTH,-1,BC_NONE,0,0.238/0/-0.215,0.238/0/-0.622,0xffffff,WEAPON_HATCHET,AT_NONE,0,0
+WA_SLICER,C,3,Slicer,Slicer,BWT_AXE,axe_hatchet/weapon_hatchet,axe_hatchet/Weapon_axe_hatchet_02,3,BC_NONE,0,BC_NONE,0,0.238/0/-0.215,0.238/0/-0.622,0xffffff,WEAPON_SLICER,AT_NONE,0,0
+WA_CLEAVER,C,4,Cleaver,Cleaver,BWT_AXE,axe_cleaver/weapon_cleaver,axe_cleaver/Weapon_axe_cleaver,4,BC_NONE,0,BC_NONE,0,0.238/0/-0.215,0.238/0/-0.622,0x00eaff,WEAPON_CLEAVER,AT_NONE,0,0
+WA_LEGION,U,5,Battle Axe,Battle,BWT_AXE,axe/weapon_axe,axe/Weapon_axe,1,BC_ARMOUR,4,BC_NONE,0,0.13/0.0/-0.75,0.13/0.0/-0.26,0xacf8ff,WEAPON_LEGION_AXE,AT_NONE,0,0
+WA_GOLDEN,R,4,Golden Axe,Golden Axe,BWT_AXE,axe/weapon_axe,axe/Weapon_axe_golden,5,BC_NONE,0,BC_NONE,0,0.13/0.0/-0.75,0.13/0.0/-0.26,0xffea38,WEAPON_GOLDEN_AXE,AT_NONE,0,0
+WA_GREAT,U,3,Great Axe,Great,BWT_AXE,axe/weapon_axe,axe/Weapon_axe_02,5,BC_MANA,-1,BC_NONE,0,0.13/0.0/-0.75,0.13/0.0/-0.26,0xf0ff43,WEAPON_GREAT_AXE,AT_NONE,0,0
+WA_DOUBLE,R,2,Double Cleaver ,Double,BWT_AXE,axe_doublecleaver/weapon_doublecleaver,axe_doublecleaver/Weapon_axe_doublecleaver,5,BC_HEALTH,-4,BC_NONE,0,0.238/0/-0.215,0.238/0/-0.622,0xffffff,WEAPON_DOUBLE_CLEAVER,AT_NONE,0,0
+WA_FURIOUS,R,5,Furious Glory ,Furious,BWT_AXE,axe_furiousglory/weapon_furiousglory,axe_furiousglory/Weapon_axe_furiousglory,6,BC_MANA,-1,BC_NONE,0,0.146/0/-0.754,0.146/0/-0.264,0xc0efff,WEAPON_FURIOUS,AT_NONE,0,0
+WA_MAYHEM,U,3,Mayhem ,Mayhem ,BWT_AXE,axe_doublecleaver/weapon_doublecleaver,axe_doublecleaver/Weapon_axe_mayhem,5,BC_HEALTH,-2,BC_NONE,0,0.238/0/-0.215,0.238/0/-0.622,0xf0ff43,WEAPON_MAYHEM,AT_NONE,0,0
+WM_WOOD,C,2,Woodie,Woodie,BWT_MACE,mace/weapon_mace,mace/Weapon_mace_wood,2,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.669,0.0/0.0/-0.350,0xf8d288,WEAPON_WOODMACE,AT_NONE,0,0
+WM_TRUDGEON,C,2,Forget-me Stick,Forget,BWT_MACE,mace/weapon_mace,mace/Weapon_mace,1,BC_ARMOUR,1,BC_NONE,0,0.0/0.0/-0.669,0.0/0.0/-0.350,0xf8d288,WEAPON_TRUDGEON,AT_NONE,0,0
+WM_SPIKEY,C,3,Spikey,Spikey,BWT_MACE,hammer_doom/weapon_doom,hammer_doom/Weapon_hammer_wrath,1,BC_AFFLICTION_SNARED,100,BC_NONE,0,0.177/0.0/-0.606,0.177/0.0/-0.361,0xff5555,WEAPON_SPIKEY,AT_NONE,0,0
+WM_SMASHER,U,4,Smasher,Smasher,BWT_MACE,hammer/weapon_hammer,hammer/Weapon_hammer,2,BC_AFFLICTION_ICEBLOCK,100,BC_NONE,0,0.173/0.0/-0.604,0.173/0.0/-0.361,0x8cedea,WEAPON_SMASHER,AT_NONE,0,0
+WM_DEEPFORGE,R,6,Deep Forge Mace,Deep Forge,BWT_MACE,hammer/weapon_hammer,hammer/Weapon_hammer_02,2,BC_MANA,2,BC_NONE,0,0.173/0.0/-0.604,0.173/0.0/-0.361,0xff40c2,WEAPON_DEEPFORCE,AT_NONE,0,0
+WM_FAITHFUL,U,4,Old Faithful,Old Faithful,BWT_MACE,mace_nails/weapon_nails,mace_nails/Weapon_mace_nails,2,BC_AFFLICTION_SNARED,100,BC_NONE,0,0.0/0.0/-0.632,0.0/0.0/-0.207,0xffdb90,WEAPON_OLD_FAITHFUL,AT_NONE,0,0
+WM_MIGHTY,U,4,Mojo Mace ,Mojo,BWT_MACE,mace_nails/weapon_nails,mace_nails/Weapon_mace_mighty,1,BC_MANA,1,BC_NONE,0,0.0/0.0/-0.632,0.0/0.0/-0.207,0xffdb90,WEAPON_MIGHTY,AT_NONE,0,0
+WM_WRATH,U,4,Hammer of Wrath,Wrath,BWT_MACE,mace/weapon_mace,mace/Weapon_mace_02,2,BC_AFFLICTION_STUN,100,BC_NONE,0,0.0/0.0/-0.669,0.0/0.0/-0.350,0xffdb90,WEAPON_WRATH_HAMMER,AT_NONE,0,0
+WM_DOOM,R,6,Doom Hammer ,Doom,BWT_MACE,hammer_doom/weapon_doom,hammer_doom/Weapon_hammer_doom,5,BC_AFFLICTION_STUN,100,BC_NONE,0,0.177/0.0/-0.606,0.177/0.0/-0.361,0x8cedea,WEAPON_DOOM_HAMMER,AT_NONE,0,0
+WM_DOMINUS,L,5,Dominus ,Dominus ,BWT_MACE,mace_legend/weapon_legend,mace_legend/Weapon_mace_legend,6,BC_AFFLICTION_DEATHMARK,100,BC_NONE,0,0.177/0.0/-0.606,0.177/0.0/-0.361,0xf0ff43,WEAPON_DOMINUS,AT_NONE,0,0
+WST_LIGHT,C,2,Staff of Light,Light Staff,BWT_STAFF,staff_02/weapon_staff_02,staff_02/Weapon_staff_02,2,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_LIGHT_STAFF,AT_NONE,0,0
+WST_MERCY,C,2,Mercy ,Mercy ,BWT_STAFF,staff_globe/weapon_staff,staff_globe/Weapon_staff_globe,-1,BC_MANA,1,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_MERCY,AT_NONE,0,0
+WST_GNARLED,R,5,Gnarled Staff,Gnarled,BWT_STAFF,staff_wood/weapon_staff_02,staff_wood/Weapon_staff_gnarled,2,BC_HEALTH,2,BC_ARMOUR,2,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_GNARLED,AT_NONE,0,0
+WST_DIAMOND,C,3,Diamond Staff,Diamond,BWT_STAFF,staff/weapon_staff,staff/Weapon_staff,1,BC_HEALTH,2,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_DIAMOND_STAFF,AT_NONE,0,0
+WST_AURELIAN,C,5,Aurelian ,Aurelian ,BWT_STAFF,staff_globe_02/weapon_staff_02,staff_globe_02/Weapon_staff_globe_02,3,BC_ARMOUR,1,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_AURELIAN,AT_NONE,0,0
+WST_BLOOD,R,3,Bane,Bane,BWT_STAFF,staff_globe_03/weapon_staff_03,staff_globe_03/Weapon_staff_globe_03,5,BC_MANA,-1,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_BLOOD_STAVE,AT_NONE,0,0
+WST_DELIVER,L,5,Deliverance,Deliver,BWT_STAFF,staff_deliverance/weapon_staff,staff_deliverance/Weapon_staff_deliverance,-2,BC_MANA,3,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_DELIVERANCE,AT_NONE,0,0
+WST_DEMON,L,4,Demon Stave,Demon,BWT_STAFF,staff_demon/weapon_staff,staff_demon/Weapon_staff_demon,5,BC_ARMOUR,2,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_DEMON_STAVE,AT_NONE,0,0
+WST_DAEDRIC,R,4,Daedric Stave,Daedric,BWT_STAFF,staff_daedric/Weapon_staff,staff_daedric/Weapon_staff_daedric,2,BC_HEALTH,4,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_DAEDRIC_STAVE,AT_NONE,0,0
+WST_KARMA,R,5,Karma Bo,Karma Bo,BWT_STAFF,staff_karma/Weapon_staff,staff_karma/Weapon_staff_karma,-1,BC_MANA,2,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_KARMA_BO,AT_NONE,0,0
+WST_FIREBALL,R,3,Fireball Staff,Fireball Staff,BWT_STAFF,staff_fx/Weapon_staff,staff_fx/Weapon_staff_fireball,2,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_FIREBALL_STAFF,AT_FIREBALL,3,0
+WST_LIGNTNING,R,3,Lightning Staff,Lightning,BWT_STAFF,staff_fx/Weapon_staff,staff_fx/Weapon_staff_lightning,2,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_LIGHTNING,AT_LIGHTNING,3,0
+WST_METEOR,R,3,Meteor Staff,Meteor Staff,BWT_STAFF,staff_meteor/Weapon_staff,staff_meteor/Weapon_staff_meteor,2,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_METEOR_STAFF,AT_METEOR,3,0
+WST_HEAL,R,3,Heal Staff,Heal Staff,BWT_STAFF,staff_heal/Weapon_staff,staff_heal/Weapon_staff_heal,2,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_HEALSTAFF,AT_HEAL,3,0
+WST_MASSHEAL,R,3,Mass Heal Staff,Mass Heal,BWT_STAFF,staff_massheal/Weapon_staff,staff_massheal/Weapon_staff_massheal,2,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_MASSHEAL,AT_MASSHEAL,3,0
+WB_EBONY,C,2,Ebony Bow,Ebony Bow,BWT_BOW,bow/weapon_bow,bow/Weapon_bow_ebony,1,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_EBONY_BOW,AT_NONE,0,0
+WB_NIGHTMARE,R,1,Nightmare,Nightmare,BWT_BOW,bow_magic/weapon_bow,bow_magic/Weapon_bow_magic,3,BC_HEALTH,-3,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_NIGHTMARE,AT_NONE,0,0
+WB_SHOCK,U,5,Shock Bow ,Shock,BWT_BOW,bow_shock/weapon_bow,bow_shock/Weapon_bow_shock,2,BC_AFFLICTION_STUN,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_SHOCK_BOW,AT_NONE,0,0
+WB_FROST,U,5,Frost Bow ,Frost,BWT_BOW,bow_shock/weapon_bow,bow_shock/Weapon_bow_shock_02,2,BC_AFFLICTION_ICEBLOCK,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_FROST_BOW,AT_NONE,0,0
+WB_FIRE,U,5,Fire Bow ,Fire,BWT_BOW,bow_magic/weapon_bow,bow_magic/Weapon_bow_fire,2,BC_AFFLICTION_FLAME,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_FIRE_BOW,AT_NONE,0,0
+WB_HERO,R,5,Bow of Heroes ,Heroes ,BWT_BOW,bow_shock/weapon_bow,bow_shock/Weapon_bow_hero,2,BC_ARMOUR,3,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_HEROS_BOW,AT_NONE,0,0
+WB_MANA,R,3,Mojo Bow ,Mojo Bow,BWT_BOW,bow_mana/weapon_bow,bow_mana/Weapon_bow_mana,1,BC_MANA,1,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_MOJO_BOW,AT_NONE,0,0
+WB_DEMON,L,4,Demon Bow ,Demon,BWT_BOW,bow_mana/weapon_bow,bow_mana/Weapon_bow_demon,3,BC_AFFLICTION_FLAME,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_DEMON_BOW,AT_NONE,0,0
+WB_LONG,C,2,Long Bow,Long,BWT_BOW,bow_long/weapon_bow,bow_long/Weapon_bow_trueshot,2,BC_HEALTH,-1,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_LONG_BOW,AT_NONE,0,0
+WB_STEEL,C,3,Steel Bow ,Steel,BWT_BOW,bow/weapon_bow,bow/Weapon_bow_steel,1,BC_ARMOUR,1,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_STEEL_BOW,AT_NONE,0,0
+WB_JADE,U,5,Jade Bow ,Jade,BWT_BOW,bow_mana/weapon_bow,bow_mana/Weapon_bow_poison,2,BC_AFFLICTION_DEATHMARK,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_JADE_BOW,AT_NONE,0,0
+WB_IVORY,C,3,Ivory Bow,Ivory Bow,BWT_BOW,bow_long/weapon_bow,bow_long/Weapon_bow_ivory,2,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_IVORY_BOW,AT_NONE,0,0
+WB_SNIPER,R,4,Goto Bow,Goto Bow,BWT_BOW,bow_long/weapon_bow,bow_long/Weapon_bow_long,3,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_GOTO,AT_NONE,0,0
+WB_HEAD,R,4,Headshot Bow ,Head Shot,BWT_BOW,bow_headshot/weapon_bow,bow_headshot/Weapon_bow_headshot,2,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_HEADSHOOT_BOW,AT_HEADSHOT,2,0
+WB_BARRAGE,R,4,Barrage Bow ,Barrage Bow,BWT_BOW,bow_headshot/weapon_bow,bow_headshot/Weapon_bow_barrage,2,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_BARRAGE_BOW,AT_BARRAGE,2,0
+WD_SLASHER,U,2,Slasher Dagger,Slasher,BWT_DAGGER,dagger_cutpurse/weapon_cutpurse,dagger_cutpurse/Weapon_dagger_slashpurse,-2,BC_HEALTH,5,BC_NONE,0,0.153/0.0/0.0,0/0/0,0xffa800,WEAPON_SLAHSER_DAGGER,AT_NONE,0,0
+WA_DEVIOUS,L,6,Devious,Devious,BWT_AXE,axe_furiousglory/weapon_furiousglory,axe_furiousglory/Weapon_axe_devious,8,BC_NONE,0,BC_NONE,0,0.146/0/-0.754,0.146/0/-0.264,0xc0efff,WEAPON_DEVIOUS,AT_NONE,0,0
+WM_ICICLE,R,6,Icicle,Icicle,BWT_MACE,mace_nails/weapon_nails,mace_nails/Weapon_mace_ice,3,BC_AFFLICTION_ICEBLOCK,100,BC_NONE,0,0.0/0.0/-0.632,0.0/0.0/-0.207,0xffdb90,WEAPON_ICICLE,AT_NONE,0,0
+WST_BLINDER,C,1,Blinding Staff,Blinding,BWT_STAFF,staff_wood/weapon_staff,staff_wood/Weapon_staff_wood_02,-1,BC_AFFLICTION_STUN,100,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_BLINDSTAFF,AT_NONE,0,0
+WD_LUCKY,U,2,Lucky Charm,Charm,BWT_DAGGER,dagger/weapon_dagger,dagger/weapon_dagger_03,0,BC_MANA,1,BC_NONE,0,0.153/0.0/0.0,0/0/0,0x7febff,WEAPON_LUCKYCHARM,AT_NONE,0,0
+WB_DAZZLING,C,3,Dazzling Bow,Dazzling,BWT_BOW,bow/weapon_bow,bow/Weapon_bow_gold,0,BC_ARMOUR,2,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_DAZZBOW,AT_NONE,0,0
+WST_HEALTHBO,U,4,Health Bo,Health Bo,BWT_STAFF,staff_heal/weapon_staff_health,staff_heal/Weapon_staff_heal,0,BC_HEALTH,7,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_HEALTHBO,AT_NONE,0,0
+WST_RHYTHM,C,3,Rhythm Stick,Rhythm,BWT_STAFF,staff_rhythm/weapon_staff,staff_rhythm/Weapon_staff_rhythm,1,BC_AFFLICTION_STUN,100,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_RHYTHMSTICK,AT_NONE,0,0
+WST_WALKING,C,3,Walking Stick,Walking,BWT_STAFF,staff_rhythm/weapon_staff,staff_rhythm/Weapon_staff_walking,1,BC_HEALTH,1,BC_ARMOUR,1,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_WALKINGSTICK,AT_NONE,0,0
+WST_DEATHMARK,R,2,Death Mark Staff,Death,BWT_STAFF,staff_skull/weapon_staff,staff_skull/Weapon_staff_skull,1,BC_AFFLICTION_DEATHMARK,100,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_DEATHMARKSTAFF,AT_NONE,0,0
+WB_DEATH,R,3,Death Bow,Death,BWT_BOW,bow_death/weapon_bow,bow_death/Weapon_bow_skull,1,BC_AFFLICTION_DEATHMARK,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_DEATHBOW,AT_NONE,0,0
+WB_RIOT,U,3,Riot Bow,Riot,BWT_BOW,bow_riot/weapon_bow,bow_riot/Weapon_bow_riot,0,BC_AFFLICTION_STUN,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_RIOTBOW,AT_NONE,0,0
+WB_REFLEX,U,5,Reflex Bow,Reflex Bow,BWT_BOW,bow_reflex/weapon_bow,bow_reflex/Weapon_bow_reflex,3,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_REFLEXBOW,AT_NONE,0,0
+WB_KILLSHOT,L,5,Sniper Bow,Sniper Bow,BWT_BOW,bow_riot/weapon_bow,bow_riot/Weapon_bow_killshot,3,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_SNIPER_BOW,AT_SNIPE,2,0
+WB_QUAD,C,3,Cuatro Bow,Cuatro,BWT_BOW,bow_quad/weapon_bow,bow_quad/Weapon_bow_quad,1,BC_HEALTH,1,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_JQUAD,AT_NONE,0,0
+WB_REFLUX,R,5,Reflux Bow,Reflux Bow,BWT_BOW,bow_reflex/weapon_bow,bow_reflex/Weapon_bow_reflex_02,4,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_REFLUXBOW,AT_NONE,0,0
+WB_QUAD2,L,4,Quad Core Bow,Quad Core,BWT_BOW,bow_quad/weapon_bow,bow_quad/Weapon_bow_quad_02,3,BC_HEALTH,1,BC_ARMOUR,1,0/0/0,0/0/0,0xffffff,WEAPON_QUAD,AT_NONE,0,0
+WB_QUAD3,C,4,Rusty Quad,Rusty,BWT_BOW,bow_quad/weapon_bow,bow_quad/Weapon_bow_quad_03,1,BC_ARMOUR,2,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_RUSTYQUAD,AT_NONE,0,0
+WST_DREAM,U,4,Dream Catcher,Dream,BWT_STAFF,staff_dreamcatcher/weapon_staff,staff_dreamcatcher/Weapon_staff_dreamcatcher,0,BC_HEALTH,4,BC_ARMOUR,2,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_DREAMCATCHER,AT_NONE,0,0
+WST_CREAM,U,4,Eagle Staff,Eagle,BWT_STAFF,staff_dreamcatcher/weapon_staff,staff_dreamcatcher/Weapon_staff_dreamcatcher_02,0,BC_HEALTH,2,BC_ARMOUR,3,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_CREAMCATCHER,AT_NONE,0,0
+WST_BLADE,C,2,Blade Staff,Blade,BWT_STAFF,staff_blade/weapon_staff,staff_blade/Weapon_staff_blade,3,BC_ARMOUR,-1,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_BLADESTAFF,AT_NONE,0,0
+WST_STABBER,L,3,Stabber Staff,Stabber,BWT_STAFF,staff_blade/weapon_staff,staff_blade/Weapon_staff_blade_02,4,BC_HEALTH,1,BC_ARMOUR,1,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,NONE,AT_NONE,0,0
+WB_ICE,R,3,Ice Bow ,Ice,BWT_BOW,bow_shock/weapon_bow,bow_shock/Weapon_bow_shock_02,1,BC_AFFLICTION_ICEBLOCK,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_FROST_BOW,AT_NONE,0,0
+WB_MANA2,L,4,Mojo Mega Bow ,Mega Mojo,BWT_BOW,bow_mana/weapon_bow,bow_mana/Weapon_bow_mana,1,BC_MANA,2,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_MOJO2_BOW,AT_NONE,0,0
+WB_HADES,R,3,Hades Bow ,Hades,BWT_BOW,bow_mana/weapon_bow,bow_mana/Weapon_bow_demon,1,BC_AFFLICTION_FLAME,100,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_HADES_BOW,AT_NONE,0,0
+WB_SNIPERM,U,3,Gosub Bow,Gosub Bow,BWT_BOW,bow_long/weapon_bow,bow_long/Weapon_bow_long,2,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_GOSUB,AT_NONE,1,0
+WB_HEADM,U,2,Headshot Mini,Head Shot Mini,BWT_BOW,bow_headshot/weapon_bow,bow_headshot/Weapon_bow_headshot,1,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_HEADSHOOT_BOW,AT_HEADSHOT,1,0
+WB_BARRAGEM,U,2,Barrage Mini,Barrage Mini,BWT_BOW,bow_headshot/weapon_bow,bow_headshot/Weapon_bow_barrage,1,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_BARRAGE_BOW,AT_BARRAGE,1,0
+WB_QUADM,R,4,Quad Core Mini,Quad Mini,BWT_BOW,bow_quad/weapon_bow,bow_quad/Weapon_bow_quad_02,2,BC_HEALTH,1,BC_ARMOUR,1,0/0/0,0/0/0,0xffffff,WEAPON_QUADMINI,AT_NONE,0,0
+WB_KILLSHOTM,U,2,Sniper Mini,Sniper Mini,BWT_BOW,bow_riot/weapon_bow,bow_riot/Weapon_bow_killshot,1,BC_NONE,0,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_SNIPER_BOW,AT_SNIPE,1,0
+WB_MANA3,U,2,Balance Bow ,Balance,BWT_BOW,bow_mana/weapon_bow,bow_mana/Weapon_bow_mana,0,BC_HEALTH,-2,BC_MANA,1,0/0/0,0/0/0,0xffffff,WEAPON_MOJO3_BOW,AT_NONE,0,0
+WB_MANA4,C,4,Imbalance Bow ,Imbalance,BWT_BOW,bow_mana/weapon_bow,bow_mana/Weapon_bow_mana,0,BC_HEALTH,-1,BC_MANA,1,0/0/0,0/0/0,0xffffff,WEAPON_MOJO4_BOW,AT_NONE,0,0
+WB_SHORT,C,4,Short Bow,Short,BWT_BOW,bow_long/weapon_bow,bow_long/Weapon_bow_trueshot2,2,BC_HEALTH,1,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_SHORT_BOW,AT_NONE,0,0
+WB_TALL,C,4,Tall Bow,Tall,BWT_BOW,bow_long/weapon_bow,bow_long/Weapon_bow_trueshot3,3,BC_HEALTH,-1,BC_NONE,0,0/0/0,0/0/0,0xffffff,WEAPON_TALL_BOW,AT_NONE,0,0
+WST_PLENTY,L,5,Staff of Plenty,Plenty,BWT_STAFF,staff_deliverance/weapon_staff,staff_deliverance/Weapon_staff_plenty,2,BC_MANA,2,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_DELIVERANCE,AT_NONE,0,0
+WST_SLICER,U,4,Slicer Staff,Slicer,BWT_STAFF,staff_blade/weapon_staff,staff_blade/Weapon_staff_slicer,3,BC_ARMOUR,1,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_SLICERSTAFF,AT_NONE,0,0
+WST_WRINKLY,U,4,Wrinkly Staff,Wrinkly,BWT_STAFF,staff_wood/weapon_staff_02,staff_wood/Weapon_staff_wrinkly,2,BC_ARMOUR,2,BC_NONE,0,0.0/0.0/-0.781,0.0/0.0/-0.188,0xffffff,WEAPON_WRINKLY,AT_NONE,0,0
+WST_MOJO,U,3,Mojo,Mojo,BWT_STAFF,staff_globe_04/weapon_staff_04,staff_globe_04/Weapon_staff_mojo,1,BC_MANA,1,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_MOJO_STAVE,AT_NONE,0,0
+WST_FIREBALLM,U,2,Fireball Mini,Fireball Mini,BWT_STAFF,staff_fx/Weapon_staff,staff_fx/Weapon_staff_fireball,1,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_FIREBALL_STAFF,AT_FIREBALL,1,0
+WST_HEALM,U,2,Heal Mini,Heal Mini,BWT_STAFF,staff_heal/Weapon_staff,staff_heal/Weapon_staff_heal,1,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_HEALSTAFF,AT_HEAL,1,0
+WST_LIGNTNINGM,U,2,Lightning Mini,Lightning  Mini,BWT_STAFF,staff_fx/Weapon_staff,staff_fx/Weapon_staff_lightning,1,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_LIGHTNING,AT_LIGHTNING,1,0
+WST_MASSHEALM,U,2,Mass Heal Mini,Mass Heal Mini,BWT_STAFF,staff_massheal/Weapon_staff,staff_massheal/Weapon_staff_massheal,1,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_MASSHEAL,AT_MASSHEAL,1,0
+WST_METEORM,U,2,Meteor Mini,Meteor Mini,BWT_STAFF,staff_meteor/Weapon_staff,staff_meteor/Weapon_staff_meteor,1,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.766,0.0/0.0/-0.632,0xffffff,WEAPON_METEOR_STAFF,AT_METEOR,1,0
+ART_WOOD,C,0,Wooden Rock,Wooden,BWT_ARTIL,Rock/rock,Rock/Weapon_artillery_rock,0,BC_NONE,0,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_ROCK1,C,1,Pebble,Pebble,BWT_ARTIL,Pebble/pebble,Pebble/Weapon_artillery_rock_pebble,1,BC_HEALTH,1,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_PEBBLE,AT_NONE,0,0
+ART_ROCK2,C,2,Stone,Stone,BWT_ARTIL,Rock_tiny/rock_tiny,Rock_tiny/Weapon_artillery_rock_pumice,2,BC_HEALTH,1,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_STONE,AT_NONE,0,0
+ART_ROCK3,C,3,Rock,Rock,BWT_ARTIL,Rock/rock,Rock/Weapon_artillery_rock,3,BC_HEALTH,1,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_ROCK,AT_NONE,0,0
+ART_ROCK4,C,4,Large Rock,Large Rock,BWT_ARTIL,Rock_large/rock_large,Rock_large/Weapon_artillery_rock_black,4,BC_HEALTH,1,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_LARGEROCK,AT_NONE,0,0
+ART_ROCK5,C,5,Massive Rock,Massive Rock,BWT_ARTIL,Boulder/boulder,Boulder/Weapon_artillery_rock_boulder,5,BC_HEALTH,1,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_MASSIVEROCK,AT_NONE,0,0
+ART_BRICK1,U,5,Brick,Brick,BWT_ARTIL,Brick/Brick,Brick/Weapon_artillery_rock_brick,4,BC_ARMOUR,2,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_BRICK,AT_NONE,0,0
+ART_FIRE1,U,3,Fireball,Fireball,BWT_ARTIL,Rock_fire/rock_fire,Rock_fire/Weapon_artillery_rock_fire,2,BC_PROT_ALL,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_FIRE2,R,4,Infernoid,Infernoid,BWT_ARTIL,Rock_Infernoid/rock_infernoid,Rock_Infernoid/Weapon_artillery_rock_infernoid,4,BC_PROT_ALL,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_LIGHTNING1,U,4,Lightning,Lightning,BWT_ARTIL,Rock_lightning/rock_fire,Rock_lightning/Weapon_artillery_rock_lightning,2,BC_PROT_BAD,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_LIGHTNING2,R,5,Electroid,Electroid,BWT_ARTIL,Rock_electroid/rock_electroid,Rock_electroid/Weapon_artillery_rock_electroid,4,BC_PROT_BAD,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_DUNG,U,2,Dung Ball,Dung Ball,BWT_ARTIL,Dung/dung,Dung/Weapon_artillery_rock_dung,3,BC_HEALTH,-2,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_BRICK2,U,3,Half Brick,Half Brick,BWT_ARTIL,Brick/Brick_half,Brick/Weapon_artillery_rock_brick,2,BC_ARMOUR,1,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_HBRICK,AT_NONE,0,0
+ART_SKULL1,R,5,Skully,Skully,BWT_ARTIL,Skull/skull,Skull/Weapon_artillery_rock_skull,5,BC_MANA,1,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_SKULLY,AT_NONE,0,0
+ART_SKULL2,L,5,Skelly,Skelly,BWT_ARTIL,Skull/skull02,Skull/Weapon_artillery_rock_skull_02,3,BC_MANA,2,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_ART_SKELLY,AT_NONE,0,0
+ART_AFF_STUN1,R,3,Dazer,Dazer,BWT_ARTIL,Stun/stun,Stun/Weapon_artillery_rock_stun,3,BC_AFFLICTION_STUN,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_AFF_STUN2,L,4,Dazer Splash,Dazer Splash,BWT_ARTIL,Stun/stun_large,Stun/Weapon_artillery_rock_stun,2,BC_AFFLICTION_STUN,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,WEAPON_DAZERSPLASH,AT_NONE,0,1
+ART_AFF_FLAME1,R,3,Flamer,Flamer,BWT_ARTIL,Rock_flame/rock_flame,Rock_flame/Weapon_artillery_rock_flame,3,BC_AFFLICTION_FLAME,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_AFF_FLAME2,L,4,Flamer Splash,Flamer Splash,BWT_ARTIL,Rock_flame_large/rock_flame_large,Rock_flame_large/Weapon_artillery_rock_flame,2,BC_AFFLICTION_FLAME,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,1
+ART_AFF_SNARED1,R,3,Snarer,Snarer,BWT_ARTIL,snared/snared,Snared/Weapon_artillery_rock_snared,3,BC_AFFLICTION_SNARED,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_AFF_SNARED2,L,4,Snarer Splash,Snarer Splash,BWT_ARTIL,snared/snared,Snared/Weapon_artillery_rock_snared,2,BC_AFFLICTION_SNARED,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,1
+ART_AFF_ICE1,R,3,Icer,Icer,BWT_ARTIL,Icer/icer,Icer/Weapon_artillery_rock_icer,3,BC_AFFLICTION_ICEBLOCK,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_AFF_ICE2,L,4,Icer Splash,Icer Splash,BWT_ARTIL,Icer/icer_large,Icer/Weapon_artillery_rock_icer,2,BC_AFFLICTION_ICEBLOCK,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,1
+ART_AFF_DEATHMARK1,R,3,Deathmarker,Deathmarker,BWT_ARTIL,Deathmark/deathmark,Deathmark/Weapon_artillery_rock_deathmark,3,BC_AFFLICTION_DEATHMARK,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,0
+ART_AFF_DEATHMARK2,L,4,Deathmarker Splash,Deathmarker Splash,BWT_ARTIL,Deathmark/deathmark,Deathmark/Weapon_artillery_rock_deathmark,2,BC_AFFLICTION_DEATHMARK,100,BC_NONE,0,0.0/0.0/-0.85,0.0/0.0/-0.15,0xfb8800,NONE,AT_NONE,0,1

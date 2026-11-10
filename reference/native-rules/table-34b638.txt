@@ -1,0 +1,287 @@
+// AFFLICTIONS
+		 
+// IMPORTANT NOTE !!!
+// Turns values are decremented in the upkeep of the characters controller. 
+// Once the value hits zero then the affliction is removed. 
+// i.e. an affliction with a Turns value of 1 will be removed from the character at their controllers next upkeep.
+// So to set an affliction that will last the whole of a target characters turn you need to set a value of 2.
+		 
++5		// AF_Berserk_Power			- Pwr boost given to character
++2		// AF_Berserk_AttackerPower		- Pwr boost given to inbound attacks on character
+-1		// AF_Berserk_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_Berserk_Application		- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
++1		// AF_DeathMark_AttackerPower		- Pwr boost given to inbound attacks on character
+-1		// AF_DeathMark_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_DeathMark_Application		- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
+-1		// AF_Flame_Health			- How much Health is changed (per upkeep) when the character has Flames
+-1		// AF_Flame_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_Flame_Application			- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
+2		// AF_IceBlock_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_IceBlock_Application		- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
++2		// AF_Mighty_Power			- Pwr boost given to character
+-1		// AF_Mighty_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_Mighty_Application		- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
+1		// AF_MagicShield_HitCount		- How many hits the shield survives for
+-1		// AF_MagicShield_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_MagicShield_Application		- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
++1		// AF_Regen_Health			- How much health the character gains each turn
+-1		// AF_Regen_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_Regen_Application			- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
+2		// AF_Snare_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_Snare_Application			- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
+2		// AF_Stun_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_Stun_Application			- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
+-5		// AF_Vengeance_Health			- Health loss performed by the sword
+-1		// AF_Vengeance_Turns			- How many turns the affliction lasts for (-1 = Forver)
+0		// AF_Vengeance_Application		- 0 = Reapplying does nothing, 1 = Reapplying resets turns, 2 = Reapplying adds to turns
+
+
+// ABILITIES
+0		// AB_Attack_Power					- Pwr adjustment for basic attacks (assuming zero, here for completeness)
+0		// AB_Barrage_Power					- Pwr adjustment for the attack
+0		// AB_Blast_Power					- Pwr adjustment for the attack
++2		// AB_Bloodlust_BonusPower			- Bonus Power for each enemy adjacent to attacker
+0		// AB_Bloodlust_Power				- Pwr adjustment for the attack
+1		// AB_ColossusSmash_Power			- Pwr adjustment for the attack
++5		// AB_Combustion_OnFirePower		- Pwr adjustment for the attack if target is already alight
+0		// AB_Combustion_Power				- Pwr adjustment for the normal attack
+0		// AB_Crush_Power					- Pwr adjustment for the attack
+0		// AB_Cure_Health					- amount of health gained when curing
+-999	// AB_DeathMark_Power				- Pwr adjustment for the attack
++5		// AB_Demolish_Power				- Pwr adjustment for the attack
++4		// AB_DesperateStrike_Power			- Pwr adjustment for the attack
+-2		// AB_DesperateStrike_Health		- Health adjustment for the attack
+-999	// AB_Disarm_Power					- Pwr adjustment for the attack
+1		// AB_Disarm_RemovesArmourShield	- 1 = Removes any Armour & Sheild when attacked with Disarm. 0 = Doesnt remove Armour & Shield
+1		// AB_Disarm_ReplacesWeapon			- 1 = Replaces Weapon for the default when attacked with Disarm. 0 = Doesnt replace Weapon
++1		// AB_Encourage_Mojo				- Mojo change for Monster owner when ability used
+0		// AB_EnergisingStrike_Power		- Pwr adjustment for the attack
++3		// AB_EnergisingStrike_Health		- Amount of health gained
+0		// AB_Explode_Power					- Pwr adjustment for the attack on self
+0		// AB_Explode_SecondaryPower		- Pwr adjustment for the attack to anything next to you.
++1		// AB_FastHeal_Health				- Amount of health gained
+0		// AB_FireBall_Power				- Pwr adjustment for the attack
++2		// AB_FirstAid_Power				- Amount of health gained
+0		// AB_FuriousAssault_Power			- Pwr adjustment for the attack
++2		// AB_HeadShot_Power				- Pwr adjustment for the attack
++3		// AB_Heal_Health					- Amount of health gained
++2		// AB_InspiringStrike_AllyHealth	- Amount of health each ally monster gains
+0		// AB_InspiringStrike_Power			- Pwr adjustment for the attack
+1		// AB_LeviathanBlow_Power			- Pwr adjustment for the attack
++2		// AB_LifeSteal_Health				- Amount of health gained
+2		// AB_LifeSteal_Power				- Pwr adjustment for the attack
+0		// AB_Lightning_Power				- Pwr adjustment for the attack (primary target)
+-1		// AB_Lightning_SecondaryPower		- Pwr adjustment for the attack (secondary targets)
++1		// AB_LoneRanger_BonusPower			- Pwr adjustment for the attack (add this Pwr for every empty adjacent tile)
+0		// AB_LoneRanger_Power				- Pwr adjustment for the attack (basic Pwr to start with)
+2		// AB_MassHeal_EffectRange			- Range (from where the ability was targeted) from which to check for other targets to heal
++2		// AB_MassHeal_Health				- amount of health gained
+-2		// AB_Meteor_Power					- Pwr for the attack
+1		// AB_MightyBlow_Power				- Pwr adjustment for the attack
++2		// AB_Phalanx_BonusPower			- Bonus Power for each ally adjacent to attacker
+0		// AB_Phalanx_Power					- Pwr adjustment for the attack
+1		// AB_Rally_EffectRange				- Range to search over when looking for allies (centre on target tile chosen for ability)
++1		// AB_Rally_BonusMojo				- Mojo change for Monster owner when ability used (added per ally in range)
++2		// AB_Regen_Health					- amount of health gained
++1		// AB_SavageStrike_Power			- Pwr adjustment for the attack
+0		// AB_Shatter_Power					- Pwr adjustment for the attack
+0		// AB_Shoot_Power					- Pwr adjustment for the attack
++3		// AB_Smash_Power					- Pwr adjustment for the attack
+0		// AB_Smash_StunChance				- Inflic Stun chance
+0		// AB_Snare_Power					- Pwr adjustment for the attack
+0		// AB_Snipe_Power					- Pwr adjustment for the attack
+1		// AB_TrickShot_EffectRange			- Range (from where the ability was targeted) which determines the targets to hit
++1		// AB_TrickShot_Mojo				- If successful, the amount of Mojo a target releases
+-999	// AB_TrickShot_Power				- Pwr adjustment for the attack (very low power, preferably getting zero damage for attack)
+-999	// AB_Zap_Power						- Pwr adjustment for the attack (very low power, preferably getting zero damage for attack)
+
+// BUFF TILE BONUSES
+2		// TileBonus2_Power			- Power bonus whilst standing on a tile
+3		// TileBonus3_Power			- Power bonus whilst standing on a tile
+2		// TileBonus_Armour			- Armour bonus whilst standing on a tile
+2		// TileBonus_Regen			- +Accrued damage healing each turn
+1		// TileBonus1_Mojo			- +Mojo each turn
+2		// TileBonus2_Mojo			- +Mojo each turn
+1		// TileBonus_Card			- +Extra card each turn
+
+
+// IMPORTANT NOTE !!!
+// Rounds values are then number of whole rounds that an item will stick around for.
+// So, an item setup to last 2 rounds would still be there on the creators next turn but dissapear
+// at the start of their following turn:
+// 
+// > P1 creates flame                         <-|
+// > P2's turn                                  | 
+// > ...others                                  |- Round 1
+// >  turns..                                   |
+// > P1's next turn (flame still around)      <-|
+// > P2's turn                                  |
+// >  ...others                                 |- Round 2
+// >  turns..                                   |
+// < P1's next turn (flame extinguished)      <-|
+
+// TILE ITEMS
+2		// TI_IgniteFlame_Rounds		- Number of rounds that the tile stays alight for (-1 = Forever)
+1		// TI_IgniteFlame_Damage		- Initial damage when stepped on.
+-5		// TI_Trap_Health			- Health change to character when standing on a Trap Tile (triggered on entry then vanishes)
+-1		// TI_Trap_Rounds			- Number of rounds that the trap stays around for (-1 = Forever)
++3		// TI_Barrier_Armour			- Armour bonus for characters standing on a Barrier tile
+2		// TI_Barrier_Rounds			- Number of rounds that the barrier tile stays around for (-1 = Forever)
+
+// Runes
++1		// RU_MinorArmour_Armour		- How much armour the rune adds to characters in the team
++1		// RU_MinorPower_Power			- How much power the rune adds to characters in the team
++1		// RU_MinorHealth_Health		- How much health the rune adds to characters in the team
++1		// RU_MinorMojo_Mojo			- How much additional Mojo is created per turn
++2		// RU_MajorArmour_Armour		- How much armour the rune adds to characters in the team
++2		// RU_MajorPower_Power			- How much power the rune adds to characters in the team
++3		// RU_MajorHealth_Health		- How much health the rune adds to characters in the team
++2		// RU_MajorMojo_Mojo			- How much additional Mojo is created per turn
++2		// RU_MinorHeroBash_Power		- How much additional power your monsters attack Heros with
++3		// RU_MajorHeroBash_Power		- How much additional power your monsters attack Heros with
++1		// RU_Reaper_Mojo				- How much additional Mojo is created whenever a monster dies
+-1		// RU_Rust_Armour				- How much Armour is removed from your opponents monsters each turn
++2		// RU_Hunt_Mojo					- How much additional Mojo is required to cast spells
++1		// RU_YingYang_Power			- How much to change the power of each monster
+-1		// RU_YingYang_Health			- How much to change the health of each monster
+-1		// RU_Virus_Health				- How much to change the health of each monster
++2		// RU_ImpotentRage_Power		- How much to change the power of each monster
++5		// RU_StandFast_Health			- How much to change the health of each monster
++1		// RU_BankersDelight_Mojo		- How much MORE Mojo required for your opponents to play cards
+-1		// RU_Accounting_Mojo			- How much LESS Mojo required to play your cards
+-2		// RU_Punishment_Health			- How much the health of the Hero will lose per spell cast (NOTE: health removed, not damage dealt to)
+-1		// RU_Gravity_Health			- How much to change the health of each monster
++2		// RU_LoneHero_Health			- How much to change the health of the Hero each turn
++2		// RU_WarHero_Power				- How much to change the power of the hero
++2		// RU_HeroSpike_Damage			- How much damage characters surrounding your Hero will take per turn
++3		// RU_EpicMojo_Mojo				- How much additional Mojo is created per turn
++3		// RU_EpicArmour_Armour			- How much additional Armour is created per turn
++5		// RU_EpicHealth_Health			- How much additional Health is created per turn
+-2		// RU_Accounting2_Mojo			- How much LESS Mojo required to play your cards
++3		// RU_EpicPower_Power			- How much power the rune adds to characters in the team
++1		// RU_Attack1_Attack			- Constant - +1 Attack
++2		// RU_Attack2_Attack			- Constant - +2 Attack
++3		// RU_Attack3_Attack			- Constant - +3 Attack	
++1		// RU_Armour1_Armour			- Constant - +1 Armour
++2		// RU_Armour2_Armour			- Constant - +2 Armour
++3		// RU_Armour3_Armour			- Constant - +3 Armour
++1		// RU_Health1_Health			- Constant - +1 Health
++2		// RU_Health2_Health			- Constant - +2 Health
++3		// RU_Health3_Health			- Constant - +3 Health
+-1		// RU_AttackMinus1_Power		- Constant - -1 Attack
+-2		// RU_AttackMinus2_Power		- Constant - -2 Attack
+-3		// RU_AttackMinus3_Power		- Constant - -3 Attack	
+-1		// RU_Refund_Health				- Damage when using a "refund" rune
+-2		// RU_Draw_Health				- Damage when using a "draw on play" rune
++1		// RU_HealthReaper_Health		- Hero health gain when any monster dies
++2		// RU_MyHealthReaper_Health		- Hero health gain when any on my monsters die
+-3		// RU_DiscardPenalty_Health		- Hero life loss when forcing others to discard a card (loss per card)
+
+
+// Spells
++5		// SP_HealMyMonsters_Health		- How much Health is recieved by each monster on your team when the spell is cast
++3		// SP_HealMyFighters_Health		- How much Health is recieved by each fighter on your team when the spell is cast
++3		// SP_HealMyRangers_Health		- How much Health is recieved by each ranger on your team when the spell is cast
++3		// SP_HealMyMages_Health		- How much Health is recieved by each mage on your team when the spell is cast
++3		// SP_HealAllMonsters_Health	- How much Health is recieved by each monster when the spell is cast
++2		// SP_HealAllFighters_Health	- How much Health is recieved by each fighter when the spell is cast
++2		// SP_HealAllRangers_Health		- How much Health is recieved by each ranger when the spell is cast
++2		// SP_HealAllMages_Health		- How much Health is recieved by each mage when the spell is cast
++2		// SP_LavaVent_Damage			- The damage from this spell.
+10		// SP_LavaVent_Count			- Number of eruption spots to create
++3		// SP_Eruption_Damage			- The damage from this spell.
+15		// SP_Eruption_Count			- Number of eruption spots to create
++5		// SP_Magma_Damage				- The damage from this spell.
+20		// SP_Magma_Count				- Number of eruption spots to create
+-1		// SP_ArmourDown_Armour			- How much armour is changed by when this spell is cast
+-3		// SP_ArmourEnemyDown_Armour	- How much armour is changed by when this spell is cast
++2		// SP_MojoBoost_Mojo			- How much mojo is added per rune (only spell owners runes counted)
++1		// SP_MojoTurbo_Mojo			- How much mojo is added per rune (all runes counted)
++2		// SP_Hurricane_MinRange		- Minimum distance that Hurricane will place its target at
++2		// SP_Hurricane_MaxRange		- Maximum distance that Hurricane will place its target at
++1		// SP_RuneBane_Damage			- Damage dealt to target.
++1		// SP_RunePain_Damage			- Damage dealt to target.
++2		// SP_HealRace_Health			- Various <race> boon health gain
++3		// SP_SlyHealRace_Health		- Various sly <race> boon health gain
++10		// SP_RuneBoon_Health;
++25		// SP_GreatRuneBoon_Health;
++8		// SP_KillAllMonsMax_AbsHealth		- Monsters on or above this die.
++2		// SP_KillAllMonsMin_AbsHealth		- Monsters on this or below die.
+
+// GAME OPTIONS
+6		// GO_NumInitialCards			- Number of cards player is initially dealt (NOTE: You get dealt an additional card on EVERY turn, including your first)
+2		// GO_AdditionalRuneCost		- Extra cost for each rune you want to play that matches one you already own
+
+// LARGE CARD COLOURS
+182,52,46		// Warrior
+169,175,47		// Archer
+49,110,173		// Mage
+187,103,39		// Artillery
+217,176,45		// ArmourCardCol
+86,143,124		// ShieldCardCol
+131,76,60		// RuneCardCol
+136,97,13		// GSpellCardCol
+51,129,75		// TSpellCardCol
+
+
+// TEAM COLOURS - RGB
+0,0,255			//	TEAM_P1
+255,0,0			//	TEAM_P2
+0,255,0			//	TEAM_P3
+255,255,0		//	TEAM_P4
+255,0,255		//	TEAM_P5
+64,208,255		//	TEAM_P6
+30				//	Amount of white to blend in (as a %age) to the team colour when applied to the team dais's
+		
+
+// RACIAL BONUS MODIFIERS
++2				// RB_GolemBonus_Health 		- Health boost when owner places a rune
++1				// RB_ElementalBonus_Power		- Elementals: Power boost when you cast a spell
++1				// RB_ElementalBonus_Health		- Elementals: Health boost when you cast a spell
++3				// RB_WerewolfBonus_Health		- Werewolves: Health boost when they kill someone
++1				// RB_ZombieBonus_Health		- Zombies: Health boost when anything dies
++1				// RB_ZombieBonus_Power			- Lizards: Power boost when anything dies
++1				// RB_OrcBonus_Power			- Orcs: Power boost for each friendly Orc
++4				// RB_ElfBonus_Health			- Elves: Health boost if they're the only active race
++1				// RB_HumanBonus_Power			- Humans: Power boost for nearby friendlies
+0				// RB_HumanBonus_Health			- Humans: Health boost for nearby friendlies
++2				// RB_SummonBonus_Health		- CURRENTLY UNUSED: Health boost each time you summon
++2				// RB_FriendlyDeathBonus_Power	- CURRENTLY UNUSED: Power boost for friendly death
++1				// RB_MinotaurBonus_Power		- Minotaurs: Power boost for each item equipped
++3				// RB_MinotaurBonus_Health		- Minotaurs: Power boost for each item equipped
++2				// RB_DwarfBonus_Power			- Dwarves: power each time attacked and not killed
++1				// RB_CyclopsBonus_Armour		- CURRENTLY UNUSED: +n power for each empty tile
++2				// RB_Mob_Armour				- Cyclops: Like humans but for armour
++2				// RB_VampireBonus_Power		- Lizards: power each time they kill a monster
++2				// RB_VampireBonus_health		- Lizards: health each time they kill a monster
++1				// RB_MonsterNumbersBonus_Power - CURRENTLY UNUSED: +n power for every enemy monster in play
++3				// RB_RuneBonus_Health			= CURRENTLY UNUSED: Health boost for owner playing a rune
++3				// RB_Neg_ArmourStart
+-1				// RB_Neg_ArmourLoss
++3				// RB_BurnUpBonus_Health		= Health gain whilst afflicted with flame
++2				// RB_BloodSuckerUp_Health		= Health change for attacking
+-3				// RB_BloodSuckerDown_Health	= Health change at upkeep
+
+// END OF FILE MARKER
+_EOF_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

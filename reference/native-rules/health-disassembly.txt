@@ -1,0 +1,31 @@
+
+### CCharacterMin::AddHealth(int) 0x13194c 24
+0013194c: ldrsh    r2, [r0, #0x2b]
+00131950: mov      r3, r0
+00131954: mov      r0, r1
+00131958: add      r1, r2, r1
+0013195c: strh     r1, [r3, #0x2b]
+00131960: bx       lr
+
+### CCharacterMin::TakeDamage(int, CRuneDaisList*, CAIBattleState*) 0x133bb4 84
+00133bb4: push     {r3, r4, r5, r6, r7, lr}
+00133bb8: subs     r7, r1, #0
+00133bbc: mov      r5, r2
+00133bc0: mov      r6, r3
+00133bc4: mov      r4, r0
+00133bc8: ble      #0x133c00
+00133bcc: mov      r1, r2
+00133bd0: mov      r2, r3
+00133bd4: bl       #0x133a78 ; CCharacterMin::GetHealth(CRuneDaisList*, CAIBattleState*)
+00133bd8: ldrsh    r3, [r4, #0x2b]
+00133bdc: mov      r1, r5
+00133be0: mov      r2, r6
+00133be4: cmp      r7, r0
+00133be8: movge    r7, r0
+00133bec: mov      r0, r4
+00133bf0: rsb      r7, r7, r3
+00133bf4: strh     r7, [r4, #0x2b]
+00133bf8: pop      {r3, r4, r5, r6, r7, lr}
+00133bfc: b        #0x133b0c ; CCharacterMin::TestAndTriggerOnDeathActions(CRuneDaisList*, CAIBattleState*)
+00133c00: mov      r0, #0
+00133c04: pop      {r3, r4, r5, r6, r7, pc}

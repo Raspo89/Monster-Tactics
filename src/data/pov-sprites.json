@@ -1,0 +1,866 @@
+{
+  "human_fighter-back": {
+    "originX": 0.4536840018184808,
+    "originY": 0.7800725782392381,
+    "pixelsPerUnit": 140.81782637306944,
+    "height": 0.9767629999999999
+  },
+  "human_fighter-front": {
+    "originX": 0.5384442026265511,
+    "originY": 0.6023615027623902,
+    "pixelsPerUnit": 116.88464597696844,
+    "height": 0.9767629999999999
+  },
+  "human_rogue-back": {
+    "originX": 0.45281612307504,
+    "originY": 0.7792662844303346,
+    "pixelsPerUnit": 142.56339024070564,
+    "height": 0.976852
+  },
+  "human_rogue-front": {
+    "originX": 0.5392354262175811,
+    "originY": 0.6021829945971514,
+    "pixelsPerUnit": 118.5476002324534,
+    "height": 0.976852
+  },
+  "human_artillery-back": {
+    "originX": 0.45266405460267034,
+    "originY": 0.7765116046765506,
+    "pixelsPerUnit": 143.4190630034156,
+    "height": 0.961302
+  },
+  "human_artillery-front": {
+    "originX": 0.5391426270034098,
+    "originY": 0.5977524495765926,
+    "pixelsPerUnit": 118.59484037341966,
+    "height": 0.961302
+  },
+  "human_spellcaster-back": {
+    "originX": 0.45115038538905533,
+    "originY": 0.7744741545079488,
+    "pixelsPerUnit": 144.66309206413698,
+    "height": 0.952868
+  },
+  "human_spellcaster-front": {
+    "originX": 0.5406499860829806,
+    "originY": 0.5993586773578677,
+    "pixelsPerUnit": 120.38073843494745,
+    "height": 0.952868
+  },
+  "undead_fighter-back": {
+    "originX": 0.44944487073599787,
+    "originY": 0.7749370599871079,
+    "pixelsPerUnit": 143.77437897059718,
+    "height": 0.964558
+  },
+  "undead_fighter-front": {
+    "originX": 0.5420081891326382,
+    "originY": 0.5986869629061704,
+    "pixelsPerUnit": 119.46762657226594,
+    "height": 0.964558
+  },
+  "undead_rogue-back": {
+    "originX": 0.44925788916347964,
+    "originY": 0.7728455097854502,
+    "pixelsPerUnit": 144.19410238224475,
+    "height": 0.952261
+  },
+  "undead_rogue-front": {
+    "originX": 0.542225405842355,
+    "originY": 0.597798528545438,
+    "pixelsPerUnit": 119.99214050792348,
+    "height": 0.952261
+  },
+  "undead_artillery-back": {
+    "originX": 0.4493366968732338,
+    "originY": 0.7731051178768711,
+    "pixelsPerUnit": 143.97015413134494,
+    "height": 0.952261
+  },
+  "undead_artillery-front": {
+    "originX": 0.542180057537507,
+    "originY": 0.5981660384920547,
+    "pixelsPerUnit": 119.86327401016983,
+    "height": 0.952261
+  },
+  "undead_spellcaster-back": {
+    "originX": 0.44959221922599396,
+    "originY": 0.775418154098018,
+    "pixelsPerUnit": 143.3553327145622,
+    "height": 0.960261
+  },
+  "undead_spellcaster-front": {
+    "originX": 0.5419236062713105,
+    "originY": 0.5993741916080474,
+    "pixelsPerUnit": 119.22708029069213,
+    "height": 0.960261
+  },
+  "orc_fighter-back": {
+    "originX": 0.4504569367673679,
+    "originY": 0.7775271093976879,
+    "pixelsPerUnit": 139.1849420772856,
+    "height": 0.997466
+  },
+  "orc_fighter-front": {
+    "originX": 0.5406615068101109,
+    "originY": 0.601608967887483,
+    "pixelsPerUnit": 114.23333764337693,
+    "height": 0.997466
+  },
+  "orc_rogue-back": {
+    "originX": 0.45487145983768507,
+    "originY": 0.776726198628571,
+    "pixelsPerUnit": 139.34258072868099,
+    "height": 1.000553
+  },
+  "orc_rogue-front": {
+    "originX": 0.5371922250432561,
+    "originY": 0.6022502067395136,
+    "pixelsPerUnit": 114.83776346252964,
+    "height": 1.000553
+  },
+  "orc_artillery-back": {
+    "originX": 0.4513649424436852,
+    "originY": 0.7805048483037758,
+    "pixelsPerUnit": 136.63401548498658,
+    "height": 1.0537659525871277
+  },
+  "orc_artillery-front": {
+    "originX": 0.5403422169012396,
+    "originY": 0.6042661454070135,
+    "pixelsPerUnit": 113.3363332077925,
+    "height": 1.0537659525871277
+  },
+  "orc_spellcaster-back": {
+    "originX": 0.45260350402117666,
+    "originY": 0.7780825226434811,
+    "pixelsPerUnit": 138.87197633378008,
+    "height": 1.0113070000000002
+  },
+  "orc_spellcaster-front": {
+    "originX": 0.5387568826887209,
+    "originY": 0.6057682631181448,
+    "pixelsPerUnit": 113.55786507770355,
+    "height": 1.0113070000000002
+  },
+  "elf_fighter-back": {
+    "originX": 0.45219158198825615,
+    "originY": 0.7762915404640258,
+    "pixelsPerUnit": 143.82539958797616,
+    "height": 0.9581080000000001
+  },
+  "elf_fighter-front": {
+    "originX": 0.5393663043093024,
+    "originY": 0.5984496305798644,
+    "pixelsPerUnit": 118.42839991477014,
+    "height": 0.9581080000000001
+  },
+  "elf_rogue-back": {
+    "originX": 0.45368942991199984,
+    "originY": 0.7791059432179233,
+    "pixelsPerUnit": 141.3528175245437,
+    "height": 0.964624
+  },
+  "elf_rogue-front": {
+    "originX": 0.5385411874274559,
+    "originY": 0.600727756265387,
+    "pixelsPerUnit": 117.63848778497442,
+    "height": 0.964624
+  },
+  "elf_artillery-back": {
+    "originX": 0.4524874397500411,
+    "originY": 0.776896046109097,
+    "pixelsPerUnit": 145.01772524548502,
+    "height": 0.94608
+  },
+  "elf_artillery-front": {
+    "originX": 0.5393247549106771,
+    "originY": 0.596884766462964,
+    "pixelsPerUnit": 120.02692494323207,
+    "height": 0.94608
+  },
+  "elf_spellcaster-back": {
+    "originX": 0.4527551896095816,
+    "originY": 0.7773443141654293,
+    "pixelsPerUnit": 142.90048954539648,
+    "height": 0.9658220000000001
+  },
+  "elf_spellcaster-front": {
+    "originX": 0.5389999802692235,
+    "originY": 0.6009756047971125,
+    "pixelsPerUnit": 117.96250692251917,
+    "height": 0.9658220000000001
+  },
+  "leader_human-back": {
+    "originX": 0.4584955505229721,
+    "originY": 0.8027771492782269,
+    "pixelsPerUnit": 127.13334786825095,
+    "height": 1.1403510000000001
+  },
+  "leader_human-front": {
+    "originX": 0.5337765609514826,
+    "originY": 0.63654179806789,
+    "pixelsPerUnit": 103.46185354451607,
+    "height": 1.1403510000000001
+  },
+  "leader_zombie-back": {
+    "originX": 0.4492110520550381,
+    "originY": 0.7741736399450463,
+    "pixelsPerUnit": 144.4393389091063,
+    "height": 0.964558
+  },
+  "leader_zombie-front": {
+    "originX": 0.5421420955703498,
+    "originY": 0.5975989842552115,
+    "pixelsPerUnit": 119.84844480381689,
+    "height": 0.964558
+  },
+  "leader_orc-back": {
+    "originX": 0.45217089578773334,
+    "originY": 0.7805048483037758,
+    "pixelsPerUnit": 136.63401548498658,
+    "height": 1.022351
+  },
+  "leader_orc-front": {
+    "originX": 0.53967368793774,
+    "originY": 0.6042661454070135,
+    "pixelsPerUnit": 113.3363332077925,
+    "height": 1.022351
+  },
+  "leader_elf-back": {
+    "originX": 0.45644638149804895,
+    "originY": 0.7908610807740918,
+    "pixelsPerUnit": 131.025389357302,
+    "height": 1.0417919999999998
+  },
+  "leader_elf-front": {
+    "originX": 0.5365285405939217,
+    "originY": 0.6230706678431035,
+    "pixelsPerUnit": 109.89135733367833,
+    "height": 1.0417919999999998
+  },
+  "neutral_golem-back": {
+    "originX": 0.4566741427879242,
+    "originY": 0.7770561420417249,
+    "pixelsPerUnit": 139.5883870792263,
+    "height": 0.994326
+  },
+  "neutral_golem-front": {
+    "originX": 0.5354222088822829,
+    "originY": 0.6019322758772613,
+    "pixelsPerUnit": 114.12420487050765,
+    "height": 0.994326
+  },
+  "neutral_mercenary-back": {
+    "originX": 0.45281612307504,
+    "originY": 0.7792662844303346,
+    "pixelsPerUnit": 142.56339024070564,
+    "height": 0.976852
+  },
+  "neutral_mercenary-front": {
+    "originX": 0.5392354262175811,
+    "originY": 0.6021829945971514,
+    "pixelsPerUnit": 118.5476002324534,
+    "height": 0.976852
+  },
+  "neutral_assassin-back": {
+    "originX": 0.44662253455435275,
+    "originY": 0.8672646822129838,
+    "pixelsPerUnit": 160.92242976164337,
+    "height": 0.9002380000000001
+  },
+  "neutral_assassin-front": {
+    "originX": 0.5394320492792253,
+    "originY": 0.6003664202038218,
+    "pixelsPerUnit": 118.87977684057013,
+    "height": 0.9002380000000001
+  },
+  "neutral_dragon-back": {
+    "originX": 0.4518136736805668,
+    "originY": 0.7697607117375406,
+    "pixelsPerUnit": 147.09586094949339,
+    "height": 0.933203
+  },
+  "neutral_dragon-front": {
+    "originX": 0.539512424899698,
+    "originY": 0.5876313954212011,
+    "pixelsPerUnit": 120.61749883761713,
+    "height": 0.933203
+  },
+  "cyclops_fighter-front": {
+    "originX": 0.5374429036042195,
+    "originY": 0.630476859657932,
+    "pixelsPerUnit": 106.43927918823647,
+    "height": 1.0756869999999998
+  },
+  "cyclops_fighter-back": {
+    "originX": 0.45548995848337687,
+    "originY": 0.8038208890011802,
+    "pixelsPerUnit": 126.5290957599229,
+    "height": 1.0756869999999998
+  },
+  "cyclops_rogue-back": {
+    "originX": 0.45135475831204686,
+    "originY": 0.7911691847127542,
+    "pixelsPerUnit": 138.28426651772264,
+    "height": 0.9920910000000001
+  },
+  "cyclops_rogue-front": {
+    "originX": 0.5400883080191352,
+    "originY": 0.6086085267253541,
+    "pixelsPerUnit": 113.95939413608674,
+    "height": 0.9920910000000001
+  },
+  "cyclops_artillery-front": {
+    "originX": 0.5383642339663106,
+    "originY": 0.6099076151493166,
+    "pixelsPerUnit": 113.512661671123,
+    "height": 1.0235054790973663
+  },
+  "cyclops_artillery-back": {
+    "originX": 0.45353079628808546,
+    "originY": 0.7920199747055784,
+    "pixelsPerUnit": 137.4937657743702,
+    "height": 1.0235054790973663
+  },
+  "cyclops_spellcaster-front": {
+    "originX": 0.5403376566771307,
+    "originY": 0.6112351358412539,
+    "pixelsPerUnit": 113.29109787713995,
+    "height": 0.975843
+  },
+  "cyclops_spellcaster-back": {
+    "originX": 0.4515864521048787,
+    "originY": 0.7931705417015831,
+    "pixelsPerUnit": 135.97279676078443,
+    "height": 0.975843
+  },
+  "dwarf_artillery-front": {
+    "originX": 0.5391371353358465,
+    "originY": 0.6004379489886376,
+    "pixelsPerUnit": 117.73897490237192,
+    "height": 0.9685750000000001
+  },
+  "dwarf_artillery-back": {
+    "originX": 0.4528194268779678,
+    "originY": 0.7784414446858507,
+    "pixelsPerUnit": 141.93661000033785,
+    "height": 0.9685750000000001
+  },
+  "dwarf_fighter-front": {
+    "originX": 0.5393379044401445,
+    "originY": 0.5986961819647808,
+    "pixelsPerUnit": 118.34292068698697,
+    "height": 0.974929
+  },
+  "dwarf_fighter-back": {
+    "originX": 0.4523161672338964,
+    "originY": 0.7767181895003077,
+    "pixelsPerUnit": 143.4505502873662,
+    "height": 0.974929
+  },
+  "elemental_artillery-back": {
+    "originX": 0.45525210461108623,
+    "originY": 0.7744335660705788,
+    "pixelsPerUnit": 139.03848702482054,
+    "height": 1.013953
+  },
+  "elemental_artillery-front": {
+    "originX": 0.5371306122610544,
+    "originY": 0.6107684020300926,
+    "pixelsPerUnit": 115.37043488220185,
+    "height": 1.013953
+  },
+  "dwarf_rogue-front": {
+    "originX": 0.5392957669027985,
+    "originY": 0.5990616280145254,
+    "pixelsPerUnit": 118.21619731325663,
+    "height": 0.9685750000000001
+  },
+  "dwarf_rogue-back": {
+    "originX": 0.4525413749494974,
+    "originY": 0.7774893225539344,
+    "pixelsPerUnit": 142.77309301696127,
+    "height": 0.9685750000000001
+  },
+  "dwarf_spellcaster-front": {
+    "originX": 0.5396919806301377,
+    "originY": 0.5956239940451612,
+    "pixelsPerUnit": 119.40815471378777,
+    "height": 0.9685750000000001
+  },
+  "dwarf_spellcaster-back": {
+    "originX": 0.4519099549276083,
+    "originY": 0.7753271761495452,
+    "pixelsPerUnit": 144.6726379241727,
+    "height": 0.9685750000000001
+  },
+  "elemental_fighter-front": {
+    "originX": 0.5375542987348231,
+    "originY": 0.6070116372933198,
+    "pixelsPerUnit": 116.68689291388574,
+    "height": 1.013953
+  },
+  "elemental_fighter-back": {
+    "originX": 0.4552469140243214,
+    "originY": 0.774414360989911,
+    "pixelsPerUnit": 139.05461496389535,
+    "height": 1.013953
+  },
+  "golem_artillery-back": {
+    "originX": 0.4591730947660964,
+    "originY": 0.7761604670242787,
+    "pixelsPerUnit": 139.41402718785642,
+    "height": 0.994382
+  },
+  "golem_artillery-front": {
+    "originX": 0.5337034754521489,
+    "originY": 0.6065148299531568,
+    "pixelsPerUnit": 115.08923382978324,
+    "height": 0.994382
+  },
+  "golem_fighter-back": {
+    "originX": 0.4566741427879242,
+    "originY": 0.7770561420417249,
+    "pixelsPerUnit": 139.5883870792263,
+    "height": 1.0252992808818817
+  },
+  "golem_fighter-front": {
+    "originX": 0.5354222088822829,
+    "originY": 0.6019322758772613,
+    "pixelsPerUnit": 114.12420487050765,
+    "height": 1.0252992808818817
+  },
+  "golem_rogue-back": {
+    "originX": 0.45738628455063096,
+    "originY": 0.7797343883061459,
+    "pixelsPerUnit": 137.29404208847367,
+    "height": 0.9993780000000001
+  },
+  "golem_rogue-front": {
+    "originX": 0.534898109041045,
+    "originY": 0.6069341053586547,
+    "pixelsPerUnit": 112.43568886130318,
+    "height": 0.9993780000000001
+  },
+  "golem_spellcaster-back": {
+    "originX": 0.4566741582729114,
+    "originY": 0.7770561577811034,
+    "pixelsPerUnit": 139.58839014319065,
+    "height": 0.994326
+  },
+  "golem_spellcaster-front": {
+    "originX": 0.5354221943878029,
+    "originY": 0.601932259709051,
+    "pixelsPerUnit": 114.12420146568346,
+    "height": 0.994326
+  },
+  "imp_artillery-back": {
+    "originX": 0.5702591624494013,
+    "originY": 0.7371062541445679,
+    "pixelsPerUnit": 116.2975838568367,
+    "height": 0.98596
+  },
+  "imp_artillery-front": {
+    "originX": 0.43174825096224606,
+    "originY": 0.6084349550211344,
+    "pixelsPerUnit": 112.97478122957031,
+    "height": 0.98596
+  },
+  "imp_fighter-back": {
+    "originX": 0.5702591624494013,
+    "originY": 0.7247305723308906,
+    "pixelsPerUnit": 116.2975838568367,
+    "height": 0.949588
+  },
+  "imp_fighter-front": {
+    "originX": 0.4297408375505986,
+    "originY": 0.5976778466100829,
+    "pixelsPerUnit": 116.2975838568367,
+    "height": 0.949588
+  },
+  "imp_rogue-back": {
+    "originX": 0.5702591624494013,
+    "originY": 0.7246581234772687,
+    "pixelsPerUnit": 116.2975838568367,
+    "height": 0.955948
+  },
+  "imp_rogue-front": {
+    "originX": 0.4301036145784928,
+    "originY": 0.6004453585017634,
+    "pixelsPerUnit": 115.69709147474714,
+    "height": 0.955948
+  },
+  "lizard_artillery-front": {
+    "originX": 0.539512424899698,
+    "originY": 0.5876313954212011,
+    "pixelsPerUnit": 120.61749883761713,
+    "height": 0.933203
+  },
+  "lizard_artillery-back": {
+    "originX": 0.4518136736805668,
+    "originY": 0.7697607117375406,
+    "pixelsPerUnit": 147.09586094949339,
+    "height": 0.933203
+  },
+  "imp_spellcaster-back": {
+    "originX": 0.5384949786080533,
+    "originY": 0.7697502437550136,
+    "pixelsPerUnit": 133.78751448809834,
+    "height": 1.0024146735668182
+  },
+  "imp_spellcaster-front": {
+    "originX": 0.4673565004477445,
+    "originY": 0.6075742918814233,
+    "pixelsPerUnit": 113.45097015785727,
+    "height": 1.0024146735668182
+  },
+  "lizard_fighter-back": {
+    "originX": 0.4518136736805668,
+    "originY": 0.7697607117375406,
+    "pixelsPerUnit": 147.09586094949339,
+    "height": 0.933203
+  },
+  "lizard_fighter-front": {
+    "originX": 0.539512424899698,
+    "originY": 0.5876313954212011,
+    "pixelsPerUnit": 120.61749883761713,
+    "height": 0.933203
+  },
+  "lizard_rogue-front": {
+    "originX": 0.5397260180043593,
+    "originY": 0.5898263119189902,
+    "pixelsPerUnit": 119.86616817228392,
+    "height": 0.9383800000000001
+  },
+  "lizard_rogue-back": {
+    "originX": 0.4514709501990965,
+    "originY": 0.7755074884594289,
+    "pixelsPerUnit": 146.42774526351772,
+    "height": 0.9383800000000001
+  },
+  "lizard_spellcaster-back": {
+    "originX": 0.45159076599399056,
+    "originY": 0.7737409362843054,
+    "pixelsPerUnit": 146.06622248973005,
+    "height": 0.952292
+  },
+  "lizard_spellcaster-front": {
+    "originX": 0.5397260180043593,
+    "originY": 0.5898263119189902,
+    "pixelsPerUnit": 119.86616817228392,
+    "height": 0.952292
+  },
+  "minotaur_artillery-back": {
+    "originX": 0.45128692480540683,
+    "originY": 0.7909616418413615,
+    "pixelsPerUnit": 138.47712295694515,
+    "height": 1.0120719999999999
+  },
+  "minotaur_artillery-front": {
+    "originX": 0.539318578356627,
+    "originY": 0.6149714654047245,
+    "pixelsPerUnit": 111.77129729201027,
+    "height": 1.0120719999999999
+  },
+  "minotaur_fighter-back": {
+    "originX": 0.4523057707617532,
+    "originY": 0.7940788209552064,
+    "pixelsPerUnit": 135.5808148646201,
+    "height": 0.997918
+  },
+  "minotaur_fighter-front": {
+    "originX": 0.538863560124142,
+    "originY": 0.618732950263461,
+    "pixelsPerUnit": 110.47779226812447,
+    "height": 0.997918
+  },
+  "minotaur_rogue-back": {
+    "originX": 0.4490973038999989,
+    "originY": 0.7842624650099213,
+    "pixelsPerUnit": 144.70157916579734,
+    "height": 0.954034
+  },
+  "minotaur_rogue-front": {
+    "originX": 0.5414813606545713,
+    "originY": 0.5970927426652246,
+    "pixelsPerUnit": 117.9194591357277,
+    "height": 0.954034
+  },
+  "minotaur_spellcaster-front": {
+    "originX": 0.5420327229011104,
+    "originY": 0.5974198014174591,
+    "pixelsPerUnit": 118.05180857053024,
+    "height": 0.947068
+  },
+  "minotaur_spellcaster-back": {
+    "originX": 0.44774079203128697,
+    "originY": 0.7815073562926447,
+    "pixelsPerUnit": 146.77359898107053,
+    "height": 0.947068
+  },
+  "robot_fighter-back": {
+    "originX": 0.4536666390963318,
+    "originY": 0.7699724350286036,
+    "pixelsPerUnit": 140.30630276156077,
+    "height": 0.9526709999999999
+  },
+  "robot_fighter-front": {
+    "originX": 0.538631841809625,
+    "originY": 0.6025483687090655,
+    "pixelsPerUnit": 116.98462592530905,
+    "height": 0.9526709999999999
+  },
+  "robot_artillery-back": {
+    "originX": 0.4540813484871877,
+    "originY": 0.7714942764517758,
+    "pixelsPerUnit": 139.05048319188913,
+    "height": 0.9657509999999999
+  },
+  "robot_artillery-front": {
+    "originX": 0.5384089779604413,
+    "originY": 0.6044950988140768,
+    "pixelsPerUnit": 116.30975144851053,
+    "height": 0.9657509999999999
+  },
+  "robot_rogue-back": {
+    "originX": 0.4539374889209662,
+    "originY": 0.7708847855794531,
+    "pixelsPerUnit": 140.1588815369791,
+    "height": 0.959646
+  },
+  "robot_rogue-front": {
+    "originX": 0.5383192026467386,
+    "originY": 0.6032405180293677,
+    "pixelsPerUnit": 116.59756401774483,
+    "height": 0.959646
+  },
+  "robot_spellcaster-back": {
+    "originX": 0.45266937505075555,
+    "originY": 0.7685869270267542,
+    "pixelsPerUnit": 142.06329496175562,
+    "height": 0.942252
+  },
+  "robot_spellcaster-front": {
+    "originX": 0.5394078542912792,
+    "originY": 0.5983725267944717,
+    "pixelsPerUnit": 118.28302782807964,
+    "height": 0.942252
+  },
+  "skeleton_artillery-back": {
+    "originX": 0.4516670438365387,
+    "originY": 0.774944387900649,
+    "pixelsPerUnit": 142.78223949542166,
+    "height": 0.965591
+  },
+  "skeleton_artillery-front": {
+    "originX": 0.540297566271266,
+    "originY": 0.600201181795755,
+    "pixelsPerUnit": 119.0445860370581,
+    "height": 0.965591
+  },
+  "skeleton_fighter-back": {
+    "originX": 0.4516670438365387,
+    "originY": 0.774944387900649,
+    "pixelsPerUnit": 142.78223949542166,
+    "height": 0.965591
+  },
+  "skeleton_fighter-front": {
+    "originX": 0.540297566271266,
+    "originY": 0.600201181795755,
+    "pixelsPerUnit": 119.0445860370581,
+    "height": 0.965591
+  },
+  "skeleton_rogue-back": {
+    "originX": 0.4531869467009309,
+    "originY": 0.7796999281615319,
+    "pixelsPerUnit": 140.83097447436853,
+    "height": 0.9879560000000001
+  },
+  "skeleton_rogue-front": {
+    "originX": 0.5387154403026486,
+    "originY": 0.6040966641486821,
+    "pixelsPerUnit": 116.47036031154711,
+    "height": 0.9879560000000001
+  },
+  "skeleton_spellcaster-back": {
+    "originX": 0.45233926296243504,
+    "originY": 0.7772399962825257,
+    "pixelsPerUnit": 140.79641119428217,
+    "height": 0.9721289999999999
+  },
+  "skeleton_spellcaster-front": {
+    "originX": 0.5398871369980722,
+    "originY": 0.6036620206228165,
+    "pixelsPerUnit": 117.8321211801001,
+    "height": 0.9721289999999999
+  },
+  "spectre_artillery-back": {
+    "originX": 0.44604890316938073,
+    "originY": 0.8664830178771035,
+    "pixelsPerUnit": 162.65181416546503,
+    "height": 0.8949400000000001
+  },
+  "spectre_artillery-front": {
+    "originX": 0.5397239117937938,
+    "originY": 0.5978525688457732,
+    "pixelsPerUnit": 119.75968420613314,
+    "height": 0.8949400000000001
+  },
+  "spectre_fighter-back": {
+    "originX": 0.4458669978048085,
+    "originY": 0.86623514277871,
+    "pixelsPerUnit": 163.20022261853154,
+    "height": 0.9002380000000001
+  },
+  "spectre_fighter-front": {
+    "originX": 0.5398162966334943,
+    "originY": 0.5970568457119282,
+    "pixelsPerUnit": 120.03820610209861,
+    "height": 0.9002380000000001
+  },
+  "spectre_rogue-front": {
+    "originX": 0.5394320492792253,
+    "originY": 0.6003664202038218,
+    "pixelsPerUnit": 118.87977684057013,
+    "height": 0.9002380000000001
+  },
+  "spectre_rogue-back": {
+    "originX": 0.44662253455435275,
+    "originY": 0.8672646822129838,
+    "pixelsPerUnit": 160.92242976164337,
+    "height": 0.9002380000000001
+  },
+  "spectre_spellcaster-front": {
+    "originX": 0.5394558737557122,
+    "originY": 0.600161216761851,
+    "pixelsPerUnit": 118.95160289323269,
+    "height": 0.927547
+  },
+  "spectre_spellcaster-back": {
+    "originX": 0.4465350264759137,
+    "originY": 0.8644037614811466,
+    "pixelsPerUnit": 161.18624919346954,
+    "height": 0.927547
+  },
+  "werewolf_artillery-front": {
+    "originX": 0.5388038965217957,
+    "originY": 0.5943907886306103,
+    "pixelsPerUnit": 118.43397332526125,
+    "height": 0.948982
+  },
+  "werewolf_artillery-back": {
+    "originX": 0.4524474045764463,
+    "originY": 0.779448211126971,
+    "pixelsPerUnit": 145.13601268822975,
+    "height": 0.948982
+  },
+  "vampire_artillery-back": {
+    "originX": 0.4560647142119545,
+    "originY": 0.7770467457644384,
+    "pixelsPerUnit": 144.3622015650776,
+    "height": 0.9697
+  },
+  "werewolf_fighter-front": {
+    "originX": 0.5390725419250345,
+    "originY": 0.5919980823749581,
+    "pixelsPerUnit": 119.25391011957954,
+    "height": 0.943311
+  },
+  "werewolf_fighter-back": {
+    "originX": 0.45192452848456455,
+    "originY": 0.7776828250073949,
+    "pixelsPerUnit": 146.73189090328378,
+    "height": 0.943311
+  },
+  "vampire_artillery-front": {
+    "originX": 0.5361751302338286,
+    "originY": 0.5982907342657594,
+    "pixelsPerUnit": 118.86394611503482,
+    "height": 0.9697
+  },
+  "werewolf_rogue-back": {
+    "originX": 0.45217235068423234,
+    "originY": 0.7785195468965943,
+    "pixelsPerUnit": 145.97550893096346,
+    "height": 0.936614
+  },
+  "werewolf_rogue-front": {
+    "originX": 0.5389889036997259,
+    "originY": 0.5927430112011919,
+    "pixelsPerUnit": 118.9986365972512,
+    "height": 0.936614
+  },
+  "werewolf_spellcaster-back": {
+    "originX": 0.45457054141402364,
+    "originY": 0.7789676075051299,
+    "pixelsPerUnit": 138.6559538764482,
+    "height": 0.9821559999999999
+  },
+  "werewolf_spellcaster-front": {
+    "originX": 0.5370543231761625,
+    "originY": 0.6099734676504233,
+    "pixelsPerUnit": 113.0940734306484,
+    "height": 0.9821559999999999
+  },
+  "elemental_spellcaster-back": {
+    "originX": 0.4552469140243214,
+    "originY": 0.774414360989911,
+    "pixelsPerUnit": 139.05461496389535,
+    "height": 1.013953
+  },
+  "elemental_spellcaster-front": {
+    "originX": 0.5375542987348231,
+    "originY": 0.6070116372933198,
+    "pixelsPerUnit": 116.68689291388574,
+    "height": 1.013953
+  },
+  "elemental_rogue-back": {
+    "originX": 0.45555866631068265,
+    "originY": 0.7755678390221975,
+    "pixelsPerUnit": 138.0859534023746,
+    "height": 1.0098520000000002
+  },
+  "elemental_rogue-front": {
+    "originX": 0.5370369645847421,
+    "originY": 0.6115987620010421,
+    "pixelsPerUnit": 115.0794573710883,
+    "height": 1.0098520000000002
+  },
+  "vampire_fighter-back": {
+    "originX": 0.4550705298375816,
+    "originY": 0.7765673704386797,
+    "pixelsPerUnit": 144.93717955009876,
+    "height": 0.969749
+  },
+  "vampire_fighter-front": {
+    "originX": 0.5370065844335709,
+    "originY": 0.5973711262197772,
+    "pixelsPerUnit": 119.37888324066633,
+    "height": 0.969749
+  },
+  "vampire_rogue-back": {
+    "originX": 0.4540720780880421,
+    "originY": 0.7733372823116971,
+    "pixelsPerUnit": 144.7314836584571,
+    "height": 0.952868
+  },
+  "vampire_rogue-front": {
+    "originX": 0.5385825210594459,
+    "originY": 0.6037213211188108,
+    "pixelsPerUnit": 121.58411013940032,
+    "height": 0.952868
+  },
+  "vampire_spellcaster-front": {
+    "originX": 0.5385860019751711,
+    "originY": 0.6045742922784741,
+    "pixelsPerUnit": 116.71035456139465,
+    "height": 0.986257
+  },
+  "vampire_spellcaster-back": {
+    "originX": 0.453545170521602,
+    "originY": 0.7800640813944446,
+    "pixelsPerUnit": 140.5110491364636,
+    "height": 0.986257
+  }
+}

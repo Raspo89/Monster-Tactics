@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.sites-runtime/
+*.tar.gz
+
+/public/**/.*
+
+__pycache__/
+release/

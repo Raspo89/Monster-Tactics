@@ -1,0 +1,23 @@
+eRaceType enum,Name - Adjective,Name - Singular,Name - Plural,Race Scale,Bonus (Passive ability)
+,,,,,
+RT_HUMAN,Human,Human,Humans,1,RB_HUMAN_BONUS
+RT_ELF,Elven,Elf,Elves,0.92,RB_ELF_BONUS
+RT_ORC,Orcish,Orc,Orcs,0.95,RB_ORC_BONUS
+RT_UNDEAD,Zombie,Zombie,Zombies,1,RB_ZOMBIE_BONUS
+RT_LIZARD,Lizard,Lizard,Lizards,1,RB_VAMPIRE_POWER
+RT_DWARF,Dwarven,Dwarf,Dwarves,0.85,RB_DWARF_BONUS
+RT_MINOTAUR,Minotaur,Minotaur,Minotaurs,1,RB_MINOTAUR_BONUS
+RT_WEREWOLF,Werewolf,Werewolf,Werewolves,1,RB_WEREWOLF_BONUS
+RT_GOLEM,Golem,Golem,Golem,1,RB_RUNEHEALTH_BONUS
+RT_ELEMENTAL,Elemental,Elemental,Elementals,1.1,RB_ELEMENTAL_BONUS
+RT_CYCLOPS,Cyclops,Cyclops,Cyclops,1.1,RB_FREINDLY_DEATH_GAINS_POWER
+RT_SKELETON,Skeleton,Skeleton,Skeletons,1,RB_NEG_ARMOUR
+RT_ROBOT,Robot,Robot,Robots,1,RB_IMMUNITY
+RT_IMP,Impish,Imp,Imps,1,RB_BURN
+RT_SPECTRE,Spectral,Spectre,Spectres,1,RB_GHOST
+RT_VAMPIRE,Vampiric,Vampire,Vampires,1,RB_BLOODSUCKER
+RT_HEROES1,Hero,Hero,Heroes,1.3,RB_NONE
+RT_HEROES2,Hero,Hero,Heroes,1.3,RB_NONE
+RT_HEROES3,Hero,Hero,Heroes,1.3,RB_NONE
+RT_HEROES4,Hero,Hero,Heroes,1.3,RB_NONE
+RT_DUNGEONMASTER,Dungeon Master,Dungeon Master,Dungeon Masters,1,RB_NONE

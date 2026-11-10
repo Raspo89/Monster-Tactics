@@ -1,0 +1,304 @@
+
+### CRuneDaisList::AddRune(eRune, eTeam, int, short) 0x1d27dc 80
+001d27dc: add      r2, r2, r2, lsl #1
+001d27e0: add      r3, r3, r3, lsl #1
+001d27e4: push     {r4, r5, r6, r7, r8, lr}
+001d27e8: lsl      r5, r2, #4
+001d27ec: add      r5, r5, r3, lsl #2
+001d27f0: ldr      ip, [pc, #0x30]
+001d27f4: add      r4, r0, r5
+001d27f8: mov      r6, r0
+001d27fc: mov      r7, r1
+001d2800: add      r0, r4, #6
+001d2804: ldr      r1, [pc, ip]
+001d2808: ldrsh    r8, [sp, #0x18]
+001d280c: bl       #0x15ae9c ; tHEXLOC::operator==(tHEXLOC const&) const
+001d2810: cmp      r0, #0
+001d2814: streq    r7, [r6, r5]
+001d2818: strheq   r8, [r4, #4]
+001d281c: moveq    r0, #1
+001d2820: movne    r0, #0
+001d2824: pop      {r4, r5, r6, r7, r8, pc}
+001d2828: eoreq    r8, r6, r8, lsr r3
+
+### CRune_OnInitMojoForTurn::~CRune_OnInitMojoForTurn() 0x1da71c 40
+001da71c: ldr      r3, [pc, #0x1c]
+001da720: push     {r4, lr}
+001da724: ldr      r3, [pc, r3]
+001da728: mov      r4, r0
+001da72c: add      r3, r3, #8
+001da730: str      r3, [r0]
+001da734: bl       #0x1d6dd0 ; CRune_Base::~CRune_Base()
+001da738: mov      r0, r4
+001da73c: pop      {r4, pc}
+001da740: eoreq    pc, r5, ip, asr #29
+
+### CRune_OnInitMojoForTurn::CRune_OnInitMojoForTurn(eRune) 0x1da9ec 40
+001da9ec: push     {r4, lr}
+001da9f0: mov      r4, r0
+001da9f4: bl       #0x1d6e7c ; CRune_Base::CRune_Base(eRune)
+001da9f8: ldr      r3, [pc, #0x10]
+001da9fc: mov      r0, r4
+001daa00: ldr      r3, [pc, r3]
+001daa04: add      r3, r3, #8
+001daa08: str      r3, [r4]
+001daa0c: pop      {r4, pc}
+
+### CRune_OnInitMojoForTurn::CRune_OnInitMojoForTurn(eRune) 0x1da9ec 40
+001da9ec: push     {r4, lr}
+001da9f0: mov      r4, r0
+001da9f4: bl       #0x1d6e7c ; CRune_Base::CRune_Base(eRune)
+001da9f8: ldr      r3, [pc, #0x10]
+001da9fc: mov      r0, r4
+001daa00: ldr      r3, [pc, r3]
+001daa04: add      r3, r3, #8
+001daa08: str      r3, [r4]
+001daa0c: pop      {r4, pc}
+
+### CRune_OnInitMojoForTurn::OnInitMojoForTurn(eTeam, eTeam, tHEXLOC) 0x1da760 652
+001da760: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+001da764: mov      r7, r0
+001da768: ldr      r4, [pc, #0x270]
+001da76c: mov      r6, r3
+001da770: ldr      r0, [pc, #0x26c]
+001da774: sub      sp, sp, #0x2c
+001da778: add      r4, pc, r4
+001da77c: mov      r8, r1
+001da780: mov      fp, r2
+001da784: ldr      r3, [r4, r0]
+001da788: ldr      r0, [r3]
+001da78c: bl       #0x148978 ; CGame::GetBattle()
+001da790: mov      r5, r0
+001da794: bl       #0x10e2ac ; CBattle::GetTileItemMgr()
+001da798: mov      sl, r0
+001da79c: mov      r0, r5
+001da7a0: bl       #0x10e158 ; CBattle::GetMap()
+001da7a4: mov      sb, r0
+001da7a8: mov      r0, r7
+001da7ac: bl       #0x1d76c0 ; CRune_Base::GetType() const
+001da7b0: sub      r0, r0, #4
+001da7b4: cmp      r0, #0x3a
+001da7b8: addls    pc, pc, r0, lsl #2
+001da7bc: b        #0x1da928 ; 
+001da7c0: b        #0x1da8ac ; 
+001da7c4: b        #0x1da928 ; 
+001da7c8: b        #0x1da928 ; 
+001da7cc: b        #0x1da928 ; 
+001da7d0: b        #0x1da930 ; 
+001da7d4: b        #0x1da928 ; 
+001da7d8: b        #0x1da928 ; 
+001da7dc: b        #0x1da928 ; 
+001da7e0: b        #0x1da928 ; 
+001da7e4: b        #0x1da928 ; 
+001da7e8: b        #0x1da928 ; 
+001da7ec: b        #0x1da928 ; 
+001da7f0: b        #0x1da928 ; 
+001da7f4: b        #0x1da928 ; 
+001da7f8: b        #0x1da928 ; 
+001da7fc: b        #0x1da928 ; 
+001da800: b        #0x1da928 ; 
+001da804: b        #0x1da928 ; 
+001da808: b        #0x1da928 ; 
+001da80c: b        #0x1da928 ; 
+001da810: b        #0x1da928 ; 
+001da814: b        #0x1da928 ; 
+001da818: b        #0x1da928 ; 
+001da81c: b        #0x1da928 ; 
+001da820: b        #0x1da928 ; 
+001da824: b        #0x1da928 ; 
+001da828: b        #0x1da9bc ; 
+001da82c: b        #0x1da928 ; 
+001da830: b        #0x1da928 ; 
+001da834: b        #0x1da928 ; 
+001da838: b        #0x1da928 ; 
+001da83c: b        #0x1da928 ; 
+001da840: b        #0x1da928 ; 
+001da844: b        #0x1da928 ; 
+001da848: b        #0x1da928 ; 
+001da84c: b        #0x1da928 ; 
+001da850: b        #0x1da928 ; 
+001da854: b        #0x1da928 ; 
+001da858: b        #0x1da928 ; 
+001da85c: b        #0x1da928 ; 
+001da860: b        #0x1da928 ; 
+001da864: b        #0x1da928 ; 
+001da868: b        #0x1da928 ; 
+001da86c: b        #0x1da928 ; 
+001da870: b        #0x1da928 ; 
+001da874: b        #0x1da928 ; 
+001da878: b        #0x1da928 ; 
+001da87c: b        #0x1da928 ; 
+001da880: b        #0x1da928 ; 
+001da884: b        #0x1da928 ; 
+001da888: b        #0x1da928 ; 
+001da88c: b        #0x1da928 ; 
+001da890: b        #0x1da928 ; 
+001da894: b        #0x1da928 ; 
+001da898: b        #0x1da938 ; 
+001da89c: b        #0x1da8b4 ; 
+001da8a0: b        #0x1da99c ; 
+001da8a4: b        #0x1da954 ; 
+001da8a8: b        #0x1da978 ; 
+001da8ac: cmp      fp, r8
+001da8b0: bne      #0x1da928
+001da8b4: ldr      r3, [pc, #0x12c]
+001da8b8: add      r7, sp, #0x10
+001da8bc: mov      r1, r6
+001da8c0: mov      r0, r7
+001da8c4: ldr      r3, [r4, r3]
+001da8c8: ldr      r8, [r3, #0x194]
+001da8cc: add      r4, sp, #0x18
+001da8d0: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+001da8d4: mov      r1, r7
+001da8d8: mov      r0, r4
+001da8dc: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+001da8e0: mov      r1, r6
+001da8e4: add      r6, sp, #0x14
+001da8e8: mov      r0, r6
+001da8ec: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+001da8f0: mov      r1, sb
+001da8f4: mov      r2, r6
+001da8f8: mov      r0, sl
+001da8fc: bl       #0x209fd8 ; CTileItemMgr::GetItemsAt(CMap*, tHEXLOC) const
+001da900: mov      ip, #0x3f800000
+001da904: mov      lr, #6
+001da908: mov      r1, r8
+001da90c: mov      r2, r4
+001da910: mov      r3, #0
+001da914: str      lr, [sp, #8]
+001da918: str      ip, [sp]
+001da91c: str      r0, [sp, #4]
+001da920: mov      r0, r5
+001da924: bl       #0x10d838 ; CBattle::AddToCurrentMojoPool(int, RZVector3 const&, CCharacter*, float, unsigned int, eTeam)
+001da928: add      sp, sp, #0x2c
+001da92c: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+001da930: cmp      fp, r8
+001da934: bne      #0x1da928
+001da938: ldr      r3, [pc, #0xa8]
+001da93c: add      r7, sp, #0x10
+001da940: mov      r1, r6
+001da944: mov      r0, r7
+001da948: ldr      r3, [r4, r3]
+001da94c: ldr      r8, [r3, #0x1a4]
+001da950: b        #0x1da8cc ; 
+001da954: ldr      r3, [pc, #0x8c]
+001da958: add      r7, sp, #0x10
+001da95c: cmp      fp, r8
+001da960: mov      r1, r6
+001da964: mov      r0, r7
+001da968: ldr      r3, [r4, r3]
+001da96c: beq      #0x1da994
+001da970: ldr      r8, [r3, #0x1a4]
+001da974: b        #0x1da8cc ; 
+001da978: ldr      r3, [pc, #0x68]
+001da97c: add      r7, sp, #0x10
+001da980: cmp      fp, r8
+001da984: mov      r1, r6
+001da988: mov      r0, r7
+001da98c: ldr      r3, [r4, r3]
+001da990: bne      #0x1da8c8
+001da994: ldr      r8, [r3, #0x1ec]
+001da998: b        #0x1da8cc ; 
+001da99c: ldr      r3, [pc, #0x44]
+001da9a0: add      r7, sp, #0x10
+001da9a4: cmp      fp, r8
+001da9a8: mov      r1, r6
+001da9ac: mov      r0, r7
+001da9b0: ldr      r3, [r4, r3]
+001da9b4: bne      #0x1da8c8
+001da9b8: b        #0x1da970 ; 
+001da9bc: cmp      fp, r8
+001da9c0: bne      #0x1da928
+001da9c4: ldr      r3, [pc, #0x1c]
+001da9c8: add      r7, sp, #0x10
+001da9cc: mov      r1, r6
+001da9d0: mov      r0, r7
+001da9d4: ldr      r3, [r4, r3]
+001da9d8: ldr      r8, [r3, #0x1ec]
+001da9dc: b        #0x1da8cc ; 
+001da9e0: eoreq    pc, r5, r8, ror #9
+001da9e4: andeq    r0, r0, r0, lsl r5
+001da9e8: andeq    r0, r0, r4, asr #18
+
+### CRune_OnInitMojoForTurn::~CRune_OnInitMojoForTurn() 0x1da744 28
+001da744: push     {r4, lr}
+001da748: mov      r4, r0
+001da74c: bl       #0x1da71c ; CRune_OnInitMojoForTurn::~CRune_OnInitMojoForTurn()
+001da750: mov      r0, r4
+001da754: bl       #0x2cb8c0 ; operator delete(void*)
+001da758: mov      r0, r4
+001da75c: pop      {r4, pc}
+
+### CRune_OnInitMojoForTurn::~CRune_OnInitMojoForTurn() 0x1da71c 40
+001da71c: ldr      r3, [pc, #0x1c]
+001da720: push     {r4, lr}
+001da724: ldr      r3, [pc, r3]
+001da728: mov      r4, r0
+001da72c: add      r3, r3, #8
+001da730: str      r3, [r0]
+001da734: bl       #0x1d6dd0 ; CRune_Base::~CRune_Base()
+001da738: mov      r0, r4
+001da73c: pop      {r4, pc}
+001da740: eoreq    pc, r5, ip, asr #29
+
+### CRune_HealthBonus::GetHealthBonus(eTeam, CCharacterMin*) 0x1d866c 160
+001d866c: push     {r3, r4, r5, r6, r7, lr}
+001d8670: mov      r7, r0
+001d8674: mov      r0, r2
+001d8678: mov      r6, r1
+001d867c: mov      r5, r2
+001d8680: bl       #0x131c44 ; CCharacterMin::GetTeam()
+001d8684: ldr      r4, [pc, #0x78]
+001d8688: add      r4, pc, r4
+001d868c: cmp      r0, r6
+001d8690: beq      #0x1d869c
+001d8694: mov      r0, #0
+001d8698: pop      {r3, r4, r5, r6, r7, pc}
+001d869c: mov      r0, r5
+001d86a0: bl       #0x133504 ; CCharacterMin::GetIsHero()
+001d86a4: subs     r5, r0, #0
+001d86a8: bne      #0x1d8694
+001d86ac: mov      r0, r7
+001d86b0: bl       #0x1d76c0 ; CRune_Base::GetType() const
+001d86b4: cmp      r0, #7
+001d86b8: beq      #0x1d86e4
+001d86bc: cmp      r0, #0x20
+001d86c0: beq      #0x1d86d4
+001d86c4: cmp      r0, #3
+001d86c8: beq      #0x1d86f4
+001d86cc: mov      r0, r5
+001d86d0: pop      {r3, r4, r5, r6, r7, pc}
+001d86d4: ldr      r3, [pc, #0x2c]
+001d86d8: ldr      r3, [r4, r3]
+001d86dc: ldr      r0, [r3, #0x1f4]
+001d86e0: pop      {r3, r4, r5, r6, r7, pc}
+001d86e4: ldr      r3, [pc, #0x1c]
+001d86e8: ldr      r3, [r4, r3]
+001d86ec: ldr      r0, [r3, #0x1a0]
+001d86f0: pop      {r3, r4, r5, r6, r7, pc}
+001d86f4: ldr      r3, [pc, #0xc]
+001d86f8: ldr      r3, [r4, r3]
+001d86fc: ldr      r0, [r3, #0x190]
+001d8700: pop      {r3, r4, r5, r6, r7, pc}
+
+### CRune_HealthCards::OnCharacterUpkeep_Good(eTeam, CCharacter*, eTeam, int) 0x1d8778 80
+001d8778: push     {r4, r5, r6, lr}
+001d877c: mov      r0, r2
+001d8780: mov      r5, r1
+001d8784: mov      r4, r2
+001d8788: ldr      r6, [sp, #0x10]
+001d878c: bl       #0x131c44 ; CCharacterMin::GetTeam()
+001d8790: cmp      r0, r5
+001d8794: popne    {r4, r5, r6, pc}
+001d8798: mov      r0, r4
+001d879c: bl       #0x133504 ; CCharacterMin::GetIsHero()
+001d87a0: cmp      r0, #0
+001d87a4: popeq    {r4, r5, r6, pc}
+001d87a8: cmp      r6, #5
+001d87ac: pople    {r4, r5, r6, pc}
+001d87b0: sub      r1, r6, #5
+001d87b4: mov      r0, r4
+001d87b8: cmp      r1, #8
+001d87bc: movge    r1, #8
+001d87c0: pop      {r4, r5, r6, lr}
+001d87c4: b        #0x13194c ; CCharacterMin::AddHealth(int)

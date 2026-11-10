@@ -1,0 +1,30 @@
+{
+  "R01": {
+    "source": "Runes/Rune_01_MinorPower.ETC",
+    "sha256": "b39dc5a90f1d2ddd0125dba5ca8f08208df809b5eee6426f3ceea944f40dcc2b"
+  },
+  "R02": {
+    "source": "Runes/Rune_01_MinorArmour.ETC",
+    "sha256": "c4be7e25f0083678468b1f936b2d5eef474e5ae2f8c9bb990e87c5f011bbea27"
+  },
+  "R03": {
+    "source": "Runes/Rune_01_MinorMojo.ETC",
+    "sha256": "79573c4b25354f83591a33c8321ab7c9253d233e68aea79a0284862011acf71b"
+  },
+  "R04": {
+    "source": "Runes/Rune_01_ExtraCard.ETC",
+    "sha256": "92b09a3c4a6aabd0d0f010cab98d6c58054e346edd937a44770d96aeaa180e58"
+  },
+  "R05": {
+    "source": "Runes/Rune_01_MajorHealth.ETC",
+    "sha256": "e3cb5c5fdde359e42b497cb1cf92560fc80fef64a7202b35308276fcd529ce65"
+  },
+  "R06": {
+    "source": "Runes/Rune_01_Haste.ETC",
+    "sha256": "836eaaa2baec1e2e947e18fdacb0d5af09c29da2da303ded2a8115926c3b78bd"
+  },
+  "R07": {
+    "source": "Runes/Rune_01_MajorMojo.ETC",
+    "sha256": "220fcde41b056766119b3bcb93142bb68169d500e801a75611c3994c27869539"
+  }
+}

@@ -1,0 +1,60 @@
+eAbilityType enum,Name,Icon,Use On,Is Offensive,Mojo,Min Range,Max Range,Tooltip
+,,,,,,,,
+AT_NONE,Nothing,1*0,UO_NOBODY,0,0,0,0,"Unused slot NOTE: Only AT_BLAST, AT_SHOOT & AT_ATTACK should cost zero Mojo"
+AT_ATTACK,Attack,1*1,UO_ENEMY,1,0,0,1,Attack a target 1 space away.
+AT_SMASH,Smash,1*2,UO_ENEMY,1,3,0,1,Attack with AB_Smash_Power.
+AT_HEROICSHOUT,Heroic Shout,1*3,UO_TEAM_MINE,0,4,0,0,Your creatures get the @C[1]Mighty@C[0] buff giving them AF_Mighty_Power.
+AT_SAVAGESTRIKE,Savage Beating,1*5,UO_ENEMY,1,1,0,1,Attack with AB_SavageStrike_Power.
+AT_ENCOURAGE,Mojo Dance,1*60,UO_SELF,0,0,0,0,Generate AB_Encourage_Mojo.
+AT_BERSERK,Berserk,1*7,UO_SELF,0,0,0,0,Go @C[1]Berserk@C[0]! (AF_Berserk_Power but all incoming attacks get AF_Berserk_AttackerPower)
+AT_FURIOUSASSAULT,Furious Assault,1*8,UO_ENEMY,1,4,0,1,Attack all enemies in range.
+AT_RALLY,Rally,1*61,UO_SELF,0,1,0,0,Generate AB_Rally_BonusMojo for each friendly creature around you.
+AT_VENGEANCE,Vengeance,1*12,UO_ENEMY,0,1,0,1,The next time the target attacks it will suffer AF_Vengeance_Health.
+AT_ENERGISINGSTRIKE,Cheap shot,1*13,UO_ENEMY,1,2,0,1,Attack and gain AB_EnergisingStrike_Health because the strike amused you so much.
+AT_INSPIRINGSTRIKE,Inspiring Strike,1*14,UO_ENEMY,1,3,0,1,Attack and then your monsters gain AB_InspiringStrike_AllyHealth.
+AT_MIGHTYBLOW,Mighty Blow,1*44,UO_ENEMY,1,1,0,1,Attack with AB_MightyBlow_Power and push the target back 1 space.
+AT_HEAVE,Heave,1*45,UO_ANYBODY_ELSE,0,0,0,1,Push the target 1 space away.
+AT_CRUSH,Crush,1*4,UO_ENEMY,1,2,0,1,Attack and @C[1]Daze@C[0] the target. (Cannot attack for 1 turn)
+AT_PHALANX,Phalanx,1*6,UO_ENEMY,1,2,0,1,Attack with AB_Phalanx_BonusPower for each nearby friendly monster.
+AT_DEMOLISH,Shank,1*48,UO_ENEMY_HERO,1,3,0,1,Attack an enemy hero with AB_Demolish_Power.
+AT_DESPERATESTRIKE,Desperate Strike,1*49,UO_ENEMY,1,3,0,1,Attack with AB_DesperateStrike_Power but suffer AB_DesperateStrike_Health.
+AT_BLOODLUST,Blood Lust,1*50,UO_ENEMY,1,2,0,1,Attack with AB_Bloodlust_BonusPower for each nearby enemy monster.
+AT_COLOSSUSSMASH,Colossus Smash,1*27,UO_SELF,1,2,0,1,Hits all surrounding creatures with AB_ColossusSmash_Power and pushes them back.
+AT_LEVIATHANBLOW,Immolate,1*28,UO_ENEMY,1,2,0,1,Attack with AB_LeviathanBlow_Power and inflict @C[1]Flame@C[0].
+AT_BLAST,Blast,1*9,UO_ENEMY,1,0,0,2,Blast a target up to 2 spaces away.
+AT_FIREBALL,Fireball,1*55,UO_ENEMY,1,2,0,2,Attack and inflict @C[1]Flame@C[0]. (Target loses 1 health every turn)
+AT_LIGHTNING,Lightning,1*17,UO_ENEMY,1,4,0,2,Attack target with full power and surrounding enemies with AB_Lightning_SecondaryPower.
+AT_METEOR,Meteor,1*18,UO_INRANGE_TILE,1,4,0,2,Strike a wide area with AB_Meteor_Power and inflict @C[1]Flame@C[0].
+AT_HEAL,Heal,1*19,UO_FRIEND,0,2,0,2,Ally gets AB_Heal_Health.
+AT_CURE,Cure,1*20,UO_FRIEND,0,1,0,2,Remove all bad afflictions from target.
+AT_MASSHEAL,Mass Heal,1*22,UO_FRIEND,0,4,0,2,All allies get AB_MassHeal_Health when within AB_MassHeal_EffectRange spaces of target.
+AT_REGEN,Regen Buff,1*24,UO_FRIEND,0,3,0,2,Target gets AB_Regen_Health and gains @C[1]Regen@C[0].
+AT_MAGICSHIELD,Magic Shield,1*11,UO_FRIEND,0,2,0,2,Prevents all damage from the next attack.
+AT_ICEBLOCK,Ice Block,1*26,UO_ANYBODY,0,3,0,2,@C[1]Ice Block@C[0] target. (cannot do actions or take damage.)
+AT_LIFESTEAL,Life Steal,1*29,UO_ENEMY,1,3,0,2,Attack with AB_LifeSteal_Power and gain AB_LifeSteal_Health.
+AT_BARRIER,Barrier,1*59,UO_UNOBSTRUCTED_TILE,0,1,1,2,Creates a TI_Barrier_Armour defence field on a tile that lasts for TI_Barrier_Rounds rounds.
+AT_BLINK,Blink,1*51,UO_UNOBSTRUCTED_TILE,0,2,0,3,Teleport up to 3 tiles away.
+AT_FASTHEAL,Mini Heal,1*52,UO_FRIEND,0,1,0,2,Target gains AB_FastHeal_Health.
+AT_EXPLODE,Explode,1*53,UO_SELF,1,2,0,0,Explode damaging everything around you.
+AT_ZAP,Zap,1*54,UO_ENEMY,1,2,0,2,@C[1]Daze@C[0] target. (Cannot attack or use abilities for 1 turn)
+AT_COMBUSTION,Combustion,1*15,UO_ENEMY,1,1,0,2,Attack with an additional AB_Combustion_OnFirePower if the target has @C[1]Flame@C[0].
+AT_SHOOT,Shoot,1*47,UO_ENEMY,1,0,2,3,Shoot a target 2-3 spaces away.
+AT_BARRAGE,Barrage,1*30,UO_ENEMY,1,6,2,3,Attack all enemies in range.
+AT_HEADSHOT,Head Shot,1*32,UO_ENEMY,1,2,2,3,Attack with AB_HeadShot_Power.
+AT_SHATTER,Shatter,1*34,UO_ENEMY,1,2,2,3,Attack and remove all good afflictions from target.
+AT_DEATHMARK,Death Mark,1*41,UO_ENEMY,1,3,2,3,@C[1]Death Mark@C[0] target. (All future attacks against them AF_DeathMark_AttackerPower.)
+AT_TRICKSHOT,Trick Shot,1*42,UO_ENEMY,1,1,2,3,Generate AB_TrickShot_Mojo from each enemy within AB_TrickShot_EffectRange space of your target.
+AT_SNIPE,Snipe,1*46,UO_ENEMY,1,3,2,4,Shoot a target 2-4 spaces away.
+AT_TRAP,Trap,1*40,UO_UNOBSTRUCTED_TILE,1,2,2,3,Sets a trap on a tile that causes TI_Trap_Health when stepped on.
+AT_IGNITE,Ignite,1*10,UO_UNOBSTRUCTED_TILE,1,1,2,3,Sets an empty space on fire for TI_IgniteFlame_Rounds rounds.
+AT_SNARE,Suppress,1*23,UO_ENEMY,1,2,2,3,Inflict @C[1]Snare@C[0] on target. (Cannot move for 1 turn)
+AT_LONERANGER,Lone Ranger,1*58,UO_ENEMY,1,5,2,3,Attack with AB_LoneRanger_BonusPower for each unoccupied space around you.
+AT_FIRSTAID,Take Aim,1*57,UO_SELF,0,2,0,0,Permanently gain AB_FirstAid_Power.
+AT_INFERNO,Inferno,1*16,UO_SELF,1,2,0,1,Set the space you're standing on and those around you on fire.
+AT_SPRINT,Sprint,1*31,UO_SELF_MOVED,0,1,0,1,Take another move this turn.
+AT_SUPERSPRINT,Encourage,1*36,UO_TEAM_MOVED,0,2,0,2,Target creature can make another move.
+AT_DISARM,Disarm,1*25,UO_ENEMY,1,4,2,3,Disarm target stripping them of all equipment.
+AT_SELFCURE,Self Cure,1*39,UO_SELF,0,0,0,0,Remove all bad afflictions from yourself.
+AT_DRAWCARD,Card Draw,1*62,UO_SELF,0,2,0,0,Draw a card.
+AT_BOO,Boo!,1*63,UO_ENEMY,1,4,0,1,Push target creature 1 space away and strip all its equipment.
+AT_LOB,Lob,1*37,UO_ENEMY,1,0,3,3,Attack a target 3 spaces away.

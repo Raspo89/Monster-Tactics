@@ -1,0 +1,7897 @@
+{
+ "frameWidth": 160,
+ "frameHeight": 180,
+ "columns": 8,
+ "rows": [
+  "idle",
+  "walk",
+  "attack"
+ ],
+ "fps": [
+  7.619047619047619,
+  16.0,
+  8.421052631578947
+ ],
+ "portraits": {
+  "H01": {
+   "model": "human_fighter",
+   "skin": 1,
+   "path": "portraits/H01.webp"
+  },
+  "H02": {
+   "model": "human_fighter",
+   "skin": 2,
+   "path": "portraits/H02.webp"
+  },
+  "H03": {
+   "model": "human_rogue",
+   "skin": 3,
+   "path": "portraits/H03.webp"
+  },
+  "H04": {
+   "model": "human_fighter",
+   "skin": 4,
+   "path": "portraits/H04.webp"
+  },
+  "H05": {
+   "model": "human_spellcaster",
+   "skin": 5,
+   "path": "portraits/H05.webp"
+  },
+  "H06": {
+   "model": "human_fighter",
+   "skin": 6,
+   "path": "portraits/H06.webp"
+  },
+  "H07": {
+   "model": "human_fighter",
+   "skin": 7,
+   "path": "portraits/H07.webp"
+  },
+  "H08": {
+   "model": "human_fighter",
+   "skin": 8,
+   "path": "portraits/H08.webp"
+  },
+  "Z01": {
+   "model": "undead_fighter",
+   "skin": 1,
+   "path": "portraits/Z01.webp"
+  },
+  "Z02": {
+   "model": "undead_fighter",
+   "skin": 2,
+   "path": "portraits/Z02.webp"
+  },
+  "Z03": {
+   "model": "undead_fighter",
+   "skin": 3,
+   "path": "portraits/Z03.webp"
+  },
+  "Z04": {
+   "model": "undead_spellcaster",
+   "skin": 4,
+   "path": "portraits/Z04.webp"
+  },
+  "Z05": {
+   "model": "undead_fighter",
+   "skin": 5,
+   "path": "portraits/Z05.webp"
+  },
+  "Z06": {
+   "model": "undead_spellcaster",
+   "skin": 6,
+   "path": "portraits/Z06.webp"
+  },
+  "Z07": {
+   "model": "undead_artillery",
+   "skin": 7,
+   "path": "portraits/Z07.webp"
+  },
+  "Z08": {
+   "model": "undead_fighter",
+   "skin": 8,
+   "path": "portraits/Z08.webp"
+  },
+  "O01": {
+   "model": "orc_fighter",
+   "skin": 1,
+   "path": "portraits/O01.webp"
+  },
+  "O02": {
+   "model": "orc_fighter",
+   "skin": 2,
+   "path": "portraits/O02.webp"
+  },
+  "O03": {
+   "model": "orc_artillery",
+   "skin": 3,
+   "path": "portraits/O03.webp"
+  },
+  "O04": {
+   "model": "orc_fighter",
+   "skin": 4,
+   "path": "portraits/O04.webp"
+  },
+  "O05": {
+   "model": "orc_fighter",
+   "skin": 5,
+   "path": "portraits/O05.webp"
+  },
+  "O06": {
+   "model": "orc_fighter",
+   "skin": 6,
+   "path": "portraits/O06.webp"
+  },
+  "O07": {
+   "model": "orc_fighter",
+   "skin": 7,
+   "path": "portraits/O07.webp"
+  },
+  "O08": {
+   "model": "orc_fighter",
+   "skin": 8,
+   "path": "portraits/O08.webp"
+  },
+  "E01": {
+   "model": "elf_fighter",
+   "skin": 1,
+   "path": "portraits/E01.webp"
+  },
+  "E02": {
+   "model": "elf_rogue",
+   "skin": 2,
+   "path": "portraits/E02.webp"
+  },
+  "E03": {
+   "model": "elf_fighter",
+   "skin": 3,
+   "path": "portraits/E03.webp"
+  },
+  "E04": {
+   "model": "elf_fighter",
+   "skin": 4,
+   "path": "portraits/E04.webp"
+  },
+  "E05": {
+   "model": "elf_spellcaster",
+   "skin": 5,
+   "path": "portraits/E05.webp"
+  },
+  "E06": {
+   "model": "elf_fighter",
+   "skin": 6,
+   "path": "portraits/E06.webp"
+  },
+  "E07": {
+   "model": "elf_fighter",
+   "skin": 7,
+   "path": "portraits/E07.webp"
+  },
+  "E08": {
+   "model": "elf_spellcaster",
+   "skin": 8,
+   "path": "portraits/E08.webp"
+  },
+  "N01": {
+   "model": "neutral_mercenary",
+   "skin": 0,
+   "path": "portraits/N01.webp"
+  },
+  "N02": {
+   "model": "neutral_assassin",
+   "skin": 0,
+   "path": "portraits/N02.webp"
+  },
+  "N03": {
+   "model": "neutral_golem",
+   "skin": 0,
+   "path": "portraits/N03.webp"
+  },
+  "N04": {
+   "model": "neutral_dragon",
+   "skin": 0,
+   "path": "portraits/N04.webp"
+  },
+  "LEADER_human": {
+   "model": "leader_human",
+   "skin": 0,
+   "path": "portraits/LEADER_human.webp"
+  },
+  "LEADER_zombie": {
+   "model": "leader_zombie",
+   "skin": 0,
+   "path": "portraits/LEADER_zombie.webp"
+  },
+  "LEADER_orc": {
+   "model": "leader_orc",
+   "skin": 0,
+   "path": "portraits/LEADER_orc.webp"
+  },
+  "LEADER_elf": {
+   "model": "leader_elf",
+   "skin": 0,
+   "path": "portraits/LEADER_elf.webp"
+  },
+  "CM_human_01": {
+   "model": "human_fighter",
+   "skin": 11,
+   "path": "portraits/m_human_fighter_11.webp"
+  },
+  "CM_human_02": {
+   "model": "human_fighter",
+   "skin": 4,
+   "path": "portraits/m_human_fighter_4.webp"
+  },
+  "CM_human_03": {
+   "model": "human_rogue",
+   "skin": 4,
+   "path": "portraits/m_human_rogue_4.webp"
+  },
+  "CM_human_04": {
+   "model": "human_rogue",
+   "skin": 8,
+   "path": "portraits/m_human_rogue_8.webp"
+  },
+  "CM_human_05": {
+   "model": "human_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_human_spellcaster_4.webp"
+  },
+  "CM_human_06": {
+   "model": "human_artillery",
+   "skin": 6,
+   "path": "portraits/m_human_artillery_6.webp"
+  },
+  "CM_human_07": {
+   "model": "human_artillery",
+   "skin": 0,
+   "path": "portraits/m_human_artillery_0.webp"
+  },
+  "CM_human_08": {
+   "model": "human_artillery",
+   "skin": 7,
+   "path": "portraits/m_human_artillery_7.webp"
+  },
+  "CM_elf_01": {
+   "model": "elf_fighter",
+   "skin": 4,
+   "path": "portraits/m_elf_fighter_4.webp"
+  },
+  "CM_elf_02": {
+   "model": "elf_fighter",
+   "skin": 10,
+   "path": "portraits/m_elf_fighter_10.webp"
+  },
+  "CM_elf_03": {
+   "model": "elf_rogue",
+   "skin": 10,
+   "path": "portraits/m_elf_rogue_10.webp"
+  },
+  "CM_elf_04": {
+   "model": "elf_rogue",
+   "skin": 4,
+   "path": "portraits/m_elf_rogue_4.webp"
+  },
+  "CM_elf_05": {
+   "model": "elf_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_elf_spellcaster_10.webp"
+  },
+  "CM_elf_06": {
+   "model": "elf_artillery",
+   "skin": 6,
+   "path": "portraits/m_elf_artillery_6.webp"
+  },
+  "CM_elf_07": {
+   "model": "elf_artillery",
+   "skin": 0,
+   "path": "portraits/m_elf_artillery_0.webp"
+  },
+  "CM_elf_08": {
+   "model": "elf_artillery",
+   "skin": 7,
+   "path": "portraits/m_elf_artillery_7.webp"
+  },
+  "CM_orc_01": {
+   "model": "orc_fighter",
+   "skin": 0,
+   "path": "portraits/m_orc_fighter_0.webp"
+  },
+  "CM_orc_02": {
+   "model": "orc_fighter",
+   "skin": 6,
+   "path": "portraits/m_orc_fighter_6.webp"
+  },
+  "CM_orc_03": {
+   "model": "orc_rogue",
+   "skin": 8,
+   "path": "portraits/m_orc_rogue_8.webp"
+  },
+  "CM_orc_04": {
+   "model": "orc_rogue",
+   "skin": 4,
+   "path": "portraits/m_orc_rogue_4.webp"
+  },
+  "CM_orc_05": {
+   "model": "orc_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_orc_spellcaster_1.webp"
+  },
+  "CM_orc_06": {
+   "model": "orc_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_orc_spellcaster_2.webp"
+  },
+  "CM_orc_07": {
+   "model": "orc_artillery",
+   "skin": 6,
+   "path": "portraits/m_orc_artillery_6.webp"
+  },
+  "CM_orc_08": {
+   "model": "orc_artillery",
+   "skin": 0,
+   "path": "portraits/m_orc_artillery_0.webp"
+  },
+  "CM_zombie_01": {
+   "model": "undead_fighter",
+   "skin": 2,
+   "path": "portraits/m_undead_fighter_2.webp"
+  },
+  "CM_zombie_02": {
+   "model": "undead_fighter",
+   "skin": 4,
+   "path": "portraits/m_undead_fighter_4.webp"
+  },
+  "CM_zombie_03": {
+   "model": "undead_rogue",
+   "skin": 0,
+   "path": "portraits/m_undead_rogue_0.webp"
+  },
+  "CM_zombie_04": {
+   "model": "undead_rogue",
+   "skin": 8,
+   "path": "portraits/m_undead_rogue_8.webp"
+  },
+  "CM_zombie_05": {
+   "model": "undead_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_undead_spellcaster_4.webp"
+  },
+  "CM_zombie_06": {
+   "model": "undead_artillery",
+   "skin": 6,
+   "path": "portraits/m_undead_artillery_6.webp"
+  },
+  "CM_zombie_07": {
+   "model": "undead_artillery",
+   "skin": 0,
+   "path": "portraits/m_undead_artillery_0.webp"
+  },
+  "CM_zombie_08": {
+   "model": "undead_artillery",
+   "skin": 7,
+   "path": "portraits/m_undead_artillery_7.webp"
+  },
+  "CM_lizard_01": {
+   "model": "lizard_fighter",
+   "skin": 8,
+   "path": "portraits/m_lizard_fighter_8.webp"
+  },
+  "CM_lizard_02": {
+   "model": "lizard_fighter",
+   "skin": 11,
+   "path": "portraits/m_lizard_fighter_11.webp"
+  },
+  "CM_lizard_03": {
+   "model": "lizard_rogue",
+   "skin": 4,
+   "path": "portraits/m_lizard_rogue_4.webp"
+  },
+  "CM_lizard_04": {
+   "model": "lizard_rogue",
+   "skin": 11,
+   "path": "portraits/m_lizard_rogue_11.webp"
+  },
+  "CM_lizard_05": {
+   "model": "lizard_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_lizard_spellcaster_8.webp"
+  },
+  "CM_lizard_06": {
+   "model": "lizard_artillery",
+   "skin": 6,
+   "path": "portraits/m_lizard_artillery_6.webp"
+  },
+  "CM_lizard_07": {
+   "model": "lizard_artillery",
+   "skin": 0,
+   "path": "portraits/m_lizard_artillery_0.webp"
+  },
+  "CM_lizard_08": {
+   "model": "lizard_artillery",
+   "skin": 7,
+   "path": "portraits/m_lizard_artillery_7.webp"
+  },
+  "CM_dwarf_01": {
+   "model": "dwarf_fighter",
+   "skin": 4,
+   "path": "portraits/m_dwarf_fighter_4.webp"
+  },
+  "CM_dwarf_02": {
+   "model": "dwarf_fighter",
+   "skin": 8,
+   "path": "portraits/m_dwarf_fighter_8.webp"
+  },
+  "CM_dwarf_03": {
+   "model": "dwarf_rogue",
+   "skin": 10,
+   "path": "portraits/m_dwarf_rogue_10.webp"
+  },
+  "CM_dwarf_04": {
+   "model": "dwarf_rogue",
+   "skin": 2,
+   "path": "portraits/m_dwarf_rogue_2.webp"
+  },
+  "CM_dwarf_05": {
+   "model": "dwarf_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_dwarf_spellcaster_10.webp"
+  },
+  "CM_dwarf_06": {
+   "model": "dwarf_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_dwarf_spellcaster_4.webp"
+  },
+  "CM_dwarf_07": {
+   "model": "dwarf_artillery",
+   "skin": 6,
+   "path": "portraits/m_dwarf_artillery_6.webp"
+  },
+  "CM_dwarf_08": {
+   "model": "dwarf_artillery",
+   "skin": 0,
+   "path": "portraits/m_dwarf_artillery_0.webp"
+  },
+  "CM_minotaur_01": {
+   "model": "minotaur_fighter",
+   "skin": 4,
+   "path": "portraits/m_minotaur_fighter_4.webp"
+  },
+  "CM_minotaur_02": {
+   "model": "minotaur_fighter",
+   "skin": 6,
+   "path": "portraits/m_minotaur_fighter_6.webp"
+  },
+  "CM_minotaur_03": {
+   "model": "minotaur_rogue",
+   "skin": 8,
+   "path": "portraits/m_minotaur_rogue_8.webp"
+  },
+  "CM_minotaur_04": {
+   "model": "minotaur_rogue",
+   "skin": 8,
+   "path": "portraits/m_minotaur_rogue_8.webp"
+  },
+  "CM_minotaur_05": {
+   "model": "minotaur_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_minotaur_spellcaster_11.webp"
+  },
+  "CM_minotaur_06": {
+   "model": "minotaur_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_minotaur_spellcaster_4.webp"
+  },
+  "CM_minotaur_07": {
+   "model": "minotaur_artillery",
+   "skin": 6,
+   "path": "portraits/m_minotaur_artillery_6.webp"
+  },
+  "CM_minotaur_08": {
+   "model": "minotaur_artillery",
+   "skin": 0,
+   "path": "portraits/m_minotaur_artillery_0.webp"
+  },
+  "CM_werewolf_01": {
+   "model": "werewolf_fighter",
+   "skin": 8,
+   "path": "portraits/m_werewolf_fighter_8.webp"
+  },
+  "CM_werewolf_02": {
+   "model": "werewolf_fighter",
+   "skin": 6,
+   "path": "portraits/m_werewolf_fighter_6.webp"
+  },
+  "CM_werewolf_03": {
+   "model": "werewolf_rogue",
+   "skin": 4,
+   "path": "portraits/m_werewolf_rogue_4.webp"
+  },
+  "CM_werewolf_04": {
+   "model": "werewolf_rogue",
+   "skin": 2,
+   "path": "portraits/m_werewolf_rogue_2.webp"
+  },
+  "CM_werewolf_05": {
+   "model": "werewolf_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_werewolf_spellcaster_4.webp"
+  },
+  "CM_werewolf_06": {
+   "model": "werewolf_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_werewolf_spellcaster_0.webp"
+  },
+  "CM_werewolf_07": {
+   "model": "werewolf_artillery",
+   "skin": 6,
+   "path": "portraits/m_werewolf_artillery_6.webp"
+  },
+  "CM_werewolf_08": {
+   "model": "werewolf_artillery",
+   "skin": 0,
+   "path": "portraits/m_werewolf_artillery_0.webp"
+  },
+  "CM_golem_01": {
+   "model": "golem_fighter",
+   "skin": 6,
+   "path": "portraits/m_golem_fighter_6.webp"
+  },
+  "CM_golem_02": {
+   "model": "golem_fighter",
+   "skin": 4,
+   "path": "portraits/m_golem_fighter_4.webp"
+  },
+  "CM_golem_03": {
+   "model": "golem_rogue",
+   "skin": 4,
+   "path": "portraits/m_golem_rogue_4.webp"
+  },
+  "CM_golem_04": {
+   "model": "golem_rogue",
+   "skin": 6,
+   "path": "portraits/m_golem_rogue_6.webp"
+  },
+  "CM_golem_05": {
+   "model": "golem_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_golem_spellcaster_8.webp"
+  },
+  "CM_golem_06": {
+   "model": "golem_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_golem_spellcaster_8.webp"
+  },
+  "CM_golem_07": {
+   "model": "golem_artillery",
+   "skin": 6,
+   "path": "portraits/m_golem_artillery_6.webp"
+  },
+  "CM_golem_08": {
+   "model": "golem_artillery",
+   "skin": 0,
+   "path": "portraits/m_golem_artillery_0.webp"
+  },
+  "CM_elemental_01": {
+   "model": "elemental_fighter",
+   "skin": 0,
+   "path": "portraits/m_elemental_fighter_0.webp"
+  },
+  "CM_elemental_02": {
+   "model": "elemental_fighter",
+   "skin": 6,
+   "path": "portraits/m_elemental_fighter_6.webp"
+  },
+  "CM_elemental_03": {
+   "model": "elemental_artillery",
+   "skin": 5,
+   "path": "portraits/m_elemental_artillery_5.webp"
+  },
+  "CM_elemental_04": {
+   "model": "elemental_artillery",
+   "skin": 5,
+   "path": "portraits/m_elemental_artillery_5.webp"
+  },
+  "CM_elemental_05": {
+   "model": "elemental_artillery",
+   "skin": 11,
+   "path": "portraits/m_elemental_artillery_11.webp"
+  },
+  "CM_elemental_06": {
+   "model": "elemental_artillery",
+   "skin": 11,
+   "path": "portraits/m_elemental_artillery_11.webp"
+  },
+  "CM_elemental_07": {
+   "model": "elemental_artillery",
+   "skin": 2,
+   "path": "portraits/m_elemental_artillery_2.webp"
+  },
+  "CM_elemental_08": {
+   "model": "elemental_artillery",
+   "skin": 2,
+   "path": "portraits/m_elemental_artillery_2.webp"
+  },
+  "CM_cyclops_01": {
+   "model": "cyclops_fighter",
+   "skin": 8,
+   "path": "portraits/m_cyclops_fighter_8.webp"
+  },
+  "CM_cyclops_02": {
+   "model": "cyclops_fighter",
+   "skin": 6,
+   "path": "portraits/m_cyclops_fighter_6.webp"
+  },
+  "CM_cyclops_03": {
+   "model": "cyclops_rogue",
+   "skin": 8,
+   "path": "portraits/m_cyclops_rogue_8.webp"
+  },
+  "CM_cyclops_04": {
+   "model": "cyclops_rogue",
+   "skin": 11,
+   "path": "portraits/m_cyclops_rogue_11.webp"
+  },
+  "CM_cyclops_05": {
+   "model": "cyclops_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_cyclops_spellcaster_6.webp"
+  },
+  "CM_cyclops_06": {
+   "model": "cyclops_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_cyclops_spellcaster_10.webp"
+  },
+  "CM_cyclops_07": {
+   "model": "cyclops_artillery",
+   "skin": 6,
+   "path": "portraits/m_cyclops_artillery_6.webp"
+  },
+  "CM_cyclops_08": {
+   "model": "cyclops_artillery",
+   "skin": 0,
+   "path": "portraits/m_cyclops_artillery_0.webp"
+  },
+  "CM_skeleton_01": {
+   "model": "skeleton_fighter",
+   "skin": 10,
+   "path": "portraits/m_skeleton_fighter_10.webp"
+  },
+  "CM_skeleton_02": {
+   "model": "skeleton_fighter",
+   "skin": 8,
+   "path": "portraits/m_skeleton_fighter_8.webp"
+  },
+  "CM_skeleton_03": {
+   "model": "skeleton_rogue",
+   "skin": 8,
+   "path": "portraits/m_skeleton_rogue_8.webp"
+  },
+  "CM_skeleton_04": {
+   "model": "skeleton_rogue",
+   "skin": 6,
+   "path": "portraits/m_skeleton_rogue_6.webp"
+  },
+  "CM_skeleton_05": {
+   "model": "skeleton_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_skeleton_spellcaster_6.webp"
+  },
+  "CM_skeleton_06": {
+   "model": "skeleton_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_skeleton_spellcaster_2.webp"
+  },
+  "CM_skeleton_07": {
+   "model": "skeleton_artillery",
+   "skin": 6,
+   "path": "portraits/m_skeleton_artillery_6.webp"
+  },
+  "CM_skeleton_08": {
+   "model": "skeleton_artillery",
+   "skin": 0,
+   "path": "portraits/m_skeleton_artillery_0.webp"
+  },
+  "CM_robot_01": {
+   "model": "robot_fighter",
+   "skin": 3,
+   "path": "portraits/m_robot_fighter_3.webp"
+  },
+  "CM_robot_02": {
+   "model": "robot_fighter",
+   "skin": 11,
+   "path": "portraits/m_robot_fighter_11.webp"
+  },
+  "CM_robot_03": {
+   "model": "robot_rogue",
+   "skin": 8,
+   "path": "portraits/m_robot_rogue_8.webp"
+  },
+  "CM_robot_04": {
+   "model": "robot_rogue",
+   "skin": 11,
+   "path": "portraits/m_robot_rogue_11.webp"
+  },
+  "CM_robot_05": {
+   "model": "robot_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_robot_spellcaster_11.webp"
+  },
+  "CM_robot_06": {
+   "model": "robot_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_robot_spellcaster_3.webp"
+  },
+  "CM_robot_07": {
+   "model": "robot_artillery",
+   "skin": 6,
+   "path": "portraits/m_robot_artillery_6.webp"
+  },
+  "CM_robot_08": {
+   "model": "robot_artillery",
+   "skin": 0,
+   "path": "portraits/m_robot_artillery_0.webp"
+  },
+  "CM_imp_01": {
+   "model": "imp_fighter",
+   "skin": 4,
+   "path": "portraits/m_imp_fighter_4.webp"
+  },
+  "CM_imp_02": {
+   "model": "imp_fighter",
+   "skin": 10,
+   "path": "portraits/m_imp_fighter_10.webp"
+  },
+  "CM_imp_03": {
+   "model": "imp_rogue",
+   "skin": 3,
+   "path": "portraits/m_imp_rogue_3.webp"
+  },
+  "CM_imp_04": {
+   "model": "imp_rogue",
+   "skin": 8,
+   "path": "portraits/m_imp_rogue_8.webp"
+  },
+  "CM_imp_05": {
+   "model": "imp_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_imp_spellcaster_4.webp"
+  },
+  "CM_imp_06": {
+   "model": "imp_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_imp_spellcaster_8.webp"
+  },
+  "CM_imp_07": {
+   "model": "imp_artillery",
+   "skin": 6,
+   "path": "portraits/m_imp_artillery_6.webp"
+  },
+  "CM_imp_08": {
+   "model": "imp_artillery",
+   "skin": 0,
+   "path": "portraits/m_imp_artillery_0.webp"
+  },
+  "CM_spectre_01": {
+   "model": "spectre_fighter",
+   "skin": 4,
+   "path": "portraits/m_spectre_fighter_4.webp"
+  },
+  "CM_spectre_02": {
+   "model": "spectre_fighter",
+   "skin": 11,
+   "path": "portraits/m_spectre_fighter_11.webp"
+  },
+  "CM_spectre_03": {
+   "model": "spectre_rogue",
+   "skin": 10,
+   "path": "portraits/m_spectre_rogue_10.webp"
+  },
+  "CM_spectre_04": {
+   "model": "spectre_rogue",
+   "skin": 8,
+   "path": "portraits/m_spectre_rogue_8.webp"
+  },
+  "CM_spectre_05": {
+   "model": "spectre_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_spectre_spellcaster_8.webp"
+  },
+  "CM_spectre_06": {
+   "model": "spectre_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_spectre_spellcaster_10.webp"
+  },
+  "CM_spectre_07": {
+   "model": "spectre_artillery",
+   "skin": 6,
+   "path": "portraits/m_spectre_artillery_6.webp"
+  },
+  "CM_spectre_08": {
+   "model": "spectre_artillery",
+   "skin": 0,
+   "path": "portraits/m_spectre_artillery_0.webp"
+  },
+  "CM_vampire_01": {
+   "model": "vampire_artillery",
+   "skin": 6,
+   "path": "portraits/m_vampire_artillery_6.webp"
+  },
+  "CM_vampire_02": {
+   "model": "vampire_artillery",
+   "skin": 0,
+   "path": "portraits/m_vampire_artillery_0.webp"
+  },
+  "CM_vampire_03": {
+   "model": "vampire_artillery",
+   "skin": 7,
+   "path": "portraits/m_vampire_artillery_7.webp"
+  },
+  "CM_vampire_04": {
+   "model": "vampire_artillery",
+   "skin": 11,
+   "path": "portraits/m_vampire_artillery_11.webp"
+  },
+  "CM_vampire_05": {
+   "model": "vampire_artillery",
+   "skin": 1,
+   "path": "portraits/m_vampire_artillery_1.webp"
+  },
+  "CM_vampire_06": {
+   "model": "vampire_artillery",
+   "skin": 4,
+   "path": "portraits/m_vampire_artillery_4.webp"
+  },
+  "CM_vampire_07": {
+   "model": "vampire_artillery",
+   "skin": 10,
+   "path": "portraits/m_vampire_artillery_10.webp"
+  },
+  "CM_vampire_08": {
+   "model": "vampire_artillery",
+   "skin": 2,
+   "path": "portraits/m_vampire_artillery_2.webp"
+  },
+  "NA_human_0004": {
+   "model": "human_fighter",
+   "skin": 1,
+   "path": "portraits/m_human_fighter_1.webp"
+  },
+  "NA_human_0005": {
+   "model": "human_fighter",
+   "skin": 2,
+   "path": "portraits/m_human_fighter_2.webp"
+  },
+  "NA_human_0006": {
+   "model": "human_fighter",
+   "skin": 3,
+   "path": "portraits/m_human_fighter_3.webp"
+  },
+  "NA_human_0010": {
+   "model": "human_fighter",
+   "skin": 7,
+   "path": "portraits/m_human_fighter_7.webp"
+  },
+  "NA_human_0031": {
+   "model": "human_rogue",
+   "skin": 3,
+   "path": "portraits/m_human_rogue_3.webp"
+  },
+  "NA_human_0051": {
+   "model": "human_rogue",
+   "skin": 0,
+   "path": "portraits/m_human_rogue_0.webp"
+  },
+  "NA_human_0065": {
+   "model": "human_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_human_spellcaster_0.webp"
+  },
+  "NA_human_0076": {
+   "model": "human_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_human_spellcaster_7.webp"
+  },
+  "NA_elf_0114": {
+   "model": "elf_fighter",
+   "skin": 8,
+   "path": "portraits/m_elf_fighter_8.webp"
+  },
+  "NA_elf_0126": {
+   "model": "elf_fighter",
+   "skin": 11,
+   "path": "portraits/m_elf_fighter_11.webp"
+  },
+  "NA_elf_0139": {
+   "model": "elf_rogue",
+   "skin": 8,
+   "path": "portraits/m_elf_rogue_8.webp"
+  },
+  "NA_elf_0147": {
+   "model": "elf_rogue",
+   "skin": 7,
+   "path": "portraits/m_elf_rogue_7.webp"
+  },
+  "NA_elf_0153": {
+   "model": "elf_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_elf_spellcaster_0.webp"
+  },
+  "NA_elf_0176": {
+   "model": "elf_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_elf_spellcaster_4.webp"
+  },
+  "NA_orc_0214": {
+   "model": "orc_fighter",
+   "skin": 11,
+   "path": "portraits/m_orc_fighter_11.webp"
+  },
+  "NA_orc_0226": {
+   "model": "orc_fighter",
+   "skin": 1,
+   "path": "portraits/m_orc_fighter_1.webp"
+  },
+  "NA_orc_0231": {
+   "model": "orc_rogue",
+   "skin": 3,
+   "path": "portraits/m_orc_rogue_3.webp"
+  },
+  "NA_orc_0233": {
+   "model": "orc_rogue",
+   "skin": 5,
+   "path": "portraits/m_orc_rogue_5.webp"
+  },
+  "NA_orc_0257": {
+   "model": "orc_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_orc_spellcaster_4.webp"
+  },
+  "NA_orc_0276": {
+   "model": "orc_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_orc_spellcaster_11.webp"
+  },
+  "NA_zombie_0306": {
+   "model": "undead_fighter",
+   "skin": 3,
+   "path": "portraits/m_undead_fighter_3.webp"
+  },
+  "NA_zombie_0314": {
+   "model": "undead_fighter",
+   "skin": 11,
+   "path": "portraits/m_undead_fighter_11.webp"
+  },
+  "NA_zombie_0339": {
+   "model": "undead_rogue",
+   "skin": 11,
+   "path": "portraits/m_undead_rogue_11.webp"
+  },
+  "NA_zombie_0349": {
+   "model": "undead_rogue",
+   "skin": 9,
+   "path": "portraits/m_undead_rogue_9.webp"
+  },
+  "NA_zombie_0353": {
+   "model": "undead_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_undead_spellcaster_0.webp"
+  },
+  "NA_zombie_0372": {
+   "model": "undead_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_undead_spellcaster_7.webp"
+  },
+  "NA_lizard_0403": {
+   "model": "lizard_fighter",
+   "skin": 0,
+   "path": "portraits/m_lizard_fighter_0.webp"
+  },
+  "NA_lizard_0410": {
+   "model": "lizard_fighter",
+   "skin": 7,
+   "path": "portraits/m_lizard_fighter_7.webp"
+  },
+  "NA_lizard_0439": {
+   "model": "lizard_rogue",
+   "skin": 8,
+   "path": "portraits/m_lizard_rogue_8.webp"
+  },
+  "NA_lizard_0451": {
+   "model": "lizard_rogue",
+   "skin": 11,
+   "path": "portraits/m_lizard_rogue_11.webp"
+  },
+  "NA_lizard_0454": {
+   "model": "lizard_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_lizard_spellcaster_1.webp"
+  },
+  "NA_lizard_0464": {
+   "model": "lizard_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_lizard_spellcaster_6.webp"
+  },
+  "NA_dwarf_0519": {
+   "model": "dwarf_fighter",
+   "skin": 4,
+   "path": "portraits/m_dwarf_fighter_4.webp"
+  },
+  "NA_dwarf_0526": {
+   "model": "dwarf_fighter",
+   "skin": 6,
+   "path": "portraits/m_dwarf_fighter_6.webp"
+  },
+  "NA_dwarf_0539": {
+   "model": "dwarf_rogue",
+   "skin": 11,
+   "path": "portraits/m_dwarf_rogue_11.webp"
+  },
+  "NA_dwarf_0548": {
+   "model": "dwarf_rogue",
+   "skin": 8,
+   "path": "portraits/m_dwarf_rogue_8.webp"
+  },
+  "NA_dwarf_0555": {
+   "model": "dwarf_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_dwarf_spellcaster_2.webp"
+  },
+  "NA_dwarf_0564": {
+   "model": "dwarf_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_dwarf_spellcaster_11.webp"
+  },
+  "NA_minotaur_0610": {
+   "model": "minotaur_fighter",
+   "skin": 7,
+   "path": "portraits/m_minotaur_fighter_7.webp"
+  },
+  "NA_minotaur_0615": {
+   "model": "minotaur_fighter",
+   "skin": 0,
+   "path": "portraits/m_minotaur_fighter_0.webp"
+  },
+  "NA_minotaur_0641": {
+   "model": "minotaur_rogue",
+   "skin": 1,
+   "path": "portraits/m_minotaur_rogue_1.webp"
+  },
+  "NA_minotaur_0651": {
+   "model": "minotaur_rogue",
+   "skin": 11,
+   "path": "portraits/m_minotaur_rogue_11.webp"
+  },
+  "NA_minotaur_0664": {
+   "model": "minotaur_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_minotaur_spellcaster_10.webp"
+  },
+  "NA_minotaur_0673": {
+   "model": "minotaur_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_minotaur_spellcaster_8.webp"
+  },
+  "NA_werewolf_0714": {
+   "model": "werewolf_fighter",
+   "skin": 3,
+   "path": "portraits/m_werewolf_fighter_3.webp"
+  },
+  "NA_werewolf_0726": {
+   "model": "werewolf_fighter",
+   "skin": 11,
+   "path": "portraits/m_werewolf_fighter_11.webp"
+  },
+  "NA_werewolf_0729": {
+   "model": "werewolf_rogue",
+   "skin": 1,
+   "path": "portraits/m_werewolf_rogue_1.webp"
+  },
+  "NA_werewolf_0748": {
+   "model": "werewolf_rogue",
+   "skin": 8,
+   "path": "portraits/m_werewolf_rogue_8.webp"
+  },
+  "NA_werewolf_0756": {
+   "model": "werewolf_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_werewolf_spellcaster_3.webp"
+  },
+  "NA_werewolf_0776": {
+   "model": "werewolf_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_werewolf_spellcaster_11.webp"
+  },
+  "NA_golem_0815": {
+   "model": "golem_fighter",
+   "skin": 0,
+   "path": "portraits/m_golem_fighter_0.webp"
+  },
+  "NA_golem_0826": {
+   "model": "golem_fighter",
+   "skin": 1,
+   "path": "portraits/m_golem_fighter_1.webp"
+  },
+  "NA_golem_0828": {
+   "model": "golem_rogue",
+   "skin": 0,
+   "path": "portraits/m_golem_rogue_0.webp"
+  },
+  "NA_golem_0851": {
+   "model": "golem_rogue",
+   "skin": 5,
+   "path": "portraits/m_golem_rogue_5.webp"
+  },
+  "NA_golem_0863": {
+   "model": "golem_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_golem_spellcaster_10.webp"
+  },
+  "NA_golem_0868": {
+   "model": "golem_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_golem_spellcaster_3.webp"
+  },
+  "NA_elemental_0919": {
+   "model": "elemental_fighter",
+   "skin": 4,
+   "path": "portraits/m_elemental_fighter_4.webp"
+  },
+  "NA_elemental_0926": {
+   "model": "elemental_fighter",
+   "skin": 11,
+   "path": "portraits/m_elemental_fighter_11.webp"
+  },
+  "NA_elemental_0928": {
+   "model": "elemental_rogue",
+   "skin": 0,
+   "path": "portraits/m_elemental_rogue_0.webp"
+  },
+  "NA_elemental_0945": {
+   "model": "elemental_rogue",
+   "skin": 5,
+   "path": "portraits/m_elemental_rogue_5.webp"
+  },
+  "NA_elemental_0971": {
+   "model": "elemental_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_elemental_spellcaster_6.webp"
+  },
+  "NA_elemental_0974": {
+   "model": "elemental_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_elemental_spellcaster_9.webp"
+  },
+  "NA_cyclops_1003": {
+   "model": "cyclops_fighter",
+   "skin": 0,
+   "path": "portraits/m_cyclops_fighter_0.webp"
+  },
+  "NA_cyclops_1014": {
+   "model": "cyclops_fighter",
+   "skin": 3,
+   "path": "portraits/m_cyclops_fighter_3.webp"
+  },
+  "NA_cyclops_1045": {
+   "model": "cyclops_rogue",
+   "skin": 5,
+   "path": "portraits/m_cyclops_rogue_5.webp"
+  },
+  "NA_cyclops_1051": {
+   "model": "cyclops_rogue",
+   "skin": 11,
+   "path": "portraits/m_cyclops_rogue_11.webp"
+  },
+  "NA_cyclops_1067": {
+   "model": "cyclops_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_cyclops_spellcaster_2.webp"
+  },
+  "NA_cyclops_1072": {
+   "model": "cyclops_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_cyclops_spellcaster_7.webp"
+  },
+  "NA_skeleton_1114": {
+   "model": "skeleton_fighter",
+   "skin": 4,
+   "path": "portraits/m_skeleton_fighter_4.webp"
+  },
+  "NA_skeleton_1118": {
+   "model": "skeleton_fighter",
+   "skin": 3,
+   "path": "portraits/m_skeleton_fighter_3.webp"
+  },
+  "NA_skeleton_1128": {
+   "model": "skeleton_rogue",
+   "skin": 0,
+   "path": "portraits/m_skeleton_rogue_0.webp"
+  },
+  "NA_skeleton_1139": {
+   "model": "skeleton_rogue",
+   "skin": 11,
+   "path": "portraits/m_skeleton_rogue_11.webp"
+  },
+  "NA_skeleton_1155": {
+   "model": "skeleton_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_skeleton_spellcaster_2.webp"
+  },
+  "NA_skeleton_1164": {
+   "model": "skeleton_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_skeleton_spellcaster_11.webp"
+  },
+  "NA_imp_1314": {
+   "model": "imp_fighter",
+   "skin": 11,
+   "path": "portraits/m_imp_fighter_11.webp"
+  },
+  "NA_imp_1321": {
+   "model": "imp_fighter",
+   "skin": 6,
+   "path": "portraits/m_imp_fighter_6.webp"
+  },
+  "NA_imp_1344": {
+   "model": "imp_rogue",
+   "skin": 4,
+   "path": "portraits/m_imp_rogue_4.webp"
+  },
+  "NA_imp_1351": {
+   "model": "imp_rogue",
+   "skin": 11,
+   "path": "portraits/m_imp_rogue_11.webp"
+  },
+  "NA_imp_1364": {
+   "model": "imp_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_imp_spellcaster_11.webp"
+  },
+  "NA_imp_1366": {
+   "model": "imp_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_imp_spellcaster_1.webp"
+  },
+  "NA_spectre_1410": {
+   "model": "spectre_fighter",
+   "skin": 7,
+   "path": "portraits/m_spectre_fighter_7.webp"
+  },
+  "NA_spectre_1414": {
+   "model": "spectre_fighter",
+   "skin": 11,
+   "path": "portraits/m_spectre_fighter_11.webp"
+  },
+  "NA_spectre_1435": {
+   "model": "spectre_rogue",
+   "skin": 7,
+   "path": "portraits/m_spectre_rogue_7.webp"
+  },
+  "NA_spectre_1447": {
+   "model": "spectre_rogue",
+   "skin": 7,
+   "path": "portraits/m_spectre_rogue_7.webp"
+  },
+  "NA_spectre_1455": {
+   "model": "spectre_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_spectre_spellcaster_2.webp"
+  },
+  "NA_spectre_1460": {
+   "model": "spectre_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_spectre_spellcaster_7.webp"
+  },
+  "NA_vampire_1503": {
+   "model": "vampire_fighter",
+   "skin": 0,
+   "path": "portraits/m_vampire_fighter_0.webp"
+  },
+  "NA_vampire_1505": {
+   "model": "vampire_fighter",
+   "skin": 2,
+   "path": "portraits/m_vampire_fighter_2.webp"
+  },
+  "NA_vampire_1528": {
+   "model": "vampire_rogue",
+   "skin": 0,
+   "path": "portraits/m_vampire_rogue_0.webp"
+  },
+  "NA_vampire_1530": {
+   "model": "vampire_rogue",
+   "skin": 2,
+   "path": "portraits/m_vampire_rogue_2.webp"
+  },
+  "NA_vampire_1553": {
+   "model": "vampire_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_vampire_spellcaster_0.webp"
+  },
+  "NA_vampire_1554": {
+   "model": "vampire_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_vampire_spellcaster_1.webp"
+  },
+  "NM_human_001": {
+   "model": "human_fighter",
+   "skin": 0,
+   "path": "portraits/m_human_fighter_0.webp"
+  },
+  "NM_human_006": {
+   "model": "human_fighter",
+   "skin": 5,
+   "path": "portraits/m_human_fighter_5.webp"
+  },
+  "NM_human_007": {
+   "model": "human_fighter",
+   "skin": 6,
+   "path": "portraits/m_human_fighter_6.webp"
+  },
+  "NM_human_009": {
+   "model": "human_fighter",
+   "skin": 8,
+   "path": "portraits/m_human_fighter_8.webp"
+  },
+  "NM_human_010": {
+   "model": "human_fighter",
+   "skin": 9,
+   "path": "portraits/m_human_fighter_9.webp"
+  },
+  "NM_human_012": {
+   "model": "human_fighter",
+   "skin": 10,
+   "path": "portraits/m_human_fighter_10.webp"
+  },
+  "NM_human_013": {
+   "model": "human_fighter",
+   "skin": 0,
+   "path": "portraits/m_human_fighter_0.webp"
+  },
+  "NM_human_014": {
+   "model": "human_fighter",
+   "skin": 1,
+   "path": "portraits/m_human_fighter_1.webp"
+  },
+  "NM_human_015": {
+   "model": "human_fighter",
+   "skin": 2,
+   "path": "portraits/m_human_fighter_2.webp"
+  },
+  "NM_human_016": {
+   "model": "human_fighter",
+   "skin": 3,
+   "path": "portraits/m_human_fighter_3.webp"
+  },
+  "NM_human_017": {
+   "model": "human_fighter",
+   "skin": 4,
+   "path": "portraits/m_human_fighter_4.webp"
+  },
+  "NM_human_018": {
+   "model": "human_fighter",
+   "skin": 5,
+   "path": "portraits/m_human_fighter_5.webp"
+  },
+  "NM_human_019": {
+   "model": "human_fighter",
+   "skin": 6,
+   "path": "portraits/m_human_fighter_6.webp"
+  },
+  "NM_human_020": {
+   "model": "human_fighter",
+   "skin": 7,
+   "path": "portraits/m_human_fighter_7.webp"
+  },
+  "NM_human_021": {
+   "model": "human_fighter",
+   "skin": 8,
+   "path": "portraits/m_human_fighter_8.webp"
+  },
+  "NM_human_022": {
+   "model": "human_fighter",
+   "skin": 9,
+   "path": "portraits/m_human_fighter_9.webp"
+  },
+  "NM_human_023": {
+   "model": "human_fighter",
+   "skin": 10,
+   "path": "portraits/m_human_fighter_10.webp"
+  },
+  "NM_human_024": {
+   "model": "human_fighter",
+   "skin": 11,
+   "path": "portraits/m_human_fighter_11.webp"
+  },
+  "NM_human_025": {
+   "model": "human_rogue",
+   "skin": 11,
+   "path": "portraits/m_human_rogue_11.webp"
+  },
+  "NM_human_026": {
+   "model": "human_rogue",
+   "skin": 1,
+   "path": "portraits/m_human_rogue_1.webp"
+  },
+  "NM_human_027": {
+   "model": "human_rogue",
+   "skin": 2,
+   "path": "portraits/m_human_rogue_2.webp"
+  },
+  "NM_human_030": {
+   "model": "human_rogue",
+   "skin": 5,
+   "path": "portraits/m_human_rogue_5.webp"
+  },
+  "NM_human_031": {
+   "model": "human_rogue",
+   "skin": 6,
+   "path": "portraits/m_human_rogue_6.webp"
+  },
+  "NM_human_032": {
+   "model": "human_rogue",
+   "skin": 7,
+   "path": "portraits/m_human_rogue_7.webp"
+  },
+  "NM_human_033": {
+   "model": "human_rogue",
+   "skin": 8,
+   "path": "portraits/m_human_rogue_8.webp"
+  },
+  "NM_human_034": {
+   "model": "human_rogue",
+   "skin": 9,
+   "path": "portraits/m_human_rogue_9.webp"
+  },
+  "NM_human_035": {
+   "model": "human_rogue",
+   "skin": 10,
+   "path": "portraits/m_human_rogue_10.webp"
+  },
+  "NM_human_036": {
+   "model": "human_rogue",
+   "skin": 11,
+   "path": "portraits/m_human_rogue_11.webp"
+  },
+  "NM_human_037": {
+   "model": "human_rogue",
+   "skin": 0,
+   "path": "portraits/m_human_rogue_0.webp"
+  },
+  "NM_human_038": {
+   "model": "human_rogue",
+   "skin": 1,
+   "path": "portraits/m_human_rogue_1.webp"
+  },
+  "NM_human_039": {
+   "model": "human_rogue",
+   "skin": 2,
+   "path": "portraits/m_human_rogue_2.webp"
+  },
+  "NM_human_040": {
+   "model": "human_rogue",
+   "skin": 3,
+   "path": "portraits/m_human_rogue_3.webp"
+  },
+  "NM_human_041": {
+   "model": "human_rogue",
+   "skin": 4,
+   "path": "portraits/m_human_rogue_4.webp"
+  },
+  "NM_human_042": {
+   "model": "human_rogue",
+   "skin": 5,
+   "path": "portraits/m_human_rogue_5.webp"
+  },
+  "NM_human_043": {
+   "model": "human_rogue",
+   "skin": 6,
+   "path": "portraits/m_human_rogue_6.webp"
+  },
+  "NM_human_044": {
+   "model": "human_rogue",
+   "skin": 7,
+   "path": "portraits/m_human_rogue_7.webp"
+  },
+  "NM_human_046": {
+   "model": "human_rogue",
+   "skin": 9,
+   "path": "portraits/m_human_rogue_9.webp"
+  },
+  "NM_human_047": {
+   "model": "human_rogue",
+   "skin": 10,
+   "path": "portraits/m_human_rogue_10.webp"
+  },
+  "NM_human_049": {
+   "model": "human_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_human_spellcaster_0.webp"
+  },
+  "NM_human_050": {
+   "model": "human_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_human_spellcaster_1.webp"
+  },
+  "NM_human_051": {
+   "model": "human_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_human_spellcaster_2.webp"
+  },
+  "NM_human_052": {
+   "model": "human_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_human_spellcaster_3.webp"
+  },
+  "NM_human_054": {
+   "model": "human_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_human_spellcaster_5.webp"
+  },
+  "NM_human_055": {
+   "model": "human_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_human_spellcaster_6.webp"
+  },
+  "NM_human_056": {
+   "model": "human_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_human_spellcaster_11.webp"
+  },
+  "NM_human_057": {
+   "model": "human_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_human_spellcaster_8.webp"
+  },
+  "NM_human_058": {
+   "model": "human_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_human_spellcaster_9.webp"
+  },
+  "NM_human_059": {
+   "model": "human_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_human_spellcaster_10.webp"
+  },
+  "NM_human_060": {
+   "model": "human_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_human_spellcaster_11.webp"
+  },
+  "NM_human_062": {
+   "model": "human_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_human_spellcaster_1.webp"
+  },
+  "NM_human_063": {
+   "model": "human_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_human_spellcaster_2.webp"
+  },
+  "NM_human_064": {
+   "model": "human_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_human_spellcaster_3.webp"
+  },
+  "NM_human_065": {
+   "model": "human_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_human_spellcaster_4.webp"
+  },
+  "NM_human_066": {
+   "model": "human_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_human_spellcaster_5.webp"
+  },
+  "NM_human_067": {
+   "model": "human_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_human_spellcaster_6.webp"
+  },
+  "NM_human_068": {
+   "model": "human_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_human_spellcaster_7.webp"
+  },
+  "NM_human_069": {
+   "model": "human_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_human_spellcaster_8.webp"
+  },
+  "NM_human_070": {
+   "model": "human_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_human_spellcaster_9.webp"
+  },
+  "NM_human_071": {
+   "model": "human_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_human_spellcaster_10.webp"
+  },
+  "NM_human_074": {
+   "model": "human_artillery",
+   "skin": 1,
+   "path": "portraits/m_human_artillery_1.webp"
+  },
+  "NM_human_075": {
+   "model": "human_artillery",
+   "skin": 2,
+   "path": "portraits/m_human_artillery_2.webp"
+  },
+  "NM_human_076": {
+   "model": "human_artillery",
+   "skin": 3,
+   "path": "portraits/m_human_artillery_3.webp"
+  },
+  "NM_human_077": {
+   "model": "human_artillery",
+   "skin": 4,
+   "path": "portraits/m_human_artillery_4.webp"
+  },
+  "NM_human_078": {
+   "model": "human_artillery",
+   "skin": 5,
+   "path": "portraits/m_human_artillery_5.webp"
+  },
+  "NM_human_081": {
+   "model": "human_artillery",
+   "skin": 8,
+   "path": "portraits/m_human_artillery_8.webp"
+  },
+  "NM_human_082": {
+   "model": "human_artillery",
+   "skin": 9,
+   "path": "portraits/m_human_artillery_9.webp"
+  },
+  "NM_human_083": {
+   "model": "human_artillery",
+   "skin": 10,
+   "path": "portraits/m_human_artillery_10.webp"
+  },
+  "NM_human_084": {
+   "model": "human_artillery",
+   "skin": 11,
+   "path": "portraits/m_human_artillery_11.webp"
+  },
+  "NM_human_085": {
+   "model": "human_artillery",
+   "skin": 0,
+   "path": "portraits/m_human_artillery_0.webp"
+  },
+  "NM_human_086": {
+   "model": "human_artillery",
+   "skin": 1,
+   "path": "portraits/m_human_artillery_1.webp"
+  },
+  "NM_human_087": {
+   "model": "human_artillery",
+   "skin": 2,
+   "path": "portraits/m_human_artillery_2.webp"
+  },
+  "NM_human_088": {
+   "model": "human_artillery",
+   "skin": 3,
+   "path": "portraits/m_human_artillery_3.webp"
+  },
+  "NM_human_089": {
+   "model": "human_artillery",
+   "skin": 4,
+   "path": "portraits/m_human_artillery_4.webp"
+  },
+  "NM_human_090": {
+   "model": "human_artillery",
+   "skin": 5,
+   "path": "portraits/m_human_artillery_5.webp"
+  },
+  "NM_human_091": {
+   "model": "human_artillery",
+   "skin": 6,
+   "path": "portraits/m_human_artillery_6.webp"
+  },
+  "NM_human_092": {
+   "model": "human_artillery",
+   "skin": 7,
+   "path": "portraits/m_human_artillery_7.webp"
+  },
+  "NM_human_093": {
+   "model": "human_artillery",
+   "skin": 8,
+   "path": "portraits/m_human_artillery_8.webp"
+  },
+  "NM_human_094": {
+   "model": "human_artillery",
+   "skin": 9,
+   "path": "portraits/m_human_artillery_9.webp"
+  },
+  "NM_human_095": {
+   "model": "human_artillery",
+   "skin": 10,
+   "path": "portraits/m_human_artillery_10.webp"
+  },
+  "NM_human_096": {
+   "model": "human_artillery",
+   "skin": 11,
+   "path": "portraits/m_human_artillery_11.webp"
+  },
+  "NM_elf_001": {
+   "model": "elf_fighter",
+   "skin": 0,
+   "path": "portraits/m_elf_fighter_0.webp"
+  },
+  "NM_elf_002": {
+   "model": "elf_fighter",
+   "skin": 1,
+   "path": "portraits/m_elf_fighter_1.webp"
+  },
+  "NM_elf_003": {
+   "model": "elf_fighter",
+   "skin": 2,
+   "path": "portraits/m_elf_fighter_2.webp"
+  },
+  "NM_elf_004": {
+   "model": "elf_fighter",
+   "skin": 3,
+   "path": "portraits/m_elf_fighter_3.webp"
+  },
+  "NM_elf_006": {
+   "model": "elf_fighter",
+   "skin": 5,
+   "path": "portraits/m_elf_fighter_5.webp"
+  },
+  "NM_elf_007": {
+   "model": "elf_fighter",
+   "skin": 6,
+   "path": "portraits/m_elf_fighter_6.webp"
+  },
+  "NM_elf_008": {
+   "model": "elf_fighter",
+   "skin": 7,
+   "path": "portraits/m_elf_fighter_7.webp"
+  },
+  "NM_elf_009": {
+   "model": "elf_fighter",
+   "skin": 8,
+   "path": "portraits/m_elf_fighter_8.webp"
+  },
+  "NM_elf_010": {
+   "model": "elf_fighter",
+   "skin": 9,
+   "path": "portraits/m_elf_fighter_9.webp"
+  },
+  "NM_elf_011": {
+   "model": "elf_fighter",
+   "skin": 10,
+   "path": "portraits/m_elf_fighter_10.webp"
+  },
+  "NM_elf_013": {
+   "model": "elf_fighter",
+   "skin": 0,
+   "path": "portraits/m_elf_fighter_0.webp"
+  },
+  "NM_elf_014": {
+   "model": "elf_fighter",
+   "skin": 1,
+   "path": "portraits/m_elf_fighter_1.webp"
+  },
+  "NM_elf_015": {
+   "model": "elf_fighter",
+   "skin": 2,
+   "path": "portraits/m_elf_fighter_2.webp"
+  },
+  "NM_elf_016": {
+   "model": "elf_fighter",
+   "skin": 3,
+   "path": "portraits/m_elf_fighter_3.webp"
+  },
+  "NM_elf_017": {
+   "model": "elf_fighter",
+   "skin": 4,
+   "path": "portraits/m_elf_fighter_4.webp"
+  },
+  "NM_elf_018": {
+   "model": "elf_fighter",
+   "skin": 5,
+   "path": "portraits/m_elf_fighter_5.webp"
+  },
+  "NM_elf_019": {
+   "model": "elf_fighter",
+   "skin": 6,
+   "path": "portraits/m_elf_fighter_6.webp"
+  },
+  "NM_elf_020": {
+   "model": "elf_fighter",
+   "skin": 7,
+   "path": "portraits/m_elf_fighter_7.webp"
+  },
+  "NM_elf_021": {
+   "model": "elf_fighter",
+   "skin": 11,
+   "path": "portraits/m_elf_fighter_11.webp"
+  },
+  "NM_elf_022": {
+   "model": "elf_fighter",
+   "skin": 9,
+   "path": "portraits/m_elf_fighter_9.webp"
+  },
+  "NM_elf_025": {
+   "model": "elf_rogue",
+   "skin": 0,
+   "path": "portraits/m_elf_rogue_0.webp"
+  },
+  "NM_elf_026": {
+   "model": "elf_rogue",
+   "skin": 1,
+   "path": "portraits/m_elf_rogue_1.webp"
+  },
+  "NM_elf_027": {
+   "model": "elf_rogue",
+   "skin": 2,
+   "path": "portraits/m_elf_rogue_2.webp"
+  },
+  "NM_elf_028": {
+   "model": "elf_rogue",
+   "skin": 3,
+   "path": "portraits/m_elf_rogue_3.webp"
+  },
+  "NM_elf_030": {
+   "model": "elf_rogue",
+   "skin": 5,
+   "path": "portraits/m_elf_rogue_5.webp"
+  },
+  "NM_elf_031": {
+   "model": "elf_rogue",
+   "skin": 6,
+   "path": "portraits/m_elf_rogue_6.webp"
+  },
+  "NM_elf_032": {
+   "model": "elf_rogue",
+   "skin": 7,
+   "path": "portraits/m_elf_rogue_7.webp"
+  },
+  "NM_elf_033": {
+   "model": "elf_rogue",
+   "skin": 8,
+   "path": "portraits/m_elf_rogue_8.webp"
+  },
+  "NM_elf_034": {
+   "model": "elf_rogue",
+   "skin": 9,
+   "path": "portraits/m_elf_rogue_9.webp"
+  },
+  "NM_elf_037": {
+   "model": "elf_rogue",
+   "skin": 0,
+   "path": "portraits/m_elf_rogue_0.webp"
+  },
+  "NM_elf_038": {
+   "model": "elf_rogue",
+   "skin": 1,
+   "path": "portraits/m_elf_rogue_1.webp"
+  },
+  "NM_elf_039": {
+   "model": "elf_rogue",
+   "skin": 2,
+   "path": "portraits/m_elf_rogue_2.webp"
+  },
+  "NM_elf_040": {
+   "model": "elf_rogue",
+   "skin": 3,
+   "path": "portraits/m_elf_rogue_3.webp"
+  },
+  "NM_elf_041": {
+   "model": "elf_rogue",
+   "skin": 4,
+   "path": "portraits/m_elf_rogue_4.webp"
+  },
+  "NM_elf_042": {
+   "model": "elf_rogue",
+   "skin": 5,
+   "path": "portraits/m_elf_rogue_5.webp"
+  },
+  "NM_elf_043": {
+   "model": "elf_rogue",
+   "skin": 6,
+   "path": "portraits/m_elf_rogue_6.webp"
+  },
+  "NM_elf_045": {
+   "model": "elf_rogue",
+   "skin": 11,
+   "path": "portraits/m_elf_rogue_11.webp"
+  },
+  "NM_elf_046": {
+   "model": "elf_rogue",
+   "skin": 9,
+   "path": "portraits/m_elf_rogue_9.webp"
+  },
+  "NM_elf_047": {
+   "model": "elf_rogue",
+   "skin": 10,
+   "path": "portraits/m_elf_rogue_10.webp"
+  },
+  "NM_elf_048": {
+   "model": "elf_rogue",
+   "skin": 11,
+   "path": "portraits/m_elf_rogue_11.webp"
+  },
+  "NM_elf_050": {
+   "model": "elf_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_elf_spellcaster_1.webp"
+  },
+  "NM_elf_051": {
+   "model": "elf_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_elf_spellcaster_2.webp"
+  },
+  "NM_elf_052": {
+   "model": "elf_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_elf_spellcaster_3.webp"
+  },
+  "NM_elf_053": {
+   "model": "elf_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_elf_spellcaster_11.webp"
+  },
+  "NM_elf_054": {
+   "model": "elf_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_elf_spellcaster_5.webp"
+  },
+  "NM_elf_055": {
+   "model": "elf_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_elf_spellcaster_6.webp"
+  },
+  "NM_elf_056": {
+   "model": "elf_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_elf_spellcaster_7.webp"
+  },
+  "NM_elf_057": {
+   "model": "elf_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_elf_spellcaster_8.webp"
+  },
+  "NM_elf_058": {
+   "model": "elf_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_elf_spellcaster_9.webp"
+  },
+  "NM_elf_060": {
+   "model": "elf_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_elf_spellcaster_11.webp"
+  },
+  "NM_elf_061": {
+   "model": "elf_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_elf_spellcaster_0.webp"
+  },
+  "NM_elf_062": {
+   "model": "elf_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_elf_spellcaster_1.webp"
+  },
+  "NM_elf_063": {
+   "model": "elf_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_elf_spellcaster_2.webp"
+  },
+  "NM_elf_064": {
+   "model": "elf_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_elf_spellcaster_3.webp"
+  },
+  "NM_elf_065": {
+   "model": "elf_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_elf_spellcaster_4.webp"
+  },
+  "NM_elf_066": {
+   "model": "elf_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_elf_spellcaster_5.webp"
+  },
+  "NM_elf_067": {
+   "model": "elf_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_elf_spellcaster_6.webp"
+  },
+  "NM_elf_068": {
+   "model": "elf_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_elf_spellcaster_7.webp"
+  },
+  "NM_elf_069": {
+   "model": "elf_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_elf_spellcaster_8.webp"
+  },
+  "NM_elf_070": {
+   "model": "elf_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_elf_spellcaster_9.webp"
+  },
+  "NM_elf_071": {
+   "model": "elf_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_elf_spellcaster_10.webp"
+  },
+  "NM_elf_074": {
+   "model": "elf_artillery",
+   "skin": 1,
+   "path": "portraits/m_elf_artillery_1.webp"
+  },
+  "NM_elf_075": {
+   "model": "elf_artillery",
+   "skin": 2,
+   "path": "portraits/m_elf_artillery_2.webp"
+  },
+  "NM_elf_076": {
+   "model": "elf_artillery",
+   "skin": 3,
+   "path": "portraits/m_elf_artillery_3.webp"
+  },
+  "NM_elf_077": {
+   "model": "elf_artillery",
+   "skin": 4,
+   "path": "portraits/m_elf_artillery_4.webp"
+  },
+  "NM_elf_078": {
+   "model": "elf_artillery",
+   "skin": 5,
+   "path": "portraits/m_elf_artillery_5.webp"
+  },
+  "NM_elf_081": {
+   "model": "elf_artillery",
+   "skin": 8,
+   "path": "portraits/m_elf_artillery_8.webp"
+  },
+  "NM_elf_082": {
+   "model": "elf_artillery",
+   "skin": 9,
+   "path": "portraits/m_elf_artillery_9.webp"
+  },
+  "NM_elf_083": {
+   "model": "elf_artillery",
+   "skin": 10,
+   "path": "portraits/m_elf_artillery_10.webp"
+  },
+  "NM_elf_084": {
+   "model": "elf_artillery",
+   "skin": 11,
+   "path": "portraits/m_elf_artillery_11.webp"
+  },
+  "NM_elf_085": {
+   "model": "elf_artillery",
+   "skin": 0,
+   "path": "portraits/m_elf_artillery_0.webp"
+  },
+  "NM_elf_086": {
+   "model": "elf_artillery",
+   "skin": 1,
+   "path": "portraits/m_elf_artillery_1.webp"
+  },
+  "NM_elf_087": {
+   "model": "elf_artillery",
+   "skin": 2,
+   "path": "portraits/m_elf_artillery_2.webp"
+  },
+  "NM_elf_088": {
+   "model": "elf_artillery",
+   "skin": 3,
+   "path": "portraits/m_elf_artillery_3.webp"
+  },
+  "NM_elf_089": {
+   "model": "elf_artillery",
+   "skin": 4,
+   "path": "portraits/m_elf_artillery_4.webp"
+  },
+  "NM_elf_090": {
+   "model": "elf_artillery",
+   "skin": 5,
+   "path": "portraits/m_elf_artillery_5.webp"
+  },
+  "NM_elf_091": {
+   "model": "elf_artillery",
+   "skin": 6,
+   "path": "portraits/m_elf_artillery_6.webp"
+  },
+  "NM_elf_092": {
+   "model": "elf_artillery",
+   "skin": 7,
+   "path": "portraits/m_elf_artillery_7.webp"
+  },
+  "NM_elf_093": {
+   "model": "elf_artillery",
+   "skin": 8,
+   "path": "portraits/m_elf_artillery_8.webp"
+  },
+  "NM_elf_094": {
+   "model": "elf_artillery",
+   "skin": 9,
+   "path": "portraits/m_elf_artillery_9.webp"
+  },
+  "NM_elf_095": {
+   "model": "elf_artillery",
+   "skin": 10,
+   "path": "portraits/m_elf_artillery_10.webp"
+  },
+  "NM_elf_096": {
+   "model": "elf_artillery",
+   "skin": 11,
+   "path": "portraits/m_elf_artillery_11.webp"
+  },
+  "NM_orc_002": {
+   "model": "orc_fighter",
+   "skin": 11,
+   "path": "portraits/m_orc_fighter_11.webp"
+  },
+  "NM_orc_003": {
+   "model": "orc_fighter",
+   "skin": 2,
+   "path": "portraits/m_orc_fighter_2.webp"
+  },
+  "NM_orc_004": {
+   "model": "orc_fighter",
+   "skin": 3,
+   "path": "portraits/m_orc_fighter_3.webp"
+  },
+  "NM_orc_005": {
+   "model": "orc_fighter",
+   "skin": 4,
+   "path": "portraits/m_orc_fighter_4.webp"
+  },
+  "NM_orc_006": {
+   "model": "orc_fighter",
+   "skin": 5,
+   "path": "portraits/m_orc_fighter_5.webp"
+  },
+  "NM_orc_008": {
+   "model": "orc_fighter",
+   "skin": 7,
+   "path": "portraits/m_orc_fighter_7.webp"
+  },
+  "NM_orc_009": {
+   "model": "orc_fighter",
+   "skin": 8,
+   "path": "portraits/m_orc_fighter_8.webp"
+  },
+  "NM_orc_010": {
+   "model": "orc_fighter",
+   "skin": 9,
+   "path": "portraits/m_orc_fighter_9.webp"
+  },
+  "NM_orc_011": {
+   "model": "orc_fighter",
+   "skin": 10,
+   "path": "portraits/m_orc_fighter_10.webp"
+  },
+  "NM_orc_013": {
+   "model": "orc_fighter",
+   "skin": 0,
+   "path": "portraits/m_orc_fighter_0.webp"
+  },
+  "NM_orc_014": {
+   "model": "orc_fighter",
+   "skin": 1,
+   "path": "portraits/m_orc_fighter_1.webp"
+  },
+  "NM_orc_015": {
+   "model": "orc_fighter",
+   "skin": 2,
+   "path": "portraits/m_orc_fighter_2.webp"
+  },
+  "NM_orc_016": {
+   "model": "orc_fighter",
+   "skin": 3,
+   "path": "portraits/m_orc_fighter_3.webp"
+  },
+  "NM_orc_017": {
+   "model": "orc_fighter",
+   "skin": 4,
+   "path": "portraits/m_orc_fighter_4.webp"
+  },
+  "NM_orc_018": {
+   "model": "orc_fighter",
+   "skin": 5,
+   "path": "portraits/m_orc_fighter_5.webp"
+  },
+  "NM_orc_019": {
+   "model": "orc_fighter",
+   "skin": 6,
+   "path": "portraits/m_orc_fighter_6.webp"
+  },
+  "NM_orc_020": {
+   "model": "orc_fighter",
+   "skin": 7,
+   "path": "portraits/m_orc_fighter_7.webp"
+  },
+  "NM_orc_021": {
+   "model": "orc_fighter",
+   "skin": 8,
+   "path": "portraits/m_orc_fighter_8.webp"
+  },
+  "NM_orc_022": {
+   "model": "orc_fighter",
+   "skin": 9,
+   "path": "portraits/m_orc_fighter_9.webp"
+  },
+  "NM_orc_023": {
+   "model": "orc_fighter",
+   "skin": 10,
+   "path": "portraits/m_orc_fighter_10.webp"
+  },
+  "NM_orc_025": {
+   "model": "orc_rogue",
+   "skin": 0,
+   "path": "portraits/m_orc_rogue_0.webp"
+  },
+  "NM_orc_026": {
+   "model": "orc_rogue",
+   "skin": 1,
+   "path": "portraits/m_orc_rogue_1.webp"
+  },
+  "NM_orc_027": {
+   "model": "orc_rogue",
+   "skin": 2,
+   "path": "portraits/m_orc_rogue_2.webp"
+  },
+  "NM_orc_029": {
+   "model": "orc_rogue",
+   "skin": 4,
+   "path": "portraits/m_orc_rogue_4.webp"
+  },
+  "NM_orc_031": {
+   "model": "orc_rogue",
+   "skin": 6,
+   "path": "portraits/m_orc_rogue_6.webp"
+  },
+  "NM_orc_032": {
+   "model": "orc_rogue",
+   "skin": 7,
+   "path": "portraits/m_orc_rogue_7.webp"
+  },
+  "NM_orc_033": {
+   "model": "orc_rogue",
+   "skin": 8,
+   "path": "portraits/m_orc_rogue_8.webp"
+  },
+  "NM_orc_034": {
+   "model": "orc_rogue",
+   "skin": 9,
+   "path": "portraits/m_orc_rogue_9.webp"
+  },
+  "NM_orc_035": {
+   "model": "orc_rogue",
+   "skin": 10,
+   "path": "portraits/m_orc_rogue_10.webp"
+  },
+  "NM_orc_036": {
+   "model": "orc_rogue",
+   "skin": 10,
+   "path": "portraits/m_orc_rogue_10.webp"
+  },
+  "NM_orc_037": {
+   "model": "orc_rogue",
+   "skin": 0,
+   "path": "portraits/m_orc_rogue_0.webp"
+  },
+  "NM_orc_038": {
+   "model": "orc_rogue",
+   "skin": 1,
+   "path": "portraits/m_orc_rogue_1.webp"
+  },
+  "NM_orc_039": {
+   "model": "orc_rogue",
+   "skin": 2,
+   "path": "portraits/m_orc_rogue_2.webp"
+  },
+  "NM_orc_040": {
+   "model": "orc_rogue",
+   "skin": 3,
+   "path": "portraits/m_orc_rogue_3.webp"
+  },
+  "NM_orc_042": {
+   "model": "orc_rogue",
+   "skin": 5,
+   "path": "portraits/m_orc_rogue_5.webp"
+  },
+  "NM_orc_043": {
+   "model": "orc_rogue",
+   "skin": 6,
+   "path": "portraits/m_orc_rogue_6.webp"
+  },
+  "NM_orc_044": {
+   "model": "orc_rogue",
+   "skin": 7,
+   "path": "portraits/m_orc_rogue_7.webp"
+  },
+  "NM_orc_046": {
+   "model": "orc_rogue",
+   "skin": 9,
+   "path": "portraits/m_orc_rogue_9.webp"
+  },
+  "NM_orc_047": {
+   "model": "orc_rogue",
+   "skin": 11,
+   "path": "portraits/m_orc_rogue_11.webp"
+  },
+  "NM_orc_048": {
+   "model": "orc_rogue",
+   "skin": 11,
+   "path": "portraits/m_orc_rogue_11.webp"
+  },
+  "NM_orc_049": {
+   "model": "orc_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_orc_spellcaster_0.webp"
+  },
+  "NM_orc_050": {
+   "model": "orc_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_orc_spellcaster_1.webp"
+  },
+  "NM_orc_051": {
+   "model": "orc_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_orc_spellcaster_2.webp"
+  },
+  "NM_orc_052": {
+   "model": "orc_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_orc_spellcaster_3.webp"
+  },
+  "NM_orc_054": {
+   "model": "orc_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_orc_spellcaster_5.webp"
+  },
+  "NM_orc_055": {
+   "model": "orc_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_orc_spellcaster_6.webp"
+  },
+  "NM_orc_056": {
+   "model": "orc_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_orc_spellcaster_7.webp"
+  },
+  "NM_orc_057": {
+   "model": "orc_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_orc_spellcaster_8.webp"
+  },
+  "NM_orc_058": {
+   "model": "orc_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_orc_spellcaster_9.webp"
+  },
+  "NM_orc_059": {
+   "model": "orc_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_orc_spellcaster_10.webp"
+  },
+  "NM_orc_060": {
+   "model": "orc_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_orc_spellcaster_5.webp"
+  },
+  "NM_orc_061": {
+   "model": "orc_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_orc_spellcaster_0.webp"
+  },
+  "NM_orc_064": {
+   "model": "orc_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_orc_spellcaster_3.webp"
+  },
+  "NM_orc_065": {
+   "model": "orc_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_orc_spellcaster_4.webp"
+  },
+  "NM_orc_066": {
+   "model": "orc_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_orc_spellcaster_11.webp"
+  },
+  "NM_orc_067": {
+   "model": "orc_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_orc_spellcaster_6.webp"
+  },
+  "NM_orc_068": {
+   "model": "orc_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_orc_spellcaster_7.webp"
+  },
+  "NM_orc_069": {
+   "model": "orc_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_orc_spellcaster_8.webp"
+  },
+  "NM_orc_070": {
+   "model": "orc_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_orc_spellcaster_9.webp"
+  },
+  "NM_orc_071": {
+   "model": "orc_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_orc_spellcaster_10.webp"
+  },
+  "NM_orc_074": {
+   "model": "orc_artillery",
+   "skin": 1,
+   "path": "portraits/m_orc_artillery_1.webp"
+  },
+  "NM_orc_075": {
+   "model": "orc_artillery",
+   "skin": 2,
+   "path": "portraits/m_orc_artillery_2.webp"
+  },
+  "NM_orc_076": {
+   "model": "orc_artillery",
+   "skin": 3,
+   "path": "portraits/m_orc_artillery_3.webp"
+  },
+  "NM_orc_077": {
+   "model": "orc_artillery",
+   "skin": 4,
+   "path": "portraits/m_orc_artillery_4.webp"
+  },
+  "NM_orc_078": {
+   "model": "orc_artillery",
+   "skin": 5,
+   "path": "portraits/m_orc_artillery_5.webp"
+  },
+  "NM_orc_080": {
+   "model": "orc_artillery",
+   "skin": 7,
+   "path": "portraits/m_orc_artillery_7.webp"
+  },
+  "NM_orc_081": {
+   "model": "orc_artillery",
+   "skin": 8,
+   "path": "portraits/m_orc_artillery_8.webp"
+  },
+  "NM_orc_082": {
+   "model": "orc_artillery",
+   "skin": 9,
+   "path": "portraits/m_orc_artillery_9.webp"
+  },
+  "NM_orc_083": {
+   "model": "orc_artillery",
+   "skin": 10,
+   "path": "portraits/m_orc_artillery_10.webp"
+  },
+  "NM_orc_084": {
+   "model": "orc_artillery",
+   "skin": 11,
+   "path": "portraits/m_orc_artillery_11.webp"
+  },
+  "NM_orc_085": {
+   "model": "orc_artillery",
+   "skin": 0,
+   "path": "portraits/m_orc_artillery_0.webp"
+  },
+  "NM_orc_086": {
+   "model": "orc_artillery",
+   "skin": 1,
+   "path": "portraits/m_orc_artillery_1.webp"
+  },
+  "NM_orc_087": {
+   "model": "orc_artillery",
+   "skin": 2,
+   "path": "portraits/m_orc_artillery_2.webp"
+  },
+  "NM_orc_088": {
+   "model": "orc_artillery",
+   "skin": 3,
+   "path": "portraits/m_orc_artillery_3.webp"
+  },
+  "NM_orc_089": {
+   "model": "orc_artillery",
+   "skin": 4,
+   "path": "portraits/m_orc_artillery_4.webp"
+  },
+  "NM_orc_090": {
+   "model": "orc_artillery",
+   "skin": 5,
+   "path": "portraits/m_orc_artillery_5.webp"
+  },
+  "NM_orc_091": {
+   "model": "orc_artillery",
+   "skin": 6,
+   "path": "portraits/m_orc_artillery_6.webp"
+  },
+  "NM_orc_092": {
+   "model": "orc_artillery",
+   "skin": 7,
+   "path": "portraits/m_orc_artillery_7.webp"
+  },
+  "NM_orc_093": {
+   "model": "orc_artillery",
+   "skin": 8,
+   "path": "portraits/m_orc_artillery_8.webp"
+  },
+  "NM_orc_094": {
+   "model": "orc_artillery",
+   "skin": 9,
+   "path": "portraits/m_orc_artillery_9.webp"
+  },
+  "NM_orc_095": {
+   "model": "orc_artillery",
+   "skin": 10,
+   "path": "portraits/m_orc_artillery_10.webp"
+  },
+  "NM_orc_096": {
+   "model": "orc_artillery",
+   "skin": 11,
+   "path": "portraits/m_orc_artillery_11.webp"
+  },
+  "NM_zombie_001": {
+   "model": "undead_fighter",
+   "skin": 11,
+   "path": "portraits/m_undead_fighter_11.webp"
+  },
+  "NM_zombie_002": {
+   "model": "undead_fighter",
+   "skin": 1,
+   "path": "portraits/m_undead_fighter_1.webp"
+  },
+  "NM_zombie_005": {
+   "model": "undead_fighter",
+   "skin": 4,
+   "path": "portraits/m_undead_fighter_4.webp"
+  },
+  "NM_zombie_006": {
+   "model": "undead_fighter",
+   "skin": 5,
+   "path": "portraits/m_undead_fighter_5.webp"
+  },
+  "NM_zombie_007": {
+   "model": "undead_fighter",
+   "skin": 6,
+   "path": "portraits/m_undead_fighter_6.webp"
+  },
+  "NM_zombie_008": {
+   "model": "undead_fighter",
+   "skin": 7,
+   "path": "portraits/m_undead_fighter_7.webp"
+  },
+  "NM_zombie_009": {
+   "model": "undead_fighter",
+   "skin": 8,
+   "path": "portraits/m_undead_fighter_8.webp"
+  },
+  "NM_zombie_010": {
+   "model": "undead_fighter",
+   "skin": 9,
+   "path": "portraits/m_undead_fighter_9.webp"
+  },
+  "NM_zombie_011": {
+   "model": "undead_fighter",
+   "skin": 10,
+   "path": "portraits/m_undead_fighter_10.webp"
+  },
+  "NM_zombie_013": {
+   "model": "undead_fighter",
+   "skin": 0,
+   "path": "portraits/m_undead_fighter_0.webp"
+  },
+  "NM_zombie_014": {
+   "model": "undead_fighter",
+   "skin": 1,
+   "path": "portraits/m_undead_fighter_1.webp"
+  },
+  "NM_zombie_015": {
+   "model": "undead_fighter",
+   "skin": 2,
+   "path": "portraits/m_undead_fighter_2.webp"
+  },
+  "NM_zombie_016": {
+   "model": "undead_fighter",
+   "skin": 3,
+   "path": "portraits/m_undead_fighter_3.webp"
+  },
+  "NM_zombie_018": {
+   "model": "undead_fighter",
+   "skin": 5,
+   "path": "portraits/m_undead_fighter_5.webp"
+  },
+  "NM_zombie_019": {
+   "model": "undead_fighter",
+   "skin": 6,
+   "path": "portraits/m_undead_fighter_6.webp"
+  },
+  "NM_zombie_020": {
+   "model": "undead_fighter",
+   "skin": 7,
+   "path": "portraits/m_undead_fighter_7.webp"
+  },
+  "NM_zombie_021": {
+   "model": "undead_fighter",
+   "skin": 8,
+   "path": "portraits/m_undead_fighter_8.webp"
+  },
+  "NM_zombie_022": {
+   "model": "undead_fighter",
+   "skin": 9,
+   "path": "portraits/m_undead_fighter_9.webp"
+  },
+  "NM_zombie_023": {
+   "model": "undead_fighter",
+   "skin": 10,
+   "path": "portraits/m_undead_fighter_10.webp"
+  },
+  "NM_zombie_024": {
+   "model": "undead_fighter",
+   "skin": 0,
+   "path": "portraits/m_undead_fighter_0.webp"
+  },
+  "NM_zombie_026": {
+   "model": "undead_rogue",
+   "skin": 1,
+   "path": "portraits/m_undead_rogue_1.webp"
+  },
+  "NM_zombie_027": {
+   "model": "undead_rogue",
+   "skin": 2,
+   "path": "portraits/m_undead_rogue_2.webp"
+  },
+  "NM_zombie_028": {
+   "model": "undead_rogue",
+   "skin": 3,
+   "path": "portraits/m_undead_rogue_3.webp"
+  },
+  "NM_zombie_029": {
+   "model": "undead_rogue",
+   "skin": 4,
+   "path": "portraits/m_undead_rogue_4.webp"
+  },
+  "NM_zombie_030": {
+   "model": "undead_rogue",
+   "skin": 11,
+   "path": "portraits/m_undead_rogue_11.webp"
+  },
+  "NM_zombie_031": {
+   "model": "undead_rogue",
+   "skin": 6,
+   "path": "portraits/m_undead_rogue_6.webp"
+  },
+  "NM_zombie_032": {
+   "model": "undead_rogue",
+   "skin": 7,
+   "path": "portraits/m_undead_rogue_7.webp"
+  },
+  "NM_zombie_033": {
+   "model": "undead_rogue",
+   "skin": 8,
+   "path": "portraits/m_undead_rogue_8.webp"
+  },
+  "NM_zombie_034": {
+   "model": "undead_rogue",
+   "skin": 9,
+   "path": "portraits/m_undead_rogue_9.webp"
+  },
+  "NM_zombie_035": {
+   "model": "undead_rogue",
+   "skin": 10,
+   "path": "portraits/m_undead_rogue_10.webp"
+  },
+  "NM_zombie_037": {
+   "model": "undead_rogue",
+   "skin": 0,
+   "path": "portraits/m_undead_rogue_0.webp"
+  },
+  "NM_zombie_038": {
+   "model": "undead_rogue",
+   "skin": 1,
+   "path": "portraits/m_undead_rogue_1.webp"
+  },
+  "NM_zombie_039": {
+   "model": "undead_rogue",
+   "skin": 2,
+   "path": "portraits/m_undead_rogue_2.webp"
+  },
+  "NM_zombie_040": {
+   "model": "undead_rogue",
+   "skin": 3,
+   "path": "portraits/m_undead_rogue_3.webp"
+  },
+  "NM_zombie_041": {
+   "model": "undead_rogue",
+   "skin": 4,
+   "path": "portraits/m_undead_rogue_4.webp"
+  },
+  "NM_zombie_042": {
+   "model": "undead_rogue",
+   "skin": 5,
+   "path": "portraits/m_undead_rogue_5.webp"
+  },
+  "NM_zombie_043": {
+   "model": "undead_rogue",
+   "skin": 6,
+   "path": "portraits/m_undead_rogue_6.webp"
+  },
+  "NM_zombie_044": {
+   "model": "undead_rogue",
+   "skin": 7,
+   "path": "portraits/m_undead_rogue_7.webp"
+  },
+  "NM_zombie_047": {
+   "model": "undead_rogue",
+   "skin": 10,
+   "path": "portraits/m_undead_rogue_10.webp"
+  },
+  "NM_zombie_048": {
+   "model": "undead_rogue",
+   "skin": 5,
+   "path": "portraits/m_undead_rogue_5.webp"
+  },
+  "NM_zombie_050": {
+   "model": "undead_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_undead_spellcaster_1.webp"
+  },
+  "NM_zombie_051": {
+   "model": "undead_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_undead_spellcaster_2.webp"
+  },
+  "NM_zombie_052": {
+   "model": "undead_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_undead_spellcaster_3.webp"
+  },
+  "NM_zombie_054": {
+   "model": "undead_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_undead_spellcaster_5.webp"
+  },
+  "NM_zombie_055": {
+   "model": "undead_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_undead_spellcaster_6.webp"
+  },
+  "NM_zombie_056": {
+   "model": "undead_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_undead_spellcaster_7.webp"
+  },
+  "NM_zombie_057": {
+   "model": "undead_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_undead_spellcaster_8.webp"
+  },
+  "NM_zombie_058": {
+   "model": "undead_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_undead_spellcaster_9.webp"
+  },
+  "NM_zombie_059": {
+   "model": "undead_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_undead_spellcaster_10.webp"
+  },
+  "NM_zombie_060": {
+   "model": "undead_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_undead_spellcaster_11.webp"
+  },
+  "NM_zombie_061": {
+   "model": "undead_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_undead_spellcaster_0.webp"
+  },
+  "NM_zombie_062": {
+   "model": "undead_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_undead_spellcaster_1.webp"
+  },
+  "NM_zombie_063": {
+   "model": "undead_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_undead_spellcaster_2.webp"
+  },
+  "NM_zombie_064": {
+   "model": "undead_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_undead_spellcaster_3.webp"
+  },
+  "NM_zombie_065": {
+   "model": "undead_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_undead_spellcaster_4.webp"
+  },
+  "NM_zombie_066": {
+   "model": "undead_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_undead_spellcaster_5.webp"
+  },
+  "NM_zombie_067": {
+   "model": "undead_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_undead_spellcaster_6.webp"
+  },
+  "NM_zombie_069": {
+   "model": "undead_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_undead_spellcaster_8.webp"
+  },
+  "NM_zombie_070": {
+   "model": "undead_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_undead_spellcaster_9.webp"
+  },
+  "NM_zombie_071": {
+   "model": "undead_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_undead_spellcaster_10.webp"
+  },
+  "NM_zombie_072": {
+   "model": "undead_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_undead_spellcaster_11.webp"
+  },
+  "NM_zombie_074": {
+   "model": "undead_artillery",
+   "skin": 1,
+   "path": "portraits/m_undead_artillery_1.webp"
+  },
+  "NM_zombie_075": {
+   "model": "undead_artillery",
+   "skin": 2,
+   "path": "portraits/m_undead_artillery_2.webp"
+  },
+  "NM_zombie_076": {
+   "model": "undead_artillery",
+   "skin": 3,
+   "path": "portraits/m_undead_artillery_3.webp"
+  },
+  "NM_zombie_077": {
+   "model": "undead_artillery",
+   "skin": 4,
+   "path": "portraits/m_undead_artillery_4.webp"
+  },
+  "NM_zombie_078": {
+   "model": "undead_artillery",
+   "skin": 5,
+   "path": "portraits/m_undead_artillery_5.webp"
+  },
+  "NM_zombie_081": {
+   "model": "undead_artillery",
+   "skin": 8,
+   "path": "portraits/m_undead_artillery_8.webp"
+  },
+  "NM_zombie_082": {
+   "model": "undead_artillery",
+   "skin": 9,
+   "path": "portraits/m_undead_artillery_9.webp"
+  },
+  "NM_zombie_083": {
+   "model": "undead_artillery",
+   "skin": 10,
+   "path": "portraits/m_undead_artillery_10.webp"
+  },
+  "NM_zombie_084": {
+   "model": "undead_artillery",
+   "skin": 11,
+   "path": "portraits/m_undead_artillery_11.webp"
+  },
+  "NM_zombie_085": {
+   "model": "undead_artillery",
+   "skin": 0,
+   "path": "portraits/m_undead_artillery_0.webp"
+  },
+  "NM_zombie_086": {
+   "model": "undead_artillery",
+   "skin": 1,
+   "path": "portraits/m_undead_artillery_1.webp"
+  },
+  "NM_zombie_087": {
+   "model": "undead_artillery",
+   "skin": 2,
+   "path": "portraits/m_undead_artillery_2.webp"
+  },
+  "NM_zombie_088": {
+   "model": "undead_artillery",
+   "skin": 3,
+   "path": "portraits/m_undead_artillery_3.webp"
+  },
+  "NM_zombie_089": {
+   "model": "undead_artillery",
+   "skin": 4,
+   "path": "portraits/m_undead_artillery_4.webp"
+  },
+  "NM_zombie_090": {
+   "model": "undead_artillery",
+   "skin": 5,
+   "path": "portraits/m_undead_artillery_5.webp"
+  },
+  "NM_zombie_091": {
+   "model": "undead_artillery",
+   "skin": 6,
+   "path": "portraits/m_undead_artillery_6.webp"
+  },
+  "NM_zombie_092": {
+   "model": "undead_artillery",
+   "skin": 7,
+   "path": "portraits/m_undead_artillery_7.webp"
+  },
+  "NM_zombie_093": {
+   "model": "undead_artillery",
+   "skin": 8,
+   "path": "portraits/m_undead_artillery_8.webp"
+  },
+  "NM_zombie_094": {
+   "model": "undead_artillery",
+   "skin": 9,
+   "path": "portraits/m_undead_artillery_9.webp"
+  },
+  "NM_zombie_095": {
+   "model": "undead_artillery",
+   "skin": 10,
+   "path": "portraits/m_undead_artillery_10.webp"
+  },
+  "NM_zombie_096": {
+   "model": "undead_artillery",
+   "skin": 11,
+   "path": "portraits/m_undead_artillery_11.webp"
+  },
+  "NM_lizard_002": {
+   "model": "lizard_fighter",
+   "skin": 1,
+   "path": "portraits/m_lizard_fighter_1.webp"
+  },
+  "NM_lizard_003": {
+   "model": "lizard_fighter",
+   "skin": 2,
+   "path": "portraits/m_lizard_fighter_2.webp"
+  },
+  "NM_lizard_004": {
+   "model": "lizard_fighter",
+   "skin": 3,
+   "path": "portraits/m_lizard_fighter_3.webp"
+  },
+  "NM_lizard_006": {
+   "model": "lizard_fighter",
+   "skin": 5,
+   "path": "portraits/m_lizard_fighter_5.webp"
+  },
+  "NM_lizard_007": {
+   "model": "lizard_fighter",
+   "skin": 6,
+   "path": "portraits/m_lizard_fighter_6.webp"
+  },
+  "NM_lizard_010": {
+   "model": "lizard_fighter",
+   "skin": 9,
+   "path": "portraits/m_lizard_fighter_9.webp"
+  },
+  "NM_lizard_011": {
+   "model": "lizard_fighter",
+   "skin": 10,
+   "path": "portraits/m_lizard_fighter_10.webp"
+  },
+  "NM_lizard_012": {
+   "model": "lizard_fighter",
+   "skin": 11,
+   "path": "portraits/m_lizard_fighter_11.webp"
+  },
+  "NM_lizard_013": {
+   "model": "lizard_fighter",
+   "skin": 0,
+   "path": "portraits/m_lizard_fighter_0.webp"
+  },
+  "NM_lizard_014": {
+   "model": "lizard_fighter",
+   "skin": 1,
+   "path": "portraits/m_lizard_fighter_1.webp"
+  },
+  "NM_lizard_015": {
+   "model": "lizard_fighter",
+   "skin": 2,
+   "path": "portraits/m_lizard_fighter_2.webp"
+  },
+  "NM_lizard_016": {
+   "model": "lizard_fighter",
+   "skin": 3,
+   "path": "portraits/m_lizard_fighter_3.webp"
+  },
+  "NM_lizard_017": {
+   "model": "lizard_fighter",
+   "skin": 4,
+   "path": "portraits/m_lizard_fighter_4.webp"
+  },
+  "NM_lizard_018": {
+   "model": "lizard_fighter",
+   "skin": 5,
+   "path": "portraits/m_lizard_fighter_5.webp"
+  },
+  "NM_lizard_019": {
+   "model": "lizard_fighter",
+   "skin": 6,
+   "path": "portraits/m_lizard_fighter_6.webp"
+  },
+  "NM_lizard_020": {
+   "model": "lizard_fighter",
+   "skin": 7,
+   "path": "portraits/m_lizard_fighter_7.webp"
+  },
+  "NM_lizard_021": {
+   "model": "lizard_fighter",
+   "skin": 8,
+   "path": "portraits/m_lizard_fighter_8.webp"
+  },
+  "NM_lizard_022": {
+   "model": "lizard_fighter",
+   "skin": 9,
+   "path": "portraits/m_lizard_fighter_9.webp"
+  },
+  "NM_lizard_023": {
+   "model": "lizard_fighter",
+   "skin": 10,
+   "path": "portraits/m_lizard_fighter_10.webp"
+  },
+  "NM_lizard_024": {
+   "model": "lizard_fighter",
+   "skin": 4,
+   "path": "portraits/m_lizard_fighter_4.webp"
+  },
+  "NM_lizard_025": {
+   "model": "lizard_rogue",
+   "skin": 0,
+   "path": "portraits/m_lizard_rogue_0.webp"
+  },
+  "NM_lizard_026": {
+   "model": "lizard_rogue",
+   "skin": 1,
+   "path": "portraits/m_lizard_rogue_1.webp"
+  },
+  "NM_lizard_027": {
+   "model": "lizard_rogue",
+   "skin": 2,
+   "path": "portraits/m_lizard_rogue_2.webp"
+  },
+  "NM_lizard_028": {
+   "model": "lizard_rogue",
+   "skin": 3,
+   "path": "portraits/m_lizard_rogue_3.webp"
+  },
+  "NM_lizard_030": {
+   "model": "lizard_rogue",
+   "skin": 5,
+   "path": "portraits/m_lizard_rogue_5.webp"
+  },
+  "NM_lizard_031": {
+   "model": "lizard_rogue",
+   "skin": 6,
+   "path": "portraits/m_lizard_rogue_6.webp"
+  },
+  "NM_lizard_032": {
+   "model": "lizard_rogue",
+   "skin": 7,
+   "path": "portraits/m_lizard_rogue_7.webp"
+  },
+  "NM_lizard_034": {
+   "model": "lizard_rogue",
+   "skin": 9,
+   "path": "portraits/m_lizard_rogue_9.webp"
+  },
+  "NM_lizard_035": {
+   "model": "lizard_rogue",
+   "skin": 10,
+   "path": "portraits/m_lizard_rogue_10.webp"
+  },
+  "NM_lizard_037": {
+   "model": "lizard_rogue",
+   "skin": 0,
+   "path": "portraits/m_lizard_rogue_0.webp"
+  },
+  "NM_lizard_038": {
+   "model": "lizard_rogue",
+   "skin": 1,
+   "path": "portraits/m_lizard_rogue_1.webp"
+  },
+  "NM_lizard_039": {
+   "model": "lizard_rogue",
+   "skin": 2,
+   "path": "portraits/m_lizard_rogue_2.webp"
+  },
+  "NM_lizard_040": {
+   "model": "lizard_rogue",
+   "skin": 3,
+   "path": "portraits/m_lizard_rogue_3.webp"
+  },
+  "NM_lizard_041": {
+   "model": "lizard_rogue",
+   "skin": 4,
+   "path": "portraits/m_lizard_rogue_4.webp"
+  },
+  "NM_lizard_042": {
+   "model": "lizard_rogue",
+   "skin": 5,
+   "path": "portraits/m_lizard_rogue_5.webp"
+  },
+  "NM_lizard_043": {
+   "model": "lizard_rogue",
+   "skin": 6,
+   "path": "portraits/m_lizard_rogue_6.webp"
+  },
+  "NM_lizard_044": {
+   "model": "lizard_rogue",
+   "skin": 7,
+   "path": "portraits/m_lizard_rogue_7.webp"
+  },
+  "NM_lizard_045": {
+   "model": "lizard_rogue",
+   "skin": 8,
+   "path": "portraits/m_lizard_rogue_8.webp"
+  },
+  "NM_lizard_046": {
+   "model": "lizard_rogue",
+   "skin": 9,
+   "path": "portraits/m_lizard_rogue_9.webp"
+  },
+  "NM_lizard_047": {
+   "model": "lizard_rogue",
+   "skin": 10,
+   "path": "portraits/m_lizard_rogue_10.webp"
+  },
+  "NM_lizard_049": {
+   "model": "lizard_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_lizard_spellcaster_0.webp"
+  },
+  "NM_lizard_051": {
+   "model": "lizard_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_lizard_spellcaster_2.webp"
+  },
+  "NM_lizard_052": {
+   "model": "lizard_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_lizard_spellcaster_3.webp"
+  },
+  "NM_lizard_053": {
+   "model": "lizard_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_lizard_spellcaster_4.webp"
+  },
+  "NM_lizard_054": {
+   "model": "lizard_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_lizard_spellcaster_5.webp"
+  },
+  "NM_lizard_055": {
+   "model": "lizard_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_lizard_spellcaster_6.webp"
+  },
+  "NM_lizard_056": {
+   "model": "lizard_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_lizard_spellcaster_7.webp"
+  },
+  "NM_lizard_057": {
+   "model": "lizard_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_lizard_spellcaster_8.webp"
+  },
+  "NM_lizard_058": {
+   "model": "lizard_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_lizard_spellcaster_9.webp"
+  },
+  "NM_lizard_059": {
+   "model": "lizard_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_lizard_spellcaster_10.webp"
+  },
+  "NM_lizard_061": {
+   "model": "lizard_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_lizard_spellcaster_0.webp"
+  },
+  "NM_lizard_062": {
+   "model": "lizard_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_lizard_spellcaster_1.webp"
+  },
+  "NM_lizard_063": {
+   "model": "lizard_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_lizard_spellcaster_2.webp"
+  },
+  "NM_lizard_064": {
+   "model": "lizard_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_lizard_spellcaster_3.webp"
+  },
+  "NM_lizard_065": {
+   "model": "lizard_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_lizard_spellcaster_4.webp"
+  },
+  "NM_lizard_066": {
+   "model": "lizard_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_lizard_spellcaster_5.webp"
+  },
+  "NM_lizard_067": {
+   "model": "lizard_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_lizard_spellcaster_11.webp"
+  },
+  "NM_lizard_068": {
+   "model": "lizard_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_lizard_spellcaster_7.webp"
+  },
+  "NM_lizard_070": {
+   "model": "lizard_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_lizard_spellcaster_9.webp"
+  },
+  "NM_lizard_071": {
+   "model": "lizard_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_lizard_spellcaster_10.webp"
+  },
+  "NM_lizard_072": {
+   "model": "lizard_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_lizard_spellcaster_11.webp"
+  },
+  "NM_lizard_074": {
+   "model": "lizard_artillery",
+   "skin": 1,
+   "path": "portraits/m_lizard_artillery_1.webp"
+  },
+  "NM_lizard_075": {
+   "model": "lizard_artillery",
+   "skin": 2,
+   "path": "portraits/m_lizard_artillery_2.webp"
+  },
+  "NM_lizard_076": {
+   "model": "lizard_artillery",
+   "skin": 3,
+   "path": "portraits/m_lizard_artillery_3.webp"
+  },
+  "NM_lizard_077": {
+   "model": "lizard_artillery",
+   "skin": 4,
+   "path": "portraits/m_lizard_artillery_4.webp"
+  },
+  "NM_lizard_078": {
+   "model": "lizard_artillery",
+   "skin": 5,
+   "path": "portraits/m_lizard_artillery_5.webp"
+  },
+  "NM_lizard_081": {
+   "model": "lizard_artillery",
+   "skin": 8,
+   "path": "portraits/m_lizard_artillery_8.webp"
+  },
+  "NM_lizard_082": {
+   "model": "lizard_artillery",
+   "skin": 9,
+   "path": "portraits/m_lizard_artillery_9.webp"
+  },
+  "NM_lizard_083": {
+   "model": "lizard_artillery",
+   "skin": 10,
+   "path": "portraits/m_lizard_artillery_10.webp"
+  },
+  "NM_lizard_084": {
+   "model": "lizard_artillery",
+   "skin": 11,
+   "path": "portraits/m_lizard_artillery_11.webp"
+  },
+  "NM_lizard_085": {
+   "model": "lizard_artillery",
+   "skin": 0,
+   "path": "portraits/m_lizard_artillery_0.webp"
+  },
+  "NM_lizard_086": {
+   "model": "lizard_artillery",
+   "skin": 1,
+   "path": "portraits/m_lizard_artillery_1.webp"
+  },
+  "NM_lizard_087": {
+   "model": "lizard_artillery",
+   "skin": 2,
+   "path": "portraits/m_lizard_artillery_2.webp"
+  },
+  "NM_lizard_088": {
+   "model": "lizard_artillery",
+   "skin": 3,
+   "path": "portraits/m_lizard_artillery_3.webp"
+  },
+  "NM_lizard_089": {
+   "model": "lizard_artillery",
+   "skin": 4,
+   "path": "portraits/m_lizard_artillery_4.webp"
+  },
+  "NM_lizard_090": {
+   "model": "lizard_artillery",
+   "skin": 5,
+   "path": "portraits/m_lizard_artillery_5.webp"
+  },
+  "NM_lizard_091": {
+   "model": "lizard_artillery",
+   "skin": 6,
+   "path": "portraits/m_lizard_artillery_6.webp"
+  },
+  "NM_lizard_092": {
+   "model": "lizard_artillery",
+   "skin": 7,
+   "path": "portraits/m_lizard_artillery_7.webp"
+  },
+  "NM_lizard_093": {
+   "model": "lizard_artillery",
+   "skin": 8,
+   "path": "portraits/m_lizard_artillery_8.webp"
+  },
+  "NM_lizard_094": {
+   "model": "lizard_artillery",
+   "skin": 9,
+   "path": "portraits/m_lizard_artillery_9.webp"
+  },
+  "NM_lizard_095": {
+   "model": "lizard_artillery",
+   "skin": 10,
+   "path": "portraits/m_lizard_artillery_10.webp"
+  },
+  "NM_lizard_096": {
+   "model": "lizard_artillery",
+   "skin": 11,
+   "path": "portraits/m_lizard_artillery_11.webp"
+  },
+  "NM_dwarf_001": {
+   "model": "dwarf_fighter",
+   "skin": 0,
+   "path": "portraits/m_dwarf_fighter_0.webp"
+  },
+  "NM_dwarf_002": {
+   "model": "dwarf_fighter",
+   "skin": 1,
+   "path": "portraits/m_dwarf_fighter_1.webp"
+  },
+  "NM_dwarf_003": {
+   "model": "dwarf_fighter",
+   "skin": 2,
+   "path": "portraits/m_dwarf_fighter_2.webp"
+  },
+  "NM_dwarf_004": {
+   "model": "dwarf_fighter",
+   "skin": 3,
+   "path": "portraits/m_dwarf_fighter_3.webp"
+  },
+  "NM_dwarf_006": {
+   "model": "dwarf_fighter",
+   "skin": 5,
+   "path": "portraits/m_dwarf_fighter_5.webp"
+  },
+  "NM_dwarf_007": {
+   "model": "dwarf_fighter",
+   "skin": 11,
+   "path": "portraits/m_dwarf_fighter_11.webp"
+  },
+  "NM_dwarf_008": {
+   "model": "dwarf_fighter",
+   "skin": 7,
+   "path": "portraits/m_dwarf_fighter_7.webp"
+  },
+  "NM_dwarf_010": {
+   "model": "dwarf_fighter",
+   "skin": 9,
+   "path": "portraits/m_dwarf_fighter_9.webp"
+  },
+  "NM_dwarf_011": {
+   "model": "dwarf_fighter",
+   "skin": 10,
+   "path": "portraits/m_dwarf_fighter_10.webp"
+  },
+  "NM_dwarf_012": {
+   "model": "dwarf_fighter",
+   "skin": 11,
+   "path": "portraits/m_dwarf_fighter_11.webp"
+  },
+  "NM_dwarf_013": {
+   "model": "dwarf_fighter",
+   "skin": 0,
+   "path": "portraits/m_dwarf_fighter_0.webp"
+  },
+  "NM_dwarf_014": {
+   "model": "dwarf_fighter",
+   "skin": 1,
+   "path": "portraits/m_dwarf_fighter_1.webp"
+  },
+  "NM_dwarf_015": {
+   "model": "dwarf_fighter",
+   "skin": 2,
+   "path": "portraits/m_dwarf_fighter_2.webp"
+  },
+  "NM_dwarf_016": {
+   "model": "dwarf_fighter",
+   "skin": 3,
+   "path": "portraits/m_dwarf_fighter_3.webp"
+  },
+  "NM_dwarf_018": {
+   "model": "dwarf_fighter",
+   "skin": 5,
+   "path": "portraits/m_dwarf_fighter_5.webp"
+  },
+  "NM_dwarf_019": {
+   "model": "dwarf_fighter",
+   "skin": 6,
+   "path": "portraits/m_dwarf_fighter_6.webp"
+  },
+  "NM_dwarf_020": {
+   "model": "dwarf_fighter",
+   "skin": 7,
+   "path": "portraits/m_dwarf_fighter_7.webp"
+  },
+  "NM_dwarf_021": {
+   "model": "dwarf_fighter",
+   "skin": 8,
+   "path": "portraits/m_dwarf_fighter_8.webp"
+  },
+  "NM_dwarf_022": {
+   "model": "dwarf_fighter",
+   "skin": 9,
+   "path": "portraits/m_dwarf_fighter_9.webp"
+  },
+  "NM_dwarf_023": {
+   "model": "dwarf_fighter",
+   "skin": 10,
+   "path": "portraits/m_dwarf_fighter_10.webp"
+  },
+  "NM_dwarf_025": {
+   "model": "dwarf_rogue",
+   "skin": 0,
+   "path": "portraits/m_dwarf_rogue_0.webp"
+  },
+  "NM_dwarf_026": {
+   "model": "dwarf_rogue",
+   "skin": 1,
+   "path": "portraits/m_dwarf_rogue_1.webp"
+  },
+  "NM_dwarf_028": {
+   "model": "dwarf_rogue",
+   "skin": 3,
+   "path": "portraits/m_dwarf_rogue_3.webp"
+  },
+  "NM_dwarf_029": {
+   "model": "dwarf_rogue",
+   "skin": 4,
+   "path": "portraits/m_dwarf_rogue_4.webp"
+  },
+  "NM_dwarf_030": {
+   "model": "dwarf_rogue",
+   "skin": 5,
+   "path": "portraits/m_dwarf_rogue_5.webp"
+  },
+  "NM_dwarf_031": {
+   "model": "dwarf_rogue",
+   "skin": 6,
+   "path": "portraits/m_dwarf_rogue_6.webp"
+  },
+  "NM_dwarf_032": {
+   "model": "dwarf_rogue",
+   "skin": 7,
+   "path": "portraits/m_dwarf_rogue_7.webp"
+  },
+  "NM_dwarf_033": {
+   "model": "dwarf_rogue",
+   "skin": 8,
+   "path": "portraits/m_dwarf_rogue_8.webp"
+  },
+  "NM_dwarf_034": {
+   "model": "dwarf_rogue",
+   "skin": 9,
+   "path": "portraits/m_dwarf_rogue_9.webp"
+  },
+  "NM_dwarf_037": {
+   "model": "dwarf_rogue",
+   "skin": 0,
+   "path": "portraits/m_dwarf_rogue_0.webp"
+  },
+  "NM_dwarf_038": {
+   "model": "dwarf_rogue",
+   "skin": 1,
+   "path": "portraits/m_dwarf_rogue_1.webp"
+  },
+  "NM_dwarf_039": {
+   "model": "dwarf_rogue",
+   "skin": 2,
+   "path": "portraits/m_dwarf_rogue_2.webp"
+  },
+  "NM_dwarf_040": {
+   "model": "dwarf_rogue",
+   "skin": 3,
+   "path": "portraits/m_dwarf_rogue_3.webp"
+  },
+  "NM_dwarf_041": {
+   "model": "dwarf_rogue",
+   "skin": 4,
+   "path": "portraits/m_dwarf_rogue_4.webp"
+  },
+  "NM_dwarf_042": {
+   "model": "dwarf_rogue",
+   "skin": 5,
+   "path": "portraits/m_dwarf_rogue_5.webp"
+  },
+  "NM_dwarf_043": {
+   "model": "dwarf_rogue",
+   "skin": 11,
+   "path": "portraits/m_dwarf_rogue_11.webp"
+  },
+  "NM_dwarf_044": {
+   "model": "dwarf_rogue",
+   "skin": 7,
+   "path": "portraits/m_dwarf_rogue_7.webp"
+  },
+  "NM_dwarf_046": {
+   "model": "dwarf_rogue",
+   "skin": 9,
+   "path": "portraits/m_dwarf_rogue_9.webp"
+  },
+  "NM_dwarf_047": {
+   "model": "dwarf_rogue",
+   "skin": 10,
+   "path": "portraits/m_dwarf_rogue_10.webp"
+  },
+  "NM_dwarf_048": {
+   "model": "dwarf_rogue",
+   "skin": 6,
+   "path": "portraits/m_dwarf_rogue_6.webp"
+  },
+  "NM_dwarf_049": {
+   "model": "dwarf_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_dwarf_spellcaster_0.webp"
+  },
+  "NM_dwarf_050": {
+   "model": "dwarf_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_dwarf_spellcaster_1.webp"
+  },
+  "NM_dwarf_052": {
+   "model": "dwarf_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_dwarf_spellcaster_3.webp"
+  },
+  "NM_dwarf_054": {
+   "model": "dwarf_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_dwarf_spellcaster_5.webp"
+  },
+  "NM_dwarf_055": {
+   "model": "dwarf_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_dwarf_spellcaster_6.webp"
+  },
+  "NM_dwarf_056": {
+   "model": "dwarf_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_dwarf_spellcaster_7.webp"
+  },
+  "NM_dwarf_057": {
+   "model": "dwarf_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_dwarf_spellcaster_8.webp"
+  },
+  "NM_dwarf_058": {
+   "model": "dwarf_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_dwarf_spellcaster_9.webp"
+  },
+  "NM_dwarf_061": {
+   "model": "dwarf_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_dwarf_spellcaster_0.webp"
+  },
+  "NM_dwarf_062": {
+   "model": "dwarf_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_dwarf_spellcaster_1.webp"
+  },
+  "NM_dwarf_063": {
+   "model": "dwarf_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_dwarf_spellcaster_2.webp"
+  },
+  "NM_dwarf_064": {
+   "model": "dwarf_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_dwarf_spellcaster_3.webp"
+  },
+  "NM_dwarf_065": {
+   "model": "dwarf_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_dwarf_spellcaster_4.webp"
+  },
+  "NM_dwarf_066": {
+   "model": "dwarf_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_dwarf_spellcaster_5.webp"
+  },
+  "NM_dwarf_067": {
+   "model": "dwarf_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_dwarf_spellcaster_11.webp"
+  },
+  "NM_dwarf_068": {
+   "model": "dwarf_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_dwarf_spellcaster_7.webp"
+  },
+  "NM_dwarf_069": {
+   "model": "dwarf_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_dwarf_spellcaster_8.webp"
+  },
+  "NM_dwarf_070": {
+   "model": "dwarf_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_dwarf_spellcaster_9.webp"
+  },
+  "NM_dwarf_071": {
+   "model": "dwarf_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_dwarf_spellcaster_10.webp"
+  },
+  "NM_dwarf_072": {
+   "model": "dwarf_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_dwarf_spellcaster_6.webp"
+  },
+  "NM_dwarf_074": {
+   "model": "dwarf_artillery",
+   "skin": 1,
+   "path": "portraits/m_dwarf_artillery_1.webp"
+  },
+  "NM_dwarf_075": {
+   "model": "dwarf_artillery",
+   "skin": 2,
+   "path": "portraits/m_dwarf_artillery_2.webp"
+  },
+  "NM_dwarf_076": {
+   "model": "dwarf_artillery",
+   "skin": 3,
+   "path": "portraits/m_dwarf_artillery_3.webp"
+  },
+  "NM_dwarf_077": {
+   "model": "dwarf_artillery",
+   "skin": 4,
+   "path": "portraits/m_dwarf_artillery_4.webp"
+  },
+  "NM_dwarf_078": {
+   "model": "dwarf_artillery",
+   "skin": 5,
+   "path": "portraits/m_dwarf_artillery_5.webp"
+  },
+  "NM_dwarf_080": {
+   "model": "dwarf_artillery",
+   "skin": 7,
+   "path": "portraits/m_dwarf_artillery_7.webp"
+  },
+  "NM_dwarf_081": {
+   "model": "dwarf_artillery",
+   "skin": 8,
+   "path": "portraits/m_dwarf_artillery_8.webp"
+  },
+  "NM_dwarf_082": {
+   "model": "dwarf_artillery",
+   "skin": 9,
+   "path": "portraits/m_dwarf_artillery_9.webp"
+  },
+  "NM_dwarf_083": {
+   "model": "dwarf_artillery",
+   "skin": 10,
+   "path": "portraits/m_dwarf_artillery_10.webp"
+  },
+  "NM_dwarf_084": {
+   "model": "dwarf_artillery",
+   "skin": 11,
+   "path": "portraits/m_dwarf_artillery_11.webp"
+  },
+  "NM_dwarf_085": {
+   "model": "dwarf_artillery",
+   "skin": 0,
+   "path": "portraits/m_dwarf_artillery_0.webp"
+  },
+  "NM_dwarf_086": {
+   "model": "dwarf_artillery",
+   "skin": 1,
+   "path": "portraits/m_dwarf_artillery_1.webp"
+  },
+  "NM_dwarf_087": {
+   "model": "dwarf_artillery",
+   "skin": 2,
+   "path": "portraits/m_dwarf_artillery_2.webp"
+  },
+  "NM_dwarf_088": {
+   "model": "dwarf_artillery",
+   "skin": 3,
+   "path": "portraits/m_dwarf_artillery_3.webp"
+  },
+  "NM_dwarf_089": {
+   "model": "dwarf_artillery",
+   "skin": 4,
+   "path": "portraits/m_dwarf_artillery_4.webp"
+  },
+  "NM_dwarf_090": {
+   "model": "dwarf_artillery",
+   "skin": 5,
+   "path": "portraits/m_dwarf_artillery_5.webp"
+  },
+  "NM_dwarf_091": {
+   "model": "dwarf_artillery",
+   "skin": 6,
+   "path": "portraits/m_dwarf_artillery_6.webp"
+  },
+  "NM_dwarf_092": {
+   "model": "dwarf_artillery",
+   "skin": 7,
+   "path": "portraits/m_dwarf_artillery_7.webp"
+  },
+  "NM_dwarf_093": {
+   "model": "dwarf_artillery",
+   "skin": 8,
+   "path": "portraits/m_dwarf_artillery_8.webp"
+  },
+  "NM_dwarf_094": {
+   "model": "dwarf_artillery",
+   "skin": 9,
+   "path": "portraits/m_dwarf_artillery_9.webp"
+  },
+  "NM_dwarf_095": {
+   "model": "dwarf_artillery",
+   "skin": 10,
+   "path": "portraits/m_dwarf_artillery_10.webp"
+  },
+  "NM_dwarf_096": {
+   "model": "dwarf_artillery",
+   "skin": 11,
+   "path": "portraits/m_dwarf_artillery_11.webp"
+  },
+  "NM_minotaur_001": {
+   "model": "minotaur_fighter",
+   "skin": 0,
+   "path": "portraits/m_minotaur_fighter_0.webp"
+  },
+  "NM_minotaur_002": {
+   "model": "minotaur_fighter",
+   "skin": 11,
+   "path": "portraits/m_minotaur_fighter_11.webp"
+  },
+  "NM_minotaur_003": {
+   "model": "minotaur_fighter",
+   "skin": 2,
+   "path": "portraits/m_minotaur_fighter_2.webp"
+  },
+  "NM_minotaur_004": {
+   "model": "minotaur_fighter",
+   "skin": 3,
+   "path": "portraits/m_minotaur_fighter_3.webp"
+  },
+  "NM_minotaur_005": {
+   "model": "minotaur_fighter",
+   "skin": 4,
+   "path": "portraits/m_minotaur_fighter_4.webp"
+  },
+  "NM_minotaur_006": {
+   "model": "minotaur_fighter",
+   "skin": 5,
+   "path": "portraits/m_minotaur_fighter_5.webp"
+  },
+  "NM_minotaur_009": {
+   "model": "minotaur_fighter",
+   "skin": 8,
+   "path": "portraits/m_minotaur_fighter_8.webp"
+  },
+  "NM_minotaur_010": {
+   "model": "minotaur_fighter",
+   "skin": 9,
+   "path": "portraits/m_minotaur_fighter_9.webp"
+  },
+  "NM_minotaur_011": {
+   "model": "minotaur_fighter",
+   "skin": 10,
+   "path": "portraits/m_minotaur_fighter_10.webp"
+  },
+  "NM_minotaur_012": {
+   "model": "minotaur_fighter",
+   "skin": 1,
+   "path": "portraits/m_minotaur_fighter_1.webp"
+  },
+  "NM_minotaur_014": {
+   "model": "minotaur_fighter",
+   "skin": 1,
+   "path": "portraits/m_minotaur_fighter_1.webp"
+  },
+  "NM_minotaur_015": {
+   "model": "minotaur_fighter",
+   "skin": 2,
+   "path": "portraits/m_minotaur_fighter_2.webp"
+  },
+  "NM_minotaur_016": {
+   "model": "minotaur_fighter",
+   "skin": 3,
+   "path": "portraits/m_minotaur_fighter_3.webp"
+  },
+  "NM_minotaur_018": {
+   "model": "minotaur_fighter",
+   "skin": 5,
+   "path": "portraits/m_minotaur_fighter_5.webp"
+  },
+  "NM_minotaur_019": {
+   "model": "minotaur_fighter",
+   "skin": 6,
+   "path": "portraits/m_minotaur_fighter_6.webp"
+  },
+  "NM_minotaur_020": {
+   "model": "minotaur_fighter",
+   "skin": 7,
+   "path": "portraits/m_minotaur_fighter_7.webp"
+  },
+  "NM_minotaur_021": {
+   "model": "minotaur_fighter",
+   "skin": 8,
+   "path": "portraits/m_minotaur_fighter_8.webp"
+  },
+  "NM_minotaur_022": {
+   "model": "minotaur_fighter",
+   "skin": 9,
+   "path": "portraits/m_minotaur_fighter_9.webp"
+  },
+  "NM_minotaur_023": {
+   "model": "minotaur_fighter",
+   "skin": 10,
+   "path": "portraits/m_minotaur_fighter_10.webp"
+  },
+  "NM_minotaur_024": {
+   "model": "minotaur_fighter",
+   "skin": 11,
+   "path": "portraits/m_minotaur_fighter_11.webp"
+  },
+  "NM_minotaur_025": {
+   "model": "minotaur_rogue",
+   "skin": 0,
+   "path": "portraits/m_minotaur_rogue_0.webp"
+  },
+  "NM_minotaur_026": {
+   "model": "minotaur_rogue",
+   "skin": 1,
+   "path": "portraits/m_minotaur_rogue_1.webp"
+  },
+  "NM_minotaur_027": {
+   "model": "minotaur_rogue",
+   "skin": 2,
+   "path": "portraits/m_minotaur_rogue_2.webp"
+  },
+  "NM_minotaur_028": {
+   "model": "minotaur_rogue",
+   "skin": 3,
+   "path": "portraits/m_minotaur_rogue_3.webp"
+  },
+  "NM_minotaur_029": {
+   "model": "minotaur_rogue",
+   "skin": 4,
+   "path": "portraits/m_minotaur_rogue_4.webp"
+  },
+  "NM_minotaur_030": {
+   "model": "minotaur_rogue",
+   "skin": 5,
+   "path": "portraits/m_minotaur_rogue_5.webp"
+  },
+  "NM_minotaur_031": {
+   "model": "minotaur_rogue",
+   "skin": 11,
+   "path": "portraits/m_minotaur_rogue_11.webp"
+  },
+  "NM_minotaur_032": {
+   "model": "minotaur_rogue",
+   "skin": 7,
+   "path": "portraits/m_minotaur_rogue_7.webp"
+  },
+  "NM_minotaur_034": {
+   "model": "minotaur_rogue",
+   "skin": 9,
+   "path": "portraits/m_minotaur_rogue_9.webp"
+  },
+  "NM_minotaur_035": {
+   "model": "minotaur_rogue",
+   "skin": 10,
+   "path": "portraits/m_minotaur_rogue_10.webp"
+  },
+  "NM_minotaur_036": {
+   "model": "minotaur_rogue",
+   "skin": 6,
+   "path": "portraits/m_minotaur_rogue_6.webp"
+  },
+  "NM_minotaur_037": {
+   "model": "minotaur_rogue",
+   "skin": 0,
+   "path": "portraits/m_minotaur_rogue_0.webp"
+  },
+  "NM_minotaur_039": {
+   "model": "minotaur_rogue",
+   "skin": 2,
+   "path": "portraits/m_minotaur_rogue_2.webp"
+  },
+  "NM_minotaur_040": {
+   "model": "minotaur_rogue",
+   "skin": 3,
+   "path": "portraits/m_minotaur_rogue_3.webp"
+  },
+  "NM_minotaur_041": {
+   "model": "minotaur_rogue",
+   "skin": 4,
+   "path": "portraits/m_minotaur_rogue_4.webp"
+  },
+  "NM_minotaur_042": {
+   "model": "minotaur_rogue",
+   "skin": 5,
+   "path": "portraits/m_minotaur_rogue_5.webp"
+  },
+  "NM_minotaur_043": {
+   "model": "minotaur_rogue",
+   "skin": 6,
+   "path": "portraits/m_minotaur_rogue_6.webp"
+  },
+  "NM_minotaur_044": {
+   "model": "minotaur_rogue",
+   "skin": 7,
+   "path": "portraits/m_minotaur_rogue_7.webp"
+  },
+  "NM_minotaur_046": {
+   "model": "minotaur_rogue",
+   "skin": 9,
+   "path": "portraits/m_minotaur_rogue_9.webp"
+  },
+  "NM_minotaur_047": {
+   "model": "minotaur_rogue",
+   "skin": 10,
+   "path": "portraits/m_minotaur_rogue_10.webp"
+  },
+  "NM_minotaur_049": {
+   "model": "minotaur_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_minotaur_spellcaster_0.webp"
+  },
+  "NM_minotaur_050": {
+   "model": "minotaur_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_minotaur_spellcaster_1.webp"
+  },
+  "NM_minotaur_051": {
+   "model": "minotaur_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_minotaur_spellcaster_2.webp"
+  },
+  "NM_minotaur_052": {
+   "model": "minotaur_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_minotaur_spellcaster_3.webp"
+  },
+  "NM_minotaur_054": {
+   "model": "minotaur_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_minotaur_spellcaster_5.webp"
+  },
+  "NM_minotaur_055": {
+   "model": "minotaur_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_minotaur_spellcaster_6.webp"
+  },
+  "NM_minotaur_056": {
+   "model": "minotaur_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_minotaur_spellcaster_7.webp"
+  },
+  "NM_minotaur_057": {
+   "model": "minotaur_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_minotaur_spellcaster_8.webp"
+  },
+  "NM_minotaur_058": {
+   "model": "minotaur_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_minotaur_spellcaster_9.webp"
+  },
+  "NM_minotaur_059": {
+   "model": "minotaur_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_minotaur_spellcaster_10.webp"
+  },
+  "NM_minotaur_061": {
+   "model": "minotaur_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_minotaur_spellcaster_0.webp"
+  },
+  "NM_minotaur_062": {
+   "model": "minotaur_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_minotaur_spellcaster_1.webp"
+  },
+  "NM_minotaur_063": {
+   "model": "minotaur_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_minotaur_spellcaster_2.webp"
+  },
+  "NM_minotaur_064": {
+   "model": "minotaur_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_minotaur_spellcaster_3.webp"
+  },
+  "NM_minotaur_065": {
+   "model": "minotaur_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_minotaur_spellcaster_4.webp"
+  },
+  "NM_minotaur_066": {
+   "model": "minotaur_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_minotaur_spellcaster_5.webp"
+  },
+  "NM_minotaur_067": {
+   "model": "minotaur_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_minotaur_spellcaster_6.webp"
+  },
+  "NM_minotaur_068": {
+   "model": "minotaur_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_minotaur_spellcaster_7.webp"
+  },
+  "NM_minotaur_070": {
+   "model": "minotaur_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_minotaur_spellcaster_9.webp"
+  },
+  "NM_minotaur_072": {
+   "model": "minotaur_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_minotaur_spellcaster_11.webp"
+  },
+  "NM_minotaur_074": {
+   "model": "minotaur_artillery",
+   "skin": 1,
+   "path": "portraits/m_minotaur_artillery_1.webp"
+  },
+  "NM_minotaur_075": {
+   "model": "minotaur_artillery",
+   "skin": 2,
+   "path": "portraits/m_minotaur_artillery_2.webp"
+  },
+  "NM_minotaur_076": {
+   "model": "minotaur_artillery",
+   "skin": 3,
+   "path": "portraits/m_minotaur_artillery_3.webp"
+  },
+  "NM_minotaur_077": {
+   "model": "minotaur_artillery",
+   "skin": 4,
+   "path": "portraits/m_minotaur_artillery_4.webp"
+  },
+  "NM_minotaur_078": {
+   "model": "minotaur_artillery",
+   "skin": 5,
+   "path": "portraits/m_minotaur_artillery_5.webp"
+  },
+  "NM_minotaur_080": {
+   "model": "minotaur_artillery",
+   "skin": 7,
+   "path": "portraits/m_minotaur_artillery_7.webp"
+  },
+  "NM_minotaur_081": {
+   "model": "minotaur_artillery",
+   "skin": 8,
+   "path": "portraits/m_minotaur_artillery_8.webp"
+  },
+  "NM_minotaur_082": {
+   "model": "minotaur_artillery",
+   "skin": 9,
+   "path": "portraits/m_minotaur_artillery_9.webp"
+  },
+  "NM_minotaur_083": {
+   "model": "minotaur_artillery",
+   "skin": 10,
+   "path": "portraits/m_minotaur_artillery_10.webp"
+  },
+  "NM_minotaur_084": {
+   "model": "minotaur_artillery",
+   "skin": 11,
+   "path": "portraits/m_minotaur_artillery_11.webp"
+  },
+  "NM_minotaur_085": {
+   "model": "minotaur_artillery",
+   "skin": 0,
+   "path": "portraits/m_minotaur_artillery_0.webp"
+  },
+  "NM_minotaur_086": {
+   "model": "minotaur_artillery",
+   "skin": 1,
+   "path": "portraits/m_minotaur_artillery_1.webp"
+  },
+  "NM_minotaur_087": {
+   "model": "minotaur_artillery",
+   "skin": 2,
+   "path": "portraits/m_minotaur_artillery_2.webp"
+  },
+  "NM_minotaur_088": {
+   "model": "minotaur_artillery",
+   "skin": 3,
+   "path": "portraits/m_minotaur_artillery_3.webp"
+  },
+  "NM_minotaur_089": {
+   "model": "minotaur_artillery",
+   "skin": 4,
+   "path": "portraits/m_minotaur_artillery_4.webp"
+  },
+  "NM_minotaur_090": {
+   "model": "minotaur_artillery",
+   "skin": 5,
+   "path": "portraits/m_minotaur_artillery_5.webp"
+  },
+  "NM_minotaur_091": {
+   "model": "minotaur_artillery",
+   "skin": 6,
+   "path": "portraits/m_minotaur_artillery_6.webp"
+  },
+  "NM_minotaur_092": {
+   "model": "minotaur_artillery",
+   "skin": 7,
+   "path": "portraits/m_minotaur_artillery_7.webp"
+  },
+  "NM_minotaur_093": {
+   "model": "minotaur_artillery",
+   "skin": 8,
+   "path": "portraits/m_minotaur_artillery_8.webp"
+  },
+  "NM_minotaur_094": {
+   "model": "minotaur_artillery",
+   "skin": 9,
+   "path": "portraits/m_minotaur_artillery_9.webp"
+  },
+  "NM_minotaur_095": {
+   "model": "minotaur_artillery",
+   "skin": 10,
+   "path": "portraits/m_minotaur_artillery_10.webp"
+  },
+  "NM_minotaur_096": {
+   "model": "minotaur_artillery",
+   "skin": 11,
+   "path": "portraits/m_minotaur_artillery_11.webp"
+  },
+  "NM_werewolf_001": {
+   "model": "werewolf_fighter",
+   "skin": 0,
+   "path": "portraits/m_werewolf_fighter_0.webp"
+  },
+  "NM_werewolf_002": {
+   "model": "werewolf_fighter",
+   "skin": 1,
+   "path": "portraits/m_werewolf_fighter_1.webp"
+  },
+  "NM_werewolf_003": {
+   "model": "werewolf_fighter",
+   "skin": 2,
+   "path": "portraits/m_werewolf_fighter_2.webp"
+  },
+  "NM_werewolf_004": {
+   "model": "werewolf_fighter",
+   "skin": 11,
+   "path": "portraits/m_werewolf_fighter_11.webp"
+  },
+  "NM_werewolf_005": {
+   "model": "werewolf_fighter",
+   "skin": 4,
+   "path": "portraits/m_werewolf_fighter_4.webp"
+  },
+  "NM_werewolf_006": {
+   "model": "werewolf_fighter",
+   "skin": 5,
+   "path": "portraits/m_werewolf_fighter_5.webp"
+  },
+  "NM_werewolf_008": {
+   "model": "werewolf_fighter",
+   "skin": 7,
+   "path": "portraits/m_werewolf_fighter_7.webp"
+  },
+  "NM_werewolf_010": {
+   "model": "werewolf_fighter",
+   "skin": 9,
+   "path": "portraits/m_werewolf_fighter_9.webp"
+  },
+  "NM_werewolf_011": {
+   "model": "werewolf_fighter",
+   "skin": 10,
+   "path": "portraits/m_werewolf_fighter_10.webp"
+  },
+  "NM_werewolf_013": {
+   "model": "werewolf_fighter",
+   "skin": 0,
+   "path": "portraits/m_werewolf_fighter_0.webp"
+  },
+  "NM_werewolf_014": {
+   "model": "werewolf_fighter",
+   "skin": 1,
+   "path": "portraits/m_werewolf_fighter_1.webp"
+  },
+  "NM_werewolf_015": {
+   "model": "werewolf_fighter",
+   "skin": 2,
+   "path": "portraits/m_werewolf_fighter_2.webp"
+  },
+  "NM_werewolf_016": {
+   "model": "werewolf_fighter",
+   "skin": 3,
+   "path": "portraits/m_werewolf_fighter_3.webp"
+  },
+  "NM_werewolf_017": {
+   "model": "werewolf_fighter",
+   "skin": 4,
+   "path": "portraits/m_werewolf_fighter_4.webp"
+  },
+  "NM_werewolf_018": {
+   "model": "werewolf_fighter",
+   "skin": 5,
+   "path": "portraits/m_werewolf_fighter_5.webp"
+  },
+  "NM_werewolf_019": {
+   "model": "werewolf_fighter",
+   "skin": 6,
+   "path": "portraits/m_werewolf_fighter_6.webp"
+  },
+  "NM_werewolf_020": {
+   "model": "werewolf_fighter",
+   "skin": 7,
+   "path": "portraits/m_werewolf_fighter_7.webp"
+  },
+  "NM_werewolf_021": {
+   "model": "werewolf_fighter",
+   "skin": 8,
+   "path": "portraits/m_werewolf_fighter_8.webp"
+  },
+  "NM_werewolf_022": {
+   "model": "werewolf_fighter",
+   "skin": 9,
+   "path": "portraits/m_werewolf_fighter_9.webp"
+  },
+  "NM_werewolf_023": {
+   "model": "werewolf_fighter",
+   "skin": 10,
+   "path": "portraits/m_werewolf_fighter_10.webp"
+  },
+  "NM_werewolf_025": {
+   "model": "werewolf_rogue",
+   "skin": 0,
+   "path": "portraits/m_werewolf_rogue_0.webp"
+  },
+  "NM_werewolf_027": {
+   "model": "werewolf_rogue",
+   "skin": 2,
+   "path": "portraits/m_werewolf_rogue_2.webp"
+  },
+  "NM_werewolf_028": {
+   "model": "werewolf_rogue",
+   "skin": 3,
+   "path": "portraits/m_werewolf_rogue_3.webp"
+  },
+  "NM_werewolf_030": {
+   "model": "werewolf_rogue",
+   "skin": 5,
+   "path": "portraits/m_werewolf_rogue_5.webp"
+  },
+  "NM_werewolf_031": {
+   "model": "werewolf_rogue",
+   "skin": 6,
+   "path": "portraits/m_werewolf_rogue_6.webp"
+  },
+  "NM_werewolf_032": {
+   "model": "werewolf_rogue",
+   "skin": 7,
+   "path": "portraits/m_werewolf_rogue_7.webp"
+  },
+  "NM_werewolf_033": {
+   "model": "werewolf_rogue",
+   "skin": 8,
+   "path": "portraits/m_werewolf_rogue_8.webp"
+  },
+  "NM_werewolf_034": {
+   "model": "werewolf_rogue",
+   "skin": 9,
+   "path": "portraits/m_werewolf_rogue_9.webp"
+  },
+  "NM_werewolf_035": {
+   "model": "werewolf_rogue",
+   "skin": 10,
+   "path": "portraits/m_werewolf_rogue_10.webp"
+  },
+  "NM_werewolf_036": {
+   "model": "werewolf_rogue",
+   "skin": 5,
+   "path": "portraits/m_werewolf_rogue_5.webp"
+  },
+  "NM_werewolf_037": {
+   "model": "werewolf_rogue",
+   "skin": 0,
+   "path": "portraits/m_werewolf_rogue_0.webp"
+  },
+  "NM_werewolf_038": {
+   "model": "werewolf_rogue",
+   "skin": 1,
+   "path": "portraits/m_werewolf_rogue_1.webp"
+  },
+  "NM_werewolf_040": {
+   "model": "werewolf_rogue",
+   "skin": 3,
+   "path": "portraits/m_werewolf_rogue_3.webp"
+  },
+  "NM_werewolf_041": {
+   "model": "werewolf_rogue",
+   "skin": 4,
+   "path": "portraits/m_werewolf_rogue_4.webp"
+  },
+  "NM_werewolf_042": {
+   "model": "werewolf_rogue",
+   "skin": 11,
+   "path": "portraits/m_werewolf_rogue_11.webp"
+  },
+  "NM_werewolf_043": {
+   "model": "werewolf_rogue",
+   "skin": 6,
+   "path": "portraits/m_werewolf_rogue_6.webp"
+  },
+  "NM_werewolf_044": {
+   "model": "werewolf_rogue",
+   "skin": 7,
+   "path": "portraits/m_werewolf_rogue_7.webp"
+  },
+  "NM_werewolf_046": {
+   "model": "werewolf_rogue",
+   "skin": 9,
+   "path": "portraits/m_werewolf_rogue_9.webp"
+  },
+  "NM_werewolf_047": {
+   "model": "werewolf_rogue",
+   "skin": 10,
+   "path": "portraits/m_werewolf_rogue_10.webp"
+  },
+  "NM_werewolf_048": {
+   "model": "werewolf_rogue",
+   "skin": 11,
+   "path": "portraits/m_werewolf_rogue_11.webp"
+  },
+  "NM_werewolf_049": {
+   "model": "werewolf_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_werewolf_spellcaster_0.webp"
+  },
+  "NM_werewolf_050": {
+   "model": "werewolf_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_werewolf_spellcaster_1.webp"
+  },
+  "NM_werewolf_051": {
+   "model": "werewolf_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_werewolf_spellcaster_2.webp"
+  },
+  "NM_werewolf_053": {
+   "model": "werewolf_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_werewolf_spellcaster_4.webp"
+  },
+  "NM_werewolf_054": {
+   "model": "werewolf_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_werewolf_spellcaster_5.webp"
+  },
+  "NM_werewolf_055": {
+   "model": "werewolf_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_werewolf_spellcaster_6.webp"
+  },
+  "NM_werewolf_056": {
+   "model": "werewolf_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_werewolf_spellcaster_7.webp"
+  },
+  "NM_werewolf_057": {
+   "model": "werewolf_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_werewolf_spellcaster_8.webp"
+  },
+  "NM_werewolf_058": {
+   "model": "werewolf_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_werewolf_spellcaster_11.webp"
+  },
+  "NM_werewolf_059": {
+   "model": "werewolf_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_werewolf_spellcaster_10.webp"
+  },
+  "NM_werewolf_060": {
+   "model": "werewolf_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_werewolf_spellcaster_9.webp"
+  },
+  "NM_werewolf_062": {
+   "model": "werewolf_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_werewolf_spellcaster_1.webp"
+  },
+  "NM_werewolf_063": {
+   "model": "werewolf_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_werewolf_spellcaster_2.webp"
+  },
+  "NM_werewolf_064": {
+   "model": "werewolf_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_werewolf_spellcaster_3.webp"
+  },
+  "NM_werewolf_066": {
+   "model": "werewolf_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_werewolf_spellcaster_5.webp"
+  },
+  "NM_werewolf_067": {
+   "model": "werewolf_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_werewolf_spellcaster_6.webp"
+  },
+  "NM_werewolf_068": {
+   "model": "werewolf_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_werewolf_spellcaster_7.webp"
+  },
+  "NM_werewolf_069": {
+   "model": "werewolf_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_werewolf_spellcaster_8.webp"
+  },
+  "NM_werewolf_070": {
+   "model": "werewolf_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_werewolf_spellcaster_9.webp"
+  },
+  "NM_werewolf_071": {
+   "model": "werewolf_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_werewolf_spellcaster_10.webp"
+  },
+  "NM_werewolf_074": {
+   "model": "werewolf_artillery",
+   "skin": 1,
+   "path": "portraits/m_werewolf_artillery_1.webp"
+  },
+  "NM_werewolf_075": {
+   "model": "werewolf_artillery",
+   "skin": 2,
+   "path": "portraits/m_werewolf_artillery_2.webp"
+  },
+  "NM_werewolf_076": {
+   "model": "werewolf_artillery",
+   "skin": 3,
+   "path": "portraits/m_werewolf_artillery_3.webp"
+  },
+  "NM_werewolf_077": {
+   "model": "werewolf_artillery",
+   "skin": 4,
+   "path": "portraits/m_werewolf_artillery_4.webp"
+  },
+  "NM_werewolf_078": {
+   "model": "werewolf_artillery",
+   "skin": 5,
+   "path": "portraits/m_werewolf_artillery_5.webp"
+  },
+  "NM_werewolf_080": {
+   "model": "werewolf_artillery",
+   "skin": 7,
+   "path": "portraits/m_werewolf_artillery_7.webp"
+  },
+  "NM_werewolf_081": {
+   "model": "werewolf_artillery",
+   "skin": 8,
+   "path": "portraits/m_werewolf_artillery_8.webp"
+  },
+  "NM_werewolf_082": {
+   "model": "werewolf_artillery",
+   "skin": 9,
+   "path": "portraits/m_werewolf_artillery_9.webp"
+  },
+  "NM_werewolf_083": {
+   "model": "werewolf_artillery",
+   "skin": 10,
+   "path": "portraits/m_werewolf_artillery_10.webp"
+  },
+  "NM_werewolf_084": {
+   "model": "werewolf_artillery",
+   "skin": 11,
+   "path": "portraits/m_werewolf_artillery_11.webp"
+  },
+  "NM_werewolf_085": {
+   "model": "werewolf_artillery",
+   "skin": 0,
+   "path": "portraits/m_werewolf_artillery_0.webp"
+  },
+  "NM_werewolf_086": {
+   "model": "werewolf_artillery",
+   "skin": 1,
+   "path": "portraits/m_werewolf_artillery_1.webp"
+  },
+  "NM_werewolf_087": {
+   "model": "werewolf_artillery",
+   "skin": 2,
+   "path": "portraits/m_werewolf_artillery_2.webp"
+  },
+  "NM_werewolf_088": {
+   "model": "werewolf_artillery",
+   "skin": 3,
+   "path": "portraits/m_werewolf_artillery_3.webp"
+  },
+  "NM_werewolf_089": {
+   "model": "werewolf_artillery",
+   "skin": 4,
+   "path": "portraits/m_werewolf_artillery_4.webp"
+  },
+  "NM_werewolf_090": {
+   "model": "werewolf_artillery",
+   "skin": 5,
+   "path": "portraits/m_werewolf_artillery_5.webp"
+  },
+  "NM_werewolf_091": {
+   "model": "werewolf_artillery",
+   "skin": 6,
+   "path": "portraits/m_werewolf_artillery_6.webp"
+  },
+  "NM_werewolf_092": {
+   "model": "werewolf_artillery",
+   "skin": 7,
+   "path": "portraits/m_werewolf_artillery_7.webp"
+  },
+  "NM_werewolf_093": {
+   "model": "werewolf_artillery",
+   "skin": 8,
+   "path": "portraits/m_werewolf_artillery_8.webp"
+  },
+  "NM_werewolf_094": {
+   "model": "werewolf_artillery",
+   "skin": 9,
+   "path": "portraits/m_werewolf_artillery_9.webp"
+  },
+  "NM_werewolf_095": {
+   "model": "werewolf_artillery",
+   "skin": 10,
+   "path": "portraits/m_werewolf_artillery_10.webp"
+  },
+  "NM_werewolf_096": {
+   "model": "werewolf_artillery",
+   "skin": 11,
+   "path": "portraits/m_werewolf_artillery_11.webp"
+  },
+  "NM_golem_001": {
+   "model": "golem_fighter",
+   "skin": 0,
+   "path": "portraits/m_golem_fighter_0.webp"
+  },
+  "NM_golem_002": {
+   "model": "golem_fighter",
+   "skin": 11,
+   "path": "portraits/m_golem_fighter_11.webp"
+  },
+  "NM_golem_003": {
+   "model": "golem_fighter",
+   "skin": 2,
+   "path": "portraits/m_golem_fighter_2.webp"
+  },
+  "NM_golem_004": {
+   "model": "golem_fighter",
+   "skin": 3,
+   "path": "portraits/m_golem_fighter_3.webp"
+  },
+  "NM_golem_006": {
+   "model": "golem_fighter",
+   "skin": 5,
+   "path": "portraits/m_golem_fighter_5.webp"
+  },
+  "NM_golem_007": {
+   "model": "golem_fighter",
+   "skin": 6,
+   "path": "portraits/m_golem_fighter_6.webp"
+  },
+  "NM_golem_008": {
+   "model": "golem_fighter",
+   "skin": 7,
+   "path": "portraits/m_golem_fighter_7.webp"
+  },
+  "NM_golem_009": {
+   "model": "golem_fighter",
+   "skin": 8,
+   "path": "portraits/m_golem_fighter_8.webp"
+  },
+  "NM_golem_010": {
+   "model": "golem_fighter",
+   "skin": 9,
+   "path": "portraits/m_golem_fighter_9.webp"
+  },
+  "NM_golem_011": {
+   "model": "golem_fighter",
+   "skin": 10,
+   "path": "portraits/m_golem_fighter_10.webp"
+  },
+  "NM_golem_012": {
+   "model": "golem_fighter",
+   "skin": 11,
+   "path": "portraits/m_golem_fighter_11.webp"
+  },
+  "NM_golem_014": {
+   "model": "golem_fighter",
+   "skin": 1,
+   "path": "portraits/m_golem_fighter_1.webp"
+  },
+  "NM_golem_015": {
+   "model": "golem_fighter",
+   "skin": 2,
+   "path": "portraits/m_golem_fighter_2.webp"
+  },
+  "NM_golem_016": {
+   "model": "golem_fighter",
+   "skin": 3,
+   "path": "portraits/m_golem_fighter_3.webp"
+  },
+  "NM_golem_017": {
+   "model": "golem_fighter",
+   "skin": 4,
+   "path": "portraits/m_golem_fighter_4.webp"
+  },
+  "NM_golem_018": {
+   "model": "golem_fighter",
+   "skin": 5,
+   "path": "portraits/m_golem_fighter_5.webp"
+  },
+  "NM_golem_020": {
+   "model": "golem_fighter",
+   "skin": 7,
+   "path": "portraits/m_golem_fighter_7.webp"
+  },
+  "NM_golem_021": {
+   "model": "golem_fighter",
+   "skin": 8,
+   "path": "portraits/m_golem_fighter_8.webp"
+  },
+  "NM_golem_022": {
+   "model": "golem_fighter",
+   "skin": 9,
+   "path": "portraits/m_golem_fighter_9.webp"
+  },
+  "NM_golem_023": {
+   "model": "golem_fighter",
+   "skin": 10,
+   "path": "portraits/m_golem_fighter_10.webp"
+  },
+  "NM_golem_026": {
+   "model": "golem_rogue",
+   "skin": 1,
+   "path": "portraits/m_golem_rogue_1.webp"
+  },
+  "NM_golem_027": {
+   "model": "golem_rogue",
+   "skin": 2,
+   "path": "portraits/m_golem_rogue_2.webp"
+  },
+  "NM_golem_028": {
+   "model": "golem_rogue",
+   "skin": 3,
+   "path": "portraits/m_golem_rogue_3.webp"
+  },
+  "NM_golem_029": {
+   "model": "golem_rogue",
+   "skin": 4,
+   "path": "portraits/m_golem_rogue_4.webp"
+  },
+  "NM_golem_030": {
+   "model": "golem_rogue",
+   "skin": 5,
+   "path": "portraits/m_golem_rogue_5.webp"
+  },
+  "NM_golem_031": {
+   "model": "golem_rogue",
+   "skin": 6,
+   "path": "portraits/m_golem_rogue_6.webp"
+  },
+  "NM_golem_032": {
+   "model": "golem_rogue",
+   "skin": 7,
+   "path": "portraits/m_golem_rogue_7.webp"
+  },
+  "NM_golem_033": {
+   "model": "golem_rogue",
+   "skin": 8,
+   "path": "portraits/m_golem_rogue_8.webp"
+  },
+  "NM_golem_034": {
+   "model": "golem_rogue",
+   "skin": 9,
+   "path": "portraits/m_golem_rogue_9.webp"
+  },
+  "NM_golem_035": {
+   "model": "golem_rogue",
+   "skin": 10,
+   "path": "portraits/m_golem_rogue_10.webp"
+  },
+  "NM_golem_036": {
+   "model": "golem_rogue",
+   "skin": 11,
+   "path": "portraits/m_golem_rogue_11.webp"
+  },
+  "NM_golem_037": {
+   "model": "golem_rogue",
+   "skin": 0,
+   "path": "portraits/m_golem_rogue_0.webp"
+  },
+  "NM_golem_038": {
+   "model": "golem_rogue",
+   "skin": 1,
+   "path": "portraits/m_golem_rogue_1.webp"
+  },
+  "NM_golem_039": {
+   "model": "golem_rogue",
+   "skin": 2,
+   "path": "portraits/m_golem_rogue_2.webp"
+  },
+  "NM_golem_040": {
+   "model": "golem_rogue",
+   "skin": 3,
+   "path": "portraits/m_golem_rogue_3.webp"
+  },
+  "NM_golem_042": {
+   "model": "golem_rogue",
+   "skin": 11,
+   "path": "portraits/m_golem_rogue_11.webp"
+  },
+  "NM_golem_044": {
+   "model": "golem_rogue",
+   "skin": 7,
+   "path": "portraits/m_golem_rogue_7.webp"
+  },
+  "NM_golem_045": {
+   "model": "golem_rogue",
+   "skin": 8,
+   "path": "portraits/m_golem_rogue_8.webp"
+  },
+  "NM_golem_046": {
+   "model": "golem_rogue",
+   "skin": 9,
+   "path": "portraits/m_golem_rogue_9.webp"
+  },
+  "NM_golem_047": {
+   "model": "golem_rogue",
+   "skin": 10,
+   "path": "portraits/m_golem_rogue_10.webp"
+  },
+  "NM_golem_049": {
+   "model": "golem_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_golem_spellcaster_0.webp"
+  },
+  "NM_golem_050": {
+   "model": "golem_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_golem_spellcaster_1.webp"
+  },
+  "NM_golem_051": {
+   "model": "golem_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_golem_spellcaster_2.webp"
+  },
+  "NM_golem_052": {
+   "model": "golem_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_golem_spellcaster_3.webp"
+  },
+  "NM_golem_053": {
+   "model": "golem_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_golem_spellcaster_4.webp"
+  },
+  "NM_golem_054": {
+   "model": "golem_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_golem_spellcaster_5.webp"
+  },
+  "NM_golem_055": {
+   "model": "golem_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_golem_spellcaster_11.webp"
+  },
+  "NM_golem_056": {
+   "model": "golem_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_golem_spellcaster_7.webp"
+  },
+  "NM_golem_058": {
+   "model": "golem_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_golem_spellcaster_9.webp"
+  },
+  "NM_golem_060": {
+   "model": "golem_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_golem_spellcaster_6.webp"
+  },
+  "NM_golem_061": {
+   "model": "golem_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_golem_spellcaster_0.webp"
+  },
+  "NM_golem_062": {
+   "model": "golem_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_golem_spellcaster_1.webp"
+  },
+  "NM_golem_063": {
+   "model": "golem_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_golem_spellcaster_2.webp"
+  },
+  "NM_golem_065": {
+   "model": "golem_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_golem_spellcaster_4.webp"
+  },
+  "NM_golem_066": {
+   "model": "golem_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_golem_spellcaster_5.webp"
+  },
+  "NM_golem_067": {
+   "model": "golem_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_golem_spellcaster_6.webp"
+  },
+  "NM_golem_068": {
+   "model": "golem_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_golem_spellcaster_7.webp"
+  },
+  "NM_golem_070": {
+   "model": "golem_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_golem_spellcaster_9.webp"
+  },
+  "NM_golem_071": {
+   "model": "golem_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_golem_spellcaster_10.webp"
+  },
+  "NM_golem_072": {
+   "model": "golem_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_golem_spellcaster_11.webp"
+  },
+  "NM_golem_074": {
+   "model": "golem_artillery",
+   "skin": 1,
+   "path": "portraits/m_golem_artillery_1.webp"
+  },
+  "NM_golem_075": {
+   "model": "golem_artillery",
+   "skin": 2,
+   "path": "portraits/m_golem_artillery_2.webp"
+  },
+  "NM_golem_076": {
+   "model": "golem_artillery",
+   "skin": 3,
+   "path": "portraits/m_golem_artillery_3.webp"
+  },
+  "NM_golem_077": {
+   "model": "golem_artillery",
+   "skin": 4,
+   "path": "portraits/m_golem_artillery_4.webp"
+  },
+  "NM_golem_078": {
+   "model": "golem_artillery",
+   "skin": 5,
+   "path": "portraits/m_golem_artillery_5.webp"
+  },
+  "NM_golem_080": {
+   "model": "golem_artillery",
+   "skin": 7,
+   "path": "portraits/m_golem_artillery_7.webp"
+  },
+  "NM_golem_081": {
+   "model": "golem_artillery",
+   "skin": 8,
+   "path": "portraits/m_golem_artillery_8.webp"
+  },
+  "NM_golem_082": {
+   "model": "golem_artillery",
+   "skin": 9,
+   "path": "portraits/m_golem_artillery_9.webp"
+  },
+  "NM_golem_083": {
+   "model": "golem_artillery",
+   "skin": 10,
+   "path": "portraits/m_golem_artillery_10.webp"
+  },
+  "NM_golem_084": {
+   "model": "golem_artillery",
+   "skin": 11,
+   "path": "portraits/m_golem_artillery_11.webp"
+  },
+  "NM_golem_085": {
+   "model": "golem_artillery",
+   "skin": 0,
+   "path": "portraits/m_golem_artillery_0.webp"
+  },
+  "NM_golem_086": {
+   "model": "golem_artillery",
+   "skin": 1,
+   "path": "portraits/m_golem_artillery_1.webp"
+  },
+  "NM_golem_087": {
+   "model": "golem_artillery",
+   "skin": 2,
+   "path": "portraits/m_golem_artillery_2.webp"
+  },
+  "NM_golem_088": {
+   "model": "golem_artillery",
+   "skin": 3,
+   "path": "portraits/m_golem_artillery_3.webp"
+  },
+  "NM_golem_089": {
+   "model": "golem_artillery",
+   "skin": 4,
+   "path": "portraits/m_golem_artillery_4.webp"
+  },
+  "NM_golem_090": {
+   "model": "golem_artillery",
+   "skin": 5,
+   "path": "portraits/m_golem_artillery_5.webp"
+  },
+  "NM_golem_091": {
+   "model": "golem_artillery",
+   "skin": 6,
+   "path": "portraits/m_golem_artillery_6.webp"
+  },
+  "NM_golem_092": {
+   "model": "golem_artillery",
+   "skin": 7,
+   "path": "portraits/m_golem_artillery_7.webp"
+  },
+  "NM_golem_093": {
+   "model": "golem_artillery",
+   "skin": 8,
+   "path": "portraits/m_golem_artillery_8.webp"
+  },
+  "NM_golem_094": {
+   "model": "golem_artillery",
+   "skin": 9,
+   "path": "portraits/m_golem_artillery_9.webp"
+  },
+  "NM_golem_095": {
+   "model": "golem_artillery",
+   "skin": 10,
+   "path": "portraits/m_golem_artillery_10.webp"
+  },
+  "NM_golem_096": {
+   "model": "golem_artillery",
+   "skin": 11,
+   "path": "portraits/m_golem_artillery_11.webp"
+  },
+  "NM_elemental_001": {
+   "model": "elemental_fighter",
+   "skin": 0,
+   "path": "portraits/m_elemental_fighter_0.webp"
+  },
+  "NM_elemental_002": {
+   "model": "elemental_fighter",
+   "skin": 1,
+   "path": "portraits/m_elemental_fighter_1.webp"
+  },
+  "NM_elemental_003": {
+   "model": "elemental_fighter",
+   "skin": 2,
+   "path": "portraits/m_elemental_fighter_2.webp"
+  },
+  "NM_elemental_004": {
+   "model": "elemental_fighter",
+   "skin": 3,
+   "path": "portraits/m_elemental_fighter_3.webp"
+  },
+  "NM_elemental_005": {
+   "model": "elemental_fighter",
+   "skin": 4,
+   "path": "portraits/m_elemental_fighter_4.webp"
+  },
+  "NM_elemental_006": {
+   "model": "elemental_fighter",
+   "skin": 5,
+   "path": "portraits/m_elemental_fighter_5.webp"
+  },
+  "NM_elemental_008": {
+   "model": "elemental_fighter",
+   "skin": 7,
+   "path": "portraits/m_elemental_fighter_7.webp"
+  },
+  "NM_elemental_009": {
+   "model": "elemental_fighter",
+   "skin": 8,
+   "path": "portraits/m_elemental_fighter_8.webp"
+  },
+  "NM_elemental_010": {
+   "model": "elemental_fighter",
+   "skin": 9,
+   "path": "portraits/m_elemental_fighter_9.webp"
+  },
+  "NM_elemental_011": {
+   "model": "elemental_fighter",
+   "skin": 10,
+   "path": "portraits/m_elemental_fighter_10.webp"
+  },
+  "NM_elemental_012": {
+   "model": "elemental_fighter",
+   "skin": 11,
+   "path": "portraits/m_elemental_fighter_11.webp"
+  },
+  "NM_elemental_014": {
+   "model": "elemental_fighter",
+   "skin": 1,
+   "path": "portraits/m_elemental_fighter_1.webp"
+  },
+  "NM_elemental_015": {
+   "model": "elemental_fighter",
+   "skin": 2,
+   "path": "portraits/m_elemental_fighter_2.webp"
+  },
+  "NM_elemental_016": {
+   "model": "elemental_fighter",
+   "skin": 3,
+   "path": "portraits/m_elemental_fighter_3.webp"
+  },
+  "NM_elemental_018": {
+   "model": "elemental_fighter",
+   "skin": 5,
+   "path": "portraits/m_elemental_fighter_5.webp"
+  },
+  "NM_elemental_019": {
+   "model": "elemental_fighter",
+   "skin": 6,
+   "path": "portraits/m_elemental_fighter_6.webp"
+  },
+  "NM_elemental_020": {
+   "model": "elemental_fighter",
+   "skin": 7,
+   "path": "portraits/m_elemental_fighter_7.webp"
+  },
+  "NM_elemental_021": {
+   "model": "elemental_fighter",
+   "skin": 8,
+   "path": "portraits/m_elemental_fighter_8.webp"
+  },
+  "NM_elemental_022": {
+   "model": "elemental_fighter",
+   "skin": 9,
+   "path": "portraits/m_elemental_fighter_9.webp"
+  },
+  "NM_elemental_023": {
+   "model": "elemental_fighter",
+   "skin": 10,
+   "path": "portraits/m_elemental_fighter_10.webp"
+  },
+  "NM_elemental_026": {
+   "model": "elemental_rogue",
+   "skin": 1,
+   "path": "portraits/m_elemental_rogue_1.webp"
+  },
+  "NM_elemental_027": {
+   "model": "elemental_rogue",
+   "skin": 2,
+   "path": "portraits/m_elemental_rogue_2.webp"
+  },
+  "NM_elemental_028": {
+   "model": "elemental_rogue",
+   "skin": 3,
+   "path": "portraits/m_elemental_rogue_3.webp"
+  },
+  "NM_elemental_029": {
+   "model": "elemental_rogue",
+   "skin": 4,
+   "path": "portraits/m_elemental_rogue_4.webp"
+  },
+  "NM_elemental_030": {
+   "model": "elemental_rogue",
+   "skin": 5,
+   "path": "portraits/m_elemental_rogue_5.webp"
+  },
+  "NM_elemental_031": {
+   "model": "elemental_rogue",
+   "skin": 6,
+   "path": "portraits/m_elemental_rogue_6.webp"
+  },
+  "NM_elemental_032": {
+   "model": "elemental_rogue",
+   "skin": 7,
+   "path": "portraits/m_elemental_rogue_7.webp"
+  },
+  "NM_elemental_033": {
+   "model": "elemental_rogue",
+   "skin": 8,
+   "path": "portraits/m_elemental_rogue_8.webp"
+  },
+  "NM_elemental_034": {
+   "model": "elemental_rogue",
+   "skin": 9,
+   "path": "portraits/m_elemental_rogue_9.webp"
+  },
+  "NM_elemental_035": {
+   "model": "elemental_rogue",
+   "skin": 10,
+   "path": "portraits/m_elemental_rogue_10.webp"
+  },
+  "NM_elemental_036": {
+   "model": "elemental_rogue",
+   "skin": 11,
+   "path": "portraits/m_elemental_rogue_11.webp"
+  },
+  "NM_elemental_037": {
+   "model": "elemental_rogue",
+   "skin": 0,
+   "path": "portraits/m_elemental_rogue_0.webp"
+  },
+  "NM_elemental_038": {
+   "model": "elemental_rogue",
+   "skin": 1,
+   "path": "portraits/m_elemental_rogue_1.webp"
+  },
+  "NM_elemental_039": {
+   "model": "elemental_rogue",
+   "skin": 2,
+   "path": "portraits/m_elemental_rogue_2.webp"
+  },
+  "NM_elemental_040": {
+   "model": "elemental_rogue",
+   "skin": 3,
+   "path": "portraits/m_elemental_rogue_3.webp"
+  },
+  "NM_elemental_041": {
+   "model": "elemental_rogue",
+   "skin": 4,
+   "path": "portraits/m_elemental_rogue_4.webp"
+  },
+  "NM_elemental_043": {
+   "model": "elemental_rogue",
+   "skin": 6,
+   "path": "portraits/m_elemental_rogue_6.webp"
+  },
+  "NM_elemental_044": {
+   "model": "elemental_rogue",
+   "skin": 7,
+   "path": "portraits/m_elemental_rogue_7.webp"
+  },
+  "NM_elemental_045": {
+   "model": "elemental_rogue",
+   "skin": 8,
+   "path": "portraits/m_elemental_rogue_8.webp"
+  },
+  "NM_elemental_046": {
+   "model": "elemental_rogue",
+   "skin": 9,
+   "path": "portraits/m_elemental_rogue_9.webp"
+  },
+  "NM_elemental_047": {
+   "model": "elemental_rogue",
+   "skin": 10,
+   "path": "portraits/m_elemental_rogue_10.webp"
+  },
+  "NM_elemental_048": {
+   "model": "elemental_rogue",
+   "skin": 11,
+   "path": "portraits/m_elemental_rogue_11.webp"
+  },
+  "NM_elemental_049": {
+   "model": "elemental_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_elemental_spellcaster_0.webp"
+  },
+  "NM_elemental_050": {
+   "model": "elemental_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_elemental_spellcaster_1.webp"
+  },
+  "NM_elemental_051": {
+   "model": "elemental_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_elemental_spellcaster_2.webp"
+  },
+  "NM_elemental_052": {
+   "model": "elemental_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_elemental_spellcaster_3.webp"
+  },
+  "NM_elemental_053": {
+   "model": "elemental_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_elemental_spellcaster_4.webp"
+  },
+  "NM_elemental_054": {
+   "model": "elemental_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_elemental_spellcaster_5.webp"
+  },
+  "NM_elemental_055": {
+   "model": "elemental_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_elemental_spellcaster_6.webp"
+  },
+  "NM_elemental_056": {
+   "model": "elemental_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_elemental_spellcaster_7.webp"
+  },
+  "NM_elemental_057": {
+   "model": "elemental_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_elemental_spellcaster_8.webp"
+  },
+  "NM_elemental_058": {
+   "model": "elemental_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_elemental_spellcaster_9.webp"
+  },
+  "NM_elemental_059": {
+   "model": "elemental_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_elemental_spellcaster_10.webp"
+  },
+  "NM_elemental_060": {
+   "model": "elemental_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_elemental_spellcaster_11.webp"
+  },
+  "NM_elemental_061": {
+   "model": "elemental_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_elemental_spellcaster_0.webp"
+  },
+  "NM_elemental_062": {
+   "model": "elemental_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_elemental_spellcaster_1.webp"
+  },
+  "NM_elemental_063": {
+   "model": "elemental_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_elemental_spellcaster_2.webp"
+  },
+  "NM_elemental_064": {
+   "model": "elemental_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_elemental_spellcaster_3.webp"
+  },
+  "NM_elemental_065": {
+   "model": "elemental_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_elemental_spellcaster_4.webp"
+  },
+  "NM_elemental_066": {
+   "model": "elemental_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_elemental_spellcaster_5.webp"
+  },
+  "NM_elemental_068": {
+   "model": "elemental_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_elemental_spellcaster_7.webp"
+  },
+  "NM_elemental_069": {
+   "model": "elemental_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_elemental_spellcaster_8.webp"
+  },
+  "NM_elemental_071": {
+   "model": "elemental_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_elemental_spellcaster_10.webp"
+  },
+  "NM_elemental_072": {
+   "model": "elemental_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_elemental_spellcaster_11.webp"
+  },
+  "NM_elemental_073": {
+   "model": "elemental_artillery",
+   "skin": 0,
+   "path": "portraits/m_elemental_artillery_0.webp"
+  },
+  "NM_elemental_074": {
+   "model": "elemental_artillery",
+   "skin": 1,
+   "path": "portraits/m_elemental_artillery_1.webp"
+  },
+  "NM_elemental_076": {
+   "model": "elemental_artillery",
+   "skin": 3,
+   "path": "portraits/m_elemental_artillery_3.webp"
+  },
+  "NM_elemental_077": {
+   "model": "elemental_artillery",
+   "skin": 4,
+   "path": "portraits/m_elemental_artillery_4.webp"
+  },
+  "NM_elemental_079": {
+   "model": "elemental_artillery",
+   "skin": 6,
+   "path": "portraits/m_elemental_artillery_6.webp"
+  },
+  "NM_elemental_080": {
+   "model": "elemental_artillery",
+   "skin": 7,
+   "path": "portraits/m_elemental_artillery_7.webp"
+  },
+  "NM_elemental_081": {
+   "model": "elemental_artillery",
+   "skin": 8,
+   "path": "portraits/m_elemental_artillery_8.webp"
+  },
+  "NM_elemental_082": {
+   "model": "elemental_artillery",
+   "skin": 9,
+   "path": "portraits/m_elemental_artillery_9.webp"
+  },
+  "NM_elemental_083": {
+   "model": "elemental_artillery",
+   "skin": 10,
+   "path": "portraits/m_elemental_artillery_10.webp"
+  },
+  "NM_elemental_085": {
+   "model": "elemental_artillery",
+   "skin": 0,
+   "path": "portraits/m_elemental_artillery_0.webp"
+  },
+  "NM_elemental_086": {
+   "model": "elemental_artillery",
+   "skin": 1,
+   "path": "portraits/m_elemental_artillery_1.webp"
+  },
+  "NM_elemental_088": {
+   "model": "elemental_artillery",
+   "skin": 3,
+   "path": "portraits/m_elemental_artillery_3.webp"
+  },
+  "NM_elemental_089": {
+   "model": "elemental_artillery",
+   "skin": 4,
+   "path": "portraits/m_elemental_artillery_4.webp"
+  },
+  "NM_elemental_091": {
+   "model": "elemental_artillery",
+   "skin": 6,
+   "path": "portraits/m_elemental_artillery_6.webp"
+  },
+  "NM_elemental_092": {
+   "model": "elemental_artillery",
+   "skin": 7,
+   "path": "portraits/m_elemental_artillery_7.webp"
+  },
+  "NM_elemental_093": {
+   "model": "elemental_artillery",
+   "skin": 8,
+   "path": "portraits/m_elemental_artillery_8.webp"
+  },
+  "NM_elemental_094": {
+   "model": "elemental_artillery",
+   "skin": 9,
+   "path": "portraits/m_elemental_artillery_9.webp"
+  },
+  "NM_elemental_095": {
+   "model": "elemental_artillery",
+   "skin": 10,
+   "path": "portraits/m_elemental_artillery_10.webp"
+  },
+  "NM_cyclops_002": {
+   "model": "cyclops_fighter",
+   "skin": 1,
+   "path": "portraits/m_cyclops_fighter_1.webp"
+  },
+  "NM_cyclops_003": {
+   "model": "cyclops_fighter",
+   "skin": 2,
+   "path": "portraits/m_cyclops_fighter_2.webp"
+  },
+  "NM_cyclops_004": {
+   "model": "cyclops_fighter",
+   "skin": 11,
+   "path": "portraits/m_cyclops_fighter_11.webp"
+  },
+  "NM_cyclops_005": {
+   "model": "cyclops_fighter",
+   "skin": 4,
+   "path": "portraits/m_cyclops_fighter_4.webp"
+  },
+  "NM_cyclops_006": {
+   "model": "cyclops_fighter",
+   "skin": 5,
+   "path": "portraits/m_cyclops_fighter_5.webp"
+  },
+  "NM_cyclops_007": {
+   "model": "cyclops_fighter",
+   "skin": 6,
+   "path": "portraits/m_cyclops_fighter_6.webp"
+  },
+  "NM_cyclops_008": {
+   "model": "cyclops_fighter",
+   "skin": 7,
+   "path": "portraits/m_cyclops_fighter_7.webp"
+  },
+  "NM_cyclops_009": {
+   "model": "cyclops_fighter",
+   "skin": 8,
+   "path": "portraits/m_cyclops_fighter_8.webp"
+  },
+  "NM_cyclops_010": {
+   "model": "cyclops_fighter",
+   "skin": 9,
+   "path": "portraits/m_cyclops_fighter_9.webp"
+  },
+  "NM_cyclops_011": {
+   "model": "cyclops_fighter",
+   "skin": 10,
+   "path": "portraits/m_cyclops_fighter_10.webp"
+  },
+  "NM_cyclops_013": {
+   "model": "cyclops_fighter",
+   "skin": 0,
+   "path": "portraits/m_cyclops_fighter_0.webp"
+  },
+  "NM_cyclops_014": {
+   "model": "cyclops_fighter",
+   "skin": 1,
+   "path": "portraits/m_cyclops_fighter_1.webp"
+  },
+  "NM_cyclops_015": {
+   "model": "cyclops_fighter",
+   "skin": 2,
+   "path": "portraits/m_cyclops_fighter_2.webp"
+  },
+  "NM_cyclops_016": {
+   "model": "cyclops_fighter",
+   "skin": 3,
+   "path": "portraits/m_cyclops_fighter_3.webp"
+  },
+  "NM_cyclops_017": {
+   "model": "cyclops_fighter",
+   "skin": 4,
+   "path": "portraits/m_cyclops_fighter_4.webp"
+  },
+  "NM_cyclops_018": {
+   "model": "cyclops_fighter",
+   "skin": 5,
+   "path": "portraits/m_cyclops_fighter_5.webp"
+  },
+  "NM_cyclops_020": {
+   "model": "cyclops_fighter",
+   "skin": 7,
+   "path": "portraits/m_cyclops_fighter_7.webp"
+  },
+  "NM_cyclops_022": {
+   "model": "cyclops_fighter",
+   "skin": 9,
+   "path": "portraits/m_cyclops_fighter_9.webp"
+  },
+  "NM_cyclops_023": {
+   "model": "cyclops_fighter",
+   "skin": 10,
+   "path": "portraits/m_cyclops_fighter_10.webp"
+  },
+  "NM_cyclops_024": {
+   "model": "cyclops_fighter",
+   "skin": 11,
+   "path": "portraits/m_cyclops_fighter_11.webp"
+  },
+  "NM_cyclops_025": {
+   "model": "cyclops_rogue",
+   "skin": 0,
+   "path": "portraits/m_cyclops_rogue_0.webp"
+  },
+  "NM_cyclops_026": {
+   "model": "cyclops_rogue",
+   "skin": 1,
+   "path": "portraits/m_cyclops_rogue_1.webp"
+  },
+  "NM_cyclops_027": {
+   "model": "cyclops_rogue",
+   "skin": 2,
+   "path": "portraits/m_cyclops_rogue_2.webp"
+  },
+  "NM_cyclops_028": {
+   "model": "cyclops_rogue",
+   "skin": 3,
+   "path": "portraits/m_cyclops_rogue_3.webp"
+  },
+  "NM_cyclops_029": {
+   "model": "cyclops_rogue",
+   "skin": 4,
+   "path": "portraits/m_cyclops_rogue_4.webp"
+  },
+  "NM_cyclops_030": {
+   "model": "cyclops_rogue",
+   "skin": 5,
+   "path": "portraits/m_cyclops_rogue_5.webp"
+  },
+  "NM_cyclops_031": {
+   "model": "cyclops_rogue",
+   "skin": 6,
+   "path": "portraits/m_cyclops_rogue_6.webp"
+  },
+  "NM_cyclops_032": {
+   "model": "cyclops_rogue",
+   "skin": 7,
+   "path": "portraits/m_cyclops_rogue_7.webp"
+  },
+  "NM_cyclops_034": {
+   "model": "cyclops_rogue",
+   "skin": 9,
+   "path": "portraits/m_cyclops_rogue_9.webp"
+  },
+  "NM_cyclops_035": {
+   "model": "cyclops_rogue",
+   "skin": 10,
+   "path": "portraits/m_cyclops_rogue_10.webp"
+  },
+  "NM_cyclops_036": {
+   "model": "cyclops_rogue",
+   "skin": 8,
+   "path": "portraits/m_cyclops_rogue_8.webp"
+  },
+  "NM_cyclops_037": {
+   "model": "cyclops_rogue",
+   "skin": 0,
+   "path": "portraits/m_cyclops_rogue_0.webp"
+  },
+  "NM_cyclops_038": {
+   "model": "cyclops_rogue",
+   "skin": 1,
+   "path": "portraits/m_cyclops_rogue_1.webp"
+  },
+  "NM_cyclops_039": {
+   "model": "cyclops_rogue",
+   "skin": 2,
+   "path": "portraits/m_cyclops_rogue_2.webp"
+  },
+  "NM_cyclops_040": {
+   "model": "cyclops_rogue",
+   "skin": 3,
+   "path": "portraits/m_cyclops_rogue_3.webp"
+  },
+  "NM_cyclops_041": {
+   "model": "cyclops_rogue",
+   "skin": 4,
+   "path": "portraits/m_cyclops_rogue_4.webp"
+  },
+  "NM_cyclops_043": {
+   "model": "cyclops_rogue",
+   "skin": 6,
+   "path": "portraits/m_cyclops_rogue_6.webp"
+  },
+  "NM_cyclops_044": {
+   "model": "cyclops_rogue",
+   "skin": 7,
+   "path": "portraits/m_cyclops_rogue_7.webp"
+  },
+  "NM_cyclops_046": {
+   "model": "cyclops_rogue",
+   "skin": 9,
+   "path": "portraits/m_cyclops_rogue_9.webp"
+  },
+  "NM_cyclops_047": {
+   "model": "cyclops_rogue",
+   "skin": 10,
+   "path": "portraits/m_cyclops_rogue_10.webp"
+  },
+  "NM_cyclops_049": {
+   "model": "cyclops_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_cyclops_spellcaster_0.webp"
+  },
+  "NM_cyclops_050": {
+   "model": "cyclops_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_cyclops_spellcaster_1.webp"
+  },
+  "NM_cyclops_051": {
+   "model": "cyclops_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_cyclops_spellcaster_2.webp"
+  },
+  "NM_cyclops_052": {
+   "model": "cyclops_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_cyclops_spellcaster_3.webp"
+  },
+  "NM_cyclops_053": {
+   "model": "cyclops_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_cyclops_spellcaster_11.webp"
+  },
+  "NM_cyclops_054": {
+   "model": "cyclops_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_cyclops_spellcaster_5.webp"
+  },
+  "NM_cyclops_056": {
+   "model": "cyclops_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_cyclops_spellcaster_7.webp"
+  },
+  "NM_cyclops_057": {
+   "model": "cyclops_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_cyclops_spellcaster_8.webp"
+  },
+  "NM_cyclops_058": {
+   "model": "cyclops_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_cyclops_spellcaster_9.webp"
+  },
+  "NM_cyclops_060": {
+   "model": "cyclops_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_cyclops_spellcaster_4.webp"
+  },
+  "NM_cyclops_061": {
+   "model": "cyclops_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_cyclops_spellcaster_0.webp"
+  },
+  "NM_cyclops_062": {
+   "model": "cyclops_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_cyclops_spellcaster_1.webp"
+  },
+  "NM_cyclops_064": {
+   "model": "cyclops_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_cyclops_spellcaster_3.webp"
+  },
+  "NM_cyclops_065": {
+   "model": "cyclops_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_cyclops_spellcaster_4.webp"
+  },
+  "NM_cyclops_066": {
+   "model": "cyclops_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_cyclops_spellcaster_5.webp"
+  },
+  "NM_cyclops_067": {
+   "model": "cyclops_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_cyclops_spellcaster_6.webp"
+  },
+  "NM_cyclops_069": {
+   "model": "cyclops_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_cyclops_spellcaster_8.webp"
+  },
+  "NM_cyclops_070": {
+   "model": "cyclops_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_cyclops_spellcaster_9.webp"
+  },
+  "NM_cyclops_071": {
+   "model": "cyclops_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_cyclops_spellcaster_10.webp"
+  },
+  "NM_cyclops_072": {
+   "model": "cyclops_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_cyclops_spellcaster_11.webp"
+  },
+  "NM_cyclops_074": {
+   "model": "cyclops_artillery",
+   "skin": 1,
+   "path": "portraits/m_cyclops_artillery_1.webp"
+  },
+  "NM_cyclops_075": {
+   "model": "cyclops_artillery",
+   "skin": 2,
+   "path": "portraits/m_cyclops_artillery_2.webp"
+  },
+  "NM_cyclops_076": {
+   "model": "cyclops_artillery",
+   "skin": 3,
+   "path": "portraits/m_cyclops_artillery_3.webp"
+  },
+  "NM_cyclops_077": {
+   "model": "cyclops_artillery",
+   "skin": 4,
+   "path": "portraits/m_cyclops_artillery_4.webp"
+  },
+  "NM_cyclops_078": {
+   "model": "cyclops_artillery",
+   "skin": 5,
+   "path": "portraits/m_cyclops_artillery_5.webp"
+  },
+  "NM_cyclops_080": {
+   "model": "cyclops_artillery",
+   "skin": 7,
+   "path": "portraits/m_cyclops_artillery_7.webp"
+  },
+  "NM_cyclops_081": {
+   "model": "cyclops_artillery",
+   "skin": 8,
+   "path": "portraits/m_cyclops_artillery_8.webp"
+  },
+  "NM_cyclops_082": {
+   "model": "cyclops_artillery",
+   "skin": 9,
+   "path": "portraits/m_cyclops_artillery_9.webp"
+  },
+  "NM_cyclops_083": {
+   "model": "cyclops_artillery",
+   "skin": 10,
+   "path": "portraits/m_cyclops_artillery_10.webp"
+  },
+  "NM_cyclops_084": {
+   "model": "cyclops_artillery",
+   "skin": 11,
+   "path": "portraits/m_cyclops_artillery_11.webp"
+  },
+  "NM_cyclops_085": {
+   "model": "cyclops_artillery",
+   "skin": 0,
+   "path": "portraits/m_cyclops_artillery_0.webp"
+  },
+  "NM_cyclops_086": {
+   "model": "cyclops_artillery",
+   "skin": 1,
+   "path": "portraits/m_cyclops_artillery_1.webp"
+  },
+  "NM_cyclops_087": {
+   "model": "cyclops_artillery",
+   "skin": 2,
+   "path": "portraits/m_cyclops_artillery_2.webp"
+  },
+  "NM_cyclops_088": {
+   "model": "cyclops_artillery",
+   "skin": 3,
+   "path": "portraits/m_cyclops_artillery_3.webp"
+  },
+  "NM_cyclops_089": {
+   "model": "cyclops_artillery",
+   "skin": 4,
+   "path": "portraits/m_cyclops_artillery_4.webp"
+  },
+  "NM_cyclops_090": {
+   "model": "cyclops_artillery",
+   "skin": 5,
+   "path": "portraits/m_cyclops_artillery_5.webp"
+  },
+  "NM_cyclops_091": {
+   "model": "cyclops_artillery",
+   "skin": 6,
+   "path": "portraits/m_cyclops_artillery_6.webp"
+  },
+  "NM_cyclops_092": {
+   "model": "cyclops_artillery",
+   "skin": 7,
+   "path": "portraits/m_cyclops_artillery_7.webp"
+  },
+  "NM_cyclops_093": {
+   "model": "cyclops_artillery",
+   "skin": 8,
+   "path": "portraits/m_cyclops_artillery_8.webp"
+  },
+  "NM_cyclops_094": {
+   "model": "cyclops_artillery",
+   "skin": 9,
+   "path": "portraits/m_cyclops_artillery_9.webp"
+  },
+  "NM_cyclops_095": {
+   "model": "cyclops_artillery",
+   "skin": 10,
+   "path": "portraits/m_cyclops_artillery_10.webp"
+  },
+  "NM_cyclops_096": {
+   "model": "cyclops_artillery",
+   "skin": 11,
+   "path": "portraits/m_cyclops_artillery_11.webp"
+  },
+  "NM_skeleton_001": {
+   "model": "skeleton_fighter",
+   "skin": 0,
+   "path": "portraits/m_skeleton_fighter_0.webp"
+  },
+  "NM_skeleton_002": {
+   "model": "skeleton_fighter",
+   "skin": 1,
+   "path": "portraits/m_skeleton_fighter_1.webp"
+  },
+  "NM_skeleton_003": {
+   "model": "skeleton_fighter",
+   "skin": 2,
+   "path": "portraits/m_skeleton_fighter_2.webp"
+  },
+  "NM_skeleton_004": {
+   "model": "skeleton_fighter",
+   "skin": 3,
+   "path": "portraits/m_skeleton_fighter_3.webp"
+  },
+  "NM_skeleton_005": {
+   "model": "skeleton_fighter",
+   "skin": 11,
+   "path": "portraits/m_skeleton_fighter_11.webp"
+  },
+  "NM_skeleton_006": {
+   "model": "skeleton_fighter",
+   "skin": 5,
+   "path": "portraits/m_skeleton_fighter_5.webp"
+  },
+  "NM_skeleton_007": {
+   "model": "skeleton_fighter",
+   "skin": 6,
+   "path": "portraits/m_skeleton_fighter_6.webp"
+  },
+  "NM_skeleton_008": {
+   "model": "skeleton_fighter",
+   "skin": 7,
+   "path": "portraits/m_skeleton_fighter_7.webp"
+  },
+  "NM_skeleton_010": {
+   "model": "skeleton_fighter",
+   "skin": 9,
+   "path": "portraits/m_skeleton_fighter_9.webp"
+  },
+  "NM_skeleton_013": {
+   "model": "skeleton_fighter",
+   "skin": 0,
+   "path": "portraits/m_skeleton_fighter_0.webp"
+  },
+  "NM_skeleton_014": {
+   "model": "skeleton_fighter",
+   "skin": 1,
+   "path": "portraits/m_skeleton_fighter_1.webp"
+  },
+  "NM_skeleton_015": {
+   "model": "skeleton_fighter",
+   "skin": 2,
+   "path": "portraits/m_skeleton_fighter_2.webp"
+  },
+  "NM_skeleton_017": {
+   "model": "skeleton_fighter",
+   "skin": 4,
+   "path": "portraits/m_skeleton_fighter_4.webp"
+  },
+  "NM_skeleton_018": {
+   "model": "skeleton_fighter",
+   "skin": 5,
+   "path": "portraits/m_skeleton_fighter_5.webp"
+  },
+  "NM_skeleton_019": {
+   "model": "skeleton_fighter",
+   "skin": 6,
+   "path": "portraits/m_skeleton_fighter_6.webp"
+  },
+  "NM_skeleton_020": {
+   "model": "skeleton_fighter",
+   "skin": 7,
+   "path": "portraits/m_skeleton_fighter_7.webp"
+  },
+  "NM_skeleton_021": {
+   "model": "skeleton_fighter",
+   "skin": 8,
+   "path": "portraits/m_skeleton_fighter_8.webp"
+  },
+  "NM_skeleton_022": {
+   "model": "skeleton_fighter",
+   "skin": 9,
+   "path": "portraits/m_skeleton_fighter_9.webp"
+  },
+  "NM_skeleton_023": {
+   "model": "skeleton_fighter",
+   "skin": 10,
+   "path": "portraits/m_skeleton_fighter_10.webp"
+  },
+  "NM_skeleton_024": {
+   "model": "skeleton_fighter",
+   "skin": 11,
+   "path": "portraits/m_skeleton_fighter_11.webp"
+  },
+  "NM_skeleton_026": {
+   "model": "skeleton_rogue",
+   "skin": 1,
+   "path": "portraits/m_skeleton_rogue_1.webp"
+  },
+  "NM_skeleton_027": {
+   "model": "skeleton_rogue",
+   "skin": 2,
+   "path": "portraits/m_skeleton_rogue_2.webp"
+  },
+  "NM_skeleton_028": {
+   "model": "skeleton_rogue",
+   "skin": 3,
+   "path": "portraits/m_skeleton_rogue_3.webp"
+  },
+  "NM_skeleton_029": {
+   "model": "skeleton_rogue",
+   "skin": 4,
+   "path": "portraits/m_skeleton_rogue_4.webp"
+  },
+  "NM_skeleton_030": {
+   "model": "skeleton_rogue",
+   "skin": 5,
+   "path": "portraits/m_skeleton_rogue_5.webp"
+  },
+  "NM_skeleton_031": {
+   "model": "skeleton_rogue",
+   "skin": 6,
+   "path": "portraits/m_skeleton_rogue_6.webp"
+  },
+  "NM_skeleton_032": {
+   "model": "skeleton_rogue",
+   "skin": 7,
+   "path": "portraits/m_skeleton_rogue_7.webp"
+  },
+  "NM_skeleton_033": {
+   "model": "skeleton_rogue",
+   "skin": 8,
+   "path": "portraits/m_skeleton_rogue_8.webp"
+  },
+  "NM_skeleton_034": {
+   "model": "skeleton_rogue",
+   "skin": 9,
+   "path": "portraits/m_skeleton_rogue_9.webp"
+  },
+  "NM_skeleton_035": {
+   "model": "skeleton_rogue",
+   "skin": 1,
+   "path": "portraits/m_skeleton_rogue_1.webp"
+  },
+  "NM_skeleton_037": {
+   "model": "skeleton_rogue",
+   "skin": 0,
+   "path": "portraits/m_skeleton_rogue_0.webp"
+  },
+  "NM_skeleton_038": {
+   "model": "skeleton_rogue",
+   "skin": 1,
+   "path": "portraits/m_skeleton_rogue_1.webp"
+  },
+  "NM_skeleton_039": {
+   "model": "skeleton_rogue",
+   "skin": 2,
+   "path": "portraits/m_skeleton_rogue_2.webp"
+  },
+  "NM_skeleton_040": {
+   "model": "skeleton_rogue",
+   "skin": 3,
+   "path": "portraits/m_skeleton_rogue_3.webp"
+  },
+  "NM_skeleton_041": {
+   "model": "skeleton_rogue",
+   "skin": 4,
+   "path": "portraits/m_skeleton_rogue_4.webp"
+  },
+  "NM_skeleton_042": {
+   "model": "skeleton_rogue",
+   "skin": 5,
+   "path": "portraits/m_skeleton_rogue_5.webp"
+  },
+  "NM_skeleton_044": {
+   "model": "skeleton_rogue",
+   "skin": 7,
+   "path": "portraits/m_skeleton_rogue_7.webp"
+  },
+  "NM_skeleton_046": {
+   "model": "skeleton_rogue",
+   "skin": 9,
+   "path": "portraits/m_skeleton_rogue_9.webp"
+  },
+  "NM_skeleton_047": {
+   "model": "skeleton_rogue",
+   "skin": 10,
+   "path": "portraits/m_skeleton_rogue_10.webp"
+  },
+  "NM_skeleton_048": {
+   "model": "skeleton_rogue",
+   "skin": 10,
+   "path": "portraits/m_skeleton_rogue_10.webp"
+  },
+  "NM_skeleton_049": {
+   "model": "skeleton_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_skeleton_spellcaster_0.webp"
+  },
+  "NM_skeleton_050": {
+   "model": "skeleton_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_skeleton_spellcaster_1.webp"
+  },
+  "NM_skeleton_052": {
+   "model": "skeleton_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_skeleton_spellcaster_3.webp"
+  },
+  "NM_skeleton_053": {
+   "model": "skeleton_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_skeleton_spellcaster_4.webp"
+  },
+  "NM_skeleton_054": {
+   "model": "skeleton_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_skeleton_spellcaster_5.webp"
+  },
+  "NM_skeleton_055": {
+   "model": "skeleton_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_skeleton_spellcaster_6.webp"
+  },
+  "NM_skeleton_056": {
+   "model": "skeleton_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_skeleton_spellcaster_7.webp"
+  },
+  "NM_skeleton_057": {
+   "model": "skeleton_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_skeleton_spellcaster_8.webp"
+  },
+  "NM_skeleton_058": {
+   "model": "skeleton_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_skeleton_spellcaster_9.webp"
+  },
+  "NM_skeleton_059": {
+   "model": "skeleton_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_skeleton_spellcaster_10.webp"
+  },
+  "NM_skeleton_061": {
+   "model": "skeleton_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_skeleton_spellcaster_0.webp"
+  },
+  "NM_skeleton_062": {
+   "model": "skeleton_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_skeleton_spellcaster_1.webp"
+  },
+  "NM_skeleton_064": {
+   "model": "skeleton_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_skeleton_spellcaster_3.webp"
+  },
+  "NM_skeleton_065": {
+   "model": "skeleton_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_skeleton_spellcaster_11.webp"
+  },
+  "NM_skeleton_066": {
+   "model": "skeleton_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_skeleton_spellcaster_5.webp"
+  },
+  "NM_skeleton_068": {
+   "model": "skeleton_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_skeleton_spellcaster_7.webp"
+  },
+  "NM_skeleton_069": {
+   "model": "skeleton_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_skeleton_spellcaster_8.webp"
+  },
+  "NM_skeleton_070": {
+   "model": "skeleton_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_skeleton_spellcaster_9.webp"
+  },
+  "NM_skeleton_071": {
+   "model": "skeleton_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_skeleton_spellcaster_10.webp"
+  },
+  "NM_skeleton_072": {
+   "model": "skeleton_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_skeleton_spellcaster_4.webp"
+  },
+  "NM_skeleton_074": {
+   "model": "skeleton_artillery",
+   "skin": 1,
+   "path": "portraits/m_skeleton_artillery_1.webp"
+  },
+  "NM_skeleton_075": {
+   "model": "skeleton_artillery",
+   "skin": 2,
+   "path": "portraits/m_skeleton_artillery_2.webp"
+  },
+  "NM_skeleton_076": {
+   "model": "skeleton_artillery",
+   "skin": 3,
+   "path": "portraits/m_skeleton_artillery_3.webp"
+  },
+  "NM_skeleton_077": {
+   "model": "skeleton_artillery",
+   "skin": 4,
+   "path": "portraits/m_skeleton_artillery_4.webp"
+  },
+  "NM_skeleton_078": {
+   "model": "skeleton_artillery",
+   "skin": 5,
+   "path": "portraits/m_skeleton_artillery_5.webp"
+  },
+  "NM_skeleton_080": {
+   "model": "skeleton_artillery",
+   "skin": 7,
+   "path": "portraits/m_skeleton_artillery_7.webp"
+  },
+  "NM_skeleton_081": {
+   "model": "skeleton_artillery",
+   "skin": 8,
+   "path": "portraits/m_skeleton_artillery_8.webp"
+  },
+  "NM_skeleton_082": {
+   "model": "skeleton_artillery",
+   "skin": 9,
+   "path": "portraits/m_skeleton_artillery_9.webp"
+  },
+  "NM_skeleton_083": {
+   "model": "skeleton_artillery",
+   "skin": 10,
+   "path": "portraits/m_skeleton_artillery_10.webp"
+  },
+  "NM_skeleton_084": {
+   "model": "skeleton_artillery",
+   "skin": 11,
+   "path": "portraits/m_skeleton_artillery_11.webp"
+  },
+  "NM_skeleton_085": {
+   "model": "skeleton_artillery",
+   "skin": 0,
+   "path": "portraits/m_skeleton_artillery_0.webp"
+  },
+  "NM_skeleton_086": {
+   "model": "skeleton_artillery",
+   "skin": 1,
+   "path": "portraits/m_skeleton_artillery_1.webp"
+  },
+  "NM_skeleton_087": {
+   "model": "skeleton_artillery",
+   "skin": 2,
+   "path": "portraits/m_skeleton_artillery_2.webp"
+  },
+  "NM_skeleton_088": {
+   "model": "skeleton_artillery",
+   "skin": 3,
+   "path": "portraits/m_skeleton_artillery_3.webp"
+  },
+  "NM_skeleton_089": {
+   "model": "skeleton_artillery",
+   "skin": 4,
+   "path": "portraits/m_skeleton_artillery_4.webp"
+  },
+  "NM_skeleton_090": {
+   "model": "skeleton_artillery",
+   "skin": 5,
+   "path": "portraits/m_skeleton_artillery_5.webp"
+  },
+  "NM_skeleton_091": {
+   "model": "skeleton_artillery",
+   "skin": 6,
+   "path": "portraits/m_skeleton_artillery_6.webp"
+  },
+  "NM_skeleton_092": {
+   "model": "skeleton_artillery",
+   "skin": 7,
+   "path": "portraits/m_skeleton_artillery_7.webp"
+  },
+  "NM_skeleton_093": {
+   "model": "skeleton_artillery",
+   "skin": 8,
+   "path": "portraits/m_skeleton_artillery_8.webp"
+  },
+  "NM_skeleton_094": {
+   "model": "skeleton_artillery",
+   "skin": 9,
+   "path": "portraits/m_skeleton_artillery_9.webp"
+  },
+  "NM_skeleton_095": {
+   "model": "skeleton_artillery",
+   "skin": 10,
+   "path": "portraits/m_skeleton_artillery_10.webp"
+  },
+  "NM_skeleton_096": {
+   "model": "skeleton_artillery",
+   "skin": 11,
+   "path": "portraits/m_skeleton_artillery_11.webp"
+  },
+  "NM_robot_001": {
+   "model": "robot_fighter",
+   "skin": 0,
+   "path": "portraits/m_robot_fighter_0.webp"
+  },
+  "NM_robot_002": {
+   "model": "robot_fighter",
+   "skin": 1,
+   "path": "portraits/m_robot_fighter_1.webp"
+  },
+  "NM_robot_003": {
+   "model": "robot_fighter",
+   "skin": 2,
+   "path": "portraits/m_robot_fighter_2.webp"
+  },
+  "NM_robot_004": {
+   "model": "robot_fighter",
+   "skin": 3,
+   "path": "portraits/m_robot_fighter_3.webp"
+  },
+  "NM_robot_005": {
+   "model": "robot_fighter",
+   "skin": 4,
+   "path": "portraits/m_robot_fighter_4.webp"
+  },
+  "NM_robot_006": {
+   "model": "robot_fighter",
+   "skin": 5,
+   "path": "portraits/m_robot_fighter_5.webp"
+  },
+  "NM_robot_007": {
+   "model": "robot_fighter",
+   "skin": 6,
+   "path": "portraits/m_robot_fighter_6.webp"
+  },
+  "NM_robot_008": {
+   "model": "robot_fighter",
+   "skin": 7,
+   "path": "portraits/m_robot_fighter_7.webp"
+  },
+  "NM_robot_009": {
+   "model": "robot_fighter",
+   "skin": 8,
+   "path": "portraits/m_robot_fighter_8.webp"
+  },
+  "NM_robot_010": {
+   "model": "robot_fighter",
+   "skin": 9,
+   "path": "portraits/m_robot_fighter_9.webp"
+  },
+  "NM_robot_011": {
+   "model": "robot_fighter",
+   "skin": 10,
+   "path": "portraits/m_robot_fighter_10.webp"
+  },
+  "NM_robot_013": {
+   "model": "robot_fighter",
+   "skin": 0,
+   "path": "portraits/m_robot_fighter_0.webp"
+  },
+  "NM_robot_014": {
+   "model": "robot_fighter",
+   "skin": 1,
+   "path": "portraits/m_robot_fighter_1.webp"
+  },
+  "NM_robot_015": {
+   "model": "robot_fighter",
+   "skin": 2,
+   "path": "portraits/m_robot_fighter_2.webp"
+  },
+  "NM_robot_017": {
+   "model": "robot_fighter",
+   "skin": 4,
+   "path": "portraits/m_robot_fighter_4.webp"
+  },
+  "NM_robot_018": {
+   "model": "robot_fighter",
+   "skin": 5,
+   "path": "portraits/m_robot_fighter_5.webp"
+  },
+  "NM_robot_019": {
+   "model": "robot_fighter",
+   "skin": 6,
+   "path": "portraits/m_robot_fighter_6.webp"
+  },
+  "NM_robot_020": {
+   "model": "robot_fighter",
+   "skin": 7,
+   "path": "portraits/m_robot_fighter_7.webp"
+  },
+  "NM_robot_021": {
+   "model": "robot_fighter",
+   "skin": 11,
+   "path": "portraits/m_robot_fighter_11.webp"
+  },
+  "NM_robot_022": {
+   "model": "robot_fighter",
+   "skin": 9,
+   "path": "portraits/m_robot_fighter_9.webp"
+  },
+  "NM_robot_023": {
+   "model": "robot_fighter",
+   "skin": 10,
+   "path": "portraits/m_robot_fighter_10.webp"
+  },
+  "NM_robot_024": {
+   "model": "robot_fighter",
+   "skin": 8,
+   "path": "portraits/m_robot_fighter_8.webp"
+  },
+  "NM_robot_025": {
+   "model": "robot_rogue",
+   "skin": 0,
+   "path": "portraits/m_robot_rogue_0.webp"
+  },
+  "NM_robot_026": {
+   "model": "robot_rogue",
+   "skin": 1,
+   "path": "portraits/m_robot_rogue_1.webp"
+  },
+  "NM_robot_027": {
+   "model": "robot_rogue",
+   "skin": 2,
+   "path": "portraits/m_robot_rogue_2.webp"
+  },
+  "NM_robot_028": {
+   "model": "robot_rogue",
+   "skin": 3,
+   "path": "portraits/m_robot_rogue_3.webp"
+  },
+  "NM_robot_029": {
+   "model": "robot_rogue",
+   "skin": 4,
+   "path": "portraits/m_robot_rogue_4.webp"
+  },
+  "NM_robot_030": {
+   "model": "robot_rogue",
+   "skin": 5,
+   "path": "portraits/m_robot_rogue_5.webp"
+  },
+  "NM_robot_031": {
+   "model": "robot_rogue",
+   "skin": 6,
+   "path": "portraits/m_robot_rogue_6.webp"
+  },
+  "NM_robot_032": {
+   "model": "robot_rogue",
+   "skin": 7,
+   "path": "portraits/m_robot_rogue_7.webp"
+  },
+  "NM_robot_033": {
+   "model": "robot_rogue",
+   "skin": 11,
+   "path": "portraits/m_robot_rogue_11.webp"
+  },
+  "NM_robot_034": {
+   "model": "robot_rogue",
+   "skin": 9,
+   "path": "portraits/m_robot_rogue_9.webp"
+  },
+  "NM_robot_035": {
+   "model": "robot_rogue",
+   "skin": 10,
+   "path": "portraits/m_robot_rogue_10.webp"
+  },
+  "NM_robot_037": {
+   "model": "robot_rogue",
+   "skin": 0,
+   "path": "portraits/m_robot_rogue_0.webp"
+  },
+  "NM_robot_038": {
+   "model": "robot_rogue",
+   "skin": 1,
+   "path": "portraits/m_robot_rogue_1.webp"
+  },
+  "NM_robot_039": {
+   "model": "robot_rogue",
+   "skin": 2,
+   "path": "portraits/m_robot_rogue_2.webp"
+  },
+  "NM_robot_040": {
+   "model": "robot_rogue",
+   "skin": 3,
+   "path": "portraits/m_robot_rogue_3.webp"
+  },
+  "NM_robot_041": {
+   "model": "robot_rogue",
+   "skin": 4,
+   "path": "portraits/m_robot_rogue_4.webp"
+  },
+  "NM_robot_042": {
+   "model": "robot_rogue",
+   "skin": 5,
+   "path": "portraits/m_robot_rogue_5.webp"
+  },
+  "NM_robot_043": {
+   "model": "robot_rogue",
+   "skin": 6,
+   "path": "portraits/m_robot_rogue_6.webp"
+  },
+  "NM_robot_044": {
+   "model": "robot_rogue",
+   "skin": 7,
+   "path": "portraits/m_robot_rogue_7.webp"
+  },
+  "NM_robot_045": {
+   "model": "robot_rogue",
+   "skin": 8,
+   "path": "portraits/m_robot_rogue_8.webp"
+  },
+  "NM_robot_046": {
+   "model": "robot_rogue",
+   "skin": 9,
+   "path": "portraits/m_robot_rogue_9.webp"
+  },
+  "NM_robot_047": {
+   "model": "robot_rogue",
+   "skin": 10,
+   "path": "portraits/m_robot_rogue_10.webp"
+  },
+  "NM_robot_049": {
+   "model": "robot_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_robot_spellcaster_0.webp"
+  },
+  "NM_robot_050": {
+   "model": "robot_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_robot_spellcaster_1.webp"
+  },
+  "NM_robot_051": {
+   "model": "robot_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_robot_spellcaster_2.webp"
+  },
+  "NM_robot_052": {
+   "model": "robot_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_robot_spellcaster_3.webp"
+  },
+  "NM_robot_053": {
+   "model": "robot_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_robot_spellcaster_4.webp"
+  },
+  "NM_robot_054": {
+   "model": "robot_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_robot_spellcaster_5.webp"
+  },
+  "NM_robot_055": {
+   "model": "robot_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_robot_spellcaster_11.webp"
+  },
+  "NM_robot_056": {
+   "model": "robot_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_robot_spellcaster_7.webp"
+  },
+  "NM_robot_057": {
+   "model": "robot_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_robot_spellcaster_8.webp"
+  },
+  "NM_robot_058": {
+   "model": "robot_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_robot_spellcaster_9.webp"
+  },
+  "NM_robot_059": {
+   "model": "robot_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_robot_spellcaster_10.webp"
+  },
+  "NM_robot_061": {
+   "model": "robot_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_robot_spellcaster_0.webp"
+  },
+  "NM_robot_062": {
+   "model": "robot_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_robot_spellcaster_1.webp"
+  },
+  "NM_robot_063": {
+   "model": "robot_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_robot_spellcaster_2.webp"
+  },
+  "NM_robot_065": {
+   "model": "robot_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_robot_spellcaster_4.webp"
+  },
+  "NM_robot_066": {
+   "model": "robot_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_robot_spellcaster_5.webp"
+  },
+  "NM_robot_067": {
+   "model": "robot_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_robot_spellcaster_6.webp"
+  },
+  "NM_robot_068": {
+   "model": "robot_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_robot_spellcaster_7.webp"
+  },
+  "NM_robot_069": {
+   "model": "robot_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_robot_spellcaster_8.webp"
+  },
+  "NM_robot_070": {
+   "model": "robot_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_robot_spellcaster_9.webp"
+  },
+  "NM_robot_071": {
+   "model": "robot_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_robot_spellcaster_10.webp"
+  },
+  "NM_robot_072": {
+   "model": "robot_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_robot_spellcaster_6.webp"
+  },
+  "NM_robot_074": {
+   "model": "robot_artillery",
+   "skin": 1,
+   "path": "portraits/m_robot_artillery_1.webp"
+  },
+  "NM_robot_075": {
+   "model": "robot_artillery",
+   "skin": 2,
+   "path": "portraits/m_robot_artillery_2.webp"
+  },
+  "NM_robot_076": {
+   "model": "robot_artillery",
+   "skin": 3,
+   "path": "portraits/m_robot_artillery_3.webp"
+  },
+  "NM_robot_077": {
+   "model": "robot_artillery",
+   "skin": 4,
+   "path": "portraits/m_robot_artillery_4.webp"
+  },
+  "NM_robot_078": {
+   "model": "robot_artillery",
+   "skin": 5,
+   "path": "portraits/m_robot_artillery_5.webp"
+  },
+  "NM_robot_080": {
+   "model": "robot_artillery",
+   "skin": 7,
+   "path": "portraits/m_robot_artillery_7.webp"
+  },
+  "NM_robot_081": {
+   "model": "robot_artillery",
+   "skin": 8,
+   "path": "portraits/m_robot_artillery_8.webp"
+  },
+  "NM_robot_082": {
+   "model": "robot_artillery",
+   "skin": 9,
+   "path": "portraits/m_robot_artillery_9.webp"
+  },
+  "NM_robot_083": {
+   "model": "robot_artillery",
+   "skin": 10,
+   "path": "portraits/m_robot_artillery_10.webp"
+  },
+  "NM_robot_084": {
+   "model": "robot_artillery",
+   "skin": 11,
+   "path": "portraits/m_robot_artillery_11.webp"
+  },
+  "NM_robot_085": {
+   "model": "robot_artillery",
+   "skin": 0,
+   "path": "portraits/m_robot_artillery_0.webp"
+  },
+  "NM_robot_086": {
+   "model": "robot_artillery",
+   "skin": 1,
+   "path": "portraits/m_robot_artillery_1.webp"
+  },
+  "NM_robot_087": {
+   "model": "robot_artillery",
+   "skin": 2,
+   "path": "portraits/m_robot_artillery_2.webp"
+  },
+  "NM_robot_088": {
+   "model": "robot_artillery",
+   "skin": 3,
+   "path": "portraits/m_robot_artillery_3.webp"
+  },
+  "NM_robot_089": {
+   "model": "robot_artillery",
+   "skin": 4,
+   "path": "portraits/m_robot_artillery_4.webp"
+  },
+  "NM_robot_090": {
+   "model": "robot_artillery",
+   "skin": 5,
+   "path": "portraits/m_robot_artillery_5.webp"
+  },
+  "NM_robot_091": {
+   "model": "robot_artillery",
+   "skin": 6,
+   "path": "portraits/m_robot_artillery_6.webp"
+  },
+  "NM_robot_092": {
+   "model": "robot_artillery",
+   "skin": 7,
+   "path": "portraits/m_robot_artillery_7.webp"
+  },
+  "NM_robot_093": {
+   "model": "robot_artillery",
+   "skin": 8,
+   "path": "portraits/m_robot_artillery_8.webp"
+  },
+  "NM_robot_094": {
+   "model": "robot_artillery",
+   "skin": 9,
+   "path": "portraits/m_robot_artillery_9.webp"
+  },
+  "NM_robot_095": {
+   "model": "robot_artillery",
+   "skin": 10,
+   "path": "portraits/m_robot_artillery_10.webp"
+  },
+  "NM_robot_096": {
+   "model": "robot_artillery",
+   "skin": 11,
+   "path": "portraits/m_robot_artillery_11.webp"
+  },
+  "NM_imp_001": {
+   "model": "imp_fighter",
+   "skin": 0,
+   "path": "portraits/m_imp_fighter_0.webp"
+  },
+  "NM_imp_002": {
+   "model": "imp_fighter",
+   "skin": 1,
+   "path": "portraits/m_imp_fighter_1.webp"
+  },
+  "NM_imp_003": {
+   "model": "imp_fighter",
+   "skin": 2,
+   "path": "portraits/m_imp_fighter_2.webp"
+  },
+  "NM_imp_004": {
+   "model": "imp_fighter",
+   "skin": 3,
+   "path": "portraits/m_imp_fighter_3.webp"
+  },
+  "NM_imp_005": {
+   "model": "imp_fighter",
+   "skin": 4,
+   "path": "portraits/m_imp_fighter_4.webp"
+  },
+  "NM_imp_006": {
+   "model": "imp_fighter",
+   "skin": 5,
+   "path": "portraits/m_imp_fighter_5.webp"
+  },
+  "NM_imp_007": {
+   "model": "imp_fighter",
+   "skin": 6,
+   "path": "portraits/m_imp_fighter_6.webp"
+  },
+  "NM_imp_008": {
+   "model": "imp_fighter",
+   "skin": 7,
+   "path": "portraits/m_imp_fighter_7.webp"
+  },
+  "NM_imp_009": {
+   "model": "imp_fighter",
+   "skin": 8,
+   "path": "portraits/m_imp_fighter_8.webp"
+  },
+  "NM_imp_010": {
+   "model": "imp_fighter",
+   "skin": 9,
+   "path": "portraits/m_imp_fighter_9.webp"
+  },
+  "NM_imp_013": {
+   "model": "imp_fighter",
+   "skin": 0,
+   "path": "portraits/m_imp_fighter_0.webp"
+  },
+  "NM_imp_014": {
+   "model": "imp_fighter",
+   "skin": 1,
+   "path": "portraits/m_imp_fighter_1.webp"
+  },
+  "NM_imp_015": {
+   "model": "imp_fighter",
+   "skin": 2,
+   "path": "portraits/m_imp_fighter_2.webp"
+  },
+  "NM_imp_016": {
+   "model": "imp_fighter",
+   "skin": 3,
+   "path": "portraits/m_imp_fighter_3.webp"
+  },
+  "NM_imp_018": {
+   "model": "imp_fighter",
+   "skin": 5,
+   "path": "portraits/m_imp_fighter_5.webp"
+  },
+  "NM_imp_020": {
+   "model": "imp_fighter",
+   "skin": 7,
+   "path": "portraits/m_imp_fighter_7.webp"
+  },
+  "NM_imp_021": {
+   "model": "imp_fighter",
+   "skin": 11,
+   "path": "portraits/m_imp_fighter_11.webp"
+  },
+  "NM_imp_022": {
+   "model": "imp_fighter",
+   "skin": 9,
+   "path": "portraits/m_imp_fighter_9.webp"
+  },
+  "NM_imp_023": {
+   "model": "imp_fighter",
+   "skin": 10,
+   "path": "portraits/m_imp_fighter_10.webp"
+  },
+  "NM_imp_024": {
+   "model": "imp_fighter",
+   "skin": 8,
+   "path": "portraits/m_imp_fighter_8.webp"
+  },
+  "NM_imp_025": {
+   "model": "imp_rogue",
+   "skin": 0,
+   "path": "portraits/m_imp_rogue_0.webp"
+  },
+  "NM_imp_026": {
+   "model": "imp_rogue",
+   "skin": 1,
+   "path": "portraits/m_imp_rogue_1.webp"
+  },
+  "NM_imp_027": {
+   "model": "imp_rogue",
+   "skin": 2,
+   "path": "portraits/m_imp_rogue_2.webp"
+  },
+  "NM_imp_029": {
+   "model": "imp_rogue",
+   "skin": 4,
+   "path": "portraits/m_imp_rogue_4.webp"
+  },
+  "NM_imp_030": {
+   "model": "imp_rogue",
+   "skin": 5,
+   "path": "portraits/m_imp_rogue_5.webp"
+  },
+  "NM_imp_031": {
+   "model": "imp_rogue",
+   "skin": 6,
+   "path": "portraits/m_imp_rogue_6.webp"
+  },
+  "NM_imp_032": {
+   "model": "imp_rogue",
+   "skin": 7,
+   "path": "portraits/m_imp_rogue_7.webp"
+  },
+  "NM_imp_034": {
+   "model": "imp_rogue",
+   "skin": 9,
+   "path": "portraits/m_imp_rogue_9.webp"
+  },
+  "NM_imp_035": {
+   "model": "imp_rogue",
+   "skin": 10,
+   "path": "portraits/m_imp_rogue_10.webp"
+  },
+  "NM_imp_036": {
+   "model": "imp_rogue",
+   "skin": 11,
+   "path": "portraits/m_imp_rogue_11.webp"
+  },
+  "NM_imp_037": {
+   "model": "imp_rogue",
+   "skin": 0,
+   "path": "portraits/m_imp_rogue_0.webp"
+  },
+  "NM_imp_038": {
+   "model": "imp_rogue",
+   "skin": 1,
+   "path": "portraits/m_imp_rogue_1.webp"
+  },
+  "NM_imp_039": {
+   "model": "imp_rogue",
+   "skin": 2,
+   "path": "portraits/m_imp_rogue_2.webp"
+  },
+  "NM_imp_040": {
+   "model": "imp_rogue",
+   "skin": 3,
+   "path": "portraits/m_imp_rogue_3.webp"
+  },
+  "NM_imp_042": {
+   "model": "imp_rogue",
+   "skin": 5,
+   "path": "portraits/m_imp_rogue_5.webp"
+  },
+  "NM_imp_043": {
+   "model": "imp_rogue",
+   "skin": 6,
+   "path": "portraits/m_imp_rogue_6.webp"
+  },
+  "NM_imp_044": {
+   "model": "imp_rogue",
+   "skin": 7,
+   "path": "portraits/m_imp_rogue_7.webp"
+  },
+  "NM_imp_045": {
+   "model": "imp_rogue",
+   "skin": 8,
+   "path": "portraits/m_imp_rogue_8.webp"
+  },
+  "NM_imp_046": {
+   "model": "imp_rogue",
+   "skin": 9,
+   "path": "portraits/m_imp_rogue_9.webp"
+  },
+  "NM_imp_047": {
+   "model": "imp_rogue",
+   "skin": 10,
+   "path": "portraits/m_imp_rogue_10.webp"
+  },
+  "NM_imp_049": {
+   "model": "imp_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_imp_spellcaster_0.webp"
+  },
+  "NM_imp_050": {
+   "model": "imp_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_imp_spellcaster_1.webp"
+  },
+  "NM_imp_051": {
+   "model": "imp_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_imp_spellcaster_2.webp"
+  },
+  "NM_imp_052": {
+   "model": "imp_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_imp_spellcaster_3.webp"
+  },
+  "NM_imp_054": {
+   "model": "imp_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_imp_spellcaster_5.webp"
+  },
+  "NM_imp_055": {
+   "model": "imp_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_imp_spellcaster_6.webp"
+  },
+  "NM_imp_056": {
+   "model": "imp_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_imp_spellcaster_7.webp"
+  },
+  "NM_imp_058": {
+   "model": "imp_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_imp_spellcaster_9.webp"
+  },
+  "NM_imp_059": {
+   "model": "imp_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_imp_spellcaster_10.webp"
+  },
+  "NM_imp_061": {
+   "model": "imp_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_imp_spellcaster_0.webp"
+  },
+  "NM_imp_063": {
+   "model": "imp_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_imp_spellcaster_2.webp"
+  },
+  "NM_imp_064": {
+   "model": "imp_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_imp_spellcaster_11.webp"
+  },
+  "NM_imp_065": {
+   "model": "imp_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_imp_spellcaster_4.webp"
+  },
+  "NM_imp_066": {
+   "model": "imp_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_imp_spellcaster_5.webp"
+  },
+  "NM_imp_067": {
+   "model": "imp_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_imp_spellcaster_6.webp"
+  },
+  "NM_imp_068": {
+   "model": "imp_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_imp_spellcaster_7.webp"
+  },
+  "NM_imp_069": {
+   "model": "imp_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_imp_spellcaster_8.webp"
+  },
+  "NM_imp_070": {
+   "model": "imp_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_imp_spellcaster_9.webp"
+  },
+  "NM_imp_071": {
+   "model": "imp_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_imp_spellcaster_10.webp"
+  },
+  "NM_imp_072": {
+   "model": "imp_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_imp_spellcaster_3.webp"
+  },
+  "NM_imp_074": {
+   "model": "imp_artillery",
+   "skin": 1,
+   "path": "portraits/m_imp_artillery_1.webp"
+  },
+  "NM_imp_075": {
+   "model": "imp_artillery",
+   "skin": 2,
+   "path": "portraits/m_imp_artillery_2.webp"
+  },
+  "NM_imp_076": {
+   "model": "imp_artillery",
+   "skin": 3,
+   "path": "portraits/m_imp_artillery_3.webp"
+  },
+  "NM_imp_077": {
+   "model": "imp_artillery",
+   "skin": 4,
+   "path": "portraits/m_imp_artillery_4.webp"
+  },
+  "NM_imp_078": {
+   "model": "imp_artillery",
+   "skin": 5,
+   "path": "portraits/m_imp_artillery_5.webp"
+  },
+  "NM_imp_080": {
+   "model": "imp_artillery",
+   "skin": 7,
+   "path": "portraits/m_imp_artillery_7.webp"
+  },
+  "NM_imp_081": {
+   "model": "imp_artillery",
+   "skin": 8,
+   "path": "portraits/m_imp_artillery_8.webp"
+  },
+  "NM_imp_082": {
+   "model": "imp_artillery",
+   "skin": 9,
+   "path": "portraits/m_imp_artillery_9.webp"
+  },
+  "NM_imp_083": {
+   "model": "imp_artillery",
+   "skin": 10,
+   "path": "portraits/m_imp_artillery_10.webp"
+  },
+  "NM_imp_084": {
+   "model": "imp_artillery",
+   "skin": 11,
+   "path": "portraits/m_imp_artillery_11.webp"
+  },
+  "NM_imp_085": {
+   "model": "imp_artillery",
+   "skin": 0,
+   "path": "portraits/m_imp_artillery_0.webp"
+  },
+  "NM_imp_086": {
+   "model": "imp_artillery",
+   "skin": 1,
+   "path": "portraits/m_imp_artillery_1.webp"
+  },
+  "NM_imp_087": {
+   "model": "imp_artillery",
+   "skin": 2,
+   "path": "portraits/m_imp_artillery_2.webp"
+  },
+  "NM_imp_088": {
+   "model": "imp_artillery",
+   "skin": 3,
+   "path": "portraits/m_imp_artillery_3.webp"
+  },
+  "NM_imp_089": {
+   "model": "imp_artillery",
+   "skin": 4,
+   "path": "portraits/m_imp_artillery_4.webp"
+  },
+  "NM_imp_090": {
+   "model": "imp_artillery",
+   "skin": 5,
+   "path": "portraits/m_imp_artillery_5.webp"
+  },
+  "NM_imp_091": {
+   "model": "imp_artillery",
+   "skin": 6,
+   "path": "portraits/m_imp_artillery_6.webp"
+  },
+  "NM_imp_092": {
+   "model": "imp_artillery",
+   "skin": 7,
+   "path": "portraits/m_imp_artillery_7.webp"
+  },
+  "NM_imp_093": {
+   "model": "imp_artillery",
+   "skin": 8,
+   "path": "portraits/m_imp_artillery_8.webp"
+  },
+  "NM_imp_094": {
+   "model": "imp_artillery",
+   "skin": 9,
+   "path": "portraits/m_imp_artillery_9.webp"
+  },
+  "NM_imp_095": {
+   "model": "imp_artillery",
+   "skin": 10,
+   "path": "portraits/m_imp_artillery_10.webp"
+  },
+  "NM_imp_096": {
+   "model": "imp_artillery",
+   "skin": 11,
+   "path": "portraits/m_imp_artillery_11.webp"
+  },
+  "NM_spectre_001": {
+   "model": "spectre_fighter",
+   "skin": 0,
+   "path": "portraits/m_spectre_fighter_0.webp"
+  },
+  "NM_spectre_002": {
+   "model": "spectre_fighter",
+   "skin": 1,
+   "path": "portraits/m_spectre_fighter_1.webp"
+  },
+  "NM_spectre_003": {
+   "model": "spectre_fighter",
+   "skin": 2,
+   "path": "portraits/m_spectre_fighter_2.webp"
+  },
+  "NM_spectre_004": {
+   "model": "spectre_fighter",
+   "skin": 3,
+   "path": "portraits/m_spectre_fighter_3.webp"
+  },
+  "NM_spectre_006": {
+   "model": "spectre_fighter",
+   "skin": 5,
+   "path": "portraits/m_spectre_fighter_5.webp"
+  },
+  "NM_spectre_007": {
+   "model": "spectre_fighter",
+   "skin": 6,
+   "path": "portraits/m_spectre_fighter_6.webp"
+  },
+  "NM_spectre_009": {
+   "model": "spectre_fighter",
+   "skin": 8,
+   "path": "portraits/m_spectre_fighter_8.webp"
+  },
+  "NM_spectre_010": {
+   "model": "spectre_fighter",
+   "skin": 9,
+   "path": "portraits/m_spectre_fighter_9.webp"
+  },
+  "NM_spectre_013": {
+   "model": "spectre_fighter",
+   "skin": 0,
+   "path": "portraits/m_spectre_fighter_0.webp"
+  },
+  "NM_spectre_014": {
+   "model": "spectre_fighter",
+   "skin": 1,
+   "path": "portraits/m_spectre_fighter_1.webp"
+  },
+  "NM_spectre_015": {
+   "model": "spectre_fighter",
+   "skin": 2,
+   "path": "portraits/m_spectre_fighter_2.webp"
+  },
+  "NM_spectre_016": {
+   "model": "spectre_fighter",
+   "skin": 3,
+   "path": "portraits/m_spectre_fighter_3.webp"
+  },
+  "NM_spectre_017": {
+   "model": "spectre_fighter",
+   "skin": 4,
+   "path": "portraits/m_spectre_fighter_4.webp"
+  },
+  "NM_spectre_018": {
+   "model": "spectre_fighter",
+   "skin": 5,
+   "path": "portraits/m_spectre_fighter_5.webp"
+  },
+  "NM_spectre_019": {
+   "model": "spectre_fighter",
+   "skin": 6,
+   "path": "portraits/m_spectre_fighter_6.webp"
+  },
+  "NM_spectre_020": {
+   "model": "spectre_fighter",
+   "skin": 7,
+   "path": "portraits/m_spectre_fighter_7.webp"
+  },
+  "NM_spectre_021": {
+   "model": "spectre_fighter",
+   "skin": 8,
+   "path": "portraits/m_spectre_fighter_8.webp"
+  },
+  "NM_spectre_022": {
+   "model": "spectre_fighter",
+   "skin": 9,
+   "path": "portraits/m_spectre_fighter_9.webp"
+  },
+  "NM_spectre_023": {
+   "model": "spectre_fighter",
+   "skin": 10,
+   "path": "portraits/m_spectre_fighter_10.webp"
+  },
+  "NM_spectre_024": {
+   "model": "spectre_fighter",
+   "skin": 10,
+   "path": "portraits/m_spectre_fighter_10.webp"
+  },
+  "NM_spectre_025": {
+   "model": "spectre_rogue",
+   "skin": 0,
+   "path": "portraits/m_spectre_rogue_0.webp"
+  },
+  "NM_spectre_026": {
+   "model": "spectre_rogue",
+   "skin": 1,
+   "path": "portraits/m_spectre_rogue_1.webp"
+  },
+  "NM_spectre_027": {
+   "model": "spectre_rogue",
+   "skin": 2,
+   "path": "portraits/m_spectre_rogue_2.webp"
+  },
+  "NM_spectre_028": {
+   "model": "spectre_rogue",
+   "skin": 11,
+   "path": "portraits/m_spectre_rogue_11.webp"
+  },
+  "NM_spectre_029": {
+   "model": "spectre_rogue",
+   "skin": 4,
+   "path": "portraits/m_spectre_rogue_4.webp"
+  },
+  "NM_spectre_030": {
+   "model": "spectre_rogue",
+   "skin": 5,
+   "path": "portraits/m_spectre_rogue_5.webp"
+  },
+  "NM_spectre_031": {
+   "model": "spectre_rogue",
+   "skin": 6,
+   "path": "portraits/m_spectre_rogue_6.webp"
+  },
+  "NM_spectre_033": {
+   "model": "spectre_rogue",
+   "skin": 8,
+   "path": "portraits/m_spectre_rogue_8.webp"
+  },
+  "NM_spectre_034": {
+   "model": "spectre_rogue",
+   "skin": 9,
+   "path": "portraits/m_spectre_rogue_9.webp"
+  },
+  "NM_spectre_035": {
+   "model": "spectre_rogue",
+   "skin": 10,
+   "path": "portraits/m_spectre_rogue_10.webp"
+  },
+  "NM_spectre_036": {
+   "model": "spectre_rogue",
+   "skin": 11,
+   "path": "portraits/m_spectre_rogue_11.webp"
+  },
+  "NM_spectre_037": {
+   "model": "spectre_rogue",
+   "skin": 0,
+   "path": "portraits/m_spectre_rogue_0.webp"
+  },
+  "NM_spectre_038": {
+   "model": "spectre_rogue",
+   "skin": 1,
+   "path": "portraits/m_spectre_rogue_1.webp"
+  },
+  "NM_spectre_039": {
+   "model": "spectre_rogue",
+   "skin": 2,
+   "path": "portraits/m_spectre_rogue_2.webp"
+  },
+  "NM_spectre_040": {
+   "model": "spectre_rogue",
+   "skin": 3,
+   "path": "portraits/m_spectre_rogue_3.webp"
+  },
+  "NM_spectre_041": {
+   "model": "spectre_rogue",
+   "skin": 4,
+   "path": "portraits/m_spectre_rogue_4.webp"
+  },
+  "NM_spectre_042": {
+   "model": "spectre_rogue",
+   "skin": 5,
+   "path": "portraits/m_spectre_rogue_5.webp"
+  },
+  "NM_spectre_043": {
+   "model": "spectre_rogue",
+   "skin": 6,
+   "path": "portraits/m_spectre_rogue_6.webp"
+  },
+  "NM_spectre_046": {
+   "model": "spectre_rogue",
+   "skin": 9,
+   "path": "portraits/m_spectre_rogue_9.webp"
+  },
+  "NM_spectre_048": {
+   "model": "spectre_rogue",
+   "skin": 3,
+   "path": "portraits/m_spectre_rogue_3.webp"
+  },
+  "NM_spectre_049": {
+   "model": "spectre_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_spectre_spellcaster_0.webp"
+  },
+  "NM_spectre_050": {
+   "model": "spectre_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_spectre_spellcaster_1.webp"
+  },
+  "NM_spectre_052": {
+   "model": "spectre_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_spectre_spellcaster_3.webp"
+  },
+  "NM_spectre_053": {
+   "model": "spectre_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_spectre_spellcaster_4.webp"
+  },
+  "NM_spectre_054": {
+   "model": "spectre_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_spectre_spellcaster_5.webp"
+  },
+  "NM_spectre_055": {
+   "model": "spectre_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_spectre_spellcaster_6.webp"
+  },
+  "NM_spectre_057": {
+   "model": "spectre_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_spectre_spellcaster_8.webp"
+  },
+  "NM_spectre_058": {
+   "model": "spectre_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_spectre_spellcaster_9.webp"
+  },
+  "NM_spectre_059": {
+   "model": "spectre_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_spectre_spellcaster_11.webp"
+  },
+  "NM_spectre_060": {
+   "model": "spectre_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_spectre_spellcaster_10.webp"
+  },
+  "NM_spectre_061": {
+   "model": "spectre_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_spectre_spellcaster_0.webp"
+  },
+  "NM_spectre_062": {
+   "model": "spectre_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_spectre_spellcaster_1.webp"
+  },
+  "NM_spectre_063": {
+   "model": "spectre_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_spectre_spellcaster_2.webp"
+  },
+  "NM_spectre_064": {
+   "model": "spectre_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_spectre_spellcaster_3.webp"
+  },
+  "NM_spectre_065": {
+   "model": "spectre_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_spectre_spellcaster_4.webp"
+  },
+  "NM_spectre_066": {
+   "model": "spectre_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_spectre_spellcaster_5.webp"
+  },
+  "NM_spectre_067": {
+   "model": "spectre_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_spectre_spellcaster_6.webp"
+  },
+  "NM_spectre_068": {
+   "model": "spectre_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_spectre_spellcaster_7.webp"
+  },
+  "NM_spectre_070": {
+   "model": "spectre_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_spectre_spellcaster_9.webp"
+  },
+  "NM_spectre_072": {
+   "model": "spectre_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_spectre_spellcaster_11.webp"
+  },
+  "NM_spectre_074": {
+   "model": "spectre_artillery",
+   "skin": 1,
+   "path": "portraits/m_spectre_artillery_1.webp"
+  },
+  "NM_spectre_075": {
+   "model": "spectre_artillery",
+   "skin": 2,
+   "path": "portraits/m_spectre_artillery_2.webp"
+  },
+  "NM_spectre_076": {
+   "model": "spectre_artillery",
+   "skin": 3,
+   "path": "portraits/m_spectre_artillery_3.webp"
+  },
+  "NM_spectre_077": {
+   "model": "spectre_artillery",
+   "skin": 4,
+   "path": "portraits/m_spectre_artillery_4.webp"
+  },
+  "NM_spectre_078": {
+   "model": "spectre_artillery",
+   "skin": 5,
+   "path": "portraits/m_spectre_artillery_5.webp"
+  },
+  "NM_spectre_080": {
+   "model": "spectre_artillery",
+   "skin": 7,
+   "path": "portraits/m_spectre_artillery_7.webp"
+  },
+  "NM_spectre_081": {
+   "model": "spectre_artillery",
+   "skin": 8,
+   "path": "portraits/m_spectre_artillery_8.webp"
+  },
+  "NM_spectre_082": {
+   "model": "spectre_artillery",
+   "skin": 9,
+   "path": "portraits/m_spectre_artillery_9.webp"
+  },
+  "NM_spectre_083": {
+   "model": "spectre_artillery",
+   "skin": 10,
+   "path": "portraits/m_spectre_artillery_10.webp"
+  },
+  "NM_spectre_084": {
+   "model": "spectre_artillery",
+   "skin": 11,
+   "path": "portraits/m_spectre_artillery_11.webp"
+  },
+  "NM_spectre_085": {
+   "model": "spectre_artillery",
+   "skin": 0,
+   "path": "portraits/m_spectre_artillery_0.webp"
+  },
+  "NM_spectre_086": {
+   "model": "spectre_artillery",
+   "skin": 1,
+   "path": "portraits/m_spectre_artillery_1.webp"
+  },
+  "NM_spectre_087": {
+   "model": "spectre_artillery",
+   "skin": 2,
+   "path": "portraits/m_spectre_artillery_2.webp"
+  },
+  "NM_spectre_088": {
+   "model": "spectre_artillery",
+   "skin": 3,
+   "path": "portraits/m_spectre_artillery_3.webp"
+  },
+  "NM_spectre_089": {
+   "model": "spectre_artillery",
+   "skin": 4,
+   "path": "portraits/m_spectre_artillery_4.webp"
+  },
+  "NM_spectre_090": {
+   "model": "spectre_artillery",
+   "skin": 5,
+   "path": "portraits/m_spectre_artillery_5.webp"
+  },
+  "NM_spectre_091": {
+   "model": "spectre_artillery",
+   "skin": 6,
+   "path": "portraits/m_spectre_artillery_6.webp"
+  },
+  "NM_spectre_092": {
+   "model": "spectre_artillery",
+   "skin": 7,
+   "path": "portraits/m_spectre_artillery_7.webp"
+  },
+  "NM_spectre_093": {
+   "model": "spectre_artillery",
+   "skin": 8,
+   "path": "portraits/m_spectre_artillery_8.webp"
+  },
+  "NM_spectre_094": {
+   "model": "spectre_artillery",
+   "skin": 9,
+   "path": "portraits/m_spectre_artillery_9.webp"
+  },
+  "NM_spectre_095": {
+   "model": "spectre_artillery",
+   "skin": 10,
+   "path": "portraits/m_spectre_artillery_10.webp"
+  },
+  "NM_spectre_096": {
+   "model": "spectre_artillery",
+   "skin": 11,
+   "path": "portraits/m_spectre_artillery_11.webp"
+  },
+  "NM_vampire_002": {
+   "model": "vampire_fighter",
+   "skin": 1,
+   "path": "portraits/m_vampire_fighter_1.webp"
+  },
+  "NM_vampire_004": {
+   "model": "vampire_fighter",
+   "skin": 3,
+   "path": "portraits/m_vampire_fighter_3.webp"
+  },
+  "NM_vampire_005": {
+   "model": "vampire_fighter",
+   "skin": 4,
+   "path": "portraits/m_vampire_fighter_4.webp"
+  },
+  "NM_vampire_006": {
+   "model": "vampire_fighter",
+   "skin": 5,
+   "path": "portraits/m_vampire_fighter_5.webp"
+  },
+  "NM_vampire_007": {
+   "model": "vampire_fighter",
+   "skin": 6,
+   "path": "portraits/m_vampire_fighter_6.webp"
+  },
+  "NM_vampire_008": {
+   "model": "vampire_fighter",
+   "skin": 7,
+   "path": "portraits/m_vampire_fighter_7.webp"
+  },
+  "NM_vampire_009": {
+   "model": "vampire_fighter",
+   "skin": 8,
+   "path": "portraits/m_vampire_fighter_8.webp"
+  },
+  "NM_vampire_010": {
+   "model": "vampire_fighter",
+   "skin": 9,
+   "path": "portraits/m_vampire_fighter_9.webp"
+  },
+  "NM_vampire_011": {
+   "model": "vampire_fighter",
+   "skin": 10,
+   "path": "portraits/m_vampire_fighter_10.webp"
+  },
+  "NM_vampire_012": {
+   "model": "vampire_fighter",
+   "skin": 11,
+   "path": "portraits/m_vampire_fighter_11.webp"
+  },
+  "NM_vampire_013": {
+   "model": "vampire_fighter",
+   "skin": 0,
+   "path": "portraits/m_vampire_fighter_0.webp"
+  },
+  "NM_vampire_014": {
+   "model": "vampire_fighter",
+   "skin": 1,
+   "path": "portraits/m_vampire_fighter_1.webp"
+  },
+  "NM_vampire_015": {
+   "model": "vampire_fighter",
+   "skin": 2,
+   "path": "portraits/m_vampire_fighter_2.webp"
+  },
+  "NM_vampire_016": {
+   "model": "vampire_fighter",
+   "skin": 3,
+   "path": "portraits/m_vampire_fighter_3.webp"
+  },
+  "NM_vampire_017": {
+   "model": "vampire_fighter",
+   "skin": 4,
+   "path": "portraits/m_vampire_fighter_4.webp"
+  },
+  "NM_vampire_018": {
+   "model": "vampire_fighter",
+   "skin": 5,
+   "path": "portraits/m_vampire_fighter_5.webp"
+  },
+  "NM_vampire_019": {
+   "model": "vampire_fighter",
+   "skin": 6,
+   "path": "portraits/m_vampire_fighter_6.webp"
+  },
+  "NM_vampire_020": {
+   "model": "vampire_fighter",
+   "skin": 7,
+   "path": "portraits/m_vampire_fighter_7.webp"
+  },
+  "NM_vampire_021": {
+   "model": "vampire_fighter",
+   "skin": 8,
+   "path": "portraits/m_vampire_fighter_8.webp"
+  },
+  "NM_vampire_022": {
+   "model": "vampire_fighter",
+   "skin": 9,
+   "path": "portraits/m_vampire_fighter_9.webp"
+  },
+  "NM_vampire_023": {
+   "model": "vampire_fighter",
+   "skin": 10,
+   "path": "portraits/m_vampire_fighter_10.webp"
+  },
+  "NM_vampire_024": {
+   "model": "vampire_fighter",
+   "skin": 11,
+   "path": "portraits/m_vampire_fighter_11.webp"
+  },
+  "NM_vampire_026": {
+   "model": "vampire_rogue",
+   "skin": 1,
+   "path": "portraits/m_vampire_rogue_1.webp"
+  },
+  "NM_vampire_028": {
+   "model": "vampire_rogue",
+   "skin": 3,
+   "path": "portraits/m_vampire_rogue_3.webp"
+  },
+  "NM_vampire_029": {
+   "model": "vampire_rogue",
+   "skin": 4,
+   "path": "portraits/m_vampire_rogue_4.webp"
+  },
+  "NM_vampire_030": {
+   "model": "vampire_rogue",
+   "skin": 5,
+   "path": "portraits/m_vampire_rogue_5.webp"
+  },
+  "NM_vampire_031": {
+   "model": "vampire_rogue",
+   "skin": 6,
+   "path": "portraits/m_vampire_rogue_6.webp"
+  },
+  "NM_vampire_032": {
+   "model": "vampire_rogue",
+   "skin": 7,
+   "path": "portraits/m_vampire_rogue_7.webp"
+  },
+  "NM_vampire_033": {
+   "model": "vampire_rogue",
+   "skin": 8,
+   "path": "portraits/m_vampire_rogue_8.webp"
+  },
+  "NM_vampire_034": {
+   "model": "vampire_rogue",
+   "skin": 9,
+   "path": "portraits/m_vampire_rogue_9.webp"
+  },
+  "NM_vampire_035": {
+   "model": "vampire_rogue",
+   "skin": 10,
+   "path": "portraits/m_vampire_rogue_10.webp"
+  },
+  "NM_vampire_036": {
+   "model": "vampire_rogue",
+   "skin": 11,
+   "path": "portraits/m_vampire_rogue_11.webp"
+  },
+  "NM_vampire_037": {
+   "model": "vampire_rogue",
+   "skin": 0,
+   "path": "portraits/m_vampire_rogue_0.webp"
+  },
+  "NM_vampire_038": {
+   "model": "vampire_rogue",
+   "skin": 1,
+   "path": "portraits/m_vampire_rogue_1.webp"
+  },
+  "NM_vampire_039": {
+   "model": "vampire_rogue",
+   "skin": 2,
+   "path": "portraits/m_vampire_rogue_2.webp"
+  },
+  "NM_vampire_040": {
+   "model": "vampire_rogue",
+   "skin": 3,
+   "path": "portraits/m_vampire_rogue_3.webp"
+  },
+  "NM_vampire_041": {
+   "model": "vampire_rogue",
+   "skin": 4,
+   "path": "portraits/m_vampire_rogue_4.webp"
+  },
+  "NM_vampire_042": {
+   "model": "vampire_rogue",
+   "skin": 5,
+   "path": "portraits/m_vampire_rogue_5.webp"
+  },
+  "NM_vampire_043": {
+   "model": "vampire_rogue",
+   "skin": 6,
+   "path": "portraits/m_vampire_rogue_6.webp"
+  },
+  "NM_vampire_044": {
+   "model": "vampire_rogue",
+   "skin": 7,
+   "path": "portraits/m_vampire_rogue_7.webp"
+  },
+  "NM_vampire_045": {
+   "model": "vampire_rogue",
+   "skin": 8,
+   "path": "portraits/m_vampire_rogue_8.webp"
+  },
+  "NM_vampire_046": {
+   "model": "vampire_rogue",
+   "skin": 9,
+   "path": "portraits/m_vampire_rogue_9.webp"
+  },
+  "NM_vampire_047": {
+   "model": "vampire_rogue",
+   "skin": 10,
+   "path": "portraits/m_vampire_rogue_10.webp"
+  },
+  "NM_vampire_048": {
+   "model": "vampire_rogue",
+   "skin": 11,
+   "path": "portraits/m_vampire_rogue_11.webp"
+  },
+  "NM_vampire_051": {
+   "model": "vampire_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_vampire_spellcaster_2.webp"
+  },
+  "NM_vampire_052": {
+   "model": "vampire_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_vampire_spellcaster_3.webp"
+  },
+  "NM_vampire_053": {
+   "model": "vampire_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_vampire_spellcaster_4.webp"
+  },
+  "NM_vampire_054": {
+   "model": "vampire_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_vampire_spellcaster_5.webp"
+  },
+  "NM_vampire_055": {
+   "model": "vampire_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_vampire_spellcaster_6.webp"
+  },
+  "NM_vampire_056": {
+   "model": "vampire_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_vampire_spellcaster_7.webp"
+  },
+  "NM_vampire_057": {
+   "model": "vampire_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_vampire_spellcaster_8.webp"
+  },
+  "NM_vampire_058": {
+   "model": "vampire_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_vampire_spellcaster_9.webp"
+  },
+  "NM_vampire_059": {
+   "model": "vampire_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_vampire_spellcaster_10.webp"
+  },
+  "NM_vampire_060": {
+   "model": "vampire_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_vampire_spellcaster_11.webp"
+  },
+  "NM_vampire_061": {
+   "model": "vampire_spellcaster",
+   "skin": 0,
+   "path": "portraits/m_vampire_spellcaster_0.webp"
+  },
+  "NM_vampire_062": {
+   "model": "vampire_spellcaster",
+   "skin": 1,
+   "path": "portraits/m_vampire_spellcaster_1.webp"
+  },
+  "NM_vampire_063": {
+   "model": "vampire_spellcaster",
+   "skin": 2,
+   "path": "portraits/m_vampire_spellcaster_2.webp"
+  },
+  "NM_vampire_064": {
+   "model": "vampire_spellcaster",
+   "skin": 3,
+   "path": "portraits/m_vampire_spellcaster_3.webp"
+  },
+  "NM_vampire_065": {
+   "model": "vampire_spellcaster",
+   "skin": 4,
+   "path": "portraits/m_vampire_spellcaster_4.webp"
+  },
+  "NM_vampire_066": {
+   "model": "vampire_spellcaster",
+   "skin": 5,
+   "path": "portraits/m_vampire_spellcaster_5.webp"
+  },
+  "NM_vampire_067": {
+   "model": "vampire_spellcaster",
+   "skin": 6,
+   "path": "portraits/m_vampire_spellcaster_6.webp"
+  },
+  "NM_vampire_068": {
+   "model": "vampire_spellcaster",
+   "skin": 7,
+   "path": "portraits/m_vampire_spellcaster_7.webp"
+  },
+  "NM_vampire_069": {
+   "model": "vampire_spellcaster",
+   "skin": 8,
+   "path": "portraits/m_vampire_spellcaster_8.webp"
+  },
+  "NM_vampire_070": {
+   "model": "vampire_spellcaster",
+   "skin": 9,
+   "path": "portraits/m_vampire_spellcaster_9.webp"
+  },
+  "NM_vampire_071": {
+   "model": "vampire_spellcaster",
+   "skin": 10,
+   "path": "portraits/m_vampire_spellcaster_10.webp"
+  },
+  "NM_vampire_072": {
+   "model": "vampire_spellcaster",
+   "skin": 11,
+   "path": "portraits/m_vampire_spellcaster_11.webp"
+  },
+  "NM_vampire_075": {
+   "model": "vampire_artillery",
+   "skin": 2,
+   "path": "portraits/m_vampire_artillery_2.webp"
+  },
+  "NM_vampire_076": {
+   "model": "vampire_artillery",
+   "skin": 3,
+   "path": "portraits/m_vampire_artillery_3.webp"
+  },
+  "NM_vampire_078": {
+   "model": "vampire_artillery",
+   "skin": 5,
+   "path": "portraits/m_vampire_artillery_5.webp"
+  },
+  "NM_vampire_081": {
+   "model": "vampire_artillery",
+   "skin": 8,
+   "path": "portraits/m_vampire_artillery_8.webp"
+  },
+  "NM_vampire_082": {
+   "model": "vampire_artillery",
+   "skin": 9,
+   "path": "portraits/m_vampire_artillery_9.webp"
+  },
+  "NM_vampire_085": {
+   "model": "vampire_artillery",
+   "skin": 0,
+   "path": "portraits/m_vampire_artillery_0.webp"
+  },
+  "NM_vampire_086": {
+   "model": "vampire_artillery",
+   "skin": 1,
+   "path": "portraits/m_vampire_artillery_1.webp"
+  },
+  "NM_vampire_088": {
+   "model": "vampire_artillery",
+   "skin": 3,
+   "path": "portraits/m_vampire_artillery_3.webp"
+  },
+  "NM_vampire_089": {
+   "model": "vampire_artillery",
+   "skin": 4,
+   "path": "portraits/m_vampire_artillery_4.webp"
+  },
+  "NM_vampire_090": {
+   "model": "vampire_artillery",
+   "skin": 5,
+   "path": "portraits/m_vampire_artillery_5.webp"
+  },
+  "NM_vampire_091": {
+   "model": "vampire_artillery",
+   "skin": 6,
+   "path": "portraits/m_vampire_artillery_6.webp"
+  },
+  "NM_vampire_092": {
+   "model": "vampire_artillery",
+   "skin": 7,
+   "path": "portraits/m_vampire_artillery_7.webp"
+  },
+  "NM_vampire_093": {
+   "model": "vampire_artillery",
+   "skin": 8,
+   "path": "portraits/m_vampire_artillery_8.webp"
+  },
+  "NM_vampire_094": {
+   "model": "vampire_artillery",
+   "skin": 9,
+   "path": "portraits/m_vampire_artillery_9.webp"
+  },
+  "NM_vampire_095": {
+   "model": "vampire_artillery",
+   "skin": 10,
+   "path": "portraits/m_vampire_artillery_10.webp"
+  },
+  "NM_vampire_096": {
+   "model": "vampire_artillery",
+   "skin": 11,
+   "path": "portraits/m_vampire_artillery_11.webp"
+  }
+ }
+}

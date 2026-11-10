@@ -1,0 +1,19 @@
+
+### CTileItem::Upkeep(eTeam) 0x20995c 68
+0020995c: push     {r3, lr}
+00209960: ldr      r3, [r0, #0x10]
+00209964: cmp      r3, r1
+00209968: beq      #0x209974
+0020996c: cmp      r1, #6
+00209970: popne    {r3, pc}
+00209974: ldr      r3, [r0, #0xc]
+00209978: cmp      r3, #0
+0020997c: pople    {r3, pc}
+00209980: sub      r3, r3, #1
+00209984: str      r3, [r0, #0xc]
+00209988: cmp      r3, #0
+0020998c: popne    {r3, pc}
+00209990: ldr      r3, [r0]
+00209994: ldr      r3, [r3, #0x3c]
+00209998: blx      r3
+0020999c: pop      {r3, pc}

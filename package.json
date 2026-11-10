@@ -1,0 +1,23 @@
+{
+  "name": "monster-tactics",
+  "version": "7.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run --exclude 'tests/tournament-*'",
+    "test:tournament": "vitest run tests/tournament-",
+    "bench:ai": "vite-node scripts/ai-bench.ts",
+    "build:offline": "vite build && node scripts/make-offline.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "6.4.1",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

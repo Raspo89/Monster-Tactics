@@ -1,0 +1,161 @@
+
+### CGame::DecodeData(unsigned char const*, unsigned int) 0x14ecd8 636
+0014ecd8: cmp      r0, #0
+0014ecdc: cmpne    r1, #0
+0014ece0: push     {r4, r5, r6, r7, r8, lr}
+0014ece4: mov      r4, r1
+0014ece8: mov      r5, r0
+0014ecec: movne    r8, #0
+0014ecf0: moveq    r8, #1
+0014ecf4: beq      #0x14ef48
+0014ecf8: mov      r0, r1
+0014ecfc: add      r6, r5, r4
+0014ed00: bl       #0x25866c ; RZMemory::AllocClear(unsigned int)
+0014ed04: add      r3, r6, #0x10
+0014ed08: add      r1, r5, #0x10
+0014ed0c: add      r2, r0, #0x10
+0014ed10: cmp      r0, r3
+0014ed14: cmplo    r6, r2
+0014ed18: movlo    r3, #0
+0014ed1c: movhs    r3, #1
+0014ed20: cmp      r0, r1
+0014ed24: cmplo    r5, r2
+0014ed28: movlo    r2, #0
+0014ed2c: movhs    r2, #1
+0014ed30: and      r3, r3, r2
+0014ed34: cmp      r4, #0xf
+0014ed38: movls    r3, #0
+0014ed3c: andhi    r3, r3, #1
+0014ed40: cmp      r3, #0
+0014ed44: beq      #0x14ef28
+0014ed48: lsr      r7, r4, #4
+0014ed4c: mov      ip, r6
+0014ed50: mov      r1, r5
+0014ed54: mov      r2, r0
+0014ed58: lsl      r3, r7, #4
+0014ed5c: vld1.8   {d18, d19}, [r1]!
+0014ed60: add      r8, r8, #1
+0014ed64: cmp      r8, r7
+0014ed68: vld1.8   {d16, d17}, [ip]!
+0014ed6c: veor     q8, q9, q8
+0014ed70: vst1.8   {d16, d17}, [r2]!
+0014ed74: blo      #0x14ed5c
+0014ed78: cmp      r4, r3
+0014ed7c: add      ip, r5, r3
+0014ed80: add      r2, r0, r3
+0014ed84: add      r1, r6, r3
+0014ed88: popeq    {r4, r5, r6, r7, r8, pc}
+0014ed8c: add      r8, r3, #1
+0014ed90: ldrb     r6, [r6, r7, lsl #4]
+0014ed94: ldrb     r5, [r5, r7, lsl #4]
+0014ed98: cmp      r4, r8
+0014ed9c: eor      r5, r6, r5
+0014eda0: strb     r5, [r0, r7, lsl #4]
+0014eda4: popls    {r4, r5, r6, r7, r8, pc}
+0014eda8: add      r7, r3, #2
+0014edac: ldrb     r6, [ip, #1]
+0014edb0: ldrb     r5, [r1, #1]
+0014edb4: cmp      r4, r7
+0014edb8: eor      r5, r6, r5
+0014edbc: strb     r5, [r2, #1]
+0014edc0: popls    {r4, r5, r6, r7, r8, pc}
+0014edc4: add      r7, r3, #3
+0014edc8: ldrb     r6, [ip, #2]
+0014edcc: ldrb     r5, [r1, #2]
+0014edd0: cmp      r4, r7
+0014edd4: eor      r5, r6, r5
+0014edd8: strb     r5, [r2, #2]
+0014eddc: popls    {r4, r5, r6, r7, r8, pc}
+0014ede0: add      r7, r3, #4
+0014ede4: ldrb     r6, [ip, #3]
+0014ede8: ldrb     r5, [r1, #3]
+0014edec: cmp      r4, r7
+0014edf0: eor      r5, r6, r5
+0014edf4: strb     r5, [r2, #3]
+0014edf8: popls    {r4, r5, r6, r7, r8, pc}
+0014edfc: add      r7, r3, #5
+0014ee00: ldrb     r6, [ip, #4]
+0014ee04: ldrb     r5, [r1, #4]
+0014ee08: cmp      r4, r7
+0014ee0c: eor      r5, r6, r5
+0014ee10: strb     r5, [r2, #4]
+0014ee14: popls    {r4, r5, r6, r7, r8, pc}
+0014ee18: add      r7, r3, #6
+0014ee1c: ldrb     r6, [ip, #5]
+0014ee20: ldrb     r5, [r1, #5]
+0014ee24: cmp      r4, r7
+0014ee28: eor      r5, r6, r5
+0014ee2c: strb     r5, [r2, #5]
+0014ee30: popls    {r4, r5, r6, r7, r8, pc}
+0014ee34: add      r7, r3, #7
+0014ee38: ldrb     r6, [ip, #6]
+0014ee3c: ldrb     r5, [r1, #6]
+0014ee40: cmp      r4, r7
+0014ee44: eor      r5, r6, r5
+0014ee48: strb     r5, [r2, #6]
+0014ee4c: popls    {r4, r5, r6, r7, r8, pc}
+0014ee50: add      r7, r3, #8
+0014ee54: ldrb     r6, [ip, #7]
+0014ee58: ldrb     r5, [r1, #7]
+0014ee5c: cmp      r4, r7
+0014ee60: eor      r5, r6, r5
+0014ee64: strb     r5, [r2, #7]
+0014ee68: popls    {r4, r5, r6, r7, r8, pc}
+0014ee6c: add      r7, r3, #9
+0014ee70: ldrb     r6, [ip, #8]
+0014ee74: ldrb     r5, [r1, #8]
+0014ee78: cmp      r4, r7
+0014ee7c: eor      r5, r6, r5
+0014ee80: strb     r5, [r2, #8]
+0014ee84: popls    {r4, r5, r6, r7, r8, pc}
+0014ee88: add      r7, r3, #0xa
+0014ee8c: ldrb     r6, [ip, #9]
+0014ee90: ldrb     r5, [r1, #9]
+0014ee94: cmp      r4, r7
+0014ee98: eor      r5, r6, r5
+0014ee9c: strb     r5, [r2, #9]
+0014eea0: popls    {r4, r5, r6, r7, r8, pc}
+0014eea4: add      r7, r3, #0xb
+0014eea8: ldrb     r6, [ip, #0xa]
+0014eeac: ldrb     r5, [r1, #0xa]
+0014eeb0: cmp      r4, r7
+0014eeb4: eor      r5, r6, r5
+0014eeb8: strb     r5, [r2, #0xa]
+0014eebc: popls    {r4, r5, r6, r7, r8, pc}
+0014eec0: add      r7, r3, #0xc
+0014eec4: ldrb     r6, [ip, #0xb]
+0014eec8: ldrb     r5, [r1, #0xb]
+0014eecc: cmp      r4, r7
+0014eed0: eor      r5, r6, r5
+0014eed4: strb     r5, [r2, #0xb]
+0014eed8: popls    {r4, r5, r6, r7, r8, pc}
+0014eedc: add      r7, r3, #0xd
+0014eee0: ldrb     r6, [ip, #0xc]
+0014eee4: ldrb     r5, [r1, #0xc]
+0014eee8: cmp      r4, r7
+0014eeec: eor      r5, r6, r5
+0014eef0: strb     r5, [r2, #0xc]
+0014eef4: popls    {r4, r5, r6, r7, r8, pc}
+0014eef8: add      r3, r3, #0xe
+0014eefc: ldrb     r5, [ip, #0xd]
+0014ef00: cmp      r4, r3
+0014ef04: ldrb     r3, [r1, #0xd]
+0014ef08: eor      r3, r5, r3
+0014ef0c: strb     r3, [r2, #0xd]
+0014ef10: bls      #0x14ef50
+0014ef14: ldrb     ip, [ip, #0xe]
+0014ef18: ldrb     r3, [r1, #0xe]
+0014ef1c: eor      r3, ip, r3
+0014ef20: strb     r3, [r2, #0xe]
+0014ef24: pop      {r4, r5, r6, r7, r8, pc}
+0014ef28: ldrb     r1, [r5, r3]
+0014ef2c: ldrb     r2, [r6, r3]
+0014ef30: eor      r2, r1, r2
+0014ef34: strb     r2, [r0, r3]
+0014ef38: add      r3, r3, #1
+0014ef3c: cmp      r3, r4
+0014ef40: bne      #0x14ef28
+0014ef44: pop      {r4, r5, r6, r7, r8, pc}
+0014ef48: mov      r0, #0
+0014ef4c: pop      {r4, r5, r6, r7, r8, pc}
+0014ef50: pop      {r4, r5, r6, r7, r8, pc}

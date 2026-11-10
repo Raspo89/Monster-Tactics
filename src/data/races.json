@@ -1,0 +1,185 @@
+{
+  "human": {
+    "name": "البشر",
+    "en": "Human",
+    "passiveName": "روح الجماعة",
+    "passiveText": "يحصل كل بشري على +1 قوة لكل مخلوق صديق ملاصق له، بما في ذلك القائد.",
+    "nativeEnum": "RT_HUMAN",
+    "bonusCode": "RB_HUMAN_BONUS",
+    "values": {
+      "adjacentFriendlyPower": 1
+    }
+  },
+  "elf": {
+    "name": "الجان",
+    "en": "Elf",
+    "passiveName": "صحة النقاء",
+    "passiveText": "يحصل جميع وحوش الجان لديك على +4 صحة ما دام كل وحوشك من الجان. تزول الزيادة عند وجود وحش من عرق آخر؛ القائد لا يؤثر في النقاء.",
+    "nativeEnum": "RT_ELF",
+    "bonusCode": "RB_ELF_BONUS",
+    "values": {
+      "pureRaceHealth": 4
+    }
+  },
+  "orc": {
+    "name": "الأورك",
+    "en": "Orc",
+    "passiveName": "التآزر",
+    "passiveText": "يحصل كل أورك على +1 قوة لكل أورك آخر تملكه في الساحة، دون حد أقصى.",
+    "nativeEnum": "RT_ORC",
+    "bonusCode": "RB_ORC_BONUS",
+    "values": {
+      "otherFriendlyRacePower": 1
+    }
+  },
+  "zombie": {
+    "name": "الموتى",
+    "en": "Zombie",
+    "passiveName": "امتصاص الحياة",
+    "passiveText": "يحصل كل وحش من الموتى في الساحة، لك وللخصم، على +1 صحة دائمة عندما يموت أي مخلوق.",
+    "nativeEnum": "RT_UNDEAD",
+    "bonusCode": "RB_ZOMBIE_BONUS",
+    "values": {
+      "anyCreatureDeathHealth": 1
+    }
+  },
+  "lizard": {
+    "name": "السحالي",
+    "en": "Lizard",
+    "passiveName": "غضب الموت",
+    "passiveText": "تحصل السحلية على +2 قوة و+2 صحة دائمتين كلما قتلت مخلوقًا.",
+    "nativeEnum": "RT_LIZARD",
+    "bonusCode": "RB_VAMPIRE_POWER",
+    "values": {
+      "killPower": 2,
+      "killHealth": 2
+    }
+  },
+  "dwarf": {
+    "name": "الأقزام",
+    "en": "Dwarf",
+    "passiveName": "الإرادة الحديدية",
+    "passiveText": "يحصل القزم على +2 قوة دائمة عندما ينجو من هجوم مخلوق آخر، حتى إذا امتص دفاعه الضرر.",
+    "nativeEnum": "RT_DWARF",
+    "bonusCode": "RB_DWARF_BONUS",
+    "values": {
+      "surviveAttackPower": 2
+    }
+  },
+  "minotaur": {
+    "name": "المينوتور",
+    "en": "Minotaur",
+    "passiveName": "التسلّح",
+    "passiveText": "يحصل المينوتور على +1 قوة و+3 صحة دائمتين كلما جهّزته بمعدة، بما في ذلك استبدال معدة بأخرى.",
+    "nativeEnum": "RT_MINOTAUR",
+    "bonusCode": "RB_MINOTAUR_BONUS",
+    "values": {
+      "equipPower": 1,
+      "equipHealth": 3
+    }
+  },
+  "werewolf": {
+    "name": "المستذئبون",
+    "en": "Werewolf",
+    "passiveName": "الافتراس",
+    "passiveText": "يحصل المستذئب على +3 صحة دائمة كلما قتل مخلوقًا للخصم.",
+    "nativeEnum": "RT_WEREWOLF",
+    "bonusCode": "RB_WEREWOLF_BONUS",
+    "values": {
+      "enemyKillHealth": 3
+    }
+  },
+  "golem": {
+    "name": "الغولم",
+    "en": "Golem",
+    "passiveName": "الصحة الرونية",
+    "passiveText": "تحصل جميع وحوش الغولم لديك على +3 صحة دائمة كلما لعبت رونًا، بما في ذلك استبدال رون.",
+    "nativeEnum": "RT_GOLEM",
+    "bonusCode": "RB_RUNEHEALTH_BONUS",
+    "values": {
+      "ownRuneHealth": 3
+    }
+  },
+  "elemental": {
+    "name": "كائنات العناصر",
+    "en": "Elemental",
+    "passiveName": "قوة التعاويذ",
+    "passiveText": "تحصل جميع كائنات العناصر لديك على +1 قوة و+1 صحة دائمتين كلما لعبت تعويذة.",
+    "nativeEnum": "RT_ELEMENTAL",
+    "bonusCode": "RB_ELEMENTAL_BONUS",
+    "values": {
+      "ownSpellPower": 1,
+      "ownSpellHealth": 1
+    }
+  },
+  "cyclops": {
+    "name": "السايكلوبس",
+    "en": "Cyclops",
+    "passiveName": "امتصاص القوة",
+    "passiveText": "يحصل كل سايكلوبس لديك على +2 قوة دائمة عندما يموت وحش صديق آخر. موت القائد لا يحتسب.",
+    "nativeEnum": "RT_CYCLOPS",
+    "bonusCode": "RB_FREINDLY_DEATH_GAINS_POWER",
+    "values": {
+      "otherFriendlyMonsterDeathPower": 2
+    }
+  },
+  "skeleton": {
+    "name": "الهياكل العظمية",
+    "en": "Skeleton",
+    "passiveName": "الدفاع العاري",
+    "passiveText": "يبدأ الهيكل العظمي بدفاع عرقي +3، وينخفض هذا الدفاع بمقدار 1 لكل معدة يرتديها. استبدال المعدة لا يزيد عدد المعدات.",
+    "nativeEnum": "RT_SKELETON",
+    "bonusCode": "RB_NEG_ARMOUR",
+    "values": {
+      "startingArmour": 3,
+      "armourPerEquipment": -1
+    }
+  },
+  "robot": {
+    "name": "الآليون",
+    "en": "Robot",
+    "passiveName": "المناعة",
+    "passiveText": "الآليون محميون من جميع الحالات، بما فيها الحالات المفيدة والضارة.",
+    "nativeEnum": "RT_ROBOT",
+    "bonusCode": "RB_IMMUNITY",
+    "values": {
+      "allAfflictionsImmune": true
+    }
+  },
+  "imp": {
+    "name": "العفاريت",
+    "en": "Imp",
+    "passiveName": "الاشتعال",
+    "passiveText": "إذا كان العفريت مصابًا بالاشتعال، يحصل عند بداية دوره على +3 صحة دائمة بدل خسارة 1 صحة من النار.",
+    "nativeEnum": "RT_IMP",
+    "bonusCode": "RB_BURN",
+    "values": {
+      "burningUpkeepHealth": 3,
+      "normalFlameUpkeepHealth": -1
+    }
+  },
+  "spectre": {
+    "name": "الأطياف",
+    "en": "Spectre",
+    "passiveName": "الجسد البخاري",
+    "passiveText": "لا يمكن تجهيز الأطياف بأي معدات، ولا يمكن استهدافها بالهجمات الأساسية التي تستخدم الأسلحة الافتراضية. تبقى قابلة للتأثر بالقدرات والتعاويذ.",
+    "nativeEnum": "RT_SPECTRE",
+    "bonusCode": "RB_GHOST",
+    "values": {
+      "cannotEquip": true,
+      "immuneDefaultWeaponBasicAttack": true
+    }
+  },
+  "vampire": {
+    "name": "مصاصو الدماء",
+    "en": "Vampire",
+    "passiveName": "مصّ الدماء",
+    "passiveText": "يحصل مصاص الدماء على +2 صحة دائمة كلما تسبب هجومه أو قدرته بخسارة صحة لمخلوق، مهما كان مقدار الضرر؛ ويخسر 3 صحة في بداية كل دور له.",
+    "nativeEnum": "RT_VAMPIRE",
+    "bonusCode": "RB_BLOODSUCKER",
+    "values": {
+      "causeLifeLossHealth": 2,
+      "upkeepHealth": -3
+    }
+  }
+}

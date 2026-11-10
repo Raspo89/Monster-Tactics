@@ -1,0 +1,2540 @@
+[
+  {
+    "source": "Arenas/Arena_01/CM_lava_arena.ETC",
+    "file": "decoded/Arenas/Arena_01/CM_lava_arena.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "Arenas/Arena_01/CM_lava_arena_a.A8",
+    "sha256Source": "f7fdcf9065269d774d24fc241d263b4a4bc0d3ac3f2bc92734ef8951b00d543c"
+  },
+  {
+    "source": "Arenas/Arena_01/CM_lava_arena_normals.ETC",
+    "file": "decoded/Arenas/Arena_01/CM_lava_arena_normals.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "Arenas/Arena_01/CM_lava_arena_normals_a.A8",
+    "sha256Source": "529d82b9d48ef7fc41ef3d8a88bb8d8c2e4991c02f68d4cb1942b15062aa10b6"
+  },
+  {
+    "source": "Arenas/Arena_01/CM_lava_floor_01.ETC",
+    "file": "decoded/Arenas/Arena_01/CM_lava_floor_01.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Arenas/Arena_01/CM_lava_floor_01_a.A8",
+    "sha256Source": "e40323a53b9e7e31330aa7637e175a5a7c1c32cddbe8acbfb4d51d7ec7cf9e69"
+  },
+  {
+    "source": "Arenas/Arena_01/CM_lava_floor_02.ETC",
+    "file": "decoded/Arenas/Arena_01/CM_lava_floor_02.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "94ede4e85ccf954ccf41aeceb385203ff36b1331f844a52baeb8cb61abb3e636"
+  },
+  {
+    "source": "Arenas/Arena_01/CM_lava_floor_nm.ETC",
+    "file": "decoded/Arenas/Arena_01/CM_lava_floor_nm.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "9d101231609eedce1ccce3eb0293ba4f14a5e2f5153c5c21ae03f1aad87cf92c"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_lava.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_lava.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "e8440793bbbd42cc3bdf189c48303e0b3522d65e9d68e1d23e4ee59e68de3d11"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_lava_clouds.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_lava_clouds.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "e88cd22ba7bc02dcd3af42cbd1b1d9c27710d4f6113067d0c7118fbbb4df6625"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_lava_clouds_flash.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_lava_clouds_flash.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "2f78f8d8c015fb584f2256dc7df7e5d2c0c087ede6cb525e29c12186d113efda"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_lava_floor.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_lava_floor.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "44289c1d11be498087cb2695e376ebc8c865067e17d920446a32b2526a7a08b8"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_lava_floor_normals.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_lava_floor_normals.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "8aa104b89be4d39c7f63f3858bfdd889243ce5a33bbdbe5c1fa2828995c92b2f"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_lava_sky.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_lava_sky.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "bc2bb1e680dd22e6e4eaa94be719045be431b3007c539f9cb5c743549fce3d69"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_stained_glass.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_stained_glass.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "3eb2caa9df42b64b99fb0eddb4523f5ffada9f10831661e8d163579b33cdfdf6"
+  },
+  {
+    "source": "Arenas/Arena_01/Fan_stained_glass_glow.ETC",
+    "file": "decoded/Arenas/Arena_01/Fan_stained_glass_glow.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": "Arenas/Arena_01/Fan_stained_glass_glow_a.A8",
+    "sha256Source": "f446b0b93baa822d6be4977b6960697bd1e0d8ba2718085b0e7e91f27f8391e8"
+  },
+  {
+    "source": "Arenas/Arena_01/Particle_FireBall.ETC",
+    "file": "decoded/Arenas/Arena_01/Particle_FireBall.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Arenas/Arena_01/Particle_FireBall_a.A8",
+    "sha256Source": "6fb9f1b0ca89501971628b2fa4bddac9c46196f0556eae9a3c29872be6e4aee6"
+  },
+  {
+    "source": "Arenas/Arena_02/CM_forest_arena.ETC",
+    "file": "decoded/Arenas/Arena_02/CM_forest_arena.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": null,
+    "sha256Source": "f2dcc4835b76e67a1f34b11b05a68a4d305fd15966d965f98c71224d7787c37a"
+  },
+  {
+    "source": "Arenas/Arena_02/CM_forest_floor_01.ETC",
+    "file": "decoded/Arenas/Arena_02/CM_forest_floor_01.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Arenas/Arena_02/CM_forest_floor_01_a.A8",
+    "sha256Source": "bb93a9be418e0ca5aed453f550fdd6734de63860dae238d5bc91a4da9d2761df"
+  },
+  {
+    "source": "Arenas/Arena_02/CM_forest_floor_02.ETC",
+    "file": "decoded/Arenas/Arena_02/CM_forest_floor_02.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "f885709a9715062c7809abe30bf8a0c360c48f07acd1cc51d846867b8cd51831"
+  },
+  {
+    "source": "Arenas/Arena_02/CM_forest_floor_nm.ETC",
+    "file": "decoded/Arenas/Arena_02/CM_forest_floor_nm.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "528e7fdd70c5d5f47230a1997e238047a8175e75c789508cabdb961633f35b6f"
+  },
+  {
+    "source": "Arenas/Arena_02/Fan_forest_floor.ETC",
+    "file": "decoded/Arenas/Arena_02/Fan_forest_floor.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "da410daeab8ebcc266839990887adcf4c578d31563381554553d1de1ab41cc05"
+  },
+  {
+    "source": "Arenas/Arena_02/Fan_forest_glow.ETC",
+    "file": "decoded/Arenas/Arena_02/Fan_forest_glow.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "b4b9083658e30bb603d2d4918364b9269e065eb3cacdecebb1e8a3e23840d8f7"
+  },
+  {
+    "source": "Arenas/Arena_02/Fan_forest_sky.ETC",
+    "file": "decoded/Arenas/Arena_02/Fan_forest_sky.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "0ff91c70f95e8430653a07ea6262ce3d970d6fb184477b2ca1f7184db51cd869"
+  },
+  {
+    "source": "Arenas/Arena_02/Fan_mountain_clouds.ETC",
+    "file": "decoded/Arenas/Arena_02/Fan_mountain_clouds.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "5f8178308b40cae65d15ec53cad8f01872a2bd223ac5811f60adb5854b99cc7e"
+  },
+  {
+    "source": "Arenas/Arena_03/CM_Mountain_arena.ETC",
+    "file": "decoded/Arenas/Arena_03/CM_Mountain_arena.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": null,
+    "sha256Source": "bcecaf0a7f37d7edf1fe6779d12a382834fa329b645378346ad58dacff94c5ed"
+  },
+  {
+    "source": "Arenas/Arena_03/CM_Mountain_bits.ETC",
+    "file": "decoded/Arenas/Arena_03/CM_Mountain_bits.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "198aa1c9aa514bd4a37e786f7f9b3d7ca0bff770b199947b289cd30251d9c5de"
+  },
+  {
+    "source": "Arenas/Arena_03/CM_mountain_floor_01.ETC",
+    "file": "decoded/Arenas/Arena_03/CM_mountain_floor_01.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Arenas/Arena_03/CM_mountain_floor_01_a.A8",
+    "sha256Source": "71dd44712a838975ee6892504fd67433a17f2a4c5bb792d2606354b4ce90cbd7"
+  },
+  {
+    "source": "Arenas/Arena_03/CM_mountain_floor_02.ETC",
+    "file": "decoded/Arenas/Arena_03/CM_mountain_floor_02.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "2989caa5934c7f3229709b1ac51f6a6f2151c66e9432de7c2885568d96014d22"
+  },
+  {
+    "source": "Arenas/Arena_03/CM_mountain_floor_nm.ETC",
+    "file": "decoded/Arenas/Arena_03/CM_mountain_floor_nm.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "22effd2a2788d9cb0658824d8a04501e87897d30d96b1ad55b16030e2352a3a1"
+  },
+  {
+    "source": "Arenas/Arena_03/Fan_mountain_clouds.ETC",
+    "file": "decoded/Arenas/Arena_03/Fan_mountain_clouds.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "5f8178308b40cae65d15ec53cad8f01872a2bd223ac5811f60adb5854b99cc7e"
+  },
+  {
+    "source": "Arenas/Arena_03/Fan_mountain_crystals_shine.ETC",
+    "file": "decoded/Arenas/Arena_03/Fan_mountain_crystals_shine.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "777c74a211b3370b2a1ad1c7f84e006b1f017b3912da93b6bd0b1ad206b9b223"
+  },
+  {
+    "source": "Arenas/Arena_03/Fan_mountain_sky.ETC",
+    "file": "decoded/Arenas/Arena_03/Fan_mountain_sky.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "a6edcb950278c47de0c53b87cf88229e4c6f2f93c167e54d28fb909295cbede6"
+  },
+  {
+    "source": "Arenas/Arena_03/Fan_mountain_sky_sunset.ETC",
+    "file": "decoded/Arenas/Arena_03/Fan_mountain_sky_sunset.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "e0f04ad3096e5a355d2f7e7cf7fca6b3b375ce98d38390ee5c4edd25929cfe70"
+  },
+  {
+    "source": "Arenas/Arena_04/CM_desert_arena.ETC",
+    "file": "decoded/Arenas/Arena_04/CM_desert_arena.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": null,
+    "sha256Source": "bfd57faf4491ff793dde6f4022c833aa794dcdf1bd0398749b71940c7f1f58e3"
+  },
+  {
+    "source": "Arenas/Arena_04/CM_desert_arena_nm.ETC",
+    "file": "decoded/Arenas/Arena_04/CM_desert_arena_nm.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "Arenas/Arena_04/CM_desert_arena_nm_a.A8",
+    "sha256Source": "95bad5419d74cf1922f6f4caad6f73533ceac69a2a6404a36a6c4fd4222a1222"
+  },
+  {
+    "source": "Arenas/Arena_04/CM_desert_floor_01.ETC",
+    "file": "decoded/Arenas/Arena_04/CM_desert_floor_01.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Arenas/Arena_04/CM_desert_floor_01_a.A8",
+    "sha256Source": "6610afae087417d3eb6839aa90cc3b0a0117fb005485520c03cbd1373a605056"
+  },
+  {
+    "source": "Arenas/Arena_04/CM_desert_floor_02.ETC",
+    "file": "decoded/Arenas/Arena_04/CM_desert_floor_02.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "3e8bd02a3c2a59bece1cbbaa4b90c68a1c38c927b43a196fc755e35c8c3927b5"
+  },
+  {
+    "source": "Arenas/Arena_04/CM_desert_floor_nm.ETC",
+    "file": "decoded/Arenas/Arena_04/CM_desert_floor_nm.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "56c44b0c0652e0ee56420c9d7ca493de8a916c7c01d3c4bce4829b604d446edf"
+  },
+  {
+    "source": "Arenas/Arena_04/CM_desert_floor_rocks.ETC",
+    "file": "decoded/Arenas/Arena_04/CM_desert_floor_rocks.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "54800ba0d600ca92a0cb9df7bb2ece89b96619f9b037d3774ecd63f7b81973e4"
+  },
+  {
+    "source": "Arenas/Arena_04/Fan_desert_sky.ETC",
+    "file": "decoded/Arenas/Arena_04/Fan_desert_sky.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "24ca99785f6a9c785857190af348e2075ce5f22563624282186806796d860672"
+  },
+  {
+    "source": "Common/cm_cards.ETC",
+    "file": "decoded/Common/cm_cards.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/cm_cards_a.A8",
+    "sha256Source": "084877b5e361a65bf12177d76e097b12c2507bb723be8cbbba3b62cfab9390bc"
+  },
+  {
+    "source": "Common/cm_pox.ETC",
+    "file": "decoded/Common/cm_pox.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/cm_pox_a.A8",
+    "sha256Source": "f4bf78a5f4a4e6703c3bb006833fddef347c9ae5f226301cec1eccbcbbd08a4c"
+  },
+  {
+    "source": "Common/cm_purpleheart.ETC",
+    "file": "decoded/Common/cm_purpleheart.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/cm_purpleheart_a.A8",
+    "sha256Source": "b0e181a1f5d70f4c2941afeba35c18580bda4ecf6f10af8a2a823b828156fdb4"
+  },
+  {
+    "source": "Common/ember.ETC",
+    "file": "decoded/Common/ember.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": null,
+    "sha256Source": "0da23ed68520733d26ee33b2d56d5f39fa09ce2aa82610a98ce056c729f08400"
+  },
+  {
+    "source": "Common/Fan_bird.ETC",
+    "file": "decoded/Common/Fan_bird.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Fan_bird_a.A8",
+    "sha256Source": "21fe4798b33d30b68878c1f3981edc1fae43be62a86126c824e10f082880675a"
+  },
+  {
+    "source": "Common/Fan_coin.ETC",
+    "file": "decoded/Common/Fan_coin.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Fan_coin_a.A8",
+    "sha256Source": "8c4f36de3a4a0bc4bcaf1fa405e04e233f41546dad11329ebadb67c4dcccaf57"
+  },
+  {
+    "source": "Common/Fan_flies.ETC",
+    "file": "decoded/Common/Fan_flies.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Fan_flies_a.A8",
+    "sha256Source": "598c41066388bb645fa94ea4914ea98471626bee91d8ba02aa2816e2e43bbefa"
+  },
+  {
+    "source": "Common/Fan_forest_log.ETC",
+    "file": "decoded/Common/Fan_forest_log.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "ece80bb718de819d5b880f147092c22b5cf043a7a64113c2e19d309a65b8fc56"
+  },
+  {
+    "source": "Common/Fan_forest_log_normals.ETC",
+    "file": "decoded/Common/Fan_forest_log_normals.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Fan_forest_log_normals_a.A8",
+    "sha256Source": "63d544800f05deee635e29bf81f0062c72506712ce5f9aa944b950d7d5a6d03d"
+  },
+  {
+    "source": "Common/Fan_leaf.ETC",
+    "file": "decoded/Common/Fan_leaf.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Fan_leaf_a.A8",
+    "sha256Source": "311e8c45dd0f02689b8f78eb1e905eda7b0d2f31192a441fd4a114e2fac52c84"
+  },
+  {
+    "source": "Common/Fan_smoke.ETC",
+    "file": "decoded/Common/Fan_smoke.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": "Common/Fan_smoke_a.A8",
+    "sha256Source": "9c619153e5399d905f82b81a83e142544d7a1e60dcfd442968fe7dac083e76ae"
+  },
+  {
+    "source": "Common/Fan_wood.ETC",
+    "file": "decoded/Common/Fan_wood.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": "Common/Fan_wood_a.A8",
+    "sha256Source": "215a1696adea6171933c9635e7d5eb69e9289d45eab81967ad6dc9ff395ff3e8"
+  },
+  {
+    "source": "Common/GLWG_poof_sparkles.ETC",
+    "file": "decoded/Common/GLWG_poof_sparkles.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": null,
+    "sha256Source": "5807f1178ccd1d57e7d1fb24ad28f90412d78d689d5a425124294bd7f38d98c2"
+  },
+  {
+    "source": "Common/GLWG_shadow.ETC",
+    "file": "decoded/Common/GLWG_shadow.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "b1e81f731d2a29a2478416be80e660c41cfb1c04a86e8ebf8cceecf26ed9621e"
+  },
+  {
+    "source": "Common/GLWG_snowflake.ETC",
+    "file": "decoded/Common/GLWG_snowflake.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": "Common/GLWG_snowflake_a.A8",
+    "sha256Source": "df1f5df594c4859966ade8eff8e9dd3cddf5c72bee3f51a21bcbfca863a1c1d1"
+  },
+  {
+    "source": "Common/ice_debris.ETC",
+    "file": "decoded/Common/ice_debris.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/ice_debris_a.A8",
+    "sha256Source": "e008c28eb52da09721088b3348fc917fb48cb82ef1c7011d3c8ae101c54ce375"
+  },
+  {
+    "source": "Common/lightning_blue.ETC",
+    "file": "decoded/Common/lightning_blue.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "378ba46d9b9b266387f586ca0e9df075f8ec0069b3442b7bcd891acd35e5bad0"
+  },
+  {
+    "source": "Common/lightning_health.ETC",
+    "file": "decoded/Common/lightning_health.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "45cbe7c27f039d90250eb7fc5ffef59937d6364d9b3efc4e40f1ae825ca12f7a"
+  },
+  {
+    "source": "Common/lightning_pain.ETC",
+    "file": "decoded/Common/lightning_pain.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "0476c148b0863c0442b1f82cc0eddf966f06d28ab2d8cda2aaf10a712ec3cc3b"
+  },
+  {
+    "source": "Common/lightning_red.ETC",
+    "file": "decoded/Common/lightning_red.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "d645d98c092b2e72056a831879d92d06d30f44305c3878a94794d76db79ea828"
+  },
+  {
+    "source": "Common/lightspot.ETC",
+    "file": "decoded/Common/lightspot.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "b5fbda68d41dbd720a27fb7e20bca2c76e6c66b0671922fd80114bdf520c24e2"
+  },
+  {
+    "source": "Common/Particle_blood.ETC",
+    "file": "decoded/Common/Particle_blood.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": "Common/Particle_blood_a.A8",
+    "sha256Source": "21097e30bf76692247992f3e5895b92568e9bfca392041d3f1016f543f743ccb"
+  },
+  {
+    "source": "Common/Particle_boo.ETC",
+    "file": "decoded/Common/Particle_boo.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "b168b80a63e93c9d42854cf3226f3e8e80d51e39eddcf983ebf87d16e769212f"
+  },
+  {
+    "source": "Common/Particle_crater.ETC",
+    "file": "decoded/Common/Particle_crater.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Particle_crater_a.A8",
+    "sha256Source": "99812ba6998df9812df31b25dde5cadd883841c68bb945cf5bb71f53b6a302a2"
+  },
+  {
+    "source": "Common/particle_dust.ETC",
+    "file": "decoded/Common/particle_dust.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "9f0c92bfaaac782808708f225073bef4da1733be94773367429f0eae1c007b44"
+  },
+  {
+    "source": "Common/particle_earth.ETC",
+    "file": "decoded/Common/particle_earth.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": "Common/particle_earth_a.A8",
+    "sha256Source": "70d3927e6d4cb32a8e2ee21493042fdba98f3af0d06d12b188c438971ed0e827"
+  },
+  {
+    "source": "Common/particle_explosion.ETC",
+    "file": "decoded/Common/particle_explosion.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "04c84d8f4b27f45fc4c4c2548f4a2dd2a35bbc54e262c60eaf09786b39d3e92c"
+  },
+  {
+    "source": "Common/Particle_FireBall.ETC",
+    "file": "decoded/Common/Particle_FireBall.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Particle_FireBall_a.A8",
+    "sha256Source": "6fb9f1b0ca89501971628b2fa4bddac9c46196f0556eae9a3c29872be6e4aee6"
+  },
+  {
+    "source": "Common/Particle_glint.ETC",
+    "file": "decoded/Common/Particle_glint.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "39fff102639c01a8356cfb2d062bc5d43d7a272ae716d31931318d00ea89ffe7"
+  },
+  {
+    "source": "Common/Particle_lava_ball.ETC",
+    "file": "decoded/Common/Particle_lava_ball.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": "Common/Particle_lava_ball_a.A8",
+    "sha256Source": "618d8beecf50225e05da8a19405adff453f82933981cba696506a3d989094993"
+  },
+  {
+    "source": "Common/Particle_lightning.ETC",
+    "file": "decoded/Common/Particle_lightning.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "f51f405ebaafcbb8700f5de02fd6726564ef60db2908a061bf6fe14954a93d49"
+  },
+  {
+    "source": "Common/Particle_lightning_white.ETC",
+    "file": "decoded/Common/Particle_lightning_white.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "ca5cf0c039857f4935b6a89008956bbf86f6fac0d54bedc9dd5330b0cf6bc2d8"
+  },
+  {
+    "source": "Common/Particle_rage.ETC",
+    "file": "decoded/Common/Particle_rage.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Particle_rage_a.A8",
+    "sha256Source": "a5cdd1efad07c5bf80e65e73e2c3ee220dd0fd431fcf144099cdc243e6308b66"
+  },
+  {
+    "source": "Common/particle_ring.ETC",
+    "file": "decoded/Common/particle_ring.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "bd130708cb11b177b317201380db0555f4af7ddb350f9a93d654bc95cc353ae7"
+  },
+  {
+    "source": "Common/Particle_shatter.ETC",
+    "file": "decoded/Common/Particle_shatter.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "6435365f6154ac3e7146f2c704f32f82ca08457b7b98c411741cc01e25fc82ed"
+  },
+  {
+    "source": "Common/Particle_shootingstar.ETC",
+    "file": "decoded/Common/Particle_shootingstar.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": "Common/Particle_shootingstar_a.A8",
+    "sha256Source": "f7215cf848608b5980ca2e3681cca7e7ab920ccc11470d59e9213551d28f72ce"
+  },
+  {
+    "source": "Common/Particle_snare.ETC",
+    "file": "decoded/Common/Particle_snare.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Particle_snare_a.A8",
+    "sha256Source": "4e771c25f0cd04317fbc4bd3957c9eb1455ffecd72b24c200a5a35477e964521"
+  },
+  {
+    "source": "Common/Particle_star.ETC",
+    "file": "decoded/Common/Particle_star.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "52cb12be58f9de15b8f6ef5f718e9f0725bc1eb9606db844a421eae1a4f24395"
+  },
+  {
+    "source": "Common/Particle_stun.ETC",
+    "file": "decoded/Common/Particle_stun.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "8b9da24edd9fe682ca3e58cdc35c9e69aa704cc09f5a81a7aa2f7088c13e41e8"
+  },
+  {
+    "source": "Common/Particle_teleport.ETC",
+    "file": "decoded/Common/Particle_teleport.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": null,
+    "sha256Source": "2c4dc4f606d64d1acbf392ad30b8209aa811e95b889ec982757a162b9221dbba"
+  },
+  {
+    "source": "Common/Particle_tornado.ETC",
+    "file": "decoded/Common/Particle_tornado.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/Particle_tornado_a.A8",
+    "sha256Source": "a573d7edc9542af06c73aca32af40b51d0f008404ef6a4db3d229115202357fe"
+  },
+  {
+    "source": "Common/Particle_Z.ETC",
+    "file": "decoded/Common/Particle_Z.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": "Common/Particle_Z_a.A8",
+    "sha256Source": "6029a6f0b2d8231e656cfe80fbd00507b64c7edd61aeb2e9f8eb350616dc3a75"
+  },
+  {
+    "source": "Common/protect_thorn.ETC",
+    "file": "decoded/Common/protect_thorn.webp",
+    "width": 32,
+    "height": 64,
+    "alphaSource": "Common/protect_thorn_a.A8",
+    "sha256Source": "7956f45a9b6ec55951d86d5bc2cdf45c7f1d53edc75f80addf47b5e6a41825b5"
+  },
+  {
+    "source": "Common/protect_thorn_ring.ETC",
+    "file": "decoded/Common/protect_thorn_ring.webp",
+    "width": 128,
+    "height": 128,
+    "alphaSource": "Common/protect_thorn_ring_a.A8",
+    "sha256Source": "35576fd3a5250c739f07256f90050f1c78bc5581b76f5756d60c23938d6edb6e"
+  },
+  {
+    "source": "Common/ribbon_sparkle.ETC",
+    "file": "decoded/Common/ribbon_sparkle.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": null,
+    "sha256Source": "5807f1178ccd1d57e7d1fb24ad28f90412d78d689d5a425124294bd7f38d98c2"
+  },
+  {
+    "source": "Common/smash_protect.ETC",
+    "file": "decoded/Common/smash_protect.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": null,
+    "sha256Source": "c9f7f3e119eb172d303cfce6bca8bb8f7c3848a984ef0bc18ebd16da0f23abb1"
+  },
+  {
+    "source": "Common/stone_debris.ETC",
+    "file": "decoded/Common/stone_debris.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Common/stone_debris_a.A8",
+    "sha256Source": "4262e13306313a017fbd5f7ce06bdc399040fa896eb49970cc163d67ea88d31f"
+  },
+  {
+    "source": "Common/StreakHard.ETC",
+    "file": "decoded/Common/StreakHard.webp",
+    "width": 16,
+    "height": 128,
+    "alphaSource": "Common/StreakHard_a.A8",
+    "sha256Source": "e36fb0c277adf058cec2b700782e9e1e0fcedd9387344e1006629d3f2ed64102"
+  },
+  {
+    "source": "GUI/Achievements.ETC",
+    "file": "decoded/GUI/Achievements.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/Achievements_a.A8",
+    "sha256Source": "2d55419020c4591f608ba23ce919d56f12191a03c2c52027895bb16b831a3b7a"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "decoded/GUI/AssortedIcons1.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/AssortedIcons1_a.A8",
+    "sha256Source": "8fcfac1b85ddaced2bd287d04a29e56922db0340054339d3ae00cddf60c77509"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_00.webp",
+    "crop": [
+      0,
+      0,
+      128,
+      128
+    ],
+    "index": 0,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_01.webp",
+    "crop": [
+      128,
+      0,
+      128,
+      128
+    ],
+    "index": 1,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_02.webp",
+    "crop": [
+      256,
+      0,
+      128,
+      128
+    ],
+    "index": 2,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_03.webp",
+    "crop": [
+      384,
+      0,
+      128,
+      128
+    ],
+    "index": 3,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_04.webp",
+    "crop": [
+      512,
+      0,
+      128,
+      128
+    ],
+    "index": 4,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_05.webp",
+    "crop": [
+      640,
+      0,
+      128,
+      128
+    ],
+    "index": 5,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_06.webp",
+    "crop": [
+      768,
+      0,
+      128,
+      128
+    ],
+    "index": 6,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_07.webp",
+    "crop": [
+      896,
+      0,
+      128,
+      128
+    ],
+    "index": 7,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_08.webp",
+    "crop": [
+      0,
+      128,
+      128,
+      128
+    ],
+    "index": 8,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_09.webp",
+    "crop": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "index": 9,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_10.webp",
+    "crop": [
+      256,
+      128,
+      128,
+      128
+    ],
+    "index": 10,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_11.webp",
+    "crop": [
+      384,
+      128,
+      128,
+      128
+    ],
+    "index": 11,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_12.webp",
+    "crop": [
+      512,
+      128,
+      128,
+      128
+    ],
+    "index": 12,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_13.webp",
+    "crop": [
+      640,
+      128,
+      128,
+      128
+    ],
+    "index": 13,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_14.webp",
+    "crop": [
+      768,
+      128,
+      128,
+      128
+    ],
+    "index": 14,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_15.webp",
+    "crop": [
+      896,
+      128,
+      128,
+      128
+    ],
+    "index": 15,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_16.webp",
+    "crop": [
+      0,
+      256,
+      128,
+      128
+    ],
+    "index": 16,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_17.webp",
+    "crop": [
+      128,
+      256,
+      128,
+      128
+    ],
+    "index": 17,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_18.webp",
+    "crop": [
+      256,
+      256,
+      128,
+      128
+    ],
+    "index": 18,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_19.webp",
+    "crop": [
+      384,
+      256,
+      128,
+      128
+    ],
+    "index": 19,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_20.webp",
+    "crop": [
+      512,
+      256,
+      128,
+      128
+    ],
+    "index": 20,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_21.webp",
+    "crop": [
+      640,
+      256,
+      128,
+      128
+    ],
+    "index": 21,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_22.webp",
+    "crop": [
+      768,
+      256,
+      128,
+      128
+    ],
+    "index": 22,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_23.webp",
+    "crop": [
+      896,
+      256,
+      128,
+      128
+    ],
+    "index": 23,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_24.webp",
+    "crop": [
+      0,
+      384,
+      128,
+      128
+    ],
+    "index": 24,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_25.webp",
+    "crop": [
+      128,
+      384,
+      128,
+      128
+    ],
+    "index": 25,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_26.webp",
+    "crop": [
+      256,
+      384,
+      128,
+      128
+    ],
+    "index": 26,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_27.webp",
+    "crop": [
+      384,
+      384,
+      128,
+      128
+    ],
+    "index": 27,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_28.webp",
+    "crop": [
+      512,
+      384,
+      128,
+      128
+    ],
+    "index": 28,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_29.webp",
+    "crop": [
+      640,
+      384,
+      128,
+      128
+    ],
+    "index": 29,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_30.webp",
+    "crop": [
+      768,
+      384,
+      128,
+      128
+    ],
+    "index": 30,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_31.webp",
+    "crop": [
+      896,
+      384,
+      128,
+      128
+    ],
+    "index": 31,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_32.webp",
+    "crop": [
+      0,
+      512,
+      128,
+      128
+    ],
+    "index": 32,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_33.webp",
+    "crop": [
+      128,
+      512,
+      128,
+      128
+    ],
+    "index": 33,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_34.webp",
+    "crop": [
+      256,
+      512,
+      128,
+      128
+    ],
+    "index": 34,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_35.webp",
+    "crop": [
+      384,
+      512,
+      128,
+      128
+    ],
+    "index": 35,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_36.webp",
+    "crop": [
+      512,
+      512,
+      128,
+      128
+    ],
+    "index": 36,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_37.webp",
+    "crop": [
+      640,
+      512,
+      128,
+      128
+    ],
+    "index": 37,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_38.webp",
+    "crop": [
+      768,
+      512,
+      128,
+      128
+    ],
+    "index": 38,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_39.webp",
+    "crop": [
+      896,
+      512,
+      128,
+      128
+    ],
+    "index": 39,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_40.webp",
+    "crop": [
+      0,
+      640,
+      128,
+      128
+    ],
+    "index": 40,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_41.webp",
+    "crop": [
+      128,
+      640,
+      128,
+      128
+    ],
+    "index": 41,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_42.webp",
+    "crop": [
+      256,
+      640,
+      128,
+      128
+    ],
+    "index": 42,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_43.webp",
+    "crop": [
+      384,
+      640,
+      128,
+      128
+    ],
+    "index": 43,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_44.webp",
+    "crop": [
+      512,
+      640,
+      128,
+      128
+    ],
+    "index": 44,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_45.webp",
+    "crop": [
+      640,
+      640,
+      128,
+      128
+    ],
+    "index": 45,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_46.webp",
+    "crop": [
+      768,
+      640,
+      128,
+      128
+    ],
+    "index": 46,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_47.webp",
+    "crop": [
+      896,
+      640,
+      128,
+      128
+    ],
+    "index": 47,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_48.webp",
+    "crop": [
+      0,
+      768,
+      128,
+      128
+    ],
+    "index": 48,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_49.webp",
+    "crop": [
+      128,
+      768,
+      128,
+      128
+    ],
+    "index": 49,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_50.webp",
+    "crop": [
+      256,
+      768,
+      128,
+      128
+    ],
+    "index": 50,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_51.webp",
+    "crop": [
+      384,
+      768,
+      128,
+      128
+    ],
+    "index": 51,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_52.webp",
+    "crop": [
+      512,
+      768,
+      128,
+      128
+    ],
+    "index": 52,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_53.webp",
+    "crop": [
+      640,
+      768,
+      128,
+      128
+    ],
+    "index": 53,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_54.webp",
+    "crop": [
+      768,
+      768,
+      128,
+      128
+    ],
+    "index": 54,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_55.webp",
+    "crop": [
+      896,
+      768,
+      128,
+      128
+    ],
+    "index": 55,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_56.webp",
+    "crop": [
+      0,
+      896,
+      128,
+      128
+    ],
+    "index": 56,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_57.webp",
+    "crop": [
+      128,
+      896,
+      128,
+      128
+    ],
+    "index": 57,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_58.webp",
+    "crop": [
+      256,
+      896,
+      128,
+      128
+    ],
+    "index": 58,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_59.webp",
+    "crop": [
+      384,
+      896,
+      128,
+      128
+    ],
+    "index": 59,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_60.webp",
+    "crop": [
+      512,
+      896,
+      128,
+      128
+    ],
+    "index": 60,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_61.webp",
+    "crop": [
+      640,
+      896,
+      128,
+      128
+    ],
+    "index": 61,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_62.webp",
+    "crop": [
+      768,
+      896,
+      128,
+      128
+    ],
+    "index": 62,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons1.ETC",
+    "file": "icons/AssortedIcons1_63.webp",
+    "crop": [
+      896,
+      896,
+      128,
+      128
+    ],
+    "index": 63,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "decoded/GUI/AssortedIcons2.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "GUI/AssortedIcons2_a.A8",
+    "sha256Source": "24cba3fffa5bc72fe51bc32237d78cd9a86884c816cac158fd471382bc925085"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_00.webp",
+    "crop": [
+      0,
+      0,
+      128,
+      128
+    ],
+    "index": 0,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_01.webp",
+    "crop": [
+      128,
+      0,
+      128,
+      128
+    ],
+    "index": 1,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_02.webp",
+    "crop": [
+      256,
+      0,
+      128,
+      128
+    ],
+    "index": 2,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_03.webp",
+    "crop": [
+      384,
+      0,
+      128,
+      128
+    ],
+    "index": 3,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_04.webp",
+    "crop": [
+      512,
+      0,
+      128,
+      128
+    ],
+    "index": 4,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_05.webp",
+    "crop": [
+      640,
+      0,
+      128,
+      128
+    ],
+    "index": 5,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_06.webp",
+    "crop": [
+      768,
+      0,
+      128,
+      128
+    ],
+    "index": 6,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_07.webp",
+    "crop": [
+      896,
+      0,
+      128,
+      128
+    ],
+    "index": 7,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_08.webp",
+    "crop": [
+      0,
+      128,
+      128,
+      128
+    ],
+    "index": 8,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_09.webp",
+    "crop": [
+      128,
+      128,
+      128,
+      128
+    ],
+    "index": 9,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_10.webp",
+    "crop": [
+      256,
+      128,
+      128,
+      128
+    ],
+    "index": 10,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_11.webp",
+    "crop": [
+      384,
+      128,
+      128,
+      128
+    ],
+    "index": 11,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_12.webp",
+    "crop": [
+      512,
+      128,
+      128,
+      128
+    ],
+    "index": 12,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_13.webp",
+    "crop": [
+      640,
+      128,
+      128,
+      128
+    ],
+    "index": 13,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_14.webp",
+    "crop": [
+      768,
+      128,
+      128,
+      128
+    ],
+    "index": 14,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_15.webp",
+    "crop": [
+      896,
+      128,
+      128,
+      128
+    ],
+    "index": 15,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_16.webp",
+    "crop": [
+      0,
+      256,
+      128,
+      128
+    ],
+    "index": 16,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_17.webp",
+    "crop": [
+      128,
+      256,
+      128,
+      128
+    ],
+    "index": 17,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_18.webp",
+    "crop": [
+      256,
+      256,
+      128,
+      128
+    ],
+    "index": 18,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_19.webp",
+    "crop": [
+      384,
+      256,
+      128,
+      128
+    ],
+    "index": 19,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_20.webp",
+    "crop": [
+      512,
+      256,
+      128,
+      128
+    ],
+    "index": 20,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_21.webp",
+    "crop": [
+      640,
+      256,
+      128,
+      128
+    ],
+    "index": 21,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_22.webp",
+    "crop": [
+      768,
+      256,
+      128,
+      128
+    ],
+    "index": 22,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_23.webp",
+    "crop": [
+      896,
+      256,
+      128,
+      128
+    ],
+    "index": 23,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_24.webp",
+    "crop": [
+      0,
+      384,
+      128,
+      128
+    ],
+    "index": 24,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_25.webp",
+    "crop": [
+      128,
+      384,
+      128,
+      128
+    ],
+    "index": 25,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_26.webp",
+    "crop": [
+      256,
+      384,
+      128,
+      128
+    ],
+    "index": 26,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_27.webp",
+    "crop": [
+      384,
+      384,
+      128,
+      128
+    ],
+    "index": 27,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_28.webp",
+    "crop": [
+      512,
+      384,
+      128,
+      128
+    ],
+    "index": 28,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_29.webp",
+    "crop": [
+      640,
+      384,
+      128,
+      128
+    ],
+    "index": 29,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_30.webp",
+    "crop": [
+      768,
+      384,
+      128,
+      128
+    ],
+    "index": 30,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_31.webp",
+    "crop": [
+      896,
+      384,
+      128,
+      128
+    ],
+    "index": 31,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_32.webp",
+    "crop": [
+      0,
+      512,
+      128,
+      128
+    ],
+    "index": 32,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_33.webp",
+    "crop": [
+      128,
+      512,
+      128,
+      128
+    ],
+    "index": 33,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_34.webp",
+    "crop": [
+      256,
+      512,
+      128,
+      128
+    ],
+    "index": 34,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_35.webp",
+    "crop": [
+      384,
+      512,
+      128,
+      128
+    ],
+    "index": 35,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_36.webp",
+    "crop": [
+      512,
+      512,
+      128,
+      128
+    ],
+    "index": 36,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_37.webp",
+    "crop": [
+      640,
+      512,
+      128,
+      128
+    ],
+    "index": 37,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_38.webp",
+    "crop": [
+      768,
+      512,
+      128,
+      128
+    ],
+    "index": 38,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_39.webp",
+    "crop": [
+      896,
+      512,
+      128,
+      128
+    ],
+    "index": 39,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_40.webp",
+    "crop": [
+      0,
+      640,
+      128,
+      128
+    ],
+    "index": 40,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_41.webp",
+    "crop": [
+      128,
+      640,
+      128,
+      128
+    ],
+    "index": 41,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_42.webp",
+    "crop": [
+      256,
+      640,
+      128,
+      128
+    ],
+    "index": 42,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_43.webp",
+    "crop": [
+      384,
+      640,
+      128,
+      128
+    ],
+    "index": 43,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_44.webp",
+    "crop": [
+      512,
+      640,
+      128,
+      128
+    ],
+    "index": 44,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_45.webp",
+    "crop": [
+      640,
+      640,
+      128,
+      128
+    ],
+    "index": 45,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_46.webp",
+    "crop": [
+      768,
+      640,
+      128,
+      128
+    ],
+    "index": 46,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_47.webp",
+    "crop": [
+      896,
+      640,
+      128,
+      128
+    ],
+    "index": 47,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_48.webp",
+    "crop": [
+      0,
+      768,
+      128,
+      128
+    ],
+    "index": 48,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_49.webp",
+    "crop": [
+      128,
+      768,
+      128,
+      128
+    ],
+    "index": 49,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_50.webp",
+    "crop": [
+      256,
+      768,
+      128,
+      128
+    ],
+    "index": 50,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_51.webp",
+    "crop": [
+      384,
+      768,
+      128,
+      128
+    ],
+    "index": 51,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_52.webp",
+    "crop": [
+      512,
+      768,
+      128,
+      128
+    ],
+    "index": 52,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_53.webp",
+    "crop": [
+      640,
+      768,
+      128,
+      128
+    ],
+    "index": 53,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_54.webp",
+    "crop": [
+      768,
+      768,
+      128,
+      128
+    ],
+    "index": 54,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_55.webp",
+    "crop": [
+      896,
+      768,
+      128,
+      128
+    ],
+    "index": 55,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_56.webp",
+    "crop": [
+      0,
+      896,
+      128,
+      128
+    ],
+    "index": 56,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_57.webp",
+    "crop": [
+      128,
+      896,
+      128,
+      128
+    ],
+    "index": 57,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_58.webp",
+    "crop": [
+      256,
+      896,
+      128,
+      128
+    ],
+    "index": 58,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_59.webp",
+    "crop": [
+      384,
+      896,
+      128,
+      128
+    ],
+    "index": 59,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_60.webp",
+    "crop": [
+      512,
+      896,
+      128,
+      128
+    ],
+    "index": 60,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_61.webp",
+    "crop": [
+      640,
+      896,
+      128,
+      128
+    ],
+    "index": 61,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_62.webp",
+    "crop": [
+      768,
+      896,
+      128,
+      128
+    ],
+    "index": 62,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/AssortedIcons2.ETC",
+    "file": "icons/AssortedIcons2_63.webp",
+    "crop": [
+      896,
+      896,
+      128,
+      128
+    ],
+    "index": 63,
+    "semantics": "unmapped; do not infer ability ID from grid index"
+  },
+  {
+    "source": "GUI/Backplates.ETC",
+    "file": "decoded/GUI/Backplates.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/Backplates_a.A8",
+    "sha256Source": "5fba540d58505f69e77cd274c3fbdffdbab036c426c648e90f62ef6e5df3e287"
+  },
+  {
+    "source": "GUI/Backplates2.ETC",
+    "file": "decoded/GUI/Backplates2.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/Backplates2_a.A8",
+    "sha256Source": "13df926391ce7a8aae54d1c6544c573bcaeb00783587d0707ee38b3dfc1363d0"
+  },
+  {
+    "source": "GUI/Backplates3.ETC",
+    "file": "decoded/GUI/Backplates3.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/Backplates3_a.A8",
+    "sha256Source": "b50392865547e0ca67d70c805826b2570ab8650e85ed0b06a8427a1b3df0ea7c"
+  },
+  {
+    "source": "GUI/ButtonBits2.ETC",
+    "file": "decoded/GUI/ButtonBits2.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/ButtonBits2_a.A8",
+    "sha256Source": "0702d218da2f13f85a2e11f8dc205825572f68fb11542825cc36ab49c927ff38"
+  },
+  {
+    "source": "GUI/ButtonBits3.ETC",
+    "file": "decoded/GUI/ButtonBits3.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/ButtonBits3_a.A8",
+    "sha256Source": "b5bd09381a24932a439a131ccedbeac711b3c06be3552fdcb8911655bb849f10"
+  },
+  {
+    "source": "GUI/ButtonBits4.ETC",
+    "file": "decoded/GUI/ButtonBits4.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/ButtonBits4_a.A8",
+    "sha256Source": "dcd2903fd26f82c552aca4e0cf30c3643d228555bf790e96d2c6916395c0e4b7"
+  },
+  {
+    "source": "GUI/ButtonBits5.ETC",
+    "file": "decoded/GUI/ButtonBits5.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "GUI/ButtonBits5_a.A8",
+    "sha256Source": "744c2bacc913a90c6a03bd99ea35ad4b287c3d9397aec92ee86a1f64d6064cd8"
+  },
+  {
+    "source": "GUI/ButtonBits7.ETC",
+    "file": "decoded/GUI/ButtonBits7.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "GUI/ButtonBits7_a.A8",
+    "sha256Source": "b27081c0a818a28a6cf6d047e1ef0418ad6f15407713dfe7b6b58b7c06ace64e"
+  },
+  {
+    "source": "GUI/icons.ETC",
+    "file": "decoded/GUI/icons.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/icons_a.A8",
+    "sha256Source": "110e1c3a4713b095aab056e0deab2843df406c85104c71ce0d27ee6d5b4ce430"
+  },
+  {
+    "source": "GUI/MenuBackground.ETC",
+    "file": "decoded/GUI/MenuBackground.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": null,
+    "sha256Source": "d135f750e59f24aa9246343809d7cab8de0961fba5567f2b60497a42988ef316"
+  },
+  {
+    "source": "GUI/MonsterStats.ETC",
+    "file": "decoded/GUI/MonsterStats.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/MonsterStats_a.A8",
+    "sha256Source": "88dea41c79f2f0507d7fdf9b15846fe6a7518892d7d1735f8541b2f13db1ea6e"
+  },
+  {
+    "source": "GUI/PlayCardGlow.ETC",
+    "file": "decoded/GUI/PlayCardGlow.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "GUI/PlayCardGlow_a.A8",
+    "sha256Source": "9b06da4ced60f501846ca1cdd5710560d6cfd5134847e6ee06e10376979d7aa8"
+  },
+  {
+    "source": "GUI/Popupbackground.ETC",
+    "file": "decoded/GUI/Popupbackground.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "7effc052bbcc2394960250b4c0201e2e011760ed2abcc16906cfce2e6ce3cdfc"
+  },
+  {
+    "source": "GUI/quests.ETC",
+    "file": "decoded/GUI/quests.webp",
+    "width": 1024,
+    "height": 1024,
+    "alphaSource": "GUI/quests_a.A8",
+    "sha256Source": "72502b21277314b91f63f637398a29d2bbfce36f3e7e10099fec4f07edc9960f"
+  },
+  {
+    "source": "Locale/winlose_eng.ETC",
+    "file": "decoded/Locale/winlose_eng.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Locale/winlose_eng_a.A8",
+    "sha256Source": "883e799e5e7a7fc05ae8236d99df1d5c43e5e4973953e4c3234fc3f2fcd92fad"
+  },
+  {
+    "source": "Selectors/Fan_ability_move.ETC",
+    "file": "decoded/Selectors/Fan_ability_move.webp",
+    "width": 16,
+    "height": 16,
+    "alphaSource": "Selectors/Fan_ability_move_a.A8",
+    "sha256Source": "858f8014b333de6e4b8184ffef7c8ac5279538c5efbb69643814202d77a882a5"
+  },
+  {
+    "source": "Selectors/Fan_pickups.ETC",
+    "file": "decoded/Selectors/Fan_pickups.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Selectors/Fan_pickups_a.A8",
+    "sha256Source": "6ac7e4f93219568946a56d370259e5714d93b7870e9641c10bc0865cb6c2f765"
+  },
+  {
+    "source": "Selectors/Fan_pickups_02.ETC",
+    "file": "decoded/Selectors/Fan_pickups_02.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Selectors/Fan_pickups_02_a.A8",
+    "sha256Source": "c04e4d714670ef7d5fade8e5139723e1aa83b69384240f85a56f9aff9ae8a98b"
+  },
+  {
+    "source": "Selectors/Fan_pickups_02_normals.ETC",
+    "file": "decoded/Selectors/Fan_pickups_02_normals.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "30027df8bf5d639302417ede24a2e8f14054f402e578ea34fd6a00e478ba98f2"
+  },
+  {
+    "source": "Selectors/Fan_pickups_03.ETC",
+    "file": "decoded/Selectors/Fan_pickups_03.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": "Selectors/Fan_pickups_03_a.A8",
+    "sha256Source": "7e60dbd77a06cb1876f91ed34bb3969d123572a0227d9f5d8dabbc0ece9d778b"
+  },
+  {
+    "source": "Selectors/Fan_pickups_03_normals.ETC",
+    "file": "decoded/Selectors/Fan_pickups_03_normals.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "61daa611cb5e5f6a298c20d67941100baea168b9a5371f524eb082337a09664f"
+  },
+  {
+    "source": "Selectors/Fan_pickups_normals.ETC",
+    "file": "decoded/Selectors/Fan_pickups_normals.webp",
+    "width": 512,
+    "height": 512,
+    "alphaSource": null,
+    "sha256Source": "7428421c648ee1e8150739c53e3fa594d66ce58dfb0f62d83a3e2af0a01d6ed8"
+  },
+  {
+    "source": "Selectors/Fan_selector_Blue_light.ETC",
+    "file": "decoded/Selectors/Fan_selector_Blue_light.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "85cc296a6487d3f3e903a768465b1ceb0d436516a51637df30d994846f408f91"
+  },
+  {
+    "source": "Selectors/Fan_selector_Blue_target.ETC",
+    "file": "decoded/Selectors/Fan_selector_Blue_target.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": null,
+    "sha256Source": "9550089c2643c33f20ff29b4f9cbe2506e777845e3f9d0a995944858a4345ed9"
+  },
+  {
+    "source": "Selectors/Fan_selector_green_light.ETC",
+    "file": "decoded/Selectors/Fan_selector_green_light.webp",
+    "width": 64,
+    "height": 64,
+    "alphaSource": "Selectors/Fan_selector_green_light_a.A8",
+    "sha256Source": "7ea8120257a7f440080c8ae4db35658bc1706ca6c9ec2145a2cf147700e9311c"
+  },
+  {
+    "source": "Selectors/Fan_selector_orange_light.ETC",
+    "file": "decoded/Selectors/Fan_selector_orange_light.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": "Selectors/Fan_selector_orange_light_a.A8",
+    "sha256Source": "c020bd23ce02676a8757359df91a7d3960b559ce7eaad0e040aa1c70bc812b53"
+  },
+  {
+    "source": "Selectors/Fan_selector_pick.ETC",
+    "file": "decoded/Selectors/Fan_selector_pick.webp",
+    "width": 256,
+    "height": 256,
+    "alphaSource": "Selectors/Fan_selector_pick_a.A8",
+    "sha256Source": "13e8634abb7f36d5bf378760fac21e515ca3e5fc301b4a7aa2387c3ea4a5c3d8"
+  },
+  {
+    "source": "Selectors/Fan_selector_red_beam.ETC",
+    "file": "decoded/Selectors/Fan_selector_red_beam.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": null,
+    "sha256Source": "9d3d06bfc6177f06dc0e13eda5b16928c5b52bb0aa97e0405bd3876088e256d1"
+  },
+  {
+    "source": "Selectors/Fan_selector_red_light.ETC",
+    "file": "decoded/Selectors/Fan_selector_red_light.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": "Selectors/Fan_selector_red_light_a.A8",
+    "sha256Source": "1c46bc34293af4dffb144de85a0dd28e47d94df0ab6920686e00961a79458e8f"
+  },
+  {
+    "source": "Selectors/Fan_team_indicator.ETC",
+    "file": "decoded/Selectors/Fan_team_indicator.webp",
+    "width": 32,
+    "height": 32,
+    "alphaSource": "Selectors/Fan_team_indicator_a.A8",
+    "sha256Source": "df1f5df594c4859966ade8eff8e9dd3cddf5c72bee3f51a21bcbfca863a1c1d1"
+  },
+  {
+    "source": "Common/title.png",
+    "file": "decoded/Common/title.png"
+  },
+  {
+    "source": "Furniture/Crystals/fan_furniture_crystals.ETC",
+    "file": "decoded/Furniture/Crystals/fan_furniture_crystals.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "source": "Furniture/Crystals/fan_furniture_crystals_normals.ETC",
+    "file": "decoded/Furniture/Crystals/fan_furniture_crystals_normals.webp",
+    "width": 128,
+    "height": 128
+  },
+  {
+    "source": "Furniture/Crystals/Fan_furniture_crystals_shine.ETC",
+    "file": "decoded/Furniture/Crystals/Fan_furniture_crystals_shine.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "source": "Sound/game/general/castspell.wav",
+    "file": "audio/castspell.wav"
+  },
+  {
+    "source": "Sound/game/general/draw1card.wav",
+    "file": "audio/draw1card.wav"
+  },
+  {
+    "source": "Sound/game/general/revealcard.wav",
+    "file": "audio/revealcard.wav"
+  },
+  {
+    "source": "Sound/gui/addcard.wav",
+    "file": "audio/addcard.wav"
+  },
+  {
+    "source": "Sound/gui/grabcard.wav",
+    "file": "audio/grabcard.wav"
+  },
+  {
+    "source": "Sound/gui/removecard.wav",
+    "file": "audio/removecard.wav"
+  },
+  {
+    "source": "Sound/gui/yourturn.wav",
+    "file": "audio/yourturn.wav"
+  }
+]

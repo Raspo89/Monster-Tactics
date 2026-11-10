@@ -1,0 +1,71 @@
+
+### CCharacterMin::DealDamageTo(int, CRuneDaisList*, CAIBattleState*, int*, int*) 0x134028 276
+00134028: push     {r4, r5, r6, r7, r8, sb, sl, lr}
+0013402c: mov      r4, r0
+00134030: ldr      r5, [sp, #0x24]
+00134034: mov      r6, r1
+00134038: mov      sb, r2
+0013403c: mov      r8, r3
+00134040: cmp      r5, #0
+00134044: ldr      r7, [sp, #0x20]
+00134048: movne    r0, #0
+0013404c: strne    r0, [r5]
+00134050: mov      r0, r4
+00134054: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+00134058: cmp      r0, #0
+0013405c: bne      #0x134068
+00134060: mov      r0, #1
+00134064: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134068: mov      r0, r4
+0013406c: bl       #0x13199c ; CCharacterMin::CanTakeBattleDamage()
+00134070: cmp      r0, #0
+00134074: bne      #0x134080
+00134078: mov      r0, #0
+0013407c: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134080: mov      r0, r4
+00134084: mov      r1, #0xe
+00134088: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+0013408c: cmp      r0, #0
+00134090: beq      #0x1340ec
+00134094: ldrb     r3, [r4, #0x39]
+00134098: cmp      r3, #0
+0013409c: beq      #0x1340ec
+001340a0: sub      r3, r3, #1
+001340a4: uxtb     r3, r3
+001340a8: strb     r3, [r4, #0x39]
+001340ac: cmp      r3, #0
+001340b0: bne      #0x1340c0
+001340b4: mov      r0, r4
+001340b8: mov      r1, #0xe
+001340bc: bl       #0x1317f4 ; CCharacterMin::RemoveAffliction(eAfflictionCode)
+001340c0: mov      r1, sb
+001340c4: mov      r2, r8
+001340c8: mov      r0, r4
+001340cc: mov      r6, #0
+001340d0: bl       #0x133e24 ; CCharacterMin::GetArmour(CRuneDaisList*, CAIBattleState*)
+001340d4: mov      r0, r4
+001340d8: mov      r1, r6
+001340dc: bl       #0x13197c ; CCharacterMin::ReduceArmour(int)
+001340e0: cmp      r7, #0
+001340e4: strne    r6, [r7]
+001340e8: b        #0x134078 ; 
+001340ec: mov      r0, r4
+001340f0: mov      r1, sb
+001340f4: mov      r2, r8
+001340f8: bl       #0x133e24 ; CCharacterMin::GetArmour(CRuneDaisList*, CAIBattleState*)
+001340fc: bic      sl, r0, r0, asr #31
+00134100: cmp      r6, sl
+00134104: ble      #0x1340d4
+00134108: cmp      r7, #0
+0013410c: mov      r0, r4
+00134110: strne    sl, [r7]
+00134114: mov      r1, sl
+00134118: bl       #0x13197c ; CCharacterMin::ReduceArmour(int)
+0013411c: cmp      r5, #0
+00134120: rsb      r1, sl, r6
+00134124: mov      r0, r4
+00134128: strne    r1, [r5]
+0013412c: mov      r2, sb
+00134130: mov      r3, r8
+00134134: pop      {r4, r5, r6, r7, r8, sb, sl, lr}
+00134138: b        #0x133bb4 ; CCharacterMin::TakeDamage(int, CRuneDaisList*, CAIBattleState*)

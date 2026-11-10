@@ -1,0 +1,209 @@
+[
+  {
+    "Race": "",
+    "Name": "",
+    "Power": "",
+    "Health": "",
+    "Armour": "",
+    "Mojo generated": "",
+    "Ability": ""
+  },
+  {
+    "Race": "HT_DUNGEONMASTER",
+    "Name": "Blart",
+    "Power": "1",
+    "Health": "2",
+    "Armour": "0",
+    "Mojo generated": "0",
+    "Ability": "AT_NONE"
+  },
+  {
+    "Race": "HT_BAUS",
+    "Name": "Doc Pain",
+    "Power": "1",
+    "Health": "55",
+    "Armour": "0",
+    "Mojo generated": "4",
+    "Ability": "AT_ENERGISINGSTRIKE"
+  },
+  {
+    "Race": "HT_CYCLOPS",
+    "Name": "Ouranus",
+    "Power": "2",
+    "Health": "35",
+    "Armour": "0",
+    "Mojo generated": "5",
+    "Ability": "AT_VENGEANCE"
+  },
+  {
+    "Race": "HT_LAVALEM",
+    "Name": "Lavalem",
+    "Power": "4",
+    "Health": "45",
+    "Armour": "0",
+    "Mojo generated": "4",
+    "Ability": "AT_LEVIATHANBLOW"
+  },
+  {
+    "Race": "HT_DEAN",
+    "Name": "Dean",
+    "Power": "7",
+    "Health": "35",
+    "Armour": "0",
+    "Mojo generated": "3",
+    "Ability": "AT_BLOODLUST"
+  },
+  {
+    "Race": "HT_NOIGLE",
+    "Name": "Noigle",
+    "Power": "3",
+    "Health": "35",
+    "Armour": "0",
+    "Mojo generated": "3",
+    "Ability": "AT_ENCOURAGE"
+  },
+  {
+    "Race": "HT_KORMA",
+    "Name": "Shaq",
+    "Power": "2",
+    "Health": "25",
+    "Armour": "0",
+    "Mojo generated": "4",
+    "Ability": "AT_TRAP"
+  },
+  {
+    "Race": "HT_BONEYARD",
+    "Name": "Boneyard",
+    "Power": "1",
+    "Health": "20",
+    "Armour": "0",
+    "Mojo generated": "5",
+    "Ability": "AT_SUPERSPRINT"
+  },
+  {
+    "Race": "HT_WOOMPH",
+    "Name": "Silvanus",
+    "Power": "1",
+    "Health": "25",
+    "Armour": "0",
+    "Mojo generated": "4",
+    "Ability": "AT_BARRAGE"
+  },
+  {
+    "Race": "HT_ALPHEDIA",
+    "Name": "Alphedia",
+    "Power": "0",
+    "Health": "15",
+    "Armour": "1",
+    "Mojo generated": "6",
+    "Ability": "AT_MAGICSHIELD"
+  },
+  {
+    "Race": "HT_KONGE",
+    "Name": "Raeynor",
+    "Power": "3",
+    "Health": "30",
+    "Armour": "0",
+    "Mojo generated": "4",
+    "Ability": "AT_HEAL"
+  },
+  {
+    "Race": "HT_QUEENY",
+    "Name": "Hyssta",
+    "Power": "3",
+    "Health": "20",
+    "Armour": "0",
+    "Mojo generated": "5",
+    "Ability": "AT_CURE"
+  },
+  {
+    "Race": "HT_STUNK",
+    "Name": "Clank",
+    "Power": "1",
+    "Health": "30",
+    "Armour": "0",
+    "Mojo generated": "5",
+    "Ability": "AT_BARRIER"
+  },
+  {
+    "Race": "HT_ERNOLD",
+    "Name": "Ernold",
+    "Power": "2",
+    "Health": "20",
+    "Armour": "0",
+    "Mojo generated": "6",
+    "Ability": "AT_SAVAGESTRIKE"
+  },
+  {
+    "Race": "HT_MAMBO",
+    "Name": "Mambo",
+    "Power": "0",
+    "Health": "35",
+    "Armour": "2",
+    "Mojo generated": "4",
+    "Ability": "AT_HEADSHOT"
+  },
+  {
+    "Race": "HT_MACHLI",
+    "Name": "Machli",
+    "Power": "4",
+    "Health": "25",
+    "Armour": "0",
+    "Mojo generated": "4",
+    "Ability": "AT_FIREBALL"
+  },
+  {
+    "Race": "HT_MINOTRIX",
+    "Name": "Minotrix",
+    "Power": "0",
+    "Health": "30",
+    "Armour": "2",
+    "Mojo generated": "5",
+    "Ability": "AT_BOO"
+  },
+  {
+    "Race": "HT_SLIME",
+    "Name": "Booga",
+    "Power": "0",
+    "Health": "10",
+    "Armour": "1",
+    "Mojo generated": "6",
+    "Ability": "AT_SNIPE"
+  },
+  {
+    "Race": "HT_MUMMY",
+    "Name": "Tut",
+    "Power": "0",
+    "Health": "35",
+    "Armour": "3",
+    "Mojo generated": "4",
+    "Ability": "AT_DRAWCARD"
+  },
+  {
+    "Race": "HT_ARTIL1",
+    "Name": "Ocularus",
+    "Power": "0",
+    "Health": "15",
+    "Armour": "0",
+    "Mojo generated": "7",
+    "Ability": "AT_NONE"
+  },
+  {
+    "Race": "HT_ARTIL2",
+    "Name": "Kargadan",
+    "Power": "3",
+    "Health": "30",
+    "Armour": "1",
+    "Mojo generated": "5",
+    "Ability": "AT_NONE"
+  },
+  {
+    "Race": "HT_ARTIL3",
+    "Name": "Grumsnik",
+    "Power": "5",
+    "Health": "50",
+    "Armour": "2",
+    "Mojo generated": "3",
+    "Ability": "AT_NONE"
+  }
+]

@@ -1,0 +1,11 @@
+# Native active-ability monster visuals — version 6
+
+`src/data/ability-card-plan.json` adds 92 actual named monsters to the existing 128 native monsters. It covers all 53 active ability types referenced by the recovered original monster catalogue. Every native monster row with an ability, positive health and an existing numbered original texture was eligible. The planner preserves every original name, race, class, rarity, cost, power, health, ability identifier and skin index. It does not invent abilities for races or classes.
+
+The four examples previously confirmed to the user are present: Duron (Savage Beating), Edric (Heroic Shout), Rickard (Phalanx), Shody (Smash). The card's Mojo field is its summon cost; activation cost belongs to the separate ability-definition table and must not be confused with summon cost.
+
+Humans contribute 8 selected monsters; each of the other 14 races with native active abilities contributes 6. Each such race includes two warriors, two archers and two mages. The native Robot catalogue has no active abilities. Native artillery monsters have no active abilities in the supplied original data, so neither Robot abilities nor artillery ability cards were fabricated. Some active monsters legitimately have zero printed power; their supported active abilities are what makes them useful.
+
+Five missing original mesh archetypes were decoded from the supplied OBB: Elemental rogue/spellcaster and Vampire fighter/rogue/spellcaster. This brings the model manifest to 72 entries, comprising all 64 monster archetypes plus 8 existing hero/neutral entries. The same original shared animation/skeleton data and identity inverse-bind setup from v3–v5 are retained. Ten directional animation sheets were baked for the five new archetypes, with origin/scale metadata for correct ground anchoring. Portraits use each card's exact original numbered skin. As in v5, GPU models use exact card skins while the raster animation fallback uses the archetype's default skin.
+
+Sources: `reference/native-rules/table-3189a0.txt` (monsters), `table-33e4f8.txt` (race/class model mappings), `table-341b48.txt` (separate active-ability definitions), and the user's `main.obb`. Reproduction scripts are `plan-abilities-v6.py`, `convert-abilities-v6.py`, and `bake-abilities-v6.py`. All extraction is read-only; no APK or native game executable is run.

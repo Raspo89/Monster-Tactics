@@ -1,0 +1,1030 @@
+
+### CGame::LoadGlobalVariables() 0x14ef54 5428
+0014ef54: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0014ef58: sub      sp, sp, #0xdc
+0014ef5c: ldr      fp, [pc, #0xff8]
+0014ef60: movw     r1, #0x453f
+0014ef64: str      r0, [sp, #4]
+0014ef68: add      r4, sp, #0x48
+0014ef6c: ldr      fp, [pc, fp]
+0014ef70: ldr      r0, [pc, #0xfe8]
+0014ef74: ldr      r6, [pc, #0xfe8]
+0014ef78: add      r5, sp, #0xc
+0014ef7c: ldr      r3, [fp]
+0014ef80: add      r0, pc, r0
+0014ef84: mov      r7, #1
+0014ef88: mov      sb, #4
+0014ef8c: mov      sl, #9
+0014ef90: str      r3, [sp, #0xd4]
+0014ef94: bl       #0x14ecd8 ; CGame::DecodeData(unsigned char const*, unsigned int)
+0014ef98: mov      r8, r0
+0014ef9c: mov      r0, r4
+0014efa0: bl       #0x285fe0 ; RZScript::RZScript()
+0014efa4: mov      r1, r8
+0014efa8: movw     r2, #0x453f
+0014efac: mov      r0, r4
+0014efb0: bl       #0x286044 ; RZScript::LoadFromPtr(unsigned char*, int)
+0014efb4: ldr      r6, [pc, r6]
+0014efb8: mov      r0, r8
+0014efbc: mov      r1, #2
+0014efc0: mov      lr, #6
+0014efc4: mov      ip, #8
+0014efc8: mov      r8, #7
+0014efcc: str      r7, [r6, #0x2a4]
+0014efd0: str      r7, [r6, #0x2d4]
+0014efd4: mov      r2, #0xb
+0014efd8: str      r7, [r6, #0x2f8]
+0014efdc: mov      r3, #0xf
+0014efe0: str      r2, [r6, #0x2cc]
+0014efe4: mvn      r2, #0
+0014efe8: str      r3, [r6, #0x2f4]
+0014efec: mvn      r3, #1
+0014eff0: str      r2, [r6, #0x318]
+0014eff4: mov      r2, #3
+0014eff8: str      r3, [r6, #0x31c]
+0014effc: mvn      r3, #2
+0014f000: str      r1, [r6, #0x2a8]
+0014f004: str      r3, [r6, #0x320]
+0014f008: mov      r3, #5
+0014f00c: str      r1, [r6, #0x2d8]
+0014f010: str      r1, [r6, #0x2fc]
+0014f014: str      r2, [r6, #0x2ac]
+0014f018: str      r2, [r6, #0x2dc]
+0014f01c: str      r2, [r6, #0x300]
+0014f020: str      sb, [r6, #0x2b0]
+0014f024: str      sb, [r6, #0x304]
+0014f028: str      r3, [r6, #0x2b4]
+0014f02c: str      r3, [r6, #0x2e0]
+0014f030: str      r3, [r6, #0x308]
+0014f034: str      lr, [r6, #0x2b8]
+0014f038: str      lr, [r6, #0x2e4]
+0014f03c: str      lr, [r6, #0x30c]
+0014f040: str      r8, [r6, #0x2bc]
+0014f044: str      r8, [r6, #0x310]
+0014f048: str      ip, [r6, #0x2c0]
+0014f04c: str      ip, [r6, #0x2e8]
+0014f050: str      ip, [r6, #0x314]
+0014f054: str      sl, [r6, #0x2c4]
+0014f058: mov      sl, #0xa
+0014f05c: str      sl, [r6, #0x2c8]
+0014f060: str      sl, [r6, #0x2ec]
+0014f064: mov      sl, #0xc
+0014f068: str      sl, [r6, #0x2d0]
+0014f06c: str      sl, [r6, #0x2f0]
+0014f070: mvn      sl, #3
+0014f074: str      sl, [r6, #0x324]
+0014f078: mov      sl, #0xa
+0014f07c: str      r7, [r6, #0x340]
+0014f080: str      r1, [r6, #0x344]
+0014f084: str      r2, [r6, #0x348]
+0014f088: str      r3, [r6, #0x34c]
+0014f08c: str      sl, [r6, #0x350]
+0014f090: str      r7, [r6, #0x354]
+0014f094: str      r1, [r6, #0x358]
+0014f098: str      r2, [r6, #0x35c]
+0014f09c: str      sb, [r6, #0x360]
+0014f0a0: str      r3, [r6, #0x364]
+0014f0a4: str      lr, [r6, #0x368]
+0014f0a8: str      r8, [r6, #0x36c]
+0014f0ac: str      ip, [r6, #0x370]
+0014f0b0: str      r7, [r6, #0x37c]
+0014f0b4: str      r1, [r6, #0x380]
+0014f0b8: mvn      r1, #5
+0014f0bc: str      r2, [r6, #0x384]
+0014f0c0: mvn      r2, #6
+0014f0c4: str      sb, [r6, #0x388]
+0014f0c8: mvn      sb, #7
+0014f0cc: str      r2, [r6, #0x330]
+0014f0d0: str      r3, [r6, #0x38c]
+0014f0d4: mvn      r3, #8
+0014f0d8: str      lr, [r6, #0x390]
+0014f0dc: mvn      lr, #9
+0014f0e0: str      r3, [r6, #0x338]
+0014f0e4: str      lr, [r6, #0x33c]
+0014f0e8: str      r8, [r6, #0x394]
+0014f0ec: mov      r8, r6
+0014f0f0: str      ip, [r6, #0x398]
+0014f0f4: mov      ip, #9
+0014f0f8: str      sl, [r6, #0x3a0]
+0014f0fc: mvn      sl, #4
+0014f100: str      ip, [r6, #0x39c]
+0014f104: str      sl, [r6, #0x328]
+0014f108: mov      sl, r8
+0014f10c: str      r1, [r6, #0x32c]
+0014f110: str      sb, [r6, #0x334]
+0014f114: bl       #0x2585a4 ; RZMemory::Free(void*)
+0014f118: mov      r1, r5
+0014f11c: mov      r0, r4
+0014f120: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f124: ldr      r3, [sp, #0xc]
+0014f128: mov      r1, r5
+0014f12c: mov      r0, r4
+0014f130: add      sb, r8, #0x3ec
+0014f134: str      r3, [r6]
+0014f138: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f13c: ldr      r3, [sp, #0xc]
+0014f140: mov      r1, r5
+0014f144: mov      r0, r4
+0014f148: str      r3, [r6, #4]
+0014f14c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f150: ldr      r3, [sp, #0xc]
+0014f154: mov      r1, r5
+0014f158: mov      r0, r4
+0014f15c: str      r3, [r6, #8]
+0014f160: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f164: ldr      r3, [sp, #0xc]
+0014f168: mov      r1, r5
+0014f16c: mov      r0, r4
+0014f170: str      r3, [r6, #0xc]
+0014f174: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f178: ldr      r3, [sp, #0xc]
+0014f17c: mov      r1, r5
+0014f180: mov      r0, r4
+0014f184: str      r3, [r6, #0x10]
+0014f188: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f18c: ldr      r3, [sp, #0xc]
+0014f190: mov      r1, r5
+0014f194: mov      r0, r4
+0014f198: str      r3, [r6, #0x14]
+0014f19c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f1a0: ldr      r3, [sp, #0xc]
+0014f1a4: mov      r1, r5
+0014f1a8: mov      r0, r4
+0014f1ac: str      r3, [r6, #0x18]
+0014f1b0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f1b4: ldr      r3, [sp, #0xc]
+0014f1b8: mov      r1, r5
+0014f1bc: mov      r0, r4
+0014f1c0: str      r3, [r6, #0x1c]
+0014f1c4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f1c8: ldr      r3, [sp, #0xc]
+0014f1cc: mov      r1, r5
+0014f1d0: mov      r0, r4
+0014f1d4: str      r3, [r6, #0x20]
+0014f1d8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f1dc: ldr      r3, [sp, #0xc]
+0014f1e0: mov      r1, r5
+0014f1e4: mov      r0, r4
+0014f1e8: str      r3, [r6, #0x24]
+0014f1ec: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f1f0: ldr      r3, [sp, #0xc]
+0014f1f4: mov      r1, r5
+0014f1f8: mov      r0, r4
+0014f1fc: str      r3, [r6, #0x28]
+0014f200: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f204: ldr      r3, [sp, #0xc]
+0014f208: mov      r1, r5
+0014f20c: mov      r0, r4
+0014f210: str      r3, [r6, #0x2c]
+0014f214: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f218: ldr      r3, [sp, #0xc]
+0014f21c: mov      r1, r5
+0014f220: mov      r0, r4
+0014f224: str      r3, [r6, #0x30]
+0014f228: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f22c: ldr      r3, [sp, #0xc]
+0014f230: mov      r1, r5
+0014f234: mov      r0, r4
+0014f238: str      r3, [r6, #0x34]
+0014f23c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f240: ldr      r3, [sp, #0xc]
+0014f244: mov      r1, r5
+0014f248: mov      r0, r4
+0014f24c: str      r3, [r6, #0x38]
+0014f250: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f254: ldr      r3, [sp, #0xc]
+0014f258: mov      r1, r5
+0014f25c: mov      r0, r4
+0014f260: str      r3, [r6, #0x3c]
+0014f264: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f268: ldr      r3, [sp, #0xc]
+0014f26c: mov      r1, r5
+0014f270: mov      r0, r4
+0014f274: str      r3, [r6, #0x40]
+0014f278: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f27c: ldr      r3, [sp, #0xc]
+0014f280: mov      r1, r5
+0014f284: mov      r0, r4
+0014f288: str      r3, [r6, #0x44]
+0014f28c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f290: ldr      r3, [sp, #0xc]
+0014f294: mov      r1, r5
+0014f298: mov      r0, r4
+0014f29c: str      r3, [r6, #0x48]
+0014f2a0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f2a4: ldr      r3, [sp, #0xc]
+0014f2a8: mov      r1, r5
+0014f2ac: mov      r0, r4
+0014f2b0: str      r3, [r6, #0x4c]
+0014f2b4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f2b8: ldr      r3, [sp, #0xc]
+0014f2bc: mov      r1, r5
+0014f2c0: mov      r0, r4
+0014f2c4: str      r3, [r6, #0x50]
+0014f2c8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f2cc: ldr      r3, [sp, #0xc]
+0014f2d0: mov      r1, r5
+0014f2d4: mov      r0, r4
+0014f2d8: str      r3, [r6, #0x54]
+0014f2dc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f2e0: ldr      r3, [sp, #0xc]
+0014f2e4: mov      r1, r5
+0014f2e8: mov      r0, r4
+0014f2ec: str      r3, [r6, #0x58]
+0014f2f0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f2f4: ldr      r3, [sp, #0xc]
+0014f2f8: mov      r1, r5
+0014f2fc: mov      r0, r4
+0014f300: str      r3, [r6, #0x5c]
+0014f304: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f308: ldr      r3, [sp, #0xc]
+0014f30c: mov      r1, r5
+0014f310: mov      r0, r4
+0014f314: str      r3, [r6, #0x60]
+0014f318: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f31c: ldr      r3, [sp, #0xc]
+0014f320: mov      r1, r5
+0014f324: mov      r0, r4
+0014f328: str      r3, [r6, #0x64]
+0014f32c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f330: ldr      r3, [sp, #0xc]
+0014f334: mov      r1, r5
+0014f338: mov      r0, r4
+0014f33c: str      r3, [r6, #0x68]
+0014f340: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f344: ldr      r3, [sp, #0xc]
+0014f348: mov      r1, r5
+0014f34c: mov      r0, r4
+0014f350: str      r3, [r6, #0x6c]
+0014f354: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f358: ldr      r3, [sp, #0xc]
+0014f35c: mov      r1, r5
+0014f360: mov      r0, r4
+0014f364: str      r3, [r6, #0x70]
+0014f368: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f36c: ldr      r3, [sp, #0xc]
+0014f370: mov      r1, r5
+0014f374: mov      r0, r4
+0014f378: str      r3, [r6, #0x74]
+0014f37c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f380: ldr      r3, [sp, #0xc]
+0014f384: mov      r1, r5
+0014f388: mov      r0, r4
+0014f38c: str      r3, [r6, #0x78]
+0014f390: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f394: ldr      r3, [sp, #0xc]
+0014f398: mov      r1, r5
+0014f39c: mov      r0, r4
+0014f3a0: str      r3, [r6, #0x7c]
+0014f3a4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f3a8: ldr      r3, [sp, #0xc]
+0014f3ac: mov      r1, r5
+0014f3b0: mov      r0, r4
+0014f3b4: str      r3, [r6, #0x80]
+0014f3b8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f3bc: ldr      r3, [sp, #0xc]
+0014f3c0: mov      r1, r5
+0014f3c4: mov      r0, r4
+0014f3c8: str      r3, [r6, #0x84]
+0014f3cc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f3d0: ldr      r3, [sp, #0xc]
+0014f3d4: mov      r1, r5
+0014f3d8: mov      r0, r4
+0014f3dc: str      r3, [r6, #0x88]
+0014f3e0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f3e4: ldr      r3, [sp, #0xc]
+0014f3e8: mov      r1, r5
+0014f3ec: mov      r0, r4
+0014f3f0: str      r3, [r6, #0x8c]
+0014f3f4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f3f8: ldr      r3, [sp, #0xc]
+0014f3fc: mov      r1, r5
+0014f400: mov      r0, r4
+0014f404: str      r3, [r6, #0x90]
+0014f408: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f40c: ldr      r3, [sp, #0xc]
+0014f410: mov      r1, r5
+0014f414: mov      r0, r4
+0014f418: str      r3, [r6, #0x94]
+0014f41c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f420: ldr      r3, [sp, #0xc]
+0014f424: mov      r1, r5
+0014f428: mov      r0, r4
+0014f42c: str      r3, [r6, #0x98]
+0014f430: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f434: ldr      r3, [sp, #0xc]
+0014f438: mov      r1, r5
+0014f43c: mov      r0, r4
+0014f440: str      r3, [r6, #0x9c]
+0014f444: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f448: ldr      r3, [sp, #0xc]
+0014f44c: mov      r1, r5
+0014f450: mov      r0, r4
+0014f454: str      r3, [r6, #0xa0]
+0014f458: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f45c: ldr      r3, [sp, #0xc]
+0014f460: mov      r1, r5
+0014f464: mov      r0, r4
+0014f468: str      r3, [r6, #0xa4]
+0014f46c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f470: ldr      r3, [sp, #0xc]
+0014f474: mov      r1, r5
+0014f478: mov      r0, r4
+0014f47c: str      r3, [r6, #0xa8]
+0014f480: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f484: ldr      r3, [sp, #0xc]
+0014f488: mov      r1, r5
+0014f48c: mov      r0, r4
+0014f490: str      r3, [r6, #0xac]
+0014f494: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f498: ldr      r3, [sp, #0xc]
+0014f49c: mov      r1, r5
+0014f4a0: mov      r0, r4
+0014f4a4: str      r3, [r6, #0xb0]
+0014f4a8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f4ac: ldr      r3, [sp, #0xc]
+0014f4b0: mov      r1, r5
+0014f4b4: mov      r0, r4
+0014f4b8: str      r3, [r6, #0xb4]
+0014f4bc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f4c0: ldr      r3, [sp, #0xc]
+0014f4c4: mov      r1, r5
+0014f4c8: mov      r0, r4
+0014f4cc: str      r3, [r6, #0xb8]
+0014f4d0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f4d4: ldr      r3, [sp, #0xc]
+0014f4d8: mov      r1, r5
+0014f4dc: mov      r0, r4
+0014f4e0: str      r3, [r6, #0xbc]
+0014f4e4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f4e8: ldr      r3, [sp, #0xc]
+0014f4ec: mov      r1, r5
+0014f4f0: mov      r0, r4
+0014f4f4: str      r3, [r6, #0xc0]
+0014f4f8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f4fc: ldr      r3, [sp, #0xc]
+0014f500: mov      r1, r5
+0014f504: mov      r0, r4
+0014f508: str      r3, [r6, #0xc4]
+0014f50c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f510: ldr      r3, [sp, #0xc]
+0014f514: mov      r1, r5
+0014f518: mov      r0, r4
+0014f51c: str      r3, [r6, #0xc8]
+0014f520: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f524: ldr      r3, [sp, #0xc]
+0014f528: mov      r1, r5
+0014f52c: mov      r0, r4
+0014f530: str      r3, [r6, #0xcc]
+0014f534: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f538: ldr      r3, [sp, #0xc]
+0014f53c: mov      r1, r5
+0014f540: mov      r0, r4
+0014f544: str      r3, [r6, #0xd0]
+0014f548: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f54c: ldr      r3, [sp, #0xc]
+0014f550: mov      r1, r5
+0014f554: mov      r0, r4
+0014f558: str      r3, [r6, #0xd4]
+0014f55c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f560: ldr      r3, [sp, #0xc]
+0014f564: mov      r1, r5
+0014f568: mov      r0, r4
+0014f56c: str      r3, [r6, #0xd8]
+0014f570: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f574: ldr      r3, [sp, #0xc]
+0014f578: mov      r1, r5
+0014f57c: mov      r0, r4
+0014f580: str      r3, [r6, #0xdc]
+0014f584: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f588: ldr      r3, [sp, #0xc]
+0014f58c: mov      r1, r5
+0014f590: mov      r0, r4
+0014f594: str      r3, [r6, #0xe0]
+0014f598: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f59c: ldr      r3, [sp, #0xc]
+0014f5a0: mov      r1, r5
+0014f5a4: mov      r0, r4
+0014f5a8: str      r3, [r6, #0xe4]
+0014f5ac: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f5b0: ldr      r3, [sp, #0xc]
+0014f5b4: mov      r1, r5
+0014f5b8: mov      r0, r4
+0014f5bc: str      r3, [r6, #0xe8]
+0014f5c0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f5c4: ldr      r3, [sp, #0xc]
+0014f5c8: mov      r1, r5
+0014f5cc: mov      r0, r4
+0014f5d0: str      r3, [r6, #0xec]
+0014f5d4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f5d8: ldr      r3, [sp, #0xc]
+0014f5dc: mov      r1, r5
+0014f5e0: mov      r0, r4
+0014f5e4: str      r3, [r6, #0xf0]
+0014f5e8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f5ec: ldr      r3, [sp, #0xc]
+0014f5f0: mov      r1, r5
+0014f5f4: mov      r0, r4
+0014f5f8: str      r3, [r6, #0xf4]
+0014f5fc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f600: ldr      r3, [sp, #0xc]
+0014f604: mov      r1, r5
+0014f608: mov      r0, r4
+0014f60c: str      r3, [r6, #0xf8]
+0014f610: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f614: ldr      r3, [sp, #0xc]
+0014f618: mov      r1, r5
+0014f61c: mov      r0, r4
+0014f620: str      r3, [r6, #0xfc]
+0014f624: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f628: ldr      r3, [sp, #0xc]
+0014f62c: mov      r1, r5
+0014f630: mov      r0, r4
+0014f634: str      r3, [r6, #0x100]
+0014f638: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f63c: ldr      r3, [sp, #0xc]
+0014f640: mov      r1, r5
+0014f644: mov      r0, r4
+0014f648: str      r3, [r6, #0x108]
+0014f64c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f650: ldr      r3, [sp, #0xc]
+0014f654: mov      r1, r5
+0014f658: mov      r0, r4
+0014f65c: str      r3, [r6, #0x104]
+0014f660: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f664: ldr      r3, [sp, #0xc]
+0014f668: mov      r1, r5
+0014f66c: mov      r0, r4
+0014f670: str      r3, [r6, #0x10c]
+0014f674: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f678: ldr      r3, [sp, #0xc]
+0014f67c: mov      r1, r5
+0014f680: mov      r0, r4
+0014f684: str      r3, [r6, #0x110]
+0014f688: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f68c: ldr      r3, [sp, #0xc]
+0014f690: mov      r1, r5
+0014f694: mov      r0, r4
+0014f698: str      r3, [r6, #0x114]
+0014f69c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f6a0: ldr      r3, [sp, #0xc]
+0014f6a4: mov      r1, r5
+0014f6a8: mov      r0, r4
+0014f6ac: str      r3, [r6, #0x118]
+0014f6b0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f6b4: ldr      r3, [sp, #0xc]
+0014f6b8: mov      r1, r5
+0014f6bc: mov      r0, r4
+0014f6c0: str      r3, [r6, #0x11c]
+0014f6c4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f6c8: ldr      r3, [sp, #0xc]
+0014f6cc: mov      r1, r5
+0014f6d0: mov      r0, r4
+0014f6d4: str      r3, [r6, #0x120]
+0014f6d8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f6dc: ldr      r3, [sp, #0xc]
+0014f6e0: mov      r1, r5
+0014f6e4: mov      r0, r4
+0014f6e8: str      r3, [r6, #0x124]
+0014f6ec: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f6f0: ldr      r3, [sp, #0xc]
+0014f6f4: mov      r1, r5
+0014f6f8: mov      r0, r4
+0014f6fc: str      r3, [r6, #0x128]
+0014f700: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f704: ldr      r3, [sp, #0xc]
+0014f708: mov      r1, r5
+0014f70c: mov      r0, r4
+0014f710: str      r3, [r6, #0x12c]
+0014f714: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f718: ldr      r3, [sp, #0xc]
+0014f71c: mov      r1, r5
+0014f720: mov      r0, r4
+0014f724: str      r3, [r6, #0x130]
+0014f728: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f72c: ldr      r3, [sp, #0xc]
+0014f730: mov      r1, r5
+0014f734: mov      r0, r4
+0014f738: str      r3, [r6, #0x134]
+0014f73c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f740: ldr      r3, [sp, #0xc]
+0014f744: mov      r1, r5
+0014f748: mov      r0, r4
+0014f74c: str      r3, [r6, #0x138]
+0014f750: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f754: ldr      r3, [sp, #0xc]
+0014f758: mov      r1, r5
+0014f75c: mov      r0, r4
+0014f760: str      r3, [r6, #0x13c]
+0014f764: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f768: ldr      r3, [sp, #0xc]
+0014f76c: mov      r1, r5
+0014f770: mov      r0, r4
+0014f774: str      r3, [r6, #0x140]
+0014f778: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f77c: ldr      r3, [sp, #0xc]
+0014f780: mov      r1, r5
+0014f784: mov      r0, r4
+0014f788: str      r3, [r6, #0x144]
+0014f78c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f790: ldr      r3, [sp, #0xc]
+0014f794: mov      r1, r5
+0014f798: mov      r0, r4
+0014f79c: str      r3, [r6, #0x148]
+0014f7a0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f7a4: ldr      r3, [sp, #0xc]
+0014f7a8: mov      r1, r5
+0014f7ac: mov      r0, r4
+0014f7b0: str      r3, [r6, #0x14c]
+0014f7b4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f7b8: ldr      r3, [sp, #0xc]
+0014f7bc: mov      r1, r5
+0014f7c0: mov      r0, r4
+0014f7c4: str      r3, [r6, #0x150]
+0014f7c8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f7cc: ldr      r3, [sp, #0xc]
+0014f7d0: mov      r1, r5
+0014f7d4: mov      r0, r4
+0014f7d8: str      r3, [r6, #0x154]
+0014f7dc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f7e0: ldr      r3, [sp, #0xc]
+0014f7e4: mov      r1, r5
+0014f7e8: mov      r0, r4
+0014f7ec: str      r3, [r6, #0x158]
+0014f7f0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f7f4: ldr      r3, [sp, #0xc]
+0014f7f8: mov      r1, r5
+0014f7fc: mov      r0, r4
+0014f800: str      r3, [r6, #0x15c]
+0014f804: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f808: ldr      r3, [sp, #0xc]
+0014f80c: mov      r1, r5
+0014f810: mov      r0, r4
+0014f814: str      r3, [r6, #0x160]
+0014f818: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f81c: ldr      r3, [sp, #0xc]
+0014f820: mov      r1, r5
+0014f824: mov      r0, r4
+0014f828: str      r3, [r6, #0x164]
+0014f82c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f830: ldr      r3, [sp, #0xc]
+0014f834: mov      r1, r5
+0014f838: mov      r0, r4
+0014f83c: str      r3, [r6, #0x168]
+0014f840: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f844: ldr      r3, [sp, #0xc]
+0014f848: mov      r1, r5
+0014f84c: mov      r0, r4
+0014f850: str      r3, [r6, #0x16c]
+0014f854: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f858: ldr      r3, [sp, #0xc]
+0014f85c: mov      r1, r5
+0014f860: mov      r0, r4
+0014f864: str      r3, [r6, #0x170]
+0014f868: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f86c: ldr      r3, [sp, #0xc]
+0014f870: mov      r1, r5
+0014f874: mov      r0, r4
+0014f878: str      r3, [r6, #0x174]
+0014f87c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f880: ldr      r3, [sp, #0xc]
+0014f884: mov      r1, r5
+0014f888: mov      r0, r4
+0014f88c: str      r3, [r6, #0x178]
+0014f890: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f894: ldr      r3, [sp, #0xc]
+0014f898: mov      r1, r5
+0014f89c: mov      r0, r4
+0014f8a0: str      r3, [r6, #0x17c]
+0014f8a4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f8a8: ldr      r3, [sp, #0xc]
+0014f8ac: mov      r1, r5
+0014f8b0: mov      r0, r4
+0014f8b4: str      r3, [r6, #0x180]
+0014f8b8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f8bc: ldr      r3, [sp, #0xc]
+0014f8c0: mov      r1, r5
+0014f8c4: mov      r0, r4
+0014f8c8: str      r3, [r6, #0x184]
+0014f8cc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f8d0: ldr      r3, [sp, #0xc]
+0014f8d4: mov      r1, r5
+0014f8d8: mov      r0, r4
+0014f8dc: str      r3, [r6, #0x188]
+0014f8e0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f8e4: ldr      r3, [sp, #0xc]
+0014f8e8: mov      r1, r5
+0014f8ec: mov      r0, r4
+0014f8f0: str      r3, [r6, #0x18c]
+0014f8f4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f8f8: ldr      r3, [sp, #0xc]
+0014f8fc: mov      r1, r5
+0014f900: mov      r0, r4
+0014f904: str      r3, [r6, #0x190]
+0014f908: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f90c: ldr      r3, [sp, #0xc]
+0014f910: mov      r1, r5
+0014f914: mov      r0, r4
+0014f918: str      r3, [r6, #0x194]
+0014f91c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f920: ldr      r3, [sp, #0xc]
+0014f924: mov      r1, r5
+0014f928: mov      r0, r4
+0014f92c: str      r3, [r6, #0x198]
+0014f930: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f934: ldr      r3, [sp, #0xc]
+0014f938: mov      r1, r5
+0014f93c: mov      r0, r4
+0014f940: str      r3, [r6, #0x19c]
+0014f944: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f948: ldr      r3, [sp, #0xc]
+0014f94c: mov      r1, r5
+0014f950: mov      r0, r4
+0014f954: str      r3, [r6, #0x1a0]
+0014f958: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f95c: ldr      r3, [sp, #0xc]
+0014f960: mov      r1, r5
+0014f964: mov      r0, r4
+0014f968: str      r3, [r6, #0x1a4]
+0014f96c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f970: ldr      r3, [sp, #0xc]
+0014f974: mov      r1, r5
+0014f978: mov      r0, r4
+0014f97c: str      r3, [r6, #0x1a8]
+0014f980: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f984: ldr      r3, [sp, #0xc]
+0014f988: mov      r1, r5
+0014f98c: mov      r0, r4
+0014f990: str      r3, [r6, #0x1ac]
+0014f994: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f998: ldr      r3, [sp, #0xc]
+0014f99c: mov      r1, r5
+0014f9a0: mov      r0, r4
+0014f9a4: str      r3, [r6, #0x1b0]
+0014f9a8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f9ac: ldr      r3, [sp, #0xc]
+0014f9b0: mov      r1, r5
+0014f9b4: mov      r0, r4
+0014f9b8: str      r3, [r6, #0x1b4]
+0014f9bc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f9c0: ldr      r3, [sp, #0xc]
+0014f9c4: mov      r1, r5
+0014f9c8: mov      r0, r4
+0014f9cc: str      r3, [r6, #0x1b8]
+0014f9d0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f9d4: ldr      r3, [sp, #0xc]
+0014f9d8: mov      r1, r5
+0014f9dc: mov      r0, r4
+0014f9e0: str      r3, [r6, #0x1bc]
+0014f9e4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f9e8: ldr      r3, [sp, #0xc]
+0014f9ec: mov      r1, r5
+0014f9f0: mov      r0, r4
+0014f9f4: str      r3, [r6, #0x1c0]
+0014f9f8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014f9fc: ldr      r3, [sp, #0xc]
+0014fa00: mov      r1, r5
+0014fa04: mov      r0, r4
+0014fa08: str      r3, [r6, #0x1c4]
+0014fa0c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa10: ldr      r3, [sp, #0xc]
+0014fa14: mov      r1, r5
+0014fa18: mov      r0, r4
+0014fa1c: str      r3, [r6, #0x1c8]
+0014fa20: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa24: ldr      r3, [sp, #0xc]
+0014fa28: mov      r1, r5
+0014fa2c: mov      r0, r4
+0014fa30: str      r3, [r6, #0x1cc]
+0014fa34: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa38: ldr      r3, [sp, #0xc]
+0014fa3c: mov      r1, r5
+0014fa40: mov      r0, r4
+0014fa44: str      r3, [r6, #0x1d0]
+0014fa48: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa4c: ldr      r3, [sp, #0xc]
+0014fa50: mov      r1, r5
+0014fa54: mov      r0, r4
+0014fa58: str      r3, [r6, #0x1d4]
+0014fa5c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa60: ldr      r3, [sp, #0xc]
+0014fa64: mov      r1, r5
+0014fa68: mov      r0, r4
+0014fa6c: str      r3, [r6, #0x1d8]
+0014fa70: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa74: ldr      r3, [sp, #0xc]
+0014fa78: mov      r1, r5
+0014fa7c: mov      r0, r4
+0014fa80: str      r3, [r6, #0x1dc]
+0014fa84: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa88: ldr      r3, [sp, #0xc]
+0014fa8c: mov      r1, r5
+0014fa90: mov      r0, r4
+0014fa94: str      r3, [r6, #0x1e0]
+0014fa98: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fa9c: ldr      r3, [sp, #0xc]
+0014faa0: mov      r1, r5
+0014faa4: mov      r0, r4
+0014faa8: str      r3, [r6, #0x1e4]
+0014faac: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fab0: ldr      r3, [sp, #0xc]
+0014fab4: mov      r1, r5
+0014fab8: mov      r0, r4
+0014fabc: str      r3, [r6, #0x1e8]
+0014fac0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fac4: ldr      r3, [sp, #0xc]
+0014fac8: mov      r1, r5
+0014facc: mov      r0, r4
+0014fad0: str      r3, [r6, #0x1ec]
+0014fad4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fad8: ldr      r3, [sp, #0xc]
+0014fadc: mov      r1, r5
+0014fae0: mov      r0, r4
+0014fae4: str      r3, [r6, #0x1f0]
+0014fae8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014faec: ldr      r3, [sp, #0xc]
+0014faf0: mov      r1, r5
+0014faf4: mov      r0, r4
+0014faf8: str      r3, [r6, #0x1f4]
+0014fafc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb00: ldr      r3, [sp, #0xc]
+0014fb04: mov      r1, r5
+0014fb08: mov      r0, r4
+0014fb0c: str      r3, [r6, #0x1f8]
+0014fb10: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb14: ldr      r3, [sp, #0xc]
+0014fb18: mov      r1, r5
+0014fb1c: mov      r0, r4
+0014fb20: str      r3, [r6, #0x1fc]
+0014fb24: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb28: ldr      r3, [sp, #0xc]
+0014fb2c: mov      r1, r5
+0014fb30: mov      r0, r4
+0014fb34: str      r3, [r6, #0x200]
+0014fb38: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb3c: ldr      r3, [sp, #0xc]
+0014fb40: mov      r1, r5
+0014fb44: mov      r0, r4
+0014fb48: str      r3, [r6, #0x204]
+0014fb4c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb50: ldr      r3, [sp, #0xc]
+0014fb54: mov      r1, r5
+0014fb58: mov      r0, r4
+0014fb5c: str      r3, [r6, #0x208]
+0014fb60: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb64: ldr      r3, [sp, #0xc]
+0014fb68: mov      r1, r5
+0014fb6c: mov      r0, r4
+0014fb70: str      r3, [r6, #0x20c]
+0014fb74: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb78: ldr      r3, [sp, #0xc]
+0014fb7c: mov      r1, r5
+0014fb80: mov      r0, r4
+0014fb84: str      r3, [r6, #0x210]
+0014fb88: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fb8c: ldr      r3, [sp, #0xc]
+0014fb90: mov      r1, r5
+0014fb94: mov      r0, r4
+0014fb98: str      r3, [r6, #0x214]
+0014fb9c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fba0: ldr      r3, [sp, #0xc]
+0014fba4: mov      r1, r5
+0014fba8: mov      r0, r4
+0014fbac: str      r3, [r6, #0x218]
+0014fbb0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fbb4: ldr      r3, [sp, #0xc]
+0014fbb8: mov      r1, r5
+0014fbbc: mov      r0, r4
+0014fbc0: str      r3, [r6, #0x21c]
+0014fbc4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fbc8: ldr      r3, [sp, #0xc]
+0014fbcc: mov      r1, r5
+0014fbd0: mov      r0, r4
+0014fbd4: str      r3, [r6, #0x220]
+0014fbd8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fbdc: ldr      r3, [sp, #0xc]
+0014fbe0: mov      r1, r5
+0014fbe4: mov      r0, r4
+0014fbe8: str      r3, [r6, #0x224]
+0014fbec: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fbf0: ldr      r3, [sp, #0xc]
+0014fbf4: mov      r1, r5
+0014fbf8: mov      r0, r4
+0014fbfc: str      r3, [r6, #0x228]
+0014fc00: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc04: ldr      r3, [sp, #0xc]
+0014fc08: mov      r1, r5
+0014fc0c: mov      r0, r4
+0014fc10: str      r3, [r6, #0x22c]
+0014fc14: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc18: ldr      r3, [sp, #0xc]
+0014fc1c: mov      r1, r5
+0014fc20: mov      r0, r4
+0014fc24: str      r3, [r6, #0x230]
+0014fc28: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc2c: ldr      r3, [sp, #0xc]
+0014fc30: mov      r1, r5
+0014fc34: mov      r0, r4
+0014fc38: str      r3, [r6, #0x234]
+0014fc3c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc40: ldr      r3, [sp, #0xc]
+0014fc44: mov      r1, r5
+0014fc48: mov      r0, r4
+0014fc4c: str      r3, [r6, #0x238]
+0014fc50: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc54: ldr      r3, [sp, #0xc]
+0014fc58: mov      r1, r5
+0014fc5c: mov      r0, r4
+0014fc60: str      r3, [r6, #0x23c]
+0014fc64: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc68: ldr      r3, [sp, #0xc]
+0014fc6c: mov      r1, r5
+0014fc70: mov      r0, r4
+0014fc74: str      r3, [r6, #0x240]
+0014fc78: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc7c: ldr      r3, [sp, #0xc]
+0014fc80: mov      r1, r5
+0014fc84: mov      r0, r4
+0014fc88: str      r3, [r6, #0x244]
+0014fc8c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fc90: ldr      r3, [sp, #0xc]
+0014fc94: mov      r1, r5
+0014fc98: mov      r0, r4
+0014fc9c: str      r3, [r6, #0x248]
+0014fca0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fca4: ldr      r3, [sp, #0xc]
+0014fca8: mov      r1, r5
+0014fcac: mov      r0, r4
+0014fcb0: str      r3, [r6, #0x24c]
+0014fcb4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fcb8: ldr      r3, [sp, #0xc]
+0014fcbc: mov      r1, r5
+0014fcc0: mov      r0, r4
+0014fcc4: str      r3, [r6, #0x250]
+0014fcc8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fccc: ldr      r3, [sp, #0xc]
+0014fcd0: mov      r1, r5
+0014fcd4: mov      r0, r4
+0014fcd8: str      r3, [r6, #0x254]
+0014fcdc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fce0: ldr      r3, [sp, #0xc]
+0014fce4: mov      r1, r5
+0014fce8: mov      r0, r4
+0014fcec: str      r3, [r6, #0x258]
+0014fcf0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fcf4: ldr      r3, [sp, #0xc]
+0014fcf8: mov      r1, r5
+0014fcfc: mov      r0, r4
+0014fd00: str      r3, [r6, #0x25c]
+0014fd04: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd08: ldr      r3, [sp, #0xc]
+0014fd0c: mov      r1, r5
+0014fd10: mov      r0, r4
+0014fd14: str      r3, [r6, #0x260]
+0014fd18: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd1c: ldr      r3, [sp, #0xc]
+0014fd20: mov      r1, r5
+0014fd24: mov      r0, r4
+0014fd28: str      r3, [r6, #0x264]
+0014fd2c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd30: ldr      r3, [sp, #0xc]
+0014fd34: mov      r1, r5
+0014fd38: mov      r0, r4
+0014fd3c: str      r3, [r6, #0x268]
+0014fd40: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd44: ldr      r3, [sp, #0xc]
+0014fd48: mov      r1, r5
+0014fd4c: mov      r0, r4
+0014fd50: str      r3, [r6, #0x26c]
+0014fd54: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd58: ldr      r3, [sp, #0xc]
+0014fd5c: mov      r1, r5
+0014fd60: mov      r0, r4
+0014fd64: str      r3, [r6, #0x270]
+0014fd68: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd6c: ldr      r3, [sp, #0xc]
+0014fd70: mov      r1, r5
+0014fd74: mov      r0, r4
+0014fd78: str      r3, [r6, #0x274]
+0014fd7c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd80: ldr      r3, [sp, #0xc]
+0014fd84: mov      r1, r5
+0014fd88: mov      r0, r4
+0014fd8c: str      r3, [r6, #0x278]
+0014fd90: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fd94: ldr      r3, [sp, #0xc]
+0014fd98: mov      r1, r5
+0014fd9c: mov      r0, r4
+0014fda0: str      r3, [r6, #0x27c]
+0014fda4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fda8: ldr      r3, [sp, #0xc]
+0014fdac: mov      r1, r5
+0014fdb0: mov      r0, r4
+0014fdb4: str      r3, [r6, #0x280]
+0014fdb8: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fdbc: ldr      r3, [sp, #0xc]
+0014fdc0: mov      r1, r5
+0014fdc4: mov      r0, r4
+0014fdc8: str      r3, [r6, #0x284]
+0014fdcc: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fdd0: ldr      r3, [sp, #0xc]
+0014fdd4: mov      r1, r5
+0014fdd8: mov      r0, r4
+0014fddc: str      r3, [r6, #0x288]
+0014fde0: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fde4: ldr      r3, [sp, #0xc]
+0014fde8: mov      r1, r5
+0014fdec: mov      r0, r4
+0014fdf0: str      r3, [r6, #0x28c]
+0014fdf4: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fdf8: ldr      r3, [sp, #0xc]
+0014fdfc: add      r1, r6, #0x294
+0014fe00: mov      r0, r4
+0014fe04: str      r3, [r6, #0x290]
+0014fe08: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe0c: add      r1, r6, #0x298
+0014fe10: mov      r0, r4
+0014fe14: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe18: add      r1, r6, #0x29c
+0014fe1c: mov      r0, r4
+0014fe20: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe24: add      r1, r6, #0x2a0
+0014fe28: mov      r0, r4
+0014fe2c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe30: add      r1, r6, #0x374
+0014fe34: mov      r0, r4
+0014fe38: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe3c: add      r1, r6, #0x378
+0014fe40: mov      r0, r4
+0014fe44: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe48: add      r1, r6, #0x3a4
+0014fe4c: mov      r0, r4
+0014fe50: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe54: add      r1, r6, #0x3a8
+0014fe58: mov      r0, r4
+0014fe5c: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe60: mov      r1, r5
+0014fe64: mov      r0, r4
+0014fe68: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe6c: ldr      r3, [sp, #0xc]
+0014fe70: mov      r1, r5
+0014fe74: mov      r0, r4
+0014fe78: cmp      r3, #0
+0014fe7c: movgt    r7, r3
+0014fe80: str      r7, [r6, #0x3ac]
+0014fe84: bl       #0x2874b4 ; RZScript::Read1xS32(int*)
+0014fe88: ldr      r3, [sp, #0xc]
+0014fe8c: add      r7, sp, #0x10
+0014fe90: mov      r1, r5
+0014fe94: cmp      r3, #0
+0014fe98: mov      r0, r4
+0014fe9c: mov      r2, r7
+0014fea0: movlt    r3, #0
+0014fea4: str      r3, [r6, #0x3b0]
+0014fea8: add      r6, sp, #0x14
+0014feac: mov      r3, r6
+0014feb0: bl       #0x2878f8 ; RZScript::Read3xS32(int*, int*, int*)
+0014feb4: ldrb     r1, [sp, #0xc]
+0014feb8: ldrb     ip, [sp, #0x14]
+0014febc: mov      r2, r7
+0014fec0: ldrb     lr, [sp, #0x10]
+0014fec4: mov      r3, r6
+0014fec8: orr      ip, ip, #0xff000000
+0014fecc: mov      r0, r4
+0014fed0: orr      ip, ip, r1, lsl #16
+0014fed4: mov      r1, r5
+0014fed8: orr      ip, ip, lr, lsl #8
+0014fedc: str      ip, [r8, #0x3b4]
+0014fee0: bl       #0x2878f8 ; RZScript::Read3xS32(int*, int*, int*)
+0014fee4: ldrb     r1, [sp, #0xc]
+0014fee8: ldrb     ip, [sp, #0x14]
+0014feec: mov      r2, r7
+0014fef0: ldrb     lr, [sp, #0x10]
+0014fef4: mov      r3, r6
+0014fef8: orr      ip, ip, #0xff000000
+0014fefc: mov      r0, r4
+0014ff00: orr      ip, ip, r1, lsl #16
+0014ff04: mov      r1, r5
+0014ff08: orr      ip, ip, lr, lsl #8
+0014ff0c: str      ip, [r8, #0x3b8]
+0014ff10: bl       #0x2878f8 ; RZScript::Read3xS32(int*, int*, int*)
+0014ff14: ldrb     r1, [sp, #0xc]
+0014ff18: ldrb     ip, [sp, #0x14]
+0014ff1c: mov      r2, r7
+0014ff20: ldrb     lr, [sp, #0x10]
+0014ff24: mov      r3, r6
+0014ff28: orr      ip, ip, #0xff000000
+0014ff2c: mov      r0, r4
+0014ff30: orr      ip, ip, r1, lsl #16
+0014ff34: mov      r1, r5
+0014ff38: orr      ip, ip, lr, lsl #8
+0014ff3c: str      ip, [r8, #0x3bc]
+0014ff40: bl       #0x2878f8 ; RZScript::Read3xS32(int*, int*, int*)
+0014ff44: ldrb     r1, [sp, #0xc]
+0014ff48: ldrb     ip, [sp, #0x14]
+0014ff4c: mov      r2, r7
+0014ff50: ldrb     lr, [sp, #0x10]
+0014ff54: mov      r3, r6
+0014ff58: b        #0x14ff94 ; 
+0014ff5c: eoreq    fp, lr, r0, ror #4
+0014ff60: ldrheq   ip, [pc], -r0

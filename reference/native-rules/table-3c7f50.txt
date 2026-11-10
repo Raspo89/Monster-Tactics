@@ -1,0 +1,545 @@
+Tag Name,Rarity,Mojo,Use On,Name,Model Name,Texture Name,Filters,Tooltip
+,,,,,,,,
+x,C,0,UO_NOT_NEEDED,None,x,x,x,x
+SP_HEALMYTEAM,L,4,UO_NOT_NEEDED,Blessing,spell_01,spell_01_heal,H,All your creatures receive SP_HealMymonsters_Health.
+SP_HEALMYFGT,R,3,UO_NOT_NEEDED,Warrior Boon,spell_01,spell_01_heal,H,All your warriors receive SP_HealMyFighters_Health.
+SP_HEALMYRGR,R,3,UO_NOT_NEEDED,Archer Boon,spell_01,spell_01_heal,H,All your archers receive SP_HealMyRangers_Health.
+SP_HEALMYMAG,R,3,UO_NOT_NEEDED,Mage Boon,spell_01,spell_01_heal,H,All your mages receive SP_HealMymages_Health.
+SP_MORECARDS,U,6,UO_NOT_NEEDED,Draw 3 Cards,spell_01,spell_01_morecards,C,Draw 3 additional cards.
+SP_KILLMONS,L,8,UO_NOT_NEEDED,Carnage,spell_01,spell_destroy,K,Destroy all monsters.
+SP_KILLFGT,L,6,UO_NOT_NEEDED,Warrior Purge,spell_01,spell_01_kill_all,K,Destroy all warriors.
+SP_KILLRGR,L,6,UO_NOT_NEEDED,Archer Purge,spell_01,spell_01_kill_all,K,Destroy all archers.
+SP_KILLMAG,L,6,UO_NOT_NEEDED,Mage Purge,spell_01,spell_01_kill_all,K,Destroy all mages.
+SP_RUNESMASH,L,9,UO_NOT_NEEDED,Sly Rune Smash,spell_01,spell_rune_smash,RK,Destroy all enemy runes.
+SP_RUNEZAP,R,6,UO_NOT_NEEDED,Rune Smash,spell_01,spell_rune_zap,RK,Destroy all runes.
+SP_HEALALLTEAM,R,2,UO_NOT_NEEDED,Mixed Blessing,spell_01,spell_01_heal,H,All creatures receive SP_HealAllmonsters_Health.
+SP_HEALALLFGT,U,2,UO_NOT_NEEDED,Warrior Party,spell_01,spell_01_heal,H,All warriors receive SP_HealAllFighters_Health.
+SP_HEALALLRGR,U,2,UO_NOT_NEEDED,Archer Party,spell_01,spell_01_heal,H,All archers receive SP_HealAllRangers_Health.
+SP_HEALALLMAG,U,2,UO_NOT_NEEDED,Mage Party,spell_01,spell_01_heal,H,All mages receive SP_HealAllmages_Health.
+SP_RUNEBANE,R,2,UO_NOT_NEEDED,Rune Tax,spell_01,spell_rune_bane,HRD,For every rune each enemy has in play# each of their monsters receives SP_runeBane_Damage damage.
+SP_RUNEPAIN,R,5,UO_NOT_NEEDED,Ruinous Runes,spell_01,spell_rune_pain,HRD,For every rune in play# each enemy monster receives SP_runePain_Damage damage.
+SP_MOJOBOOST,C,3,UO_NOT_NEEDED,Mojo Boost,spell_01,spell_mojo_boost,MR,Receive SP_MojoBoost_Mojo for each of your runes in play.
+SP_MOJOTURBO,U,4,UO_NOT_NEEDED,Mojo Turbo,spell_01,spell_mojo_turbo,MR,Receive SP_MojoTurbo_Mojo for every rune in play.
+SP_LAVAVENT,C,2,UO_NOT_NEEDED,Mini Eruption,spell_01,spell_lavavent,P,Lava erupts from SP_LavaVent_Count random tiles# dealing SP_LavaVent_Damage damage to any creature stood there.
+SP_ERUPTION,U,3,UO_NOT_NEEDED,Eruption,spell_01,spell_eruption,P,Lava erupts from SP_Eruption_Count random tiles# dealing SP_Eruption_Damage damage to any creature stood there.
+SP_MAGMA,R,4,UO_NOT_NEEDED,Mega Eruption,spell_01,spell_magma,P,Lava erupts from SP_Magma_Count random tiles# dealing SP_Magma_Damage damage to any creature stood there.
+SP_ARMOURDOWN,C,1,UO_NOT_NEEDED,Tarnish,spell_01,spell_01_tarnish,AD,All creatures suffer SP_armourDown_armour.
+SP_ARMOURENEMYDOWN,U,3,UO_NOT_NEEDED,Sly Tarnish,spell_01,spell_01_tarnish,AD,All enemy creatures suffer SP_armourEnemyDown_armour.
+SP_DISMANTLE,U,4,UO_NOT_NEEDED,Strip,spell_01,spell_01_lose_armour,KD,All creatures lose all defensive equipment (shields & armour).
+SP_SEPARATE,R,6,UO_NOT_NEEDED,Sly Strip,spell_01,spell_01_lose_armour,KD,All enemy creatures lose all defensive equipment (shields & armour).
+SP_CORROSION,U,4,UO_NOT_NEEDED,Amnesty,spell_01,spell_01_lose_weapon,KD,All creatures lose all weapon upgrades.
+SP_CRUMBLE,R,6,UO_NOT_NEEDED,Sly Amnesty,spell_01,spell_01_lose_weapon,KD,All enemy creatures lose all weapon upgrades.
+SP_TORNADO,C,2,UO_NOT_NEEDED,Tornado,spell_01,spell_tornado,TD,Move one enemy monster to a random position up to SP_Hurricane_MaxRange spaces away.
+SP_2NDWIND,L,8,UO_NOT_NEEDED,Second Wind,spell_01,spell_refresh,PT,All of your monsters take another turn.
+SP_2NDWINDFGT,R,7,UO_NOT_NEEDED,Second Round,spell_01,spell_refresh,PT,All your warriors take another turn.
+SP_2NDWINDRGR,R,7,UO_NOT_NEEDED,Second Target,spell_01,spell_refresh,PT,All your archers take another turn.
+SP_2NDWINDMAG,R,7,UO_NOT_NEEDED,Second Coming,spell_01,spell_refresh,PT,All your mages take another turn.
+SP_HURRICANE,U,2,UO_NOT_NEEDED,Heroic Tornado,spell_01,spell_hurricane,TD,Move one enemy hero to a random position up to SP_Hurricane_MaxRange spaces away.
+SP_SWINDLE,R,5,UO_NOT_NEEDED,Hero Swindle,spell_01,spell_01_lose_weapon,KD,All enemy heroes lose all equipment.
+SP_MULLIGAN,U,3,UO_NOT_NEEDED,Burn Cards,spell_01,spell_burn_cards,C,Discard your hand# then draw 4 new cards.
+SP_DRAWCARD,C,2,UO_NOT_NEEDED,Draw 1 Card,spell_01,spell_drawcard,C,Draw 1 additional card.
+SP_TWOCARDS,C,4,UO_NOT_NEEDED,Draw 2 Cards,spell_01,spell_two_cards,C,Draw 2 additional cards.
+SP_HEROPAIN,C,2,UO_NOT_NEEDED,Hero Twinge,spell_01,spell_pain,PD,All heroes suffer SP_Just1_Damage damage.
+SP_HEROBURN,C,5,UO_NOT_NEEDED,Sly Hero Twinge,spell_01,spell_pain,PD,All enemy heroes suffer SP_Just1_Damage damage.
+SP_MONSPAIN,C,2,UO_NOT_NEEDED,Monster Twinge,spell_01,spell_pain,PD,All monsters suffer SP_Just1_Damage damage.
+SP_MONSBURN,C,5,UO_NOT_NEEDED,Sly Monster Twinge,spell_01,spell_pain,PD,All enemy monsters suffer SP_Just1_Damage damage.
+SP_KILL_RT_HUMAN,U,5,UO_NOT_NEEDED,Human Purge,spell_01,spell_01_purge_race,K,Destroy all humans.
+SP_KILL_RT_ELF,U,5,UO_NOT_NEEDED,Elf Purge,spell_01,spell_01_purge_race,K,Destroy all elves.
+SP_KILL_RT_ORC,U,5,UO_NOT_NEEDED,Orc Purge,spell_01,spell_01_purge_race,K,Destroy all orcs.
+SP_KILL_RT_UNDEAD,U,5,UO_NOT_NEEDED,Zombie Purge,spell_01,spell_01_purge_race,K,Destroy all zombies.
+SP_KILL_RT_LIZARD,U,5,UO_NOT_NEEDED,Lizard Purge,spell_01,spell_01_purge_race,K,Destroy all lizards.
+SP_KILL_RT_DWARF,U,5,UO_NOT_NEEDED,Dwarf Purge,spell_01,spell_01_purge_race,K,Destroy all dwarves.
+SP_KILL_RT_MINOTAUR,U,5,UO_NOT_NEEDED,Minotaur Purge,spell_01,spell_01_purge_race,K,Destroy all minotaurs.
+SP_KILL_RT_WEREWOLF,U,5,UO_NOT_NEEDED,Werewolf Purge,spell_01,spell_01_purge_race,K,Destroy all werewolves.
+SP_KILL_RT_GOLEM,U,5,UO_NOT_NEEDED,Golem Purge,spell_01,spell_01_purge_race,K,Destroy all golems.
+SP_KILL_RT_ELEMENTAL,U,5,UO_NOT_NEEDED,Elemental Purge,spell_01,spell_01_purge_race,K,Destroy all elementals.
+SP_KILL_RT_CYCLOPS,U,5,UO_NOT_NEEDED,Cyclops Purge,spell_01,spell_01_purge_race,K,Destroy all cyclops.
+SP_KILL_RT_SKELETON,U,5,UO_NOT_NEEDED,Skeleton Purge,spell_01,spell_01_purge_race,K,Destroy all skeletons.
+SP_SLYKILL_RT_HUMAN,R,8,UO_NOT_NEEDED,Sly Human Purge,spell_01,spell_01_purge_race,K,Destroy all enemy humans.
+SP_SLYKILL_RT_ELF,R,8,UO_NOT_NEEDED,Sly Elf Purge,spell_01,spell_01_purge_race,K,Destroy all enemy elves.
+SP_SLYKILL_RT_ORC,R,8,UO_NOT_NEEDED,Sly Orc Purge,spell_01,spell_01_purge_race,K,Destroy all enemy orcs.
+SP_SLYKILL_RT_UNDEAD,R,8,UO_NOT_NEEDED,Sly Zombie Purge,spell_01,spell_01_purge_race,K,Destroy all enemy zombies.
+SP_SLYKILL_RT_LIZARD,R,8,UO_NOT_NEEDED,Sly Lizard Purge,spell_01,spell_01_purge_race,K,Destroy all enemy lizards.
+SP_SLYKILL_RT_DWARF,R,8,UO_NOT_NEEDED,Sly Dwarf Purge,spell_01,spell_01_purge_race,K,Destroy all enemy dwarves.
+SP_SLYKILL_RT_MINOTAUR,R,8,UO_NOT_NEEDED,Sly Minotaur Purge,spell_01,spell_01_purge_race,K,Destroy all enemy minotaurs.
+SP_SLYKILL_RT_WEREWOLF,R,8,UO_NOT_NEEDED,Sly Werewolf Purge,spell_01,spell_01_purge_race,K,Destroy all enemy werewolves.
+SP_SLYKILL_RT_GOLEM,R,8,UO_NOT_NEEDED,Sly Golem Purge,spell_01,spell_01_purge_race,K,Destroy all enemy golems.
+SP_SLYKILL_RT_ELEMENTAL,R,8,UO_NOT_NEEDED,Sly Elemental Purge,spell_01,spell_01_purge_race,K,Destroy all enemy elementals.
+SP_SLYKILL_RT_CYCLOPS,R,8,UO_NOT_NEEDED,Sly Cyclops Purge,spell_01,spell_01_purge_race,K,Destroy all enemy cyclops.
+SP_SLYKILL_RT_SKELETON,R,8,UO_NOT_NEEDED,Sly Skeleton Purge,spell_01,spell_01_purge_race,K,Destroy all enemy skeletons.
+SP_RUNEFULLRAND,U,5,UO_NOT_NEEDED,All Change,spell_01,spell_swaprunes,RD,Randomly reassign control of all runes in play.
+SP_RUNESLEFT,R,7,UO_NOT_NEEDED,Runes Clockwise,spell_01,spell_swaprunes,RD,All players pass their runes to the player on their left.
+SP_RUNESRIGHT,R,7,UO_NOT_NEEDED,Runes Counter Clockwise,spell_01,spell_swaprunes,RD,All players pass their runes to the player on their right.
+SP_NEXTSPELL,U,3,UO_NOT_NEEDED,Draw Next Spell,spell_01,spell_nextspell,CS,Draw the next spell in your deck. \n\n(If there is one.)
+SP_NEXTRUNE,U,3,UO_NOT_NEEDED,Draw Next Rune,spell_01,spell_nextspell,CR,Draw the next rune in your deck. \n\n(If there is one.)
+SP_NEXTMONSTER,U,3,UO_NOT_NEEDED,Draw Next Monster,spell_01,spell_nextspell,C,Draw the next monster in your deck. \n\n(If there is one.)
+SP_NEXTWEAPON,U,3,UO_NOT_NEEDED,Draw Next Weapon,spell_01,spell_nextspell,C,Draw the next weapon in your deck. \n\n(If there is one.)
+SP_NEXTARMOUR,U,3,UO_NOT_NEEDED,Draw Next Armour,spell_01,spell_nextspell,C,Draw the next armour in your deck. \n\n(If there is one.)
+SP_NEXTSHIELD,U,3,UO_NOT_NEEDED,Draw Next Shield,spell_01,spell_nextspell,C,Draw the next shield in your deck. \n\n(If there is one.)
+SP_MINIHEALMYTEAM,L,1,UO_NOT_NEEDED,Mini Blessing,spell_01,spell_01_heal,H,All your creatures receive RU_Health1_Health.
+SP_ALLDISC_RUNES,U,4,UO_NOT_NEEDED,Discard Runes,spell_01,spell_discard,D,All players discard all rune cards from their hand.
+SP_ALLDISC_SPELLS,U,4,UO_NOT_NEEDED,Discard Spells,spell_01,spell_discard,D,All players discard all spell cards from their hand.
+SP_ALLDISC_MONSTERS,U,4,UO_NOT_NEEDED,Discard Monsters,spell_01,spell_discard,D,All players discard all monster cards from their hand.
+SP_ALLDISC_EQUIPMENT,U,4,UO_NOT_NEEDED,Discard Equipment,spell_01,spell_discard,D,All players discard all equipment cards from their hand.
+SP_ALLDISC_ALL,R,6,UO_NOT_NEEDED,Discard All,spell_01,spell_discard,D,All players discard their hand.
+SP_SLYDISC_RUNES,R,7,UO_NOT_NEEDED,Sly Discard Runes,spell_01,spell_discard,D,All opponents discard all rune cards from their hand.\n\nYour hero suffers SP_JustMinus1_Health for each card discarded.
+SP_SLYDISC_SPELLS,R,7,UO_NOT_NEEDED,Sly Discard Spells,spell_01,spell_discard,D,All opponents discard all spell cards from their hand.\n\nYour hero suffers SP_JustMinus1_Health for each card discarded.
+SP_SLYDISC_MONSTERS,R,7,UO_NOT_NEEDED,Sly Discard Monsters,spell_01,spell_discard,D,All opponents discard all monster cards from their hand.\n\nYour hero suffers SP_JustMinus1_Health for each card discarded.
+SP_SLYDISC_EQUIPMENT,R,7,UO_NOT_NEEDED,Sly Discard Equipment,spell_01,spell_discard,D,All opponents discard all equipment cards from their hand.\n\nYour hero suffers SP_JustMinus1_Health for each card discarded.
+SP_SLYDISC_ALL,L,9,UO_NOT_NEEDED,Sly Discard All,spell_01,spell_discard,D,All opponents discard their hand.\n\nYour hero suffers SP_JustMinus1_Health for each card discarded.
+SP_DISCARD1,C,2,UO_NOT_NEEDED,Discard 1,spell_01,spell_discard,D,All players discard 1 card at random from their hand.
+SP_DISCARD3,U,5,UO_NOT_NEEDED,Discard 3,spell_01,spell_discard,D,All players discard 3 cards at random from their hand.
+SP_SLYDISCARD1,R,5,UO_NOT_NEEDED,Sly Discard 1,spell_01,spell_discard,D,All opponents discard 1 card at random from their hand.\n\nYour hero suffers SP_JustMinus1_Health for each card discarded.
+SP_SLYDISCARD3,R,8,UO_NOT_NEEDED,Sly Discard 3,spell_01,spell_discard,D,All opponents discard 3 cards at random from their hand.\n\nYour hero suffers SP_JustMinus1_Health for each card discarded.
+SP_M_AFF_STUN,U,3,UO_NOT_NEEDED,All Dazed,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Dazed@C[0].
+SP_M_AFF_MIGHTY,U,3,UO_NOT_NEEDED,All Mighty,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Mighty@C[0].
+SP_M_AFF_BERSERK,U,3,UO_NOT_NEEDED,All Berserk,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Berserk@C[0] and cannot attack this turn.
+SP_M_AFF_SNARED,U,3,UO_NOT_NEEDED,All Snared,spell_01,spell_afflict_monsters,IT,All monsters become afflicted with @C[1]Snared@C[0].
+SP_M_AFF_REGEN,U,3,UO_NOT_NEEDED,All Regen,spell_01,spell_afflict_monsters,IH,All monsters become afflicted with @C[1]Regen@C[0].
+SP_M_AFF_DEATHMARK,U,3,UO_NOT_NEEDED,All Death Mark,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Death Mark@C[0].
+SP_M_AFF_ICEBLOCK,U,3,UO_NOT_NEEDED,All Ice Block,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Ice Block@C[0].
+SP_M_AFF_FLAME,R,3,UO_NOT_NEEDED,All Flame,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Flame@C[0].
+SP_M_AFF_VENGEANCE,U,3,UO_NOT_NEEDED,All Vengeance,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Vengeance@C[0].
+SP_M_AFF_MAGICSHIELD,U,3,UO_NOT_NEEDED,All Shield,spell_01,spell_afflict_monsters,I,All monsters become afflicted with @C[1]Magic shield@C[0].
+SP_SM_AFF_STUN,R,6,UO_NOT_NEEDED,Sly Dazed,spell_01,spell_afflict_sly_monsters,I,All enemy monsters become afflicted with @C[1]Dazed@C[0].
+SP_SM_AFF_MIGHTY,R,6,UO_NOT_NEEDED,Sly Mighty,spell_01,spell_afflict_sly_monsters,I,All enemy monsters become afflicted with @C[1]Mighty@C[0].
+SP_SM_AFF_BERSERK,R,6,UO_NOT_NEEDED,Sly Berserk,spell_01,spell_afflict_sly_monsters,I,All enemy monsters become afflicted with @C[1]Berserk@C[0].
+SP_SM_AFF_SNARED,R,6,UO_NOT_NEEDED,Sly Snared,spell_01,spell_afflict_sly_monsters,IT,All enemy monsters become afflicted with @C[1]Snared@C[0].
+SP_SM_AFF_REGEN,R,6,UO_NOT_NEEDED,Sly Regen,spell_01,spell_afflict_sly_monsters,IH,All enemy monsters become afflicted with @C[1]Regen@C[0].
+SP_SM_AFF_DEATHMARK,R,6,UO_NOT_NEEDED,Sly Death Mark,spell_01,spell_afflict_sly_monsters,I,All enemy monsters become afflicted with @C[1]Death Mark@C[0].
+SP_SM_AFF_ICEBLOCK,R,6,UO_NOT_NEEDED,Sly Ice Block,spell_01,spell_afflict_sly_monsters,IT,All enemy monsters become afflicted with @C[1]Ice Block@C[0].
+SP_SM_AFF_FLAME,R,6,UO_NOT_NEEDED,Sly Flame,spell_01,spell_afflict_sly_monsters,I,All enemy monsters become afflicted with @C[1]Flame@C[0].
+SP_SM_AFF_VENGEANCE,R,6,UO_NOT_NEEDED,Sly Vengeance,spell_01,spell_afflict_sly_monsters,I,All enemy monsters become afflicted with @C[1]Vengeance@C[0].
+SP_SM_AFF_MAGICSHIELD,R,6,UO_NOT_NEEDED,Sly Shield,spell_01,spell_afflict_sly_monsters,I,All enemy monsters become afflicted with @C[1]Magic shield@C[0].
+SP_H_AFF_STUN,R,2,UO_NOT_NEEDED,Heroes Dazed,spell_01,spell_afflict_heroes,I,All heroes become afflicted with @C[1]Dazed@C[0].
+SP_H_AFF_MIGHTY,R,2,UO_NOT_NEEDED,Heroes Mighty,spell_01,spell_afflict_heroes,I,All heroes become afflicted with @C[1]Mighty@C[0].
+SP_H_AFF_BERSERK,R,2,UO_NOT_NEEDED,Heroes Berserk,spell_01,spell_afflict_heroes,I,All heroes become afflicted with @C[1]Berserk@C[0] and cannot attack this turn.
+SP_H_AFF_SNARED,R,2,UO_NOT_NEEDED,Heroes Snared,spell_01,spell_afflict_heroes,IT,All heroes become afflicted with @C[1]Snared@C[0].
+SP_H_AFF_REGEN,R,2,UO_NOT_NEEDED,Heroes Regen,spell_01,spell_afflict_heroes,IH,All heroes become afflicted with @C[1]Regen@C[0].
+SP_H_AFF_DEATHMARK,R,2,UO_NOT_NEEDED,Heroes Death Mark,spell_01,spell_afflict_heroes,I,All heroes become afflicted with @C[1]Death Mark@C[0].
+SP_H_AFF_ICEBLOCK,R,2,UO_NOT_NEEDED,Heroes Ice Block,spell_01,spell_afflict_heroes,IT,All heroes become afflicted with @C[1]Ice Block@C[0].
+SP_H_AFF_FLAME,R,2,UO_NOT_NEEDED,Heroes Flame,spell_01,spell_afflict_heroes,I,All heroes become afflicted with @C[1]Flame@C[0].
+SP_H_AFF_VENGEANCE,R,2,UO_NOT_NEEDED,Heroes Vengeance,spell_01,spell_afflict_heroes,I,All heroes become afflicted with @C[1]Vengeance@C[0].
+SP_H_AFF_MAGICSHIELD,R,2,UO_NOT_NEEDED,Heroes Shield,spell_01,spell_afflict_heroes,I,All heroes become afflicted with @C[1]Magic shield@C[0].
+SP_KILL_RT_ROBOT,U,5,UO_NOT_NEEDED,Robot Purge,spell_01,spell_01_purge_race,K,Destroy all robots.
+SP_SLYKILL_RT_ROBOT,R,8,UO_NOT_NEEDED,Sly Robot Purge,spell_01,spell_01_purge_race,K,Destroy all enemy robots.
+SP_HEAL_HUMAN,U,2,UO_NOT_NEEDED,Human Boon,spell_01,spell_01_heal,H,All humans receive SP_HealRace_Health.
+SP_HEAL_ELF,U,2,UO_NOT_NEEDED,Elf Boon,spell_01,spell_01_heal,H,All elves receive SP_HealRace_Health.
+SP_HEAL_ORC,U,2,UO_NOT_NEEDED,Orc Boon,spell_01,spell_01_heal,H,All orcs receive SP_HealRace_Health.
+SP_HEAL_UNDEAD,U,2,UO_NOT_NEEDED,Zombie Boon,spell_01,spell_01_heal,H,All zombies receive SP_HealRace_Health.
+SP_HEAL_LIZARD,U,2,UO_NOT_NEEDED,Lizard Boon,spell_01,spell_01_heal,H,All lizards receive SP_HealRace_Health.
+SP_HEAL_DWARF,U,2,UO_NOT_NEEDED,Dwarf Boon,spell_01,spell_01_heal,H,All dwarves receive SP_HealRace_Health.
+SP_HEAL_MINOTAUR,U,2,UO_NOT_NEEDED,Minotaur Boon,spell_01,spell_01_heal,H,All minotaurs receive SP_HealRace_Health.
+SP_HEAL_WEREWOLF,U,2,UO_NOT_NEEDED,Werewolf Boon,spell_01,spell_01_heal,H,All werewolves receive SP_HealRace_Health.
+SP_HEAL_GOLEM,U,2,UO_NOT_NEEDED,Golem Boon,spell_01,spell_01_heal,H,All golems receive SP_HealRace_Health.
+SP_HEAL_ELEMENTAL,U,2,UO_NOT_NEEDED,Elemental Boon,spell_01,spell_01_heal,H,All elementals receive SP_HealRace_Health.
+SP_HEAL_CYCLOPS,U,2,UO_NOT_NEEDED,Cyclops Boon,spell_01,spell_01_heal,H,All cyclops receive SP_HealRace_Health.
+SP_HEAL_SKELETON,U,2,UO_NOT_NEEDED,Skeleton Boon,spell_01,spell_01_heal,H,All skeletons receive SP_HealRace_Health.
+SP_HEAL_ROBOT,U,2,UO_NOT_NEEDED,Robot Boon,spell_01,spell_01_heal,H,All robots receive SP_HealRace_Health.
+SP_SLYHEAL_HUMAN,R,3,UO_NOT_NEEDED,My Human Boon,spell_01,spell_01_heal,H,All your humans receive SP_SlyHealRace_Health.
+SP_SLYHEAL_ELF,R,3,UO_NOT_NEEDED,My Elf Boon,spell_01,spell_01_heal,H,All your elves receive SP_SlyHealRace_Health.
+SP_SLYHEAL_ORC,R,3,UO_NOT_NEEDED,My Orc Boon,spell_01,spell_01_heal,H,All your orcs receive SP_SlyHealRace_Health.
+SP_SLYHEAL_UNDEAD,R,3,UO_NOT_NEEDED,My Zombie Boon,spell_01,spell_01_heal,H,All your zombies receive SP_SlyHealRace_Health.
+SP_SLYHEAL_LIZARD,R,3,UO_NOT_NEEDED,My Lizard Boon,spell_01,spell_01_heal,H,All your lizards receive SP_SlyHealRace_Health.
+SP_SLYHEAL_DWARF,R,3,UO_NOT_NEEDED,My Dwarf Boon,spell_01,spell_01_heal,H,All your dwarves receive SP_SlyHealRace_Health.
+SP_SLYHEAL_MINOTAUR,R,3,UO_NOT_NEEDED,My Minotaur Boon,spell_01,spell_01_heal,H,All your minotaurs receive SP_SlyHealRace_Health.
+SP_SLYHEAL_WEREWOLF,R,3,UO_NOT_NEEDED,My Werewolf Boon,spell_01,spell_01_heal,H,All your werewolves receive SP_SlyHealRace_Health.
+SP_SLYHEAL_GOLEM,R,3,UO_NOT_NEEDED,My Golem Boon,spell_01,spell_01_heal,H,All your golems receive SP_SlyHealRace_Health.
+SP_SLYHEAL_ELEMENTAL,R,3,UO_NOT_NEEDED,My Elemental Boon,spell_01,spell_01_heal,H,All your elementals receive SP_SlyHealRace_Health.
+SP_SLYHEAL_CYCLOPS,R,3,UO_NOT_NEEDED,My Cyclops Boon,spell_01,spell_01_heal,H,All your cyclops receive SP_SlyHealRace_Health.
+SP_SLYHEAL_SKELETON,R,3,UO_NOT_NEEDED,My Skeleton Boon,spell_01,spell_01_heal,H,All your skeletons receive SP_SlyHealRace_Health.
+SP_SLYHEAL_ROBOT,R,3,UO_NOT_NEEDED,My Robot Boon,spell_01,spell_01_heal,H,All your robots receive SP_SlyHealRace_Health.
+SP_SLYCURE_HUMAN,U,2,UO_NOT_NEEDED,Cure Humans,spell_01,spell_cure,I,All friendly humans lose all bad afflictions.
+SP_SLYCURE_ELF,U,2,UO_NOT_NEEDED,Cure Elves,spell_01,spell_cure,I,All friendly elves lose all bad afflictions.
+SP_SLYCURE_ORC,U,2,UO_NOT_NEEDED,Cure Orcs,spell_01,spell_cure,I,All friendly orcs lose all bad afflictions.
+SP_SLYCURE_UNDEAD,U,2,UO_NOT_NEEDED,Cure Zombies,spell_01,spell_cure,I,All friendly zombies lose all bad afflictions.
+SP_SLYCURE_LIZARD,U,2,UO_NOT_NEEDED,Cure Lizards,spell_01,spell_cure,I,All friendly lizards lose all bad afflictions.
+SP_SLYCURE_DWARF,U,2,UO_NOT_NEEDED,Cure Dwarves,spell_01,spell_cure,I,All friendly dwarves lose all bad afflictions.
+SP_SLYCURE_MINOTAUR,U,2,UO_NOT_NEEDED,Cure Minotaurs,spell_01,spell_cure,I,All friendly minotaurs lose all bad afflictions.
+SP_SLYCURE_WEREWOLF,U,2,UO_NOT_NEEDED,Cure Werewolves,spell_01,spell_cure,I,All friendly werewolves lose all bad afflictions.
+SP_SLYCURE_GOLEM,U,2,UO_NOT_NEEDED,Cure Golems,spell_01,spell_cure,I,All friendly golems lose all bad afflictions.
+SP_SLYCURE_ELEMENTAL,U,2,UO_NOT_NEEDED,Cure Elementals,spell_01,spell_cure,I,All friendly elementals lose all bad afflictions.
+SP_SLYCURE_CYCLOPS,U,2,UO_NOT_NEEDED,Cure Cyclops,spell_01,spell_cure,I,All friendly cyclops lose all bad afflictions.
+SP_SLYCURE_SKELETON,U,2,UO_NOT_NEEDED,Cure Skeletons,spell_01,spell_cure,I,All friendly skeletons lose all bad afflictions.
+SP_SLYCURE_ROBOT,U,2,UO_NOT_NEEDED,Cure Robots,spell_01,spell_cure,I,All friendly robots lose all bad afflictions.
+SP_SLYCURE_WARRIOR,R,3,UO_NOT_NEEDED,Cure Warriors,spell_01,spell_cure,I,All friendly warriors lose all bad afflictions.
+SP_SLYCURE_MAGE,R,3,UO_NOT_NEEDED,Cure Mages,spell_01,spell_cure,I,All friendly mages lose all bad afflictions.
+SP_SLYCURE_ARCHER,R,3,UO_NOT_NEEDED,Cure Archers,spell_01,spell_cure,I,All friendly archers lose all bad afflictions.
+SP_SLYCURE_ALL,R,4,UO_NOT_NEEDED,Cure Creatures,spell_01,spell_cure,I,All friendly creatures lose all bad afflictions.
+SP_UNCURE_HUMAN,C,2,UO_NOT_NEEDED,Deny Humans,spell_01,spell_afflict_deny,ID,All enemy humans lose all good afflictions.
+SP_UNCURE_ELF,C,2,UO_NOT_NEEDED,Deny Elves,spell_01,spell_afflict_deny,ID,All enemy elves lose all good afflictions.
+SP_UNCURE_ORC,C,2,UO_NOT_NEEDED,Deny Orcs,spell_01,spell_afflict_deny,ID,All enemy orcs lose all good afflictions.
+SP_UNCURE_UNDEAD,C,2,UO_NOT_NEEDED,Deny Zombies,spell_01,spell_afflict_deny,ID,All enemy zombies lose all good afflictions.
+SP_UNCURE_LIZARD,C,2,UO_NOT_NEEDED,Deny Lizards,spell_01,spell_afflict_deny,ID,All enemy lizards lose all good afflictions.
+SP_UNCURE_DWARF,C,2,UO_NOT_NEEDED,Deny Dwarves,spell_01,spell_afflict_deny,ID,All enemy dwarves lose all good afflictions.
+SP_UNCURE_MINOTAUR,C,2,UO_NOT_NEEDED,Deny Minotaurs,spell_01,spell_afflict_deny,ID,All enemy minotaurs lose all good afflictions.
+SP_UNCURE_WEREWOLF,C,2,UO_NOT_NEEDED,Deny Werewolves,spell_01,spell_afflict_deny,ID,All enemy werewolves lose all good afflictions.
+SP_UNCURE_GOLEM,C,2,UO_NOT_NEEDED,Deny Golems,spell_01,spell_afflict_deny,ID,All enemy golems lose all good afflictions.
+SP_UNCURE_ELEMENTAL,C,2,UO_NOT_NEEDED,Deny Elementals,spell_01,spell_afflict_deny,ID,All enemy elementals lose all good afflictions.
+SP_UNCURE_CYCLOPS,C,2,UO_NOT_NEEDED,Deny Cyclops,spell_01,spell_afflict_deny,ID,All enemy cyclops lose all good afflictions.
+SP_UNCURE_SKELETON,C,2,UO_NOT_NEEDED,Deny Skeletons,spell_01,spell_afflict_deny,ID,All enemy skeletons lose all good afflictions.
+SP_UNCURE_ROBOT,C,2,UO_NOT_NEEDED,Deny Robots,spell_01,spell_afflict_deny,ID,All enemy robots lose all good afflictions.
+SP_UNCURE_WARRIOR,U,3,UO_NOT_NEEDED,Deny Warriors,spell_01,spell_afflict_deny,ID,All enemy warriors lose all good afflictions.
+SP_UNCURE_MAGE,U,3,UO_NOT_NEEDED,Deny Mages,spell_01,spell_afflict_deny,ID,All enemy mages lose all good afflictions.
+SP_UNCURE_ARCHER,U,3,UO_NOT_NEEDED,Deny Archers,spell_01,spell_afflict_deny,ID,All enemy archers lose all good afflictions.
+SP_UNCURE_ALL,R,4,UO_NOT_NEEDED,Deny Creatures,spell_01,spell_afflict_deny,ID,All enemy creatures lose all good afflictions.
+SP_SHATTER_HUMAN,C,2,UO_NOT_NEEDED,Shatter all Humans,spell_01,spell_shatter,ID,All humans lose all afflictions.
+SP_SHATTER_ELF,C,2,UO_NOT_NEEDED,Shatter all Elves,spell_01,spell_shatter,ID,All elves lose all afflictions.
+SP_SHATTER_ORC,C,2,UO_NOT_NEEDED,Shatter all Orcs,spell_01,spell_shatter,ID,All orcs lose all afflictions.
+SP_SHATTER_UNDEAD,C,2,UO_NOT_NEEDED,Shatter all Zombies,spell_01,spell_shatter,ID,All zombies lose all afflictions.
+SP_SHATTER_LIZARD,C,2,UO_NOT_NEEDED,Shatter all Lizards,spell_01,spell_shatter,ID,All lizards lose all afflictions.
+SP_SHATTER_DWARF,C,2,UO_NOT_NEEDED,Shatter all Dwarves,spell_01,spell_shatter,ID,All dwarves lose all afflictions.
+SP_SHATTER_MINOTAUR,C,2,UO_NOT_NEEDED,Shatter all Minotaurs,spell_01,spell_shatter,ID,All minotaurs lose all afflictions.
+SP_SHATTER_WEREWOLF,C,2,UO_NOT_NEEDED,Shatter all Werewolves,spell_01,spell_shatter,ID,All werewolves lose all afflictions.
+SP_SHATTER_GOLEM,C,2,UO_NOT_NEEDED,Shatter all Golems,spell_01,spell_shatter,ID,All golems lose all afflictions.
+SP_SHATTER_ELEMENTAL,C,2,UO_NOT_NEEDED,Shatter all Elementals,spell_01,spell_shatter,ID,All elementals lose all afflictions.
+SP_SHATTER_CYCLOPS,C,2,UO_NOT_NEEDED,Shatter all Cyclops,spell_01,spell_shatter,ID,All cyclops lose all afflictions.
+SP_SHATTER_SKELETON,C,2,UO_NOT_NEEDED,Shatter all Skeletons,spell_01,spell_shatter,ID,All skeletons lose all afflictions.
+SP_SHATTER_ROBOT,C,2,UO_NOT_NEEDED,Shatter all Robots,spell_01,spell_shatter,ID,All robots lose all afflictions.
+SP_SHATTER_WARRIOR,U,3,UO_NOT_NEEDED,Shatter all Warriors,spell_01,spell_shatter,ID,All warriors lose all afflictions.
+SP_SHATTER_MAGE,U,3,UO_NOT_NEEDED,Shatter all Mages,spell_01,spell_shatter,ID,All mages lose all afflictions.
+SP_SHATTER_ARCHER,U,3,UO_NOT_NEEDED,Shatter all Archers,spell_01,spell_shatter,ID,All archers lose all afflictions.
+SP_SHATTER_ALL,R,4,UO_NOT_NEEDED,Shatter all Creatures,spell_01,spell_shatter,ID,All creatures lose all afflictions.
+SP_KILL_AFF_STUN,R,5,UO_NOT_NEEDED,Dazed Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Dazed@C[0].
+SP_KILL_AFF_MIGHTY,R,5,UO_NOT_NEEDED,Mighty Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Mighty@C[0].
+SP_KILL_AFF_BERSERK,R,5,UO_NOT_NEEDED,Berserk Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Berserk@C[0].
+SP_KILL_AFF_SNARED,R,5,UO_NOT_NEEDED,Snared Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Snared@C[0].
+SP_KILL_AFF_REGEN,R,5,UO_NOT_NEEDED,Regen Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Regen@C[0].
+SP_KILL_AFF_DEATHMARK,R,5,UO_NOT_NEEDED,Deathmark Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Death Mark@C[0].
+SP_KILL_AFF_FLAME,R,5,UO_NOT_NEEDED,Flame Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Flame@C[0].
+SP_KILL_AFF_VENGEANCE,R,5,UO_NOT_NEEDED,Vengeance Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Vengeance@C[0].
+SP_KILL_AFF_MAGICSHIELD,R,5,UO_NOT_NEEDED,Shield Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Magic shield@C[0].
+SP_KILL_AFF_ALL,L,6,UO_NOT_NEEDED,Afflicted Purge,spell_01,spell_01_kill_all,IK,Destroy all afflicted monsters.
+SP_SLYKILL_AFF_STUN,R,8,UO_NOT_NEEDED,Sly Dazed Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Dazed@C[0].
+SP_SLYKILL_AFF_MIGHTY,R,8,UO_NOT_NEEDED,Sly Mighty Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Mighty@C[0].
+SP_SLYKILL_AFF_BERSERK,R,8,UO_NOT_NEEDED,Sly Berserk Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Berserk@C[0].
+SP_SLYKILL_AFF_SNARED,R,8,UO_NOT_NEEDED,Sly Snared Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Snared@C[0].
+SP_SLYKILL_AFF_REGEN,R,8,UO_NOT_NEEDED,Sly Regen Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Regen@C[0].
+SP_SLYKILL_AFF_DEATHMARK,R,8,UO_NOT_NEEDED,Sly Deathmark Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Death Mark@C[0].
+SP_SLYKILL_AFF_FLAME,R,8,UO_NOT_NEEDED,Sly Flame Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Flame@C[0].
+SP_SLYKILL_AFF_VENGEANCE,R,8,UO_NOT_NEEDED,Sly Vengeance Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Vengeance@C[0].
+SP_SLYKILL_AFF_MAGICSHIELD,R,8,UO_NOT_NEEDED,Sly Shield Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Magic shield@C[0].
+SP_SLYKILL_AFF_ALL,L,9,UO_NOT_NEEDED,Sly Afflicted Purge,spell_01,spell_01_kill_all,IK,Destroy all afflicted enemy monsters.
+SP_SHATTER_IMP,C,2,UO_NOT_NEEDED,Shatter all Imps,spell_01,spell_shatter,ID,All imps lose all afflictions.
+SP_SHATTER_SPECTRE,C,2,UO_NOT_NEEDED,Shatter all Spectres,spell_01,spell_shatter,ID,All spectres lose all afflictions.
+SP_UNCURE_IMP,C,2,UO_NOT_NEEDED,Deny Imps,spell_01,spell_afflict_deny,ID,All enemy imps lose all good afflictions.
+SP_UNCURE_SPECTRE,C,2,UO_NOT_NEEDED,Deny Spectres,spell_01,spell_afflict_deny,ID,All enemy spectres lose all good afflictions.
+SP_SLYCURE_IMP,U,2,UO_NOT_NEEDED,Cure Imps,spell_01,spell_cure,I,All friendly imps lose all bad afflictions.
+SP_SLYCURE_SPECTRE,U,2,UO_NOT_NEEDED,Cure Spectres,spell_01,spell_cure,I,All friendly spectres lose all bad afflictions.
+SP_SLYHEAL_IMP,R,3,UO_NOT_NEEDED,My Imp Boon,spell_01,spell_01_heal,H,All your imps receive SP_SlyHealRace_Health.
+SP_SLYHEAL_SPECTRE,R,3,UO_NOT_NEEDED,My Spectre Boon,spell_01,spell_01_heal,H,All your spectres receive SP_SlyHealRace_Health.
+SP_HEAL_IMP,U,2,UO_NOT_NEEDED,Imp Boon,spell_01,spell_01_heal,H,All imps receive SP_HealRace_Health.
+SP_HEAL_SPECTRE,U,2,UO_NOT_NEEDED,Spectre Boon,spell_01,spell_01_heal,H,All spectres receive SP_HealRace_Health.
+SP_SLYKILL_RT_IMP,R,8,UO_NOT_NEEDED,Sly Imp Purge,spell_01,spell_01_purge_race,K,Destroy all enemy imps.
+SP_SLYKILL_RT_SPECTRE,R,8,UO_NOT_NEEDED,Sly Spectre Purge,spell_01,spell_01_purge_race,K,Destroy all enemy spectres.
+SP_KILL_RT_IMP,U,5,UO_NOT_NEEDED,Imp Purge,spell_01,spell_01_purge_race,K,Destroy all imps.
+SP_KILL_RT_SPECTRE,U,5,UO_NOT_NEEDED,Spectre Purge,spell_01,spell_01_purge_race,K,Destroy all spectres.
+SP_FIZZLE,L,0,UO_NOT_NEEDED,Fizzle,spell_01,spell_refresh,X,Does nothing.
+SP_WISH_MONSTER,L,5,UO_NOT_NEEDED,Monstrous Desire,spell_01,spell_wish,C,Pick any monster you own# reveal it and place it in your hand.
+SP_WISH_SPELL,L,6,UO_NOT_NEEDED,Mind's Desire,spell_01,spell_wish,CS,Pick any spell you own# reveal it and place it in your hand.
+SP_WISH_RUNE,L,5,UO_NOT_NEEDED,Runic Desire,spell_01,spell_wish,CR,Pick any rune you own# reveal it and place it in your hand.
+SP_WISH_ARMOUR,L,5,UO_NOT_NEEDED,Armorial Desire,spell_01,spell_wish,C,Pick any piece of armour you own# reveal it and place it in your hand.
+SP_WISH_SHIELD,L,5,UO_NOT_NEEDED,Deflective Desire,spell_01,spell_wish,C,Pick any shield you own# reveal it and place it in your hand.
+SP_WISH_WEAPON,L,5,UO_NOT_NEEDED,Violent Desire,spell_01,spell_wish,C,Pick any weapon you own# reveal it and place it in your hand.
+SP_WISHRAND_MONSTER,R,2,UO_NOT_NEEDED,Monstrous Musing,spell_01,spell_wish,C,Draw and reveal a random monster from your collection.
+SP_WISHRAND_SPELL,R,2,UO_NOT_NEEDED,Mind's Musing,spell_01,spell_wish,CS,Draw and reveal a random spell from your collection.
+SP_WISHRAND_RUNE,R,2,UO_NOT_NEEDED,Runic Musing,spell_01,spell_wish,CR,Draw and reveal a  random rune from your collection.
+SP_WISHRAND_ARMOUR,R,2,UO_NOT_NEEDED,Armorial Musing,spell_01,spell_wish,C,Draw and reveal a random piece of armour from your collection.
+SP_WISHRAND_SHIELD,R,2,UO_NOT_NEEDED,Deflective Musing,spell_01,spell_wish,C,Draw and reveal a random shield from your collection.
+SP_WISHRAND_WEAPON_ANY,R,2,UO_NOT_NEEDED,Violent Musing,spell_01,spell_wish,C,Draw and reveal a random weapon from your collection.
+SP_WISHRAND_WEAPON_WARRIOR,R,2,UO_NOT_NEEDED,Violent Warrior Musing,spell_01,spell_wish,C,Draw and reveal a random warrior weapon from your collection.
+SP_WISHRAND_WEAPON_ARCHER,R,2,UO_NOT_NEEDED,Violent Archer Musing,spell_01,spell_wish,C,Draw and reveal a random archer weapon from your collection.
+SP_WISHRAND_WEAPON_MAGE,R,2,UO_NOT_NEEDED,Violent Mage Musing,spell_01,spell_wish,C,Draw and reveal a random mage weapon from your collection.
+SP_MOJO_6FOR3,L,3,UO_NOT_NEEDED,Mojo 6 for 3,spell_01,spell_mojo_boost,M,Get SP_Mojo6_Mojo. Your hero suffers SP_JustMinus6_Health.
+SP_MOJO_3FOR2,R,2,UO_NOT_NEEDED,Mojo 3 for 2,spell_01,spell_mojo_boost,M,Get SP_Mojo3_Mojo. Your hero suffers SP_JustMinus2_Health.
+SP_MOJO_5FOR3,R,3,UO_NOT_NEEDED,Mojo 5 for 3,spell_01,spell_mojo_boost,M,Get SP_Mojo5_Mojo. Your hero suffers SP_JustMinus4_Health.
+SP_MOJO_6FOR4,U,4,UO_NOT_NEEDED,Mojo 6 for 4,spell_01,spell_mojo_boost,M,Get SP_Mojo6_Mojo. Your hero suffers SP_JustMinus4_Health.
+SP_MOJO_8FOR5,U,5,UO_NOT_NEEDED,Mojo 8 for 5,spell_01,spell_mojo_boost,M,Get SP_Mojo8_Mojo. Your hero suffers SP_JustMinus6_Health.
+SP_MOJO_10FOR6,U,6,UO_NOT_NEEDED,Mojo 10 for 6,spell_01,spell_mojo_boost,M,Get SP_Mojo10_Mojo. Your hero suffers SP_JustMinus8_Health.
+SP_MOJO_5FOR4,C,4,UO_NOT_NEEDED,Mojo 5 for 4,spell_01,spell_mojo_boost,M,Get SP_Mojo5_Mojo. Your hero suffers SP_JustMinus2_Health.
+SP_MOJO_7FOR5,C,5,UO_NOT_NEEDED,Mojo 7 for 5,spell_01,spell_mojo_boost,M,Get SP_Mojo7_Mojo. Your hero suffers SP_JustMinus4_Health.
+SP_MOJO_9FOR6,C,6,UO_NOT_NEEDED,Mojo 9 for 6,spell_01,spell_mojo_boost,M,Get SP_Mojo9_Mojo. Your hero suffers SP_JustMinus6_Health.
+SP_MOJO_JOKER,C,3,UO_NOT_NEEDED,Mojo Joker,spell_01,spell_mojo_boost,M,Get between SP_Mojo2_Mojo and SP_Mojo4_Mojo at random. Your hero suffers SP_JustMinus6_Health.
+SP_MOJO_BIGJOKER,U,4,UO_NOT_NEEDED,Great Mojo Joker,spell_01,spell_mojo_boost,M,Get between SP_Mojo3_Mojo and SP_Mojo6_Mojo at random. Your hero suffers SP_JustMinus7_Health.
+SP_MOJO_EPICJOKER,R,5,UO_NOT_NEEDED,Epic Mojo Joker,spell_01,spell_mojo_boost,M,Get between SP_Mojo6_Mojo and SP_Mojo10_Mojo at random. Your hero suffers SP_JustMinus8_Health.
+SP_MOJO_DOUBLER,R,4,UO_NOT_NEEDED,Mojo Doubler,spell_01,spell_mojo_boost,M,Double your remaining Mojo. Your hero suffers @X[19]@C[6]-X@C[0]# where X is the amount of mojo gained.
+SP_MOJO_TRIPLER,L,6,UO_NOT_NEEDED,Mojo Tripler,spell_01,spell_mojo_boost,M,Triple your remaining Mojo. Your hero suffers @X[19]@C[6]-X@C[0]# where X is the amount of mojo gained.
+SP_HERO_HEALTH_3,C,2,UO_NOT_NEEDED,Mini Hero Boon,spell_01,spell_01_heal,H,Your hero receives SP_heroHealth3_Health.
+SP_HERO_HEALTH_6,U,3,UO_NOT_NEEDED,Hero Boon,spell_01,spell_01_heal,H,Your hero receives SP_heroHealth5_Health.
+SP_HERO_HEALTH_10,R,4,UO_NOT_NEEDED,Great Hero Boon,spell_01,spell_01_heal,H,Your hero receives SP_heroHealth8_Health.
+SP_HERO_HEALTH_15,L,5,UO_NOT_NEEDED,Epic Hero Boon,spell_01,spell_01_heal,H,Your hero receives SP_heroHealth12_Health.
+SP_HERO_HEALTH_M1,C,2,UO_NOT_NEEDED,Hero Mojo Boon,spell_01,spell_01_heal,H,Your hero receives SP_heroHealth1_Health for each Mojo remaining.\n(Capped at 8)
+SP_HERO_HEALTH_M2,U,3,UO_NOT_NEEDED,Great Hero Mojo Boon,spell_01,spell_01_heal,H,Your hero receives SP_heroHealth2_Health for each Mojo remaining.\n(Capped at 12)
+SP_BOUNCE_ALL_MONSTER,R,5,UO_NOT_NEEDED,Bounce all Monsters,spell_01,spell_bounce_all,K,All monsters are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_WARRIOR,U,4,UO_NOT_NEEDED,Bounce all Warriors,spell_01,spell_bounce_all,K,All warriors are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_ARCHER,U,4,UO_NOT_NEEDED,Bounce all Archers,spell_01,spell_bounce_all,K,All archers are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_MAGE,U,4,UO_NOT_NEEDED,Bounce all Mages,spell_01,spell_bounce_all,K,All mages are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_HUMAN,C,3,UO_NOT_NEEDED,Bounce all Humans,spell_01,spell_bounce_all,K,All humans are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_ELF,C,3,UO_NOT_NEEDED,Bounce all Elves,spell_01,spell_bounce_all,K,All elves are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_ORC,C,3,UO_NOT_NEEDED,Bounce all Orcs,spell_01,spell_bounce_all,K,All orcs are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_UNDEAD,C,3,UO_NOT_NEEDED,Bounce all Zombies,spell_01,spell_bounce_all,K,All zombies are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_LIZARD,C,3,UO_NOT_NEEDED,Bounce all Lizards,spell_01,spell_bounce_all,K,All lizards are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_DWARF,C,3,UO_NOT_NEEDED,Bounce all Dwarves,spell_01,spell_bounce_all,K,All dwarves are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_MINOTAUR,C,3,UO_NOT_NEEDED,Bounce all Minotaurs,spell_01,spell_bounce_all,K,All minotaurs are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_WEREWOLF,C,3,UO_NOT_NEEDED,Bounce all Werewolves,spell_01,spell_bounce_all,K,All werewolves are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_GOLEM,C,3,UO_NOT_NEEDED,Bounce all Golem,spell_01,spell_bounce_all,K,All golem are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_ELEMENTAL,C,3,UO_NOT_NEEDED,Bounce all Elementals,spell_01,spell_bounce_all,K,All elementals are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_CYCLOPS,C,3,UO_NOT_NEEDED,Bounce all Cyclops,spell_01,spell_bounce_all,K,All cyclops are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_SKELETON,C,3,UO_NOT_NEEDED,Bounce all Skeletons,spell_01,spell_bounce_all,K,All skeletons are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_ROBOT,C,3,UO_NOT_NEEDED,Bounce all Robots,spell_01,spell_bounce_all,K,All robots are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_IMP,C,3,UO_NOT_NEEDED,Bounce all Imps,spell_01,spell_bounce_all,K,All imps are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_ALL_SPECTRE,C,3,UO_NOT_NEEDED,Bounce all Spectres,spell_01,spell_bounce_all,K,All spectres are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_MONSTER,R,4,UO_NOT_NEEDED,Bounce my Monsters,spell_01,spell_bounce_mine,K,All your monsters are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_WARRIOR,U,3,UO_NOT_NEEDED,Bounce my Warriors,spell_01,spell_bounce_mine,K,All your warriors are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_ARCHER,U,3,UO_NOT_NEEDED,Bounce my Archers,spell_01,spell_bounce_mine,K,All your archers are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_MAGE,U,3,UO_NOT_NEEDED,Bounce my Mages,spell_01,spell_bounce_mine,K,All your mages are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_HUMAN,C,2,UO_NOT_NEEDED,Bounce my Humans,spell_01,spell_bounce_mine,K,All your humans are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_ELF,C,2,UO_NOT_NEEDED,Bounce my Elves,spell_01,spell_bounce_mine,K,All your elves are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_ORC,C,2,UO_NOT_NEEDED,Bounce my Orcs,spell_01,spell_bounce_mine,K,All your orcs are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_UNDEAD,C,2,UO_NOT_NEEDED,Bounce my Zombies,spell_01,spell_bounce_mine,K,All your zombies are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_LIZARD,C,2,UO_NOT_NEEDED,Bounce my Lizards,spell_01,spell_bounce_mine,K,All your lizards are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_DWARF,C,2,UO_NOT_NEEDED,Bounce my Dwarves,spell_01,spell_bounce_mine,K,All you dwarves are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_MINOTAUR,C,2,UO_NOT_NEEDED,Bounce my Minotaurs,spell_01,spell_bounce_mine,K,All your minotaurs are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_WEREWOLF,C,2,UO_NOT_NEEDED,Bounce my Werewolves,spell_01,spell_bounce_mine,K,All your werewolves are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_GOLEM,C,2,UO_NOT_NEEDED,Bounce my Golem,spell_01,spell_bounce_mine,K,All your golem are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_ELEMENTAL,C,2,UO_NOT_NEEDED,Bounce my Elementals,spell_01,spell_bounce_mine,K,All your elementals are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_CYCLOPS,C,2,UO_NOT_NEEDED,Bounce my Cyclops,spell_01,spell_bounce_mine,K,All your cyclops are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_SKELETON,C,2,UO_NOT_NEEDED,Bounce my Skeletons,spell_01,spell_bounce_mine,K,All your skeletons are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_ROBOT,C,2,UO_NOT_NEEDED,Bounce my Robots,spell_01,spell_bounce_mine,K,All your robots are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_IMP,C,2,UO_NOT_NEEDED,Bounce my Imps,spell_01,spell_bounce_mine,K,All your imps are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_SPECTRE,C,2,UO_NOT_NEEDED,Bounce my Spectres,spell_01,spell_bounce_mine,K,All your spectres are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_MONSTER,R,8,UO_NOT_NEEDED,Sly Bounce Monsters,spell_01,spell_bounce_enemy,K,All enemy monsters are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_WARRIOR,U,7,UO_NOT_NEEDED,Sly Bounce Warriors,spell_01,spell_bounce_enemy,K,All enemy warriors are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_ARCHER,U,7,UO_NOT_NEEDED,Sly Bounce Archers,spell_01,spell_bounce_enemy,K,All enemy archers are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_MAGE,U,7,UO_NOT_NEEDED,Sly Bounce Mages,spell_01,spell_bounce_enemy,K,All enemy mages are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_HUMAN,C,6,UO_NOT_NEEDED,Sly Bounce Humans,spell_01,spell_bounce_enemy,K,All enemy humans are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_ELF,C,6,UO_NOT_NEEDED,Sly Bounce Elves,spell_01,spell_bounce_enemy,K,All enemy elves are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_ORC,C,6,UO_NOT_NEEDED,Sly Bounce Orcs,spell_01,spell_bounce_enemy,K,All enemy orcs are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_UNDEAD,C,6,UO_NOT_NEEDED,Sly Bounce Zombies,spell_01,spell_bounce_enemy,K,All enemy zombies are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_LIZARD,C,6,UO_NOT_NEEDED,Sly Bounce Lizards,spell_01,spell_bounce_enemy,K,All enemy lizards are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_DWARF,C,6,UO_NOT_NEEDED,Sly Bounce Dwarves,spell_01,spell_bounce_enemy,K,All enemy dwarves are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_MINOTAUR,C,6,UO_NOT_NEEDED,Sly Bounce Minotaurs,spell_01,spell_bounce_enemy,K,All enemy minotaurs are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_WEREWOLF,C,6,UO_NOT_NEEDED,Sly Bounce Werewolves,spell_01,spell_bounce_enemy,K,All enemy werewolves are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_GOLEM,C,6,UO_NOT_NEEDED,Sly Bounce Golem,spell_01,spell_bounce_enemy,K,All enemy golem are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_ELEMENTAL,C,6,UO_NOT_NEEDED,Sly Bounce Elementals,spell_01,spell_bounce_enemy,K,All enemy elementals are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_CYCLOPS,C,6,UO_NOT_NEEDED,Sly Bounce Cyclops,spell_01,spell_bounce_enemy,K,All enemy cyclops are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_SKELETON,C,6,UO_NOT_NEEDED,Sly Bounce Skeletons,spell_01,spell_bounce_enemy,K,All enemy skeletons are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_ROBOT,C,6,UO_NOT_NEEDED,Sly Bounce Robots,spell_01,spell_bounce_enemy,K,All enemy robots are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_IMP,C,6,UO_NOT_NEEDED,Sly Bounce Imps,spell_01,spell_bounce_enemy,K,All enemy imps are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_SPECTRE,C,6,UO_NOT_NEEDED,Sly Bounce Spectres,spell_01,spell_bounce_enemy,K,All enemy spectres are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_DECURE_HUMAN,C,2,UO_NOT_NEEDED,Help other Humans,spell_01,spell_afflict_help,ID,All other players' humans lose all bad afflictions.
+SP_DECURE_ELF,C,2,UO_NOT_NEEDED,Help other Elves,spell_01,spell_afflict_help,ID,All other players' elves lose all bad afflictions.
+SP_DECURE_ORC,C,2,UO_NOT_NEEDED,Help other Orcs,spell_01,spell_afflict_help,ID,All other players' orcs lose all bad afflictions.
+SP_DECURE_UNDEAD,C,2,UO_NOT_NEEDED,Help other Zombies,spell_01,spell_afflict_help,ID,All other players' zombies lose all bad afflictions.
+SP_DECURE_LIZARD,C,2,UO_NOT_NEEDED,Help other Lizards,spell_01,spell_afflict_help,ID,All other players' lizards lose all bad afflictions.
+SP_DECURE_DWARF,C,2,UO_NOT_NEEDED,Help other Dwarves,spell_01,spell_afflict_help,ID,All other players' dwarves lose all bad afflictions.
+SP_DECURE_MINOTAUR,C,2,UO_NOT_NEEDED,Help other Minotaurs,spell_01,spell_afflict_help,ID,All other players' minotaurs lose all bad afflictions.
+SP_DECURE_WEREWOLF,C,2,UO_NOT_NEEDED,Help other Werewolves,spell_01,spell_afflict_help,ID,All other players' werewolves lose all bad afflictions.
+SP_DECURE_GOLEM,C,2,UO_NOT_NEEDED,Help other Golems,spell_01,spell_afflict_help,ID,All other players' golems lose all bad afflictions.
+SP_DECURE_ELEMENTAL,C,2,UO_NOT_NEEDED,Help other Elementals,spell_01,spell_afflict_help,ID,All other players' elementals lose all bad afflictions.
+SP_DECURE_CYCLOPS,C,2,UO_NOT_NEEDED,Help other Cyclops,spell_01,spell_afflict_help,ID,All other players' cyclops lose all bad afflictions.
+SP_DECURE_SKELETON,C,2,UO_NOT_NEEDED,Help other Skeletons,spell_01,spell_afflict_help,ID,All other players' skeletons lose all bad afflictions.
+SP_DECURE_ROBOT,C,2,UO_NOT_NEEDED,Help other Robots,spell_01,spell_afflict_help,ID,All other players' robots lose all bad afflictions.
+SP_DECURE_IMP,C,2,UO_NOT_NEEDED,Help other Imps,spell_01,spell_afflict_help,ID,All other players' imps lose all bad afflictions.
+SP_DECURE_SPECTRE,C,2,UO_NOT_NEEDED,Help other Spectres,spell_01,spell_afflict_help,ID,All other players' spectres lose all bad afflictions.
+SP_DECURE_WARRIOR,C,3,UO_NOT_NEEDED,Help other Warriors,spell_01,spell_afflict_help,ID,All other players' warriors lose all bad afflictions.
+SP_DECURE_MAGE,C,3,UO_NOT_NEEDED,Help other Mages,spell_01,spell_afflict_help,ID,All other players' mages lose all bad afflictions.
+SP_DECURE_ARCHER,C,3,UO_NOT_NEEDED,Help other Archers,spell_01,spell_afflict_help,ID,All other players' archers lose all bad afflictions.
+SP_DECURE_ALL,U,4,UO_NOT_NEEDED,Help other Creatures,spell_01,spell_afflict_help,ID,All other players' creatures lose all bad afflictions.
+SP_ABSORB_ALL_1,C,3,UO_NOT_NEEDED,Extract,spell_01,spell_absorb,HPD,All monsters suffer SP_JustMinus1_Health. Your hero gains SP_Just1_Health for each death.
+SP_ABSORB_ALL_2,U,5,UO_NOT_NEEDED,Great Extract,spell_01,spell_absorb,HPD,All monsters suffer SP_JustMinus2_Health. Your hero gains SP_Just1_Health for each death.
+SP_ABSORB_ALL_3,R,6,UO_NOT_NEEDED,Epic Extract,spell_01,spell_absorb,HPD,All monsters suffer SP_JustMinus3_Health. Your hero gains SP_Just1_Health for each death.
+SP_ABSORB_OPP_1,U,4,UO_NOT_NEEDED,Leech,spell_01,spell_absorb,HPD,All enemy monsters suffer SP_JustMinus1_Health. Your hero gains SP_Just1_Health for each death.
+SP_ABSORB_OPP_2,R,6,UO_NOT_NEEDED,Great Leech,spell_01,spell_absorb,HPD,All enemy monsters suffer SP_JustMinus2_Health. Your hero gains SP_Just1_Health for each death.
+SP_ABSORB_OPP_3,L,7,UO_NOT_NEEDED,Epic Leech,spell_01,spell_absorb,HPD,All enemy monsters suffer SP_JustMinus3_Health. Your hero gains SP_Just1_Health for each death.
+SP_ABSORB_YOU_1,U,3,UO_NOT_NEEDED,Absorb,spell_01,spell_absorb,HP,Your hero absorbs SP_Just1_AbsHealth from each of your monsters.
+SP_ABSORB_YOU_2,R,5,UO_NOT_NEEDED,Great Absorb,spell_01,spell_absorb,HP,Your hero absorbs up to SP_Just2_AbsHealth from each of your monsters.
+SP_ABSORB_YOU_3,L,6,UO_NOT_NEEDED,Epic Absorb,spell_01,spell_absorb,HP,Your hero absorbs up to SP_Just3_AbsHealth from each of your monsters.
+SP_SPIKE1,C,2,UO_NOT_NEEDED,Minor Spike,spell_01,spell_spike,P,Each of your monsters drains SP_JustMinus2_Health from your hero to gain SP_Just1_Power.
+SP_SPIKE2,U,3,UO_NOT_NEEDED,Major Spike,spell_01,spell_spike,P,Each of your monsters drains SP_JustMinus1_Health from your hero to gain SP_Just1_Power.
+SP_SPIKE3,R,4,UO_NOT_NEEDED,Mega Spike,spell_01,spell_spike,P,Each of your monsters drains SP_JustMinus3_Health from your hero to gain SP_Just2_Power.
+SP_RUNE_MUNGE1,C,6,UO_NOT_NEEDED,Rune Leveller,spell_01,spell_01_heal,HPRD,All runes set to @X[19]@C[6]1@C[0].
+SP_RUNE_MUNGE2,U,9,UO_NOT_NEEDED,Sly Rune Leveller,spell_01,spell_01_heal,HPRD,All enemy runes set to @X[19]@C[6]1@C[0].
+SP_RUNE_MUNGE3,U,3,UO_NOT_NEEDED,Rune Boon,spell_01,spell_01_heal,HR,Your runes get SP_runeBoon_Health.
+SP_RUNE_MUNGE4,C,2,UO_NOT_NEEDED,All Rune Boon,spell_01,spell_01_heal,HR,All runes get SP_runeBoon_Health.
+SP_RUNE_MUNGE5,R,4,UO_NOT_NEEDED,Great Rune Boon,spell_01,spell_01_heal,HR,Your runes get SP_GreatruneBoon_Health.
+SP_RUNE_MUNGE6,U,3,UO_NOT_NEEDED,All Great Rune Boon,spell_01,spell_01_heal,HR,All runes get SP_GreatruneBoon_Health.
+SP_MYRUNESMASH,C,6,UO_NOT_NEEDED,My Rune Smash,spell_01,spell_rune_smash,RK,Destroy all your own runes.
+SP_HEROPAIN2,U,3,UO_NOT_NEEDED,Hero Pain,spell_01,spell_pain,PD,All heroes suffer SP_Just2_Damage damage.
+SP_HEROBURN2,U,6,UO_NOT_NEEDED,Sly Hero Pain,spell_01,spell_pain,PD,All enemy heroes suffer SP_Just2_Damage damage.
+SP_MONSPAIN2,U,3,UO_NOT_NEEDED,Monster Pain,spell_01,spell_pain,PD,All monsters suffer SP_Just2_Damage damage.
+SP_MONSBURN2,U,6,UO_NOT_NEEDED,Sly Monster Pain,spell_01,spell_pain,PD,All enemy monsters suffer SP_Just2_Damage damage.
+SP_HEROPAIN3,R,4,UO_NOT_NEEDED,Hero Agony,spell_01,spell_agony,PD,All heroes suffer SP_Just3_Damage damage.
+SP_HEROBURN3,R,7,UO_NOT_NEEDED,Sly Hero Agony,spell_01,spell_agony,PD,All enemy heroes suffer SP_Just3_Damage damage.
+SP_MONSPAIN3,R,5,UO_NOT_NEEDED,Monster Agony,spell_01,spell_agony,PD,All monsters suffer SP_Just3_Damage damage.
+SP_MONSBURN3,R,8,UO_NOT_NEEDED,Sly Monster Agony,spell_01,spell_agony,PD,All enemy monsters suffer SP_Just3_Damage damage.
+SP_HURT1_HUMAN,C,2,UO_NOT_NEEDED,Human Pain,spell_01,spell_pain,PD,All humans suffer SP_Just2_Damage damage.
+SP_HURT1_ELF,C,2,UO_NOT_NEEDED,Elf Pain,spell_01,spell_pain,PD,All elves suffer SP_Just2_Damage damage.
+SP_HURT1_ORC,C,2,UO_NOT_NEEDED,Orc Pain,spell_01,spell_pain,PD,All orcs suffer SP_Just2_Damage damage.
+SP_HURT1_UNDEAD,C,2,UO_NOT_NEEDED,Zombie Pain,spell_01,spell_pain,PD,All zombies suffer SP_Just2_Damage damage.
+SP_HURT1_LIZARD,C,2,UO_NOT_NEEDED,Lizard Pain,spell_01,spell_pain,PD,All lizards suffer SP_Just2_Damage damage.
+SP_HURT1_DWARF,C,2,UO_NOT_NEEDED,Dwarf Pain,spell_01,spell_pain,PD,All dwarves suffer SP_Just2_Damage damage.
+SP_HURT1_MINOTAUR,C,2,UO_NOT_NEEDED,Minotaur Pain,spell_01,spell_pain,PD,All minotaurs suffer SP_Just2_Damage damage.
+SP_HURT1_WEREWOLF,C,2,UO_NOT_NEEDED,Werewolf Pain,spell_01,spell_pain,PD,All werewolves suffer SP_Just2_Damage damage.
+SP_HURT1_GOLEM,C,2,UO_NOT_NEEDED,Golem Pain,spell_01,spell_pain,PD,All golem suffer SP_Just2_Damage damage.
+SP_HURT1_ELEMENTAL,C,2,UO_NOT_NEEDED,Elemental Pain,spell_01,spell_pain,PD,All elementals suffer SP_Just2_Damage damage.
+SP_HURT1_CYCLOPS,C,2,UO_NOT_NEEDED,Cyclops Pain,spell_01,spell_pain,PD,All cyclops suffer SP_Just2_Damage damage.
+SP_HURT1_SKELETON,C,2,UO_NOT_NEEDED,Skeleton Pain,spell_01,spell_pain,PD,All skeletons suffer SP_Just2_Damage damage.
+SP_HURT1_ROBOT,C,2,UO_NOT_NEEDED,Robot Pain,spell_01,spell_pain,PD,All robots suffer SP_Just2_Damage damage.
+SP_HURT1_IMP,C,2,UO_NOT_NEEDED,Imp Pain,spell_01,spell_pain,PD,All imps suffer SP_Just2_Damage damage.
+SP_HURT1_SPECTRE,C,2,UO_NOT_NEEDED,Spectre Pain,spell_01,spell_pain,PD,All spectres suffer SP_Just2_Damage damage.
+SP_HURT2_HUMAN,U,3,UO_NOT_NEEDED,Human Agony,spell_01,spell_agony,PD,All humans suffer SP_Just3_Damage damage.
+SP_HURT2_ELF,U,3,UO_NOT_NEEDED,Elf Agony,spell_01,spell_agony,PD,All elves suffer SP_Just3_Damage damage.
+SP_HURT2_ORC,U,3,UO_NOT_NEEDED,Orc Agony,spell_01,spell_agony,PD,All orcs suffer SP_Just3_Damage damage.
+SP_HURT2_UNDEAD,U,3,UO_NOT_NEEDED,Zombie Agony,spell_01,spell_agony,PD,All zombies suffer SP_Just3_Damage damage.
+SP_HURT2_LIZARD,U,3,UO_NOT_NEEDED,Lizard Agony,spell_01,spell_agony,PD,All lizards suffer SP_Just3_Damage damage.
+SP_HURT2_DWARF,U,3,UO_NOT_NEEDED,Dwarf Agony,spell_01,spell_agony,PD,All dwarves suffer SP_Just3_Damage damage.
+SP_HURT2_MINOTAUR,U,3,UO_NOT_NEEDED,Minotaur Agony,spell_01,spell_agony,PD,All minotaurs suffer SP_Just3_Damage damage.
+SP_HURT2_WEREWOLF,U,3,UO_NOT_NEEDED,Werewolf Agony,spell_01,spell_agony,PD,All werewolves suffer SP_Just3_Damage damage.
+SP_HURT2_GOLEM,U,3,UO_NOT_NEEDED,Golem Agony,spell_01,spell_agony,PD,All golem suffer SP_Just3_Damage damage.
+SP_HURT2_ELEMENTAL,U,3,UO_NOT_NEEDED,Elemental Agony,spell_01,spell_agony,PD,All elementals suffer SP_Just3_Damage damage.
+SP_HURT2_CYCLOPS,U,3,UO_NOT_NEEDED,Cyclops Agony,spell_01,spell_agony,PD,All cyclops suffer SP_Just3_Damage damage.
+SP_HURT2_SKELETON,U,3,UO_NOT_NEEDED,Skeleton Agony,spell_01,spell_agony,PD,All skeletons suffer SP_Just3_Damage damage.
+SP_HURT2_ROBOT,U,3,UO_NOT_NEEDED,Robot Agony,spell_01,spell_agony,PD,All robots suffer SP_Just3_Damage damage.
+SP_HURT2_IMP,U,3,UO_NOT_NEEDED,Imp Agony,spell_01,spell_agony,PD,All imps suffer SP_Just3_Damage damage.
+SP_HURT2_SPECTRE,U,3,UO_NOT_NEEDED,Spectre Agony,spell_01,spell_agony,PD,All spectres suffer SP_Just3_Damage damage.
+SP_SLYHURT1_HUMAN,U,5,UO_NOT_NEEDED,Sly Human Pain,spell_01,spell_pain,PD,All enemy humans suffer SP_Just2_Damage damage.
+SP_SLYHURT1_ELF,U,5,UO_NOT_NEEDED,Sly Elf Pain,spell_01,spell_pain,PD,All enemy elves suffer SP_Just2_Damage damage.
+SP_SLYHURT1_ORC,U,5,UO_NOT_NEEDED,Sly Orc Pain,spell_01,spell_pain,PD,All enemy orcs suffer SP_Just2_Damage damage.
+SP_SLYHURT1_UNDEAD,U,5,UO_NOT_NEEDED,Sly Zombie Pain,spell_01,spell_pain,PD,All enemy zombies suffer SP_Just2_Damage damage.
+SP_SLYHURT1_LIZARD,U,5,UO_NOT_NEEDED,Sly Lizard Pain,spell_01,spell_pain,PD,All enemy lizards suffer SP_Just2_Damage damage.
+SP_SLYHURT1_DWARF,U,5,UO_NOT_NEEDED,Sly Dwarf Pain,spell_01,spell_pain,PD,All enemy dwarves suffer SP_Just2_Damage damage.
+SP_SLYHURT1_MINOTAUR,U,5,UO_NOT_NEEDED,Sly Minotaur Pain,spell_01,spell_pain,PD,All enemy minotaurs suffer SP_Just2_Damage damage.
+SP_SLYHURT1_WEREWOLF,U,5,UO_NOT_NEEDED,Sly Werewolf Pain,spell_01,spell_pain,PD,All enemy werewolves suffer SP_Just2_Damage damage.
+SP_SLYHURT1_GOLEM,U,5,UO_NOT_NEEDED,Sly Golem Pain,spell_01,spell_pain,PD,All enemy golem suffer SP_Just2_Damage damage.
+SP_SLYHURT1_ELEMENTAL,U,5,UO_NOT_NEEDED,Sly Elemental Pain,spell_01,spell_pain,PD,All enemy elementals suffer SP_Just2_Damage damage.
+SP_SLYHURT1_CYCLOPS,U,5,UO_NOT_NEEDED,Sly Cyclops Pain,spell_01,spell_pain,PD,All enemy cyclops suffer SP_Just2_Damage damage.
+SP_SLYHURT1_SKELETON,U,5,UO_NOT_NEEDED,Sly Skeleton Pain,spell_01,spell_pain,PD,All enemy skeletons suffer SP_Just2_Damage damage.
+SP_SLYHURT1_ROBOT,U,5,UO_NOT_NEEDED,Sly Robot Pain,spell_01,spell_pain,PD,All enemy robots suffer SP_Just2_Damage damage.
+SP_SLYHURT1_IMP,U,5,UO_NOT_NEEDED,Sly Imp Pain,spell_01,spell_pain,PD,All enemy imps suffer SP_Just2_Damage damage.
+SP_SLYHURT1_SPECTRE,U,5,UO_NOT_NEEDED,Sly Spectre Pain,spell_01,spell_pain,PD,All enemy spectres suffer SP_Just2_Damage damage.
+SP_SLYHURT2_HUMAN,R,6,UO_NOT_NEEDED,Sly Human Agony,spell_01,spell_agony,PD,All enemy humans suffer SP_Just3_Damage damage.
+SP_SLYHURT2_ELF,R,6,UO_NOT_NEEDED,Sly Elf Agony,spell_01,spell_agony,PD,All enemy elves suffer SP_Just3_Damage damage.
+SP_SLYHURT2_ORC,R,6,UO_NOT_NEEDED,Sly Orc Agony,spell_01,spell_agony,PD,All enemy orcs suffer SP_Just3_Damage damage.
+SP_SLYHURT2_UNDEAD,R,6,UO_NOT_NEEDED,Sly Zombie Agony,spell_01,spell_agony,PD,All enemy zombies suffer SP_Just3_Damage damage.
+SP_SLYHURT2_LIZARD,R,6,UO_NOT_NEEDED,Sly Lizard Agony,spell_01,spell_agony,PD,All enemy lizards suffer SP_Just3_Damage damage.
+SP_SLYHURT2_DWARF,R,6,UO_NOT_NEEDED,Sly Dwarf Agony,spell_01,spell_agony,PD,All enemy dwarves suffer SP_Just3_Damage damage.
+SP_SLYHURT2_MINOTAUR,R,6,UO_NOT_NEEDED,Sly Minotaur Agony,spell_01,spell_agony,PD,All enemy minotaurs suffer SP_Just3_Damage damage.
+SP_SLYHURT2_WEREWOLF,R,6,UO_NOT_NEEDED,Sly Werewolf Agony,spell_01,spell_agony,PD,All enemy werewolves suffer SP_Just3_Damage damage.
+SP_SLYHURT2_GOLEM,R,6,UO_NOT_NEEDED,Sly Golem Agony,spell_01,spell_agony,PD,All enemy golem suffer SP_Just3_Damage damage.
+SP_SLYHURT2_ELEMENTAL,R,6,UO_NOT_NEEDED,Sly Elemental Agony,spell_01,spell_agony,PD,All enemy elementals suffer SP_Just3_Damage damage.
+SP_SLYHURT2_CYCLOPS,R,6,UO_NOT_NEEDED,Sly Cyclops Agony,spell_01,spell_agony,PD,All enemy cyclops suffer SP_Just3_Damage damage.
+SP_SLYHURT2_SKELETON,R,6,UO_NOT_NEEDED,Sly Skeleton Agony,spell_01,spell_agony,PD,All enemy skeletons suffer SP_Just3_Damage damage.
+SP_SLYHURT2_ROBOT,R,6,UO_NOT_NEEDED,Sly Robot Agony,spell_01,spell_agony,PD,All enemy robots suffer SP_Just3_Damage damage.
+SP_SLYHURT2_IMP,R,6,UO_NOT_NEEDED,Sly Imp Agony,spell_01,spell_agony,PD,All enemy imps suffer SP_Just3_Damage damage.
+SP_SLYHURT2_SPECTRE,R,6,UO_NOT_NEEDED,Sly Spectre Agony,spell_01,spell_agony,PD,All enemy spectres suffer SP_Just3_Damage damage.
+SP_KILL_RT_VAMPIRE,U,5,UO_NOT_NEEDED,Vampire Purge,spell_01,spell_01_purge_race,K,Destroy all vampires.
+SP_SLYKILL_RT_VAMPIRE,R,8,UO_NOT_NEEDED,Sly Vampire Purge,spell_01,spell_01_purge_race,K,Destroy all enemy vampires.
+SP_HEAL_VAMPIRE,U,2,UO_NOT_NEEDED,Vampire Boon,spell_01,spell_01_heal,H,All vampires receive SP_HealRace_Health.
+SP_SLYHEAL_VAMPIRE,R,3,UO_NOT_NEEDED,My Vampire Boon,spell_01,spell_01_heal,H,All your vampires receive SP_SlyHealRace_Health.
+SP_SLYCURE_VAMPIRE,U,2,UO_NOT_NEEDED,Cure Vampires,spell_01,spell_cure,I,All friendly vampires lose all bad afflictions.
+SP_UNCURE_VAMPIRE,C,2,UO_NOT_NEEDED,Deny Vampires,spell_01,spell_afflict_deny,ID,All enemy vampires lose all good afflictions.
+SP_SHATTER_VAMPIRE,C,2,UO_NOT_NEEDED,Shatter Vampires,spell_01,spell_shatter,ID,All vampires lose all afflictions.
+SP_BOUNCE_ALL_VAMPIRE,C,3,UO_NOT_NEEDED,Bounce all Vampires,spell_01,spell_bounce_all,K,All vampires are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_VAMPIRE,C,2,UO_NOT_NEEDED,Bounce my Vampires,spell_01,spell_bounce_mine,K,All your vampires are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_VAMPIRE,C,6,UO_NOT_NEEDED,Sly Bounce Vampires,spell_01,spell_bounce_enemy,K,All enemy vampires are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_DECURE_VAMPIRE,C,2,UO_NOT_NEEDED,Help other Vampires,spell_01,spell_afflict_help,ID,All other players' vampires lose all bad afflictions.
+SP_HURT1_VAMPIRE,C,2,UO_NOT_NEEDED,Vampire Pain,spell_01,spell_pain,PD,All vampires suffer SP_Just2_Damage damage.
+SP_HURT2_VAMPIRE,U,3,UO_NOT_NEEDED,Vampire Agony,spell_01,spell_agony,PD,All vampires suffer SP_Just3_Damage damage.
+SP_SLYHURT1_VAMPIRE,U,5,UO_NOT_NEEDED,Sly Vampire Pain,spell_01,spell_pain,PD,All enemy vampires suffer SP_Just2_Damage damage.
+SP_SLYHURT2_VAMPIRE,R,6,UO_NOT_NEEDED,Sly Vampire Agony,spell_01,spell_agony,PD,All enemy vampires suffer SP_Just3_Damage damage.
+SP_KILLMONS_BIG,R,5,UO_NOT_NEEDED,Survival of the Unfittest,spell_01,spell_01_kill_all,K,Destroy all monsters with SP_KillAllMonsMax_AbsHealth or more.
+SP_KILLMONS_SMALL,R,5,UO_NOT_NEEDED,Survival of the Fittest,spell_01,spell_01_kill_all,K,Destroy all monsters with SP_KillAllMonsMin_AbsHealth or less.
+SP_KILL_AFF_ICEBLOCK,R,5,UO_NOT_NEEDED,Ice Block Purge,spell_01,spell_01_kill_all,IK,Destroy all monsters afflicted with @C[1]Ice Block@C[0].
+SP_SLYKILL_AFF_ICEBLOCK,R,8,UO_NOT_NEEDED,Sly Ice Block Purge,spell_01,spell_01_kill_all,IK,Destroy all enemy monsters afflicted with @C[1]Ice Block@C[0].
+SP_HEALMYART,R,3,UO_NOT_NEEDED,Artillery Boon,spell_01,spell_01_heal,H,All your artillery receive SP_HealMymages_Health.
+SP_KILLART,L,6,UO_NOT_NEEDED,Artillery Purge,spell_01,spell_01_kill_all,K,Destroy all artillery.
+SP_HEALALLART,U,2,UO_NOT_NEEDED,Artillery Party,spell_01,spell_01_heal,H,All artillery receives SP_HealAllmages_Health.
+SP_2NDWINDART,R,7,UO_NOT_NEEDED,Second Lobbing,spell_01,spell_refresh,PT,All your artillery take another turn.
+SP_BOUNCE_ALL_ART,U,4,UO_NOT_NEEDED,Bounce all Artillery,spell_01,spell_bounce_all,K,All artillery are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCE_YOU_ART,U,3,UO_NOT_NEEDED,Bounce my Artillery,spell_01,spell_bounce_mine,K,All your artillery are returned to your hand.\n\n(Includes carried equipment.)
+SP_BOUNCE_OPP_ART,U,6,UO_NOT_NEEDED,Sly Bounce Artillery,spell_01,spell_bounce_enemy,K,All enemy artillery are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_DECURE_ART,C,3,UO_NOT_NEEDED,Help other Artillery,spell_01,spell_afflict_help,ID,All other players' artillery lose all bad afflictions.
+SP_SLYCURE_ART,R,3,UO_NOT_NEEDED,Cure Artillery,spell_01,spell_cure,I,All your artillery lose all bad afflictions.
+SP_UNCURE_ART,U,3,UO_NOT_NEEDED,Deny Artillery,spell_01,spell_afflict_deny,ID,All enemy artillery lose all good afflictions.
+SP_SHATTER_ART,U,3,UO_NOT_NEEDED,Shatter Artillery,spell_01,spell_shatter,ID,All artillery lose all afflictions.
+SP_WISHRAND_WEAPON_ART,R,2,UO_NOT_NEEDED,Violent Artillery Musing,spell_01,spell_wish,C,Draw and reveal a random artillery weapon from your collection.
+SPT_TERMINATE,L,4,UO_MONSTER,Exterminate,spell_02,spell_destroy,K,Destroy target monster.
+SPT_BOUNCE,R,2,UO_MONSTER,Bounce,spell_02,spell_bounce,K,Target monster is returned to it's owner's hand.\n\n(Includes carried equipment.)
+SPT_DISMANTLE,C,2,UO_MONSTER,Strip,spell_02,spell_01_lose_armour,KD,Target monster loses all defensive equipment (shields & armour).
+SPT_CORROSION,C,2,UO_MONSTER,Amnesty,spell_02,spell_01_lose_weapon,KD,Target monster loses any weapon upgrades.
+SPT_DENUDE,R,3,UO_MONSTER,Denude,spell_02,spell_01_lose_weapon,KD,Target monster loses all equipment.
+SPT_MAFF_STUN,C,2,UO_MONSTER,Dazed Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Dazed@C[0].
+SPT_MAFF_MIGHTY,C,2,UO_MONSTER,Mighty Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Mighty@C[0].
+SPT_MAFF_BERSERK,C,2,UO_MONSTER,Berserk Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Berserk@C[0] and cannot attack this turn.
+SPT_MAFF_SNARED,C,2,UO_MONSTER,Snared Monster,spell_02,spell_afflict_monsters,IT,Target monster becomes afflicted with @C[1]Snared@C[0].
+SPT_MAFF_REGEN,C,2,UO_MONSTER,Regen Monster,spell_02,spell_afflict_monsters,IH,Target monster becomes afflicted with @C[1]Regen@C[0].
+SPT_MAFF_DEATHMARK,C,2,UO_MONSTER,Death Mark Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Death Mark@C[0].
+SPT_MAFF_ICEBLOCK,C,2,UO_MONSTER,Ice Block Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Ice Block@C[0].
+SPT_MAFF_FLAME,C,2,UO_MONSTER,Flame Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Flame@C[0].
+SPT_MAFF_VENGEANCE,C,2,UO_MONSTER,Vengeance Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Vengeance@C[0].
+SPT_MAFF_MAGICSHIELD,C,2,UO_MONSTER,Shield Monster,spell_02,spell_afflict_monsters,I,Target monster becomes afflicted with @C[1]Magic shield@C[0].
+SPT_HAFF_STUN,C,2,UO_HERO,Dazed Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Dazed@C[0].
+SPT_HAFF_MIGHTY,C,2,UO_HERO,Mighty Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Mighty@C[0].
+SPT_HAFF_BERSERK,C,2,UO_HERO,Berserk Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Berserk@C[0].
+SPT_HAFF_SNARED,C,2,UO_HERO,Snared Hero,spell_02,spell_afflict_heroes,IT,Target hero becomes afflicted with @C[1]Snared@C[0].
+SPT_HAFF_REGEN,C,2,UO_HERO,Regen Hero,spell_02,spell_afflict_heroes,IH,Target hero becomes afflicted with @C[1]Regen@C[0].
+SPT_HAFF_DEATHMARK,C,2,UO_HERO,Death Mark Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Death Mark@C[0].
+SPT_HAFF_ICEBLOCK,C,2,UO_HERO,Ice Block Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Ice Block@C[0].
+SPT_HAFF_FLAME,C,2,UO_HERO,Flame Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Flame@C[0].
+SPT_HAFF_VENGEANCE,C,2,UO_HERO,Vengeance Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Vengeance@C[0].
+SPT_HAFF_MAGICSHIELD,C,2,UO_HERO,Shield Hero,spell_02,spell_afflict_heroes,I,Target hero becomes afflicted with @C[1]Magic shield@C[0].
+SPT_CAFF_STUN,U,3,UO_ANYBODY,Dazed Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Dazed@C[0].
+SPT_CAFF_MIGHTY,U,3,UO_ANYBODY,Mighty Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Mighty@C[0].
+SPT_CAFF_BERSERK,U,3,UO_ANYBODY,Berserk Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Berserk@C[0].
+SPT_CAFF_SNARED,U,3,UO_ANYBODY,Snared Creature,spell_02,spell_afflict_creatures,IT,Target creature becomes afflicted with @C[1]Snared@C[0].
+SPT_CAFF_REGEN,U,3,UO_ANYBODY,Regen Creature,spell_02,spell_afflict_creatures,IH,Target creature becomes afflicted with @C[1]Regen@C[0].
+SPT_CAFF_DEATHMARK,U,3,UO_ANYBODY,Death Mark Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Death Mark@C[0].
+SPT_CAFF_ICEBLOCK,U,3,UO_ANYBODY,Ice Block Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Ice Block@C[0].
+SPT_CAFF_FLAME,U,3,UO_ANYBODY,Flame Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Flame@C[0].
+SPT_CAFF_VENGEANCE,U,3,UO_ANYBODY,Vengeance Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Vengeance@C[0].
+SPT_CAFF_MAGICSHIELD,U,3,UO_ANYBODY,Shield Creature,spell_02,spell_afflict_creatures,I,Target creature becomes afflicted with @C[1]Magic shield@C[0].
+SPT_HEAL1,U,2,UO_ANYBODY,Boon,spell_02,spell_01_heal,H,Target monster gains SP_Just5_Health.
+SPT_HEAL2,R,4,UO_ANYBODY,Mega Boon,spell_02,spell_01_heal,H,Target monster gains SP_Just10_Health.
+SPT_SMASH,R,4,UO_RUNE,Smash,spell_02,spell_rune_smash,RK,Destroy target rune.
+SPT_2NDWIND,L,6,UO_MONSTER,Rejuvenate,spell_02,spell_refresh,PT,Target monster takes another turn.
+SPT_SLYCURE,U,2,UO_ANYBODY,Cure,spell_02,spell_cure,I,Target creature loses all bad afflictions.
+SPT_UNCURE,C,2,UO_ANYBODY,Deny,spell_02,spell_afflict_deny,ID,Target creature loses all good afflictions.
+SPT_SHATTER,R,2,UO_ANYBODY,Shatter,spell_02,spell_shatter,ID,Target creature loses all afflictions.
+SPT_MONSPAIN,C,2,UO_MONSTER,Twinge,spell_02,spell_pain,PD,Target monster suffers SP_Just1_Damage damage.
+SPT_MONSPAIN2,U,3,UO_MONSTER,Pain,spell_02,spell_pain,PD,Target monster suffers SP_Just2_Damage damage.
+SPT_MONSPAIN3,R,4,UO_MONSTER,Agony,spell_02,spell_agony,PD,Target monster suffers SP_Just3_Damage damage.
+SPT_ABSORB,R,3,UO_MONSTER,Absorb,spell_02,spell_absorb,HPD,Your hero gains the health of target monster.
+SPT_SPIKE,L,3,UO_MONSTER,Spike,spell_02,spell_spike,P,Target monster drains SP_JustMinus5_Health from your hero to gain SP_Just5_Power.
+SP_EXPUNGE_ALL,L,9,UO_NOT_NEEDED,Expunge All,spell_01,spell_destroy,K,Destroy all monsters that are on any special map tile.
+SP_EXPUNGE_MOJO,R,7,UO_NOT_NEEDED,Expunge Mojo,spell_01,spell_destroy,K,Destroy all monsters that are on a mojo map tile.
+SP_EXPUNGE_PWR,R,5,UO_NOT_NEEDED,Expunge Power,spell_01,spell_destroy,K,Destroy all monsters that are on a power map tile.
+SP_EXPUNGE_ARM,R,5,UO_NOT_NEEDED,Expunge Armour,spell_01,spell_destroy,K,Destroy all monsters that are on an armour map tile.
+SP_EXPUNGE_DRAW,U,5,UO_NOT_NEEDED,Expunge Draw,spell_01,spell_destroy,K,Destroy all monsters that are on a card draw map tile.
+SP_EXPUNGE_REGEN,U,5,UO_NOT_NEEDED,Expunge Regen,spell_01,spell_destroy,K,Destroy all monsters that are on a regen map tile.
+SP_SHATTER_HERO_ALL,R,3,UO_NOT_NEEDED,Shatter Heroes,spell_01,spell_shatter,ID,All heroes lose all afflictions.
+SP_SHATTER_HERO_ENEMYGOOD,U,2,UO_NOT_NEEDED,Deny Heroes,spell_01,spell_afflict_deny,ID,All enemy heroes lose all good afflictions.
+SP_SHATTER_HERO_MYBAD,U,2,UO_NOT_NEEDED,Cure Hero,spell_01,spell_cure,I,All friendly heroes lose all bad afflictions.
+SP_BOUNCEALL_REGEN,U,2,UO_NOT_NEEDED,Regen Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Regen@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_VENGEANCE,U,2,UO_NOT_NEEDED,Vengeance Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Vengeance@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_FLAME,U,2,UO_NOT_NEEDED,Flame Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Flame@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_STUN,U,2,UO_NOT_NEEDED,Dazed Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Dazed@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_MIGHTY,U,2,UO_NOT_NEEDED,Mighty Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Mighty@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_BERSERK,U,2,UO_NOT_NEEDED,Berserk Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Berserk@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_SNARED,U,2,UO_NOT_NEEDED,Snared Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Snared@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_ICEBLOCK,U,2,UO_NOT_NEEDED,Ice Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Ice Block@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_DEATHMARK,U,2,UO_NOT_NEEDED,Deathmark Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Death Mark@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCEALL_MAGICSHIELD,U,2,UO_NOT_NEEDED,Shield Bounce,spell_01,spell_bounce_mine,K,All monsters afflicted with @C[1]Magic shield@C[0] are returned to their owners hands.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_REGEN,R,5,UO_NOT_NEEDED,Sly Regen Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Regen@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_VENGEANCE,R,5,UO_NOT_NEEDED,Sly Vengeance Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Vengeance@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_FLAME,R,5,UO_NOT_NEEDED,Sly Flame Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Flame@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_STUN,R,5,UO_NOT_NEEDED,Sly Dazed Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Dazed@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_MIGHTY,R,5,UO_NOT_NEEDED,Sly Mighty Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Mighty@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_BERSERK,R,5,UO_NOT_NEEDED,Sly Berserk Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Berserk@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_SNARED,R,5,UO_NOT_NEEDED,Sly Snared Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Snared@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_ICEBLOCK,R,5,UO_NOT_NEEDED,Sly Ice Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Ice Block@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_DEATHMARK,R,5,UO_NOT_NEEDED,Sly Deathmark Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Death Mark@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SP_BOUNCESLY_MAGICSHIELD,R,5,UO_NOT_NEEDED,Sly Shield Bounce,spell_01,spell_bounce_enemy,K,All enemy monsters afflicted with @C[1]Magic shield@C[0] are returned to their owners hands. Their owner's hero gains SP_Just2_Health for each bounce.\n\n(Includes carried equipment.)
+SPT_DRAW1,U,3,UO_HERO,Draw 1 Card,spell_02,spell_01_morecards,C,Target player draws 1 card.\n\n(Target their hero.)
+SPT_DRAW2,R,5,UO_HERO,Draw 2 Cards,spell_02,spell_01_morecards,C,Target player draws 2 cards.\n\n(Target their hero.)
+SPT_DRAW3,L,7,UO_HERO,Draw 3 Cards,spell_02,spell_01_morecards,C,Target player draws 3 cards.\n\n(Target their hero.)

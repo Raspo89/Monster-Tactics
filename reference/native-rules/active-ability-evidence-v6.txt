@@ -1,0 +1,2089 @@
+### CCharacterMin::DealCombatDamageTo(CCharacterMin*, CRuneDaisList*, CAIBattleState*, int, eCombatDamageSource) 0x13464c 508
+0013464c: push     {r4, r5, r6, r7, r8, sb, sl, lr}
+00134650: mov      r6, r0
+00134654: sub      sp, sp, #0x18
+00134658: mov      r0, r1
+0013465c: mov      r4, r1
+00134660: mov      r8, r2
+00134664: mov      r7, r3
+00134668: bl       #0x13199c ; CCharacterMin::CanTakeBattleDamage()
+0013466c: ldr      r5, [pc, #0x1c4]
+00134670: add      r5, pc, r5
+00134674: cmp      r0, #0
+00134678: bne      #0x134684
+0013467c: add      sp, sp, #0x18
+00134680: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134684: mov      r1, r8
+00134688: mov      r2, r7
+0013468c: mov      r3, #0
+00134690: mov      r0, r6
+00134694: bl       #0x133708 ; CCharacterMin::GetPower(CRuneDaisList*, CAIBattleState*, int)
+00134698: ldr      r3, [sp, #0x38]
+0013469c: mov      r1, #0xa
+001346a0: add      sb, r0, r3
+001346a4: mov      r0, r4
+001346a8: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+001346ac: cmp      r0, #0
+001346b0: bne      #0x1347a8
+001346b4: mov      r0, r4
+001346b8: mov      r1, #0xd
+001346bc: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+001346c0: cmp      r0, #0
+001346c4: bne      #0x134780
+001346c8: mov      r0, r8
+001346cc: mov      r1, r6
+001346d0: mov      r2, r4
+001346d4: bl       #0x1d3fe0 ; CRuneDaisList::GetAttackingDamageBonusFromRunes(CCharacterMin*, CCharacterMin*)
+001346d8: ldr      r3, [sp, #0x3c]
+001346dc: cmp      r3, #1
+001346e0: add      r0, sb, r0
+001346e4: bic      sb, r0, r0, asr #31
+001346e8: beq      #0x1347fc
+001346ec: mov      r2, r8
+001346f0: add      r3, sp, #8
+001346f4: mov      r0, r4
+001346f8: str      r3, [sp]
+001346fc: mov      r1, sb
+00134700: add      r3, sp, #0x10
+00134704: str      r3, [sp, #4]
+00134708: mov      r3, r7
+0013470c: mov      ip, #0
+00134710: str      ip, [sp, #8]
+00134714: str      ip, [sp, #0x10]
+00134718: bl       #0x134028 ; CCharacterMin::DealDamageTo(int, CRuneDaisList*, CAIBattleState*, int*, int*)
+0013471c: cmp      r7, #0
+00134720: mov      r8, r0
+00134724: beq      #0x1347d0
+00134728: cmp      sb, #0
+0013472c: beq      #0x134738
+00134730: mov      r0, r6
+00134734: bl       #0x1345c0 ; CCharacterMin::CreditMeWithCausingDamage()
+00134738: ldr      r1, [sp, #0x10]
+0013473c: cmp      r1, #0
+00134740: ble      #0x13474c
+00134744: mov      r0, r6
+00134748: bl       #0x13456c ; CCharacterMin::CreditMeWithCausingLifeLoss(int)
+0013474c: cmp      r8, #0
+00134750: beq      #0x13476c
+00134754: mov      r0, r6
+00134758: mov      r1, r4
+0013475c: bl       #0x1345c4 ; CCharacterMin::CreditMeWithAKill(CCharacterMin*)
+00134760: mov      r0, r8
+00134764: add      sp, sp, #0x18
+00134768: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+0013476c: mov      r0, r4
+00134770: bl       #0x134520 ; CCharacterMin::CreditMeWithSurvivingAnAttack()
+00134774: mov      r0, r8
+00134778: add      sp, sp, #0x18
+0013477c: pop      {r4, r5, r6, r7, r8, sb, sl, pc}
+00134780: ldr      r3, [pc, #0xb4]
+00134784: mov      r1, #0x14
+00134788: ldr      r2, [pc, #0xb0]
+0013478c: ldr      r3, [r5, r3]
+00134790: ldr      r2, [r5, r2]
+00134794: ldr      r3, [r3, #0x10]
+00134798: ldr      r0, [r2]
+0013479c: add      sb, sb, r3
+001347a0: bl       #0x145844 ; CFactoidMgr::Trigger(eFactoid)
+001347a4: b        #0x1346c8 ; 
+001347a8: ldr      r3, [pc, #0x8c]
+001347ac: mov      r1, #0x13
+001347b0: ldr      r2, [pc, #0x88]
+001347b4: ldr      r3, [r5, r3]
+001347b8: ldr      r2, [r5, r2]
+001347bc: ldr      r3, [r3, #4]
+001347c0: ldr      r0, [r2]
+001347c4: add      sb, sb, r3
+001347c8: bl       #0x145844 ; CFactoidMgr::Trigger(eFactoid)
+001347cc: b        #0x1346b4 ; 
+001347d0: ldr      r3, [sp, #8]
+001347d4: cmp      r3, #0
+001347d8: beq      #0x134728
+001347dc: cmp      r0, #0
+001347e0: bne      #0x134728
+001347e4: ldr      r3, [pc, #0x54]
+001347e8: mov      r1, #0x15
+001347ec: ldr      r3, [r5, r3]
+001347f0: ldr      r0, [r3]
+001347f4: bl       #0x145844 ; CFactoidMgr::Trigger(eFactoid)
+001347f8: b        #0x134728 ; 
+001347fc: mov      r0, r6
+00134800: bl       #0x132908 ; CCharacterMin::GetIsHoldingDefaultWeapon()
+00134804: cmp      r0, #0
+00134808: beq      #0x1346ec
+0013480c: ldr      r3, [pc, #0x30]
+00134810: mov      r0, r4
+00134814: ldr      r3, [r5, r3]
+00134818: ldr      sl, [r3]
+0013481c: bl       #0x132a50 ; CCharacterMin::GetRaceType()
+00134820: mov      r1, r0
+00134824: mov      r0, sl
+00134828: bl       #0x103050 ; CArchetypeMgr::GetRaceBonus(eRaceType)
+0013482c: cmp      r0, #0xf
+00134830: moveq    sb, #0
+00134834: b        #0x1346ec ; 
+00134838: ldrshteq r5, [r0], -r0
+0013483c: andeq    r0, r0, r4, asr #18
+00134840: strdeq   r1, r2, [r0], -r0
+00134844: andeq    r0, r0, r0, lsr r6
+
+
+### CCharacterMin::GetCharCanUseAbilityOn(eAbilityType, CCharacterMin*) 0x13340c 248
+0013340c: ldr      ip, [pc, #0xec]
+00133410: push     {r4, r5, r6, r7, r8, lr}
+00133414: ldr      ip, [pc, ip]
+00133418: sub      sp, sp, #0x10
+0013341c: mov      r5, r0
+00133420: ldr      r0, [ip]
+00133424: mov      r4, r2
+00133428: mov      r6, r1
+0013342c: bl       #0x102ae0 ; CArchetypeMgr::GetAbilityData(eAbilityType)
+00133430: cmp      r4, #0
+00133434: mov      r7, r0
+00133438: beq      #0x13344c
+0013343c: mov      r0, r4
+00133440: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+00133444: cmp      r0, #0
+00133448: bne      #0x133458
+0013344c: mov      r0, #0
+00133450: add      sp, sp, #0x10
+00133454: pop      {r4, r5, r6, r7, r8, pc}
+00133458: mov      r0, r5
+0013345c: mov      r1, #8
+00133460: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+00133464: cmp      r0, #0
+00133468: bne      #0x13344c
+0013346c: mov      r0, r4
+00133470: bl       #0x132a50 ; CCharacterMin::GetRaceType()
+00133474: cmp      r0, #0xf
+00133478: beq      #0x1334c0
+0013347c: mov      r0, r5
+00133480: mov      r1, #0xc
+00133484: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+00133488: subs     r6, r0, #0
+0013348c: bne      #0x13344c
+00133490: ldr      r8, [r7]
+00133494: add      r7, sp, #0xc
+00133498: mov      r1, r5
+0013349c: mov      r0, r7
+001334a0: bl       #0x1323c8 ; CCharacterMin::GetHexLoc()
+001334a4: mov      r0, r8
+001334a8: mov      r1, r7
+001334ac: str      r4, [sp]
+001334b0: mov      r2, r6
+001334b4: mov      r3, r5
+001334b8: bl       #0x160ffc ; CMap::GetCanUseOn(eUseOn, tHEXLOC, CRuneDaisList*, CCharacterMin*, CCharacterMin*)
+001334bc: b        #0x133450 ; 
+001334c0: mov      r0, r4
+001334c4: mov      r1, #0xe
+001334c8: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+001334cc: cmp      r0, #0
+001334d0: bne      #0x13347c
+001334d4: cmp      r6, #0x26
+001334d8: cmpne    r6, #1
+001334dc: beq      #0x1334ec
+001334e0: cmp      r6, #0x39
+001334e4: cmpne    r6, #0x15
+001334e8: bne      #0x13347c
+001334ec: mov      r0, r5
+001334f0: bl       #0x132908 ; CCharacterMin::GetIsHoldingDefaultWeapon()
+001334f4: cmp      r0, #0
+001334f8: beq      #0x13347c
+001334fc: b        #0x13344c ; 
+00133500: eorseq   r6, r0, ip, ror lr
+
+
+### CCharacterMin::GetCanUseAbility(int, CRuneDaisList*, int) 0x1341ec 240
+001341ec: push     {r3, r4, r5, r6, r7, r8, sb, lr}
+001341f0: mov      r6, r1
+001341f4: mov      r1, r2
+001341f8: mov      r5, r2
+001341fc: mov      r7, r3
+00134200: mov      r4, r0
+00134204: bl       #0x1326f4 ; CCharacterMin::CanDoAtLeastOneAbility(CRuneDaisList*)
+00134208: cmp      r0, #0
+0013420c: beq      #0x1342cc
+00134210: cmp      r6, #0
+00134214: mov      r0, r5
+00134218: mov      r1, r4
+0013421c: bne      #0x1342c0
+00134220: bl       #0x1d3880 ; CRuneDaisList::GetAttackingPreventedByRunes(CCharacterMin*)
+00134224: cmp      r0, #0
+00134228: bne      #0x1342cc
+0013422c: ldr      r3, [pc, #0xa0]
+00134230: mov      r1, r6
+00134234: mov      r0, r4
+00134238: ldr      r3, [pc, r3]
+0013423c: ldr      r5, [r3]
+00134240: bl       #0x13413c ; CCharacterMin::GetAbility(int)
+00134244: mov      r1, r0
+00134248: mov      r0, r5
+0013424c: bl       #0x102ae0 ; CArchetypeMgr::GetAbilityData(eAbilityType)
+00134250: ldr      r3, [pc, #0x80]
+00134254: ldr      r3, [pc, r3]
+00134258: mov      r5, r0
+0013425c: ldr      r0, [r3]
+00134260: bl       #0x148978 ; CGame::GetBattle()
+00134264: ldr      r5, [r5, #0x14]
+00134268: bl       #0x10f7fc ; CBattle::GetRuneDaisList()
+0013426c: mov      r1, r6
+00134270: mov      r8, r0
+00134274: mov      r0, r4
+00134278: bl       #0x13413c ; CCharacterMin::GetAbility(int)
+0013427c: mov      sb, r0
+00134280: mov      r0, r4
+00134284: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00134288: mov      r6, r0
+0013428c: mov      r0, r4
+00134290: bl       #0x133504 ; CCharacterMin::GetIsHero()
+00134294: mov      r1, sb
+00134298: mov      r2, r6
+0013429c: mov      r3, r0
+001342a0: mov      r0, r8
+001342a4: bl       #0x1d3520 ; CRuneDaisList::GetAbilityCostChangeFromRunes(eAbilityType, eTeam, int)
+001342a8: add      r0, r5, r0
+001342ac: bic      r0, r0, r0, asr #31
+001342b0: cmp      r7, r0
+001342b4: movlt    r0, #0
+001342b8: movge    r0, #1
+001342bc: pop      {r3, r4, r5, r6, r7, r8, sb, pc}
+001342c0: bl       #0x1d3a2c ; CRuneDaisList::GetSpecialAbilityPreventedByRunes(CCharacterMin*)
+001342c4: cmp      r0, #0
+001342c8: beq      #0x13422c
+001342cc: mov      r0, #0
+001342d0: pop      {r3, r4, r5, r6, r7, r8, sb, pc}
+001342d4: eorseq   r6, r0, r8, asr r0
+001342d8: eorseq   r5, r0, ip, lsl pc
+
+
+### CAbility_Sprint::DoAbilityToPrimaryTarget(CCharacterMin*, CAIBattleState*) 0xf3a18 76
+000f3a18: push     {r4, lr}
+000f3a1c: mov      r0, r1
+000f3a20: mov      r4, r1
+000f3a24: bl       #0x1343c0 ; CCharacterMin::GetClassType()
+000f3a28: cmp      r0, #3
+000f3a2c: beq      #0xf3a48
+000f3a30: mov      r0, r4
+000f3a34: bl       #0x131c14 ; CCharacterMin::ClearMovedThisTurnFlag()
+000f3a38: mov      r0, r4
+000f3a3c: bl       #0x131c34 ; CCharacterMin::ClearSummoningSickness()
+000f3a40: mov      r0, #1
+000f3a44: pop      {r4, pc}
+000f3a48: mov      r0, r4
+000f3a4c: bl       #0x134450 ; CCharacterMin::GetCanMoveThisTurn()
+000f3a50: cmp      r0, #0
+000f3a54: bne      #0xf3a30
+000f3a58: mov      r0, r4
+000f3a5c: bl       #0x134424 ; CCharacterMin::SetHasAttackedThisTurn()
+000f3a60: b        #0xf3a30 ; 
+
+
+### CAbility_Base::EnableRangeCheck(eAbilityTargetRangeType) 0xda7b0 244
+000da7b0: push     {r4, r5, r6, r7, lr}
+000da7b4: sub      sp, sp, #0x1c
+000da7b8: ldr      r3, [pc, #0xe0]
+000da7bc: add      r5, sp, #8
+000da7c0: mov      r4, r0
+000da7c4: mov      r6, r1
+000da7c8: mov      r0, r5
+000da7cc: ldr      r1, [pc, r3]
+000da7d0: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+000da7d4: ldr      ip, [r4]
+000da7d8: cmp      r6, #0
+000da7dc: mov      r3, #0
+000da7e0: mov      r0, r4
+000da7e4: str      r3, [sp, #0xc]
+000da7e8: str      r3, [sp, #0x10]
+000da7ec: mov      r1, r5
+000da7f0: add      r3, sp, #0x10
+000da7f4: ldreq    ip, [ip, #0x10]
+000da7f8: ldrne    ip, [ip, #0x1c]
+000da7fc: add      r2, sp, #0xc
+000da800: blx      ip
+000da804: cmp      r0, #0
+000da808: mov      r3, r0
+000da80c: str      r0, [r4, #0xc]
+000da810: bne      #0xda820
+000da814: mov      r0, r3
+000da818: add      sp, sp, #0x1c
+000da81c: pop      {r4, r5, r6, r7, pc}
+000da820: ldr      r0, [r4, #0x10]
+000da824: add      r6, sp, #0x14
+000da828: bl       #0x16058c ; CMap::ClearRanges()
+000da82c: ldr      r0, [r4, #0x10]
+000da830: movw     r1, #0xffff
+000da834: bl       #0x160658 ; CMap::ClearMarkers(unsigned int)
+000da838: mov      r1, r5
+000da83c: mov      r0, r6
+000da840: ldr      r7, [r4, #0x10]
+000da844: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+000da848: ldr      ip, [sp, #0x10]
+000da84c: ldr      r3, [sp, #0xc]
+000da850: mov      r1, r6
+000da854: mov      r0, r7
+000da858: mov      r2, #0
+000da85c: str      ip, [sp]
+000da860: bl       #0x1609d0 ; CMap::RecurseRangeCalculator(tHEXLOC, int, int, int)
+000da864: ldr      r3, [sp, #0xc]
+000da868: cmp      r3, #0
+000da86c: beq      #0xda890
+000da870: mov      r1, r5
+000da874: ldr      r5, [r4, #0x10]
+000da878: mov      r0, r6
+000da87c: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+000da880: mov      r1, r6
+000da884: mov      r0, r5
+000da888: mov      r2, #0x10
+000da88c: bl       #0x160790 ; CMap::ClearMarker(tHEXLOC, unsigned int)
+000da890: ldr      r3, [r4, #0xc]
+000da894: mov      r0, r3
+000da898: add      sp, sp, #0x1c
+000da89c: pop      {r4, r5, r6, r7, pc}
+000da8a0: eorseq   r0, r6, r0, ror r3
+
+
+### CAbility_Meteor::SetPrimaryTargetRange(tHEXLOC&, int&, int&) 0xed97c 40
+000ed97c: str      r4, [sp, #-4]!
+000ed980: mov      ip, #1
+000ed984: ldr      r0, [r0, #8]
+000ed988: mov      r4, #0
+000ed98c: str      r0, [r1]
+000ed990: mov      r0, ip
+000ed994: str      r4, [r2]
+000ed998: str      ip, [r3]
+000ed99c: pop      {r4}
+000ed9a0: bx       lr
+
+
+### CAbility_Sprint::IsPrimaryTarget(CCharacterMin*) 0xf3b74 100
+000f3b74: push     {r4, r5, lr}
+000f3b78: mov      r5, r0
+000f3b7c: sub      sp, sp, #0xc
+000f3b80: mov      r0, r1
+000f3b84: mov      r4, r1
+000f3b88: bl       #0x1326d8 ; CCharacterMin::GetHasMovedThisTurn()
+000f3b8c: cmp      r0, #0
+000f3b90: bne      #0xf3ba0
+000f3b94: mov      r0, #0
+000f3b98: add      sp, sp, #0xc
+000f3b9c: pop      {r4, r5, pc}
+000f3ba0: mov      r0, r4
+000f3ba4: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+000f3ba8: cmp      r0, #0
+000f3bac: beq      #0xf3b94
+000f3bb0: mov      r1, r4
+000f3bb4: add      r4, sp, #4
+000f3bb8: mov      r0, r4
+000f3bbc: bl       #0x1323c8 ; CCharacterMin::GetHexLoc()
+000f3bc0: mov      r0, r4
+000f3bc4: add      r1, r5, #8
+000f3bc8: bl       #0x15ae9c ; tHEXLOC::operator==(tHEXLOC const&) const
+000f3bcc: adds     r0, r0, #0
+000f3bd0: movne    r0, #1
+000f3bd4: b        #0xf3b98 ; 
+
+
+### CAbility_Expode::DoAbilityToSecondaryTarget(CCharacterMin*, CAIBattleState*) 0xe3858 72
+000e3858: push     {r4, r5, r6, lr}
+000e385c: sub      sp, sp, #8
+000e3860: mov      r4, r2
+000e3864: mov      r6, r1
+000e3868: mov      r5, r0
+000e386c: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000e3870: ldr      ip, [pc, #0x24]
+000e3874: mov      lr, #0
+000e3878: ldr      r2, [r5, #0x14]
+000e387c: mov      r1, r6
+000e3880: ldr      ip, [pc, ip]
+000e3884: mov      r3, r4
+000e3888: ldr      ip, [ip, #0xc4]
+000e388c: stm      sp, {ip, lr}
+000e3890: bl       #0x13464c ; CCharacterMin::DealCombatDamageTo(CCharacterMin*, CRuneDaisList*, CAIBattleState*, int, eCombatDamageSource)
+000e3894: add      sp, sp, #8
+000e3898: pop      {r4, r5, r6, pc}
+000e389c: eorseq   r6, r5, r4, lsr #26
+
+
+### CAbility_Expode::DoAbilityToPrimaryTarget(CCharacterMin*, CAIBattleState*) 0xe3810 72
+000e3810: push     {r4, r5, r6, lr}
+000e3814: sub      sp, sp, #8
+000e3818: mov      r4, r2
+000e381c: mov      r6, r1
+000e3820: mov      r5, r0
+000e3824: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000e3828: ldr      ip, [pc, #0x24]
+000e382c: mov      lr, #0
+000e3830: ldr      r2, [r5, #0x14]
+000e3834: mov      r1, r6
+000e3838: ldr      ip, [pc, ip]
+000e383c: mov      r3, r4
+000e3840: ldr      ip, [ip, #0xc0]
+000e3844: stm      sp, {ip, lr}
+000e3848: bl       #0x13464c ; CCharacterMin::DealCombatDamageTo(CCharacterMin*, CRuneDaisList*, CAIBattleState*, int, eCombatDamageSource)
+000e384c: add      sp, sp, #8
+000e3850: pop      {r4, r5, r6, pc}
+000e3854: eorseq   r6, r5, ip, ror #26
+
+
+### CAbility_Expode::SetSecondaryTargetRange(tHEXLOC&, int&, int&) 0xe3760 28
+000e3760: ldr      r0, [r0, #8]
+000e3764: mov      ip, #1
+000e3768: str      r0, [r1]
+000e376c: mov      r0, ip
+000e3770: str      ip, [r2]
+000e3774: str      ip, [r3]
+000e3778: bx       lr
+
+
+### CCharacterMin::CanDoAtLeastOneAbility(CRuneDaisList*) 0x1326f4 88
+001326f4: push     {r4, lr}
+001326f8: mov      r4, r0
+001326fc: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+00132700: cmp      r0, #0
+00132704: bne      #0x132710
+00132708: mov      r0, #0
+0013270c: pop      {r4, pc}
+00132710: mov      r0, r4
+00132714: mov      r1, #8
+00132718: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+0013271c: cmp      r0, #0
+00132720: bne      #0x132708
+00132724: mov      r0, r4
+00132728: mov      r1, #0xc
+0013272c: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+00132730: cmp      r0, #0
+00132734: bne      #0x132708
+00132738: mov      r0, r4
+0013273c: bl       #0x1326e4 ; CCharacterMin::GetCanAttackThisTurn()
+00132740: adds     r0, r0, #0
+00132744: movne    r0, #1
+00132748: pop      {r4, pc}
+
+
+### CAbility_InspiringStrike::DoAbilityToSecondaryTarget(CCharacterMin*, CAIBattleState*) 0xe8f94 36
+000e8f94: push     {r3, lr}
+000e8f98: mov      r0, r1
+000e8f9c: ldr      r3, [pc, #0x10]
+000e8fa0: ldr      r3, [pc, r3]
+000e8fa4: ldr      r1, [r3, #0xe0]
+000e8fa8: bl       #0x13194c ; CCharacterMin::AddHealth(int)
+000e8fac: mov      r0, #0
+000e8fb0: pop      {r3, pc}
+000e8fb4: eorseq   r1, r5, r4, lsl #12
+
+
+### CAbility_FireBall::DoAbilityToPrimaryTarget(CCharacterMin*, CAIBattleState*) 0xe46f8 168
+000e46f8: ldr      ip, [pc, #0x9c]
+000e46fc: push     {r4, r5, r6, r7, r8, lr}
+000e4700: ldr      ip, [pc, ip]
+000e4704: sub      sp, sp, #8
+000e4708: mov      r6, r2
+000e470c: ldr      r7, [ip, #0xcc]
+000e4710: mov      r4, r0
+000e4714: mov      r5, r1
+000e4718: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000e471c: mov      r8, r0
+000e4720: mov      r0, r4
+000e4724: bl       #0xda3d4 ; CAbility_Base::GetAbilityType() const
+000e4728: mov      r1, r0
+000e472c: mov      r0, r8
+000e4730: bl       #0x132a04 ; CCharacterMin::GetWeaponBonusForAbility(eAbilityType)
+000e4734: add      r7, r7, r0
+000e4738: mov      r0, r4
+000e473c: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000e4740: ldr      r2, [r4, #0x14]
+000e4744: mov      ip, #0
+000e4748: str      r7, [sp]
+000e474c: mov      r1, r5
+000e4750: mov      r3, r6
+000e4754: str      ip, [sp, #4]
+000e4758: bl       #0x13464c ; CCharacterMin::DealCombatDamageTo(CCharacterMin*, CRuneDaisList*, CAIBattleState*, int, eCombatDamageSource)
+000e475c: subs     r7, r0, #0
+000e4760: bne      #0xe4790
+000e4764: mov      r1, #7
+000e4768: ldr      r2, [r4, #0x14]
+000e476c: mov      r0, r5
+000e4770: bl       #0x132a58 ; CCharacterMin::BecomeAfflicted(eAfflictionCode, CRuneDaisList*)
+000e4774: mov      r0, r4
+000e4778: bl       #0xda3ac ; CAbility_Base::GetOwner() const
+000e477c: ldr      r2, [r4, #0x14]
+000e4780: mov      r3, r6
+000e4784: mov      r1, r0
+000e4788: mov      r0, r5
+000e478c: bl       #0x134ed0 ; CCharacterMin::ApplyAnyAfflictionsFromProtagonist(CCharacterMin*, CRuneDaisList*, CAIBattleState*)
+000e4790: mov      r0, r7
+000e4794: add      sp, sp, #8
+000e4798: pop      {r4, r5, r6, r7, r8, pc}
+000e479c: eorseq   r5, r5, r4, lsr #29
+
+
+### CBattle::ProcessTeamForUpkeep(int) 0x1114b8 792
+001114b8: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+001114bc: sub      sp, sp, #0x1c
+001114c0: mov      r8, r0
+001114c4: ldr      fp, [pc, #0x2f8]
+001114c8: str      r1, [sp, #0xc]
+001114cc: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+001114d0: ldr      r2, [sp, #0xc]
+001114d4: add      fp, pc, fp
+001114d8: mov      r1, r0
+001114dc: mov      r0, r8
+001114e0: bl       #0x10e160 ; CBattle::UpkeepTileItems(eTeam, int)
+001114e4: ldr      r0, [r8, #0x8c]
+001114e8: bl       #0x210708 ; CUpkeepMgr::Reset()
+001114ec: mov      r0, r8
+001114f0: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+001114f4: ldr      r3, [sp, #0xc]
+001114f8: rsbs     r3, r3, #1
+001114fc: movlo    r3, #0
+00111500: str      r3, [sp, #0x10]
+00111504: mov      r1, r3
+00111508: add      r0, r0, #0x10
+0011150c: ldr      r7, [r8, r0, lsl #2]
+00111510: mov      r0, r7
+00111514: bl       #0x2074c0 ; CTeam::ProcessArmageddonState(int)
+00111518: mov      r0, r7
+0011151c: bl       #0x206cd4 ; CTeam::GetMyHand()
+00111520: bl       #0x1578b4 ; CHand::GetNumCards() const
+00111524: str      r0, [sp, #8]
+00111528: mov      r0, r7
+0011152c: bl       #0x208130 ; CTeam::GetRaceTypeOfAnyKingInPlay()
+00111530: str      r0, [sp, #0x14]
+00111534: mov      r0, r7
+00111538: bl       #0x20744c ; CTeam::GetNumMonsters()
+0011153c: subs     sb, r0, #0
+00111540: movgt    r4, #0
+00111544: ble      #0x111700
+00111548: mov      r0, r7
+0011154c: mov      r1, r4
+00111550: bl       #0x206ce4 ; CTeam::GetCharacter(int)
+00111554: subs     r5, r0, #0
+00111558: beq      #0x111570
+0011155c: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+00111560: cmp      r0, #0
+00111564: mov      r0, r5
+00111568: beq      #0x111570
+0011156c: bl       #0x130410 ; CCharacter::MarkCurrentHealthArmorMojo()
+00111570: add      r4, r4, #1
+00111574: cmp      r4, sb
+00111578: bne      #0x111548
+0011157c: add      r3, r8, #0x238
+00111580: mov      r6, #0
+00111584: str      r3, [sp, #4]
+00111588: b        #0x111598 ; 
+0011158c: add      r6, r6, #1
+00111590: cmp      r6, sb
+00111594: beq      #0x111700
+00111598: mov      r0, r7
+0011159c: mov      r1, r6
+001115a0: bl       #0x206ce4 ; CTeam::GetCharacter(int)
+001115a4: subs     r5, r0, #0
+001115a8: beq      #0x11158c
+001115ac: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+001115b0: cmp      r0, #0
+001115b4: beq      #0x11158c
+001115b8: mov      r0, r5
+001115bc: bl       #0x133504 ; CCharacterMin::GetIsHero()
+001115c0: cmp      r0, #0
+001115c4: bne      #0x1115e8
+001115c8: ldr      r3, [sp, #0x14]
+001115cc: cmp      r3, #0x11
+001115d0: beq      #0x1115e8
+001115d4: mov      r0, r5
+001115d8: bl       #0x132a50 ; CCharacterMin::GetRaceType()
+001115dc: ldr      r3, [sp, #0x14]
+001115e0: cmp      r0, r3
+001115e4: beq      #0x1117a8
+001115e8: mov      r0, r5
+001115ec: bl       #0x132428 ; CCharacterMin::GetTileTypeUnderMe()
+001115f0: cmp      r0, #4
+001115f4: beq      #0x111774
+001115f8: mov      r0, r8
+001115fc: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00111600: mov      r1, r5
+00111604: ldr      r3, [sp, #8]
+00111608: mov      r2, r0
+0011160c: ldr      r0, [sp, #4]
+00111610: bl       #0x1d5858 ; CRuneDaisList::TriggerGoodOnCharacterUpkeepActions(CCharacter*, eTeam, int)
+00111614: mov      r0, r5
+00111618: bl       #0x132428 ; CCharacterMin::GetTileTypeUnderMe()
+0011161c: cmp      r0, #6
+00111620: beq      #0x11173c
+00111624: mov      r0, r5
+00111628: mov      r4, #0
+0011162c: bl       #0x134dbc ; CCharacterMin::GetBattleParamsRef()
+00111630: mov      sl, r0
+00111634: ldrb     r1, [sl, r4]
+00111638: add      r3, sl, r4
+0011163c: cmp      r1, #0
+00111640: beq      #0x111680
+00111644: ldrb     r2, [r3, #1]
+00111648: sub      r0, r2, #1
+0011164c: sxtb     r2, r2
+00111650: cmp      r2, #0
+00111654: uxtb     r0, r0
+00111658: ble      #0x11166c
+0011165c: cmp      r0, #0
+00111660: strb     r0, [r3, #1]
+00111664: beq      #0x111714
+00111668: ldrb     r1, [sl, r4]
+0011166c: sxtb     r1, r1
+00111670: mov      r3, #0
+00111674: ldr      r0, [r8, #0x8c]
+00111678: mov      r2, r5
+0011167c: bl       #0x2108ac ; CUpkeepMgr::Add(eAfflictionCode, CCharacter*, int)
+00111680: add      r4, r4, #2
+00111684: cmp      r4, #0x20
+00111688: bne      #0x111634
+0011168c: mov      r0, r8
+00111690: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00111694: mov      r1, r5
+00111698: ldr      r3, [sp, #8]
+0011169c: mov      r2, r0
+001116a0: ldr      r0, [sp, #4]
+001116a4: bl       #0x1d59ec ; CRuneDaisList::TriggerBadOnCharacterUpkeepActions(CCharacter*, eTeam, int)
+001116a8: ldr      r3, [pc, #0x118]
+001116ac: mov      r0, r5
+001116b0: ldr      r3, [fp, r3]
+001116b4: ldr      r4, [r3]
+001116b8: bl       #0x132a50 ; CCharacterMin::GetRaceType()
+001116bc: mov      r1, r0
+001116c0: mov      r0, r4
+001116c4: bl       #0x103050 ; CArchetypeMgr::GetRaceBonus(eRaceType)
+001116c8: cmp      r0, #0x10
+001116cc: bne      #0x11158c
+001116d0: mov      r0, r8
+001116d4: add      r6, r6, #1
+001116d8: bl       #0x10d820 ; CBattle::GetUpkeepMgr()
+001116dc: ldr      r3, [pc, #0xe8]
+001116e0: mov      r2, r5
+001116e4: mov      r1, #5
+001116e8: ldr      r3, [fp, r3]
+001116ec: ldr      r3, [r3, #0x458]
+001116f0: rsb      r3, r3, #0
+001116f4: bl       #0x2108ac ; CUpkeepMgr::Add(eAfflictionCode, CCharacter*, int)
+001116f8: cmp      r6, sb
+001116fc: bne      #0x111598
+00111700: ldr      r3, [sp, #0xc]
+00111704: cmp      r3, #0
+00111708: bne      #0x111728
+0011170c: add      sp, sp, #0x1c
+00111710: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+00111714: mov      r0, r5
+00111718: ldrsb    r1, [sl, r4]
+0011171c: ldr      r2, [sp, #0x10]
+00111720: bl       #0x12e408 ; CCharacter::RemoveAffliction(eAfflictionCode, int)
+00111724: b        #0x111680 ; 
+00111728: ldr      r0, [r8, #0x8c]
+0011172c: ldr      r1, [sp, #0xc]
+00111730: add      sp, sp, #0x1c
+00111734: pop      {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+00111738: b        #0x210ba0 ; CUpkeepMgr::Process(int)
+0011173c: ldr      r3, [pc, #0x88]
+00111740: mov      r0, r5
+00111744: ldr      r3, [fp, r3]
+00111748: ldr      r4, [r3, #0x16c]
+0011174c: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00111750: mov      r1, r0
+00111754: ldr      r0, [sp, #4]
+00111758: bl       #0x1d4170 ; CRuneDaisList::GetBestTileBonusMultiplierFromRunes(eTeam)
+0011175c: mul      r4, r0, r4
+00111760: mov      r0, r7
+00111764: bl       #0x206cd4 ; CTeam::GetMyHand()
+00111768: mov      r1, r4
+0011176c: bl       #0x1576f0 ; CHand::DrawCards(int)
+00111770: b        #0x111624 ; 
+00111774: ldr      r0, [r8, #0x8c]
+00111778: mov      r1, #1
+0011177c: mov      r2, r5
+00111780: mov      r3, #0
+00111784: bl       #0x2108ac ; CUpkeepMgr::Add(eAfflictionCode, CCharacter*, int)
+00111788: mov      r0, r5
+0011178c: bl       #0x1322d0 ; CCharacterMin::CountBadAfflictions()
+00111790: cmp      r0, #0
+00111794: beq      #0x1115f8
+00111798: mov      r0, r5
+0011179c: ldr      r1, [sp, #0xc]
+001117a0: bl       #0x130818 ; CCharacter::RemoveBadAfflictions(int)
+001117a4: b        #0x1115f8 ; 
+001117a8: mov      r0, r5
+001117ac: mov      r1, #1
+001117b0: bl       #0x13194c ; CCharacterMin::AddHealth(int)
+001117b4: mov      r0, r5
+001117b8: mov      r1, #1
+001117bc: bl       #0x131964 ; CCharacterMin::AddPower(int)
+001117c0: b        #0x1115e8 ; 
+001117c4: eorseq   r8, r2, ip, lsl #15
+001117c8: andeq    r0, r0, r0, lsr r6
+001117cc: andeq    r0, r0, r4, asr #18
+
+
+### CCharacterMin::SetAfflictionTurns(int, int, int) 0x1319b4 112
+001319b4: add      r1, r0, r1, lsl #1
+001319b8: str      r4, [sp, #-4]!
+001319bc: ldrb     ip, [r1, #5]
+001319c0: cmp      ip, #0
+001319c4: beq      #0x1319d0
+001319c8: cmp      r2, #0
+001319cc: beq      #0x1319fc
+001319d0: cmp      r2, #1
+001319d4: ldrsb    r2, [r1, #4]
+001319d8: uxtbne   ip, ip
+001319dc: moveq    ip, #0
+001319e0: strbeq   ip, [r1, #5]
+001319e4: cmp      r2, #0xe
+001319e8: beq      #0x131a04
+001319ec: cmn      r3, #1
+001319f0: strbeq   r3, [r1, #5]
+001319f4: addne    ip, ip, r3
+001319f8: strbne   ip, [r1, #5]
+001319fc: pop      {r4}
+00131a00: bx       lr
+00131a04: ldr      r2, [pc, #0x14]
+00131a08: ldrb     r4, [r0, #0x39]
+00131a0c: ldr      r2, [pc, r2]
+00131a10: ldr      r2, [r2, #0x3c]
+00131a14: add      r2, r2, r4
+00131a18: strb     r2, [r0, #0x39]
+00131a1c: b        #0x1319ec ; 
+00131a20: mlaseq   r0, r8, fp, r8
+
+
+### CAbility_HeroicShout::IsPrimaryTarget(CCharacterMin*) 0xe7878 88
+000e7878: push     {r4, r5, r6, lr}
+000e787c: mov      r5, r0
+000e7880: mov      r0, r1
+000e7884: mov      r4, r1
+000e7888: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+000e788c: cmp      r0, #0
+000e7890: bne      #0xe789c
+000e7894: mov      r0, #0
+000e7898: pop      {r4, r5, r6, pc}
+000e789c: mov      r0, r4
+000e78a0: bl       #0x131c44 ; CCharacterMin::GetTeam()
+000e78a4: mov      r6, r0
+000e78a8: mov      r0, r5
+000e78ac: bl       #0xda3b4 ; CAbility_Base::GetOwnerTeam() const
+000e78b0: cmp      r6, r0
+000e78b4: bne      #0xe7894
+000e78b8: mov      r0, r4
+000e78bc: mov      r1, #9
+000e78c0: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+000e78c4: rsbs     r0, r0, #1
+000e78c8: movlo    r0, #0
+000e78cc: pop      {r4, r5, r6, pc}
+
+
+### CAbility_InspiringStrike::IsSecondaryTarget(CCharacterMin*) 0xe9100 84
+000e9100: push     {r4, r5, r6, lr}
+000e9104: mov      r5, r0
+000e9108: mov      r0, r1
+000e910c: mov      r4, r1
+000e9110: bl       #0x131b10 ; CCharacterMin::GetIsAlive()
+000e9114: cmp      r0, #0
+000e9118: bne      #0xe9124
+000e911c: mov      r0, #0
+000e9120: pop      {r4, r5, r6, pc}
+000e9124: mov      r0, r4
+000e9128: bl       #0x131c44 ; CCharacterMin::GetTeam()
+000e912c: mov      r6, r0
+000e9130: mov      r0, r5
+000e9134: bl       #0xda3b4 ; CAbility_Base::GetOwnerTeam() const
+000e9138: cmp      r6, r0
+000e913c: bne      #0xe911c
+000e9140: mov      r0, r4
+000e9144: bl       #0x133504 ; CCharacterMin::GetIsHero()
+000e9148: rsbs     r0, r0, #1
+000e914c: movlo    r0, #0
+000e9150: pop      {r4, r5, r6, pc}
+
+
+### CAbility_Phalanx::IsSecondaryTarget(CCharacterMin*) 0xef138 172
+000ef138: ldr      r3, [pc, #0xa0]
+000ef13c: push     {r4, r5, r6, r7, lr}
+000ef140: ldr      r3, [pc, r3]
+000ef144: sub      sp, sp, #0xc
+000ef148: mov      r6, r0
+000ef14c: ldr      r0, [r3]
+000ef150: mov      r5, r1
+000ef154: bl       #0x148978 ; CGame::GetBattle()
+000ef158: mov      r4, r0
+000ef15c: mov      r0, r5
+000ef160: bl       #0x131c44 ; CCharacterMin::GetTeam()
+000ef164: mov      r1, r0
+000ef168: mov      r0, r4
+000ef16c: bl       #0x112f10 ; CBattle::GetSide(eTeam)
+000ef170: mov      r7, r0
+000ef174: mov      r0, r6
+000ef178: bl       #0xda3b4 ; CAbility_Base::GetOwnerTeam() const
+000ef17c: mov      r1, r0
+000ef180: mov      r0, r4
+000ef184: bl       #0x112f10 ; CBattle::GetSide(eTeam)
+000ef188: cmp      r7, r0
+000ef18c: movne    r0, #0
+000ef190: beq      #0xef19c
+000ef194: add      sp, sp, #0xc
+000ef198: pop      {r4, r5, r6, r7, pc}
+000ef19c: add      r4, sp, #4
+000ef1a0: mov      r1, r5
+000ef1a4: mov      r0, sp
+000ef1a8: bl       #0x1323c8 ; CCharacterMin::GetHexLoc()
+000ef1ac: mov      r1, r6
+000ef1b0: mov      r0, r4
+000ef1b4: bl       #0xda3bc ; CAbility_Base::GetOwnerHexLoc() const
+000ef1b8: mov      r0, sp
+000ef1bc: mov      r1, r4
+000ef1c0: bl       #0x15aecc ; tHEXLOC::operator!=(tHEXLOC const&) const
+000ef1c4: cmp      r0, #0
+000ef1c8: beq      #0xef194
+000ef1cc: mov      r0, r5
+000ef1d0: bl       #0x133504 ; CCharacterMin::GetIsHero()
+000ef1d4: rsbs     r0, r0, #1
+000ef1d8: movlo    r0, #0
+000ef1dc: b        #0xef194 ; 
+000ef1e0: eorseq   fp, r4, r0, lsr r0
+
+
+### CMap::RecurseRangeCalculator(tHEXLOC, int, int, int) 0x1609d0 312
+001609d0: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+001609d4: mov      r6, r1
+001609d8: ldrsh    r1, [r1]
+001609dc: mov      r5, r0
+001609e0: ldrsh    r0, [r6, #2]
+001609e4: mov      sb, r3
+001609e8: sub      sp, sp, #0x1c
+001609ec: add      r1, r1, r1, lsl #6
+001609f0: add      r0, r0, r0, lsl #2
+001609f4: ldr      r8, [sp, #0x40]
+001609f8: lsl      r1, r1, #2
+001609fc: add      r0, r1, r0, lsl #2
+00160a00: add      r4, r5, r0
+00160a04: ldr      r3, [r5, r0]
+00160a08: cmp      r3, #0
+00160a0c: beq      #0x160acc
+00160a10: cmp      r8, sb
+00160a14: blt      #0x160acc
+00160a18: cmp      r8, r2
+00160a1c: blt      #0x160acc
+00160a20: ldrb     r3, [r4, #0xc]
+00160a24: sxtb     r1, r3
+00160a28: cmp      r2, r1
+00160a2c: bge      #0x160ad4
+00160a30: uxtb     r3, r2
+00160a34: strb     r3, [r4, #0xc]
+00160a38: sxtb     r3, r3
+00160a3c: cmp      sb, r3
+00160a40: ble      #0x160ae0
+00160a44: ldr      r3, [r4, #4]
+00160a48: bic      r3, r3, #0x10
+00160a4c: str      r3, [r4, #4]
+00160a50: add      fp, r2, #1
+00160a54: add      sl, sp, #0x10
+00160a58: add      r7, sp, #0x14
+00160a5c: mov      r4, #0
+00160a60: b        #0x160a6c ; 
+00160a64: cmp      r4, #6
+00160a68: beq      #0x160acc
+00160a6c: mov      r0, sl
+00160a70: bl       #0x15ae20 ; tHEXLOC::tHEXLOC()
+00160a74: mov      r1, r6
+00160a78: mov      r0, r7
+00160a7c: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00160a80: mov      r2, r4
+00160a84: mov      r0, r5
+00160a88: mov      r1, r7
+00160a8c: mov      r3, sl
+00160a90: add      r4, r4, #1
+00160a94: bl       #0x15fc9c ; CMap::GetHexOffsetAroundMe(tHEXLOC, eTileDir, tHEXLOC&)
+00160a98: cmp      r0, #0
+00160a9c: beq      #0x160a64
+00160aa0: mov      r1, sl
+00160aa4: mov      r0, r7
+00160aa8: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00160aac: str      r8, [sp]
+00160ab0: mov      r0, r5
+00160ab4: mov      r1, r7
+00160ab8: mov      r2, fp
+00160abc: mov      r3, sb
+00160ac0: bl       #0x1609d0 ; CMap::RecurseRangeCalculator(tHEXLOC, int, int, int)
+00160ac4: cmp      r4, #6
+00160ac8: bne      #0x160a6c
+00160acc: add      sp, sp, #0x1c
+00160ad0: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+00160ad4: cmp      r3, #0
+00160ad8: beq      #0x160a30
+00160adc: b        #0x160acc ; 
+00160ae0: mov      r0, r5
+00160ae4: mov      r1, r4
+00160ae8: str      r2, [sp, #0xc]
+00160aec: bl       #0x1609b8 ; CMap::IsRuneDais(tMAPCELL const&)
+00160af0: ldr      r2, [sp, #0xc]
+00160af4: cmp      r0, #0
+00160af8: ldreq    r3, [r4, #4]
+00160afc: orreq    r3, r3, #0x10
+00160b00: streq    r3, [r4, #4]
+00160b04: b        #0x160a50 ; 
+
+
+### CBattle::Process attack-token excerpt
+
+
+
+### CTileItem_Barrier::CanStandOn() 0x20b704 8
+0020b704: mov      r0, #1
+0020b708: bx       lr
+
+### CTileItem_Barrier::CanHoldCard() 0x20b70c 8
+0020b70c: mov      r0, #0
+0020b710: bx       lr
+
+### CTileItem_Barrier::~CTileItem_Barrier() 0x20b424 40
+0020b424: ldr      r3, [pc, #0x1c]
+0020b428: push     {r4, lr}
+0020b42c: ldr      r3, [pc, r3]
+0020b430: mov      r4, r0
+0020b434: add      r3, r3, #8
+0020b438: str      r3, [r0]
+0020b43c: bl       #0x209898 ; CTileItem::~CTileItem()
+0020b440: mov      r0, r4
+0020b444: pop      {r4, pc}
+0020b448: eoreq    pc, r2, r8, asr #4
+
+### CAIBattleState::ProcessAbilityTriggerdAfflictions(eAbilityType, int, CCharacterMin*) 0xf7ac0 92
+000f7ac0: cmp      r2, #0
+000f7ac4: push     {r3, r4, r5, lr}
+000f7ac8: mov      r5, r0
+000f7acc: mov      r4, r3
+000f7ad0: popeq    {r3, r4, r5, pc}
+000f7ad4: mov      r0, r3
+000f7ad8: mov      r1, #6
+000f7adc: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+000f7ae0: cmp      r0, #0
+000f7ae4: popeq    {r3, r4, r5, pc}
+000f7ae8: ldr      r1, [pc, #0x28]
+000f7aec: mov      r0, r4
+000f7af0: add      r2, r5, #0x290
+000f7af4: mov      r3, r5
+000f7af8: ldr      r1, [pc, r1]
+000f7afc: ldr      r1, [r1, #0x64]
+000f7b00: rsb      r1, r1, #0
+000f7b04: bl       #0x133bb4 ; CCharacterMin::TakeDamage(int, CRuneDaisList*, CAIBattleState*)
+000f7b08: mov      r0, r4
+000f7b0c: mov      r1, #6
+000f7b10: pop      {r3, r4, r5, lr}
+000f7b14: b        #0x1317f4 ; CCharacterMin::RemoveAffliction(eAfflictionCode)
+000f7b18: eorseq   r2, r4, ip, lsr #21
+
+### CTileItem_Barrier::IsActive() 0x20b41c 8
+0020b41c: ldr      r0, [r0, #0x38]
+0020b420: bx       lr
+
+### CTileItem_Trap::IsBonus() 0x20dc04 8
+0020dc04: mov      r0, #0
+0020dc08: bx       lr
+
+### CTileItem_Trap::TriggerAction(tITEMACTION&) 0x20d5f8 148
+0020d5f8: push     {r3, r4, r5, lr}
+0020d5fc: mov      r4, r1
+0020d600: ldr      r3, [r1]
+0020d604: mov      r5, r0
+0020d608: sub      r3, r3, #1
+0020d60c: cmp      r3, #3
+0020d610: addls    pc, pc, r3, lsl #2
+0020d614: b        #0x20d64c ; 
+0020d618: b        #0x20d650 ; 
+0020d61c: b        #0x20d628 ; 
+0020d620: b        #0x20d650 ; 
+0020d624: b        #0x20d628 ; 
+0020d628: ldr      r0, [r1, #4]
+0020d62c: mov      r1, #0xc
+0020d630: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+0020d634: cmp      r0, #0
+0020d638: beq      #0x20d664
+0020d63c: ldr      r3, [r5]
+0020d640: mov      r0, r5
+0020d644: ldr      r3, [r3, #0x3c]
+0020d648: blx      r3
+0020d64c: pop      {r3, r4, r5, pc}
+0020d650: mov      r3, #3
+0020d654: str      r3, [r0, #0x3c]
+0020d658: ldr      r3, [r1, #8]
+0020d65c: str      r3, [r0, #0x44]
+0020d660: pop      {r3, r4, r5, pc}
+0020d664: ldr      r1, [pc, #0x1c]
+0020d668: ldr      r0, [r4, #4]
+0020d66c: ldr      r1, [pc, r1]
+0020d670: ldr      r2, [r4, #0x20]
+0020d674: ldr      r3, [r4, #0x24]
+0020d678: ldr      r1, [r1, #0x178]
+0020d67c: rsb      r1, r1, #0
+0020d680: bl       #0x133bb4 ; CCharacterMin::TakeDamage(int, CRuneDaisList*, CAIBattleState*)
+0020d684: b        #0x20d63c ; 
+0020d688: eoreq    ip, r2, r8, lsr pc
+
+### CTileItem_Trap::Clone(int) 0x20d68c 228
+0020d68c: push     {r3, r4, r5, r6, r7, r8, sb, lr}
+0020d690: mov      r5, r0
+0020d694: mov      r0, #0x48
+0020d698: mov      r7, r1
+0020d69c: bl       #0x2cb204 ; operator new(unsigned int)
+0020d6a0: ldr      r3, [pc, #0xc0]
+0020d6a4: add      r1, r5, #8
+0020d6a8: add      r6, r5, #0x20
+0020d6ac: ldr      r3, [pc, r3]
+0020d6b0: mov      r8, #0
+0020d6b4: add      r3, r3, #8
+0020d6b8: mov      r4, r0
+0020d6bc: add      r0, r0, #8
+0020d6c0: str      r3, [r4]
+0020d6c4: ldr      r3, [r5, #4]
+0020d6c8: str      r3, [r4, #4]
+0020d6cc: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d6d0: ldr      r2, [r5, #0xc]
+0020d6d4: ldr      r3, [pc, #0x90]
+0020d6d8: add      ip, r4, #0x20
+0020d6dc: cmp      r7, #0
+0020d6e0: str      r2, [r4, #0xc]
+0020d6e4: ldr      r3, [pc, r3]
+0020d6e8: ldr      r2, [r5, #0x10]
+0020d6ec: add      sb, r3, #8
+0020d6f0: str      r2, [r4, #0x10]
+0020d6f4: ldr      r3, [r5, #0x14]
+0020d6f8: str      r3, [r4, #0x14]
+0020d6fc: ldr      r3, [r5, #0x18]
+0020d700: str      r3, [r4, #0x18]
+0020d704: ldr      r3, [r5, #0x1c]
+0020d708: str      r3, [r4, #0x1c]
+0020d70c: ldm      r6!, {r0, r1, r2, r3}
+0020d710: stm      ip!, {r0, r1, r2, r3}
+0020d714: mov      r0, r4
+0020d718: ldr      r3, [r6]
+0020d71c: str      r3, [ip]
+0020d720: str      sb, [r4]
+0020d724: ldr      r3, [r5, #0x34]
+0020d728: str      r3, [r4, #0x34]
+0020d72c: ldr      r3, [r5, #0x38]
+0020d730: str      r3, [r4, #0x38]
+0020d734: ldr      r3, [r5, #0x3c]
+0020d738: str      r3, [r4, #0x3c]
+0020d73c: ldr      r3, [r5, #0x40]
+0020d740: str      r3, [r4, #0x40]
+0020d744: ldr      r3, [r5, #0x44]
+0020d748: str      r8, [r4, #0x1c]
+0020d74c: str      r3, [r4, #0x44]
+0020d750: str      r7, [r4, #0x18]
+0020d754: streq    r7, [r4, #0x34]
+0020d758: streq    r7, [r4, #0x38]
+0020d75c: streq    r7, [r4, #0x40]
+0020d760: streq    r7, [r4, #0x44]
+0020d764: pop      {r3, r4, r5, r6, r7, r8, sb, pc}
+0020d768: eoreq    ip, r2, r0, asr #22
+0020d76c: eoreq    ip, r2, r4, ror #20
+
+### CTileItem_Barrier::CanShareTile() 0x20b6e4 8
+0020b6e4: mov      r0, #1
+0020b6e8: bx       lr
+
+### CTileItem_Barrier::Clone(int) 0x20b5b4 192
+0020b5b4: push     {r3, r4, r5, r6, r7, r8, sb, lr}
+0020b5b8: mov      r5, r0
+0020b5bc: mov      r0, #0x3c
+0020b5c0: mov      r7, r1
+0020b5c4: bl       #0x2cb204 ; operator new(unsigned int)
+0020b5c8: ldr      r3, [pc, #0x9c]
+0020b5cc: add      r1, r5, #8
+0020b5d0: add      r6, r5, #0x20
+0020b5d4: ldr      r3, [pc, r3]
+0020b5d8: mov      r8, #0
+0020b5dc: add      r3, r3, #8
+0020b5e0: mov      r4, r0
+0020b5e4: add      r0, r0, #8
+0020b5e8: str      r3, [r4]
+0020b5ec: ldr      r3, [r5, #4]
+0020b5f0: str      r3, [r4, #4]
+0020b5f4: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020b5f8: ldr      r2, [r5, #0xc]
+0020b5fc: ldr      r3, [pc, #0x6c]
+0020b600: add      ip, r4, #0x20
+0020b604: cmp      r7, #0
+0020b608: str      r2, [r4, #0xc]
+0020b60c: ldr      r3, [pc, r3]
+0020b610: ldr      r2, [r5, #0x10]
+0020b614: add      sb, r3, #8
+0020b618: str      r2, [r4, #0x10]
+0020b61c: ldr      r3, [r5, #0x14]
+0020b620: str      r3, [r4, #0x14]
+0020b624: ldr      r3, [r5, #0x18]
+0020b628: str      r3, [r4, #0x18]
+0020b62c: ldr      r3, [r5, #0x1c]
+0020b630: str      r3, [r4, #0x1c]
+0020b634: ldm      r6!, {r0, r1, r2, r3}
+0020b638: stm      ip!, {r0, r1, r2, r3}
+0020b63c: mov      r0, r4
+0020b640: ldr      r3, [r6]
+0020b644: str      r3, [ip]
+0020b648: str      sb, [r4]
+0020b64c: ldr      r3, [r5, #0x34]
+0020b650: str      r3, [r4, #0x34]
+0020b654: ldr      r3, [r5, #0x38]
+0020b658: str      r7, [r4, #0x18]
+0020b65c: str      r8, [r4, #0x1c]
+0020b660: str      r3, [r4, #0x38]
+0020b664: streq    r7, [r4, #0x34]
+0020b668: pop      {r3, r4, r5, r6, r7, r8, sb, pc}
+0020b66c: eoreq    lr, r2, r8, lsl ip
+0020b670: eoreq    pc, r2, r8, rrx
+
+### CTileItem_Trap::UpdateAndRender() 0x20d8f0 772
+0020d8f0: push     {r4, r5, r6, r7, lr}
+0020d8f4: mov      r4, r0
+0020d8f8: ldr      r0, [r0, #0x3c]
+0020d8fc: sub      sp, sp, #0x1c
+0020d900: ldr      r5, [pc, #0x2cc]
+0020d904: sub      r3, r0, #1
+0020d908: add      r5, pc, r5
+0020d90c: cmp      r3, #5
+0020d910: addls    pc, pc, r3, lsl #2
+0020d914: b        #0x20d96c ; 
+0020d918: b        #0x20d9d0 ; 
+0020d91c: b        #0x20d9e8 ; 
+0020d920: b        #0x20da10 ; 
+0020d924: b        #0x20dad0 ; 
+0020d928: b        #0x20d930 ; 
+0020d92c: b        #0x20d9bc ; 
+0020d930: ldr      r0, [r4, #0x44]
+0020d934: bl       #0x12a35c ; CCharacter::GetOnEndEvent()
+0020d938: cmp      r0, #0
+0020d93c: beq      #0x20d96c
+0020d940: ldr      r3, [pc, #0x290]
+0020d944: mov      r2, #1
+0020d948: ldr      r0, [r4, #0x44]
+0020d94c: ldr      r3, [r5, r3]
+0020d950: ldr      r1, [r3, #0x178]
+0020d954: rsb      r1, r1, #0
+0020d958: bl       #0x13035c ; CCharacter::TakeDamage(int, int)
+0020d95c: ldr      r3, [r4]
+0020d960: mov      r0, r4
+0020d964: ldr      r3, [r3, #0x3c]
+0020d968: blx      r3
+0020d96c: ldr      r3, [r4, #0x18]
+0020d970: cmp      r3, #0
+0020d974: beq      #0x20d9a8
+0020d978: ldr      r3, [r4, #0x34]
+0020d97c: cmp      r3, #0
+0020d980: beq      #0x20d9a8
+0020d984: ldr      r3, [pc, #0x250]
+0020d988: ldr      r3, [r5, r3]
+0020d98c: ldr      r0, [r3]
+0020d990: bl       #0x148978 ; CGame::GetBattle()
+0020d994: bl       #0x10e158 ; CBattle::GetMap()
+0020d998: ldr      r5, [r4, #0x34]
+0020d99c: add      r1, r5, #0x30
+0020d9a0: bl       #0x161484 ; CMap::GetGroundHeight(RZVector3 const&)
+0020d9a4: str      r0, [r5, #0x34]
+0020d9a8: ldr      r0, [r4, #0x3c]
+0020d9ac: adds     r0, r0, #0
+0020d9b0: movne    r0, #1
+0020d9b4: add      sp, sp, #0x1c
+0020d9b8: pop      {r4, r5, r6, r7, pc}
+0020d9bc: ldr      r0, [r4, #0x44]
+0020d9c0: bl       #0x12a35c ; CCharacter::GetOnEndEvent()
+0020d9c4: cmp      r0, #0
+0020d9c8: beq      #0x20d96c
+0020d9cc: b        #0x20d95c ; 
+0020d9d0: ldr      r3, [r4, #0x18]
+0020d9d4: cmp      r3, #0
+0020d9d8: bne      #0x20db34
+0020d9dc: mov      r2, #2
+0020d9e0: str      r2, [r4, #0x3c]
+0020d9e4: b        #0x20d970 ; 
+0020d9e8: ldr      r3, [r4, #0x18]
+0020d9ec: cmp      r3, #0
+0020d9f0: beq      #0x20d9ac
+0020d9f4: ldr      r1, [r4, #0x34]
+0020d9f8: cmp      r1, #0
+0020d9fc: bne      #0x20d984
+0020da00: mov      r0, r4
+0020da04: bl       #0x20d7ec ; CTileItem_Trap::CreateTrap(int)
+0020da08: ldr      r3, [r4, #0x18]
+0020da0c: b        #0x20d970 ; 
+0020da10: ldr      r3, [r4, #0x18]
+0020da14: cmp      r3, #0
+0020da18: beq      #0x20d940
+0020da1c: ldr      r0, [r4, #0x34]
+0020da20: mov      r6, #0
+0020da24: bl       #0x22c068 ; RZContainer::Detach()
+0020da28: ldr      r0, [r4, #0x34]
+0020da2c: bl       #0x21faa4 ; RZMatrix34::SetIdentity()
+0020da30: ldr      r0, [r4, #0x34]
+0020da34: mov      r1, #0
+0020da38: movt     r1, #0xc2b4
+0020da3c: bl       #0x21fe74 ; RZMatrix34::SetYRotation(float)
+0020da40: ldr      r0, [r4, #0x34]
+0020da44: mov      r1, #0
+0020da48: movt     r1, #0x42b4
+0020da4c: bl       #0x21e05c ; RZMatrix34::ApplyXRotationPre(float)
+0020da50: ldr      r3, [r4, #0x34]
+0020da54: ldr      r2, [pc, #0x184]
+0020da58: str      r6, [r3, #0x30]
+0020da5c: add      r2, pc, r2
+0020da60: str      r6, [r3, #0x34]
+0020da64: str      r6, [r3, #0x38]
+0020da68: ldr      r0, [r4, #0x44]
+0020da6c: ldr      r1, [r4, #0x34]
+0020da70: bl       #0x12a3c4 ; CCharacter::AttachTo(RZContainer*, char*)
+0020da74: ldr      r1, [pc, #0x168]
+0020da78: mov      r3, r6
+0020da7c: mov      r2, #0
+0020da80: add      r1, pc, r1
+0020da84: ldr      r0, [r4, #0x40]
+0020da88: bl       #0x223684 ; RZAnimCtrl::StartAction(char*, int, float)
+0020da8c: ldr      r0, [r4, #0x44]
+0020da90: bl       #0x1308ec ; CCharacter::StopFootstepsSFX()
+0020da94: ldr      r0, [r4, #0x44]
+0020da98: mov      r1, #0xc
+0020da9c: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+0020daa0: subs     r6, r0, #0
+0020daa4: beq      #0x20db04
+0020daa8: ldr      r3, [pc, #0x138]
+0020daac: mov      r2, #0
+0020dab0: mov      r1, #0x64
+0020dab4: ldr      r3, [r5, r3]
+0020dab8: ldr      r0, [r3]
+0020dabc: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+0020dac0: mov      r2, #6
+0020dac4: ldr      r3, [r4, #0x18]
+0020dac8: str      r2, [r4, #0x3c]
+0020dacc: b        #0x20d970 ; 
+0020dad0: ldr      r0, [r4, #0x40]
+0020dad4: bl       #0x223594 ; RZAnimCtrl::GetOnEndEvent()
+0020dad8: cmp      r0, #0
+0020dadc: beq      #0x20d96c
+0020dae0: ldr      r1, [pc, #0x104]
+0020dae4: mov      r2, #0
+0020dae8: ldr      r0, [r4, #0x44]
+0020daec: add      r1, pc, r1
+0020daf0: bl       #0x12df0c ; CCharacter::StartAnimation(char const*, int)
+0020daf4: mov      r2, #5
+0020daf8: ldr      r3, [r4, #0x18]
+0020dafc: str      r2, [r4, #0x3c]
+0020db00: b        #0x20d970 ; 
+0020db04: ldr      r0, [r4, #0x44]
+0020db08: bl       #0x130b64 ; CCharacter::PlayGetHurtSFX()
+0020db0c: ldr      r3, [pc, #0xd4]
+0020db10: mov      r2, r6
+0020db14: mov      r1, #0x63
+0020db18: ldr      r3, [r5, r3]
+0020db1c: ldr      r0, [r3]
+0020db20: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+0020db24: mov      r2, #4
+0020db28: ldr      r3, [r4, #0x18]
+0020db2c: str      r2, [r4, #0x3c]
+0020db30: b        #0x20d970 ; 
+0020db34: ldr      r3, [pc, #0xb4]
+0020db38: mov      r2, #1
+0020db3c: mov      r1, #0x73
+0020db40: add      r7, sp, #4
+0020db44: ldr      r3, [r5, r3]
+0020db48: ldr      r0, [r3]
+0020db4c: bl       #0x1dd078 ; CRZParticleMgr::StartNewEffect(eRZParticleType, int)
+0020db50: mov      r1, #0
+0020db54: movt     r1, #0xc2b4
+0020db58: str      r0, [r4, #0x38]
+0020db5c: bl       #0x21fdec ; RZMatrix34::SetXRotation(float)
+0020db60: add      r1, r4, #8
+0020db64: mov      r0, r7
+0020db68: ldr      r6, [r4, #0x38]
+0020db6c: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020db70: mov      r1, r7
+0020db74: add      r0, sp, #8
+0020db78: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+0020db7c: vldr     s13, [sp, #0x10]
+0020db80: vldr     s15, [pc, #0x48]
+0020db84: vldr     s12, [sp, #8]
+0020db88: vldr     s14, [sp, #0xc]
+0020db8c: vadd.f32 s12, s12, s15
+0020db90: ldr      r3, [pc, #0x44]
+0020db94: vadd.f32 s14, s14, s15
+0020db98: vstr     s12, [r6, #0x30]
+0020db9c: vadd.f32 s15, s13, s15
+0020dba0: vstr     s14, [r6, #0x34]
+0020dba4: vstr     s15, [r6, #0x38]
+0020dba8: ldr      r3, [r5, r3]
+0020dbac: ldr      r6, [r4, #0x38]
+0020dbb0: ldr      r0, [r3]
+0020dbb4: bl       #0x148978 ; CGame::GetBattle()
+0020dbb8: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020dbbc: mov      r1, r0
+0020dbc0: mov      r0, r6
+0020dbc4: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020dbc8: ldr      r3, [r4, #0x18]
+0020dbcc: b        #0x20d9dc ; 
+0020dbd0: andeq    r0, r0, r0
+0020dbd4: eoreq    ip, r2, r8, asr r3
+0020dbd8: andeq    r0, r0, r4, asr #18
+0020dbdc: andeq    r0, r0, r0, lsl r5
+0020dbe0: andseq   sb, r0, r0, ror #30
+0020dbe4: mulseq   lr, r0, pc
+0020dbe8: andeq    r0, r0, r0, ror r7
+0020dbec: andseq   r1, lr, r0, lsr pc
+0020dbf0: andeq    r1, r0, ip
+
+### CTileItem_Barrier::IsBonus() 0x20b6f4 8
+0020b6f4: mov      r0, #1
+0020b6f8: bx       lr
+
+### CTileItem_Trap::CanHoldCard() 0x20dc1c 8
+0020dc1c: mov      r0, #0
+0020dc20: bx       lr
+
+### CTileItem_Barrier::IsAttackable() 0x20b6ec 8
+0020b6ec: mov      r0, #0
+0020b6f0: bx       lr
+
+### CTileItem_Trap::CTileItem_Trap(tHEXLOC, eTeam, int) 0x20d770 124
+0020d770: push     {r4, r5, r6, r7, lr}
+0020d774: sub      sp, sp, #0x14
+0020d778: add      r5, sp, #0xc
+0020d77c: mov      r4, r0
+0020d780: mov      r6, r2
+0020d784: mov      r7, r3
+0020d788: mov      r0, r5
+0020d78c: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d790: ldr      ip, [pc, #0x4c]
+0020d794: mov      r2, r5
+0020d798: mov      r0, r4
+0020d79c: ldr      ip, [pc, ip]
+0020d7a0: mov      r1, #0x20000000
+0020d7a4: ldr      r3, [ip, #0x17c]
+0020d7a8: stm      sp, {r6, r7}
+0020d7ac: bl       #0x2098d8 ; CTileItem::CTileItem(eTileItemType, tHEXLOC, int, eTeam, int)
+0020d7b0: ldr      r2, [pc, #0x30]
+0020d7b4: mov      r3, #0
+0020d7b8: mov      r0, r4
+0020d7bc: ldr      r2, [pc, r2]
+0020d7c0: str      r3, [r4, #0x34]
+0020d7c4: add      r2, r2, #8
+0020d7c8: str      r3, [r4, #0x38]
+0020d7cc: str      r2, [r4]
+0020d7d0: str      r3, [r4, #0x3c]
+0020d7d4: str      r3, [r4, #0x40]
+0020d7d8: str      r3, [r4, #0x44]
+0020d7dc: add      sp, sp, #0x14
+0020d7e0: pop      {r4, r5, r6, r7, pc}
+0020d7e4: eoreq    ip, r2, r8, lsl #28
+0020d7e8: eoreq    ip, r2, ip, lsl #19
+
+### CTileItem_Barrier::Deactivate() 0x20b514 76
+0020b514: push     {r4, lr}
+0020b518: mov      r4, r0
+0020b51c: ldr      r3, [r0, #0x38]
+0020b520: cmp      r3, #0
+0020b524: popeq    {r4, pc}
+0020b528: ldr      r0, [r0, #0x34]
+0020b52c: cmp      r0, #0
+0020b530: beq      #0x20b550
+0020b534: mov      r1, #1
+0020b538: bl       #0x231460 ; RZContainer::SetEmitterAutoDeleteOnExpire(int)
+0020b53c: ldr      r3, [pc, #0x18]
+0020b540: ldr      r1, [r4, #0x34]
+0020b544: ldr      r3, [pc, r3]
+0020b548: ldr      r0, [r3]
+0020b54c: bl       #0x1dd0d8 ; CRZParticleMgr::StopEmitting(RZContainer*)
+0020b550: mov      r3, #0
+0020b554: str      r3, [r4, #0x38]
+0020b558: pop      {r4, pc}
+0020b55c: eoreq    pc, r2, r8, lsr #14
+
+### CTileItem_Barrier::Activate(int) 0x20b468 172
+0020b468: push     {r4, r5, r6, lr}
+0020b46c: mov      r4, r0
+0020b470: ldr      r3, [r0, #0x18]
+0020b474: sub      sp, sp, #0x18
+0020b478: cmp      r3, #0
+0020b47c: beq      #0x20b4fc
+0020b480: ldr      r3, [pc, #0x84]
+0020b484: mov      r2, #0
+0020b488: mov      r1, #0x6d
+0020b48c: add      r5, sp, #4
+0020b490: ldr      r3, [pc, r3]
+0020b494: ldr      r0, [r3]
+0020b498: bl       #0x1dd078 ; CRZParticleMgr::StartNewEffect(eRZParticleType, int)
+0020b49c: mov      r1, #0
+0020b4a0: movt     r1, #0xc2b4
+0020b4a4: str      r0, [r4, #0x34]
+0020b4a8: bl       #0x21fdec ; RZMatrix34::SetXRotation(float)
+0020b4ac: mov      r0, r5
+0020b4b0: add      r1, r4, #8
+0020b4b4: ldr      r6, [r4, #0x34]
+0020b4b8: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020b4bc: mov      r1, r5
+0020b4c0: add      r5, sp, #8
+0020b4c4: mov      r0, r5
+0020b4c8: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+0020b4cc: ldm      r5, {r0, r1, r2, r3}
+0020b4d0: add      ip, r6, #0x30
+0020b4d4: ldr      lr, [pc, #0x34]
+0020b4d8: ldr      lr, [pc, lr]
+0020b4dc: stm      ip, {r0, r1, r2, r3}
+0020b4e0: ldr      r0, [lr]
+0020b4e4: ldr      r5, [r4, #0x34]
+0020b4e8: bl       #0x148978 ; CGame::GetBattle()
+0020b4ec: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020b4f0: mov      r1, r0
+0020b4f4: mov      r0, r5
+0020b4f8: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020b4fc: mov      r3, #1
+0020b500: str      r3, [r4, #0x38]
+0020b504: add      sp, sp, #0x18
+0020b508: pop      {r4, r5, r6, pc}
+
+### CTileItem_Trap::CanShareTile() 0x20dbf4 8
+0020dbf4: mov      r0, #1
+0020dbf8: bx       lr
+
+### CTileItem_Barrier::CTileItem_Barrier(tHEXLOC, eTeam, int) 0x20b674 112
+0020b674: push     {r4, r5, r6, r7, lr}
+0020b678: sub      sp, sp, #0x14
+0020b67c: add      r5, sp, #0xc
+0020b680: mov      r4, r0
+0020b684: mov      r6, r2
+0020b688: mov      r7, r3
+0020b68c: mov      r0, r5
+0020b690: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020b694: ldr      ip, [pc, #0x40]
+0020b698: mov      r2, r5
+0020b69c: mov      r0, r4
+0020b6a0: ldr      ip, [pc, ip]
+0020b6a4: mov      r1, #0x40000000
+0020b6a8: ldr      r3, [ip, #0x184]
+0020b6ac: stm      sp, {r6, r7}
+0020b6b0: bl       #0x2098d8 ; CTileItem::CTileItem(eTileItemType, tHEXLOC, int, eTeam, int)
+0020b6b4: ldr      r3, [pc, #0x24]
+0020b6b8: mov      r2, #0
+0020b6bc: mov      r0, r4
+0020b6c0: ldr      r3, [pc, r3]
+0020b6c4: str      r2, [r4, #0x34]
+0020b6c8: add      r3, r3, #8
+0020b6cc: str      r2, [r4, #0x38]
+0020b6d0: str      r3, [r4]
+0020b6d4: add      sp, sp, #0x14
+0020b6d8: pop      {r4, r5, r6, r7, pc}
+0020b6dc: eoreq    lr, r2, r4, lsl #30
+
+### CTileItem_Trap::~CTileItem_Trap() 0x20d56c 40
+0020d56c: ldr      r3, [pc, #0x1c]
+0020d570: push     {r4, lr}
+0020d574: ldr      r3, [pc, r3]
+0020d578: mov      r4, r0
+0020d57c: add      r3, r3, #8
+0020d580: str      r3, [r0]
+0020d584: bl       #0x209898 ; CTileItem::~CTileItem()
+0020d588: mov      r0, r4
+0020d58c: pop      {r4, pc}
+
+### CTileItem_Trap::~CTileItem_Trap() 0x20d594 28
+0020d594: push     {r4, lr}
+0020d598: mov      r4, r0
+0020d59c: bl       #0x20d56c ; CTileItem_Trap::~CTileItem_Trap()
+0020d5a0: mov      r0, r4
+0020d5a4: bl       #0x2cb8c0 ; operator delete(void*)
+0020d5a8: mov      r0, r4
+0020d5ac: pop      {r4, pc}
+
+### CTileItem_Trap::CanStandOn() 0x20dc14 8
+0020dc14: mov      r0, #1
+0020dc18: bx       lr
+
+### CTileItem::Upkeep(eTeam) 0x20995c 68
+0020995c: push     {r3, lr}
+00209960: ldr      r3, [r0, #0x10]
+00209964: cmp      r3, r1
+00209968: beq      #0x209974
+0020996c: cmp      r1, #6
+00209970: popne    {r3, pc}
+00209974: ldr      r3, [r0, #0xc]
+00209978: cmp      r3, #0
+0020997c: pople    {r3, pc}
+00209980: sub      r3, r3, #1
+00209984: str      r3, [r0, #0xc]
+00209988: cmp      r3, #0
+0020998c: popne    {r3, pc}
+00209990: ldr      r3, [r0]
+00209994: ldr      r3, [r3, #0x3c]
+00209998: blx      r3
+0020999c: pop      {r3, pc}
+
+### CTileItem_Trap::IsAttackable() 0x20dbfc 8
+0020dbfc: mov      r0, #0
+0020dc00: bx       lr
+
+### CTileItem_Trap::CreateTrap(int) 0x20d7ec 208
+0020d7ec: ldr      r3, [pc, #0xb8]
+0020d7f0: push     {r4, r5, r6, lr}
+0020d7f4: ldr      r3, [pc, r3]
+0020d7f8: mov      r4, r0
+0020d7fc: sub      sp, sp, #0x18
+0020d800: mov      r5, r1
+0020d804: ldr      r0, [r3]
+0020d808: mov      r1, #1
+0020d80c: bl       #0x22c2a8 ; RZContainer::Duplicate(int)
+0020d810: str      r0, [r4, #0x34]
+0020d814: bl       #0x22e95c ; RZContainer::GetAnimController()
+0020d818: cmp      r5, #0
+0020d81c: str      r0, [r4, #0x40]
+0020d820: bne      #0x20d894
+0020d824: ldr      r1, [pc, #0x84]
+0020d828: mov      r2, r5
+0020d82c: mov      r3, #0
+0020d830: add      r1, pc, r1
+0020d834: bl       #0x223684 ; RZAnimCtrl::StartAction(char*, int, float)
+0020d838: add      r5, sp, #4
+0020d83c: add      r1, r4, #8
+0020d840: ldr      r6, [r4, #0x34]
+0020d844: mov      r0, r5
+0020d848: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d84c: mov      r1, r5
+0020d850: add      r5, sp, #8
+0020d854: mov      r0, r5
+0020d858: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+0020d85c: ldm      r5, {r0, r1, r2, r3}
+0020d860: add      ip, r6, #0x30
+0020d864: ldr      lr, [pc, #0x48]
+0020d868: ldr      lr, [pc, lr]
+0020d86c: stm      ip, {r0, r1, r2, r3}
+0020d870: ldr      r0, [lr]
+0020d874: ldr      r4, [r4, #0x34]
+0020d878: bl       #0x148978 ; CGame::GetBattle()
+0020d87c: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020d880: mov      r1, r0
+0020d884: mov      r0, r4
+0020d888: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020d88c: add      sp, sp, #0x18
+0020d890: pop      {r4, r5, r6, pc}
+0020d894: ldr      r1, [pc, #0x1c]
+0020d898: mov      r2, #0
+0020d89c: mov      r3, #0
+0020d8a0: add      r1, pc, r1
+0020d8a4: bl       #0x223684 ; RZAnimCtrl::StartAction(char*, int, float)
+0020d8a8: b        #0x20d838 ; 
+0020d8ac: eoreq    ip, r2, r8, ror fp
+0020d8b0: ldrsbeq  r2, [lr], -r4
+0020d8b4: eoreq    ip, r2, r8, lsl #18
+0020d8b8: andseq   r2, lr, r8, asr r1
+
+### CTileItem_Trap::GetIsBusy() 0x20d554 24
+0020d554: ldr      r0, [r0, #0x3c]
+0020d558: sub      r0, r0, #3
+0020d55c: cmp      r0, #2
+0020d560: movhi    r0, #0
+0020d564: movls    r0, #1
+0020d568: bx       lr
+
+### CTileItem_Trap::IsActive() 0x20d53c 24
+0020d53c: ldr      r0, [r0, #0x3c]
+0020d540: sub      r0, r0, #1
+0020d544: cmp      r0, #1
+0020d548: movhi    r0, #0
+0020d54c: movls    r0, #1
+0020d550: bx       lr
+
+### CTileItem_Barrier::TriggerAction(tITEMACTION&) 0x20b418 4
+0020b418: bx       lr
+
+### CTileItem_Barrier::~CTileItem_Barrier() 0x20b44c 28
+0020b44c: push     {r4, lr}
+0020b450: mov      r4, r0
+0020b454: bl       #0x20b424 ; CTileItem_Barrier::~CTileItem_Barrier()
+0020b458: mov      r0, r4
+0020b45c: bl       #0x2cb8c0 ; operator delete(void*)
+0020b460: mov      r0, r4
+0020b464: pop      {r4, pc}
+
+### CTileItem_Barrier::UpdateAndRender() 0x20b560 84
+0020b560: push     {r4, lr}
+0020b564: mov      r4, r0
+0020b568: ldr      r3, [r0, #0x18]
+0020b56c: cmp      r3, #0
+0020b570: ldr      r3, [r0]
+0020b574: ldr      r3, [r3, #0x10]
+0020b578: beq      #0x20b5a8
+0020b57c: blx      r3
+0020b580: cmp      r0, #0
+0020b584: popeq    {r4, pc}
+0020b588: ldr      r3, [pc, #0x20]
+0020b58c: ldr      r1, [r4, #0x34]
+0020b590: ldr      r3, [pc, r3]
+0020b594: ldr      r0, [r3]
+0020b598: bl       #0x1dd1a4 ; CRZParticleMgr::HasFinished(RZContainer*)
+0020b59c: subs     r0, r0, #1
+0020b5a0: movne    r0, #1
+0020b5a4: pop      {r4, pc}
+0020b5a8: blx      r3
+0020b5ac: pop      {r4, pc}
+
+### CTileItem_Trap::IsPenalty() 0x20dc0c 8
+0020dc0c: mov      r0, #1
+0020dc10: bx       lr
+
+### CTileItem_Trap::Upkeep() 0x20d538 4
+0020d538: bx       lr
+
+### CTileItem_Barrier::IsPenalty() 0x20b6fc 8
+0020b6fc: mov      r0, #0
+0020b700: bx       lr
+
+### CTileItem_Barrier::CTileItem_Barrier(tHEXLOC, eTeam, int) 0x20b674 112
+0020b674: push     {r4, r5, r6, r7, lr}
+0020b678: sub      sp, sp, #0x14
+0020b67c: add      r5, sp, #0xc
+0020b680: mov      r4, r0
+0020b684: mov      r6, r2
+0020b688: mov      r7, r3
+0020b68c: mov      r0, r5
+0020b690: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020b694: ldr      ip, [pc, #0x40]
+0020b698: mov      r2, r5
+0020b69c: mov      r0, r4
+0020b6a0: ldr      ip, [pc, ip]
+0020b6a4: mov      r1, #0x40000000
+0020b6a8: ldr      r3, [ip, #0x184]
+0020b6ac: stm      sp, {r6, r7}
+0020b6b0: bl       #0x2098d8 ; CTileItem::CTileItem(eTileItemType, tHEXLOC, int, eTeam, int)
+0020b6b4: ldr      r3, [pc, #0x24]
+0020b6b8: mov      r2, #0
+0020b6bc: mov      r0, r4
+0020b6c0: ldr      r3, [pc, r3]
+0020b6c4: str      r2, [r4, #0x34]
+0020b6c8: add      r3, r3, #8
+0020b6cc: str      r2, [r4, #0x38]
+0020b6d0: str      r3, [r4]
+0020b6d4: add      sp, sp, #0x14
+0020b6d8: pop      {r4, r5, r6, r7, pc}
+0020b6dc: eoreq    lr, r2, r4, lsl #30
+
+### CTileItem_Trap::Activate(int) 0x20d8bc 52
+0020d8bc: ldr      ip, [r0, #0x18]
+0020d8c0: mov      r2, #1
+0020d8c4: str      r2, [r0, #0x3c]
+0020d8c8: cmp      ip, #0
+0020d8cc: moveq    r2, #2
+0020d8d0: streq    r2, [r0, #0x3c]
+0020d8d4: bxeq     lr
+0020d8d8: cmp      r1, #0
+0020d8dc: bxeq     lr
+0020d8e0: mov      r1, r2
+0020d8e4: mov      r2, #2
+0020d8e8: str      r2, [r0, #0x3c]
+0020d8ec: b        #0x20d7ec ; CTileItem_Trap::CreateTrap(int)
+
+### CTileItemMgr::Upkeep(eTeam, CMap*) 0x20a0f4 208
+0020a0f4: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0020a0f8: subs     sb, r2, #0
+0020a0fc: sub      sp, sp, #0x14
+0020a100: mov      r4, r1
+0020a104: str      r0, [sp, #4]
+0020a108: beq      #0x20a1b8
+0020a10c: ldr      r7, [pc, #0xac]
+0020a110: add      sl, sp, #0xc
+0020a114: mov      r5, r0
+0020a118: mov      r6, #0
+0020a11c: ldr      r7, [pc, r7]
+0020a120: movw     r8, #0xfff
+0020a124: b        #0x20a138 ; 
+0020a128: add      r6, r6, #1
+0020a12c: add      r5, r5, #0xc
+0020a130: cmp      r6, r8
+0020a134: beq      #0x20a1b8
+0020a138: mov      r0, r5
+0020a13c: mov      r1, r7
+0020a140: bl       #0x15aecc ; tHEXLOC::operator!=(tHEXLOC const&) const
+0020a144: cmp      r0, #0
+0020a148: beq      #0x20a128
+0020a14c: ldr      r3, [r5, #8]
+0020a150: cmp      sb, r3
+0020a154: bne      #0x20a128
+0020a158: ldr      fp, [r5, #4]
+0020a15c: cmp      fp, #0
+0020a160: beq      #0x20a17c
+0020a164: mov      r0, fp
+0020a168: mov      r1, r4
+0020a16c: bl       #0x20995c ; CTileItem::Upkeep(eTeam)
+0020a170: ldr      fp, [fp, #0x1c]
+0020a174: cmp      fp, #0
+0020a178: bne      #0x20a164
+0020a17c: mov      r1, r5
+0020a180: mov      r0, sl
+0020a184: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020a188: mov      r1, sl
+0020a18c: mov      r0, sb
+0020a190: add      r5, r5, #0xc
+0020a194: bl       #0x15ffa4 ; CMap::GetMapCellRef(tHEXLOC)
+0020a198: mov      r1, r6
+0020a19c: add      r6, r6, #1
+0020a1a0: mov      fp, r0
+0020a1a4: ldr      r0, [sp, #4]
+0020a1a8: bl       #0x20a014 ; CTileItemMgr::CreateHandle(int) const
+0020a1ac: cmp      r6, r8
+0020a1b0: str      r0, [fp, #8]
+0020a1b4: bne      #0x20a138
+0020a1b8: add      sp, sp, #0x14
+0020a1bc: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0020a1c0: eoreq    r0, r3, r0, lsr #20
+
+### CTileItem_Trap::~CTileItem_Trap() 0x20d56c 40
+0020d56c: ldr      r3, [pc, #0x1c]
+0020d570: push     {r4, lr}
+0020d574: ldr      r3, [pc, r3]
+0020d578: mov      r4, r0
+0020d57c: add      r3, r3, #8
+0020d580: str      r3, [r0]
+0020d584: bl       #0x209898 ; CTileItem::~CTileItem()
+0020d588: mov      r0, r4
+0020d58c: pop      {r4, pc}
+
+### CTileItem_Barrier::~CTileItem_Barrier() 0x20b424 40
+0020b424: ldr      r3, [pc, #0x1c]
+0020b428: push     {r4, lr}
+0020b42c: ldr      r3, [pc, r3]
+0020b430: mov      r4, r0
+0020b434: add      r3, r3, #8
+0020b438: str      r3, [r0]
+0020b43c: bl       #0x209898 ; CTileItem::~CTileItem()
+0020b440: mov      r0, r4
+0020b444: pop      {r4, pc}
+0020b448: eoreq    pc, r2, r8, asr #4
+
+### CTileItem_Trap::Deactivate() 0x20d5b0 72
+0020d5b0: push     {r3, r4, r5, lr}
+0020d5b4: mov      r4, r0
+0020d5b8: ldr      r3, [r0, #0x18]
+0020d5bc: cmp      r3, #0
+0020d5c0: beq      #0x20d5ec
+0020d5c4: ldr      r5, [r0, #0x34]
+0020d5c8: cmp      r5, #0
+0020d5cc: beq      #0x20d5ec
+0020d5d0: mov      r0, r5
+0020d5d4: bl       #0x22dcc8 ; RZContainer::~RZContainer()
+0020d5d8: mov      r0, r5
+0020d5dc: bl       #0x2cb8c0 ; operator delete(void*)
+0020d5e0: mov      r3, #0
+0020d5e4: str      r3, [r4, #0x34]
+0020d5e8: str      r3, [r4, #0x44]
+0020d5ec: mov      r3, #0
+0020d5f0: str      r3, [r4, #0x3c]
+0020d5f4: pop      {r3, r4, r5, pc}
+
+### CTileItem_Trap::CTileItem_Trap(tHEXLOC, eTeam, int) 0x20d770 124
+0020d770: push     {r4, r5, r6, r7, lr}
+0020d774: sub      sp, sp, #0x14
+0020d778: add      r5, sp, #0xc
+0020d77c: mov      r4, r0
+0020d780: mov      r6, r2
+0020d784: mov      r7, r3
+0020d788: mov      r0, r5
+0020d78c: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020d790: ldr      ip, [pc, #0x4c]
+0020d794: mov      r2, r5
+0020d798: mov      r0, r4
+0020d79c: ldr      ip, [pc, ip]
+0020d7a0: mov      r1, #0x20000000
+0020d7a4: ldr      r3, [ip, #0x17c]
+0020d7a8: stm      sp, {r6, r7}
+0020d7ac: bl       #0x2098d8 ; CTileItem::CTileItem(eTileItemType, tHEXLOC, int, eTeam, int)
+0020d7b0: ldr      r2, [pc, #0x30]
+0020d7b4: mov      r3, #0
+0020d7b8: mov      r0, r4
+0020d7bc: ldr      r2, [pc, r2]
+0020d7c0: str      r3, [r4, #0x34]
+0020d7c4: add      r2, r2, #8
+0020d7c8: str      r3, [r4, #0x38]
+0020d7cc: str      r2, [r4]
+0020d7d0: str      r3, [r4, #0x3c]
+0020d7d4: str      r3, [r4, #0x40]
+0020d7d8: str      r3, [r4, #0x44]
+0020d7dc: add      sp, sp, #0x14
+0020d7e0: pop      {r4, r5, r6, r7, pc}
+0020d7e4: eoreq    ip, r2, r8, lsl #28
+0020d7e8: eoreq    ip, r2, ip, lsl #19
+
+
+
+### CAIBattleState::DoAbilityOnTargetHex(eAbilityType, CCharacterMin*, tHEXLOC) 0xf7b1c 876
+000f7b1c: ldr      ip, [pc, #0x360]
+000f7b20: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+000f7b24: ldr      ip, [pc, ip]
+000f7b28: sub      sp, sp, #0x2c
+000f7b2c: mov      r7, r0
+000f7b30: ldr      r0, [ip]
+000f7b34: mov      r5, r3
+000f7b38: str      r2, [sp, #0x14]
+000f7b3c: add      r8, sp, #0x24
+000f7b40: str      r1, [sp, #0x10]
+000f7b44: bl       #0x102ae0 ; CArchetypeMgr::GetAbilityData(eAbilityType)
+000f7b48: str      r0, [sp, #0x1c]
+000f7b4c: mov      r0, r7
+000f7b50: bl       #0xf7ab0 ; CAIBattleState::GetMap()
+000f7b54: mov      r1, r5
+000f7b58: mov      r4, r0
+000f7b5c: mov      r0, r8
+000f7b60: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+000f7b64: mov      r2, r4
+000f7b68: add      r3, r7, #0x290
+000f7b6c: ldr      r1, [sp, #0x14]
+000f7b70: str      r3, [sp]
+000f7b74: mov      r3, r8
+000f7b78: str      r7, [sp, #4]
+000f7b7c: ldr      r0, [sp, #0x10]
+000f7b80: bl       #0xda344 ; CAbility_Base::CreateAbilityForAI(eAbilityType, CCharacterMin*, CMap*, tHEXLOC, CRuneDaisList*, CAIBattleState*)
+000f7b84: ldr      r3, [r0]
+000f7b88: mov      r4, r0
+000f7b8c: ldr      r3, [r3, #8]
+000f7b90: blx      r3
+000f7b94: cmp      r0, #0
+000f7b98: bne      #0xf7be4
+000f7b9c: ldr      r3, [r4]
+000f7ba0: mov      r0, r4
+000f7ba4: ldr      r3, [r3, #0x14]
+000f7ba8: blx      r3
+000f7bac: cmp      r0, #0
+000f7bb0: bne      #0xf7d48
+000f7bb4: mov      r0, r4
+000f7bb8: bl       #0xdabfc ; CAbility_Base::CheckIfAIShouldUseAbility()
+000f7bbc: cmp      r0, #0
+000f7bc0: moveq    r5, r0
+000f7bc4: bne      #0xf7d20
+000f7bc8: ldr      r3, [r4]
+000f7bcc: mov      r0, r4
+000f7bd0: ldr      r3, [r3, #4]
+000f7bd4: blx      r3
+000f7bd8: mov      r0, r5
+000f7bdc: add      sp, sp, #0x2c
+000f7be0: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+000f7be4: mov      r0, r4
+000f7be8: mov      r1, #0
+000f7bec: add      r3, r7, #0x26c
+000f7bf0: str      r3, [sp, #0xc]
+000f7bf4: bl       #0xda7b0 ; CAbility_Base::EnableRangeCheck(eAbilityTargetRangeType)
+000f7bf8: sub      sb, r7, #4
+000f7bfc: str      r0, [sp, #8]
+000f7c00: ldrsh    sl, [sb, #0x68]
+000f7c04: cmp      sl, #0
+000f7c08: ble      #0xf7c6c
+000f7c0c: ldr      r3, [sp, #8]
+000f7c10: cmp      r3, #0
+000f7c14: moveq    r6, r3
+000f7c18: moveq    fp, sb
+000f7c1c: beq      #0xf7c2c
+000f7c20: b        #0xf7c88 ; 
+000f7c24: cmp      sl, r6
+000f7c28: beq      #0xf7c6c
+000f7c2c: ldr      r5, [fp, #4]!
+000f7c30: mov      r0, r4
+000f7c34: add      r6, r6, #1
+000f7c38: cmp      r5, #0
+000f7c3c: mov      r1, r5
+000f7c40: beq      #0xf7c24
+000f7c44: ldr      r3, [r4]
+000f7c48: ldr      r3, [r3, #0xc]
+000f7c4c: blx      r3
+000f7c50: cmp      r0, #0
+000f7c54: beq      #0xf7c24
+000f7c58: mov      r1, r5
+000f7c5c: mov      r0, r4
+000f7c60: bl       #0xda718 ; CAbility_Base::AddAIPrimaryTarget(CCharacterMin*)
+000f7c64: cmp      sl, r6
+000f7c68: bne      #0xf7c2c
+000f7c6c: ldr      r3, [sp, #0xc]
+000f7c70: add      sb, sb, #0x68
+000f7c74: cmp      sb, r3
+000f7c78: bne      #0xf7c00
+000f7c7c: mov      r0, r4
+000f7c80: bl       #0xda8a4 ; CAbility_Base::DisableRangeCheck()
+000f7c84: b        #0xf7b9c ; 
+000f7c88: mov      fp, sb
+000f7c8c: mov      r5, #0
+000f7c90: str      sb, [sp, #0x18]
+000f7c94: ldr      r6, [fp, #4]!
+000f7c98: mov      r0, r7
+000f7c9c: add      r5, r5, #1
+000f7ca0: cmp      r6, #0
+000f7ca4: beq      #0xf7cd4
+000f7ca8: bl       #0xf7ab0 ; CAIBattleState::GetMap()
+000f7cac: mov      r1, r6
+000f7cb0: mov      sb, r0
+000f7cb4: mov      r0, r8
+000f7cb8: bl       #0x1323c8 ; CCharacterMin::GetHexLoc()
+000f7cbc: mov      r0, sb
+000f7cc0: mov      r1, r8
+000f7cc4: movw     r2, #0xffff
+000f7cc8: bl       #0x1607cc ; CMap::GetMarker(tHEXLOC, unsigned int)
+000f7ccc: cmp      r0, #0
+000f7cd0: bne      #0xf7cf4
+000f7cd4: cmp      r5, sl
+000f7cd8: bne      #0xf7c94
+000f7cdc: ldr      sb, [sp, #0x18]
+000f7ce0: ldr      r3, [sp, #0xc]
+000f7ce4: add      sb, sb, #0x68
+000f7ce8: cmp      sb, r3
+000f7cec: bne      #0xf7c00
+000f7cf0: b        #0xf7c7c ; 
+000f7cf4: ldr      r3, [r4]
+000f7cf8: mov      r0, r4
+000f7cfc: mov      r1, r6
+000f7d00: ldr      r3, [r3, #0xc]
+000f7d04: blx      r3
+000f7d08: cmp      r0, #0
+000f7d0c: beq      #0xf7cd4
+000f7d10: mov      r1, r6
+000f7d14: mov      r0, r4
+000f7d18: bl       #0xda718 ; CAbility_Base::AddAIPrimaryTarget(CCharacterMin*)
+000f7d1c: b        #0xf7cd4 ; 
+000f7d20: mov      r0, r4
+000f7d24: mov      r5, #1
+000f7d28: bl       #0xdacc0 ; CAbility_Base::ProcessForAI()
+000f7d2c: ldr      r3, [sp, #0x1c]
+000f7d30: mov      r0, r7
+000f7d34: ldr      r1, [sp, #0x10]
+000f7d38: ldr      r2, [r3, #0x10]
+000f7d3c: ldr      r3, [sp, #0x14]
+000f7d40: bl       #0xf7ac0 ; CAIBattleState::ProcessAbilityTriggerdAfflictions(eAbilityType, int, CCharacterMin*)
+000f7d44: b        #0xf7bc8 ; 
+000f7d48: mov      r0, r4
+000f7d4c: mov      r1, #1
+000f7d50: add      r3, r7, #0x26c
+000f7d54: str      r3, [sp, #0xc]
+000f7d58: bl       #0xda7b0 ; CAbility_Base::EnableRangeCheck(eAbilityTargetRangeType)
+000f7d5c: sub      sb, r7, #4
+000f7d60: str      r0, [sp, #8]
+000f7d64: ldrsh    sl, [sb, #0x68]
+000f7d68: cmp      sl, #0
+000f7d6c: ble      #0xf7dd0
+000f7d70: ldr      r3, [sp, #8]
+000f7d74: cmp      r3, #0
+000f7d78: moveq    r6, r3
+000f7d7c: moveq    fp, sb
+000f7d80: beq      #0xf7d90
+000f7d84: b        #0xf7dec ; 
+000f7d88: cmp      sl, r6
+000f7d8c: beq      #0xf7dd0
+000f7d90: ldr      r5, [fp, #4]!
+000f7d94: mov      r0, r4
+000f7d98: add      r6, r6, #1
+000f7d9c: cmp      r5, #0
+000f7da0: mov      r1, r5
+000f7da4: beq      #0xf7d88
+000f7da8: ldr      r3, [r4]
+000f7dac: ldr      r3, [r3, #0x18]
+000f7db0: blx      r3
+000f7db4: cmp      r0, #0
+000f7db8: beq      #0xf7d88
+000f7dbc: mov      r1, r5
+000f7dc0: mov      r0, r4
+000f7dc4: bl       #0xda764 ; CAbility_Base::AddAISecondaryTarget(CCharacterMin*)
+000f7dc8: cmp      sl, r6
+000f7dcc: bne      #0xf7d90
+000f7dd0: ldr      r3, [sp, #0xc]
+000f7dd4: add      sb, sb, #0x68
+000f7dd8: cmp      sb, r3
+000f7ddc: bne      #0xf7d64
+000f7de0: mov      r0, r4
+000f7de4: bl       #0xda8a4 ; CAbility_Base::DisableRangeCheck()
+000f7de8: b        #0xf7bb4 ; 
+000f7dec: mov      fp, sb
+000f7df0: mov      r5, #0
+000f7df4: str      sb, [sp, #0x18]
+000f7df8: ldr      r6, [fp, #4]!
+000f7dfc: mov      r0, r7
+000f7e00: add      r5, r5, #1
+000f7e04: cmp      r6, #0
+000f7e08: beq      #0xf7e38
+000f7e0c: bl       #0xf7ab0 ; CAIBattleState::GetMap()
+000f7e10: mov      r1, r6
+000f7e14: mov      sb, r0
+000f7e18: mov      r0, r8
+000f7e1c: bl       #0x1323c8 ; CCharacterMin::GetHexLoc()
+000f7e20: mov      r0, sb
+000f7e24: mov      r1, r8
+000f7e28: movw     r2, #0xffff
+000f7e2c: bl       #0x1607cc ; CMap::GetMarker(tHEXLOC, unsigned int)
+000f7e30: cmp      r0, #0
+000f7e34: bne      #0xf7e58
+000f7e38: cmp      sl, r5
+000f7e3c: bne      #0xf7df8
+000f7e40: ldr      sb, [sp, #0x18]
+000f7e44: ldr      r3, [sp, #0xc]
+000f7e48: add      sb, sb, #0x68
+000f7e4c: cmp      sb, r3
+000f7e50: bne      #0xf7d64
+000f7e54: b        #0xf7de0 ; 
+000f7e58: ldr      r3, [r4]
+000f7e5c: mov      r0, r4
+000f7e60: mov      r1, r6
+000f7e64: ldr      r3, [r3, #0x18]
+000f7e68: blx      r3
+000f7e6c: cmp      r0, #0
+000f7e70: beq      #0xf7e38
+000f7e74: mov      r1, r6
+000f7e78: mov      r0, r4
+000f7e7c: bl       #0xda764 ; CAbility_Base::AddAISecondaryTarget(CCharacterMin*)
+000f7e80: b        #0xf7e38 ; 
+000f7e84: eorseq   r2, r4, ip, ror #14
+
+
+
+### CTileItem_Fire::TriggerAction(tITEMACTION&) 0x20b878 220
+0020b878: push     {r4, r5, r6, lr}
+0020b87c: mov      r4, r1
+0020b880: ldr      r3, [r1]
+0020b884: sub      sp, sp, #8
+0020b888: mov      r5, r0
+0020b88c: sub      r3, r3, #1
+0020b890: cmp      r3, #3
+0020b894: addls    pc, pc, r3, lsl #2
+0020b898: b        #0x20b914 ; 
+0020b89c: b        #0x20b8ac ; 
+0020b8a0: b        #0x20b8ac ; 
+0020b8a4: b        #0x20b91c ; 
+0020b8a8: b        #0x20b91c ; 
+0020b8ac: ldr      r0, [r1, #4]
+0020b8b0: mov      r1, #0xc
+0020b8b4: bl       #0x131724 ; CCharacterMin::GetHasAffliction(eAfflictionCode) const
+0020b8b8: subs     r6, r0, #0
+0020b8bc: bne      #0x20b934
+0020b8c0: ldr      r3, [pc, #0x84]
+0020b8c4: ldr      r0, [r4, #4]
+0020b8c8: ldr      r3, [pc, r3]
+0020b8cc: ldr      r5, [r3]
+0020b8d0: bl       #0x132a50 ; CCharacterMin::GetRaceType()
+0020b8d4: mov      r1, r0
+0020b8d8: mov      r0, r5
+0020b8dc: bl       #0x103050 ; CArchetypeMgr::GetRaceBonus(eRaceType)
+0020b8e0: cmp      r0, #0xe
+0020b8e4: beq      #0x20b91c
+0020b8e8: ldr      r1, [pc, #0x60]
+0020b8ec: ldr      r0, [r4, #4]
+0020b8f0: ldr      r1, [pc, r1]
+0020b8f4: ldr      r2, [r4, #0x20]
+0020b8f8: ldr      r3, [r4, #0x24]
+0020b8fc: ldr      r1, [r1, #0x174]
+0020b900: str      r6, [sp]
+0020b904: str      r6, [sp, #4]
+0020b908: bl       #0x134028 ; CCharacterMin::DealDamageTo(int, CRuneDaisList*, CAIBattleState*, int*, int*)
+0020b90c: cmp      r0, #0
+0020b910: beq      #0x20b91c
+0020b914: add      sp, sp, #8
+0020b918: pop      {r4, r5, r6, pc}
+0020b91c: ldr      r0, [r4, #4]
+0020b920: mov      r1, #0xc
+0020b924: ldr      r2, [r4, #0x20]
+0020b928: add      sp, sp, #8
+0020b92c: pop      {r4, r5, r6, lr}
+0020b930: b        #0x134e40 ; CCharacterMin::GiveAffliction(eBuffCategory, CRuneDaisList*)
+0020b934: ldr      r3, [r5]
+0020b938: mov      r0, r5
+0020b93c: ldr      r3, [r3, #0x3c]
+0020b940: blx      r3
+0020b944: add      sp, sp, #8
+0020b948: pop      {r4, r5, r6, pc}
+0020b94c: eoreq    lr, r2, r8, asr #19

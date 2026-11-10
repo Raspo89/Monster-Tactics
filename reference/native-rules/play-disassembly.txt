@@ -1,0 +1,525 @@
+
+### CBattle::PlayCardFromHand(CCard*, tPOINT&, int) 0x119a9c 2040
+00119a9c: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+00119aa0: mov      r5, r1
+00119aa4: ldr      r1, [r0, #0x20]
+00119aa8: mov      r7, r2
+00119aac: ldr      r4, [pc, #0x7c8]
+00119ab0: sub      sp, sp, #0x74
+00119ab4: sub      r2, r1, #0x1e
+00119ab8: mov      fp, r0
+00119abc: cmp      r2, #0xa
+00119ac0: add      r4, pc, r4
+00119ac4: mov      r6, r3
+00119ac8: bhi      #0x119b20
+00119acc: mov      r1, #1
+00119ad0: movw     r3, #0x405
+00119ad4: lsl      r2, r1, r2
+00119ad8: and      r3, r2, r3
+00119adc: cmp      r3, #0
+00119ae0: beq      #0x119b20
+00119ae4: cmp      r6, #0
+00119ae8: mov      r3, #0
+00119aec: mov      r2, #0
+00119af0: str      r3, [sp, #0x20]
+00119af4: movt     r2, #0x4040
+00119af8: str      r3, [sp, #0x28]
+00119afc: str      r2, [sp, #0x24]
+00119b00: bne      #0x119bc8
+00119b04: mov      r0, r5
+00119b08: bl       #0x12556c ; CCard::GetCardType()
+00119b0c: cmp      r0, #3
+00119b10: beq      #0x11a0b4
+00119b14: ldr      r3, [fp, #0x68]
+00119b18: cmp      r3, #0
+00119b1c: bne      #0x119b2c
+00119b20: mov      r0, #0
+00119b24: add      sp, sp, #0x74
+00119b28: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+00119b2c: add      r8, sp, #0x34
+00119b30: ldr      sl, [fp, #4]
+00119b34: add      sb, fp, #0x64
+00119b38: mov      r0, r8
+00119b3c: mov      r1, sb
+00119b40: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00119b44: mov      r0, sl
+00119b48: mov      r1, r8
+00119b4c: bl       #0x15fc54 ; CMap::HexCoordsAreValid(tHEXLOC) const
+00119b50: cmp      r0, #0
+00119b54: beq      #0x119b20
+00119b58: mov      r1, sb
+00119b5c: ldr      sb, [fp, #4]
+00119b60: mov      r0, r8
+00119b64: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00119b68: mov      r1, r8
+00119b6c: mov      r0, sb
+00119b70: bl       #0x15ffa4 ; CMap::GetMapCellRef(tHEXLOC)
+00119b74: ldr      r3, [r0]
+00119b78: cmp      r3, #0
+00119b7c: beq      #0x119b20
+00119b80: mov      r0, fp
+00119b84: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119b88: add      r0, r0, #0x10
+00119b8c: ldr      r0, [fp, r0, lsl #2]
+00119b90: bl       #0x207428 ; CTeam::DisallowMulliganButton()
+00119b94: mov      r0, r5
+00119b98: add      r1, fp, #0x238
+00119b9c: bl       #0x125580 ; CCard::GetCostToCast(CRuneDaisList*)
+00119ba0: mov      sb, r0
+00119ba4: mov      r0, r5
+00119ba8: bl       #0x12556c ; CCard::GetCardType()
+00119bac: cmp      r0, #3
+00119bb0: addls    pc, pc, r0, lsl #2
+00119bb4: b        #0x119b20 ; 
+00119bb8: b        #0x119fcc ; 
+00119bbc: b        #0x119ea0 ; 
+00119bc0: b        #0x119ce0 ; 
+00119bc4: b        #0x119c28 ; 
+00119bc8: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119bcc: add      r8, sp, #0x34
+00119bd0: add      r0, r0, #0x10
+00119bd4: ldr      r0, [fp, r0, lsl #2]
+00119bd8: bl       #0x206cdc ; CTeam::GetLevelHero()
+00119bdc: ldr      r1, [pc, #0x69c]
+00119be0: mov      r2, #0
+00119be4: add      r1, pc, r1
+00119be8: mov      sb, r0
+00119bec: bl       #0x12df0c ; CCharacter::StartAnimation(char const*, int)
+00119bf0: ldr      r2, [pc, #0x68c]
+00119bf4: mov      r1, sb
+00119bf8: mov      r0, r8
+00119bfc: add      r2, pc, r2
+00119c00: bl       #0x129de4 ; CCharacter::GetBonePos(char const*)
+00119c04: ldm      r8, {r0, r1, r2, r3}
+00119c08: add      r8, sp, #0x20
+00119c0c: stm      r8, {r0, r1, r2, r3}
+00119c10: mov      r0, sb
+00119c14: bl       #0x129ea0 ; CCharacter::GetRoot()
+00119c18: mov      r1, r0
+00119c1c: mov      r0, r8
+00119c20: bl       #0x221b98 ; RZVector3::operator*=(RZMatrix34 const&)
+00119c24: b        #0x119b04 ; 
+00119c28: mov      r0, r5
+00119c2c: bl       #0x125530 ; CCard::GetDesc()
+00119c30: mov      r1, #1
+00119c34: ldr      r3, [r0, #4]
+00119c38: ldr      r0, [fp, #0x88]
+00119c3c: str      r3, [fp, #0x70]
+00119c40: bl       #0x1d0b7c ; CRiserMgr::QueueNewRisers(int)
+00119c44: ldr      r3, [pc, #0x63c]
+00119c48: mov      r1, #3
+00119c4c: mov      r2, #0
+00119c50: ldr      r3, [r4, r3]
+00119c54: ldr      r0, [r3]
+00119c58: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+00119c5c: mov      r0, fp
+00119c60: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119c64: add      r0, r0, #0x10
+00119c68: ldr      r0, [fp, r0, lsl #2]
+00119c6c: bl       #0x207824 ; CTeam::GetIsAI() const
+00119c70: cmp      r0, #0
+00119c74: bne      #0x11a0e4
+00119c78: ldr      r0, [fp, #0x37c]
+00119c7c: cmp      r0, #0
+00119c80: beq      #0x119c90
+00119c84: bl       #0x11df68 ; CBattleRecorder::GetState() const
+00119c88: cmp      r0, #2
+00119c8c: beq      #0x11a0e4
+00119c90: mov      r0, fp
+00119c94: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119c98: add      r0, r0, #0x10
+00119c9c: ldr      r0, [fp, r0, lsl #2]
+00119ca0: bl       #0x207824 ; CTeam::GetIsAI() const
+00119ca4: subs     r2, r0, #0
+00119ca8: mov      r0, fp
+00119cac: beq      #0x11a168
+00119cb0: mov      r1, #9
+00119cb4: bl       #0x116b8c ; CBattle::SetState(eBattleState)
+00119cb8: ldr      r4, [fp, #0x98]
+00119cbc: cmp      r4, #3
+00119cc0: beq      #0x11a0f8
+00119cc4: ldr      r0, [fp, #0x90]
+00119cc8: mov      r1, sb
+00119ccc: bl       #0x163cd8 ; CMojoMgr::ConsumeMojo(int)
+00119cd0: mov      r3, #1
+00119cd4: mov      r0, r3
+00119cd8: str      r3, [fp, #0x598]
+00119cdc: b        #0x119b24 ; 
+00119ce0: mov      r0, fp
+00119ce4: bl       #0x111d4c ; CBattle::GetAreTooManyMonsters()
+00119ce8: subs     r6, r0, #0
+00119cec: bne      #0x119cb8
+00119cf0: ldr      r0, [fp, #0x88]
+00119cf4: mov      r1, #1
+00119cf8: bl       #0x1d0b7c ; CRiserMgr::QueueNewRisers(int)
+00119cfc: ldr      r3, [pc, #0x584]
+00119d00: mov      r2, r6
+00119d04: mov      r1, r6
+00119d08: add      r8, sp, #0x34
+00119d0c: ldr      r3, [r4, r3]
+00119d10: ldr      r0, [r3]
+00119d14: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+00119d18: mov      r1, r5
+00119d1c: add      r0, sp, #0x18
+00119d20: bl       #0x163f00 ; CMonster::GetMonsterIndex()
+00119d24: add      r0, sp, #0x54
+00119d28: bl       #0x15ae20 ; tHEXLOC::tHEXLOC()
+00119d2c: mov      r1, r6
+00119d30: mov      r0, r8
+00119d34: mov      r2, #0x3a
+00119d38: strb     r6, [sp, #0x58]
+00119d3c: strb     r6, [sp, #0x59]
+00119d40: strb     r6, [sp, #0x5a]
+00119d44: bl       #0x258668 ; RZMemory::Fill(void*, unsigned char, unsigned int)
+00119d48: ldrb     lr, [sp, #0x18]
+00119d4c: mov      r0, r5
+00119d50: ldrb     r2, [sp, #0x1a]
+00119d54: mov      r3, #4
+00119d58: ldrb     r1, [sp, #0x19]
+00119d5c: strb     lr, [sp, #0x58]
+00119d60: strb     r2, [sp, #0x5a]
+00119d64: strb     r1, [sp, #0x59]
+00119d68: strb     r3, [sp, #0x6a]
+00119d6c: bl       #0x125530 ; CCard::GetDesc()
+00119d70: ldrh     r3, [r0, #0x10]
+00119d74: mov      r0, r5
+00119d78: lsr      r3, r3, #4
+00119d7c: strh     r3, [sp, #0x6b]
+00119d80: bl       #0x125530 ; CCard::GetDesc()
+00119d84: add      r1, sp, #0x58
+00119d88: ldrb     r3, [r0, #0x13]
+00119d8c: mov      r0, fp
+00119d90: strb     r3, [sp, #0x6d]
+00119d94: bl       #0x110ee4 ; CBattle::NotifyMonsterJustSummoned(tMONSTERINDEX const&)
+00119d98: mov      r0, fp
+00119d9c: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119da0: mov      r4, r0
+00119da4: mov      r0, fp
+00119da8: bl       #0x10b6d4 ; CBattle::GetMyTeam() const
+00119dac: cmp      r4, r0
+00119db0: beq      #0x11a208
+00119db4: mov      r0, fp
+00119db8: add      r4, sp, #0x1c
+00119dbc: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119dc0: mov      r1, #0
+00119dc4: add      r7, fp, #0x64
+00119dc8: add      r0, r0, #0x10
+00119dcc: ldr      r0, [fp, r0, lsl #2]
+00119dd0: bl       #0x206ce4 ; CTeam::GetCharacter(int)
+00119dd4: mov      r1, r7
+00119dd8: mov      r6, r0
+00119ddc: mov      r0, r4
+00119de0: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00119de4: mov      r0, r6
+00119de8: mov      r1, r4
+00119dec: bl       #0x12ef20 ; CCharacter::FacePosition(tHEXLOC)
+00119df0: ldr      r1, [pc, #0x494]
+00119df4: mov      r2, #0
+00119df8: mov      r0, r6
+00119dfc: add      r1, pc, r1
+00119e00: bl       #0x12df0c ; CCharacter::StartAnimation(char const*, int)
+00119e04: mov      r0, fp
+00119e08: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119e0c: mov      r1, r7
+00119e10: mov      r6, r0
+00119e14: mov      r0, r4
+00119e18: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00119e1c: mov      r0, fp
+00119e20: mov      r1, r6
+00119e24: mov      r2, r4
+00119e28: mov      r3, r8
+00119e2c: bl       #0x10c588 ; CBattle::CreateAndPlaceCharacter(eTeam, tHEXLOC, tBATTLEPARAMS&)
+00119e30: str      r0, [fp, #0x7c]
+00119e34: mov      r0, fp
+00119e38: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119e3c: add      r0, r0, #0x10
+00119e40: ldr      r0, [fp, r0, lsl #2]
+00119e44: bl       #0x207824 ; CTeam::GetIsAI() const
+00119e48: cmp      r0, #0
+00119e4c: bne      #0x11a180
+00119e50: ldr      r0, [fp, #0x37c]
+00119e54: cmp      r0, #0
+00119e58: beq      #0x119e68
+00119e5c: bl       #0x11df68 ; CBattleRecorder::GetState() const
+00119e60: cmp      r0, #2
+00119e64: beq      #0x11a180
+00119e68: ldr      r0, [fp, #0x7c]
+00119e6c: cmp      r0, #0
+00119e70: beq      #0x119b24
+00119e74: mov      r0, fp
+00119e78: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119e7c: add      r0, r0, #0x10
+00119e80: ldr      r0, [fp, r0, lsl #2]
+00119e84: bl       #0x207824 ; CTeam::GetIsAI() const
+00119e88: subs     r2, r0, #0
+00119e8c: mov      r0, fp
+00119e90: beq      #0x11a1b4
+00119e94: mov      r1, #0x15
+00119e98: bl       #0x116b8c ; CBattle::SetState(eBattleState)
+00119e9c: b        #0x119cb8 ; 
+00119ea0: ldr      r3, [fp, #0x1a8]
+00119ea4: mov      r0, fp
+00119ea8: add      r8, sp, #0x34
+00119eac: add      sl, fp, #0x64
+00119eb0: str      r3, [sp, #0xc]
+00119eb4: bl       #0x10e158 ; CBattle::GetMap()
+00119eb8: mov      r1, sl
+00119ebc: mov      r2, r0
+00119ec0: mov      r0, r8
+00119ec4: str      r2, [sp, #0x10]
+00119ec8: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00119ecc: ldr      r3, [sp, #0xc]
+00119ed0: ldr      r2, [sp, #0x10]
+00119ed4: mov      r0, r3
+00119ed8: mov      r1, r2
+00119edc: mov      r2, r8
+00119ee0: bl       #0x209fd8 ; CTileItemMgr::GetItemsAt(CMap*, tHEXLOC) const
+00119ee4: str      r0, [sp, #0x14]
+00119ee8: mov      r1, r0
+00119eec: ldr      r0, [fp, #0x1a8]
+00119ef0: bl       #0x20ad38 ; CTileItemMgr::ItemsCanHoldCard(unsigned int) const
+00119ef4: cmp      r0, #0
+00119ef8: beq      #0x119b20
+00119efc: ldr      r0, [fp, #0x88]
+00119f00: mov      r1, #1
+00119f04: bl       #0x1d0b7c ; CRiserMgr::QueueNewRisers(int)
+00119f08: cmp      r6, #0
+00119f0c: mov      r0, r5
+00119f10: ldr      r6, [fp, #0x1a8]
+00119f14: beq      #0x11a194
+00119f18: bl       #0x125530 ; CCard::GetDesc()
+00119f1c: add      lr, sp, #0x20
+00119f20: ldr      r1, [sp, #0x14]
+00119f24: mov      r3, #0xfc00000
+00119f28: str      lr, [sp]
+00119f2c: mov      r2, r0
+00119f30: mov      r0, r6
+00119f34: bl       #0x20aa58 ; CTileItemMgr::AddCardToTileItem(unsigned int, tCARDDESC&, eTileItemType, RZVector3&)
+00119f38: mov      r0, r5
+00119f3c: bl       #0x125530 ; CCard::GetDesc()
+00119f40: ldr      r3, [pc, #0x340]
+00119f44: mov      r1, #1
+00119f48: mov      r2, #0
+00119f4c: ldr      r0, [r0, #4]
+00119f50: str      r0, [fp, #0x74]
+00119f54: ldr      r3, [r4, r3]
+00119f58: ldr      r0, [r3]
+00119f5c: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+00119f60: mov      r0, fp
+00119f64: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119f68: mov      r4, r0
+00119f6c: mov      r0, fp
+00119f70: bl       #0x10b6d4 ; CBattle::GetMyTeam() const
+00119f74: cmp      r4, r0
+00119f78: beq      #0x11a1cc
+00119f7c: mov      r0, fp
+00119f80: bl       #0x10e6a0 ; CBattle::GetGameCam()
+00119f84: mov      r1, sl
+00119f88: mov      r4, r0
+00119f8c: mov      r0, r8
+00119f90: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00119f94: mov      r1, r8
+00119f98: mov      r0, r4
+00119f9c: bl       #0x1531ac ; CGameCam::ScrollToMap(tHEXLOC)
+00119fa0: mov      r0, fp
+00119fa4: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+00119fa8: add      r0, r0, #0x10
+00119fac: ldr      r0, [fp, r0, lsl #2]
+00119fb0: bl       #0x207824 ; CTeam::GetIsAI() const
+00119fb4: cmp      r0, #0
+00119fb8: mov      r0, fp
+00119fbc: movne    r1, #0xd
+00119fc0: moveq    r1, #0xc
+00119fc4: bl       #0x116b8c ; CBattle::SetState(eBattleState)
+00119fc8: b        #0x119cb8 ; 
+00119fcc: add      r8, sp, #0x34
+00119fd0: add      r1, fp, #0x64
+00119fd4: mov      r0, r8
+00119fd8: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+00119fdc: mov      r0, fp
+00119fe0: mov      r1, r8
+00119fe4: bl       #0x10d8c8 ; CBattle::GetCharAt(tHEXLOC)
+00119fe8: subs     sl, r0, #0
+00119fec: beq      #0x119b20
+00119ff0: bl       #0x131c44 ; CCharacterMin::GetTeam()
+00119ff4: mov      r1, r0
+00119ff8: mov      r0, fp
+00119ffc: bl       #0x112f10 ; CBattle::GetSide(eTeam)
+0011a000: mov      r8, r0
+0011a004: mov      r0, fp
+0011a008: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+0011a00c: mov      r1, r0
+0011a010: mov      r0, fp
+0011a014: bl       #0x112f10 ; CBattle::GetSide(eTeam)
+0011a018: cmp      r8, r0
+0011a01c: bne      #0x119b20
+0011a020: mov      r0, sl
+0011a024: bl       #0x12efc8 ; CCharacter::GetGreyState()
+0011a028: subs     r8, r0, #0
+0011a02c: bne      #0x119b20
+0011a030: mov      r0, sl
+0011a034: bl       #0x1333bc ; CCharacterMin::CanBeEquiped()
+0011a038: cmp      r0, #0
+0011a03c: beq      #0x119b20
+0011a040: ldr      r0, [fp, #0x88]
+0011a044: mov      r1, #1
+0011a048: bl       #0x1d0b7c ; CRiserMgr::QueueNewRisers(int)
+0011a04c: ldr      r3, [pc, #0x234]
+0011a050: mov      r2, r8
+0011a054: mov      r1, #2
+0011a058: ldr      r3, [r4, r3]
+0011a05c: ldr      r0, [r3]
+0011a060: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+0011a064: cmp      r6, #0
+0011a068: mov      r0, sl
+0011a06c: beq      #0x11a254
+0011a070: mov      r1, r5
+0011a074: add      r2, sp, #0x20
+0011a078: bl       #0x12e6b0 ; CCharacter::ApplyCard(CCard*, RZVector3&)
+0011a07c: cmp      r0, #0
+0011a080: beq      #0x119b20
+0011a084: str      r0, [fp, #0x78]
+0011a088: mov      r0, fp
+0011a08c: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+0011a090: add      r0, r0, #0x10
+0011a094: ldr      r0, [fp, r0, lsl #2]
+0011a098: bl       #0x207824 ; CTeam::GetIsAI() const
+0011a09c: subs     r2, r0, #0
+0011a0a0: mov      r0, fp
+0011a0a4: beq      #0x11a264
+0011a0a8: mov      r1, #0x11
+0011a0ac: bl       #0x116b8c ; CBattle::SetState(eBattleState)
+0011a0b0: b        #0x119cb8 ; 
+0011a0b4: ldr      r3, [pc, #0x1d4]
+0011a0b8: mov      r0, r5
+0011a0bc: ldr      r3, [r4, r3]
+0011a0c0: ldr      r8, [r3]
+0011a0c4: bl       #0x125530 ; CCard::GetDesc()
+0011a0c8: mov      r3, r0
+0011a0cc: mov      r0, r8
+0011a0d0: ldr      r1, [r3, #4]
+0011a0d4: bl       #0x1ee318 ; CSpellMgr::GetIsSpellTargetable(eSpell) const
+0011a0d8: cmp      r0, #0
+0011a0dc: bne      #0x119b14
+0011a0e0: b        #0x119b80 ; 
+0011a0e4: ldr      r0, [fp, #0x358]
+0011a0e8: mov      r1, r5
+0011a0ec: mov      r2, #0
+0011a0f0: bl       #0x15b5fc ; CHUDBoxMgr::NotifyPlayingACard(CCard*, int)
+0011a0f4: b        #0x119c90 ; 
+0011a0f8: ldr      r0, [fp, #0x37c]
+0011a0fc: cmp      r0, #0
+0011a100: beq      #0x119cc4
+0011a104: bl       #0x11df68 ; CBattleRecorder::GetState() const
+0011a108: cmp      r0, #1
+0011a10c: bne      #0x119cc4
+0011a110: add      r0, sp, #0x48
+0011a114: add      r6, sp, #0x34
+0011a118: bl       #0x15ae20 ; tHEXLOC::tHEXLOC()
+0011a11c: mov      r0, r5
+0011a120: bl       #0x125530 ; CCard::GetDesc()
+0011a124: mov      lr, r6
+0011a128: ldr      r7, [fp, #0x64]
+0011a12c: mov      r5, r0
+0011a130: ldr      r0, [r0]
+0011a134: ldr      r1, [r5, #4]
+0011a138: ldr      r2, [r5, #8]
+0011a13c: ldr      r3, [r5, #0xc]
+0011a140: stm      lr!, {r0, r1, r2, r3}
+0011a144: mov      r2, r6
+0011a148: ldr      r0, [r5, #0x10]
+0011a14c: mov      r1, r4
+0011a150: mov      r3, #0x18
+0011a154: str      r7, [sp, #0x48]
+0011a158: str      r0, [lr]
+0011a15c: ldr      r0, [fp, #0x37c]
+0011a160: bl       #0x11e1d8 ; CBattleRecorder::Serialise(CBattleRecorder::eTaskType, void const*, int)
+0011a164: b        #0x119cc4 ; 
+0011a168: mov      r1, #1
+0011a16c: bl       #0x1125e0 ; CBattle::UpdateMonstersAndTeams(int, int)
+0011a170: mov      r0, fp
+0011a174: mov      r1, #8
+0011a178: bl       #0x116b8c ; CBattle::SetState(eBattleState)
+0011a17c: b        #0x119cb8 ; 
+0011a180: ldr      r0, [fp, #0x358]
+0011a184: mov      r1, r5
+0011a188: mov      r2, #0
+0011a18c: bl       #0x15b5fc ; CHUDBoxMgr::NotifyPlayingACard(CCard*, int)
+0011a190: b        #0x119e68 ; 
+0011a194: bl       #0x125530 ; CCard::GetDesc()
+0011a198: str      r7, [sp]
+0011a19c: ldr      r1, [sp, #0x14]
+0011a1a0: mov      r3, #0xfc00000
+0011a1a4: mov      r2, r0
+0011a1a8: mov      r0, r6
+0011a1ac: bl       #0x20a9ac ; CTileItemMgr::AddCardToTileItem(unsigned int, tCARDDESC&, eTileItemType, tPOINT&)
+0011a1b0: b        #0x119f38 ; 
+0011a1b4: mov      r1, #1
+0011a1b8: bl       #0x1125e0 ; CBattle::UpdateMonstersAndTeams(int, int)
+0011a1bc: mov      r0, fp
+0011a1c0: mov      r1, #0x14
+0011a1c4: bl       #0x116b8c ; CBattle::SetState(eBattleState)
+0011a1c8: b        #0x119cb8 ; 
+0011a1cc: mov      r0, fp
+0011a1d0: bl       #0x112cb0 ; CBattle::CameraWantsLeavingAlone()
+0011a1d4: cmp      r0, #0
+0011a1d8: bne      #0x119f7c
+0011a1dc: add      r4, fp, #0x5c0
+0011a1e0: mov      r3, #0x3f800000
+0011a1e4: mov      r0, fp
+0011a1e8: str      r3, [r4], #4
+0011a1ec: bl       #0x10e6a0 ; CBattle::GetGameCam()
+0011a1f0: mov      r1, r0
+0011a1f4: mov      r0, r8
+0011a1f8: bl       #0x153b48 ; CGameCam::GetPos()
+0011a1fc: ldm      r8, {r0, r1}
+0011a200: stm      r4, {r0, r1}
+0011a204: b        #0x119f7c ; 
+0011a208: mov      r0, fp
+0011a20c: bl       #0x10e958 ; CBattle::IsReplay() const
+0011a210: cmp      r0, #0
+0011a214: bne      #0x119db4
+0011a218: mov      r0, fp
+0011a21c: add      r4, sp, #0x1c
+0011a220: bl       #0x10b6cc ; CBattle::GetCurrentTeam() const
+0011a224: add      r1, fp, #0x64
+0011a228: mov      r6, r0
+0011a22c: mov      r0, r4
+0011a230: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0011a234: mov      r1, r6
+0011a238: mov      r2, r4
+0011a23c: str      r7, [sp]
+0011a240: mov      r3, r8
+0011a244: mov      r0, fp
+0011a248: bl       #0x10c6d8 ; CBattle::CreateAndDropCharacter(eTeam, tHEXLOC, tBATTLEPARAMS&, tPOINT&)
+0011a24c: str      r0, [fp, #0x7c]
+0011a250: b        #0x119e34 ; 
+0011a254: mov      r2, r7
+0011a258: mov      r1, r5
+0011a25c: bl       #0x12e690 ; CCharacter::ApplyCard(CCard*, tPOINT&)
+0011a260: b        #0x11a07c ; 
+0011a264: mov      r1, #1
+0011a268: bl       #0x1125e0 ; CBattle::UpdateMonstersAndTeams(int, int)
+0011a26c: mov      r0, fp
+0011a270: mov      r1, #0x10
+0011a274: bl       #0x116b8c ; CBattle::SetState(eBattleState)
+0011a278: b        #0x119cb8 ; 
+0011a27c: eorseq   r0, r2, r0, lsr #3
+0011a280: eoreq    lr, r2, r0, asr sb
+0011a284: eoreq    lr, r2, r0, asr #18
+0011a288: andeq    r0, r0, r0, ror r7
+0011a28c: eoreq    lr, r2, r0, ror #19
+0011a290: andeq    r1, r0, ip, lsl #6
+
+### CBattle::PlayCardFromHand(CCard*, tPOINT&, tHEXLOC const&, int) 0x11a2bc 44
+0011a2bc: mov      ip, r0
+0011a2c0: mov      r0, #1
+0011a2c4: str      r4, [sp, #-4]!
+0011a2c8: str      r0, [ip, #0x68]
+0011a2cc: ldr      r0, [r3]
+0011a2d0: ldr      r4, [sp, #4]
+0011a2d4: str      r0, [ip, #0x64]
+0011a2d8: mov      r0, ip
+0011a2dc: mov      r3, r4
+0011a2e0: pop      {r4}
+0011a2e4: b        #0x119a9c ; CBattle::PlayCardFromHand(CCard*, tPOINT&, int)

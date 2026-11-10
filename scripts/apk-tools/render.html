@@ -1,0 +1,50 @@
+<!doctype html><html><body style="margin:0;background:#888">
+<script type="importmap">{"imports":{"three":"/game/SOURCE/node_modules/three/build/three.module.js"}}</script>
+<script type="module">
+import * as T from 'three';
+const BASE='/game/SOURCE/public/original3d/';
+
+const canvas=document.createElement('canvas');canvas.width=256;canvas.height=300;document.body.append(canvas);
+const renderer=new T.WebGLRenderer({canvas,alpha:true,antialias:true,preserveDrawingBuffer:true});
+renderer.setPixelRatio(1);renderer.setSize(256,300,false);renderer.outputColorSpace=T.SRGBColorSpace;renderer.setClearColor(0,0);
+const manifest=await (await fetch(BASE+'model-manifest.json')).json();
+const anim=await (await fetch(BASE+'animations.json')).json();
+const cache=new Map();
+async function json(p){if(!cache.has(p))cache.set(p,await (await fetch(BASE+p)).json());return cache.get(p);}
+const loader=new T.TextureLoader();
+function tex(p){return new Promise(r=>loader.load(BASE+p,t=>{t.colorSpace=T.SRGBColorSpace;t.flipY=true;r(t);},undefined,()=>r(null)));}
+window.render=async function(o){const W=o.w||256,H=o.h||300;renderer.setSize(W,H,false);
+ const entry=manifest[o.model],raw=await json(entry.json),dir=entry.json.slice(0,entry.json.lastIndexOf('/')+1);
+ const scene=new T.Scene();
+ scene.add(new T.HemisphereLight(0xffffff,o.ground??0x6e5372,o.hemi??2));if(o.amb)scene.add(new T.AmbientLight(0xffffff,o.amb));
+ const sun=new T.DirectionalLight(0xffefd8,o.sun??2.1);sun.position.set(...(o.sunPos||[-300,800,1200]));scene.add(sun);
+ const root=new T.Group(),local=new T.Group();root.add(local);scene.add(root);
+ const bones=raw.bones.map(()=>new T.Bone());for(const b of bones)local.add(b);
+ const skeleton=new T.Skeleton(bones,bones.map(()=>new T.Matrix4()));
+ const skinFile=o.uv?null:(entry.skins.find(s=>parseInt(s)===o.skin));
+ const map=o.uv?null:await tex(dir+(skinFile||raw.groups[0].texture));
+ const bounds=new T.Box3();
+ for(const g of raw.groups){
+  const geo=new T.BufferGeometry();geo.setAttribute('position',new T.Float32BufferAttribute(g.positions,3));geo.setAttribute('normal',new T.Float32BufferAttribute(g.normals,3));geo.setAttribute('uv',new T.Float32BufferAttribute(g.uv,2));geo.setIndex(g.indices);
+  const M=o.basic?T.MeshBasicMaterial:T.MeshStandardMaterial;const mat=o.uv?new T.ShaderMaterial({side:T.DoubleSide,vertexShader:`#include <common>\n#include <skinning_pars_vertex>\nvarying vec2 vUv;void main(){vUv=uv;\n#include <skinbase_vertex>\n#include <begin_vertex>\n#include <skinning_vertex>\n#include <project_vertex>\n}`,fragmentShader:`varying vec2 vUv;void main(){gl_FragColor=vec4(vUv.x,vUv.y,1.0,1.0);}`}):new M({map:/^\d+\.(png|webp)$/.test(g.texture)?map:await tex(dir+g.texture),side:T.DoubleSide,transparent:true,alphaTest:.35,...(o.basic?{}:{roughness:.9,metalness:0})});
+  let mesh;
+  if(g.skinWeights.length&&bones.length){geo.setAttribute('skinIndex',new T.Uint16BufferAttribute(g.skinIndices.map(i=>g.bonePalette[i]??0),4));geo.setAttribute('skinWeight',new T.Float32BufferAttribute(g.skinWeights,4));mesh=new T.SkinnedMesh(geo,mat);mesh.bind(skeleton,new T.Matrix4());mesh.normalizeSkinWeights();}else mesh=new T.Mesh(geo,mat);
+  mesh.frustumCulled=false;local.add(mesh);
+ }
+ const idx=raw.bones.map(b=>anim.boneNames.indexOf(b.name));const clip=anim.clips[o.clip||'idle'];const fr=clip.frames[o.frame||0];
+ for(let i=0;i<bones.length;i++){const v=(o.bind?null:fr[idx[i]])||raw.bones[i].frames[0]||[0,0,0,30000,0,0,0];bones[i].position.set(v[4]/1e4,v[5]/1e4,v[6]/1e4);bones[i].quaternion.set(v[0]/3e4,v[1]/3e4,v[2]/3e4,v[3]/3e4).normalize();}
+ root.updateMatrixWorld(true);
+ // bounds from skinned vertices
+ for(const m of local.children)if(m.isMesh){const p=m.geometry.attributes.position,v=new T.Vector3();for(let i=0;i<p.count;i++){m.isSkinnedMesh?m.getVertexPosition(i,v):v.fromBufferAttribute(p,i);v.applyMatrix4(m.matrixWorld);bounds.expandByPoint(v);}}
+ const c=bounds.getCenter(new T.Vector3()),size=bounds.getSize(new T.Vector3()),R=size.length()/2;
+ root.rotation.y=(o.yaw||0)*Math.PI/180;root.updateMatrixWorld(true);
+ const cam=new T.OrthographicCamera(-R,R,R*H/W,-R*H/W,-100*R,100*R);
+ const pitch=(o.pitch||0)*Math.PI/180;cam.position.set(0,Math.sin(pitch)*10*R,Math.cos(pitch)*10*R);cam.lookAt(0,0,0);
+ const wc=c.clone().applyEuler(root.rotation);cam.position.add(wc);cam.lookAt(wc);cam.updateMatrixWorld();
+ renderer.render(scene,cam);
+ const url=canvas.toDataURL('image/png');
+ scene.traverse(x=>{x.geometry?.dispose();x.material?.dispose();});map?.dispose();
+ return url;
+};
+window.ready=true;
+</script></body></html>

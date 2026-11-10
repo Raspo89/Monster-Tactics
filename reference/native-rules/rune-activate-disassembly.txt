@@ -1,0 +1,151 @@
+
+### CTileItem_RuneDais::Activate(int) 0x20c404 196
+0020c404: push     {r4, r5, r6, lr}
+0020c408: sub      sp, sp, #0x18
+0020c40c: mov      r4, r0
+0020c410: bl       #0x20c018 ; CTileItem_RuneDais::GetDaisTeam()
+0020c414: ldr      r3, [pc, #0xa0]
+0020c418: ldr      r3, [pc, r3]
+0020c41c: mov      r5, r0
+0020c420: ldr      r0, [r3]
+0020c424: bl       #0x1cbc54 ; CPlayerMgr::GetPimped()
+0020c428: ldr      r3, [pc, #0x90]
+0020c42c: mov      r1, #1
+0020c430: ldr      r3, [pc, r3]
+0020c434: ldr      r0, [r3, r5, lsl #2]
+0020c438: add      r5, sp, #4
+0020c43c: bl       #0x22c2a8 ; RZContainer::Duplicate(int)
+0020c440: add      r1, r4, #8
+0020c444: mov      r3, #3
+0020c448: str      r3, [r4, #0x14]
+0020c44c: mov      r3, #1
+0020c450: str      r3, [r4, #0x38]
+0020c454: mov      r6, r0
+0020c458: str      r0, [r4, #0x34]
+0020c45c: mov      r0, r5
+0020c460: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0020c464: mov      r1, r5
+0020c468: add      r5, sp, #8
+0020c46c: mov      r0, r5
+0020c470: bl       #0x15fb04 ; CMap::GetHexesToWorldUnits3D(tHEXLOC)
+0020c474: ldm      r5, {r0, r1, r2, r3}
+0020c478: add      ip, r6, #0x30
+0020c47c: ldr      lr, [pc, #0x40]
+0020c480: ldr      lr, [pc, lr]
+0020c484: stm      ip, {r0, r1, r2, r3}
+0020c488: ldr      r0, [lr]
+0020c48c: ldr      r5, [r4, #0x34]
+0020c490: bl       #0x148978 ; CGame::GetBattle()
+0020c494: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020c498: mov      r1, r0
+0020c49c: mov      r0, r5
+0020c4a0: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020c4a4: mov      r0, r4
+0020c4a8: mov      r1, #0xa7
+0020c4ac: mov      r2, #0
+0020c4b0: bl       #0x20c2dc ; CTileItem_RuneDais::SetDaisParticles(eRZParticleType, int)
+0020c4b4: add      sp, sp, #0x18
+0020c4b8: pop      {r4, r5, r6, pc}
+0020c4bc: eoreq    lr, r2, r4, lsr sb
+
+### CTileItem_RuneDais::ProcessDroppingIn() 0x20c76c 420
+0020c76c: push     {r4, r5, r6, lr}
+0020c770: mov      r4, r0
+0020c774: ldr      r3, [r0, #0x78]
+0020c778: cmp      r3, #0
+0020c77c: popeq    {r4, r5, r6, pc}
+0020c780: ldr      r0, [r0, #0x3c]
+0020c784: mov      r1, #1
+0020c788: ldr      r5, [pc, #0x170]
+0020c78c: ldr      r3, [r0]
+0020c790: ldr      r3, [r3, #8]
+0020c794: blx      r3
+0020c798: ldr      r5, [pc, r5]
+0020c79c: mov      r1, #0
+0020c7a0: mov      r6, r0
+0020c7a4: ldr      r0, [r5]
+0020c7a8: bl       #0x295cb0 ; RZTimeMgr_Base::GetFramePeriodS(int)
+0020c7ac: ldr      r3, [pc, #0x150]
+0020c7b0: vldr     s14, [r4, #0x6c]
+0020c7b4: vldr     s11, [r4, #0x68]
+0020c7b8: add      r3, pc, r3
+0020c7bc: vldr     s13, [r3, #8]
+0020c7c0: vldr     s12, [r4, #0x70]
+0020c7c4: vldr     s6, [r3, #4]
+0020c7c8: vldr     s7, [r3, #0xc]
+0020c7cc: vldr     s9, [r4, #0x58]
+0020c7d0: vldr     s10, [r4, #0x60]
+0020c7d4: vldr     s8, [pc, #0x118]
+0020c7d8: vmov     s15, r0
+0020c7dc: vmla.f32 s14, s15, s13
+0020c7e0: vldr     s13, [r4, #0x5c]
+0020c7e4: vmla.f32 s11, s15, s6
+0020c7e8: vstr     s14, [r4, #0x6c]
+0020c7ec: vmla.f32 s12, s15, s7
+0020c7f0: vstr     s11, [r4, #0x68]
+0020c7f4: vmla.f32 s13, s15, s14
+0020c7f8: vstr     s12, [r4, #0x70]
+0020c7fc: vmla.f32 s9, s15, s11
+0020c800: vstr     s13, [r4, #0x5c]
+0020c804: vmla.f32 s10, s15, s12
+0020c808: vstr     s9, [r4, #0x58]
+0020c80c: vcmpe.f32 s13, s8
+0020c810: vstr     s10, [r4, #0x60]
+0020c814: vmrs     apsr_nzcv, fpscr
+0020c818: bhi      #0x20c828
+0020c81c: vcmpe.f32 s14, #0
+0020c820: vmrs     apsr_nzcv, fpscr
+0020c824: bls      #0x20c8b8
+0020c828: ldr      r3, [pc, #0xd8]
+0020c82c: add      r4, r4, #0x58
+0020c830: ldr      r3, [pc, r3]
+0020c834: ldr      r0, [r3]
+0020c838: bl       #0x148978 ; CGame::GetBattle()
+0020c83c: bl       #0x10d4bc ; CBattle::GetWorldRoot()
+0020c840: mov      r1, r0
+0020c844: mov      r0, r6
+0020c848: bl       #0x22c1a4 ; RZContainer::Attach(RZContainer*)
+0020c84c: mov      r1, #0
+0020c850: ldr      r0, [r5]
+0020c854: bl       #0x295c64 ; RZTimeMgr_Base::GetTimeS(int)
+0020c858: vldr     s15, [pc, #0x98]
+0020c85c: vmov     s14, r0
+0020c860: mov      r0, r6
+0020c864: vmul.f32 s15, s14, s15
+0020c868: vmov     r1, s15
+0020c86c: bl       #0x21fe74 ; RZMatrix34::SetYRotation(float)
+0020c870: mov      r1, #0
+0020c874: ldr      r0, [r5]
+0020c878: bl       #0x295c64 ; RZTimeMgr_Base::GetTimeS(int)
+0020c87c: vldr     s15, [pc, #0x78]
+0020c880: vmov     s14, r0
+0020c884: mov      r0, r6
+0020c888: vmul.f32 s15, s14, s15
+0020c88c: vmov     r1, s15
+0020c890: bl       #0x21e084 ; RZMatrix34::ApplyXRotationPost(float)
+0020c894: mov      r1, #0x40000000
+0020c898: mov      r0, r6
+0020c89c: mov      r2, r1
+0020c8a0: mov      r3, r1
+0020c8a4: add      r6, r6, #0x30
+0020c8a8: bl       #0x21d820 ; RZMatrix34::ApplyScalePre(float, float, float)
+0020c8ac: ldm      r4, {r0, r1, r2, r3}
+0020c8b0: stm      r6, {r0, r1, r2, r3}
+0020c8b4: pop      {r4, r5, r6, pc}
+0020c8b8: mov      r5, #0
+0020c8bc: mov      r0, r4
+0020c8c0: mov      r2, r5
+0020c8c4: str      r5, [r4, #0x78]
+0020c8c8: mov      r1, #0xa6
+0020c8cc: bl       #0x20c2dc ; CTileItem_RuneDais::SetDaisParticles(eRZParticleType, int)
+0020c8d0: ldr      r3, [pc, #0x34]
+0020c8d4: mov      r2, r5
+0020c8d8: mov      r1, #4
+0020c8dc: ldr      r3, [pc, r3]
+0020c8e0: ldr      r0, [r3]
+0020c8e4: bl       #0x1e76f8 ; CSoundMgr::Play(eSB_GAME, int)
+0020c8e8: mov      r0, r4
+0020c8ec: pop      {r4, r5, r6, lr}
+0020c8f0: b        #0x20c2a4 ; CTileItem_RuneDais::NotifyRunePlayed()
+0020c8f4: svclo    #0x333333
+0020c8f8: bicmi    r0, r8, #0

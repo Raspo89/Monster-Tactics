@@ -1,0 +1,178 @@
+{
+  "card-frame-large-silver": {
+    "file": "ready/card-frame-large-silver.webp",
+    "atlas": "GUI/Backplates.webp",
+    "boxLTRB": [
+      0,
+      0,
+      320,
+      456
+    ],
+    "source": "GUI/Backplates.ETC"
+  },
+  "card-frame-large-gold": {
+    "file": "ready/card-frame-large-gold.webp",
+    "atlas": "GUI/Backplates.webp",
+    "boxLTRB": [
+      324,
+      0,
+      644,
+      456
+    ],
+    "source": "GUI/Backplates.ETC"
+  },
+  "card-frame-warrior-red": {
+    "file": "ready/card-frame-warrior-red.webp",
+    "atlas": "GUI/Backplates2.webp",
+    "boxLTRB": [
+      196,
+      0,
+      388,
+      230
+    ],
+    "source": "GUI/Backplates2.ETC"
+  },
+  "card-frame-archer-green": {
+    "file": "ready/card-frame-archer-green.webp",
+    "atlas": "GUI/Backplates2.webp",
+    "boxLTRB": [
+      588,
+      0,
+      780,
+      230
+    ],
+    "source": "GUI/Backplates2.ETC"
+  },
+  "card-frame-mage-blue": {
+    "file": "ready/card-frame-mage-blue.webp",
+    "atlas": "GUI/Backplates2.webp",
+    "boxLTRB": [
+      0,
+      230,
+      192,
+      460
+    ],
+    "source": "GUI/Backplates2.ETC"
+  },
+  "card-frame-artillery-orange": {
+    "file": "ready/card-frame-artillery-orange.webp",
+    "atlas": "GUI/Backplates2.webp",
+    "boxLTRB": [
+      392,
+      230,
+      584,
+      460
+    ],
+    "source": "GUI/Backplates2.ETC"
+  },
+  "card-frame-gold": {
+    "file": "ready/card-frame-gold.webp",
+    "atlas": "GUI/Backplates2.webp",
+    "boxLTRB": [
+      588,
+      460,
+      780,
+      690
+    ],
+    "source": "GUI/Backplates2.ETC"
+  },
+  "card-frame-teal": {
+    "file": "ready/card-frame-teal.webp",
+    "atlas": "GUI/Backplates2.webp",
+    "boxLTRB": [
+      0,
+      690,
+      192,
+      920
+    ],
+    "source": "GUI/Backplates2.ETC"
+  },
+  "card-frame-brown": {
+    "file": "ready/card-frame-brown.webp",
+    "atlas": "GUI/Backplates2.webp",
+    "boxLTRB": [
+      784,
+      690,
+      976,
+      920
+    ],
+    "source": "GUI/Backplates2.ETC"
+  },
+  "stat-icon-attack": {
+    "file": "ready/stat-icon-attack.webp",
+    "atlas": "GUI/MonsterStats.webp",
+    "boxLTRB": [
+      0,
+      904,
+      56,
+      960
+    ],
+    "source": "GUI/MonsterStats.ETC"
+  },
+  "stat-icon-star": {
+    "file": "ready/stat-icon-star.webp",
+    "atlas": "GUI/MonsterStats.webp",
+    "boxLTRB": [
+      64,
+      904,
+      120,
+      960
+    ],
+    "source": "GUI/MonsterStats.ETC"
+  },
+  "stat-icon-health": {
+    "file": "ready/stat-icon-health.webp",
+    "atlas": "GUI/MonsterStats.webp",
+    "boxLTRB": [
+      128,
+      904,
+      184,
+      960
+    ],
+    "source": "GUI/MonsterStats.ETC"
+  },
+  "stat-icon-armour": {
+    "file": "ready/stat-icon-armour.webp",
+    "atlas": "GUI/MonsterStats.webp",
+    "boxLTRB": [
+      192,
+      904,
+      248,
+      960
+    ],
+    "source": "GUI/MonsterStats.ETC"
+  },
+  "stat-icon-shield": {
+    "file": "ready/stat-icon-shield.webp",
+    "atlas": "GUI/MonsterStats.webp",
+    "boxLTRB": [
+      320,
+      904,
+      376,
+      960
+    ],
+    "source": "GUI/MonsterStats.ETC"
+  },
+  "stat-icon-fire": {
+    "file": "ready/stat-icon-fire.webp",
+    "atlas": "GUI/MonsterStats.webp",
+    "boxLTRB": [
+      448,
+      904,
+      504,
+      960
+    ],
+    "source": "GUI/MonsterStats.ETC"
+  },
+  "stat-icon-heal": {
+    "file": "ready/stat-icon-heal.webp",
+    "atlas": "GUI/MonsterStats.webp",
+    "boxLTRB": [
+      896,
+      904,
+      952,
+      960
+    ],
+    "source": "GUI/MonsterStats.ETC"
+  }
+}

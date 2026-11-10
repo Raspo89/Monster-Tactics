@@ -1,0 +1,68 @@
+
+### CCharacterMin::CheckForMovingOntoTileItem(CMap*, CRuneDaisList*, CAIBattleState*) 0x132478 264
+00132478: push     {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0013247c: sub      sp, sp, #0x1c
+00132480: add      r5, sp, #0x10
+00132484: mov      r4, r1
+00132488: mov      r6, r0
+0013248c: mov      r1, r0
+00132490: mov      r0, r5
+00132494: mov      sb, r2
+00132498: mov      r8, r3
+0013249c: bl       #0x1323c8 ; CCharacterMin::GetHexLoc()
+001324a0: cmp      r4, #0
+001324a4: beq      #0x1324cc
+001324a8: add      r7, sp, #0x14
+001324ac: mov      r1, r5
+001324b0: mov      r0, r7
+001324b4: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+001324b8: mov      r0, r4
+001324bc: mov      r1, r7
+001324c0: bl       #0x15fc54 ; CMap::HexCoordsAreValid(tHEXLOC) const
+001324c4: cmp      r0, #0
+001324c8: bne      #0x1324d4
+001324cc: add      sp, sp, #0x1c
+001324d0: pop      {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+001324d4: mov      r0, r6
+001324d8: bl       #0x131be8 ; CCharacterMin::GetNeedTileItemCheck()
+001324dc: cmp      r0, #0
+001324e0: beq      #0x1324cc
+001324e4: mov      r1, r5
+001324e8: mov      r0, r7
+001324ec: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+001324f0: mov      r0, r4
+001324f4: mov      r1, r7
+001324f8: bl       #0x15fc54 ; CMap::HexCoordsAreValid(tHEXLOC) const
+001324fc: cmp      r0, #0
+00132500: beq      #0x1324cc
+00132504: ldr      r3, [pc, #0x70]
+00132508: ldr      r3, [pc, r3]
+0013250c: ldr      r0, [r3]
+00132510: bl       #0x148978 ; CGame::GetBattle()
+00132514: mov      fp, r0
+00132518: bl       #0x10e2ac ; CBattle::GetTileItemMgr()
+0013251c: mov      r1, r5
+00132520: mov      sl, r0
+00132524: mov      r0, r7
+00132528: bl       #0x15ae3c ; tHEXLOC::tHEXLOC(tHEXLOC const&)
+0013252c: mov      r0, sl
+00132530: mov      r1, r4
+00132534: mov      r2, r7
+00132538: bl       #0x209fd8 ; CTileItemMgr::GetItemsAt(CMap*, tHEXLOC) const
+0013253c: subs     r5, r0, #0
+00132540: beq      #0x132570
+00132544: cmp      r8, #0
+00132548: mov      r0, fp
+0013254c: movne    r7, #2
+00132550: moveq    r7, #1
+00132554: bl       #0x10e2ac ; CBattle::GetTileItemMgr()
+00132558: stm      sp, {r5, sb}
+0013255c: mov      r3, r7
+00132560: str      r8, [sp, #8]
+00132564: mov      r1, r4
+00132568: mov      r2, r6
+0013256c: bl       #0x20a808 ; CTileItemMgr::TriggerCharacterActionOnTileItems(CMap*, CCharacterMin*, eTileItemAction, unsigned int, CRuneDaisList*, CAIBattleState*)
+00132570: mov      r0, r6
+00132574: bl       #0x131bf4 ; CCharacterMin::ClearNeedTileItemCheck()
+00132578: b        #0x1324cc ; 
+0013257c: eorseq   r7, r0, r8, ror #24

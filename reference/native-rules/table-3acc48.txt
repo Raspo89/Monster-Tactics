@@ -1,0 +1,269 @@
+Tag Name,Rarity,Mojo,Name,Short Name,Model Name,Texture Name,Filters,Tooltip
+,,,,,,,,
+x,C,0,None,x,x,x,x,x
+R_MINORARMOUR,C,3,Rune of Minor Armour,Minor Armour,rune_01,Rune_01_MinorArmour,A,All your monsters receive RU_MinorArmour_Armour.
+R_MINORPOWER,C,3,Rune of Minor Power,Minor Power,rune_01,Rune_01_MinorPower,P,All your monsters receive RU_MinorPower_Power.
+R_MINORHEALTH,C,2,Rune of Much Vim,Vim,rune_01,Rune_01_MinorHealth,H,All your monsters receive a RU_MinorHealth_Health boost.
+R_MINORMOJO,C,3,Rune of Minor Mojo,Mojo +1,rune_01,Rune_01_MinorMojo,M,Your hero generates RU_MinorMojo_Mojo each upkeep.
+R_MAJORARMOUR,R,4,Rune of Great Armour,Great Armour,rune_01,Rune_01_MajorArmour,A,All your monsters receive RU_MajorArmour_Armour.
+R_MAJORPOWER,R,4,Rune of Great Power,Great Power,rune_01,Rune_01_MajorPower,P,All your monsters receive RU_MajorPower_Power.
+R_MAJORHEALTH,R,3,Rune of Much Vigor,Vigor,rune_01,Rune_01_MajorHealth,H,All your monsters receive a RU_MajorHealth_Health boost.
+R_MAJORMOJO,R,4,Rune of Major Mojo,Mojo +2,rune_01,Rune_01_MajorMojo,M,Your hero generates RU_MajorMojo_Mojo each upkeep.
+R_MINORHEROBASH,U,3,Rune of Hero Assaulting,Hero Assault,rune_01,Rune_01_MinorHeroBash,P,All your monsters receive RU_MinorheroBash_Power against heroes.
+R_MAJORHEROBASH,R,5,Rune of Hero Battering,Hero Battery,rune_01,Rune_01_MajorHeroBash,P,All your monsters receive RU_MajorheroBash_Power against heroes.
+R_EXTRACARD,R,3,Rune of Draw Mastery,Draw Master,rune_01,Rune_01_ExtraCard,C,Draw an additional card during your upkeep.
+R_REAPER,U,3,Rune of Mojo Reaping,Mojo Reaper,rune_01,Rune_01_Reaper,M,Receive RU_Reaper_Mojo whenever a monster dies.
+R_RUST,C,2,Rune of Rust,Rust,rune_01,Rune_01_Rust,AD,All enemy monsters suffer RU_Rust_Armour.
+R_WITCHHUNT,R,4,Rune of the Spell Hunt,Spell Hunt,rune_01,Rune_01_witchhunt,MS,All spells cost an extra RU_Hunt_Mojo to play.
+R_HASTE,L,3,Rune of Much Monster Blitzing,Monster Blitz,rune_01,Rune_01_Haste,T,Your monsters can move on the turn they're played.
+R_YINGYANG,R,3,Rune of Yin and Yang,Yin Yang,rune_01,Rune_01_yingyang,PD,All monsters gain RU_YingYang_Power but suffer RU_YingYang_Health.
+R_VIRUS,R,3,Rune of Many Viruses,Virus,rune_01,Rune_01_Virus,P,All monsters suffer RU_Virus_Health.
+R_IMPOTENT_RAGE,U,2,Rune of Impotent Rage,Impotent Rage,rune_01,Rune_01_IRage,PT,All your monsters receive RU_impotentRage_Power but cannot move.
+R_STAND_FAST,R,2,Rune of Fast Standing,Stand Fast,rune_01,Rune_01_SFast,HT,All your monsters receive RU_StandFast_Health but cannot move.
+R_BANKERS_DELIGHT,L,6,Rune of Card Taxation,Card Tax,rune_01,Rune_01_Banker,MD,Your opponent's cards cost an extra RU_BankersDelight_Mojo to play from hand.
+R_ACCOUNTING,R,3,Rune of Accounting,Accounting,rune_01,Rune_01_Account,MP,All your monster abilities cost RU_Accounting_Mojo to activate.
+R_PUNISHMENT,R,4,Rune of Spell Backfireage,Spells Backfire,rune_01,Rune_01_Punish,SP,Whenever an opponent plays a spell# their hero suffers RU_Punishment_Health.
+R_BLANK,L,0,Rune of Blank,Blank,rune_01,Rune_01_Blank,X,Does nothing.
+R_CARD_MAESTRO,R,4,Rune of Draw Reaping,Draw Reaper,rune_01,Rune_01_Maestro,C,Draw a card each time you kill a monster.
+R_GRAVITY,R,3,Rune of Gravity,Gravity,rune_01,Rune_01_Gravity,DP,All monsters suffer RU_Gravity_Health for each piece of equipment on them.
+R_LONE_HERO,C,3,Rune of Heroic Loneliness,Hero no mates,rune_01,Rune_01_LoneHero,H,Your hero gains RU_Lonehero_Health on your upkeep if there are no adjacent creatures.
+R_WAR_HERO,R,3,Rune of Heroic Rage,Hero Rage,rune_01,Rune_01_WarHero,P,Your hero gains RU_Warhero_Power for each adjacent enemy creature.
+R_HERO_SPIKE,C,3,Rune of Heroic Anger,Hero Anger,rune_01,Rune_01_HeroSpike,DP,Enemy creatures adjacent to your hero suffer RU_heroSpike_Damage damage on your upkeep.
+R_SLYNEGLECT,L,6,Rune of Sly Neglect,Sly Neglect,rune_01,Rune_01_SlyNeglect,AD,Enemy Armour does not recharge during upkeep.
+R_EPICMOJO,L,5,Rune of Epic Mojo,Mojo +3,rune_01,Rune_01_EpicMojo,M,Your hero generates RU_EpicMojo_Mojo each upkeep.
+R_EPICARMOUR,L,5,Rune of Epic Armour,Epic Armour,rune_01,Rune_01_EpicArmour,A,All your monsters receive RU_EpicArmour_Armour.
+R_EPICHEALTH,L,4,Rune of Epic Health,Epic Health,rune_01,Rune_01_EpicHealth,H,All your monsters receive a RU_EpicHealth_Health boost.
+R_ACCOUNTING2,L,4,Rune of Creative Accounting,Creative Accounting,rune_01,Rune_01_Account2,M,All your monster abilities cost RU_Accounting2_Mojo less to activate.
+R_EPICPOWER,L,6,Rune of Epic Power,Epic Power,rune_01,Rune_01_EpicPower,P,All your monsters receive RU_EpicPower_Power.
+R_NOMOVE,R,3,Rune of No Moving,No Move,rune_01,Rune_01_NoMove,TD,All your monsters cannot move.
+R_NOSPECIALABILITY,R,3,Rune of No Abilities,No Ability,rune_01,Rune_01_NoAbility,D,All your monsters cannot use their special abilities.
+R_NOATTACKS,L,3,Rune of Suppression,Suppress,rune_01,Rune_01_NoAttack,D,All your monsters cannot perform their basic attack.
+R_SIX_123,U,3,Rune of Six of the Best 123,Six Best 123,rune_01,Rune_01_Six123,APH,Your hero gains RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SIX_231,R,3,Rune of Six of the Best 231,Six Best 231,rune_01,Rune_01_Six231,APH,Your hero gains RU_Attack2_Power and RU_Armour3_Armour and RU_Health1_Health.
+R_SIX_312,C,3,Rune of Six of the Best 312,Six Best 312,rune_01,Rune_01_Six312,APH,Your hero gains RU_Attack3_Power and RU_Armour1_Armour and RU_Health2_Health.
+R_SIX_132,R,3,Rune of Six of the Best 132,Six Best 132,rune_01,Rune_01_Six132,APH,Your hero gains RU_Attack1_Power and RU_Armour3_Armour and RU_Health2_Health.
+R_SIX_213,C,3,Rune of Six of the Best 213,Six Best 213,rune_01,Rune_01_Six213,APH,Your hero gains RU_Attack2_Power and RU_Armour1_Armour and RU_Health3_Health.
+R_SIX_321,U,3,Rune of Six of the Best 321,Six Best 321,rune_01,Rune_01_Six321,APH,Your hero gains RU_Attack3_Power and RU_Armour2_Armour and RU_Health1_Health.
+R_HERO_111,U,2,Rune of Minor Hero Buffing,Minor Hero Buff,rune_01,Rune_01_111,APH,Your hero gains RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_HERO_222,R,3,Rune of Great Hero Buffing,Great Hero Buff,rune_01,Rune_01_222,APH,Your hero gains RU_Attack2_Power and RU_Armour2_Armour and RU_Health2_Health.
+R_HERO_333,L,4,Rune of Epic Hero Buffing,Epic Hero Buff,rune_01,Rune_01_333,APH,Your hero gains RU_Attack3_Power and RU_Armour3_Armour and RU_Health3_Health.
+R_REGEN,L,3,Rune of Regeneration,Regen,rune_01,Rune_01_Regen,IH,All your monsters come into play afflicted with @C[1]Regen@C[0].
+R_SHIELD,L,3,Rune of Shielding,Shield,rune_01,Rune_01_Shield,I,All your monsters come into play afflicted with @C[1]Shield@C[0].
+R_FLAME,R,5,Rune of Flame,Flame,rune_01,Rune_01_Flame,I,All your monsters come into play afflicted with @C[1]Flame@C[0].
+R_TILEDOUBLER,R,2,Rune of Tile Doubleage,Tile Doubler,rune_01,Rune_01_TileDoubler,APHMC,All bonus map spaces give double benefit to all creatures.\n\n(does not stack.)
+R_SLYTILEDOUBLER,L,5,Rune of Sly Tile Doubleage,Sly Tile Doubler,rune_01,Rune_01_SlyTileDoubler,APHMC,All bonus map spaces give double benefit to your creatures only.\n\n(does not stack.)
+R_PUNISHMENTMINI,C,3,Rune of Mini Spell Backfireage,Mini Spells Backfire,rune_01,Rune_01_PunishMini,SDP,Whenever an opponent plays a spell# their hero suffers @X[19]@C[6]-1@C[0].
+R_RUNEBACKFIREMINI,C,3,Rune of Mini Rune Backfireage,Mini Runes Backfire,rune_01,Rune_01_RuneBackfireMini,RDP,Whenever an opponent plays a rune# their hero suffers @X[19]@C[6]-1@C[0].
+R_RUNEBACKFIRE,R,4,Rune of Rune Backfireage,Runes Backfire,rune_01,Rune_01_RuneBackfire,RDP,Whenever an opponent plays a rune# their hero suffers @X[19]@C[6]-2@C[0].
+R_MINFEEBLE,R,3,Rune of Minor Enfeeblement,Minor Enfeeble,rune_01,Rune_01_Enfeeble1,PD,All creatures suffer RU_AttackMinus1_Power.
+R_GREATFEEBLE,R,4,Rune of Major Enfeeblement,Major Enfeeble,rune_01,Rune_01_Enfeeble2,PD,All creatures suffer RU_AttackMinus2_Power.
+R_EPICFEEBLE,L,5,Rune of Epic Enfeeblement,Epic Enfeeble,rune_01,Rune_01_Enfeeble3,PD,All creatures suffer RU_AttackMinus3_Power.
+R_BONANZA,R,2,Rune of Mojo Bonanzaness,Mojo Bonanza,rune_01,Rune_01_Bonanza,M,All players get RU_MajorMojo_Mojo each upkeep.
+R_MINBONANZA,R,1,Rune of Mojo Feasting,Mojo Feast,rune_01,Rune_01_BonanzaMin,M,All players get RU_MinorMojo_Mojo each upkeep.
+R_MOJOSHARE_21,R,2,Rune of Mojo for All,Mojo for All,rune_01,Rune_01_MojoAll21,M,Other players get RU_MinorMojo_Mojo on their upkeep# whilst you get RU_MajorMojo_Mojo on yours.
+R_MOJOSHARE_32,R,3,Rune of Great Mojo for All,Great Mojo for All,rune_01,Rune_01_MojoAll32,M,Other players get RU_MajorMojo_Mojo on their upkeep# whilst you get RU_EpicMojo_Mojo on yours.
+R_MOJOSHARE_31,L,4,Rune of Epic Mojo for All,Epic Mojo for All,rune_01,Rune_01_MojoAll31,M,Other players get RU_MinorMojo_Mojo on their upkeep# whilst you get RU_EpicMojo_Mojo on yours.
+R_RUNEHUNT,R,4,Rune of the Rune Hunt,Rune Hunt,rune_01,Rune_01_runehunt,MRD,All runes cost an extra RU_Hunt_Mojo to play.
+R_NOAFF_FIRE,U,3,Rune of No Flame,No Flame,rune_01,Rune_01_NoFire,I,Your creatures do not become afflicted with @C[1]Flame@C[0].
+R_NOAFF_ICE,U,3,Rune of No Ice,No Ice,rune_01,Rune_01_NoIce,IT,Your creatures do not become afflicted with @C[1]Ice Block@C[0].
+R_NOAFF_DM,U,3,Rune of No Death Mark,No Death Mark,rune_01,Rune_01_NoDM,I,Your creatures do not become afflicted with @C[1]Death Mark@C[0].
+R_NOAFF_STUN,U,3,Rune of No Dazed,No Dazed,rune_01,Rune_01_NoStun,I,Your creatures do not become afflicted with @C[1]Dazed@C[0].
+R_NOAFF_SNARE,U,3,Rune of No Snared,No Snared,rune_01,Rune_01_NoSnare,IT,Your creatures do not become afflicted with @C[1]Snared@C[0].
+R_TOOMANYCARDS,L,8,Rune of Paucity,Paucity,rune_01,Rune_01_Plenty,PD,At upkeep# each enemy hero suffers @X[17]@C[4]X@C[0]# where X is '4 minus number of cards in owner's hand'.
+R_TOOFEWCARDS,L,9,Rune of Plenty,Plenty,rune_01,Rune_01_Paucity,PD,At upkeep# each enemy hero suffers @X[17]@C[4]X@C[0]# where X is 'number of cards in owner's hand minus 10' (and capped at 5).
+R_HEALTHCARDS,L,3,Rune of Healthy Restraint,Healthy Restraint,rune_01,Rune_01_HealthRest,H,At the start of your upkeep# your hero gains RU_Health1_Health for each card in your hand above 5# capped at 8.
+R_BUFF_HUMAN,C,2,Rune of Human Buffing,Buff Humans,rune_01,Rune_01_BuffHuman,APH,All humans gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_ELF,C,2,Rune of Elf Buffing,Buff Elves,rune_01,Rune_01_BuffElf,APH,All elves gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_ORC,C,2,Rune of Orc Buffing,Buff Orcs,rune_01,Rune_01_BuffOrc,APH,All orcs gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_UNDEAD,C,2,Rune of Zombie Buffing,Buff Zombies,rune_01,Rune_01_BuffZombie,APH,All zombies gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_LIZARD,C,2,Rune of Lizard Buffing,Buff Lizards,rune_01,Rune_01_BuffLizard,APH,All lizards gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_DWARF,C,2,Rune of Dwarf Buffing,Buff Dwarves,rune_01,Rune_01_BuffDwarf,APH,All dwarves gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_MINOTAUR,C,2,Rune of Minotaur Buffing,Buff Minotaurs,rune_01,Rune_01_BuffMinotaur,APH,All minotaurs gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_WEREWOLF,C,2,Rune of Werewolf Buffing,Buff Werewolves,rune_01,Rune_01_BuffWerewolf,APH,All werewolves gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_GOLEM,C,2,Rune of Golem Buffing,Buff Golem,rune_01,Rune_01_BuffGolem,APH,All golem gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_ELEMENTAL,C,2,Rune of Elemental Buffing,Buff Elementals,rune_01,Rune_01_BuffElemental,APH,All elementals gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_CYCLOPS,C,2,Rune of Cyclops Buffing,Buff Cyclops,rune_01,Rune_01_BuffCyclops,APH,All cyclops gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_SKELETON,C,2,Rune of Skeleton Buffing,Buff Skeletons,rune_01,Rune_01_BuffSkeleton,APH,All skeletons gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_HUMAN,U,3,Rune of My Human Buffing,Buff my Humans,rune_01,Rune_01_MBuffHuman,APH,All your humans gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_ELF,U,3,Rune of My Elf Buffing,Buff my Elves,rune_01,Rune_01_MBuffElf,APH,All your elves gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_ORC,U,3,Rune of My Orc Buffing,Buff my Orcs,rune_01,Rune_01_MBuffOrc,APH,All your orcs gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_UNDEAD,U,3,Rune of My Zombie Buffing,Buff my Zombies,rune_01,Rune_01_MBuffZombie,APH,All your zombies gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_LIZARD,U,3,Rune of My Lizard Buffing,Buff my Lizards,rune_01,Rune_01_MBuffLizard,APH,All your lizards gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_DWARF,U,3,Rune of My Dwarf Buffing,Buff my Dwarves,rune_01,Rune_01_MBuffDwarf,APH,All your dwarves gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_MINOTAUR,U,3,Rune of My Minotaur Buffing,Buff my Minotaurs,rune_01,Rune_01_MBuffMinotaur,APH,All your minotaurs gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_WEREWOLF,U,3,Rune of My Werewolf Buffing,Buff my Werewolves,rune_01,Rune_01_MBuffWerewolf,APH,All your werewolves gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_GOLEM,U,3,Rune of My Golem Buffing,Buff my Golem,rune_01,Rune_01_MBuffGolem,APH,All your golem gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_ELEMENTAL,U,3,Rune of My Elemental Buffing,Buff my Elementals,rune_01,Rune_01_MBuffElemental,APH,All your elementals gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_CYCLOPS,U,3,Rune of My Cyclops Buffing,Buff my Cyclops,rune_01,Rune_01_MBuffCyclops,APH,All your cyclops gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_SKELETON,U,3,Rune of My Skeleton Buffing,Buff my Skeletons,rune_01,Rune_01_MBuffSkeleton,APH,All your skeletons gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_ROBOT,C,2,Rune of Robot Buffing,Buff Robots,rune_01,Rune_01_BuffRobot,APH,All robots gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_ROBOT,U,3,Rune of My Robot Buffing,Buff my Robots,rune_01,Rune_01_MBuffRobot,APH,All your robots gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_IMP,C,2,Rune of Imp Buffing,Buff Imps,rune_01,Rune_01_BuffImp,APH,All imps gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_IMP,U,3,Rune of My Imp Buffing,Buff my Imps,rune_01,Rune_01_MBuffImp,APH,All your imps gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_BUFF_SPECTRE,C,2,Rune of Spectral Buffing,Buff Spectres,rune_01,Rune_01_BuffSpectre,APH,All spectres gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_SPECTRE,U,3,Rune of My Spectral Buffing,Buff my Spectres,rune_01,Rune_01_MBuffSpectre,APH,All your spectres gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_HB_BAUS,R,2,Rock of Doc Pain,Rock of Doc Pain,rune_01,Rune_01_BuffDocPain,I,Your Doc Pain hero is protected from all bad afflictions.
+R_HB_CYCLOPS,R,2,Rock of Ouranus,Rock of Ouranus,rune_01,Rune_01_BuffOuranus,I,Your Ouranus hero is protected from all bad afflictions.
+R_HB_LAVALEM,R,2,Rock of Lavalem,Rock of Lavalem,rune_01,Rune_01_BuffLavalem,I,Your Lavalem hero is protected from all bad afflictions.
+R_HB_DEAN,R,2,Rock of Dean,Rock of Dean,rune_01,Rune_01_BuffDean,I,Your Dean hero is protected from all bad afflictions.
+R_HB_NOIGLE,R,2,Rock of Noigle,Rock of Noigle,rune_01,Rune_01_BuffNoigle,I,Your Noigle hero is protected from all bad afflictions.
+R_HB_SHAQ,R,2,Rock of Shaq,Rock of Shaq,rune_01,Rune_01_BuffShaq,I,Your Shaq hero is protected from all bad afflictions.
+R_HB_BONEYARD,R,2,Rock of Boneyard,Rock of Boneyard,rune_01,Rune_01_BuffBoneyard,I,Your Boneyard hero is protected from all bad afflictions.
+R_HB_WOOMPH,R,2,Rock of Silvanus,Rock of Silvanus,rune_01,Rune_01_BuffSilvanus,I,Your Silvanus hero is protected from all bad afflictions.
+R_HB_ALPHEDIA,R,2,Rock of Alphedia,Rock of Alphedia,rune_01,Rune_01_BuffAlphedia,I,Your Alphedia hero is protected from all bad afflictions.
+R_HB_KONGE,R,2,Rock of Raeynor,Rock of Raeynor,rune_01,Rune_01_BuffRaeynor,I,Your Raeynor hero is protected from all bad afflictions.
+R_HB_QUEENY,R,2,Rock of Hyssta,Rock of Hyssta,rune_01,Rune_01_BuffHyssta,I,Your Hyssta hero is protected from all bad afflictions.
+R_HB_STUNK,R,2,Rock of Clank,Rock of Clank,rune_01,Rune_01_BuffClank,I,Your Clank hero is protected from all bad afflictions.
+R_HB_ERNOLD,R,2,Rock of Ernold,Rock of Ernold,rune_01,Rune_01_BuffErnold,I,Your Ernold hero is protected from all bad afflictions.
+R_HB_MAMBO,R,2,Rock of Mambo,Rock of Mambo,rune_01,Rune_01_BuffMambo,I,Your Mambo hero is protected from all bad afflictions.
+R_HB_MACHLI,R,2,Rock of Machli,Rock of Machli,rune_01,Rune_01_BuffMachli,I,Your Machli hero is protected from all bad afflictions.
+R_MHB_BAUS,U,1,Pebble of Doc Pain,Pebble of Doc Pain,rune_01,Rune_01_MBuffDocPain,I,Your Doc Pain hero is protected from all afflictions.
+R_MHB_CYCLOPS,U,1,Pebble of Ouranus,Pebble of Ouranus,rune_01,Rune_01_MBuffOuranus,I,Your Ouranus hero is protected from all afflictions.
+R_MHB_LAVALEM,U,1,Pebble of Lavalem,Pebble of Lavalem,rune_01,Rune_01_MBuffLavalem,I,Your Lavalem hero is protected from all afflictions.
+R_MHB_DEAN,U,1,Pebble of Dean,Pebble of Dean,rune_01,Rune_01_MBuffDean,I,Your Dean hero is protected from all afflictions.
+R_MHB_NOIGLE,U,1,Pebble of Noigle,Pebble of Noigle,rune_01,Rune_01_MBuffNoigle,I,Your Noigle hero is protected from all afflictions.
+R_MHB_SHAQ,U,1,Pebble of Shaq,Pebble of Shaq,rune_01,Rune_01_MBuffShaq,I,Your Shaq hero is protected from all afflictions.
+R_MHB_BONEYARD,U,1,Pebble of Boneyard,Pebble of Boneyard,rune_01,Rune_01_MBuffBoneyard,I,Your Boneyard hero is protected from all afflictions.
+R_MHB_WOOMPH,U,1,Pebble of Silvanus,Pebble of Silvanus,rune_01,Rune_01_MBuffSilvanus,I,Your Silvanus hero is protected from all afflictions.
+R_MHB_ALPHEDIA,U,1,Pebble of Alphedia,Pebble of Alphedia,rune_01,Rune_01_MBuffAlphedia,I,Your Alphedia hero is protected from all afflictions.
+R_MHB_KONGE,U,1,Pebble of Raeynor,Pebble of Raeynor,rune_01,Rune_01_MBuffRaeynor,I,Your Raeynor hero is protected from all afflictions.
+R_MHB_QUEENY,U,1,Pebble of Hyssta,Pebble of Hyssta,rune_01,Rune_01_MBuffHyssta,I,Your Hyssta hero is protected from all afflictions.
+R_MHB_STUNK,U,1,Pebble of Clank,Pebble of Clank,rune_01,Rune_01_MBuffClank,I,Your Clank hero is protected from all afflictions.
+R_MHB_ERNOLD,U,1,Pebble of Ernold,Pebble of Ernold,rune_01,Rune_01_MBuffErnold,I,Your Ernold hero is protected from all afflictions.
+R_MHB_MAMBO,U,1,Pebble of Mambo,Pebble of Mambo,rune_01,Rune_01_MBuffMambo,I,Your Mambo hero is protected from all afflictions.
+R_MHB_MACHLI,U,1,Pebble of Machli,Pebble of Machli,rune_01,Rune_01_MBuffMachli,I,Your Machli hero is protected from all afflictions.
+R_RNOAFF_FIRE,R,3,Rune of Null Flame,Null Flame,rune_01,Rune_01_NoFireAll,ID,All monsters do not become afflicted with @C[1]Flame@C[0].
+R_RNOAFF_ICE,R,3,Rune of Null Ice,Null Ice,rune_01,Rune_01_NoIceAll,ITD,All monsters do not become afflicted with @C[1]Ice Block@C[0].
+R_RNOAFF_DM,R,3,Rune of Null Death Mark,Null Death Mark,rune_01,Rune_01_NoDMAll,ID,All monsters do not become afflicted with @C[1]Death Mark@C[0].
+R_RNOAFF_STUN,R,3,Rune of Null Dazed,Null Dazed,rune_01,Rune_01_NoStunAll,ID,All monsters do not become afflicted with @C[1]Dazed@C[0].
+R_RNOAFF_SNARE,R,3,Rune of Null Snared,Null Snared,rune_01,Rune_01_NoSnareAll,ITD,All monsters do not become afflicted with @C[1]Snared@C[0].
+R_NOAFF_BERSERK,U,3,Rune of No Berserk,No Berserk,rune_01,Rune_01_NoBerserk,I,Your creatures do not become afflicted with @C[1]Berserk@C[0].
+R_RNOAFF_BERSERK,R,3,Rune of Null Berserk,Null Berserk,rune_01,Rune_01_NoBerserkAll,ID,All monsters do not become afflicted with @C[1]Berserk@C[0].
+R_MIGHTY,L,3,Rune of Mighty,Mighty,rune_01,Rune_01_Mighty,I,All your monsters come into play afflicted with @C[1]Mighty@C[0].
+R_GETORFMYLAND,U,2,Rune of Private Property,Private Property,rune_01,Rune_01_PrivateProperty,RD,Other players cannot play runes onto your daises.
+R_EXTRA2CARDS,R,5,Rune of Draw Mavenage,Draw Maven,rune_01,Rune_01_ExtraCard2,C,Draw an additional two cards during your upkeep.
+R_EXTRA3CARDS,L,6,Rune of Draw Supremacy,Draw Supremo,rune_01,Rune_01_ExtraCard3,C,Draw an additional three cards during your upkeep.
+R_OPENSEASON,R,3,Rune of Open Season,Open Season,rune_01,Rune_01_OpenSeason,RD,You can play runes onto any player's dais. (They behave as if the target player had played them.)
+R_DRAW_ONSPELL,R,4,Rune of Rapid Spells,Rapid Spells,rune_01,Rune_01_rapid_spells,C,Each time you play a spell# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+R_DRAW_ONRUNE,R,4,Rune of Rapid Runes,Rapid Runes,rune_01,Rune_01_rapid_runes,C,Each time you play a rune# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+R_DRAW_ONEQUIP,R,4,Rune of Rapid Equips,Rapid Equips,rune_01,Rune_01_rapid_equips,C,Each time you play some equipment# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+R_DRAW_ONMONSTER,L,5,Rune of Rapid Monsters,Rapid Monsters,rune_01,Rune_01_rapid_monsters,C,Each time you play a monster# draw a card and your hero suffers RU_Draw_Health and opponent heroes gain @X[19]@C[6]+2@C[0].
+R_REFUND_ONSPELL,U,4,Rune of Spell Refundage,Refund Spell,rune_01,Rune_01_refund_spells,MS,Each time you play a spell# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health.
+R_REFUND_ONRUNE,C,4,Rune of Rune Refundage,Refund Rune,rune_01,Rune_01_refund_runes,MR,Each time you play a rune# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health.
+R_REFUND_ONEQUIP,R,4,Rune of Equip Refundage,Refund Equips,rune_01,Rune_01_refund_equips,M,Each time you play some equipment# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health.
+R_REFUND_ONMONSTER,L,4,Rune of Monster Refundage,Refund Monsters,rune_01,Rune_01_refund_monsters,M,Each time you play a monster# your hero generates RU_MinorMojo_Mojo but suffers RU_Refund_Health damage.
+R_MONSTER_HUNT,R,4,Rune of the Monster Hunt,Monster Hunt,rune_01,Rune_01_monsterhunt,MD,All monsters cost an extra RU_Hunt_Mojo to play.
+R_EQUIP_HUNT,R,4,Rune of the Equip Hunt,Equip Hunt,rune_01,Rune_01_equiphunt,MD,All equipment costs an extra RU_Hunt_Mojo to play.
+R_CARD_HUNT,L,4,Rune of Super Tax,Super Tax,rune_01,Rune_01_cardhunt,MD,All cards cost an extra RU_BankersDelight_Mojo to play from hand.
+R_ABUNDANCE,C,3,Rune of Abundance,Abundance,rune_01,Rune_01_abund,C,All players draw an additional card during upkeep.
+R_OVERABUNDANCE,U,4,Rune of Over Abundance,Over Abundance,rune_01,Rune_01_overabund,C,All players draw an additional two cards during upkeep.
+R_MONSTER_PUNISHMENT,R,4,Rune of Monster Backfireage,Monsters Backfire,rune_01,Rune_01_MonsterPunish,DP,Whenever an opponent plays a monster# their hero suffers @X[19]@C[6]-2@C[0].
+R_MONSTER_PUNISHMENTMINI,C,3,Mini Monster Backfireage,Mini Monsters Backfire,rune_01,Rune_01_MonsterPunishMini,DP,Whenever an opponent plays a monster# their hero suffers @X[19]@C[6]-1@C[0].
+R_EQUIP_PUNISHMENT,R,4,Rune of Equip Backfireage,Equips Backfire,rune_01,Rune_01_EquipPunish,DP,Whenever an opponent plays an equip# their hero suffers @X[19]@C[6]-2@C[0].
+R_EQUIP_PUNISHMENTMINI,C,3,Mini Equip Backfireage,Mini Equips Backfire,rune_01,Rune_01_EquipPunishMini,DP,Whenever an opponent plays an equip# their hero suffers @X[19]@C[6]-1@C[0].
+R_SBUFF_HUMAN,U,4,Rune of Human Pumping,Pump Humans,rune_01,Rune_01_BuffHuman2,APH,All humans gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_ELF,U,4,Rune of Elf Pumping,Pump Elves,rune_01,Rune_01_BuffElf2,APH,All elves gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_ORC,U,4,Rune of Orc Pumping,Pump Orcs,rune_01,Rune_01_BuffOrc2,APH,All orcs gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_UNDEAD,U,4,Rune of Zombie Pumping,Pump Zombies,rune_01,Rune_01_BuffZombie2,APH,All zombies gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_LIZARD,U,4,Rune of Lizard Pumping,Pump Lizards,rune_01,Rune_01_BuffLizard2,APH,All lizards gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_DWARF,U,4,Rune of Dwarf Pumping,Pump Dwarves,rune_01,Rune_01_BuffDwarf2,APH,All dwarves gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_MINOTAUR,U,4,Rune of Minotaur Pumping,Pump Minotaurs,rune_01,Rune_01_BuffMinotaur2,APH,All minotaurs gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_WEREWOLF,U,4,Rune of Werewolf Pumping,Pump Werewolves,rune_01,Rune_01_BuffWerewolf2,APH,All werewolves gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_GOLEM,U,4,Rune of Golem Pumping,Pump Golem,rune_01,Rune_01_BuffGolem2,APH,All golem gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_ELEMENTAL,U,4,Rune of Elemental Pumping,Pump Elementals,rune_01,Rune_01_BuffElemental2,APH,All elementals gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_CYCLOPS,U,4,Rune of Cyclops Pumping,Pump Cyclops,rune_01,Rune_01_BuffCyclops2,APH,All cyclops gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_SKELETON,U,4,Rune of Skeleton Pumping,Pump Skeletons,rune_01,Rune_01_BuffSkeleton2,APH,All skeletons gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_ROBOT,U,4,Rune of Robot Pumping,Pump Robots,rune_01,Rune_01_BuffRobot2,APH,All robots gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_IMP,U,4,Rune of Imp Pumping,Pump Imps,rune_01,Rune_01_BuffImp2,APH,All imps gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_SBUFF_SPECTRE,U,4,Rune of Spectral Pumping,Pump Spectres,rune_01,Rune_01_BuffSpectre2,APH,All spectres gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_WBUFF_HUMAN,R,4,Word of Human ,Word of Human,rune_01,Rune_01_BuffHuman3,AP,All humans gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_ELF,R,4,Word of Elf ,Word of Elf,rune_01,Rune_01_BuffElf3,AP,All elves gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_ORC,R,4,Word of Orc ,Word of Orc,rune_01,Rune_01_BuffOrc3,AP,All orcs gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_UNDEAD,R,4,Word of Zombie ,Word of Zombie,rune_01,Rune_01_BuffZombie3,AP,All zombies gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_LIZARD,R,4,Word of Lizard ,Word of Lizard,rune_01,Rune_01_BuffLizard3,AP,All lizards gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_DWARF,R,4,Word of Dwarf ,Word of Dwarf,rune_01,Rune_01_BuffDwarf3,AP,All dwarves gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_MINOTAUR,R,4,Word of Minotaur ,Word of Minotaur,rune_01,Rune_01_BuffMinotaur3,AP,All minotaurs gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_WEREWOLF,R,4,Word of Werewolf ,Word of Werewolf,rune_01,Rune_01_BuffWerewolf3,AP,All werewolves gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_GOLEM,R,4,Word of Golem ,Word of Golem,rune_01,Rune_01_BuffGolem3,AP,All golem gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_ELEMENTAL,R,4,Word of Elemental ,Word of Elemental,rune_01,Rune_01_BuffElemental3,AP,All elementals gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_CYCLOPS,R,4,Word of Cyclops ,Word of Cyclops,rune_01,Rune_01_BuffCyclops3,AP,All cyclops gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_SKELETON,R,4,Word of Skeleton ,Word of Skeleton,rune_01,Rune_01_BuffSkeleton3,AP,All skeletons gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_ROBOT,R,4,Word of Robot ,Word of Robot,rune_01,Rune_01_BuffRobot3,AP,All robots gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_IMP,R,4,Word of Imp ,Word of Imp,rune_01,Rune_01_BuffImp3,AP,All imps gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_WBUFF_SPECTRE,R,4,Word of Spectre,Word of Spectre,rune_01,Rune_01_BuffSpectre3,AP,All spectres gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_RBUFF_HUMAN,L,5,Rule of Human,Rule of Human,rune_01,Rune_01_BuffHuman4,AP,All your humans gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_ELF,L,5,Rule of Elf,Rule of Elf,rune_01,Rune_01_BuffElf4,AP,All your elves gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_ORC,L,5,Rule of Orc,Rule of Orc,rune_01,Rune_01_BuffOrc4,AP,All your orcs gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_UNDEAD,L,5,Rule of Zombie,Rule of Zombie,rune_01,Rune_01_BuffZombie4,AP,All your zombies gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_LIZARD,L,5,Rule of Lizard,Rule of Lizard,rune_01,Rune_01_BuffLizard4,AP,All your lizards gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_DWARF,L,5,Rule of Dwarf,Rule of Dwarf,rune_01,Rune_01_BuffDwarf4,AP,All your dwarves gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_MINOTAUR,L,5,Rule of Minotaur,Rule of Minotaur,rune_01,Rune_01_BuffMinotaur4,AP,All your minotaurs gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_WEREWOLF,L,5,Rule of Werewolf,Rule of Werewolf,rune_01,Rune_01_BuffWerewolf4,AP,All your werewolves gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_GOLEM,L,5,Rule of Golem,Rule of Golem,rune_01,Rune_01_BuffGolem4,AP,All your golem gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_ELEMENTAL,L,5,Rule of Elemental,Rule of Elemental,rune_01,Rune_01_BuffElemental4,AP,All your elementals gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_CYCLOPS,L,5,Rule of Cyclops,Rule of Cyclops,rune_01,Rune_01_BuffCyclops4,AP,All your cyclops gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_SKELETON,L,5,Rule of Skeleton,Rule of Skeleton,rune_01,Rune_01_BuffSkeleton4,AP,All your skeletons gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_ROBOT,L,5,Rule of Robot,Rule of Robot,rune_01,Rune_01_BuffRobot4,AP,All your robots gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_IMP,L,5,Rule of Imp,Rule of Imp,rune_01,Rune_01_BuffImp4,AP,All your imps gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_RBUFF_SPECTRE,L,5,Rule of Spectre,Rule of Spectre,rune_01,Rune_01_BuffSpectre4,AP,All your spectres gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_BOMB_OPPDMG1,C,3,Bomb of Minor Damage,Minor Damage,rune_02,Rune_02_oppdmg1,P,Whoever destroys this bomb# all their enemys' monsters suffer SP_Just5_Damage damage.
+R_BOMB_OPPDMG2,U,5,Bomb of Major Damage,Major Damage,rune_02,Rune_02_oppdmg2,P,Whoever destroys this bomb# all their enemys' monsters suffer SP_Just8_Damage damage.
+R_BOMB_OPPLIFE1,R,3,Bomb of Minor Sufferance,Minor Sufferance,rune_02,Rune_02_opplife1,P,Whoever destroys this bomb# all their enemys' monsters suffer SP_JustMinus3_Health.
+R_BOMB_OPPLIFE2,L,5,Bomb of Major Sufferance,Major Sufferance,rune_02,Rune_02_opplife2,P,Whoever destroys this bomb# all their enemys' monsters suffer SP_JustMinus5_Health.
+R_BOMB_SWINDLE,U,3,Bomb of Enemy Swindle,Enemy Swindle,rune_02,Rune_02_swindle,P,Whoever destroys this bomb# all their enemys' creatures lose all equipment.
+R_BOMB_GOODNEWS,R,4,Bomb of Good News,Good News,rune_02,Rune_02_good,I,Whoever destroys this bomb# all their creatures gain @C[1]Mighty@C[0]# @C[1]Regen@C[0] and @C[1]Shield@C[0].
+R_BOMB_HEAL1,C,2,Bomb of Minor Boon,Minor Boon,rune_02,Rune_02_heal1,P,Whoever destroys this bomb# all their creatures gain SP_Just5_Health.
+R_BOMB_HEAL2,U,3,Bomb of Major Boon,Major Boon,rune_02,Rune_02_heal2,P,Whoever destroys this bomb# all their creatures gain SP_Just10_Health.
+R_BOMB_PWR1,C,2,Bomb of Minor Power,Minor Power,rune_02,Rune_02_power1,P,Whoever destroys this bomb# all their creatures gain SP_Just2_Power.
+R_BOMB_PWR2,U,4,Bomb of Major Power,Major Power,rune_02,Rune_02_power2,P,Whoever destroys this bomb# all their creatures gain SP_Just4_Power.
+R_BOMB_BADNEWS,R,4,Bomb of Bad News,Bad News,rune_02,Rune_02_bad,PI,Whoever destroys this bomb# all their enemys' creatures suffer @C[1]Dazed@C[0]# @C[1]Snared@C[0] and @C[1]Death Mark@C[0].
+R_BOMB_MOJO1,U,3,Bomb of Mojo +5,Mojo +5,rune_02,Rune_02_mojo1,M,Whoever destroys this bomb gains SP_Mojo5_Mojo
+R_BOMB_MOJO2,R,4,Bomb of Mojo +8,Mojo +8,rune_02,Rune_02_mojo2,M,Whoever destroys this bomb gains SP_Mojo8_Mojo
+R_BOMB_MOJO3,L,6,Bomb of Mojo +12,Mojo +12,rune_02,Rune_02_mojo3,M,Whoever destroys this bomb gains SP_Mojo12_Mojo
+R_BOMB_DRAW1,U,2,Bomb of Cards +3,Cards +3,rune_02,Rune_02_draw1,C,Whoever destroys this bomb draws three cards.
+R_BOMB_DRAW2,R,3,Bomb of Cards +5,Cards +5,rune_02,Rune_02_draw2,C,Whoever destroys this bomb draws five cards.
+R_BOMB_DRAW3,L,4,Bomb of Cards +7,Cards +7,rune_02,Rune_02_draw3,C,Whoever destroys this bomb draws seven cards.
+R_BOMB_REVENGE,R,5,Bomb of Revenge,Revenge,rune_02,Rune_02_revenge,P,Whoever destroys this bomb# all their own creatures suffer SP_Just5_Damage damage.
+R_HB_MINOTRIX,R,2,Rock of Minotrix,Rock of Minotrix,rune_01,Rune_01_BuffMinotrix,I,Your Minotrix hero is protected from all bad afflictions.
+R_MHB_MINOTRIX,U,1,Pebble of Minotrix,Pebble of Minotrix,rune_01,Rune_01_MBuffMinotrix,I,Your Minotrix hero is protected from all afflictions.
+R_HB_BOOGA,R,2,Rock of Booga,Rock of Booga,rune_01,Rune_01_BuffBooga,I,Your Booga hero is protected from all bad afflictions.
+R_MHB_BOOGA,U,1,Pebble of Booga,Pebble of Booga,rune_01,Rune_01_MBuffBooga,I,Your Booga hero is protected from all afflictions.
+R_HB_TUT,R,2,Rock of Tut,Rock of Tut,rune_01,Rune_01_BuffTut,I,Your Tut hero is protected from all bad afflictions.
+R_MHB_TUT,U,1,Pebble of Tut,Pebble of Tut,rune_01,Rune_01_MBuffTut,I,Your Tut hero is protected from all afflictions.
+R_RBUFF_VAMPIRE,L,5,Rule of Vampire,Rule of Vampire,rune_01,Rune_01_BuffVampire4,AP,All your vampires gain RU_Attack2_Power.\n\nAll other monsters suffer RU_AttackMinus1_Power and SP_JustMinus1_Health.
+R_WBUFF_VAMPIRE,R,4,Word of Vampire,Word of Vampire,rune_01,Rune_01_BuffVampire3,AP,All vampires gain RU_Attack2_Power.\n\nAll other races suffer RU_AttackMinus1_Power.
+R_SBUFF_VAMPIRE,U,4,Rune of Vampire Pumping,Pump Vampires,rune_01,Rune_01_BuffVampire2,APH,All vampires gain RU_Attack1_Power and RU_Armour2_Armour and RU_Health3_Health.
+R_BUFF_VAMPIRE,C,2,Rune of Vampire Buffing,Buff Vampires,rune_01,Rune_01_BuffVampire,APH,All vampires gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MYBUFF_VAMPIRE,U,3,Rune of My Vampire Buffing,Buff my Vampires,rune_01,Rune_01_MBuffVampire,APH,All Your vampires gain RU_Attack1_Power and RU_Armour1_Armour and RU_Health1_Health.
+R_MY_NOSMASH,L,4,Rune of Runic Tranquility,Runic Tranquility,rune_01,Rune_01_MyNoSmash,DP,Your runes are not affected by rune destruction spells.
+R_NOSMASH,R,3,Rune of Runic Peace,Runic Peace,rune_01,Rune_01_NoSmash,DP,Runes are not affected by rune destruction spells.
+R_HEALTH_REAPER,R,4,Rune of Health Reaping,Health Reaper,rune_01,Rune_01_HealthReaper,H,Your hero gains RU_HealthReaper_Health whenever any monster dies.
+R_MY_HEALTH_REAPER,R,2,Rune of My Health Reaping,My Health Reaper,rune_01,Rune_01_MyHealthReaper,H,Your hero gains RU_MyHealthReaper_Health whenever a monster you control dies.
+R_DEBOUNCE_ALL,R,4,Rune of Rebound,Rebound,rune_01,Rune_01_DebounceAll,D,Monsters are not affected by bounce spells.
+R_DEBOUNCE_THIERS,U,3,Rune of Sly Rebound,Sly Rebound,rune_01,Rune_01_DebounceEnemy,D,Enemy monsters are not affected by bounce spells.
+R_DEBOUNCE_MINE,L,4,Rune of My Rebound,My Rebound,rune_01,Rune_01_DebounceMine,D,Your monsters are not affected by bounce spells.
+R_DISCARD_PENALTY,L,3,Rune of Discard Penalty,Discard Penalty,rune_01,Rune_01_Undiscard,D,For each card a player makes you discard# their hero suffers RU_DiscardPenalty_Health.
+R_HEX,L,5,Rune of Hexed Monsters,Monster Hex,rune_01,Rune_01_Hex,P,All monsters suffer SP_JustMinus1_Health on their controller's upkeep# and your hero suffers SP_JustMinus2_Health on yours.
+R_CURSE,R,4,Rune of Cursed Monsters,Monster Curse,rune_01,Rune_01_Curse,P,All monsters suffer SP_Just1_Damage damage on their controller's upkeep# and your hero suffers SP_Just2_Damage damage on yours.
+R_SLYHEX,L,6,Rune of Sly Hexed Monsters,Sly Monster Hex,rune_01,Rune_01_SlyHex,P,Enemy monsters suffer SP_JustMinus1_Health on their controller's upkeep# and your hero suffers SP_JustMinus5_Health on yours.
+R_SLYCURSE,R,5,Rune of Sly Cursed Monsters,Sly Monster Curse,rune_01,Rune_01_SlyCurse,P,Enemy monsters suffer SP_Just1_Damage damage on their controller's upkeep# and your hero suffers SP_Just5_Damage damage on yours.
+R_HERO_HEX,U,4,Rune of Hexed Heroes,Hero Hex,rune_01,Rune_01_HeroHex,P,Heroes suffer SP_JustMinus1_Health on their controller's upkeep.
+R_HERO_CURSE,U,3,Rune of Cursed Heroes,Hero Curse,rune_01,Rune_01_HeroCurse,P,Heroes suffer SP_Just1_Damage damage on their controller's upkeep.
+R_SLYHERO_HEX,R,5,Rune of Sly Hexed Heroes,Sly Hero Hex,rune_01,Rune_01_SlyHeroHex,P,Enemy heroes suffer SP_JustMinus1_Health on their controller's upkeep.
+R_SLYHERO_CURSE,R,4,Rune of Sly Cursed Heroes,Sly Hero Curse,rune_01,Rune_01_SlyHeroCurse,P,Enemy heroes suffer SP_Just1_Damage damage on their controller's upkeep.
+R_HEALING,R,4,Rune of Major Monster Boon,Major Monster Boon,rune_01,Rune_01_Healing,H,Monsters gain SP_Just2_Health on their controller's upkeep.
+R_RESTORE,R,2,Rune of Minor Monster Boon,Minor Monster Boon,rune_01,Rune_01_Restore,H,Monsters gain SP_Just1_Health on their controller's upkeep.
+R_MYHEALING,L,5,Rune of Major My Monster Boon,Major My Monster Boon,rune_01,Rune_01_MyHealing,H,Your monsters gain SP_Just2_Health on your upkeep.
+R_MYRESTORE,R,3,Rune of Minor My Monster Boon,Minor My Monster Boon,rune_01,Rune_01_MyRestore,H,Your monsters gain SP_Just1_Health on your upkeep.
+R_HERO_HEALING,U,3,Rune of Major Hero Boon,Major Hero Boon,rune_01,Rune_01_HeroHealing,H,Heroes gain SP_Just2_Health on their controller's upkeep.
+R_HERO_RESTORE,C,2,Rune of Minor Hero Boon,Minor Hero Boon,rune_01,Rune_01_HeroRestore,H,Heroes gain SP_Just1_Health on their controller's upkeep.
+R_MYHERO_HEALING,R,5,Rune of Major My Hero Boon,Major My Hero Boon,rune_01,Rune_01_MyHeroHealing,H,Your hero gains SP_Just2_Health on your upkeep.
+R_MYHERO_RESTORE,U,3,Rune of Minor My Hero Boon,Minor My Hero Boon,rune_01,Rune_01_MyHeroRestore,H,Your hero gains SP_Just1_Health on your upkeep.
+R_GRIMREAPER,L,5,Rune of the Grim Reaper,Grim Reaper,rune_01,Rune_01_GrimReaper,M,Whenever you kill a monster: Draw a card# gain RU_Reaper_Mojo# and your hero gains RU_HealthReaper_Health.
+R_NEGLECT,R,4,Rune of Neglect,Neglect,rune_01,Rune_01_Neglect,AD,Armour does not recharge during upkeep.
+R_HB_OCULARUS,R,2,Rock of Ocularus,Rock of Ocularus,rune_01,Rune_01_BuffOcularus,I,Your Ocularus hero is protected from all bad afflictions.
+R_HB_KARGADAN,R,2,Rock of Kargadan,Rock of Kargadan,rune_01,Rune_01_BuffKargadan,I,Your Kargadan hero is protected from all bad afflictions.
+R_HB_GRUMSNIK,R,2,Rock of Grumsnik,Rock of Grumsnik,rune_01,Rune_01_BuffGrumsnik,I,Your Grumsnik hero is protected from all bad afflictions.
+R_MHB_OCULARUS,U,1,Pebble of Ocularus,Pebble of Ocularus,rune_01,Rune_01_MBuffOcularus,I,Your Ocularus hero is protected from all afflictions.
+R_MHB_KARGADAN,U,1,Pebble of Kargadan,Pebble of Kargadan,rune_01,Rune_01_MBuffKargadan,I,Your Kargadan hero is protected from all afflictions.
+R_MHB_GRUMSNIK,U,1,Pebble of Grumsnik,Pebble of Grumsnik,rune_01,Rune_01_MBuffGrumsnik,I,Your Grumsnik hero is protected from all afflictions.
