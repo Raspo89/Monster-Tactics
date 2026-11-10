@@ -11,7 +11,7 @@ export class PovCamera{
  project(h:Hex,height=0){const w=world(h,this.owner);return this.point(w.x,height,w.z);}
  pixels(h:Hex){const w=world(h,this.owner),a=this.point(w.x,0,w.z),b=this.point(w.x+1,0,w.z);return Math.hypot(a.x-b.x,a.y-b.y);}
  polygon(h:Hex,scale=1){const w=world(h,this.owner);return Array.from({length:6},(_,i)=>{const a=i*Math.PI/3;return this.point(w.x+Math.cos(a)*CELL/Math.sqrt(3)*scale,0,w.z+Math.sin(a)*CELL/Math.sqrt(3)*scale);});}
- zoomBy(factor:number){this.zoom=Math.max(.45,Math.min(1.65,this.zoom*factor));this.refresh();}
+ zoomBy(factor:number){this.zoom=Math.max(.3,Math.min(1.65,this.zoom*factor));this.refresh();}
  reset(){this.zoom=1;this.panX=this.panY=0;this.refresh();}
 }
 export function insidePolygon(x:number,y:number,p:{x:number,y:number}[]){let inside=false;for(let i=0,j=p.length-1;i<p.length;j=i++)if((p[i].y>y)!==(p[j].y>y)&&x<(p[j].x-p[i].x)*(y-p[i].y)/(p[j].y-p[i].y)+p[i].x)inside=!inside;return inside;}

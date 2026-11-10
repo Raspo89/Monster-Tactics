@@ -20,3 +20,39 @@
 .shop-grid .more-cards{grid-column:1/-1;padding:12px;font-size:16px}
 
 .compact-hud small.mojo-income{display:block;font-size:10px;color:#f1d6ff;max-width:240px;line-height:1.4}.cell-bonus-info{color:#eed3ff!important}
+.map-option .map-preview.map-native{background:radial-gradient(circle,#b7a4ff 0,#5a3fa8 70%,#2b1d55 100%)}
+.map-option.native-option strong{color:#5a2f8a}
+/* 7.8 — battle controls like the original: gear [Esc] bottom-left, green check [Space] bottom-right, "YOUR TURN" banner */
+#battle .battle-tools{display:none}
+#battle .gear-button{position:fixed;left:14px;bottom:14px;z-index:30;width:58px;height:60px;min-width:0;padding:0;border:0;border-radius:50%;background:url(/assets/original/ui-v7/icon-settings.webp) center/contain no-repeat;font-size:0;color:transparent;box-shadow:0 3px 10px #0008}
+#battle .gear-button::after,#battle .end-turn::after{position:absolute;left:50%;transform:translateX(-50%);bottom:-15px;font:bold 10px/1 sans-serif;color:#f4e6b0;text-shadow:0 1px 2px #000;white-space:nowrap}
+#battle .gear-button::after{content:"[Esc]"}
+#battle .end-turn::after{content:"[Space]"}
+#battle .end-turn{position:relative;width:66px!important;height:68px!important;min-width:0!important;padding:0!important;border:0!important;border-radius:50%!important;background:url(/assets/original/ui-v7/icon-check.webp) center/contain no-repeat!important;font-size:0!important;color:transparent!important;box-shadow:0 3px 12px #0009}
+#battle .end-turn span{display:none}
+#battle .end-turn.ready{filter:drop-shadow(0 0 10px #b8ff6a)}
+#battle .camera-tools{bottom:92px!important}
+#turn-banner{position:fixed;left:50%;top:42%;transform:translate(-50%,-50%);z-index:60;pointer-events:none;padding:10px 46px;border:2px solid #d9b45a;border-radius:22px;background:linear-gradient(#5a1f1f,#2a0c0c);color:#f8e7b2;font:bold 26px/1.2 serif;letter-spacing:1px;text-shadow:0 2px 3px #000;box-shadow:0 6px 24px #000b;animation:turnBanner 1.5s ease forwards}
+@keyframes turnBanner{0%{opacity:0;transform:translate(-50%,-50%) scale(.8)}15%{opacity:1;transform:translate(-50%,-50%) scale(1)}80%{opacity:1}100%{opacity:0}}
+@media(pointer:coarse){#battle .gear-button::after,#battle .end-turn::after{content:none}}
+@media(pointer:coarse) and (orientation:portrait){#battle .gear-button{bottom:132px!important;left:6px!important}#battle .camera-tools{bottom:186px!important}#battle .turn-controls{bottom:128px!important}}
+@media(pointer:coarse) and (orientation:landscape){#battle .gear-button{bottom:108px!important;left:6px!important;width:42px!important;height:44px!important}#battle .camera-tools{bottom:156px!important}}
+/* 7.8 — original "Single Player — Click to Start" page */
+.book-click{margin:-6px 0 8px;text-align:center;color:#6b4b1c;font:italic 13px serif}
+.original-modes button{background:linear-gradient(#f3e4bb66,#a07a3c55);border:2px solid #c9a24c}
+.original-modes button img{height:118px}
+.original-modes .daily-done img{filter:sepia(.5) brightness(.85) drop-shadow(0 4px 4px #0005)}
+.book-icon-row{display:flex;justify-content:center;gap:14px;margin-top:14px}
+.book-icon-row button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:0;border:0;background:none;color:#4a3414;font-size:11px;font-weight:bold;box-shadow:none}
+.book-icon-row img{width:52px;height:52px;object-fit:contain;filter:drop-shadow(0 2px 3px #0006)}
+.book-icon-row button:hover img{transform:scale(1.08)}
+.daily-bonus{margin:0 0 8px;padding:6px 10px;border:1px solid #d9b45a;border-radius:10px;background:#3a2a0c;color:#ffe9a6;font-weight:bold}
+@media(max-width:700px){.original-modes button img{height:84px}.book-icon-row img{width:44px;height:44px}}
+/* Phones in portrait: the book's pages stack (Single Player page first), like turning the original book one page at a time */
+@media(max-width:600px){.open-book{grid-template-columns:1fr!important;min-height:0}.open-book .book-right{order:-1}.open-book .book-spine{display:none}.original-modes button img{height:96px}.book-icon-row{flex-wrap:wrap;gap:10px}}
+/* 7.8 — end of battle like the original: WINNER / BAD LUCK logo over the blue screen */
+#dialog:has(.result-logo){background:radial-gradient(circle at 50% 40%,#2b57d6 0,#0d2a8a 45%,#03103f 100%)!important}
+#dialog:has(.result-logo) .dialog-box{background:linear-gradient(#3b3326f2,#1d170ff2);border:2px solid #c9a24c;color:#f4e6bf}
+#dialog:has(.result-logo) .dialog-box>h2{display:none}
+.result-logo{display:block;width:min(340px,80%);margin:-6px auto 6px;filter:drop-shadow(0 4px 8px #000a)}
+.daily-bonus{text-align:center;width:fit-content;margin:0 auto 10px!important}
