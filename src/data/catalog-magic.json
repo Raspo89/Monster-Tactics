@@ -3872,7 +3872,7 @@
   "race": "neutral",
   "type": "spell",
   "cost": 2,
-  "text": "كل القادة: يكسب الهياج",
+  "text": "كل القادة: يكسب الهياج، ولا يستطيع الهجوم هذا الدور",
   "keywords": [],
   "rarity": "R",
   "nativeTag": "SP_H_AFF_BERSERK",
@@ -3885,7 +3885,8 @@
       "who": "all",
       "heroes": true
      },
-     "name": "berserk"
+     "name": "berserk",
+     "blockAttackThisTurn": true
     }
    ]
   }
@@ -4016,7 +4017,7 @@
   "race": "neutral",
   "type": "spell",
   "cost": 2,
-  "text": "كل القادة: يكسب الانتقام",
+  "text": "كل القادة: يصيبه الانتقام",
   "keywords": [],
   "rarity": "R",
   "nativeTag": "SP_H_AFF_VENGEANCE",
@@ -10853,7 +10854,7 @@
   "race": "neutral",
   "type": "spell",
   "cost": 2,
-  "text": "الهدف: يكسب الهياج",
+  "text": "الهدف: يكسب الهياج، ولا يستطيع الهجوم هذا الدور",
   "keywords": [],
   "rarity": "C",
   "nativeTag": "SPT_MAFF_BERSERK",
@@ -10866,7 +10867,8 @@
      "g": {
       "who": "target"
      },
-     "name": "berserk"
+     "name": "berserk",
+     "blockAttackThisTurn": true
     }
    ]
   }
@@ -10997,13 +10999,13 @@
   "race": "neutral",
   "type": "spell",
   "cost": 2,
-  "text": "الهدف: يكسب الانتقام",
+  "text": "الهدف: يصيبه الانتقام",
   "keywords": [],
   "rarity": "C",
   "nativeTag": "SPT_MAFF_VENGEANCE",
   "art": "spell_afflict_monsters",
   "effect": {
-   "target": "mine",
+   "target": "enemy",
    "ops": [
     {
      "op": "afflict",

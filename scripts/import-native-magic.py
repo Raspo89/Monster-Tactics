@@ -50,13 +50,13 @@ def parse_spell(t, use_on):
     if m:
         n, stat = param(m.group(1))
         return {'target': 'mine' if n > 0 else 'enemy', 'ops': [{'op': 'heal' if stat == 'health' else 'stat', 'g': {'who': 'target'}, 'stat': stat, 'n': n}]}
-    m = re.fullmatch(r'Target monster becomes afflicted with ([A-Za-z ]+?)(?: and cannot attack this turn)?\.', t)
+    m = re.fullmatch(r'Target monster becomes afflicted with ([A-Za-z ]+?)( and cannot attack this turn)?\.', t)
     if m and m.group(1) in AFFLICT:
         name = AFFLICT[m.group(1)]
-        good = name in ('mighty', 'regen', 'vengeance', 'shield', 'berserk')
-        return {'target': 'mine' if good else 'enemy', 'ops': [{'op': 'afflict', 'g': {'who': 'target'}, 'name': name}]}
-    m = re.fullmatch(r'All ' + WHO + r'heroes become afflicted with ([A-Za-z ]+?)(?: and cannot attack this turn)?\.', t)
-    if m and m.group(2) in AFFLICT: return {'ops': [{'op': 'afflict', 'g': {'who': {'enemy': 'enemy', 'your': 'mine'}.get(m.group(1) or '', 'all'), 'heroes': True}, 'name': AFFLICT[m.group(2)]}]}
+        good = name in ('mighty', 'regen', 'shield', 'berserk')
+        return {'target': 'mine' if good else 'enemy', 'ops': [{'op': 'afflict', 'g': {'who': 'target'}, 'name': name, **({'blockAttackThisTurn': True} if m.group(2) else {})}]}
+    m = re.fullmatch(r'All ' + WHO + r'heroes become afflicted with ([A-Za-z ]+?)( and cannot attack this turn)?\.', t)
+    if m and m.group(2) in AFFLICT: return {'ops': [{'op': 'afflict', 'g': {'who': {'enemy': 'enemy', 'your': 'mine'}.get(m.group(1) or '', 'all'), 'heroes': True}, 'name': AFFLICT[m.group(2)], **({'blockAttackThisTurn': True} if m.group(3) else {})}]}
     m = re.fullmatch(r'All ' + WHO + NOUN + r' suffers? ' + P + r' damage\.', t)
     if m: return {'ops': [{'op': 'damage', 'g': group(m.group(1), m.group(2)), 'n': param(m.group(3))[0]}]}
     m = re.fullmatch(r'All ' + WHO + r'heroes suffer ' + P + r' damage\.', t)
@@ -139,7 +139,9 @@ def text(e):
         elif k == 'lose': parts.append(f"{who_ar(g)} تخسر {o['n']} صحة" + (f"، وقائدك يكسب {o['heroPerDeath']} صحة عن كل وحش يموت" if o.get('heroPerDeath') else ''))
         elif k == 'cleanse': parts.append(f"{who_ar(g)} تتخلص من " + {'bad': 'كل الحالات السيئة', 'good': 'كل الحالات الجيدة', 'all': 'كل الحالات'}[o['which']])
         elif k == 'bounce': parts.append(f"{who_ar(g)} ترجع ليد صاحبها مع عتادها" + (f"، وقائد صاحبها يكسب {o['heroPerBounce']} صحة عن كل وحش" if o.get('heroPerBounce') else ''))
-        elif k == 'afflict': parts.append(f"{who_ar(g)}: " + ('يكسب ' if o['name'] in ('mighty', 'regen', 'vengeance', 'shield', 'berserk') else 'يصيبه ') + AR_AFF[o['name']])
+        elif k == 'afflict':
+            parts.append(f"{who_ar(g)}: " + ('يكسب ' if o['name'] in ('mighty', 'regen', 'shield', 'berserk') else 'يصيبه ') + AR_AFF[o['name']])
+            if o.get('blockAttackThisTurn'): parts[-1] += '، ولا يستطيع الهجوم هذا الدور'
         elif k == 'refresh': parts.append(f"{who_ar(g)} تتحرك وتهاجم مرة ثانية هالدور")
         elif k == 'draw': parts.append(f"اسحب {o['n']} " + ('بطاقة' if o['n'] == 1 else 'بطاقات'))
         elif k == 'mojo': parts.append(f"اكسب {o['n']} موجو" if 'max' not in o else f"اكسب من {o['n']} إلى {o['max']} موجو عشوائيًا")
