@@ -624,7 +624,7 @@
     "keywords": []
   },
   {
-    "id": "W01",
+    "id": "W01", "kind": "spear",
     "name": "رمح طويل",
     "type": "weapon",
     "cost": 2,
@@ -634,7 +634,7 @@
     "keywords": []
   },
   {
-    "id": "W02",
+    "id": "W02", "kind": "axe",
     "name": "فأس ثقيل",
     "type": "weapon",
     "cost": 3,
@@ -644,7 +644,7 @@
     "keywords": []
   },
   {
-    "id": "A01",
+    "id": "A01", "kind": "shield",
     "name": "ترس حديد",
     "type": "armor",
     "cost": 1,
@@ -654,7 +654,7 @@
     "keywords": []
   },
   {
-    "id": "A02",
+    "id": "A02", "kind": "armour",
     "name": "درع صفائح",
     "type": "armor",
     "cost": 3,

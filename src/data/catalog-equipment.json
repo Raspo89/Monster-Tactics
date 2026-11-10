@@ -1,0 +1,3590 @@
+[
+ {
+  "id": "NE_WD_DAGGER",
+  "name": "Dagger",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 1,
+  "rarity": "C",
+  "text": "+1 هجوم • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_DAGGER",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WD_DEATH",
+  "name": "Death Dagger",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "L",
+  "text": "+2 هجوم • يصيب الهدف بـعلامة الموت • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_DEATH",
+  "equip": {
+   "attack": 2,
+   "afflict": "deathmark",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WD_STRONG",
+  "name": "Stiletto",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • +1 دفاع • +1 صحة • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_STRONG",
+  "equip": {
+   "attack": 1,
+   "health": 1,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WD_CUTPURSE",
+  "name": "Cutpurse Dagger",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 هجوم • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_CUTPURSE",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WD_ICE",
+  "name": "Ice Dagger",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • يصيب الهدف بـالتجميد • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_ICE",
+  "equip": {
+   "attack": 1,
+   "afflict": "ice",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WD_VOODOO",
+  "name": "Voodoo Dagger",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • يصيب الهدف بـالاشتعال • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_VOODOO",
+  "equip": {
+   "attack": 1,
+   "afflict": "flame",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WD_SAPPING",
+  "name": "Sapping Dagger",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 1,
+  "rarity": "U",
+  "text": "+4 هجوم • -3 صحة • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_SAPPING",
+  "equip": {
+   "attack": 4,
+   "health": -3
+  }
+ },
+ {
+  "id": "NE_WS_SCIMITAR",
+  "name": "Scimitar",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 صحة • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_SCIMITAR",
+  "equip": {
+   "attack": 1,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_WS_FALCHION",
+  "name": "Falchion",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+2 هجوم • +1 دفاع • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_FALCHION",
+  "equip": {
+   "attack": 2,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WS_POWER",
+  "name": "Legion Sword",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+3 هجوم • +2 دفاع • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_POWER",
+  "equip": {
+   "attack": 3,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WS_LEGION",
+  "name": "Power Sword",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+2 هجوم • +2 صحة • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_LEGION",
+  "equip": {
+   "attack": 2,
+   "health": 2
+  }
+ },
+ {
+  "id": "NE_WS_HERO",
+  "name": "Hero Sword",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+3 هجوم • +3 صحة • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_HERO",
+  "equip": {
+   "attack": 3,
+   "health": 3
+  }
+ },
+ {
+  "id": "NE_WS_TITAN",
+  "name": "Titan",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+5 هجوم • +2 دفاع • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_TITAN",
+  "equip": {
+   "attack": 5,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WS_DEMON",
+  "name": "Demon Sword",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+4 هجوم • يصيب الهدف بـالاشتعال • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_DEMON",
+  "equip": {
+   "attack": 4,
+   "afflict": "flame",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WS_COLOSSUS",
+  "name": "Colossus",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+4 هجوم • +4 صحة • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_COLOSSUS",
+  "equip": {
+   "attack": 4,
+   "health": 4
+  }
+ },
+ {
+  "id": "NE_WS_ENDER",
+  "name": "World Ender",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "sword",
+  "forClass": "warrior",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+6 هجوم • +2 دفاع • سيف للمحاربين",
+  "keywords": [],
+  "nativeTag": "WS_ENDER",
+  "equip": {
+   "attack": 6,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WA_BUTCHER",
+  "name": "Butcher",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+2 هجوم • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_BUTCHER",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WA_HATCHET",
+  "name": "Hatchet",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+3 هجوم • -1 صحة • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_HATCHET",
+  "equip": {
+   "attack": 3,
+   "health": -1
+  }
+ },
+ {
+  "id": "NE_WA_SLICER",
+  "name": "Slicer",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+3 هجوم • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_SLICER",
+  "equip": {
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_WA_CLEAVER",
+  "name": "Cleaver",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+4 هجوم • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_CLEAVER",
+  "equip": {
+   "attack": 4
+  }
+ },
+ {
+  "id": "NE_WA_LEGION",
+  "name": "Battle Axe",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+1 هجوم • +4 دفاع • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_LEGION",
+  "equip": {
+   "attack": 1,
+   "armor": 4
+  }
+ },
+ {
+  "id": "NE_WA_GOLDEN",
+  "name": "Golden Axe",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+5 هجوم • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_GOLDEN",
+  "equip": {
+   "attack": 5
+  }
+ },
+ {
+  "id": "NE_WA_GREAT",
+  "name": "Great Axe",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+5 هجوم • -1 موجو كل دور • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_GREAT",
+  "equip": {
+   "attack": 5,
+   "mojo": -1
+  }
+ },
+ {
+  "id": "NE_WA_DOUBLE",
+  "name": "Double Cleaver",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "R",
+  "text": "+5 هجوم • -4 صحة • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_DOUBLE",
+  "equip": {
+   "attack": 5,
+   "health": -4
+  }
+ },
+ {
+  "id": "NE_WA_FURIOUS",
+  "name": "Furious Glory",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+6 هجوم • -1 موجو كل دور • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_FURIOUS",
+  "equip": {
+   "attack": 6,
+   "mojo": -1
+  }
+ },
+ {
+  "id": "NE_WA_MAYHEM",
+  "name": "Mayhem",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+5 هجوم • -2 صحة • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_MAYHEM",
+  "equip": {
+   "attack": 5,
+   "health": -2
+  }
+ },
+ {
+  "id": "NE_WM_WOOD",
+  "name": "Woodie",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+2 هجوم • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_WOOD",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WM_TRUDGEON",
+  "name": "Forget-me Stick",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 دفاع • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_TRUDGEON",
+  "equip": {
+   "attack": 1,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WM_SPIKEY",
+  "name": "Spikey",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • يصيب الهدف بـالتقييد • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_SPIKEY",
+  "equip": {
+   "attack": 1,
+   "afflict": "snare",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WM_SMASHER",
+  "name": "Smasher",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+2 هجوم • يصيب الهدف بـالتجميد • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_SMASHER",
+  "equip": {
+   "attack": 2,
+   "afflict": "ice",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WM_DEEPFORGE",
+  "name": "Deep Forge Mace",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+2 هجوم • +2 موجو كل دور • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_DEEPFORGE",
+  "equip": {
+   "attack": 2,
+   "mojo": 2
+  }
+ },
+ {
+  "id": "NE_WM_FAITHFUL",
+  "name": "Old Faithful",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+2 هجوم • يصيب الهدف بـالتقييد • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_FAITHFUL",
+  "equip": {
+   "attack": 2,
+   "afflict": "snare",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WM_MIGHTY",
+  "name": "Mojo Mace",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+1 هجوم • +1 موجو كل دور • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_MIGHTY",
+  "equip": {
+   "attack": 1,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_WM_WRATH",
+  "name": "Hammer of Wrath",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+2 هجوم • يصيب الهدف بـالذهول • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_WRATH",
+  "equip": {
+   "attack": 2,
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WM_DOOM",
+  "name": "Doom Hammer",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+5 هجوم • يصيب الهدف بـالذهول • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_DOOM",
+  "equip": {
+   "attack": 5,
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WM_DOMINUS",
+  "name": "Dominus",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+6 هجوم • يصيب الهدف بـعلامة الموت • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_DOMINUS",
+  "equip": {
+   "attack": 6,
+   "afflict": "deathmark",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WST_LIGHT",
+  "name": "Staff of Light",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+2 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_LIGHT",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WST_MERCY",
+  "name": "Mercy",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "C",
+  "text": "-1 هجوم • +1 موجو كل دور • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_MERCY",
+  "equip": {
+   "attack": -1,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_WST_GNARLED",
+  "name": "Gnarled Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+2 هجوم • +2 دفاع • +2 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_GNARLED",
+  "equip": {
+   "attack": 2,
+   "health": 2,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WST_DIAMOND",
+  "name": "Diamond Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • +2 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_DIAMOND",
+  "equip": {
+   "attack": 1,
+   "health": 2
+  }
+ },
+ {
+  "id": "NE_WST_AURELIAN",
+  "name": "Aurelian",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 5,
+  "rarity": "C",
+  "text": "+3 هجوم • +1 دفاع • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_AURELIAN",
+  "equip": {
+   "attack": 3,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WST_BLOOD",
+  "name": "Bane",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+5 هجوم • -1 موجو كل دور • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_BLOOD",
+  "equip": {
+   "attack": 5,
+   "mojo": -1
+  }
+ },
+ {
+  "id": "NE_WST_DELIVER",
+  "name": "Deliverance",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 5,
+  "rarity": "L",
+  "text": "-2 هجوم • +3 موجو كل دور • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_DELIVER",
+  "equip": {
+   "attack": -2,
+   "mojo": 3
+  }
+ },
+ {
+  "id": "NE_WST_DEMON",
+  "name": "Demon Stave",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+5 هجوم • +2 دفاع • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_DEMON",
+  "equip": {
+   "attack": 5,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WST_DAEDRIC",
+  "name": "Daedric Stave",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+2 هجوم • +4 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_DAEDRIC",
+  "equip": {
+   "attack": 2,
+   "health": 4
+  }
+ },
+ {
+  "id": "NE_WST_KARMA",
+  "name": "Karma Bo",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 5,
+  "rarity": "R",
+  "text": "-1 هجوم • +2 موجو كل دور • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_KARMA",
+  "equip": {
+   "attack": -1,
+   "mojo": 2
+  }
+ },
+ {
+  "id": "NE_WST_FIREBALL",
+  "name": "Fireball Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_FIREBALL",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WST_LIGNTNING",
+  "name": "Lightning Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_LIGNTNING",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WST_METEOR",
+  "name": "Meteor Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_METEOR",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WST_HEAL",
+  "name": "Heal Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_HEAL",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WST_MASSHEAL",
+  "name": "Mass Heal Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_MASSHEAL",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WB_EBONY",
+  "name": "Ebony Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+1 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_EBONY",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WB_NIGHTMARE",
+  "name": "Nightmare",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 1,
+  "rarity": "R",
+  "text": "+3 هجوم • -3 صحة • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_NIGHTMARE",
+  "equip": {
+   "attack": 3,
+   "health": -3
+  }
+ },
+ {
+  "id": "NE_WB_SHOCK",
+  "name": "Shock Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+2 هجوم • يصيب الهدف بـالذهول • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_SHOCK",
+  "equip": {
+   "attack": 2,
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_FROST",
+  "name": "Frost Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+2 هجوم • يصيب الهدف بـالتجميد • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_FROST",
+  "equip": {
+   "attack": 2,
+   "afflict": "ice",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_FIRE",
+  "name": "Fire Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+2 هجوم • يصيب الهدف بـالاشتعال • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_FIRE",
+  "equip": {
+   "attack": 2,
+   "afflict": "flame",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_HERO",
+  "name": "Bow of Heroes",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+2 هجوم • +3 دفاع • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_HERO",
+  "equip": {
+   "attack": 2,
+   "armor": 3
+  }
+ },
+ {
+  "id": "NE_WB_MANA",
+  "name": "Mojo Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+1 هجوم • +1 موجو كل دور • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_MANA",
+  "equip": {
+   "attack": 1,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_WB_DEMON",
+  "name": "Demon Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+3 هجوم • يصيب الهدف بـالاشتعال • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_DEMON",
+  "equip": {
+   "attack": 3,
+   "afflict": "flame",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_LONG",
+  "name": "Long Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+2 هجوم • -1 صحة • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_LONG",
+  "equip": {
+   "attack": 2,
+   "health": -1
+  }
+ },
+ {
+  "id": "NE_WB_STEEL",
+  "name": "Steel Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 دفاع • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_STEEL",
+  "equip": {
+   "attack": 1,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WB_JADE",
+  "name": "Jade Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+2 هجوم • يصيب الهدف بـعلامة الموت • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_JADE",
+  "equip": {
+   "attack": 2,
+   "afflict": "deathmark",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_IVORY",
+  "name": "Ivory Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+2 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_IVORY",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WB_SNIPER",
+  "name": "Goto Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+3 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_SNIPER",
+  "equip": {
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_WB_HEAD",
+  "name": "Headshot Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+2 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_HEAD",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WB_BARRAGE",
+  "name": "Barrage Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+2 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_BARRAGE",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WD_SLASHER",
+  "name": "Slasher Dagger",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "U",
+  "text": "-2 هجوم • +5 صحة • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_SLASHER",
+  "equip": {
+   "attack": -2,
+   "health": 5
+  }
+ },
+ {
+  "id": "NE_WA_DEVIOUS",
+  "name": "Devious",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "axe",
+  "forClass": "warrior",
+  "cost": 6,
+  "rarity": "L",
+  "text": "+8 هجوم • فأس للمحاربين",
+  "keywords": [],
+  "nativeTag": "WA_DEVIOUS",
+  "equip": {
+   "attack": 8
+  }
+ },
+ {
+  "id": "NE_WM_ICICLE",
+  "name": "Icicle",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "mace",
+  "forClass": "warrior",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+3 هجوم • يصيب الهدف بـالتجميد • مطرقة للمحاربين",
+  "keywords": [],
+  "nativeTag": "WM_ICICLE",
+  "equip": {
+   "attack": 3,
+   "afflict": "ice",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WST_BLINDER",
+  "name": "Blinding Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 1,
+  "rarity": "C",
+  "text": "-1 هجوم • يصيب الهدف بـالذهول • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_BLINDER",
+  "equip": {
+   "attack": -1,
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WD_LUCKY",
+  "name": "Lucky Charm",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "dagger",
+  "forClass": "warrior",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 موجو كل دور • خنجر للمحاربين",
+  "keywords": [],
+  "nativeTag": "WD_LUCKY",
+  "equip": {
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_WB_DAZZLING",
+  "name": "Dazzling Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+2 دفاع • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_DAZZLING",
+  "equip": {
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WST_HEALTHBO",
+  "name": "Health Bo",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+7 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_HEALTHBO",
+  "equip": {
+   "health": 7
+  }
+ },
+ {
+  "id": "NE_WST_RHYTHM",
+  "name": "Rhythm Stick",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • يصيب الهدف بـالذهول • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_RHYTHM",
+  "equip": {
+   "attack": 1,
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WST_WALKING",
+  "name": "Walking Stick",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 دفاع • +1 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_WALKING",
+  "equip": {
+   "attack": 1,
+   "health": 1,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WST_DEATHMARK",
+  "name": "Death Mark Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "R",
+  "text": "+1 هجوم • يصيب الهدف بـعلامة الموت • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_DEATHMARK",
+  "equip": {
+   "attack": 1,
+   "afflict": "deathmark",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_DEATH",
+  "name": "Death Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+1 هجوم • يصيب الهدف بـعلامة الموت • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_DEATH",
+  "equip": {
+   "attack": 1,
+   "afflict": "deathmark",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_RIOT",
+  "name": "Riot Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "U",
+  "text": "يصيب الهدف بـالذهول • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_RIOT",
+  "equip": {
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_REFLEX",
+  "name": "Reflex Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+3 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_REFLEX",
+  "equip": {
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_WB_KILLSHOT",
+  "name": "Sniper Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+3 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_KILLSHOT",
+  "equip": {
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_WB_QUAD",
+  "name": "Cuatro Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 صحة • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_QUAD",
+  "equip": {
+   "attack": 1,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_WB_REFLUX",
+  "name": "Reflux Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+4 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_REFLUX",
+  "equip": {
+   "attack": 4
+  }
+ },
+ {
+  "id": "NE_WB_QUAD2",
+  "name": "Quad Core Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+3 هجوم • +1 دفاع • +1 صحة • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_QUAD2",
+  "equip": {
+   "attack": 3,
+   "health": 1,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WB_QUAD3",
+  "name": "Rusty Quad",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+1 هجوم • +2 دفاع • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_QUAD3",
+  "equip": {
+   "attack": 1,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WST_DREAM",
+  "name": "Dream Catcher",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+2 دفاع • +4 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_DREAM",
+  "equip": {
+   "health": 4,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WST_CREAM",
+  "name": "Eagle Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+3 دفاع • +2 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_CREAM",
+  "equip": {
+   "health": 2,
+   "armor": 3
+  }
+ },
+ {
+  "id": "NE_WST_BLADE",
+  "name": "Blade Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+3 هجوم • -1 دفاع • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_BLADE",
+  "equip": {
+   "attack": 3,
+   "armor": -1
+  }
+ },
+ {
+  "id": "NE_WST_STABBER",
+  "name": "Stabber Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "L",
+  "text": "+4 هجوم • +1 دفاع • +1 صحة • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_STABBER",
+  "equip": {
+   "attack": 4,
+   "health": 1,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WB_ICE",
+  "name": "Ice Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+1 هجوم • يصيب الهدف بـالتجميد • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_ICE",
+  "equip": {
+   "attack": 1,
+   "afflict": "ice",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_MANA2",
+  "name": "Mojo Mega Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+1 هجوم • +2 موجو كل دور • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_MANA2",
+  "equip": {
+   "attack": 1,
+   "mojo": 2
+  }
+ },
+ {
+  "id": "NE_WB_HADES",
+  "name": "Hades Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+1 هجوم • يصيب الهدف بـالاشتعال • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_HADES",
+  "equip": {
+   "attack": 1,
+   "afflict": "flame",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_WB_SNIPERM",
+  "name": "Gosub Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+2 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_SNIPERM",
+  "equip": {
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_WB_HEADM",
+  "name": "Headshot Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_HEADM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WB_BARRAGEM",
+  "name": "Barrage Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_BARRAGEM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WB_QUADM",
+  "name": "Quad Core Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+2 هجوم • +1 دفاع • +1 صحة • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_QUADM",
+  "equip": {
+   "attack": 2,
+   "health": 1,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WB_KILLSHOTM",
+  "name": "Sniper Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_KILLSHOTM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WB_MANA3",
+  "name": "Balance Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 2,
+  "rarity": "U",
+  "text": "-2 صحة • +1 موجو كل دور • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_MANA3",
+  "equip": {
+   "health": -2,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_WB_MANA4",
+  "name": "Imbalance Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "C",
+  "text": "-1 صحة • +1 موجو كل دور • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_MANA4",
+  "equip": {
+   "health": -1,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_WB_SHORT",
+  "name": "Short Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+2 هجوم • +1 صحة • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_SHORT",
+  "equip": {
+   "attack": 2,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_WB_TALL",
+  "name": "Tall Bow",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "bow",
+  "forClass": "archer",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+3 هجوم • -1 صحة • قوس للرماة",
+  "keywords": [],
+  "nativeTag": "WB_TALL",
+  "equip": {
+   "attack": 3,
+   "health": -1
+  }
+ },
+ {
+  "id": "NE_WST_PLENTY",
+  "name": "Staff of Plenty",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+2 هجوم • +2 موجو كل دور • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_PLENTY",
+  "equip": {
+   "attack": 2,
+   "mojo": 2
+  }
+ },
+ {
+  "id": "NE_WST_SLICER",
+  "name": "Slicer Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+3 هجوم • +1 دفاع • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_SLICER",
+  "equip": {
+   "attack": 3,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_WST_WRINKLY",
+  "name": "Wrinkly Staff",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+2 هجوم • +2 دفاع • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_WRINKLY",
+  "equip": {
+   "attack": 2,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_WST_MOJO",
+  "name": "Mojo",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+1 هجوم • +1 موجو كل دور • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_MOJO",
+  "equip": {
+   "attack": 1,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_WST_FIREBALLM",
+  "name": "Fireball Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_FIREBALLM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WST_HEALM",
+  "name": "Heal Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_HEALM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WST_LIGNTNINGM",
+  "name": "Lightning Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_LIGNTNINGM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WST_MASSHEALM",
+  "name": "Mass Heal Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_MASSHEALM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_WST_METEORM",
+  "name": "Meteor Mini",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "staff",
+  "forClass": "mage",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • عصا للسحرة",
+  "keywords": [],
+  "nativeTag": "WST_METEORM",
+  "equip": {
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_ART_ROCK1",
+  "name": "Pebble",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 1,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 صحة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_ROCK1",
+  "equip": {
+   "attack": 1,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_ART_ROCK2",
+  "name": "Stone",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+2 هجوم • +1 صحة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_ROCK2",
+  "equip": {
+   "attack": 2,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_ART_ROCK3",
+  "name": "Rock",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+3 هجوم • +1 صحة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_ROCK3",
+  "equip": {
+   "attack": 3,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_ART_ROCK4",
+  "name": "Large Rock",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+4 هجوم • +1 صحة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_ROCK4",
+  "equip": {
+   "attack": 4,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_ART_ROCK5",
+  "name": "Massive Rock",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 5,
+  "rarity": "C",
+  "text": "+5 هجوم • +1 صحة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_ROCK5",
+  "equip": {
+   "attack": 5,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_ART_BRICK1",
+  "name": "Brick",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+4 هجوم • +2 دفاع • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_BRICK1",
+  "equip": {
+   "attack": 4,
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_ART_FIRE1",
+  "name": "Fireball",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+2 هجوم • محمي من كل الحالات • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_FIRE1",
+  "equip": {
+   "attack": 2,
+   "protect": [
+    "all"
+   ]
+  }
+ },
+ {
+  "id": "NE_ART_FIRE2",
+  "name": "Infernoid",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+4 هجوم • محمي من كل الحالات • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_FIRE2",
+  "equip": {
+   "attack": 4,
+   "protect": [
+    "all"
+   ]
+  }
+ },
+ {
+  "id": "NE_ART_LIGHTNING1",
+  "name": "Lightning",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+2 هجوم • محمي من الحالات السيئة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_LIGHTNING1",
+  "equip": {
+   "attack": 2,
+   "protect": [
+    "bad"
+   ]
+  }
+ },
+ {
+  "id": "NE_ART_LIGHTNING2",
+  "name": "Electroid",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+4 هجوم • محمي من الحالات السيئة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_LIGHTNING2",
+  "equip": {
+   "attack": 4,
+   "protect": [
+    "bad"
+   ]
+  }
+ },
+ {
+  "id": "NE_ART_DUNG",
+  "name": "Dung Ball",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+3 هجوم • -2 صحة • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_DUNG",
+  "equip": {
+   "attack": 3,
+   "health": -2
+  }
+ },
+ {
+  "id": "NE_ART_BRICK2",
+  "name": "Half Brick",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+2 هجوم • +1 دفاع • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_BRICK2",
+  "equip": {
+   "attack": 2,
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_ART_SKULL1",
+  "name": "Skully",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+5 هجوم • +1 موجو كل دور • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_SKULL1",
+  "equip": {
+   "attack": 5,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_ART_SKULL2",
+  "name": "Skelly",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+3 هجوم • +2 موجو كل دور • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_SKULL2",
+  "equip": {
+   "attack": 3,
+   "mojo": 2
+  }
+ },
+ {
+  "id": "NE_ART_AFF_STUN1",
+  "name": "Dazer",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+3 هجوم • يصيب الهدف بـالذهول • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_STUN1",
+  "equip": {
+   "attack": 3,
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_STUN2",
+  "name": "Dazer Splash",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+2 هجوم • يصيب الهدف بـالذهول • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_STUN2",
+  "equip": {
+   "attack": 2,
+   "afflict": "stun",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_FLAME1",
+  "name": "Flamer",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+3 هجوم • يصيب الهدف بـالاشتعال • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_FLAME1",
+  "equip": {
+   "attack": 3,
+   "afflict": "flame",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_FLAME2",
+  "name": "Flamer Splash",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+2 هجوم • يصيب الهدف بـالاشتعال • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_FLAME2",
+  "equip": {
+   "attack": 2,
+   "afflict": "flame",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_SNARED1",
+  "name": "Snarer",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+3 هجوم • يصيب الهدف بـالتقييد • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_SNARED1",
+  "equip": {
+   "attack": 3,
+   "afflict": "snare",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_SNARED2",
+  "name": "Snarer Splash",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+2 هجوم • يصيب الهدف بـالتقييد • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_SNARED2",
+  "equip": {
+   "attack": 2,
+   "afflict": "snare",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_ICE1",
+  "name": "Icer",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+3 هجوم • يصيب الهدف بـالتجميد • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_ICE1",
+  "equip": {
+   "attack": 3,
+   "afflict": "ice",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_ICE2",
+  "name": "Icer Splash",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+2 هجوم • يصيب الهدف بـالتجميد • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_ICE2",
+  "equip": {
+   "attack": 2,
+   "afflict": "ice",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_DEATHMARK1",
+  "name": "Deathmarker",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+3 هجوم • يصيب الهدف بـعلامة الموت • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_DEATHMARK1",
+  "equip": {
+   "attack": 3,
+   "afflict": "deathmark",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_ART_AFF_DEATHMARK2",
+  "name": "Deathmarker Splash",
+  "race": "neutral",
+  "type": "weapon",
+  "slot": "weapon",
+  "kind": "artillery",
+  "forClass": "artillery",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+2 هجوم • يصيب الهدف بـعلامة الموت • ذخيرة مدفعية للمدفعية",
+  "keywords": [],
+  "nativeTag": "ART_AFF_DEATHMARK2",
+  "equip": {
+   "attack": 2,
+   "afflict": "deathmark",
+   "chance": 100
+  }
+ },
+ {
+  "id": "NE_A_WETPAPER",
+  "name": "Wet Paper",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 1,
+  "rarity": "C",
+  "text": "+1 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_WETPAPER",
+  "equip": {
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_A_TINFOIL",
+  "name": "Tinfoil",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 دفاع • +2 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_TINFOIL",
+  "equip": {
+   "armor": 1,
+   "health": 2
+  }
+ },
+ {
+  "id": "NE_A_RUBBISH",
+  "name": "Feeble Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 2,
+  "rarity": "C",
+  "text": "-2 هجوم • +2 دفاع • +2 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_RUBBISH",
+  "equip": {
+   "armor": 2,
+   "health": 2,
+   "attack": -2
+  }
+ },
+ {
+  "id": "NE_A_POXY",
+  "name": "Sensible Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 6,
+  "rarity": "U",
+  "text": "+2 دفاع • +2 صحة • +1 موجو كل دور • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_POXY",
+  "equip": {
+   "armor": 2,
+   "health": 2,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_A_SKIN",
+  "name": "Second Skin",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 6,
+  "rarity": "C",
+  "text": "+1 دفاع • +5 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_SKIN",
+  "equip": {
+   "armor": 1,
+   "health": 5
+  }
+ },
+ {
+  "id": "NE_A_FACTOR",
+  "name": "Swagger",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+1 هجوم • +2 دفاع • +1 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_FACTOR",
+  "equip": {
+   "armor": 2,
+   "health": 1,
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_A_HAVE",
+  "name": "Power Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+3 هجوم • +1 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_HAVE",
+  "equip": {
+   "armor": 1,
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_A_DESPERATE",
+  "name": "Uber Defendage",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+5 دفاع • +3 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_DESPERATE",
+  "equip": {
+   "armor": 5,
+   "health": 3
+  }
+ },
+ {
+  "id": "NE_A_DEFENDAGE",
+  "name": "Spikey Commander",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+2 هجوم • +2 دفاع • +1 موجو كل دور • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_DEFENDAGE",
+  "equip": {
+   "armor": 2,
+   "mojo": 1,
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_A_CLOTHES",
+  "name": "The Khan",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+3 هجوم • +2 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_CLOTHES",
+  "equip": {
+   "armor": 2,
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_A_RIDICULOUS",
+  "name": "Bad Idea Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 2,
+  "rarity": "C",
+  "text": "-2 هجوم • +4 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_RIDICULOUS",
+  "equip": {
+   "armor": 4,
+   "attack": -2
+  }
+ },
+ {
+  "id": "NE_A_ULTIMATE",
+  "name": "Emperor Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+4 دفاع • +3 صحة • +1 موجو كل دور • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_ULTIMATE",
+  "equip": {
+   "armor": 4,
+   "health": 3,
+   "mojo": 1
+  }
+ },
+ {
+  "id": "NE_A_ULTIMATE2",
+  "name": "Mojo Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+3 دفاع • +2 موجو كل دور • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_ULTIMATE2",
+  "equip": {
+   "armor": 3,
+   "mojo": 2
+  }
+ },
+ {
+  "id": "NE_A_NEW02",
+  "name": "Animal Hide",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 دفاع • +1 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW02",
+  "equip": {
+   "armor": 1,
+   "health": 1,
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_A_NEW03",
+  "name": "Golden Morion",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+1 هجوم • +3 دفاع • +2 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW03",
+  "equip": {
+   "armor": 3,
+   "health": 2,
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_A_ULTIMATE3",
+  "name": "Triple Bagger",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+3 هجوم • +3 دفاع • +3 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_ULTIMATE3",
+  "equip": {
+   "armor": 3,
+   "health": 3,
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_A_NEW05",
+  "name": "Much Buffage",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+4 دفاع • +6 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW05",
+  "equip": {
+   "armor": 4,
+   "health": 6
+  }
+ },
+ {
+  "id": "NE_A_NEW06",
+  "name": "Healthy Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+3 دفاع • +5 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW06",
+  "equip": {
+   "armor": 3,
+   "health": 5
+  }
+ },
+ {
+  "id": "NE_A_NEW07",
+  "name": "Decent Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+2 دفاع • +3 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW07",
+  "equip": {
+   "armor": 2,
+   "health": 3
+  }
+ },
+ {
+  "id": "NE_A_NEW08",
+  "name": "Uber Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+6 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW08",
+  "equip": {
+   "armor": 6
+  }
+ },
+ {
+  "id": "NE_A_NEW09",
+  "name": "Armour of Ownage",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+4 هجوم • +4 دفاع • +2 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW09",
+  "equip": {
+   "armor": 4,
+   "health": 2,
+   "attack": 4
+  }
+ },
+ {
+  "id": "NE_A_NEW10",
+  "name": "Armour of Excellence",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 2,
+  "rarity": "L",
+  "text": "+3 دفاع • +3 صحة • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW10",
+  "equip": {
+   "armor": 3,
+   "health": 3
+  }
+ },
+ {
+  "id": "NE_A_NEW11",
+  "name": "Armour of Cheapness",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 2,
+  "rarity": "R",
+  "text": "-1 هجوم • +3 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW11",
+  "equip": {
+   "armor": 3,
+   "attack": -1
+  }
+ },
+ {
+  "id": "NE_A_NEW12",
+  "name": "Armour of Tattiness",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+1 هجوم • +1 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW12",
+  "equip": {
+   "armor": 1,
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_A_NEW13",
+  "name": "Stick Pigger",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 4,
+  "rarity": "U",
+  "text": "+3 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW13",
+  "equip": {
+   "armor": 3
+  }
+ },
+ {
+  "id": "NE_A_NEW14",
+  "name": "Pointy Armour",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "armor",
+  "kind": "armour",
+  "cost": 5,
+  "rarity": "C",
+  "text": "+3 دفاع • درع (خوذة وصدرية وأكتاف) لأي وحش",
+  "keywords": [],
+  "nativeTag": "A_NEW14",
+  "equip": {
+   "armor": 3
+  }
+ },
+ {
+  "id": "NE_S_WOOD",
+  "name": "Wooden Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 1,
+  "rarity": "C",
+  "text": "+1 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_WOOD",
+  "equip": {
+   "armor": 1
+  }
+ },
+ {
+  "id": "NE_S_RUNIC",
+  "name": "Runic Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "R",
+  "text": "-2 هجوم • +2 دفاع • +2 موجو كل دور • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_RUNIC",
+  "equip": {
+   "armor": 2,
+   "mojo": 2,
+   "attack": -2
+  }
+ },
+ {
+  "id": "NE_S_BULWARK",
+  "name": "Steel Bulwark",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+2 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_BULWARK",
+  "equip": {
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_S_GLASS",
+  "name": "Defender",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+4 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_GLASS",
+  "equip": {
+   "armor": 4
+  }
+ },
+ {
+  "id": "NE_S_NIGHTMARE",
+  "name": "Nightmare",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+3 هجوم • +2 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NIGHTMARE",
+  "equip": {
+   "armor": 2,
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_S_VOODOO",
+  "name": "Voodoo Protector",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+1 دفاع • +4 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_VOODOO",
+  "equip": {
+   "armor": 1,
+   "health": 4
+  }
+ },
+ {
+  "id": "NE_S_HEROIC",
+  "name": "Heroic Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+1 هجوم • +4 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_HEROIC",
+  "equip": {
+   "armor": 4,
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_S_REINFORCED",
+  "name": "Tough Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+5 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_REINFORCED",
+  "equip": {
+   "armor": 5
+  }
+ },
+ {
+  "id": "NE_S_BULLSEYE",
+  "name": "Bullseye",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+4 دفاع • -4 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_BULLSEYE",
+  "equip": {
+   "armor": 4,
+   "health": -4
+  }
+ },
+ {
+  "id": "NE_S_FORTRESS",
+  "name": "Fortress",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+7 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_FORTRESS",
+  "equip": {
+   "armor": 7
+  }
+ },
+ {
+  "id": "NE_S_DEATH",
+  "name": "Death Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 هجوم • +2 دفاع • -3 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_DEATH",
+  "equip": {
+   "armor": 2,
+   "health": -3,
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_S_NIGHTSTALKER",
+  "name": "NightStalker Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 6,
+  "rarity": "R",
+  "text": "+3 هجوم • +5 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NIGHTSTALKER",
+  "equip": {
+   "armor": 5,
+   "attack": 3
+  }
+ },
+ {
+  "id": "NE_S_SPARTAN",
+  "name": "Spartan",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+1 هجوم • +1 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_SPARTAN",
+  "equip": {
+   "armor": 1,
+   "attack": 1
+  }
+ },
+ {
+  "id": "NE_S_RUBI",
+  "name": "Rubi Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+5 دفاع • -1 موجو كل دور • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_RUBI",
+  "equip": {
+   "armor": 5,
+   "mojo": -1
+  }
+ },
+ {
+  "id": "NE_S_NEW",
+  "name": "Glass Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "U",
+  "text": "-1 هجوم • +1 دفاع • +1 موجو كل دور • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW",
+  "equip": {
+   "armor": 1,
+   "mojo": 1,
+   "attack": -1
+  }
+ },
+ {
+  "id": "NE_S_NEW_02",
+  "name": "Bouncer",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "C",
+  "text": "+2 هجوم • +3 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW_02",
+  "equip": {
+   "armor": 3,
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_S_NEW01",
+  "name": "Pretty Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "C",
+  "text": "+2 دفاع • +2 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW01",
+  "equip": {
+   "armor": 2,
+   "health": 2
+  }
+ },
+ {
+  "id": "NE_S_NEW02",
+  "name": "Shield of No Death",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+5 دفاع • +2 صحة • محمي من علامة الموت • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW02",
+  "equip": {
+   "armor": 5,
+   "health": 2,
+   "protect": [
+    "deathmark"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW03",
+  "name": "Shield of No Flame",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+5 دفاع • +2 صحة • محمي من الاشتعال • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW03",
+  "equip": {
+   "armor": 5,
+   "health": 2,
+   "protect": [
+    "flame"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW04",
+  "name": "Rock Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 6,
+  "rarity": "U",
+  "text": "+5 دفاع • +1 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW04",
+  "equip": {
+   "armor": 5,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_S_NEW05",
+  "name": "Turtle Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "U",
+  "text": "+3 دفاع • +5 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW05",
+  "equip": {
+   "armor": 3,
+   "health": 5
+  }
+ },
+ {
+  "id": "NE_S_NEW06",
+  "name": "Barricade",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+2 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW06",
+  "equip": {
+   "armor": 2
+  }
+ },
+ {
+  "id": "NE_S_NEW07",
+  "name": "Shield of No Ice Block",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+5 دفاع • +2 صحة • محمي من التجميد • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW07",
+  "equip": {
+   "armor": 5,
+   "health": 2,
+   "protect": [
+    "ice"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW08",
+  "name": "Ultimate Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+2 هجوم • +4 دفاع • +5 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW08",
+  "equip": {
+   "armor": 4,
+   "health": 5,
+   "attack": 2
+  }
+ },
+ {
+  "id": "NE_S_NEW09",
+  "name": "Paper Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 2,
+  "rarity": "C",
+  "text": "+1 دفاع • +2 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW09",
+  "equip": {
+   "armor": 1,
+   "health": 2
+  }
+ },
+ {
+  "id": "NE_S_NEW10",
+  "name": "Cheap Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 2,
+  "rarity": "U",
+  "text": "+2 دفاع • +1 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW10",
+  "equip": {
+   "armor": 2,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_S_NEW11",
+  "name": "Silver Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 1,
+  "rarity": "U",
+  "text": "+1 دفاع • +1 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW11",
+  "equip": {
+   "armor": 1,
+   "health": 1
+  }
+ },
+ {
+  "id": "NE_S_NEW12",
+  "name": "Laurel Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "R",
+  "text": "+3 دفاع • محمي من علامة الموت • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW12",
+  "equip": {
+   "armor": 3,
+   "protect": [
+    "deathmark"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW13",
+  "name": "Anti-Daze",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 دفاع • +4 صحة • محمي من الذهول • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW13",
+  "equip": {
+   "armor": 2,
+   "health": 4,
+   "protect": [
+    "stun"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW14",
+  "name": "Anti-Death",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 دفاع • +4 صحة • محمي من علامة الموت • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW14",
+  "equip": {
+   "armor": 2,
+   "health": 4,
+   "protect": [
+    "deathmark"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW15",
+  "name": "Lead Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+3 دفاع • محمي من الذهول • محمي من الاشتعال • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW15",
+  "equip": {
+   "armor": 3,
+   "protect": [
+    "stun",
+    "flame"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW16",
+  "name": "Shield of No Snare",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+5 دفاع • +2 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW16",
+  "equip": {
+   "armor": 5,
+   "health": 2
+  }
+ },
+ {
+  "id": "NE_S_NEW17",
+  "name": "Shield of No Dazed",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+5 دفاع • +2 صحة • محمي من الذهول • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW17",
+  "equip": {
+   "armor": 5,
+   "health": 2,
+   "protect": [
+    "stun"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW18",
+  "name": "Anti-Snare",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 دفاع • +4 صحة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW18",
+  "equip": {
+   "armor": 2,
+   "health": 4
+  }
+ },
+ {
+  "id": "NE_S_NEW19",
+  "name": "Anti-Freeze",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 دفاع • +4 صحة • محمي من التجميد • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW19",
+  "equip": {
+   "armor": 2,
+   "health": 4,
+   "protect": [
+    "ice"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NEW20",
+  "name": "Anti-Flame",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "R",
+  "text": "+2 دفاع • +4 صحة • محمي من الاشتعال • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NEW20",
+  "equip": {
+   "armor": 2,
+   "health": 4,
+   "protect": [
+    "flame"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NOAFF1",
+  "name": "Shield of Health Magic",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 4,
+  "rarity": "L",
+  "text": "+4 دفاع • +6 صحة • محمي من الحالات السيئة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NOAFF1",
+  "equip": {
+   "armor": 4,
+   "health": 6,
+   "protect": [
+    "bad"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NOAFF2",
+  "name": "Shield of Mojo Magic",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "L",
+  "text": "+3 دفاع • +2 موجو كل دور • محمي من الحالات السيئة • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NOAFF2",
+  "equip": {
+   "armor": 3,
+   "mojo": 2,
+   "protect": [
+    "bad"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NOAFF4",
+  "name": "Basic Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 3,
+  "rarity": "U",
+  "text": "+3 دفاع • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NOAFF4",
+  "equip": {
+   "armor": 3
+  }
+ },
+ {
+  "id": "NE_S_NOAFF5",
+  "name": "Mojo Ward Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+2 دفاع • +1 موجو كل دور • محمي من كل الحالات • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NOAFF5",
+  "equip": {
+   "armor": 2,
+   "mojo": 1,
+   "protect": [
+    "all"
+   ]
+  }
+ },
+ {
+  "id": "NE_S_NOAFF6",
+  "name": "Power Ward Shield",
+  "race": "neutral",
+  "type": "armor",
+  "slot": "shield",
+  "kind": "shield",
+  "cost": 5,
+  "rarity": "R",
+  "text": "+3 هجوم • +2 دفاع • محمي من كل الحالات • ترس لأي وحش",
+  "keywords": [],
+  "nativeTag": "S_NOAFF6",
+  "equip": {
+   "armor": 2,
+   "protect": [
+    "all"
+   ],
+   "attack": 3
+  }
+ }
+]

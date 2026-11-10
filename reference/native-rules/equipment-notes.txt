@@ -1,0 +1,24 @@
+WD_CUTPURSE	boosts AT_DEMOLISH by 3 not supported
+WST_FIREBALL	boosts AT_FIREBALL by 3 not supported
+WST_LIGNTNING	boosts AT_LIGHTNING by 3 not supported
+WST_METEOR	boosts AT_METEOR by 3 not supported
+WST_HEAL	boosts AT_HEAL by 3 not supported
+WST_MASSHEAL	boosts AT_MASSHEAL by 3 not supported
+WB_HEAD	boosts AT_HEADSHOT by 2 not supported
+WB_BARRAGE	boosts AT_BARRAGE by 2 not supported
+WB_KILLSHOT	boosts AT_SNIPE by 2 not supported
+WB_HEADM	boosts AT_HEADSHOT by 1 not supported
+WB_BARRAGEM	boosts AT_BARRAGE by 1 not supported
+WB_KILLSHOTM	boosts AT_SNIPE by 1 not supported
+WST_FIREBALLM	boosts AT_FIREBALL by 1 not supported
+WST_HEALM	boosts AT_HEAL by 1 not supported
+WST_LIGNTNINGM	boosts AT_LIGHTNING by 1 not supported
+WST_MASSHEALM	boosts AT_MASSHEAL by 1 not supported
+WST_METEORM	boosts AT_METEOR by 1 not supported
+ART_AFF_STUN2	splash 1 not supported
+ART_AFF_FLAME2	splash 1 not supported
+ART_AFF_SNARED2	splash 1 not supported
+ART_AFF_ICE2	splash 1 not supported
+ART_AFF_DEATHMARK2	splash 1 not supported
+S_NEW16	perk BC_PROT_SNARE 0 not supported
+S_NEW18	perk BC_PROT_SNARE 0 not supported
