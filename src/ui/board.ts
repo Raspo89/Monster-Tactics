@@ -11,7 +11,7 @@ import {PovCamera,insidePolygon} from './pov';
 export const visualKey=(id:string)=>(visual.portraits as any)[id]?.model;
 export type BoardView={state:GameState,owner?:number,selected?:number,targets:Action[],onClick:(h:Hex)=>void,onHover:(h?:Hex,x?:number,y?:number)=>void};
 export class Arena extends Phaser.Scene{
- pov=new PovCamera();models?:ModelsLayer;unitImages:Record<number,Phaser.GameObjects.Sprite>={};view?:BoardView;layer:Phaser.GameObjects.GameObject[]=[];hover?:Hex;ready=false;drag?:{x:number,y:number};manualCamera=false;
+ pov=new PovCamera();models?:ModelsLayer;unitImages:Record<number,Phaser.GameObjects.Sprite>={};view?:BoardView;layer:Phaser.GameObjects.GameObject[]=[];hover?:Hex;ready=false;drag?:{x:number,y:number};manualCamera=false;fitted?:{zoom:number,panX:number,panY:number};
  constructor(public initial?:GameState){super('Arena');this.pov=new PovCamera(!!initial?.roundArena);}
  metadata(){return this.initial?.roundArena?overheadSprites:sprites;}
  spriteKeys(){if(!this.initial)return Object.keys(this.metadata());const ids=[...this.initial.players.flatMap(p=>[...p.deck,...p.hand,...p.graveyard]),...this.initial.units.map(u=>u.cardId),'Z01'],models=new Set(ids.map(id=>visualKey(id)));return Object.keys(this.metadata()).filter(k=>models.has(k.replace(/-(front|back)$/,'')));}
@@ -21,15 +21,16 @@ export class Arena extends Phaser.Scene{
   const touches=new Map<number,{x:number,y:number}>();let pinch=0,tap:{x:number,y:number,id:number,moved:boolean}|undefined;
   const isTouch=(p:Phaser.Input.Pointer)=>p.wasTouch||(p.event as PointerEvent)?.pointerType==='touch';
   const spread=()=>{const [a,b]=[...touches.values()];return a&&b?Math.hypot(a.x-b.x,a.y-b.y):0;};
-  this.input.on('wheel',(_p:any,_o:any,_x:number,y:number)=>this.zoomBy(y>0?.92:1.08));
+  this.input.on('wheel',(p:Phaser.Input.Pointer,_o:any,_x:number,y:number)=>this.zoomBy(Math.max(.86,Math.min(1.16,Math.exp(-y*.0011))),p.x,p.y));
   this.input.on('pointerdown',(p:Phaser.Input.Pointer)=>{if(isTouch(p)){touches.set(p.id,{x:p.x,y:p.y});if(touches.size===1){tap={x:p.x,y:p.y,id:p.id,moved:false};this.drag={x:p.x,y:p.y};}else{tap=undefined;this.drag=undefined;pinch=spread();}return;}if(p.middleButtonDown()||p.rightButtonDown()||p.event.shiftKey){this.drag={x:p.x,y:p.y};return;}const h=this.hexAt(p.x,p.y);if(h)this.view?.onClick(h);});
   this.input.on('pointerup',(p:Phaser.Input.Pointer)=>{if(isTouch(p)){const wasTap=tap&&tap.id===p.id&&!tap.moved;touches.delete(p.id);tap=undefined;pinch=0;if(wasTap){const h=this.hexAt(p.x,p.y);this.hover=h;this.view?.onHover(h,p.x,p.y);if(h)this.view?.onClick(h);else this.paint();}const rest=[...touches.values()][0];this.drag=rest&&touches.size===1?{...rest}:undefined;return;}this.drag=undefined;});
-  this.input.on('pointermove',(p:Phaser.Input.Pointer)=>{if(isTouch(p)){if(!touches.has(p.id))return;touches.set(p.id,{x:p.x,y:p.y});if(touches.size>=2){const d=spread();if(pinch>0&&d>0)this.zoomBy(d/pinch);pinch=d;return;}if(tap&&Math.hypot(p.x-tap.x,p.y-tap.y)>14)tap.moved=true;if(tap&&!tap.moved)return;}if(this.drag&&p.isDown){this.panBy(p.x-this.drag.x,p.y-this.drag.y);this.drag={x:p.x,y:p.y};return;}const h=this.hexAt(p.x,p.y);if(key(h||{q:-99,r:0})!==key(this.hover||{q:-99,r:0})){this.hover=h;this.paint();}this.view?.onHover(h,p.x,p.y);});this.input.on('gameout',()=>{this.drag=undefined;this.hover=undefined;this.paint();this.view?.onHover(undefined);});if(this.view)this.paint();
+  this.input.on('pointermove',(p:Phaser.Input.Pointer)=>{if(isTouch(p)){if(!touches.has(p.id))return;touches.set(p.id,{x:p.x,y:p.y});if(touches.size>=2){const d=spread(),[a,b]=[...touches.values()];if(pinch>0&&d>0)this.zoomBy(d/pinch,(a.x+b.x)/2,(a.y+b.y)/2);pinch=d;return;}if(tap&&Math.hypot(p.x-tap.x,p.y-tap.y)>14)tap.moved=true;if(tap&&!tap.moved)return;}if(this.drag&&p.isDown){this.panBy(p.x-this.drag.x,p.y-this.drag.y);this.drag={x:p.x,y:p.y};return;}const h=this.hexAt(p.x,p.y);if(key(h||{q:-99,r:0})!==key(this.hover||{q:-99,r:0})){this.hover=h;this.paint();}this.view?.onHover(h,p.x,p.y);});this.input.on('gameout',()=>{this.drag=undefined;this.hover=undefined;this.paint();this.view?.onHover(undefined);});if(this.view)this.paint();
   const refit=()=>setTimeout(()=>this.autoFit(),150);addEventListener('resize',refit);this.events.once('shutdown',()=>removeEventListener('resize',refit));this.time.delayedCall(80,()=>this.autoFit());}
  autoFit(){if(!this.manualCamera)this.fitView();}
  update(_time:number,delta:number){this.models?.update(delta);}
- zoomBy(factor:number){this.manualCamera=true;this.pov.zoomBy(factor);this.paint();}
- panBy(dx:number,dy:number){this.manualCamera=true;this.pov.panX=Math.max(-450,Math.min(450,this.pov.panX+dx));this.pov.panY=Math.max(-300,Math.min(300,this.pov.panY+dy));this.pov.refresh();this.paint();}
+ /** Zoom keeping the point under the cursor (or between two fingers) fixed; without a point, around the screen centre. */
+ zoomBy(factor:number,x?:number,y?:number){this.manualCamera=true;const before=this.pov.zoom;this.pov.zoomBy(factor);const f=this.pov.zoom/before;const fit=this.fitted;if(fit&&this.pov.zoom<=fit.zoom*1.02){this.pov.panX=fit.panX;this.pov.panY=fit.panY;this.pov.refresh();}else if(x!==undefined&&y!==undefined&&f!==1){this.pov.panX=Math.max(-450*Math.max(1,this.pov.zoom),Math.min(450*Math.max(1,this.pov.zoom),(x-560)*(1-f)+f*this.pov.panX));this.pov.panY=Math.max(-300*Math.max(1,this.pov.zoom),Math.min(300*Math.max(1,this.pov.zoom),(y-325)*(1-f)+f*this.pov.panY));this.pov.refresh();}this.paint();}
+ panBy(dx:number,dy:number){this.manualCamera=true;this.pov.panX=Math.max(-450*Math.max(1,this.pov.zoom),Math.min(450*Math.max(1,this.pov.zoom),this.pov.panX+dx));this.pov.panY=Math.max(-300*Math.max(1,this.pov.zoom),Math.min(300*Math.max(1,this.pov.zoom),this.pov.panY+dy));this.pov.refresh();this.paint();}
  /** Fit the arena into the part of the screen not covered by the HUD and the hand, so phones in either orientation see the whole board. */
  fitView(){const canvas=this.game?.canvas;if(!canvas||!this.view)return false;const r=canvas.getBoundingClientRect(),host=canvas.parentElement?.getBoundingClientRect();if(!r.width||!r.height||!host)return false;const scale=r.width/1120;
   const left=Math.max(host.left,0),right=Math.min(host.right,innerWidth),midL=left+(right-left)*.3,midR=right-(right-left)*.3;let top=Math.max(host.top,0),bottom=Math.min(host.bottom,innerHeight);
@@ -38,9 +39,9 @@ export class Arena extends Phaser.Scene{
   const usable={x:(left+right)/2,y:(top+bottom)/2,w:Math.max(80,right-left-12),h:Math.max(80,bottom-top-6)};
   const cells=board.filter(h=>isPlayable(this.view!.state,h));this.pov.zoom=1;this.pov.panX=this.pov.panY=0;this.pov.refresh();
   const box=()=>{const pts=cells.flatMap(h=>this.pov.polygon(h,1.15));const xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);return {x0:Math.min(...xs),x1:Math.max(...xs),y0:Math.min(...ys)-38*this.pov.zoom,y1:Math.max(...ys)};};
-  let b=box();const need=Math.min(usable.w/((b.x1-b.x0)*scale),usable.h/((b.y1-b.y0)*scale));this.pov.zoom=Math.max(.3,Math.min(1,need));this.pov.refresh();
+  let b=box();const need=Math.min(usable.w/((b.x1-b.x0)*scale),usable.h/((b.y1-b.y0)*scale));this.pov.zoom=Math.max(.2,Math.min(1,need));this.pov.minZoom=Math.max(.2,this.pov.zoom*.8);this.pov.maxZoom=Math.max(1,this.pov.zoom*2.4);this.pov.refresh();
   for(let i=0;i<3;i++){b=box();const cx=r.left+(b.x0+b.x1)/2*scale,cy=r.top+(b.y0+b.y1)/2*scale;this.pov.panX+=(usable.x-cx)/scale;this.pov.panY+=(usable.y-cy)/scale;this.pov.refresh();}
-  this.paint();return true;}
+  this.fitted={zoom:this.pov.zoom,panX:this.pov.panX,panY:this.pov.panY};this.paint();return true;}
  resetCamera(){this.manualCamera=false;if(!this.fitView()){this.pov.reset();this.paint();}}
  hexAt(x:number,y:number){return board.find(h=>(!this.view||isPlayable(this.view.state,h))&&insidePolygon(x,y,this.pov.polygon(h)));}
  setView(v:BoardView){const first=!this.view;this.view=v;this.pov.owner=v.owner??0;if(this.ready){this.paint();if(first)this.autoFit();}}

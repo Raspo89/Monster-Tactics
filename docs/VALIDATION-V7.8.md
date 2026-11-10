@@ -20,3 +20,7 @@ Compared against three recordings of the original game and rebuilt from the APK'
 
 ## Tests
 232 tests pass, including tests/native-maps.test.ts (layout import, symmetry, start/stand/rock/tile placement, tile bonus amounts, AI games on original layouts staying on the board). Checked in headless Chrome at 1280×720, 390×844 and 844×390.
+
+## 7.8.1 — zoom
+- The mouse wheel zooms smoothly in proportion to the wheel movement (it used to jump a fixed 8% per event, which is very fast on mice and touchpads that send many events) and toward the point under the cursor; pinch zooms toward the point between the fingers.
+- Zoom limits follow the fitted view of each board: 80% of it at the smallest, 2.4× at the largest. Zooming back out returns to the centred view.
