@@ -9,7 +9,7 @@
     "test": "vitest run --exclude 'tests/tournament-*'",
     "test:tournament": "vitest run tests/tournament-",
     "bench:ai": "vite-node scripts/ai-bench.ts",
-    "build:offline": "vite build && node scripts/make-offline.mjs"
+    "build:offline": "vite build --base=/ && node scripts/make-offline.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0",

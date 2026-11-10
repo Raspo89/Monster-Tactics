@@ -7,7 +7,7 @@ import {PovCamera,world} from './pov';
 type BonePose=number[];
 type Clip={fps:number,frames:BonePose[][]};
 type ModelRecord={root:any,local:any,bones:any[],raw:any,indices:number[],x:number,y:number,mode:string,started:number,walkingUntil:number,attackUntil:number,deadUntil?:number};
-export const modelUrl=(path:string)=>(window as any).__MODELS__?.[path]||'/original3d/'+path;
+export const modelUrl=(path:string)=>(window as any).__MODELS__?.[path]||new URL(import.meta.env.BASE_URL,location.href).href+'original3d/'+path;
 const modelKey=(id:string)=>(visual.portraits as any)[id]?.model;
 
 const jsonCache=new Map<string,Promise<any>>();

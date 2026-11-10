@@ -1,2 +1,2 @@
 import {defineConfig} from 'vite';
-export default defineConfig({server:{allowedHosts:['terminal.local']},build:{chunkSizeWarningLimit:1600}});
+export default defineConfig({base:'./',server:{allowedHosts:['terminal.local']},build:{chunkSizeWarningLimit:1600}});
