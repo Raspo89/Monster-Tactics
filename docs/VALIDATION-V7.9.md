@@ -15,3 +15,7 @@
 ## Checks
 - `tests/equipment.test.ts` (6 tests): catalogue families, class targeting, stacking and health removal, protection, starter weapons for each class, old-save migration.
 - Full suite and difficulty tests pass; browser check on desktop (1280×800) and phone (390×844): deck builder, shop filters by type, battle start with a dagger in hand, no page errors.
+
+## 7.9.1 — stats readable on the card
+- Cards show the original stat badges (`GUI/MonsterStats` atlas; digit painted out by `scripts/apk-tools/stat-badges.py` → `ready/badge-attack|health|armour|mojo.webp`): attack bottom-left, health bottom-right, the monster's ability icon between them (armour badge when it has armour and no ability). Equipment shows its bonuses (+2 attack, +1 armour, health, Mojo) in the same badges.
+- Badges scale with the card (container query units); on narrow phone-hand cards the ability icon floats above the two badges so the numbers stay large. Checked on 390×844 and 1280×800 in the deck builder, shop and battle hand.

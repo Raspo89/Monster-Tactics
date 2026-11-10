@@ -56,3 +56,26 @@
 #dialog:has(.result-logo) .dialog-box>h2{display:none}
 .result-logo{display:block;width:min(340px,80%);margin:-6px auto 6px;filter:drop-shadow(0 4px 8px #000a)}
 .daily-bonus{text-align:center;width:fit-content;margin:0 auto 10px!important}
+
+/* 7.9.1 — original stat badges on every card */
+.card-stats.badges{container-type:inline-size;display:grid;grid-template-columns:auto 1fr auto;align-items:center;direction:ltr;margin:0 1px 1px;gap:1px}
+.stat-badge{width:27cqw;aspect-ratio:1;display:grid;place-items:center;background:var(--badge) center/contain no-repeat;color:#fff;font:900 14cqw/1 Georgia,'Times New Roman',serif;text-shadow:0 0 2px #000,0 0 2px #000,1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000;letter-spacing:-.04em;padding-top:1cqw}
+.stat-badge.armour,.stat-badge.mojo{width:22cqw;font-size:11cqw}
+.stat-mid{display:flex;align-items:center;justify-content:center;gap:1cqw;min-width:0;flex-wrap:wrap}
+.stat-mid .ability-badge{width:24cqw;aspect-ratio:1;border-radius:50%;border:1px solid #d9b65a;box-shadow:0 0 0 1px #000,0 1px 3px #000a;background:#1d2a1a}
+.card-stats.badges .type-label{width:auto;font-size:9cqw;line-height:1.1;color:#f3e2b8;text-shadow:0 0 2px #000,0 0 2px #000}
+.card-stats.badges .speed-stat{display:inline;font-size:8cqw;color:#e8e3d0;text-shadow:0 0 2px #000}
+#battle .card-stats.badges{margin:0 1px 1px;font-size:inherit}
+#battle .stat-badge{width:38cqw;font-size:22cqw}
+#battle .stat-badge.armour,#battle .stat-badge.mojo{width:30cqw;font-size:17cqw}
+#battle .stat-mid .ability-badge{width:24cqw}
+#battle .card-stats.badges .type-label{display:none}
+#battle .card-stats.badges{margin:-3px 0 0;position:relative;z-index:2}
+/* narrow cards (crowded phone hand): two big badges, ability icon floats above them */
+.card-stats.badges{position:relative}
+@container (max-width:62px){
+ .stat-badge,#battle .stat-badge{width:50cqw;font-size:30cqw}
+ .stat-mid{position:absolute;left:0;right:0;bottom:88%;pointer-events:none}
+ .stat-mid .ability-badge,#battle .stat-mid .ability-badge{width:36cqw}
+ .stat-mid .stat-badge,#battle .stat-mid .stat-badge{width:38cqw;font-size:22cqw}
+}
