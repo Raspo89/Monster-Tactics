@@ -10,7 +10,10 @@ export const effect=(u:Unit,name:string)=>!!u.effects?.[name];
 export const frozen=(u:Unit)=>effect(u,'ice');
 export const cannotAttack=(u:Unit)=>frozen(u)||effect(u,'stun');
 export const cannotMove=(u:Unit)=>frozen(u)||effect(u,'snare');
-export function afflict(s:GameState,u:Unit,name:string,turns=-1){if((!u.isLeader&&G.def(u).race==='robot')||frozen(u))return false;if(name==='flame')u.flaming=true;else if(name==='shield')u.shielded=true;else {u.effects??={};if(u.effects[name])return false;u.effects[name]=turns;}s.events.push({kind:'status',uid:u.uid,text:name});return true;}
+export const afflictionDuration=(name:string)=>({stun:P.AF_Stun_Turns,ice:P.AF_IceBlock_Turns,snare:P.AF_Snare_Turns} as Record<string,number>)[name]??-1;
+/** Repair impossible permanent timed effects in battles saved by 7.4. */
+export function repairTimedEffects(s:GameState){for(const u of s.units)for(const name of ['stun','ice','snare'])if((u.effects?.[name]??0)<0)u.effects![name]=afflictionDuration(name);}
+export function afflict(s:GameState,u:Unit,name:string,turns=afflictionDuration(name)){if((!u.isLeader&&G.def(u).race==='robot')||frozen(u))return false;if(name==='flame')u.flaming=true;else if(name==='shield')u.shielded=true;else {u.effects??={};if(u.effects[name])return false;u.effects[name]=turns;}s.events.push({kind:'status',uid:u.uid,text:name});return true;}
 export function cure(u:Unit){u.flaming=false;u.poisoned=false;for(const k of ['stun','snare','ice','vengeance','deathmark'])if(u.effects)delete u.effects[k];}
 export function stripGood(u:Unit){u.shielded=false;for(const k of ['mighty','berserk','regen'])if(u.effects)delete u.effects[k];}
 export function statusLabels(u:Unit){return [u.flaming?'اشتعال':'',u.poisoned?'سم':'',u.shielded?'حاجز سحري':'',...Object.keys(u.effects||{}).filter(k=>effect(u,k)).map(k=>({ice:'تجميد',stun:'ذهول',snare:'تقييد',mighty:'قوة +2',berserk:'هياج',regen:'تجدد',vengeance:'انتقام',deathmark:'علامة الموت'} as Record<string,string>)[k]||k)].filter(Boolean);}

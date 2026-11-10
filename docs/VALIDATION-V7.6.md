@@ -1,0 +1,11 @@
+# 7.6 — make tile bonuses and Mojo income explicit
+
+The reported missing +2 was not reproduced on an altar in v7.5: an occupying monster already produced 5 Mojo (3 hero base + 2 altar) at the next own upkeep. The previous renderer printed the same unlabeled +2 below attack, armour and health tokens, including a purple star which represents attack. It did not print the altar's Mojo bonus. This release clarifies that distinction rather than changing the stat tokens into Mojo producers.
+
+Every stat token and altar now prints its stat name. Labels remain visible when occupied. The occupied-unit tooltip includes its cell bonus. Both HUDs expose the actual last-upkeep breakdown: base, rune income, cell income and total. Available Mojo still decreases normally when spent; the income record stays unchanged until that owner's next upkeep. This optional record is backward compatible with old battle saves. The old energy / base display is replaced with available Mojo wording so the hero base is not mistaken for a cap.
+
+tileMojoBonus is shared by the altar calculation and its caption. Actual altar income remains +2 in original rules and +1 in legacy rules. Income is generated at own upkeep, does not bank unused Mojo from the previous turn, stacks with rune income, and only benefits the occupying unit's owner. No card, AI, reward, price or art asset changes.
+
+Validation: 223 tests passed, covering the retained standard rule/economy/ability/magic suites plus ten tile regressions. The four slow difficulty-ordering tests and separate tournament stress suites were not repeated; they passed in 7.5 and AI choice logic is unchanged. Tile checks cover correct labels, native/legacy amounts, own/enemy occupants, leaders, moving onto/leaving a cell, rune/multiple-cell stacking, and preserving the actual income snapshot after spending/reloading. Production TypeScript/Vite build passed.
+
+Browser QA used the actual ability lesson: killed the enemy on the altar, advanced a turn to make Duron mobile, moved him from the +2 attack star onto the +2 Mojo altar, healed him, and ended the turn. At turn 5 he remained on the altar and the HUD showed 3 base + 0 runes + 2 cells = 5 available Mojo. Captions and the occupied-unit tooltip distinguished attack from Mojo. No test fixture or hidden state injection was used.

@@ -18,3 +18,5 @@
 @media(max-height:500px) and (orientation:landscape){#battle #arena-hint{display:none}}
 .collection-grid .more-cards{grid-column:1/-1;padding:12px;font-size:16px}
 .shop-grid .more-cards{grid-column:1/-1;padding:12px;font-size:16px}
+
+.compact-hud small.mojo-income{display:block;font-size:10px;color:#f1d6ff;max-width:240px;line-height:1.4}.cell-bonus-info{color:#eed3ff!important}

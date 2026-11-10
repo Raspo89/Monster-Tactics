@@ -1,6 +1,6 @@
 {
   "name": "monster-tactics",
-  "version": "7.4.0",
+  "version": "7.7.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,8 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "test": "vitest run --exclude 'tests/tournament-*'",
     "test:tournament": "vitest run tests/tournament-",
-    "bench:ai": "vite-node scripts/ai-bench.ts",
-    "build:offline": "vite build && node scripts/make-offline.mjs"
+    "bench:ai": "vite-node scripts/ai-bench.ts"
   },
   "dependencies": {
     "phaser": "3.90.0",
