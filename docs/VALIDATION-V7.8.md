@@ -24,3 +24,6 @@ Compared against three recordings of the original game and rebuilt from the APK'
 ## 7.8.1 — zoom
 - The mouse wheel zooms smoothly in proportion to the wheel movement (it used to jump a fixed 8% per event, which is very fast on mice and touchpads that send many events) and toward the point under the cursor; pinch zooms toward the point between the fingers.
 - Zoom limits follow the fitted view of each board: 80% of it at the smallest, 2.4× at the largest. Zooming back out returns to the centred view.
+
+## 7.8.2 — rune card art
+- Rune cards showed the raw rune texture (a UV sheet with the stone's front and back side by side, glyph in dark grey). They now show what the original card shows: the stone's face as an oval with the glyph glowing white (`scripts/apk-tools/rune-card-art.py`, used by `scripts/decode-magic-art.py` for all 81 runes). Race-buff runes keep their painted face.
