@@ -1,0 +1,9 @@
+import {it,expect,describe} from 'vitest';
+import {newGame,applyAction,chooseAI,validateDeck,cardById} from '../src/engine/game';
+import {aiDeck,starterCards,cardRarity} from '../src/engine/progression';
+const races=['human','zombie','orc','elf'];
+function play(seed:number,levels:[string,string]){const a=races[seed%4],b=races[(seed+1)%4];let s=newGame(900+seed,aiDeck(a,levels[0]),a,aiDeck(b,levels[1]),b,['river','plain','towers','desert'][seed%4],true,'standard',true);s.mojoBonus=levels.map(l=>l==='expert'?1:0);let k=0;while(s.winner===undefined&&k<2500){if(s.phase==='mulligan'){s=applyAction(s,{kind:'mulligan',indexes:[]});continue;}s=applyAction(s,chooseAI(s,levels[s.current]),true);k++;}return s.winner;}
+describe('computer decks grow with the difficulty',()=>{
+ it('easy and normal keep the starter deck; hard and expert get legal 30-card decks with stronger cards and weapons',()=>{const rank={C:0,U:1,R:2,L:3} as Record<string,number>;for(const r of races){expect(aiDeck(r,'normal')).toEqual(starterCards(r));let prev=-1;for(const d of ['normal','hard','expert']){const deck=aiDeck(r,d);expect(deck).toHaveLength(30);expect(validateDeck(deck,r,'standard')).toBe('');const units=deck.filter(id=>cardById[id].type==='unit');const avg=units.reduce((n,id)=>n+rank[cardRarity(cardById[id])],0)/units.length;expect(avg).toBeGreaterThan(prev);prev=avg;if(d!=='normal')expect(deck.filter(id=>cardById[id].type==='weapon').length).toBeGreaterThanOrEqual(3);}}});
+ it('expert (champion deck, +1 Mojo) beats hard (veteran deck), which beats normal (starter deck)',()=>{let ex=0,hd=0,g=0;for(let seed=0;seed<3;seed++)for(const seat of [0,1]){g++;const L1:[string,string]=seat?['hard','expert']:['expert','hard'];if(play(seed,L1)===(seat?1:0))ex++;const L2:[string,string]=seat?['normal','hard']:['hard','normal'];if(play(seed,L2)===(seat?1:0))hd++;}expect(ex/g).toBeGreaterThanOrEqual(.8);expect(hd/g).toBeGreaterThanOrEqual(.6);},600000);
+});

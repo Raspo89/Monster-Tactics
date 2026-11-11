@@ -72,3 +72,17 @@ export function openChest(profile:Profile,t:ChestType,random=Math.random):{profi
  if(t==='mystery'){const roll=random();if(roll<.35)opened.coins=150+Math.floor(random()*10)*50;else if(roll<.75){const c=random();opened.chests.push(c<.01?'epic':c<.1?'mega':c<.4?'full':c<.65?(['monster','equipment','rune','spell'] as ChestType[])[Math.floor(random()*4)]:'mini');}else for(let i=0;i<3;i++)opened.cards.push(rollCard(random).id);}
  else{const pool=cards.filter(c=>!def.pool||def.pool(c));for(const slot of def.slots!)opened.cards.push(pickCard(pool,slotRarity(slot,random),random).id);}
  for(const id of opened.cards)p.inventory[id]=(p.inventory[id]||0)+1;p.coins+=opened.coins;for(const c of opened.chests)p.chests[c]=(p.chests[c]||0)+1;return {profile:p,opened};}
+
+// ---- Computer decks that grow with the difficulty ----
+/** Rough strength of a monster for its Mojo cost (power counts more than health; an active ability is worth about two points). */
+const unitScore=(c:Card)=>((c.attack||0)*1.6+(c.health||0)+(c.armor||0)*1.5+(c.abilityId?2:0))/Math.max(1.5,c.cost);
+const AI_TIERS:Record<string,{rarities:Rarity[],maxCost:number,weaponRarities:Rarity[]}>={hard:{rarities:['C','U','R'],maxCost:5,weaponRarities:['C','U','R']},expert:{rarities:['C','U','R','L'],maxCost:6,weaponRarities:['U','R','L']}};
+/**
+ * Easy and normal play the starter deck. Hard plays a veteran deck (best commons to rares of its race, up to 5 Mojo)
+ * and expert a champion deck (rares and legendaries allowed, up to 6 Mojo), each with weapons for its classes.
+ */
+export function aiDeck(race:string,difficulty:string){const tier=AI_TIERS[difficulty];if(!tier)return starterCards(race);const pool=cards.filter(c=>c.type==='unit'&&c.race===race&&(c.id.startsWith('CM_')||c.id.startsWith('NA_'))&&tier.rarities.includes(cardRarity(c))&&c.cost>=2&&c.cost<=tier.maxCost).sort((a,b)=>unitScore(b)-unitScore(a)||a.id.localeCompare(b.id));if(pool.length<5)return starterCards(race);const picked:Card[]=[];for(const cls of ['warrior','archer','mage','warrior']){const c=pool.find(c=>c.combatClass===cls&&!picked.includes(c));if(c)picked.push(c);}for(const c of pool)if(picked.length<5&&!picked.includes(c))picked.push(c);
+ const weapon=(cls:string)=>cards.filter(c=>c.type==='weapon'&&c.id.startsWith('NE_')&&c.forClass===cls&&tier.weaponRarities.includes(cardRarity(c))&&!Object.values(c.equip||{}).some(v=>typeof v==='number'&&v<0)).sort((a,b)=>(b.equip?.attack||0)/Math.max(1,b.cost)-(a.equip?.attack||0)/Math.max(1,a.cost)||a.cost-b.cost||a.id.localeCompare(b.id))[0]?.id;
+ const classes=[...new Set(picked.map(c=>c.combatClass||'warrior'))],weapons=[...classes,classes[0]].flatMap(cls=>{const w=weapon(cls);return w?[w]:[];}).slice(0,4);
+ const armour=cards.filter(c=>c.id.startsWith('NE_')&&c.slot==='armor'&&tier.weaponRarities.includes(cardRarity(c))&&(c.equip?.armor||0)>0&&!Object.values(c.equip||{}).some(v=>typeof v==='number'&&v<0)).sort((a,b)=>(b.equip!.armor!+(b.equip!.health||0)/2)/b.cost-(a.equip!.armor!+(a.equip!.health||0)/2)/a.cost||a.id.localeCompare(b.id))[0]?.id;
+ const deck=[...picked.slice(0,5).flatMap(c=>[c.id,c.id,c.id,c.id]),'R03','R03','S01','S02',...weapons,...(armour?[armour]:[])];while(deck.length<30)deck.push(deck.length%2?'S02':'S01');return deck.slice(0,30);}
