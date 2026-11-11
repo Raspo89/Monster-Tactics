@@ -133,3 +133,4 @@
 .save-summary{list-style:none;padding:0;margin:6px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:4px 10px;font-size:.88rem}.save-summary img{width:16px;vertical-align:middle}
 .save-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}.save-compare h4{margin:4px 0}.save-file{display:block;margin-top:8px;font-size:.88rem}
 @media(max-width:600px){.save-compare{grid-template-columns:1fr}}
+.gift-chests{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;text-align:center}.gift-chests img{width:96px;height:84px;object-fit:contain;display:block;margin:0 auto}.gift-chests span{font-size:.82rem}
