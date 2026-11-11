@@ -79,3 +79,33 @@
  .stat-mid .ability-badge,#battle .stat-mid .ability-badge{width:36cqw}
  .stat-mid .stat-badge,#battle .stat-mid .stat-badge{width:38cqw;font-size:22cqw}
 }
+/* 7.10 — Solo Quests */
+.quest-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;max-width:1100px;margin:0 auto}
+.quest-card{position:relative;min-height:250px;text-align:right;padding:22px 18px 18px;border:2px solid #b08a3e;border-radius:10px;color:#3a2410;background:linear-gradient(#f5e8c8e6,#ecdcb4ee),var(--map) center/cover;box-shadow:0 6px 18px #0006;display:flex;flex-direction:column;gap:6px;cursor:pointer;font:inherit}
+.quest-card h3{margin:0;font-size:1.35rem;color:#5b2c0c}.quest-card small{color:#7a5a32;direction:ltr;text-align:right}.quest-card p{margin:4px 0 auto;font-size:.92rem;line-height:1.6}
+.quest-card .quest-progress{position:absolute;top:10px;left:12px;background:#5b2c0c;color:#ffe9b0;border-radius:12px;padding:2px 10px;font-weight:700;font-size:.85rem;direction:ltr}
+.quest-card .quest-state{font-weight:700;color:#2e6b1f}.quest-card.done{border-color:#3e8e2c}.quest-card.locked{filter:grayscale(.8) brightness(.8);cursor:not-allowed}.quest-card.locked .quest-state{color:#6b4a2a}
+.quest-card:not(.locked):hover{transform:translateY(-3px);box-shadow:0 10px 24px #0008}
+.quest-map-layout{display:grid;grid-template-columns:minmax(300px,520px) minmax(260px,1fr);gap:20px;align-items:start;max-width:1100px;margin:0 auto}
+.quest-board{position:relative;width:100%;aspect-ratio:2/3;background:var(--map) center/100% 100%;border-radius:8px;box-shadow:0 8px 24px #000a,inset 0 0 40px #5a3a1255;overflow:hidden}
+.quest-board svg{position:absolute;inset:0;width:100%;height:100%}
+.quest-board line{stroke:#6b4a2a;stroke-width:1.1;stroke-dasharray:2 1.6;opacity:.55;vector-effect:non-scaling-stroke;stroke-width:3px}
+.quest-board line.open{opacity:.9;stroke:#8a3b12}.quest-board line.won{opacity:1;stroke:#2f6a1d;stroke-dasharray:none}
+.quest-room{position:absolute;width:14%;aspect-ratio:1;transform:translate(-50%,-50%);border:0;padding:0;background:none;cursor:pointer;transition:transform .15s}
+.quest-room .orb{position:absolute;inset:0;width:100%;height:100%}
+.quest-room .hero{position:absolute;left:14%;top:8%;width:72%;height:80%;object-fit:contain;border-radius:50%;clip-path:circle(46% at 50% 54%)}
+.quest-room b{position:absolute;bottom:-6%;left:50%;transform:translateX(-50%);background:#3a2410;color:#ffe9b0;border:1px solid #d9b65a;border-radius:9px;font-size:clamp(9px,1.6vw,12px);padding:0 6px;line-height:1.5}
+.quest-room .mark{position:absolute;right:-4%;top:-4%;width:40%;height:40%}
+.quest-room.sub{width:16%}.quest-room.last{width:18%;z-index:1}
+.quest-room.open{animation:quest-pulse 1.6s ease-in-out infinite}.quest-room.open:hover{transform:translate(-50%,-50%) scale(1.12)}
+.quest-room.won .hero{filter:saturate(.7)}.quest-room.locked{filter:grayscale(1) brightness(.7);cursor:not-allowed}
+@keyframes quest-pulse{50%{filter:drop-shadow(0 0 8px #ffe27a)}}
+.quest-side{background:#f3e6c6;color:#3a2410;border:1px solid #b08a3e;border-radius:10px;padding:14px 16px;box-shadow:0 6px 18px #0005}
+.quest-side h3{margin:0 0 8px}.quest-heroes{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px}
+.quest-heroes .race-choice{padding:4px;min-height:0}.quest-heroes .race-choice img{width:100%;height:70px;object-fit:contain}.quest-heroes .race-choice strong{font-size:.7rem;display:block}
+.quest-legend{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px;font-size:.85rem}.quest-legend img{width:24px;height:24px;vertical-align:middle;margin-left:6px}
+.room-info{display:flex;gap:14px;align-items:flex-start;text-align:right}.room-hero{width:110px;height:130px;object-fit:contain;flex:none}
+.room-info h3{margin:0 0 6px}.room-stats{display:flex;flex-wrap:wrap;gap:8px;font-weight:700}.room-stats span{background:#0002;border-radius:8px;padding:1px 8px}
+.room-deck{font-size:.85rem;opacity:.85}.room-prize{margin-top:10px;padding:8px 10px;border-radius:8px;background:#ffd76a33;border:1px solid #d9b65a}.room-prize img{width:18px;vertical-align:middle}
+.quest-prize{margin:6px 0 10px;text-align:center}.quest-prize .game-card{margin:6px auto}.quest-done{font-weight:700;color:#2f6a1d;text-align:center}
+@media(max-width:760px){.quest-map-layout{grid-template-columns:1fr}.quest-board{max-width:440px;margin:0 auto}.quest-room b{font-size:10px}.room-hero{width:80px;height:100px}}

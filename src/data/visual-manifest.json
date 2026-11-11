@@ -7892,6 +7892,76 @@
    "model": "vampire_artillery",
    "skin": 11,
    "path": "portraits/m_vampire_artillery_11.webp"
+  },
+  "LEADER_hero_dungeonmaster": {
+   "model": "hero_dungeonmaster",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_dungeonmaster.webp"
+  },
+  "LEADER_hero_baus": {
+   "model": "hero_baus",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_baus.webp"
+  },
+  "LEADER_hero_cyclops": {
+   "model": "hero_cyclops",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_cyclops.webp"
+  },
+  "LEADER_hero_lavalem": {
+   "model": "hero_lavalem",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_lavalem.webp"
+  },
+  "LEADER_hero_noigle": {
+   "model": "hero_noigle",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_noigle.webp"
+  },
+  "LEADER_hero_korma": {
+   "model": "hero_korma",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_korma.webp"
+  },
+  "LEADER_hero_boneyard": {
+   "model": "hero_boneyard",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_boneyard.webp"
+  },
+  "LEADER_hero_woomph": {
+   "model": "hero_woomph",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_woomph.webp"
+  },
+  "LEADER_hero_alphedia": {
+   "model": "hero_alphedia",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_alphedia.webp"
+  },
+  "LEADER_hero_queeny": {
+   "model": "hero_queeny",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_queeny.webp"
+  },
+  "LEADER_hero_stunk": {
+   "model": "hero_stunk",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_stunk.webp"
+  },
+  "LEADER_hero_ernold": {
+   "model": "hero_ernold",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_ernold.webp"
+  },
+  "LEADER_hero_mambo": {
+   "model": "hero_mambo",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_mambo.webp"
+  },
+  "LEADER_hero_machli": {
+   "model": "hero_machli",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_machli.webp"
   }
  }
 }
