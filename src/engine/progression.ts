@@ -90,5 +90,7 @@ export function aiDeck(race:string,difficulty:string){const tier=AI_TIERS[diffic
 // ---- One-time gifts (each is given once per save) ----
 export const GIFTS:{id:string,title:string,chests:ChestType[]}[]=[
  {id:'gift-2026-11-chests10',title:'هدية: 10 صناديق',chests:['full','full','full','full','monster','equipment','rune','spell','mega','mystery']},
+ // 20 chests with no spells in them: monster, equipment and rune chests only.
+ {id:'gift-2026-11-chests20',title:'هدية: 20 صندوق بدون تعاويذ',chests:[...Array(10).fill('monster'),...Array(6).fill('equipment'),...Array(4).fill('rune')]},
 ];
 export function claimGifts(profile:Profile):{profile:Profile,claimed:typeof GIFTS}{if(!profile.starterRace)return {profile,claimed:[]};const todo=GIFTS.filter(g=>!profile.gifts?.includes(g.id));if(!todo.length)return {profile,claimed:[]};let p=structuredClone(profile);for(const g of todo){for(const c of g.chests)p=grantChest(p,c);p.gifts=[...(p.gifts||[]),g.id];}return {profile:p,claimed:todo};}
