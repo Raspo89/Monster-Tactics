@@ -19,3 +19,8 @@
 ## 7.9.1 — stats readable on the card
 - Cards show the original stat badges (`GUI/MonsterStats` atlas; digit painted out by `scripts/apk-tools/stat-badges.py` → `ready/badge-attack|health|armour|mojo.webp`): attack bottom-left, health bottom-right, the monster's ability icon between them (armour badge when it has armour and no ability). Equipment shows its bonuses (+2 attack, +1 armour, health, Mojo) in the same badges.
 - Badges scale with the card (container query units); on narrow phone-hand cards the ability icon floats above the two badges so the numbers stay large. Checked on 390×844 and 1280×800 in the deck builder, shop and battle hand.
+
+## 7.13.3 — equipment art fixed
+- Player screenshot showed patchy, see-through items (stones, shields, armour). Cause: the `_a.A8` channel of the equipment textures is a gloss mask, not transparency (none of the 192 textures has a binary alpha), and it was used as alpha. Textures are now decoded as colour only.
+- Effect sheets (`*_fx`, glow — the energy faces of 10 shields and the glow of 15 staffs/swords) are flagged `additive` and rendered as added light (the renderer page got `AdditiveBlending` for such groups) instead of opaque sheets; the item's orientation is computed from the solid parts only.
+- All 205 images re-rendered and polished.

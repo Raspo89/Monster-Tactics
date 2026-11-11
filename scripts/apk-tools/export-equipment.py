@@ -1,7 +1,7 @@
 """Export every original weapon, shield and armour (helmet) mesh used by the native tables as small
 JSON meshes plus decoded textures, ready for render-equipment.py.
 Usage: python3 export-equipment.py <obb-dir> <out-dir>"""
-import csv, json, os, sys
+import re, csv, json, os, sys
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 import mda
@@ -30,8 +30,12 @@ def rows(name, key):
 def export(tag, folder, model, texture, kind):
     m = find(folder, model, '.MDA'); t = find(folder, texture, '.ETC')
     if not m or not t: print('missing', tag, model, texture); return None
+    # Effect sheets (*_fx, glow) are additive overlays in the game: flagged so the renderer adds them as light
+    # instead of drawing an opaque sheet over the item.
     parts = mda.read(m)
-    P = np.concatenate([p['positions'] for p in parts]); N = np.concatenate([p['normals'] for p in parts])
+    fx = lambda p: bool(re.search(r'_fx|glow', p['texture'] or '', re.I))
+    solid = [p for p in parts if not fx(p)] or parts
+    P = np.concatenate([p['positions'] for p in solid]); N = np.concatenate([p['normals'] for p in solid])
     if kind != 'armour':  # align: longest axis up, second across, thinnest towards the camera
         c = P.mean(0); _, _, vt = np.linalg.svd(P - c, full_matrices=False)
         R = np.stack([vt[1], vt[0], vt[2]])
@@ -45,9 +49,10 @@ def export(tag, folder, model, texture, kind):
         tf = tf or t
         name = os.path.basename(tf)[:-4] + '.png'
         if not os.path.isfile(os.path.join(out, name)):
-            decode_alpha(tf, tf[:-4] + '_a.A8').save(os.path.join(out, name))
+            # the _a.A8 channel is a gloss mask, not transparency: keep colour only
+            decode_alpha(tf, tf[:-4] + '_a.A8').convert('RGB').save(os.path.join(out, name))
         groups.append({'positions': pos.round(5).ravel().tolist(), 'normals': nrm.round(4).ravel().tolist(), 'uv': p['uv'].round(5).ravel().tolist(),
-                       'indices': p['indices'].tolist(), 'texture': name, 'skinWeights': [], 'skinIndices': [], 'bonePalette': []})
+                       'indices': p['indices'].tolist(), 'texture': name, 'skinWeights': [], 'skinIndices': [], 'bonePalette': [], **({'additive': True} if fx(p) else {})})
     json.dump({'groups': groups, 'bones': []}, open(os.path.join(out, tag + '.json'), 'w'))
     return tag
 
