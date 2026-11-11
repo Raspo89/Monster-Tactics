@@ -1,11 +1,6 @@
-rune	R_MINORHEROBASH	All your monsters receive RU_MinorheroBash_Power against heroes.
-rune	R_MAJORHEROBASH	All your monsters receive RU_MajorheroBash_Power against heroes.
-rune	R_REAPER	Receive RU_Reaper_Mojo whenever a monster dies.
 rune	R_WITCHHUNT	All spells cost an extra RU_Hunt_Mojo to play.
 rune	R_IMPOTENT_RAGE	All your monsters receive RU_impotentRage_Power but cannot move.
 rune	R_STAND_FAST	All your monsters receive RU_StandFast_Health but cannot move.
-rune	R_BANKERS_DELIGHT	Your opponent's cards cost an extra RU_BankersDelight_Mojo to play from hand.
-rune	R_ACCOUNTING	All your monster abilities cost RU_Accounting_Mojo to activate.
 rune	R_PUNISHMENT	Whenever an opponent plays a spell# their hero suffers RU_Punishment_Health.
 rune	R_BLANK	Does nothing.
 rune	R_CARD_MAESTRO	Draw a card each time you kill a monster.
@@ -183,21 +178,10 @@ rune	R_HB_GRUMSNIK	Your Grumsnik hero is protected from all bad afflictions.
 rune	R_MHB_OCULARUS	Your Ocularus hero is protected from all afflictions.
 rune	R_MHB_KARGADAN	Your Kargadan hero is protected from all afflictions.
 rune	R_MHB_GRUMSNIK	Your Grumsnik hero is protected from all afflictions.
-spell	SP_RUNEBANE	For every rune each enemy has in play# each of their monsters receives SP_runeBane_Damage damage.
-spell	SP_RUNEPAIN	For every rune in play# each enemy monster receives SP_runePain_Damage damage.
-spell	SP_MOJOBOOST	Receive SP_MojoBoost_Mojo for each of your runes in play.
-spell	SP_MOJOTURBO	Receive SP_MojoTurbo_Mojo for every rune in play.
-spell	SP_LAVAVENT	Lava erupts from SP_LavaVent_Count random tiles# dealing SP_LavaVent_Damage damage to any creature stood there.
-spell	SP_ERUPTION	Lava erupts from SP_Eruption_Count random tiles# dealing SP_Eruption_Damage damage to any creature stood there.
-spell	SP_MAGMA	Lava erupts from SP_Magma_Count random tiles# dealing SP_Magma_Damage damage to any creature stood there.
-spell	SP_DISMANTLE	All creatures lose all defensive equipment (shields & armour).
 spell	SP_SEPARATE	All enemy creatures lose all defensive equipment (shields & armour).
 spell	SP_CORROSION	All creatures lose all weapon upgrades.
-spell	SP_CRUMBLE	All enemy creatures lose all weapon upgrades.
 spell	SP_TORNADO	Move one enemy monster to a random position up to SP_Hurricane_MaxRange spaces away.
-spell	SP_HURRICANE	Move one enemy hero to a random position up to SP_Hurricane_MaxRange spaces away.
 spell	SP_SWINDLE	All enemy heroes lose all equipment.
-spell	SP_MULLIGAN	Discard your hand# then draw 4 new cards.
 spell	SP_RUNEFULLRAND	Randomly reassign control of all runes in play.
 spell	SP_RUNESLEFT	All players pass their runes to the player on their left.
 spell	SP_RUNESRIGHT	All players pass their runes to the player on their right.

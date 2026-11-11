@@ -87,6 +87,22 @@ def parse_spell(t, use_on):
     if m: return {'ops': [{'op': 'mojo', 'n': param(m.group(1))[0], 'max': param(m.group(2))[0]}, {'op': 'heroLose', 'n': -param(m.group(3))[0]}]}
     m = re.fullmatch(r'Your hero receives ' + P + r'\.', t)
     if m: return {'ops': [{'op': 'heroHeal', 'n': param(m.group(1))[0]}]}
+    if t == 'All enemy creatures lose all weapon upgrades.': return {'ops': [{'op': 'unequip', 'g': {'who': 'enemy'}, 'which': 'weapon'}]}
+    if t == 'All creatures lose all defensive equipment (shields & armour).': return {'ops': [{'op': 'unequip', 'g': {'who': 'all'}, 'which': 'defence'}]}
+    m = re.fullmatch(r'Lava erupts from (SP_\w+_Count) random tiles, dealing (SP_\w+_Damage) damage to any creature stood there\.', t)
+    if m: return {'ops': [{'op': 'eruption', 'n': int(G[m.group(1).lower()]), 'dmg': int(G[m.group(2).lower()])}]}
+    m = re.fullmatch(r'Move one enemy hero to a random position up to (SP_Hurricane_MaxRange) spaces away\.', t)
+    if m: return {'ops': [{'op': 'tornado', 'min': int(G['sp_hurricane_minrange']), 'max': int(G[m.group(1).lower()])}]}
+    m = re.fullmatch(r'Receive (SP_MojoBoost_Mojo) for each of your runes in play\.', t)
+    if m: return {'ops': [{'op': 'mojoPerRune', 'n': int(G[m.group(1).lower()]), 'who': 'mine'}]}
+    m = re.fullmatch(r'Receive (SP_MojoTurbo_Mojo) for every rune in play\.', t)
+    if m: return {'ops': [{'op': 'mojoPerRune', 'n': int(G[m.group(1).lower()]), 'who': 'all'}]}
+    m = re.fullmatch(r'Discard your hand, then draw (\d+) new cards\.', t)
+    if m: return {'ops': [{'op': 'burnHand', 'n': int(m.group(1))}]}
+    m = re.fullmatch(r'For every rune each enemy has in play, each of their monsters receives (SP_runeBane_Damage) damage\.', t)
+    if m: return {'ops': [{'op': 'runeDamage', 'n': int(G[m.group(1).lower()]), 'per': 'enemy'}]}
+    m = re.fullmatch(r'For every rune in play, each enemy monster receives (SP_runePain_Damage) damage\.', t)
+    if m: return {'ops': [{'op': 'runeDamage', 'n': int(G[m.group(1).lower()]), 'per': 'all'}]}
     return None
 
 def parse_rune(t):
@@ -109,6 +125,14 @@ def parse_rune(t):
     if m: return {'mojo': {'enemy': param(m.group(1))[0], 'mine': param(m.group(2))[0]}}
     if t == 'Draw an additional card during your upkeep.': return {'draw': 1}
     if t == "Your monsters can move on the turn they're played.": return {'haste': True}
+    m = re.fullmatch(r'All your monster abilities cost (RU_Accounting_Mojo) to activate\.', t)
+    if m: return {'abilityDiscount': -int(G[m.group(1).lower()])}
+    m = re.fullmatch(r"Your opponent's cards cost an extra (RU_BankersDelight_Mojo) to play from hand\.", t)
+    if m: return {'tax': int(G[m.group(1).lower()])}
+    m = re.fullmatch(r'All your monsters receive (RU_\w+HeroBash_Power) against heroes\.', t, re.I)
+    if m: return {'heroBash': int(G[m.group(1).lower()])}
+    m = re.fullmatch(r'Receive (RU_Reaper_Mojo) whenever a monster dies\.', t)
+    if m: return {'reaper': int(G[m.group(1).lower()])}
     return None
 
 AR_RACE = {'human': 'البشر', 'elf': 'الجان', 'orc': 'الأورك', 'zombie': 'الزومبي', 'lizard': 'السحالي', 'dwarf': 'الأقزام', 'minotaur': 'المينوتور',
@@ -147,6 +171,12 @@ def text(e):
         elif k == 'mojo': parts.append(f"اكسب {o['n']} موجو" if 'max' not in o else f"اكسب من {o['n']} إلى {o['max']} موجو عشوائيًا")
         elif k == 'heroLose': parts.append(f"قائدك يخسر {o['n']} صحة")
         elif k == 'heroHeal': parts.append(f"قائدك يكسب {o['n']} صحة")
+        elif k == 'unequip': parts.append(('كل وحوش الخصم تفقد أسلحتها' if o['which'] == 'weapon' else 'كل الوحوش تفقد دروعها وتروسها'))
+        elif k == 'eruption': parts.append(f"تنفجر الحمم من {o['n']} خانة عشوائية، وكل من يقف عليها ياخذ {o['dmg']} ضرر")
+        elif k == 'tornado': parts.append(f"انقل قائد الخصم لمكان عشوائي يبعد {o['max']} خانات")
+        elif k == 'mojoPerRune': parts.append(f"اكسب {o['n']} موجو عن كل " + ('رون لك في الساحة' if o['who'] == 'mine' else 'رون في الساحة (لك وللخصم)'))
+        elif k == 'burnHand': parts.append(f"ارمِ يدك كلها واسحب {o['n']} بطاقات جديدة")
+        elif k == 'runeDamage': parts.append(f"كل وحش للخصم ياخذ {o['n']} ضرر عن كل " + ('رون يملكه الخصم' if o['per'] == 'enemy' else 'رون في الساحة'))
         elif k == 'destroyRunes': parts.append('دمّر ' + ('كل رونات الخصم' if o['who'] == 'enemy' else 'كل الرونات'))
     groups = []
     for a in e.get('auras', []):
@@ -160,6 +190,10 @@ def text(e):
         if m.get('enemy'): parts.append(f"الخصم يولد {m['enemy']} موجو إضافي كل دور")
     if e.get('draw'): parts.append('اسحب بطاقة إضافية في بداية كل دور')
     if e.get('haste'): parts.append('وحوشك تتحرك في دور استدعائها')
+    if e.get('abilityDiscount'): parts.append(f"قدرات وحوشك تكلف {e['abilityDiscount']} موجو أقل")
+    if e.get('tax'): parts.append(f"بطاقات الخصم تكلفه {e['tax']} موجو زيادة")
+    if e.get('heroBash'): parts.append(f"وحوشك +{e['heroBash']} هجوم ضد القادة")
+    if e.get('reaper'): parts.append(f"اكسب {e['reaper']} موجو كل ما يموت وحش")
     s = '، '.join(parts)
     return s + (' ما دام الرون قائمًا' if 'auras' in e else '')
 

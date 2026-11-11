@@ -8,7 +8,7 @@
 - Art: parchment maps, round frames, padlock and tick from `GUI/quests`, `GUI/ButtonBits2`, `GUI/ButtonBits4` (`scripts/apk-tools/quest-ui.py`).
 
 ## Import result (`scripts/import-native-quests.py`)
-- 119 rooms, 109 boards, enemy decks of 24–63 cards. 238 card copies of 16 kinds are not in the game yet and are left out of those decks (listed in `reference/native-rules/quest-cards-not-imported.txt`, e.g. Mulligan, Mojo Turbo, Banker's Delight).
+- 119 rooms, 109 boards. Since 7.10.1 every card of every quest deck is in the game (`reference/native-rules/quest-cards-not-imported.txt` is empty).
 
 ## Rules chosen where the files say nothing
 - Prize on the first win of a room: 60 / 100 / 150 / 200 / 260 / 320 coins by quest; mini boss ×2 coins + a rare card; last battle ×3 coins + a legendary card. Every win also gives the usual victory reward.
@@ -20,3 +20,8 @@
 - `tests/quests.test.ts` (6 tests): all rooms, decks, heroes and boards resolve; boards connected; room unlocking; prizes once; quest unlock chain and save/reload; hero stats and Mojo bonus; AI finishes the last battle of every quest.
 - AI vs AI over all 119 rooms with the starter deck: no errors; starter deck wins most easy rooms, loses most from medium on (the original expects a growing collection).
 - Browser: quest list, map, room dialog and battle start on 1280×800 and 390×844.
+
+## 7.10.1 — the 16 missing cards
+- Imported through `scripts/import-native-magic.py` with the original values from `table-34b638`: Rune of Accounting (abilities −1 Mojo), Rune of Card Taxation (opponent's cards +1 Mojo), Rune of Hero Assaulting/Battering (+2/+3 power against heroes), Rune of Mojo Reaping (+1 Mojo per monster death); Strip (all lose shields and armour), Sly Amnesty (enemies lose weapons), Mini Eruption / Eruption / Mega Eruption (10/15/20 random tiles, 2/3/5 damage), Heroic Tornado (enemy hero moved exactly 2 spaces: min and max range are both 2), Mojo Boost (+2 per own rune), Mojo Turbo (+1 per rune in play), Burn Cards (discard hand, draw 4), Rune Tax (1 damage to each enemy monster per rune its owner has), Ruinous Runes (1 damage to each enemy monster per rune in play). Card art decoded with `scripts/decode-magic-art.py`.
+- Deck copies: the original help text says Standard allows "no greater than four copies of any one card" (Single 50: no duplicates) and the shop refuses a fifth copy; the game already followed this for every card type, weapons included.
+- Tests: `tests/quest-magic.test.ts` (7). Full suite 251 passing; AI vs AI over all 119 rooms without errors.

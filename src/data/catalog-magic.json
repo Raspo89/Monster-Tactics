@@ -69,6 +69,51 @@
   }
  },
  {
+  "id": "NR_R_MINORHEROBASH",
+  "name": "Rune of Hero Assaulting",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك +2 هجوم ضد القادة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MINORHEROBASH",
+  "art": "Rune_01_MinorHeroBash",
+  "effect": {
+   "heroBash": 2
+  }
+ },
+ {
+  "id": "NR_R_MAJORHEROBASH",
+  "name": "Rune of Hero Battering",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "وحوشك +3 هجوم ضد القادة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_MAJORHEROBASH",
+  "art": "Rune_01_MajorHeroBash",
+  "effect": {
+   "heroBash": 3
+  }
+ },
+ {
+  "id": "NR_R_REAPER",
+  "name": "Rune of Mojo Reaping",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "اكسب 1 موجو كل ما يموت وحش",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_REAPER",
+  "art": "Rune_01_Reaper",
+  "effect": {
+   "reaper": 1
+  }
+ },
+ {
   "id": "NR_R_RUST",
   "name": "Rune of Rust",
   "race": "neutral",
@@ -142,6 +187,36 @@
      "n": -1
     }
    ]
+  }
+ },
+ {
+  "id": "NR_R_BANKERS_DELIGHT",
+  "name": "Rune of Card Taxation",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 6,
+  "text": "بطاقات الخصم تكلفه 1 موجو زيادة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_BANKERS_DELIGHT",
+  "art": "Rune_01_Banker",
+  "effect": {
+   "tax": 1
+  }
+ },
+ {
+  "id": "NR_R_ACCOUNTING",
+  "name": "Rune of Accounting",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قدرات وحوشك تكلف 1 موجو أقل",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_ACCOUNTING",
+  "art": "Rune_01_Account",
+  "effect": {
+   "abilityDiscount": 1
   }
  },
  {
@@ -2971,6 +3046,153 @@
   }
  },
  {
+  "id": "NS_SP_RUNEBANE",
+  "name": "Rune Tax",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل وحش للخصم ياخذ 1 ضرر عن كل رون يملكه الخصم",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_RUNEBANE",
+  "art": "spell_rune_bane",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeDamage",
+     "n": 1,
+     "per": "enemy"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNEPAIN",
+  "name": "Ruinous Runes",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل وحش للخصم ياخذ 1 ضرر عن كل رون في الساحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_RUNEPAIN",
+  "art": "spell_rune_pain",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeDamage",
+     "n": 1,
+     "per": "all"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_MOJOBOOST",
+  "name": "Mojo Boost",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "اكسب 2 موجو عن كل رون لك في الساحة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_MOJOBOOST",
+  "art": "spell_mojo_boost",
+  "effect": {
+   "ops": [
+    {
+     "op": "mojoPerRune",
+     "n": 2,
+     "who": "mine"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_MOJOTURBO",
+  "name": "Mojo Turbo",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "اكسب 1 موجو عن كل رون في الساحة (لك وللخصم)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_MOJOTURBO",
+  "art": "spell_mojo_turbo",
+  "effect": {
+   "ops": [
+    {
+     "op": "mojoPerRune",
+     "n": 1,
+     "who": "all"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_LAVAVENT",
+  "name": "Mini Eruption",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "تنفجر الحمم من 10 خانة عشوائية، وكل من يقف عليها ياخذ 2 ضرر",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_LAVAVENT",
+  "art": "spell_lavavent",
+  "effect": {
+   "ops": [
+    {
+     "op": "eruption",
+     "n": 10,
+     "dmg": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ERUPTION",
+  "name": "Eruption",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "تنفجر الحمم من 15 خانة عشوائية، وكل من يقف عليها ياخذ 3 ضرر",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_ERUPTION",
+  "art": "spell_eruption",
+  "effect": {
+   "ops": [
+    {
+     "op": "eruption",
+     "n": 15,
+     "dmg": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_MAGMA",
+  "name": "Mega Eruption",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "تنفجر الحمم من 20 خانة عشوائية، وكل من يقف عليها ياخذ 5 ضرر",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_MAGMA",
+  "art": "spell_magma",
+  "effect": {
+   "ops": [
+    {
+     "op": "eruption",
+     "n": 20,
+     "dmg": 5
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SP_ARMOURDOWN",
   "name": "Tarnish",
   "race": "neutral",
@@ -3014,6 +3236,52 @@
      },
      "stat": "armor",
      "n": -3
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_DISMANTLE",
+  "name": "Strip",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل الوحوش تفقد دروعها وتروسها",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_DISMANTLE",
+  "art": "spell_01_lose_armour",
+  "effect": {
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "all"
+     },
+     "which": "defence"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_CRUMBLE",
+  "name": "Sly Amnesty",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل وحوش الخصم تفقد أسلحتها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_CRUMBLE",
+  "art": "spell_01_lose_weapon",
+  "effect": {
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "enemy"
+     },
+     "which": "weapon"
     }
    ]
   }
@@ -3105,6 +3373,47 @@
       "who": "mine",
       "cls": "mage"
      }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_HURRICANE",
+  "name": "Heroic Tornado",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "انقل قائد الخصم لمكان عشوائي يبعد 2 خانات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_HURRICANE",
+  "art": "spell_hurricane",
+  "effect": {
+   "ops": [
+    {
+     "op": "tornado",
+     "min": 2,
+     "max": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_MULLIGAN",
+  "name": "Burn Cards",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "ارمِ يدك كلها واسحب 4 بطاقات جديدة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_MULLIGAN",
+  "art": "spell_burn_cards",
+  "effect": {
+   "ops": [
+    {
+     "op": "burnHand",
+     "n": 4
     }
    ]
   }
