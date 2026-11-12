@@ -12,3 +12,9 @@ Problem: afflictions were drawn by the 2D board (Phaser) as small text labels an
 
 ## Checks
 - Battle injected with one affliction per unit, screenshots at 1280×800 (2×) and 390×844: every effect visible; no page errors. Full test suite passing.
+
+## 7.15 — worn equipment and attack visuals
+- `scripts/apk-tools/export-worn-equipment.py` writes all 205 weapons / shields / armour sets in their original mesh space (`public/original3d/equip`, 7 MB, textures colour-only). Armour sets include helmet, shoulder and chest pieces from `table-345730`.
+- Pieces ride on the skeleton bones (`Bip01 R Hand`, `Bip01 L Forearm`, `Bip01 Head`, both `UpperArm`s, `Spine1`). The original skin matrices are pose deltas, so each piece is placed at its joint in the bind pose (estimated from the vertices that bone moves) and then follows the bone. Orientation checked on front/side renders of the human fighter; helmet scale per race/class from `table-33e4f8`. Units without a weapon hold their class default (Wooden Sword / Bow / Staff / Rock, the cost-0 rows of the weapon table).
+- The yellow line drawn for every attack (it looked like an arrow even for mages) is replaced, in the 3D layer so it shows in front of the models: warriors and adjacent hits = slash arc at the target, archers = arrow with a slight arc, mages = violet magic bolt with a sparkle trail and burst, artillery = tumbling rock on a high arc with a dust burst. The 2D version stays as fallback for units without a 3D model.
+- Checked in the browser with equipped units of every class and slowed time; full test suite passing.
