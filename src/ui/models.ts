@@ -2,11 +2,13 @@ import * as T from 'three';
 import manifest from '../../public/original3d/model-manifest.json';
 import visual from '../data/visual-manifest.json';
 import {GameState,Unit,column} from '../engine/game';
+import {effect,frozen} from '../engine/abilities';
 
 import {PovCamera,world} from './pov';
 type BonePose=number[];
 type Clip={fps:number,frames:BonePose[][]};
-type ModelRecord={root:any,local:any,bones:any[],raw:any,indices:number[],x:number,y:number,mode:string,started:number,walkingUntil:number,attackUntil:number,deadUntil?:number};
+type FxPart={obj:any,kind:string,i:number};
+type ModelRecord={fx?:{group:any,key:string,parts:FxPart[]},root:any,local:any,bones:any[],raw:any,indices:number[],x:number,y:number,mode:string,started:number,walkingUntil:number,attackUntil:number,deadUntil?:number};
 export const modelUrl=(path:string)=>(window as any).__MODELS__?.[path]||new URL(import.meta.env.BASE_URL,location.href).href+'original3d/'+path;
 const modelKey=(id:string)=>(visual.portraits as any)[id]?.model;
 
@@ -25,12 +27,42 @@ export class ModelsLayer{
  for(const group of raw.groups){const geometry=new T.BufferGeometry();geometry.setAttribute('position',new T.Float32BufferAttribute(group.positions,3));geometry.setAttribute('normal',new T.Float32BufferAttribute(group.normals,3));geometry.setAttribute('uv',new T.Float32BufferAttribute(group.uv,2));geometry.setIndex(group.indices);const material=new T.MeshStandardMaterial({map:this.texture(dir+(/^\d+\.(png|webp)$/.test(group.texture)&&entry.skins[variant]||group.texture)),side:T.DoubleSide,transparent:true,alphaTest:.35,roughness:.9,metalness:0});let mesh:any;if(group.skinWeights.length&&bones.length){const mapped=group.skinIndices.map((i:number)=>group.bonePalette[i]??0);geometry.setAttribute('skinIndex',new T.Uint16BufferAttribute(mapped,4));geometry.setAttribute('skinWeight',new T.Float32BufferAttribute(group.skinWeights,4));mesh=new T.SkinnedMesh(geometry,material);mesh.bind(skeleton,new T.Matrix4());mesh.normalizeSkinWeights();}else mesh=new T.Mesh(geometry,material);mesh.frustumCulled=false;local.add(mesh);const positions=group.idlePositions.length?group.idlePositions:group.positions;for(let i=0;i<positions.length;i+=3)bounds.expandByPoint(new T.Vector3(positions[i],positions[i+1],positions[i+2]));}
  const height=Math.max(.1,bounds.max.y-bounds.min.y),center=bounds.getCenter(new T.Vector3());local.scale.setScalar(1/height);local.position.set(-center.x/height,-bounds.min.y/height,-center.z/height);root.scale.setScalar(u.isLeader?1.1:1);root.rotation.set(0,u.owner===this.pov.owner?0:Math.PI,0);const p=world(u.pos,this.pov.owner);root.position.set(p.x,0,p.z);const record:ModelRecord={root,local,bones,raw,indices:raw.bones.map((b:any)=>this.animations.boneNames.indexOf(b.name)),x:p.x,y:p.z,mode:'idle',started:performance.now(),walkingUntil:0,attackUntil:0};this.records.set(u.uid,record);this.scene.add(root);this.sync(this.state);this.onReady?.();
  }catch(e){this.failed.add(u.uid);console.warn('Original model fallback',u.cardId);}finally{this.pending.delete(u.uid);}}
- sync(s?:GameState){if(!s||this.closed)return;this.state=s;if(!this.animations)return;const now=performance.now();for(const u of s.units){const rec=this.records.get(u.uid);if(!rec){void this.add(u);continue;}rec.root.rotation.y=u.owner===this.pov.owner?0:Math.PI;const p=world(u.pos,this.pov.owner);if(p.x!==rec.x||p.z!==rec.y){rec.x=p.x;rec.y=p.z;rec.walkingUntil=now+420;}const event=s.events.find(e=>e.kind==='attack'&&e.uid===u.uid);if(event&&(rec as any).attackEvent!==event){(rec as any).attackEvent=event;rec.attackUntil=now+950;}rec.root.visible=true;}
+ sync(s?:GameState){if(!s||this.closed)return;this.state=s;if(!this.animations)return;const now=performance.now();for(const u of s.units){const rec=this.records.get(u.uid);if(!rec){void this.add(u);continue;}rec.root.rotation.y=u.owner===this.pov.owner?0:Math.PI;const p=world(u.pos,this.pov.owner);if(p.x!==rec.x||p.z!==rec.y){rec.x=p.x;rec.y=p.z;rec.walkingUntil=now+420;}const event=s.events.find(e=>e.kind==='attack'&&e.uid===u.uid);if(event&&(rec as any).attackEvent!==event){(rec as any).attackEvent=event;rec.attackUntil=now+950;}rec.root.visible=true;this.syncFx(rec,u);}
  for(const [uid,rec] of this.records)if(!s.units.some(u=>u.uid===uid)&&!rec.deadUntil)rec.deadUntil=now+1000;
  }
  update(delta:number){if(this.closed)return;const now=performance.now();for(const [uid,r] of this.records){if(r.deadUntil&&now>r.deadUntil){this.remove(uid);continue;}const mode=r.deadUntil?'death':now<r.attackUntil?'attack':now<r.walkingUntil?'walk':'idle';if(mode!==r.mode){r.mode=mode;r.started=now;}r.root.position.x+=(r.x-r.root.position.x)*Math.min(1,delta/95);r.root.position.z+=(r.y-r.root.position.z)*Math.min(1,delta/95);const clip:Clip=this.animations.clips[mode]||this.animations.clips.idle;const f=(now-r.started)/1000*clip.fps,n=clip.frames.length,loop=mode==='idle'||mode==='walk',frame=loop?f%n:Math.min(f,n-1),a=clip.frames[Math.floor(frame)],b=clip.frames[loop?(Math.floor(frame)+1)%n:Math.min(Math.floor(frame)+1,n-1)],t=frame%1;
- for(let i=0;i<r.bones.length;i++){const index=r.indices[i],v=a[index]||r.raw.bones[i].frames[0]||[0,0,0,30000,0,0,0],w=b[index]||v,bone=r.bones[i];bone.position.set((v[4]+(w[4]-v[4])*t)/10000,(v[5]+(w[5]-v[5])*t)/10000,(v[6]+(w[6]-v[6])*t)/10000);bone.quaternion.set(v[0]/30000,v[1]/30000,v[2]/30000,v[3]/30000).normalize().slerp(new T.Quaternion(w[0]/30000,w[1]/30000,w[2]/30000,w[3]/30000).normalize(),t);}
+ if(r.fx)this.animateFx(r,now);for(let i=0;i<r.bones.length;i++){const index=r.indices[i],v=a[index]||r.raw.bones[i].frames[0]||[0,0,0,30000,0,0,0],w=b[index]||v,bone=r.bones[i];bone.position.set((v[4]+(w[4]-v[4])*t)/10000,(v[5]+(w[5]-v[5])*t)/10000,(v[6]+(w[6]-v[6])*t)/10000);bone.quaternion.set(v[0]/30000,v[1]/30000,v[2]/30000,v[3]/30000).normalize().slerp(new T.Quaternion(w[0]/30000,w[1]/30000,w[2]/30000,w[3]/30000).normalize(),t);}
  }this.renderer.render(this.scene,this.camera);}
+
+ // ---- Affliction effects, built from the original effect models and particle textures (public/original3d/fx) ----
+ fxModels=new Map<string,Promise<any>>();
+ fxModel(name:string){if(!this.fxModels.has(name))this.fxModels.set(name,getJSON('fx/'+name+'.json'));return this.fxModels.get(name)!;}
+ static statusKeys(u:Unit){return ['flame','deathmark','vengeance','stun','snare','ice','regen','mighty','berserk','shield'].filter(k=>k==='flame'?u.flaming:k==='shield'?u.shielded:k==='ice'?frozen(u):effect(u,k));}
+ syncFx(rec:ModelRecord,u:Unit){const keys=ModelsLayer.statusKeys(u),key=keys.join(',');if(rec.fx?.key===key)return;if(rec.fx){rec.root.remove(rec.fx.group);rec.fx.group.traverse((o:any)=>{o.geometry?.dispose();o.material?.dispose();});}if(!keys.length){rec.fx=undefined;return;}const group=new T.Group(),parts:FxPart[]=[];rec.fx={group,key,parts};rec.root.add(group);
+  const sprite=(tex:string,color:number,size:number,kind:string,i=0)=>{const m=new T.SpriteMaterial({map:this.texture('fx/'+tex+'.webp'),color,blending:T.AdditiveBlending,transparent:true,depthWrite:false});const o=new T.Sprite(m);o.scale.setScalar(size);o.renderOrder=5;group.add(o);parts.push({obj:o,kind,i});return o;};
+  const ring=(tex:string,color:number,size:number,kind:string)=>{const o=new T.Mesh(new T.PlaneGeometry(size,size),new T.MeshBasicMaterial({map:this.texture('fx/'+tex+'.webp'),color,blending:T.AdditiveBlending,transparent:true,depthWrite:false,side:T.DoubleSide}));o.rotation.x=-Math.PI/2;o.position.y=.02;o.renderOrder=4;group.add(o);parts.push({obj:o,kind,i:0});return o;};
+  const model=(name:string,height:number,y:number,kind:string,opts:any={})=>{const holder=new T.Group();holder.position.y=y;group.add(holder);parts.push({obj:holder,kind,i:0});void this.fxModel(name).then(d=>{if(rec.fx?.group!==group)return;for(const g of d.groups){const geo=new T.BufferGeometry();geo.setAttribute('position',new T.Float32BufferAttribute(g.positions,3));geo.setAttribute('uv',new T.Float32BufferAttribute(g.uv,2));geo.setIndex(g.indices);const mesh=new T.Mesh(geo,new T.MeshBasicMaterial({map:this.texture('fx/'+d.texture),side:T.DoubleSide,transparent:true,depthWrite:!opts.glass,opacity:opts.opacity??1,color:opts.color??0xffffff}));mesh.scale.setScalar(height);if(opts.flip)mesh.rotation.x=Math.PI;if(opts.tilt)holder.rotation.x=opts.tilt;mesh.renderOrder=opts.glass?6:3;holder.add(mesh);}}).catch(()=>{});return holder;};
+  for(const k of keys){
+   if(k==='flame')for(let i=0;i<4;i++)sprite('flame',0xffb060,.38,'flame',i);
+   if(k==='deathmark')model('skull',.3,1.32,'bob',{tilt:-.7});
+   if(k==='vengeance')model('dagger',.5,1.3,'bob',{flip:true,tilt:-.5});
+   if(k==='stun')for(let i=0;i<4;i++)sprite('star',0xffe25a,.22,'orbit',i);
+   if(k==='snare')ring('snare',0x8dff6a,1.05,'spin');
+   if(k==='ice')model('ice',1.12,-.02,'still',{glass:true,opacity:.62,color:0xd6f0ff});
+   if(k==='regen'){ring('stun',0x55ff7a,.95,'pulse');for(let i=0;i<6;i++)sprite('sparkle',0x8dffa0,.3,'rise',i);}
+   if(k==='mighty'){ring('rage',0xffc23a,1.1,'pulse');for(let i=0;i<4;i++)sprite('sparkle',0xffd36a,.26,'rise',i);}
+   if(k==='berserk'){ring('rage',0xff3b30,1.15,'pulse');for(let i=0;i<3;i++)sprite('smoke',0xff4a3a,.42,'smoke',i);}
+   if(k==='shield'){const o=new T.Mesh(new T.SphereGeometry(.56,24,16),new T.MeshBasicMaterial({color:0x5fc8ff,blending:T.AdditiveBlending,transparent:true,opacity:.22,depthWrite:false}));o.position.y=.52;o.renderOrder=6;group.add(o);parts.push({obj:o,kind:'bubble',i:0});}
+  }}
+ animateFx(r:ModelRecord,now:number){const t=now/1000;for(const p of r.fx!.parts){const o=p.obj,ph=p.i*1.7;switch(p.kind){
+  case'flame':{const c=(t*1.6+p.i/4)%1;o.position.set(Math.sin(ph*2.3)*.18,.12+c*.62,Math.cos(ph*1.9)*.14);o.scale.setScalar(.42*(1-c*.6));o.material.opacity=Math.sin(c*Math.PI);break;}
+  case'bob':o.position.y=(o.userData.y??=o.position.y)+Math.sin(t*2.4)*.05;o.rotation.z=Math.sin(t*1.5)*.25;break;
+  case'orbit':{const a=t*3+p.i*Math.PI/2;o.position.set(Math.cos(a)*.3,1.18+Math.sin(a*2)*.04,Math.sin(a)*.3);break;}
+  case'spin':o.rotation.z=t*.8;o.material.opacity=.75+Math.sin(t*3)*.2;break;
+  case'pulse':o.rotation.z=-t*.6;o.scale.setScalar(1+Math.sin(t*4)*.08);o.material.opacity=.55+Math.sin(t*4)*.3;break;
+  case'rise':{const c=(t*.7+p.i/4)%1;o.position.set(Math.sin(ph*3.1)*.25,c*1.05,Math.cos(ph*2.2)*.2);o.material.opacity=Math.sin(c*Math.PI);break;}
+  case'smoke':{const c=(t*.5+p.i/3)%1;o.position.set(Math.sin(ph)*.2,.25+c*.6,Math.cos(ph)*.2);o.scale.setScalar(.35+c*.3);o.material.opacity=.5*Math.sin(c*Math.PI);break;}
+  case'bubble':o.material.opacity=.16+Math.sin(t*2.5)*.07;o.scale.setScalar(1+Math.sin(t*2.5)*.03);break;}}}
  remove(uid:number){const r=this.records.get(uid);if(!r)return;this.scene.remove(r.root);r.root.traverse((obj:any)=>{obj.geometry?.dispose();obj.material?.dispose();});this.records.delete(uid);}
  dispose(){this.closed=true;this.resize.disconnect();for(const uid of this.records.keys())this.remove(uid);for(const tex of this.textures.values())tex.dispose();this.renderer.dispose();this.renderer.domElement.remove();}
 }
