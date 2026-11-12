@@ -15,3 +15,8 @@ Player report after 5 games: the opponent was far too easy. The default level wa
 - Own decks, paired seats: hard vs normal 10/12, expert vs hard 12/12 (`tests/ai-decks.test.ts` keeps a smaller version; also checks deck legality and that rarity rises with the level).
 - Existing difficulty tests unchanged and passing (easy < normal < hard on equal starter decks). Full suite: 258 tests.
 - Browser (390×844): new menu option, saved choice, expert match starts.
+
+## 7.13.4 — afflictions in the computer's judgement
+- Question from the player: does the computer use the afflictions? Measured on 32 quest-deck games (hard AI): it already used most abilities (heal, regen, magic shield, snipe, encourage, heroic shout, headshot ...), but never Ice Block, rarely Death Mark, Ignite or Trap, because its evaluation did not value those states.
+- Evaluation now also counts: Death Mark (bad, −3 for its owner), pending Vengeance (bad, up to 2 health), Ice Block (good on a weak unit with ≤3 health, slightly bad otherwise since it cannot act), and its own fire/trap tiles next to enemy monsters. Stun, snare, flame, regen and magic shield were already valued; Mighty/Berserk count through the attack value.
+- Result: Ice Block 0 → 21 uses, Ignite 4 → 13, Death Mark 2 → 3; hard (new) vs hard (old weights): 10/20 on starter decks, 28/50 on quest decks — no loss of strength.
