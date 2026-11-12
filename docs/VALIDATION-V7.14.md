@@ -22,3 +22,11 @@ Problem: afflictions were drawn by the 2D board (Phaser) as small text labels an
 ## 7.16 — original rune stands
 - `scripts/apk-tools/rune-stand-fx.py`: `Furniture/Dais/dais.MDA` (grey stone texture, tinted by owner colour), `Furniture/Crystals/crystal_01.MDA` (colour map baked to the pink-white glow seen in the original videos), `Runes/rune_01.MDA` with each rune card's own `Rune_01_*` texture (86 runes, legacy R01–R07 mapped to the matching originals).
 - Drawn in the 3D layer: empty stand = dais + slowly turning crystal + glow; filled stand = dais + the rune stone tilted to face the camera, swaying, with a glow; the 2D board keeps only a thin hex outline in the owner colour and the stand's health under it. Checked at 1280×800 and 390×844.
+
+## 7.16.1 — black battle screen on the player's phone
+- Report: after 7.16 a battle showed only the hand of cards over a black board (iPhone). Not reproducible in desktop Chromium, including iPhone size and pixel ratio and 14 played turns, so the fix makes the board unable to go black:
+  - Phaser's frame loop stops for good if the scene's `update()` throws (the next frame is requested after the callback). The 3D layer's extras (affliction effects, worn equipment, rune stands, attack shots) now run inside `safe()`: a failure switches only that extra off. If the whole 3D update throws or its WebGL context is lost, the board drops the 3D layer and keeps playing with the 2D sprites. `paint()` is guarded the same way.
+  - Errors are shown as a small red note at the bottom of the screen (tap to hide) so a phone screenshot tells what failed.
+  - 3D layer pixel ratio limited to 1.5 on touch screens to save GPU memory.
+  - The desert map's floor image (`pov/arena-4.webp`) had been an empty file since 7.4; it is now made from the original desert arena.
+- Checked: a deliberately failing extra leaves the board drawn and shows the note.

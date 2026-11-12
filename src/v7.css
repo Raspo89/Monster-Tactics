@@ -134,3 +134,4 @@
 .save-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}.save-compare h4{margin:4px 0}.save-file{display:block;margin-top:8px;font-size:.88rem}
 @media(max-width:600px){.save-compare{grid-template-columns:1fr}}
 .gift-chests{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;text-align:center}.gift-chests img{width:96px;height:84px;object-fit:contain;display:block;margin:0 auto}.gift-chests span{font-size:.82rem}
+#error-note{position:fixed;z-index:9999;left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));background:#2a0d0dee;color:#ffd0c8;border:1px solid #c0453a;border-radius:8px;padding:6px 10px;font:12px/1.5 Tahoma,Arial,sans-serif;direction:ltr;text-align:left;max-height:30vh;overflow:auto;pointer-events:auto}
