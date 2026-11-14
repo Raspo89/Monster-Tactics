@@ -46,13 +46,14 @@ export function cardOfRarity(r:Rarity,random=Math.random){const pool=cards.filte
 export function grantQuestRoom(profile:Profile,qid:string,n:number):{profile:Profile,prize?:QuestPrize}{const q=questById[qid],room=q?.rooms.find(r=>r.n===n);if(!q||!room||questWon(profile,qid).includes(n)||!roomOpen(profile,q,room))return {profile};const p=structuredClone(profile),prize=questPrize(q,room);p.quests={...(p.quests||{}),[qid]:[...questWon(p,qid),n]};p.coins+=prize.coins;if(prize.chest)p.chests={...(p.chests||{}),[prize.chest]:(p.chests?.[prize.chest]||0)+1};return {profile:p,prize};}
 
 // ---- Booster chests (original Furniture/Chest textures, contents from the original chest descriptions) ----
-export type ChestType='mini'|'full'|'monster'|'equipment'|'rune'|'spell'|'mega'|'epic'|'mystery';
-export const CHEST_TYPES:ChestType[]=['mini','full','monster','equipment','rune','spell','mega','epic','mystery'];
+export type ChestType='mini'|'full'|'monster'|'lizard'|'equipment'|'rune'|'spell'|'mega'|'epic'|'mystery';
+export const CHEST_TYPES:ChestType[]=['mini','full','monster','lizard','equipment','rune','spell','mega','epic','mystery'];
 type Slot=Rarity|'roll'|'rare+';
 export const CHESTS:Record<ChestType,{name:string,english:string,text:string,price?:number,slots?:Slot[],pool?:(c:Card)=>boolean}>={
  mini:{name:'الصندوق الصغير',english:'Mini Chest',text:'6 بطاقات عشوائية. ما فيه شي مضمون، بس من يدري...',price:300,slots:Array(6).fill('roll')},
  full:{name:'الصندوق الكامل',english:'Full Chest',text:'12 بطاقة عشوائية، مضمون فيها: بطاقة نادرة (وفيه احتمال بسيط تطلع أسطورية) و3 غير شائعة.',price:900,slots:['rare+','U','U','U',...Array(8).fill('roll')]},
  monster:{name:'صندوق الوحوش',english:'Monster Chest',text:'12 وحش عشوائي، مضمون فيها: وحش نادر (أو أسطوري أحيانًا) و3 غير شائعة.',price:900,slots:['rare+','U','U','U',...Array(8).fill('roll')],pool:c=>c.type==='unit'},
+ lizard:{name:'صندوق السحالي',english:'Lizard Chest',text:'12 وحش من السحالي فقط، مضمون فيها: سحلية نادرة (أو أسطورية أحيانًا) و3 غير شائعة.',price:900,slots:['rare+','U','U','U',...Array(8).fill('roll')],pool:c=>c.type==='unit'&&c.race==='lizard'},
  equipment:{name:'صندوق المعدات',english:'Equipment Chest',text:'12 قطعة سلاح ودرع وترس عشوائية، مضمون فيها: قطعة نادرة (أو أسطورية أحيانًا) و3 غير شائعة.',price:900,slots:['rare+','U','U','U',...Array(8).fill('roll')],pool:c=>c.type==='weapon'||c.type==='armor'},
  rune:{name:'صندوق الرونات',english:'Rune Chest',text:'12 رون عشوائي، مضمون فيها: رون نادر (أو أسطوري أحيانًا) و3 غير شائعة.',price:900,slots:['rare+','U','U','U',...Array(8).fill('roll')],pool:c=>c.type==='rune'},
  spell:{name:'صندوق التعاويذ',english:'Spell Chest',text:'12 تعويذة عشوائية، مضمون فيها: تعويذة نادرة (أو أسطورية أحيانًا) و3 غير شائعة.',price:900,slots:['rare+','U','U','U',...Array(8).fill('roll')],pool:c=>c.type==='spell'},
@@ -92,5 +93,6 @@ export const GIFTS:{id:string,title:string,chests:ChestType[]}[]=[
  {id:'gift-2026-11-chests10',title:'هدية: 10 صناديق',chests:['full','full','full','full','monster','equipment','rune','spell','mega','mystery']},
  // 20 chests with no spells in them: monster, equipment and rune chests only.
  {id:'gift-2026-11-chests20',title:'هدية: 20 صندوق بدون تعاويذ',chests:[...Array(10).fill('monster'),...Array(6).fill('equipment'),...Array(4).fill('rune')]},
+ {id:'gift-2026-11-lizard5',title:'هدية: 5 صناديق سحالي',chests:Array(5).fill('lizard')},
 ];
 export function claimGifts(profile:Profile):{profile:Profile,claimed:typeof GIFTS}{if(!profile.starterRace)return {profile,claimed:[]};const todo=GIFTS.filter(g=>!profile.gifts?.includes(g.id));if(!todo.length)return {profile,claimed:[]};let p=structuredClone(profile);for(const g of todo){for(const c of g.chests)p=grantChest(p,c);p.gifts=[...(p.gifts||[]),g.id];}return {profile:p,claimed:todo};}
