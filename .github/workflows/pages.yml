@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Build Android APK"]
+    types: [completed]
 permissions:
   contents: read
   pages: write
@@ -21,6 +24,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Host latest APK on Pages (faster, resumable download for TV boxes)
+        run: curl -fsSL --retry 3 -o dist/apk/MonsterTactics.apk https://github.com/Raspo89/Monster-Tactics/releases/latest/download/MonsterTactics.apk || echo "no APK yet"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
