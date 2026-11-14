@@ -1,6 +1,6 @@
 {
   "name": "monster-tactics",
-  "version": "7.16.1",
+  "version": "7.17.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,12 +12,15 @@
     "build:offline": "vite build --base=/ && node scripts/make-offline.mjs"
   },
   "dependencies": {
+    "@capacitor/android": "^7.6.10",
+    "@capacitor/core": "^7.6.10",
     "phaser": "3.90.0",
     "three": "0.180.0"
   },
   "devDependencies": {
-    "vite": "6.4.1",
+    "@capacitor/cli": "^7.6.10",
     "typescript": "5.9.3",
+    "vite": "6.4.1",
     "vitest": "3.2.4"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "appId": "io.github.raspo89.monstertactics",
+  "appName": "وحوش المعركة",
+  "webDir": "dist",
+  "android": { "allowMixedContent": false, "backgroundColor": "#14100c" }
+}
