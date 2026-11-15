@@ -78,12 +78,10 @@ function afflictionScore(s:GameState,u:Unit,H:number,P:number){let v=0;const saf
  if(!safe&&effect(u,'cripple')&&def(u).abilityId)v-=10;
  return v;}
 
-/** Power with buff tiles counted only where an enemy can actually fight (ProduceInfluenceMap_TileMultipliers). */
-function aiPower(s:GameState,u:Unit,maps:NativeMaps){let P=effectiveStats(s,u).attack;const ct=cellType(s,u.pos);if((ct===2||ct===8)&&!(maps.threat.get(key(u.pos))!>0))P-=ct===2?2:3;return Math.max(0,P);}
-function aiArmour(s:GameState,u:Unit,maps:NativeMaps){let A=effectiveStats(s,u).armor;if(cellType(s,u.pos)===3&&!(maps.threat.get(key(u.pos))!>0))A-=2;return Math.max(0,A);}
-
+/** Power and armour with buff tiles counted only where an enemy can actually fight (ProduceInfluenceMap_TileMultipliers). */
+function aiStats(s:GameState,u:Unit,maps:NativeMaps){const st=effectiveStats(s,u);let P=st.attack,A=st.armor;const ct=cellType(s,u.pos);if((ct===2||ct===8||ct===3)&&!((maps.threat.get(key(u.pos))||0)>0)){if(ct===2)P-=2;else if(ct===8)P-=3;else A-=2;}return {P:Math.max(0,P),A:Math.max(0,A)};}
 /** CAIBattleState::GetMonsterExcellence. */
-function excellence(s:GameState,u:Unit,owner:number,maps:NativeMaps){const H=u.health,race=u.isLeader?'':def(u).race,P=aiPower(s,u,maps),Ar=aiArmour(s,u,maps);
+function excellence(s:GameState,u:Unit,owner:number,maps:NativeMaps){const H=u.health,race=u.isLeader?'':def(u).race,{P,A:Ar}=aiStats(s,u,maps);
  let v=0;if(u.isLeader){v=2*H;if(H<=15)v-=(15-H)**3;}else if(race==='vampire')v=u.attacked?0:-20;else if(race==='imp')v=u.flaming?30:-20;
  v+=H+P/2;
  if(u.owner===owner)v+=2*Ar+P;else v+=.3*Ar;
@@ -117,7 +115,8 @@ export function nativeEvaluate(s:GameState,owner:number,maps:NativeMaps){
  return score;}
 
 type Node={s:GameState,first:Action|null,score:number,bonus:number,depth:number};
-const stateKey=(s:GameState)=>JSON.stringify([s.units.map(u=>[u.uid,u.pos.q,u.pos.r,u.health,u.moved,u.attacked,u.abilityUsed,u.movesUsed,u.weapon,u.armorItem,u.shieldItem,u.effects,u.flaming,u.shielded]),s.players.map(p=>[p.energy,p.hand.length]),s.runeStands?.map(r=>[r.cardId,r.health]),s.tileEffects,s.winner]);
+function stateKey(s:GameState){let k='';for(const u of s.units){k+=u.uid+','+u.pos.q+','+u.pos.r+','+u.health+','+(u.moved?1:0)+(u.attacked?1:0)+(u.abilityUsed?1:0)+(u.movesUsed||0)+','+(u.weapon||'')+(u.armorItem||'')+(u.shieldItem||'')+(u.flaming?'f':'')+(u.shielded?'s':'')+(u.poisoned?'p':'')+','+u.bonusAttack+','+u.bonusArmor+',';if(u.effects)for(const e in u.effects)k+=e+u.effects[e];k+='|';}
+ for(const p of s.players)k+=p.energy+'/'+p.hand.length+'/'+p.deck.length+';';if(s.runeStands)for(const r of s.runeStands)k+=(r.cardId||'')+r.health+';';if(s.tileEffects)for(const t in s.tileEffects)k+=t+s.tileEffects[t].kind;for(const t in s.tokens)k+=t+s.tokens[t];return k+(s.winner??'');}
 
 export const nativeStats={nodes:0,lastPlan:0};
 /**

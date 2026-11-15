@@ -62,6 +62,11 @@ Bankers' Delight 40/A, all others 3.
 ## Differences in the port
 
 - Our moves are whole walks, not single steps; the threat charge is applied to the destination.
-- Node budget: normal 3,000, hard 8,000, expert 15,000, each with a time cap so phones stay responsive.
+- Node budget (7.19): normal 4,000 / 2 s, hard 15,000 / 4 s, expert 40,000 (the original's pool) / 7 s.
+  The search runs in a Web Worker (`src/engine/ai-worker.ts`), so the board keeps animating and a «الخصم يفكر…» badge shows.
+- 7.19 speed-up: applyAction copies states with a flat copy instead of structuredClone (72 → 38 µs per node);
+  `tests/clone-state.test.ts` checks it plays identical games and never touches the old state.
+- Measured (16 games each, both sides on hard decks, vs our look-ahead hard AI): 8,000 nodes 5/16, 15,000 nodes 10/16,
+  40,000 nodes 10/16. Above ~15,000 the turn's search is usually exhausted, so strength comes from the evaluation, not depth.
 - Card-specific spell values (`ValueThisSpell`) are not ported; spells are judged by the board they leave.
 - Settings → «أسلوب الكمبيوتر» can switch back to our look-ahead AI (7.12). Easy keeps its loose play.
