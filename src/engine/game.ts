@@ -1,4 +1,5 @@
 import data from '../data/cards.json';
+import {nativeChoose} from './native-ai';
 import maps from '../data/maps.json';
 import nativeMaps from '../data/native-maps.json';
 import questMaps from '../data/quest-maps.json';
@@ -21,7 +22,7 @@ const legacyEquip:Record<string,Equip>={W01:{attack:1},W02:{attack:2},A01:{armor
 /** Stat changes of an equipment card (original weapons, armour and shields, plus the four legacy items). */
 export const equipOf=(id?:string):Equip=>id?(cardById[id]?.equip||legacyEquip[id]||{}):{};
 export const itemsOf=(u:{weapon?:string,armorItem?:string,shieldItem?:string})=>[u.weapon,u.armorItem,u.shieldItem].filter(Boolean) as string[];
-const itemSum=(u:Unit,k:'attack'|'armor'|'mojo')=>itemsOf(u).reduce((n,id)=>n+(equipOf(id)[k]||0),0);
+export const itemSum=(u:Unit,k:'attack'|'armor'|'mojo')=>itemsOf(u).reduce((n,id)=>n+(equipOf(id)[k]||0),0);
 const BAD=['stun','snare','ice','deathmark','flame'];
 /** Equipment that protects its bearer from an affliction (BC_PROT_*). */
 export function protectedFrom(u:Unit,name:string){return itemsOf(u).some(id=>(equipOf(id).protect||[]).some(p=>p==='all'||p===name||p==='bad'&&BAD.includes(name)));}
@@ -122,6 +123,7 @@ function rateAction(next:GameState,action:Action,previous:GameState,owner:number
 /** Cheap deterministic hash so the easy AI varies its choices without touching the match RNG. */
 function mix(...values:number[]){let h=0x9e3779b9;for(const v of values){h=Math.imul(h^(v|0),0x85ebca6b);h^=h>>>13;h=Math.imul(h,0xc2b2ae35);h^=h>>>16;}return (h>>>0)/4294967296;}
 export function chooseAI(s:GameState,difficulty='normal'):Action{
+ if(difficulty.startsWith('native')&&s.phase==='battle'&&s.winner===undefined){const [,b,t]=difficulty.split(':');return nativeChoose(s,+(b||1500),+(t||0)||Infinity);}
  if((difficulty==='hard'||difficulty==='expert'||difficulty.startsWith('hard:')||difficulty.startsWith('expert:'))&&s.phase==='battle'&&s.winner===undefined){searchLevel=difficulty;const W=(globalThis as any).__LEVELW?.[difficulty]||(difficulty.startsWith('expert')?expertWeights:hardWeights),b=W.budget||1;SEARCH_BUDGET=2500*b;TOTAL_BUDGET=6000*b;return hardAI(s);}
  const actions=legalActions(s);if(!actions.length)return {kind:'endTurn'};const owner=s.current,base=evaluate(s,owner,difficulty);
  const rated=actions.map(action=>{if(action.kind==='endTurn')return {action,score:base-.05};const next=applyAction(s,action,true);return {action,score:rateAction(next,action,s,owner,difficulty)};}).sort((a,b)=>b.score-a.score);
