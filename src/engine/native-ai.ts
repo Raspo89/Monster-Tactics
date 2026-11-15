@@ -12,7 +12,7 @@
  *   subtracted, runes add their value, unspent Mojo adds a little.
  * - It never simulates the opponent's reply; danger is handled by the threat map (moving into reach costs points).
  */
-import {GameState,Unit,Action,Hex,key,distance,board,isPlayable,leader,def,cardById,effectiveStats,combatClass,attackRange,legalActions,applyAction,nativeHeroes,tileMojoBonus,itemSum,castingCost,activeRunes} from './game';
+import {GameState,Unit,Action,Hex,key,distance,board,isPlayable,leader,def,cardById,effectiveStats,combatClass,attackRange,legalActions,applyAction,nativeHeroes,itemSum,castingCost,activeRunes} from './game';
 import {effect} from './abilities';
 import nativeRuneTable from '../data/native-rune-order.json';
 
@@ -85,7 +85,7 @@ function excellence(s:GameState,u:Unit,owner:number,maps:NativeMaps){const H=u.h
  let v=0;if(u.isLeader){v=2*H;if(H<=15)v-=(15-H)**3;}else if(race==='vampire')v=u.attacked?0:-20;else if(race==='imp')v=u.flaming?30:-20;
  v+=H+P/2;
  if(u.owner===owner)v+=2*Ar+P;else v+=.3*Ar;
- const m=u.owner===owner?2*maps.D:1,auto=Math.max(0,(u.isLeader?0:tileMojoBonus(s,u.pos))+itemSum(u,'mojo'));v+=5*auto*H*m*m;
+ const m=u.owner===owner?2*maps.D:1,auto=Math.max(0,itemSum(u,'mojo'));v+=5*auto*H*m*m;
  v+=afflictionScore(s,u,H,P);
  if(!onRegen(s,u)){const adj=s.units.filter(w=>w!==u&&distance(w.pos,u.pos)===1);if(u.poisoned){const n=adj.length;if(n)v-=n*(u.isLeader?40:20);}else{const n=adj.filter(w=>w.poisoned).length;if(n)v-=n*(u.isLeader?50:30);}}
  if(race==='spectre')v*=2.5;

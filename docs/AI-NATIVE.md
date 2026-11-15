@@ -26,7 +26,7 @@ Per action, before `Evaluate`:
 For every creature: `GetMonsterExcellence`
 - hero: 2H, minus (15−H)³ when H ≤ 15; vampire 0 if it attacked this turn else −20; imp +30 with Flame else −20.
 - + H + Power/2; own creatures + 2·Armour + Power; enemy creatures + 0.3·Armour.
-- + 5 · (Mojo it produces) · H · (2·dominance)².
+- + 5 · (Mojo its equipment produces, `GetAutomaticMojo(1)` 0x191bf4 — not the tile it stands on) · H · (2·dominance)².
 - + affliction score (`GetAIScoreForAfflictions`, 0x1918d8): Regen +max(20−H,5); Vengeance −5 (+2H if H ≤ 5);
   Flame −max(30−H,10); Infect −15; Stun −Power; Mighty +3; Berserk +(H−3); Snare −⌈Power/2⌉;
   Death Mark −max(10−H,5); Magic Shield +max(10−H,3); Cripple −10 for a creature with a special ability.
