@@ -141,3 +141,14 @@
 #ai-thinking{position:fixed;top:calc(env(safe-area-inset-top,0px) + 152px);left:50%;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(20,14,8,.82);color:#f3e2b8;font-size:14px;border:1px solid rgba(255,215,106,.45);pointer-events:none}
 #ai-thinking span{width:10px;height:10px;border-radius:50%;background:#ffd76a;animation:aiPulse 1s ease-in-out infinite}
 @keyframes aiPulse{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.1)}}
+
+/* 7.20: worn equipment in the creature popup */
+#card-detail .worn-gear{margin:8px auto 0;max-width:330px;padding:8px 10px;border-radius:10px;background:rgba(20,14,8,.88);border:1px solid rgba(255,215,106,.4);color:#f3e2b8;display:grid;gap:6px;text-align:start}
+#card-detail .worn-gear>strong{font-size:14px;color:#ffd76a}
+#card-detail .worn-live{font-size:14px;font-weight:700}
+#card-detail .worn-item{display:flex;align-items:center;gap:8px;padding:4px;border-radius:8px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:inherit;font:inherit;cursor:pointer;text-align:start}
+#card-detail .worn-item img{width:40px;height:40px;object-fit:contain;flex:none}
+#card-detail .worn-item span{display:grid}
+#card-detail .worn-item strong{font-size:14px}
+#card-detail .worn-item small{font-size:12px;color:#e8d3a2}
+#card-detail .worn-none{margin:0;font-size:13px;opacity:.75}
