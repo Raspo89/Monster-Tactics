@@ -114,38 +114,57 @@ export function nativeEvaluate(s:GameState,owner:number,maps:NativeMaps){
  const enemy=1-owner;score-=activeRunes(s,enemy).length+.75*runesValue(s,enemy,owner,maps);
  return score;}
 
-type Node={s:GameState,first:Action|null,score:number,bonus:number,depth:number};
+export type NativeNode={s?:GameState,score:number,bonus:number,depth:number,parent:NativeNode|null,action:Action|null,first?:NativeNode};
+/** The chain of actions that reached this node. */
+export function pathOf(n:NativeNode):Action[]{const out:Action[]=[];for(let c:NativeNode|null=n;c&&c.action;c=c.parent)out.unshift(c.action);return out;}
 function stateKey(s:GameState){let k='';for(const u of s.units){k+=u.uid+','+u.pos.q+','+u.pos.r+','+u.health+','+(u.moved?1:0)+(u.attacked?1:0)+(u.abilityUsed?1:0)+(u.movesUsed||0)+','+(u.weapon||'')+(u.armorItem||'')+(u.shieldItem||'')+(u.flaming?'f':'')+(u.shielded?'s':'')+(u.poisoned?'p':'')+','+u.bonusAttack+','+u.bonusArmor+',';if(u.effects)for(const e in u.effects)k+=e+u.effects[e];k+='|';}
  for(const p of s.players)k+=p.energy+'/'+p.hand.length+'/'+p.deck.length+';';if(s.runeStands)for(const r of s.runeStands)k+=(r.cardId||'')+r.health+';';if(s.tileEffects)for(const t in s.tileEffects)k+=t+s.tileEffects[t].kind;for(const t in s.tokens)k+=t+s.tokens[t];return k+(s.winner??'');}
 
 export const nativeStats={nodes:0,lastPlan:0};
+export type NativeSearch={root:NativeNode,best:NativeNode|null,top:NativeNode[],byFirst:NativeNode[],rootScore:number,maps:NativeMaps,nodes:number};
 /**
  * CAIWorker_BruteForce::Start: breadth-first over this turn's actions, best nodes of each level first, up to `budget`
  * nodes and 11 actions deep. Moves into enemy reach are charged with the threat map like the original
  * (more if the creature has already attacked and can no longer strike first).
+ * `keep` asks for the best N end-of-turn positions instead of only the best one; those keep their board, the rest
+ * drop theirs once their children exist, so a long search does not hold thousands of positions in memory.
  */
-export function nativePlan(root:GameState,budget=1500,timeMs=Infinity):Action[]{
- const t0=Date.now();
- const owner=root.current,maps=buildMaps(root,owner);
+export function nativeSearch(root:GameState,budget=1500,timeMs=Infinity,maps?:NativeMaps,keep=1,perFirst=false,threatCharge=true):NativeSearch{
+ const t0=Date.now(),owner=root.current;maps=maps||buildMaps(root,owner);
  const rootScore=nativeEvaluate(root,owner,maps);
- let level:Node[]=[{s:root,first:null,score:rootScore,bonus:0,depth:0}],best:Node|null=null,used=0;const seen=new Set<string>([stateKey(root)]);
- const paths=new Map<Node,Action[]>();paths.set(level[0],[]);
+ const rootNode:NativeNode={s:root,score:rootScore,bonus:0,depth:0,parent:null,action:null};
+ let level:NativeNode[]=[rootNode],best:NativeNode|null=null,used=0;const seen=new Set<string>([stateKey(root)]);
+ const top:NativeNode[]=[];
+ // With perFirst, also keep the best turn that starts with each possible opening action, so a caller that looks further
+ // ahead can compare genuinely different turns and not just variations of the one this evaluation likes most.
+ const byFirst=new Map<NativeNode,NativeNode>();
+ const offer=(n:NativeNode)=>{if(top.length<keep||n.score>top[top.length-1].score){top.push(n);top.sort((a,b)=>b.score-a.score);if(top.length>keep)top.pop();}};
+ const bonusOf=(a:Action)=>a.kind==='move'||a.kind==='attack'||a.kind==='attackRune'||a.kind==='teleport'||a.kind==='monsterAbility'||a.kind==='leaderAbility'?-.0001:0;
  for(let depth=1;depth<=11&&level.length&&used<budget;depth++){
-  const next:Node[]=[];
-  for(const node of level){if(used>=budget)break;
-   for(const a of legalActions(node.s)){if(a.kind==='endTurn'||a.kind==='mulligan')continue;if(used>=budget)break;if((used&63)===0&&Date.now()-t0>timeMs){used=budget;break;}
-    const t=applyAction(node.s,a,true);if(t===node.s||t.current!==owner&&t.winner===undefined)continue;used++;
+  const next:NativeNode[]=[];
+  for(const node of level){if(used>=budget)break;const from=node.s!;
+   for(const a of legalActions(from)){if(a.kind==='endTurn'||a.kind==='mulligan')continue;if(used>=budget)break;if((used&63)===0&&Date.now()-t0>timeMs){used=budget;break;}
+    const t=applyAction(from,a,true);if(t===from||t.current!==owner&&t.winner===undefined)continue;used++;
     const k=stateKey(t);if(seen.has(k))continue;seen.add(k);t.log=[];t.events=[];
-    const bonus=node.bonus+(a.kind==='move'||a.kind==='attack'||a.kind==='attackRune'||a.kind==='teleport'?-.0001:a.kind==='monsterAbility'||a.kind==='leaderAbility'?-.0001:0)-(depth)*.001;
-    let score=nativeEvaluate(t,owner,maps)+bonus;
-    if(a.kind==='move'||a.kind==='teleport'){const u=t.units.find(v=>v.uid===a.uid);if(u){const st=effectiveStats(t,u),x=(maps.threat.get(key(u.pos))||0)-(u.health+st.armor);if(x>0)score-=u.attacked?20+20*x:15+5*x;}}
+    const bonus=node.bonus+bonusOf(a);let score=nativeEvaluate(t,owner,maps)+bonus-depth*.001;
+    if(threatCharge&&(a.kind==='move'||a.kind==='teleport')){const u=t.units.find(v=>v.uid===a.uid);if(u){const st=effectiveStats(t,u),x=(maps.threat.get(key(u.pos))||0)-(u.health+st.armor);if(x>0)score-=u.attacked?20+20*x:15+5*x;}}
     if(t.winner===owner)score=1e7-depth;
-    const child:Node={s:t,first:node.first||a,score,bonus,depth};paths.set(child,[...paths.get(node)!,a]);next.push(child);
+    const child:NativeNode={s:t,score,bonus,depth,parent:node,action:a};child.first=node.first||child;next.push(child);offer(child);
+    if(perFirst){const cur=byFirst.get(child.first);if(!cur||score>cur.score)byFirst.set(child.first,child);}
     if(!best||score>best.score)best=child;}}
-  next.sort((a,b)=>b.score-a.score);level=next;}
+  next.sort((a,b)=>b.score-a.score);
+  // free the boards of the level we just expanded, except those we were asked to keep
+  for(const n of level)if(n!==rootNode&&!top.includes(n)&&byFirst.get(n.first!)!==n)n.s=undefined;
+  level=next;}
+ for(const n of level)if(!top.includes(n)&&byFirst.get(n.first!)!==n)n.s=undefined;
  nativeStats.nodes=used;
- if(!best||best.score<=rootScore)return [{kind:'endTurn'}];
- const plan=paths.get(best)!;nativeStats.lastPlan=plan.length;return plan;}
+ return {root:rootNode,best,top,byFirst:[...byFirst.values()].sort((a,b)=>b.score-a.score),rootScore,maps,nodes:used};}
+
+/** The original AI's plan for this turn: the chain of actions to the best position it found, or just ending the turn. */
+export function nativePlan(root:GameState,budget=1500,timeMs=Infinity):Action[]{
+ const r=nativeSearch(root,budget,timeMs);
+ if(!r.best||r.best.score<=r.rootScore)return [{kind:'endTurn'}];
+ const plan=pathOf(r.best);nativeStats.lastPlan=plan.length;return plan;}
 
 const planCache=new Map<string,Action[]>();
 const sig=(s:GameState)=>JSON.stringify([s.seed,s.turn,s.current,s.rng,s.nextUid,stateKey(s),s.players.map(p=>p.hand)]);

@@ -140,7 +140,9 @@ function act(a:Action){if(!state)return;const old=state,next=applyAction(state,a
 function saveBattle(){if(state?.winner===undefined)store.set('battle',{state,opts});else store.set('battle',null);}
 /** The original game's AI (default) or our look-ahead AI; easy keeps its loose play either way. */
 const NATIVE_LEVEL:Record<string,string>={normal:'native:4000:2000',hard:'native:15000:4000',expert:'native:40000:7000'};
-function aiBrain(d:string){return settings.aiStyle!=='lookahead'&&NATIVE_LEVEL[d]?NATIVE_LEVEL[d]:d;}
+// The advanced style: same evaluation, but every turn is checked against the opponent's best answer before it is played.
+const SMART_LEVEL:Record<string,string>={normal:'smart:2500:2000:5:1200:g',hard:'smart:8000:4500:8:2500:g',expert:'smart:14000:7000:10:3500:g'};
+function aiBrain(d:string){const table=settings.aiStyle==='lookahead'?SMART_LEVEL:NATIVE_LEVEL;return table[d]||d;}
 function scheduleAI(){clearTimeout(aiTimer);if(!state||state.winner!==undefined||opts.mode==='local'||state.current!==1)return;const id=runId;aiTimer=setTimeout(()=>{if(id!==runId||!state||screen!=='battle')return;if(modalOpen){scheduleAI();return;}if(state.phase==='mulligan'){act({kind:'mulligan',indexes:state.players[1].hand.flatMap((id,i)=>cardById[id].cost>4?[i]:[])});return;}const snapshot=state,level=aiBrain(opts.difficulty);const slow=setTimeout(()=>{if(id===runId)thinking(true);},450);void thinkAsync(snapshot,level).then(a=>{clearTimeout(slow);thinking(false);if(id!==runId||state!==snapshot||screen!=='battle')return;act(a);});},settings.speed);}
 /** "The opponent is thinking" badge while a long search runs in the background. */
 function thinking(on:boolean){let el=document.querySelector<HTMLElement>('#ai-thinking');if(!on){el?.remove();return;}if(!el){el=document.createElement('div');el.id='ai-thinking';el.innerHTML='<span></span>الخصم يفكر…';document.body.append(el);}}
