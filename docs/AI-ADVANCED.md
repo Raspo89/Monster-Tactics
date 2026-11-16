@@ -27,18 +27,26 @@ original AI, so the board keeps animating.
 
 ## Measured strength
 
-Against the original-style AI at 15,000 nodes, both sides on hard decks, each pairing played from both seats:
+**100 games at the shipped hard settings (advanced 8,000 nodes / 8 candidates / replies at 2,500 / ghost hand, against
+the original-style AI at 15,000 nodes), both sides on hard decks, every pairing played from both seats: 50 / 100.**
+The two halves of that run came out 29/50 and 21/50, which is the spread to expect from 50 games around an even result.
 
-| advanced AI | result |
-| --- | --- |
-| evaluation only, no reply (= the original) | 5 / 12 |
-| reply lookahead, 8,000 nodes, 8 candidates, ghost hand | **16 / 24** |
-| the same without the ghost hand | 15 / 24 |
-| two passes, 20,000 nodes, 24 candidates shortlisted to 6, replies at 6,000 | 15 / 24 |
-| plus a third half-move (our follow-up turn), weights 0.5 and 1.0 | 7 / 12, 7 / 12 |
-| blending the turn's own value into the decision, 0.3 and 0.5 | 15 / 24, 15 / 24 |
+In other words the reply lookahead does **not** make it stronger. The short runs below were measured first and read as a
+large gain; at 12–24 games the standard error is 7–10 percentage points, so every one of them is consistent with 50%.
+They are kept here as a record of what was tried and of how misleading a 24-game sample is.
 
-So the reply lookahead is worth about +25 percentage points, and nothing beyond it moved the number.
+| advanced AI | result | games |
+| --- | --- | --- |
+| shipped settings | **50 / 100** | 100 |
+| evaluation only, no reply (= the original) | 5 / 12 | 12 |
+| reply lookahead, 8,000 nodes, 8 candidates, ghost hand | 16 / 24 | 24 |
+| the same without the ghost hand | 15 / 24 | 24 |
+| two passes, 20,000 nodes, 24 candidates shortlisted to 6, replies at 6,000 | 15 / 24 | 24 |
+| plus a third half-move (our follow-up turn), weights 0.5 and 1.0 | 7 / 12, 7 / 12 | 12 each |
+| blending the turn's own value into the decision, 0.3 and 0.5 | 15 / 24, 15 / 24 | 24 each |
+
+Measuring an AI change in this game needs at least 100 games per configuration; at the shipped budgets that is about
+25 minutes of machine time, or about 5 minutes with both sides searching 2,500 nodes.
 
 ## Why more search does not help
 
