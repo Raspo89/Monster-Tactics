@@ -1,5 +1,5 @@
 import data from '../data/cards.json';
-import {nativeChoose} from './native-ai';
+import {nativeChoose,AGGR,setAggression} from './native-ai';
 import {smartChoose} from './smart-ai';
 import maps from '../data/maps.json';
 import nativeMaps from '../data/native-maps.json';
@@ -136,6 +136,9 @@ function rateAction(next:GameState,action:Action,previous:GameState,owner:number
 /** Cheap deterministic hash so the easy AI varies its choices without touching the match RNG. */
 export function mix(...values:number[]){let h=0x9e3779b9;for(const v of values){h=Math.imul(h^(v|0),0x85ebca6b);h^=h>>>13;h=Math.imul(h,0xc2b2ae35);h^=h>>>16;}return (h>>>0)/4294967296;}
 export function chooseAI(s:GameState,difficulty='normal'):Action{
+ // "level@{json}" plays that level with the evaluation's aggression knobs set for this call only.
+ const at=difficulty.indexOf('@');
+ if(at>0){const keep={...AGGR};try{setAggression(JSON.parse(difficulty.slice(at+1)));return chooseAI(s,difficulty.slice(0,at));}finally{setAggression(keep);}}
  if(difficulty.startsWith('native')&&s.phase==='battle'&&s.winner===undefined){const [,b,t]=difficulty.split(':');return nativeChoose(s,+(b||1500),+(t||0)||Infinity);}
  if(difficulty.startsWith('smart')&&s.phase==='battle'&&s.winner===undefined){const j=difficulty.indexOf('#');if(j>0)return smartChoose(s,JSON.parse(difficulty.slice(j+1)));const [,b,t,c,rb,g]=difficulty.split(':');return smartChoose(s,{budget:+(b||12000),timeMs:+(t||0)||Infinity,cands:+(c||8),replyBudget:+(rb||2500),ghost:g==='g'});}
  if((difficulty==='hard'||difficulty==='expert'||difficulty.startsWith('hard:')||difficulty.startsWith('expert:'))&&s.phase==='battle'&&s.winner===undefined){searchLevel=difficulty;const W=(globalThis as any).__LEVELW?.[difficulty]||(difficulty.startsWith('expert')?expertWeights:hardWeights),b=W.budget||1;SEARCH_BUDGET=2500*b;TOTAL_BUDGET=6000*b;return hardAI(s);}

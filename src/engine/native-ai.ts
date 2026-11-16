@@ -19,6 +19,13 @@ import nativeRuneTable from '../data/native-rune-order.json';
 type Cls=0|1|2|3;
 const CLASS:Record<string,Cls>={warrior:0,archer:1,mage:2,artillery:3};
 const clsOf=(s:GameState,u:Unit):Cls=>u.isLeader?CLASS[(nativeHeroes as any)[s.players[u.owner].race]?.combatClass||'warrior']??0:CLASS[combatClass(u)]??0;
+/**
+ * Aggression knobs. 1 is the original game's own behaviour; raising them makes the AI hurting the enemy hero, raw
+ * attack power and marching on the hero above the original's more positional play. Set for experiments; the shipped
+ * values live in AGGRESSIVE below.
+ */
+export const AGGR={enemyHero:1,power:1,armour:1,heroPull:1,altar:1};
+export function setAggression(v:Partial<typeof AGGR>){Object.assign(AGGR,v);}
 const neighbours=(h:Hex)=>[[1,0],[1,-1],[0,-1],[-1,0],[-1,1],[0,1]].map(([q,r])=>({q:h.q+q,r:h.r+r}));
 
 /** Cell kinds of the original map (eMapCellType): 2 power+2, 3 armour, 4 regen, 5 Mojo+2, 6 card, 7 Mojo+1, 8 power+3, 9 power-, 10 armour-. */
@@ -43,8 +50,8 @@ const round=(s:GameState)=>Math.ceil(s.turn/2);
 /** Threat map: every enemy adds its power (at least 1) to every cell within its attack reach, half one step beyond. */
 function threatMap(s:GameState,owner:number):Grid{const g:Grid=new Map();for(const e of s.units){if(e.owner===owner)continue;const P=Math.max(1,effectiveStats(s,e).attack),max=attackRange(s,e).max;for(const h of cells(s)){const d=distance(e.pos,h);if(d<1||d>max+1)continue;let v=P-1/(max+10-d);if(d>max)v*=.5;g.set(key(h),(g.get(key(h))||0)+v);}}return g;}
 
-function tilePulls(s:GameState,g:Grid,A:number,power:number,withMojo1:boolean,handCount:number){for(const t of cells(s)){const ct=cellType(s,t);if(ct!==5&&ct!==6&&!(withMojo1&&ct===7))continue;const d=walk(s,t,13);for(const h of cells(s)){if(!passable(s,h))continue;const dist=d.get(key(h))??0,k=key(h);let v;if(ct===6)v=36/(handCount+1)/(dist+1);else v=Math.pow(A,power)/(dist+1)+(ct===5?7:3.5);g.set(k,(g.get(k)||0)+v);}}}
-function heroPull(s:GameState,g:Grid,owner:number,minDist:number,late:boolean,B:number){for(const e of s.units){if(e.owner===owner||!e.isLeader)continue;const d=walk(s,e.pos,13);for(const h of cells(s)){const dist=d.get(key(h));if(dist===undefined||dist<minDist)continue;const v=75/(dist+1),k=key(h);g.set(k,(g.get(k)||0)+(late?250+50*v:v*B));}}}
+function tilePulls(s:GameState,g:Grid,A:number,power:number,withMojo1:boolean,handCount:number){for(const t of cells(s)){const ct=cellType(s,t);if(ct!==5&&ct!==6&&!(withMojo1&&ct===7))continue;const d=walk(s,t,13);for(const h of cells(s)){if(!passable(s,h))continue;const dist=d.get(key(h))??0,k=key(h);let v;if(ct===6)v=36/(handCount+1)/(dist+1);else v=(Math.pow(A,power)/(dist+1)+(ct===5?7:3.5))*AGGR.altar;g.set(k,(g.get(k)||0)+v);}}}
+function heroPull(s:GameState,g:Grid,owner:number,minDist:number,late:boolean,B:number){for(const e of s.units){if(e.owner===owner||!e.isLeader)continue;const d=walk(s,e.pos,13);for(const h of cells(s)){const dist=d.get(key(h));if(dist===undefined||dist<minDist)continue;const v=75/(dist+1)*AGGR.heroPull,k=key(h);g.set(k,(g.get(k)||0)+(late?250+50*v:v*B));}}}
 
 /** Builds the maps the original builds once per AI turn (CAIWorker_BruteForce constructor). */
 export function buildMaps(s:GameState,owner:number):NativeMaps{
@@ -82,9 +89,10 @@ function afflictionScore(s:GameState,u:Unit,H:number,P:number){let v=0;const saf
 function aiStats(s:GameState,u:Unit,maps:NativeMaps){const st=effectiveStats(s,u);let P=st.attack,A=st.armor;const ct=cellType(s,u.pos);if((ct===2||ct===8||ct===3)&&!((maps.threat.get(key(u.pos))||0)>0)){if(ct===2)P-=2;else if(ct===8)P-=3;else A-=2;}return {P:Math.max(0,P),A:Math.max(0,A)};}
 /** CAIBattleState::GetMonsterExcellence. */
 function excellence(s:GameState,u:Unit,owner:number,maps:NativeMaps){const H=u.health,race=u.isLeader?'':def(u).race,{P,A:Ar}=aiStats(s,u,maps);
- let v=0;if(u.isLeader){v=2*H;if(H<=15)v-=(15-H)**3;}else if(race==='vampire')v=u.attacked?0:-20;else if(race==='imp')v=u.flaming?30:-20;
+ const foe=u.owner!==owner?1:0,w=foe?AGGR.enemyHero:1;
+ let v=0;if(u.isLeader){v=(2*H-(H<=15?(15-H)**3:0))*w;}else if(race==='vampire')v=u.attacked?0:-20;else if(race==='imp')v=u.flaming?30:-20;
  v+=H+P/2;
- if(u.owner===owner)v+=2*Ar+P;else v+=.3*Ar;
+ if(u.owner===owner)v+=2*Ar*AGGR.armour+P*AGGR.power;else v+=.3*Ar;
  const m=u.owner===owner?2*maps.D:1,auto=Math.max(0,itemSum(u,'mojo'));v+=5*auto*H*m*m;
  v+=afflictionScore(s,u,H,P);
  if(!onRegen(s,u)){const adj=s.units.filter(w=>w!==u&&distance(w.pos,u.pos)===1);if(u.poisoned){const n=adj.length;if(n)v-=n*(u.isLeader?40:20);}else{const n=adj.filter(w=>w.poisoned).length;if(n)v-=n*(u.isLeader?50:30);}}

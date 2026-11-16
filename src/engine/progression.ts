@@ -76,13 +76,21 @@ export function openChest(profile:Profile,t:ChestType,random=Math.random):{profi
 
 // ---- Computer decks that grow with the difficulty ----
 /** Rough strength of a monster for its Mojo cost (power counts more than health; an active ability is worth about two points). */
-const unitScore=(c:Card)=>((c.attack||0)*1.6+(c.health||0)+(c.armor||0)*1.5+(c.abilityId?2:0))/Math.max(1.5,c.cost);
+const classicScore=(c:Card)=>((c.attack||0)*1.6+(c.health||0)+(c.armor||0)*1.5+(c.abilityId?2:0))/Math.max(1.5,c.cost);
+/** Deck ranking: what a card is worth per Mojo it costs. A monster that cannot attack is never picked. */
+const tempoScore=(c:Card)=>(c.attack||0)<=0?-1:((c.attack||0)*2+(c.health||0)+(c.armor||0)*1.5+(c.abilityId?2:0))/Math.max(1,c.cost);
+let unitScore=tempoScore;
+/** Test hook: swap the deck ranking used by raceDeck. */
+export function useDeckRanker(which:'classic'|'tempo'){unitScore=which==='classic'?classicScore:tempoScore;}
 const AI_TIERS:Record<string,{rarities:Rarity[],maxCost:number,weaponRarities:Rarity[]}>={hard:{rarities:['C','U','R'],maxCost:5,weaponRarities:['C','U','R']},expert:{rarities:['C','U','R','L'],maxCost:6,weaponRarities:['U','R','L']}};
 /**
  * Easy and normal play the starter deck. Hard plays a veteran deck (best commons to rares of its race, up to 5 Mojo)
  * and expert a champion deck (rares and legendaries allowed, up to 6 Mojo), each with weapons for its classes.
  */
-export function aiDeck(race:string,difficulty:string){const tier=AI_TIERS[difficulty];if(!tier)return starterCards(race);const pool=cards.filter(c=>c.type==='unit'&&c.race===race&&(c.id.startsWith('CM_')||c.id.startsWith('NA_'))&&tier.rarities.includes(cardRarity(c))&&c.cost>=2&&c.cost<=tier.maxCost).sort((a,b)=>unitScore(b)-unitScore(a)||a.id.localeCompare(b.id));if(pool.length<5)return starterCards(race);const picked:Card[]=[];for(const cls of ['warrior','archer','mage','warrior']){const c=pool.find(c=>c.combatClass===cls&&!picked.includes(c));if(c)picked.push(c);}for(const c of pool)if(picked.length<5&&!picked.includes(c))picked.push(c);
+export function aiDeck(race:string,difficulty:string){return raceDeck([race],difficulty);}
+/** Builds a deck from the monster races given: the five best monsters across them, four copies each, plus the best
+ *  weapon for each class they use, one armour, two Mojo runes and spells. One race in = the classic single-race deck. */
+export function raceDeck(races:string[],difficulty:string){const race=races[0];const tier=AI_TIERS[difficulty];if(!tier)return starterCards(race);const wide=(c:Card)=>c.type==='unit'&&races.includes(c.race!)&&(c.id.startsWith('CM_')||c.id.startsWith('NA_'));const pool=cards.filter(c=>c.type==='unit'&&races.includes(c.race!)&&(c.id.startsWith('CM_')||c.id.startsWith('NA_'))&&tier.rarities.includes(cardRarity(c))&&c.cost>=(unitScore===tempoScore?1:2)&&c.cost<=tier.maxCost).sort((a,b)=>unitScore(b)-unitScore(a)||a.id.localeCompare(b.id));if(pool.length<5)pool.push(...cards.filter(c=>wide(c)&&!pool.includes(c)).sort((a,b)=>unitScore(b)-unitScore(a)||a.id.localeCompare(b.id)));if(pool.length<5)return starterCards(race);const picked:Card[]=[];for(const cls of ['warrior','archer','mage','warrior']){const c=pool.find(c=>c.combatClass===cls&&!picked.includes(c));if(c)picked.push(c);}for(const c of pool)if(picked.length<5&&!picked.includes(c))picked.push(c);
  const weapon=(cls:string)=>cards.filter(c=>c.type==='weapon'&&c.id.startsWith('NE_')&&c.forClass===cls&&tier.weaponRarities.includes(cardRarity(c))&&!Object.values(c.equip||{}).some(v=>typeof v==='number'&&v<0)).sort((a,b)=>(b.equip?.attack||0)/Math.max(1,b.cost)-(a.equip?.attack||0)/Math.max(1,a.cost)||a.cost-b.cost||a.id.localeCompare(b.id))[0]?.id;
  const classes=[...new Set(picked.map(c=>c.combatClass||'warrior'))],weapons=[...classes,classes[0]].flatMap(cls=>{const w=weapon(cls);return w?[w]:[];}).slice(0,4);
  const armour=cards.filter(c=>c.id.startsWith('NE_')&&c.slot==='armor'&&tier.weaponRarities.includes(cardRarity(c))&&(c.equip?.armor||0)>0&&!Object.values(c.equip||{}).some(v=>typeof v==='number'&&v<0)).sort((a,b)=>(b.equip!.armor!+(b.equip!.health||0)/2)/b.cost-(a.equip!.armor!+(a.equip!.health||0)/2)/a.cost||a.id.localeCompare(b.id))[0]?.id;

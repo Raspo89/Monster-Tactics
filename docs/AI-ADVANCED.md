@@ -55,3 +55,33 @@ actually came out of the opponent's real turn differs by roughly ±100 points (1
 evaluations of about 200, with a mean of +78 — the simulated opponent is weaker than the real one, so reality is usually
 a little better than feared. The spread between the candidate turns is smaller than that error, so deeper search is
 measuring its own noise. The way past this is a better opponent model or a less noisy evaluation, not more nodes.
+
+# Where the strength actually came from: decks (7.23)
+
+Three things were measured at 100 games each, every pairing played from both seats, both sides on the original-style AI
+at 2,500 nodes (`/home/claude/work/deckbench.ts`).
+
+**1. Making the evaluation aggressive does not work.** Against the unmodified evaluation (knobs in `AGGR`,
+`native-ai.ts`): hurting the enemy hero worth double 46/100; attack over armour 51/100; march on the hero and ignore the
+altars 50/100; all of them together 41/100. The original's weights are already at a local optimum.
+
+**2. Race ranking** — each race's five best monsters (hard tier, human hero) against the human deck:
+human 50 (the baseline, so exactly even), spectre 43, elf 25, cyclops/skeleton/werewolf 21, orc/vampire 19,
+dwarf/minotaur/zombie 18, lizard 14, imp 9, golem 6. Lizards do badly in the AI's hands because the evaluation scores a
+monster by what it is now, and a lizard's worth is what it *becomes* after a kill (+2/+2).
+
+**3. The deck builder was leaving the best cards on the shelf.** `raceDeck` filtered out every card costing 1 Mojo, and
+ranked cards with a formula that undervalued cheap bodies and happily picked monsters with 0 attack. The robot race is
+made entirely of 1-Mojo legendaries that are immune to every affliction — the builder could never pick them. With that
+fixed (`tempoScore`: value per Mojo, never a 0-attack monster, cost-1 cards allowed):
+
+| deck | against the old builder's human deck |
+| --- | --- |
+| robots, expert tier | 75 / 100 |
+| robots vs spectres, expert tier | 85 / 100 |
+| best monsters across all 16 races, expert tier | **85 / 100** |
+| humans, expert tier | **72 / 100** |
+| humans, hard tier | 51 / 100 (no cost-1 cards at that tier, so nothing changes) |
+
+The new ranking is now the default, and skirmish has an enemy-deck option «⚡ الأفضل من كل الأعراق» that builds from
+every race at once. This single change is worth far more than everything tried on the search and the evaluation.
