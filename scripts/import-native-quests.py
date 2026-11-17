@@ -140,7 +140,7 @@ for qid, title, english, body, ai in QUESTS:
     assert len({(r['x'], r['y']) for r in rooms}) == len(rooms), qid
     quests.append({'id': qid, 'title': title, 'english': english, 'text': body, 'ai': ai, 'enemyBonusMojo': 1 if qid in ('hard2', 'hard3') else 0, 'rooms': rooms})
 
-hero_out = {h['key']: {k: v for k, v in h.items() if k != 'key'} for n, h in heroes.items() if n in used_heroes or h['key'] in LEGACY.values()}
+hero_out = {h['key']: {k: v for k, v in h.items() if k != 'key'} for n, h in heroes.items()}  # 7.26: all 22 heroes, quest or not
 Path('src/data/native-quests.json').write_text(json.dumps({'heroes': hero_out, 'quests': quests}, ensure_ascii=False, separators=(',', ':')) + '\n')
 Path('src/data/quest-maps.json').write_text(json.dumps(list(maps.values()), separators=(',', ':')) + '\n')
 Path(REF / 'quest-cards-not-imported.txt').write_text('Cards referenced by quest decks that the game has not imported (left out of those decks):\n' + ''.join(f'{k} x{v}\n' for k, v in sorted(missing.items())))

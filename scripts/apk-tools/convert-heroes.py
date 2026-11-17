@@ -20,12 +20,13 @@ class Dir:
     def read(self, n): return (self.root / n).read_bytes()
 
 z = Dir(sys.argv[1])
-heroes = json.load(open(sys.argv[2] if len(sys.argv)>2 else 'src/data/native-quests.json'))['heroes']
+heroes = json.load(open(next((a for a in sys.argv[2:] if a.endswith('.json')), 'src/data/native-quests.json')))['heroes']
 out_root = Path('public/original3d')
 manifest = json.load(open(out_root / 'model-manifest.json'))
 animation = parse_mda(z.read('Animation/character_anims.MDA'))
 for key, h in heroes.items():
     if not key.startswith('hero_'): continue
+    if key in manifest and '--all' not in sys.argv: continue  # already converted; pass --all to redo
     source = next(n for n in z.names if n.lower() == h['model'].lower())
     dst = out_root / 'models' / key; dst.mkdir(parents=True, exist_ok=True)
     model = convert(z, source, dst)

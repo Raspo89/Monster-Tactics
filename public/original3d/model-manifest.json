@@ -1656,5 +1656,41 @@
     "vertices": 3318,
     "triangles": 1298,
     "bones": 29
+  },
+  "hero_minotrix": {
+    "source": "Archetypes/Bosses/Minotrix/Boss_Minotrix.MDA",
+    "json": "models/hero_minotrix/Boss_Minotrix.json",
+    "skins": [],
+    "defaultTexture": "Boss_Skin_Minotrix.webp",
+    "vertices": 2968,
+    "triangles": 1234,
+    "bones": 29
+  },
+  "hero_slime": {
+    "source": "Archetypes/Bosses/Brainslime/boss_brainslime.MDA",
+    "json": "models/hero_slime/boss_brainslime.json",
+    "skins": [],
+    "defaultTexture": "Boss_Skin_brainslime.webp",
+    "vertices": 3298,
+    "triangles": 1302,
+    "bones": 29
+  },
+  "hero_artil1": {
+    "source": "Archetypes/Bosses/Ocular/boss_ocular.MDA",
+    "json": "models/hero_artil1/boss_ocular.json",
+    "skins": [],
+    "defaultTexture": "Boss_Skin_ocular.webp",
+    "vertices": 2554,
+    "triangles": 1100,
+    "bones": 29
+  },
+  "hero_artil2": {
+    "source": "Archetypes/Bosses/Rhino/boss_rhino.MDA",
+    "json": "models/hero_artil2/boss_rhino.json",
+    "skins": [],
+    "defaultTexture": "Boss_Skin_rhino.webp",
+    "vertices": 2931,
+    "triangles": 1140,
+    "bones": 29
   }
 }

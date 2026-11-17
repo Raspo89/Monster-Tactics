@@ -7962,6 +7962,26 @@
    "model": "hero_machli",
    "skin": 0,
    "path": "portraits/LEADER_hero_machli.webp"
+  },
+  "LEADER_hero_minotrix": {
+   "model": "hero_minotrix",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_minotrix.webp"
+  },
+  "LEADER_hero_slime": {
+   "model": "hero_slime",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_slime.webp"
+  },
+  "LEADER_hero_artil1": {
+   "model": "hero_artil1",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_artil1.webp"
+  },
+  "LEADER_hero_artil2": {
+   "model": "hero_artil2",
+   "skin": 0,
+   "path": "portraits/LEADER_hero_artil2.webp"
   }
  }
 }
