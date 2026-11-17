@@ -47,6 +47,12 @@ Re-measured in 7.28, after the 349 missing runes and spells were imported (libra
 in the pick), same settings, 100 games each: zombie hard 57, human old builder 11, human new builder expert 10,
 robots expert 3. Within noise of the numbers above: the missing magic was not what held the library back.
 
+Is it the pilot? Same pairing (library vs zombie hard) with stronger pilots on both sides: original AI at 15,000 nodes
+31/50, advanced (smart) AI 30/50, against 57/100 at 2,500: no real gain. The AI also spends its Mojo (under 1 left per
+turn) and rarely holds a playable card (about once in 10 turns). What holds the library back is cost: 3.9 Mojo per
+card against 3.1, 45-card decks, 5.3 monsters played a game against 7.8. With extra Mojo every turn: +1 69/100,
++2 81/100. So since 7.29 library decks get their own Mojo on top of the handicap dial: hard +1, expert +2.
+
 So the library is an average opponent in our engine, well below the decks our builder makes since 7.23. Several of its
 heroes are fragile (Alphedia 15 health, Boneyard/Ernold/Hyssta 20) and the original AI walks them forward. The original
 leaned on the extra cards and Mojo to make it hard; the handicap dial is that lever here.
