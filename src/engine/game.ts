@@ -135,6 +135,8 @@ function threatTerm(s:GameState,owner:number,W:any){let val=0;for(const side of 
 function rateAction(next:GameState,action:Action,previous:GameState,owner:number,difficulty:string){let score=evaluate(next,owner,difficulty);if(action.kind==='playCard'){const c=cardById[previous.players[owner].hand[action.handIndex]];score-=c.cost*.15;if(c.type==='rune')score+=1;}if(action.kind==='leaderAbility')score-=.1;if(action.kind==='monsterAbility')score-=.1;return score;}
 /** Cheap deterministic hash so the easy AI varies its choices without touching the match RNG. */
 export function mix(...values:number[]){let h=0x9e3779b9;for(const v of values){h=Math.imul(h^(v|0),0x85ebca6b);h^=h>>>13;h=Math.imul(h,0xc2b2ae35);h^=h>>>16;}return (h>>>0)/4294967296;}
+/** Moves the top `n` cards of a player's deck into their hand (the original Skirmish's extra starting cards). */
+export function dealExtraCards(s:GameState,owner:number,n:number){const p=s.players[owner];for(let i=n;i>0&&p.deck.length;i--)p.hand.push(p.deck.shift()!);}
 export function chooseAI(s:GameState,difficulty='normal'):Action{
  // "level@{json}" plays that level with the evaluation's aggression knobs set for this call only.
  const at=difficulty.indexOf('@');

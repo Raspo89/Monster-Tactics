@@ -1,5 +1,6 @@
 import nativeQuests from '../data/native-quests.json';
-import {cards,cardById,validateDeck} from './game';
+import skirmishLibrary from '../data/skirmish-decks.json';
+import {cards,cardById,validateDeck,nativeHeroes} from './game';
 import type {Card,DeckRule} from './game';
 export type Rarity='C'|'U'|'R'|'L';
 export const rarityOrder:Rarity[]=['C','U','R','L'];
@@ -104,3 +105,24 @@ export const GIFTS:{id:string,title:string,chests:ChestType[]}[]=[
  {id:'gift-2026-11-lizard5',title:'هدية: 5 صناديق سحالي',chests:Array(5).fill('lizard')},
 ];
 export function claimGifts(profile:Profile):{profile:Profile,claimed:typeof GIFTS}{if(!profile.starterRace)return {profile,claimed:[]};const todo=GIFTS.filter(g=>!profile.gifts?.includes(g.id));if(!todo.length)return {profile,claimed:[]};let p=structuredClone(profile);for(const g of todo){for(const c of g.chests)p=grantChest(p,c);p.gifts=[...(p.gifts||[]),g.id];}return {profile:p,claimed:todo};}
+
+/**
+ * The original Skirmish opponent (CEnemyDeckMgr::GetRandomDeck): a random deck from the original game's library that is
+ * legal under the match's deck rules, led by a random hero of a class that can use the deck's weapons and whose
+ * starting Mojo covers the deck's average cost. Decks that lost more than a fifth of their cards because this game
+ * has not imported them are left out; heroes this game has no model for are skipped.
+ */
+export type SkirmishPick={name:string,deck:string[],hero:string,heroName:string,missing:number};
+export function originalSkirmishDeck(rule:DeckRule='standard',rand:()=>number=Math.random):SkirmishPick{
+ const lib=skirmishLibrary as {heroes:Record<string,{key:string,name:string,mojo:number}[]>,decks:{name:string,cards:string[],originalCount:number,missing:number,heroClasses:string[],mojoNeeded:number}[]};
+ // The one monster-less deck ("boss": a lone hero with big weapons and Carnage) is left out: our computer cannot play it.
+ const hasMonsters=(d:{cards:string[]})=>d.cards.some(id=>cardById[id]?.type==='unit');
+ const legal=lib.decks.filter(d=>hasMonsters(d)&&d.missing<=d.originalCount*.2&&!validateDeck(d.cards,'human',rule));
+ const pool=legal.length?legal:lib.decks.filter(d=>hasMonsters(d)&&!validateDeck(d.cards,'human','standard'));
+ const d=pool[Math.floor(rand()*pool.length)];
+ const known=(k:string)=>!!(nativeHeroes as any)[k];
+ const all=d.heroClasses.flatMap(c=>lib.heroes[c]||[]).filter(h=>known(h.key));
+ const fit=all.filter(h=>h.mojo>=d.mojoNeeded);
+ const pick=(fit.length?fit:all.length?all:Object.values(lib.heroes).flat().filter(h=>known(h.key)));
+ const h=pick[Math.floor(rand()*pick.length)];
+ return {name:d.name,deck:[...d.cards],hero:h.key,heroName:h.name,missing:d.missing};}
