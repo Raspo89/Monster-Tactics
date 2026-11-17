@@ -43,6 +43,10 @@ Original-style AI at 2,500 nodes on both sides, 100 games each, every pairing fr
 | human deck, new builder, expert tier | 5 / 100 |
 | best of all races (robots), expert tier | 1 / 100 |
 
+Re-measured in 7.28, after the 349 missing runes and spells were imported (library decks now complete, four new heroes
+in the pick), same settings, 100 games each: zombie hard 57, human old builder 11, human new builder expert 10,
+robots expert 3. Within noise of the numbers above: the missing magic was not what held the library back.
+
 So the library is an average opponent in our engine, well below the decks our builder makes since 7.23. Several of its
 heroes are fragile (Alphedia 15 health, Boneyard/Ernold/Hyssta 20) and the original AI walks them forward. The original
 leaned on the extra cards and Mojo to make it hard; the handicap dial is that lever here.
