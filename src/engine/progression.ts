@@ -1,6 +1,6 @@
 import nativeQuests from '../data/native-quests.json';
 import skirmishLibrary from '../data/skirmish-decks.json';
-import {cards,cardById,validateDeck,nativeHeroes} from './game';
+import {cards,cardById,validateDeck,nativeHeroes,retiredIds} from './game';
 import type {Card,DeckRule} from './game';
 export type Rarity='C'|'U'|'R'|'L';
 export const rarityOrder:Rarity[]=['C','U','R','L'];
@@ -9,13 +9,21 @@ export const cardRarity=(c:Card):Rarity=>c.rarity==='E'?'R':rarityOrder.includes
 export const cardPrice=(c:Card)=>rarityInfo[cardRarity(c)].price;
 export const WIN_COINS=120;
 export type Reward={matchId:string,cardId:string,coins:number,rarity:Rarity,newCard:boolean};
-export type Profile={version:1,coins:number,inventory:Record<string,number>,starterRace?:string,starterDeck:string[],wins:number,receipts:Record<string,Reward>,quests?:Record<string,number[]>,chests?:Partial<Record<ChestType,number>>,gifts?:string[]};
+export type Profile={version:1,coins:number,inventory:Record<string,number>,starterRace?:string,starterDeck:string[],wins:number,receipts:Record<string,Reward>,quests?:Record<string,number[]>,chests?:Partial<Record<ChestType,number>>,gifts?:string[],refund?:{cards:number,coins:number}};
 export const emptyProfile=():Profile=>({version:1,coins:100,inventory:{},starterDeck:[],wins:0,receipts:{}});
-export function loadProfile(raw:any):Profile{const p=emptyProfile();if(!raw||raw.version!==1)return p;p.coins=Number.isSafeInteger(raw.coins)&&raw.coins>=0?raw.coins:100;p.wins=Number.isSafeInteger(raw.wins)&&raw.wins>=0?raw.wins:0;for(const [id,n] of Object.entries(raw.inventory||{}))if(cardById[id]&&Number.isSafeInteger(n)&&Number(n)>0)p.inventory[id]=Number(n);p.starterRace=typeof raw.starterRace==='string'?raw.starterRace:undefined;p.starterDeck=Array.isArray(raw.starterDeck)?raw.starterDeck.filter((id:any)=>typeof id==='string'&&cardById[id]):[];for(const [id,r] of Object.entries(raw.receipts||{}))if(r&&typeof r==='object'&&cardById[(r as Reward).cardId])p.receipts[id]=r as Reward;if(Array.isArray(raw.gifts))p.gifts=raw.gifts.filter((g:any)=>typeof g==='string').slice(0,100);if(raw.chests&&typeof raw.chests==='object'){p.chests={};for(const k of CHEST_TYPES){const n=raw.chests[k];if(Number.isSafeInteger(n)&&n>0)p.chests[k]=n;}}if(raw.quests&&typeof raw.quests==='object'){p.quests={};for(const q of QUESTS){const won=raw.quests[q.id];if(Array.isArray(won))p.quests[q.id]=[...new Set(won.filter((n:any)=>q.rooms.some(r=>r.n===n)))] as number[];}}upgradeStarter(p);return p;}
-export function starterCards(race:string){const pool=cards.filter(c=>c.type==='unit'&&c.race===race&&(c.id.startsWith('CM_')||c.id.startsWith('NA_'))&&['C','U'].includes(cardRarity(c))&&c.cost<=4).sort((a,b)=>a.cost-b.cost||Number(!!b.abilityId)-Number(!!a.abilityId));const selected:Card[]=[];for(const cls of ['warrior','archer','mage']){const c=pool.find(c=>c.combatClass===cls);if(c)selected.push(c);}const active=pool.find(c=>c.abilityId);if(active&&!selected.includes(active))selected.push(active);for(const c of pool)if(selected.length<5&&!selected.includes(c))selected.push(c);if(selected.length<5)throw Error('لا توجد مجموعة بداية كافية');return [...selected.slice(0,5).flatMap(c=>[c.id,c.id,c.id,c.id]),'R03','R03','S01','S01','S02','A01',...starterWeapons()];}
+export function loadProfile(raw:any):Profile{const p=emptyProfile();if(!raw||raw.version!==1)return p;p.coins=Number.isSafeInteger(raw.coins)&&raw.coins>=0?raw.coins:100;p.wins=Number.isSafeInteger(raw.wins)&&raw.wins>=0?raw.wins:0;for(const [id,n] of Object.entries(raw.inventory||{}))if(cardById[id]&&Number.isSafeInteger(n)&&Number(n)>0)p.inventory[id]=Number(n);p.starterRace=typeof raw.starterRace==='string'?raw.starterRace:undefined;p.starterDeck=Array.isArray(raw.starterDeck)?raw.starterDeck.filter((id:any)=>typeof id==='string'&&cardById[id]):[];for(const [id,r] of Object.entries(raw.receipts||{}))if(r&&typeof r==='object'&&cardById[(r as Reward).cardId])p.receipts[id]=r as Reward;if(Array.isArray(raw.gifts))p.gifts=raw.gifts.filter((g:any)=>typeof g==='string').slice(0,100);if(raw.chests&&typeof raw.chests==='object'){p.chests={};for(const k of CHEST_TYPES){const n=raw.chests[k];if(Number.isSafeInteger(n)&&n>0)p.chests[k]=n;}}if(raw.quests&&typeof raw.quests==='object'){p.quests={};for(const q of QUESTS){const won=raw.quests[q.id];if(Array.isArray(won))p.quests[q.id]=[...new Set(won.filter((n:any)=>q.rooms.some(r=>r.n===n)))] as number[];}}retireArtillery(p);upgradeStarter(p);return p;}
+export function starterCards(race:string){const pool=cards.filter(c=>c.type==='unit'&&c.race===race&&(c.id.startsWith('CM_')||c.id.startsWith('NA_'))&&['C','U'].includes(cardRarity(c))&&c.cost<=4).sort((a,b)=>a.cost-b.cost||Number(!!b.abilityId)-Number(!!a.abilityId));if(pool.length<5)pool.push(...cards.filter(c=>c.type==='unit'&&c.race===race&&(c.id.startsWith('CM_')||c.id.startsWith('NA_'))&&!pool.includes(c)).sort((a,b)=>a.cost-b.cost||a.id.localeCompare(b.id)));const selected:Card[]=[];for(const cls of ['warrior','archer','mage']){const c=pool.find(c=>c.combatClass===cls);if(c)selected.push(c);}const active=pool.find(c=>c.abilityId);if(active&&!selected.includes(active))selected.push(active);for(const c of pool)if(selected.length<5&&!selected.includes(c))selected.push(c);if(selected.length<5)throw Error('لا توجد مجموعة بداية كافية');return [...selected.slice(0,5).flatMap(c=>[c.id,c.id,c.id,c.id]),'R03','R03','S01','S01','S02','A01',...starterWeapons()];}
 /** Two warrior weapons, one bow and one staff: the cheapest common original weapon of each class. */
 const drawback=(c:Card)=>Object.values(c.equip||{}).filter(v=>typeof v==='number'&&v<0).length;
 export function starterWeapons(){const pick=(cls:string)=>cards.filter(c=>c.type==='weapon'&&c.id.startsWith('NE_')&&c.forClass===cls&&cardRarity(c)==='C'&&(c.equip?.attack||0)>0).sort((a,b)=>drawback(a)-drawback(b)||a.cost-b.cost||(b.equip?.attack||0)-(a.equip?.attack||0)||a.id.localeCompare(b.id))[0]?.id||(cls==='warrior'?'W01':'W02');const w=pick('warrior');return [w,w,pick('archer'),pick('mage')];}
+/** 7.26 took artillery monsters and ammunition out of the game: owned copies are refunded at shop price and the
+ *  starter deck is rebuilt if it held any. Idempotent: once they are gone there is nothing left to refund. */
+export function retireArtillery(p:Profile){let coins=0,count=0;
+ for(const [id,n] of Object.entries(p.inventory))if(retiredIds.has(id)){coins+=cardPrice(cardById[id])*n;count+=n;delete p.inventory[id];}
+ if(p.starterDeck.some(id=>retiredIds.has(id))&&p.starterRace){try{const next=starterCards(p.starterRace);const need:Record<string,number>={};for(const id of next)need[id]=(need[id]||0)+1;for(const [id,n] of Object.entries(need))if((p.inventory[id]||0)<n)p.inventory[id]=n;p.starterDeck=next;}catch{p.starterDeck=p.starterDeck.filter(id=>!retiredIds.has(id));}}
+ p.starterDeck=p.starterDeck.filter(id=>!retiredIds.has(id));
+ if(count){p.coins+=coins;p.refund={cards:count,coins};}
+ return p;}
 /** Older saves got a starter deck without weapons: give them the new one and the cards it needs. */
 function upgradeStarter(p:Profile){if(!p.starterRace||!p.starterDeck.length||p.starterDeck.some(id=>cardById[id]?.type==='weapon'&&id.startsWith('NE_')))return;let next:string[];try{next=starterCards(p.starterRace);}catch{return;}const need:Record<string,number>={};for(const id of next)need[id]=(need[id]||0)+1;for(const [id,n] of Object.entries(need))if((p.inventory[id]||0)<n)p.inventory[id]=n;p.starterDeck=next;}
 
@@ -117,8 +125,9 @@ export function originalSkirmishDeck(rule:DeckRule='standard',rand:()=>number=Ma
  const lib=skirmishLibrary as {heroes:Record<string,{key:string,name:string,mojo:number}[]>,decks:{name:string,cards:string[],originalCount:number,missing:number,heroClasses:string[],mojoNeeded:number}[]};
  // The one monster-less deck ("boss": a lone hero with big weapons and Carnage) is left out: our computer cannot play it.
  const hasMonsters=(d:{cards:string[]})=>d.cards.some(id=>cardById[id]?.type==='unit');
- const legal=lib.decks.filter(d=>hasMonsters(d)&&d.missing<=d.originalCount*.2&&!validateDeck(d.cards,'human',rule));
- const pool=legal.length?legal:lib.decks.filter(d=>hasMonsters(d)&&!validateDeck(d.cards,'human','standard'));
+ const decks=lib.decks.map(d=>({...d,cards:d.cards.filter(id=>!retiredIds.has(id))}));
+ const legal=decks.filter(d=>hasMonsters(d)&&d.missing<=d.originalCount*.2&&!validateDeck(d.cards,'human',rule));
+ const pool=legal.length?legal:decks.filter(d=>hasMonsters(d)&&!validateDeck(d.cards,'human','standard'));
  const d=pool[Math.floor(rand()*pool.length)];
  const known=(k:string)=>!!(nativeHeroes as any)[k];
  const all=d.heroClasses.flatMap(c=>lib.heroes[c]||[]).filter(h=>known(h.key));
