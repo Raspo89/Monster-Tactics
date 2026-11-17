@@ -137,6 +137,26 @@
   }
  },
  {
+  "id": "NR_R_WITCHHUNT",
+  "name": "Rune of the Spell Hunt",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل التعاويذ تكلف الجميع 2 موجو زيادة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WITCHHUNT",
+  "art": "Rune_01_witchhunt",
+  "effect": {
+   "hunt": [
+    {
+     "kind": "spell",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
   "id": "NR_R_YINGYANG",
   "name": "Rune of Yin and Yang",
   "race": "neutral",
@@ -190,6 +210,54 @@
   }
  },
  {
+  "id": "NR_R_IMPOTENT_RAGE",
+  "name": "Rune of Impotent Rage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "كل الوحوش اللي لك: +2 هجوم، وحوشك ما تقدر تتحرك ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_IMPOTENT_RAGE",
+  "art": "Rune_01_IRage",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine"
+     },
+     "stat": "attack",
+     "n": 2
+    }
+   ],
+   "noMove": true
+  }
+ },
+ {
+  "id": "NR_R_STAND_FAST",
+  "name": "Rune of Fast Standing",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "كل الوحوش اللي لك: +5 صحة، وحوشك ما تقدر تتحرك ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_STAND_FAST",
+  "art": "Rune_01_SFast",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine"
+     },
+     "stat": "health",
+     "n": 5
+    }
+   ],
+   "noMove": true
+  }
+ },
+ {
   "id": "NR_R_BANKERS_DELIGHT",
   "name": "Rune of Card Taxation",
   "race": "neutral",
@@ -217,6 +285,145 @@
   "art": "Rune_01_Account",
   "effect": {
    "abilityDiscount": 1
+  }
+ },
+ {
+  "id": "NR_R_PUNISHMENT",
+  "name": "Rune of Spell Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما الخصم يلعب تعويذة قائده يخسر 2 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_PUNISHMENT",
+  "art": "Rune_01_Punish",
+  "effect": {
+   "punish": [
+    {
+     "kind": "spell",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_BLANK",
+  "name": "Rune of Blank",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 0,
+  "text": "ما يسوي شي",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_BLANK",
+  "art": "Rune_01_Blank",
+  "effect": {
+   "blank": true
+  }
+ },
+ {
+  "id": "NR_R_CARD_MAESTRO",
+  "name": "Rune of Draw Reaping",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تقتل وحش: تسحب بطاقة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_CARD_MAESTRO",
+  "art": "Rune_01_Maestro",
+  "effect": {
+   "killDraw": 1
+  }
+ },
+ {
+  "id": "NR_R_GRAVITY",
+  "name": "Rune of Gravity",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل وحش يخسر 1 صحة عن كل قطعة عتاد عليه",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_GRAVITY",
+  "art": "Rune_01_Gravity",
+  "effect": {
+   "gravity": -1
+  }
+ },
+ {
+  "id": "NR_R_LONE_HERO",
+  "name": "Rune of Heroic Loneliness",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "في بداية دورك: قائدك يكسب 2 صحة إذا ما حوله أحد",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_LONE_HERO",
+  "art": "Rune_01_LoneHero",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "loneHero",
+     "when": "mine",
+     "who": "mine",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WAR_HERO",
+  "name": "Rune of Heroic Rage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قائدك +2 هجوم عن كل عدو جنبه",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WAR_HERO",
+  "art": "Rune_01_WarHero",
+  "effect": {
+   "warHero": 2
+  }
+ },
+ {
+  "id": "NR_R_HERO_SPIKE",
+  "name": "Rune of Heroic Anger",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "في بداية دورك: كل مخلوق للخصم جنب قائدك ياخذ 2 ضرر",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_HERO_SPIKE",
+  "art": "Rune_01_HeroSpike",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heroSpike",
+     "when": "mine",
+     "who": "enemy",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_SLYNEGLECT",
+  "name": "Rune of Sly Neglect",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 6,
+  "text": "دروع الخصم ما تتجدد في بداية الدور",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_SLYNEGLECT",
+  "art": "Rune_01_SlyNeglect",
+  "effect": {
+   "neglect": "enemy"
   }
  },
  {
@@ -283,6 +490,21 @@
   }
  },
  {
+  "id": "NR_R_ACCOUNTING2",
+  "name": "Rune of Creative Accounting",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "قدرات وحوشك تكلف 2 موجو أقل",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_ACCOUNTING2",
+  "art": "Rune_01_Account2",
+  "effect": {
+   "abilityDiscount": 2
+  }
+ },
+ {
   "id": "NR_R_EPICPOWER",
   "name": "Rune of Epic Power",
   "race": "neutral",
@@ -303,6 +525,51 @@
      "n": 3
     }
    ]
+  }
+ },
+ {
+  "id": "NR_R_NOMOVE",
+  "name": "Rune of No Moving",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك ما تقدر تتحرك",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_NOMOVE",
+  "art": "Rune_01_NoMove",
+  "effect": {
+   "noMove": true
+  }
+ },
+ {
+  "id": "NR_R_NOSPECIALABILITY",
+  "name": "Rune of No Abilities",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك ما تقدر تستخدم قدراتها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_NOSPECIALABILITY",
+  "art": "Rune_01_NoAbility",
+  "effect": {
+   "noAbility": true
+  }
+ },
+ {
+  "id": "NR_R_NOATTACKS",
+  "name": "Rune of Suppression",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك ما تقدر تهاجم هجومها العادي",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_NOATTACKS",
+  "art": "Rune_01_NoAttack",
+  "effect": {
+   "noAttack": true
   }
  },
  {
@@ -666,6 +933,147 @@
   }
  },
  {
+  "id": "NR_R_REGEN",
+  "name": "Rune of Regeneration",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك تدخل الساحة وعليها التجدد",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_REGEN",
+  "art": "Rune_01_Regen",
+  "effect": {
+   "enterAfflict": [
+    "regen"
+   ]
+  }
+ },
+ {
+  "id": "NR_R_SHIELD",
+  "name": "Rune of Shielding",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك تدخل الساحة وعليها الحاجز السحري",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_SHIELD",
+  "art": "Rune_01_Shield",
+  "effect": {
+   "enterAfflict": [
+    "shield"
+   ]
+  }
+ },
+ {
+  "id": "NR_R_FLAME",
+  "name": "Rune of Flame",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "وحوشك تدخل الساحة وعليها الاشتعال",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_FLAME",
+  "art": "Rune_01_Flame",
+  "effect": {
+   "enterAfflict": [
+    "flame"
+   ]
+  }
+ },
+ {
+  "id": "NR_R_TILEDOUBLER",
+  "name": "Rune of Tile Doubleage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "الخانات المميزة تعطي ضعف الفايدة للكل",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_TILEDOUBLER",
+  "art": "Rune_01_TileDoubler",
+  "effect": {
+   "tileDouble": "all"
+  }
+ },
+ {
+  "id": "NR_R_SLYTILEDOUBLER",
+  "name": "Rune of Sly Tile Doubleage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "الخانات المميزة تعطي ضعف الفايدة لك بس",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_SLYTILEDOUBLER",
+  "art": "Rune_01_SlyTileDoubler",
+  "effect": {
+   "tileDouble": "mine"
+  }
+ },
+ {
+  "id": "NR_R_PUNISHMENTMINI",
+  "name": "Rune of Mini Spell Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل ما الخصم يلعب تعويذة قائده يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_PUNISHMENTMINI",
+  "art": "Rune_01_PunishMini",
+  "effect": {
+   "punish": [
+    {
+     "kind": "spell",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RUNEBACKFIREMINI",
+  "name": "Rune of Mini Rune Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل ما الخصم يلعب رون قائده يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_RUNEBACKFIREMINI",
+  "art": "Rune_01_RuneBackfireMini",
+  "effect": {
+   "punish": [
+    {
+     "kind": "rune",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RUNEBACKFIRE",
+  "name": "Rune of Rune Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما الخصم يلعب رون قائده يخسر 2 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RUNEBACKFIRE",
+  "art": "Rune_01_RuneBackfire",
+  "effect": {
+   "punish": [
+    {
+     "kind": "rune",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
   "id": "NR_R_MINFEEBLE",
   "name": "Rune of Minor Enfeeblement",
   "race": "neutral",
@@ -822,6 +1230,194 @@
     "enemy": 1,
     "mine": 3
    }
+  }
+ },
+ {
+  "id": "NR_R_RUNEHUNT",
+  "name": "Rune of the Rune Hunt",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الرونات تكلف الجميع 2 موجو زيادة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RUNEHUNT",
+  "art": "Rune_01_runehunt",
+  "effect": {
+   "hunt": [
+    {
+     "kind": "rune",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_NOAFF_FIRE",
+  "name": "Rune of No Flame",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "مخلوقاتك محمية من الاشتعال",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_NOAFF_FIRE",
+  "art": "Rune_01_NoFire",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "flame"
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_NOAFF_ICE",
+  "name": "Rune of No Ice",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "مخلوقاتك محمية من التجميد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_NOAFF_ICE",
+  "art": "Rune_01_NoIce",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "ice"
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_NOAFF_DM",
+  "name": "Rune of No Death Mark",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "مخلوقاتك محمية من علامة الموت",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_NOAFF_DM",
+  "art": "Rune_01_NoDM",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "deathmark"
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_NOAFF_STUN",
+  "name": "Rune of No Dazed",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "مخلوقاتك محمية من الذهول",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_NOAFF_STUN",
+  "art": "Rune_01_NoStun",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "stun"
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_NOAFF_SNARE",
+  "name": "Rune of No Snared",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "مخلوقاتك محمية من التقييد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_NOAFF_SNARE",
+  "art": "Rune_01_NoSnare",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "snare"
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_TOOMANYCARDS",
+  "name": "Rune of Paucity",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 8,
+  "text": "في بداية دورك: قائد الخصم يخسر (4 ناقص عدد بطاقات يده) صحة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_TOOMANYCARDS",
+  "art": "Rune_01_Plenty",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "tooMany",
+     "when": "mine",
+     "who": "enemy",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_TOOFEWCARDS",
+  "name": "Rune of Plenty",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 9,
+  "text": "في بداية دورك: قائد الخصم يخسر (عدد بطاقات يده ناقص 10) صحة، حدها 5",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_TOOFEWCARDS",
+  "art": "Rune_01_Paucity",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "tooFew",
+     "when": "mine",
+     "who": "enemy",
+     "n": 1,
+     "max": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_HEALTHCARDS",
+  "name": "Rune of Healthy Restraint",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "في بداية دورك: قائدك يكسب 1 صحة عن كل بطاقة فوق 5 في يدك (حدها 8)",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_HEALTHCARDS",
+  "art": "Rune_01_HealthRest",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "healthCards",
+     "when": "mine",
+     "who": "mine",
+     "n": 1,
+     "max": 8
+    }
+   ]
   }
  },
  {
@@ -2025,6 +2621,1201 @@
   }
  },
  {
+  "id": "NR_R_HB_BAUS",
+  "name": "Rock of Doc Pain",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Doc Pain • دوك بين محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_BAUS",
+  "art": "Rune_01_BuffDocPain",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_baus"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_CYCLOPS",
+  "name": "Rock of Ouranus",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Ouranus • أورانوس محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_CYCLOPS",
+  "art": "Rune_01_BuffOuranus",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_cyclops"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_LAVALEM",
+  "name": "Rock of Lavalem",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Lavalem • لافاليم محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_LAVALEM",
+  "art": "Rune_01_BuffLavalem",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_lavalem"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_DEAN",
+  "name": "Rock of Dean",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Dean • دين محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_DEAN",
+  "art": "Rune_01_BuffDean",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "human"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_NOIGLE",
+  "name": "Rock of Noigle",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Noigle • نويغل محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_NOIGLE",
+  "art": "Rune_01_BuffNoigle",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_noigle"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_SHAQ",
+  "name": "Rock of Shaq",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Shaq • شاك محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_SHAQ",
+  "art": "Rune_01_BuffShaq",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_korma"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_BONEYARD",
+  "name": "Rock of Boneyard",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Boneyard • بونيارد محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_BONEYARD",
+  "art": "Rune_01_BuffBoneyard",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_boneyard"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_WOOMPH",
+  "name": "Rock of Silvanus",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Silvanus • سيلفانوس محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_WOOMPH",
+  "art": "Rune_01_BuffSilvanus",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_woomph"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_ALPHEDIA",
+  "name": "Rock of Alphedia",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Alphedia • ألفيديا محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_ALPHEDIA",
+  "art": "Rune_01_BuffAlphedia",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_alphedia"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_KONGE",
+  "name": "Rock of Raeynor",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Raeynor • راينور محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_KONGE",
+  "art": "Rune_01_BuffRaeynor",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "elf"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_QUEENY",
+  "name": "Rock of Hyssta",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Hyssta • هيستا محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_QUEENY",
+  "art": "Rune_01_BuffHyssta",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_queeny"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_STUNK",
+  "name": "Rock of Clank",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Clank • كلانك محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_STUNK",
+  "art": "Rune_01_BuffClank",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_stunk"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_ERNOLD",
+  "name": "Rock of Ernold",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Ernold • إرنولد محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_ERNOLD",
+  "art": "Rune_01_BuffErnold",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_ernold"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_MAMBO",
+  "name": "Rock of Mambo",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Mambo • مامبو محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_MAMBO",
+  "art": "Rune_01_BuffMambo",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_mambo"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_MACHLI",
+  "name": "Rock of Machli",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Machli • ماتشلي محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_MACHLI",
+  "art": "Rune_01_BuffMachli",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_machli"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_BAUS",
+  "name": "Pebble of Doc Pain",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Doc Pain • دوك بين محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_BAUS",
+  "art": "Rune_01_MBuffDocPain",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_baus"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_CYCLOPS",
+  "name": "Pebble of Ouranus",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Ouranus • أورانوس محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_CYCLOPS",
+  "art": "Rune_01_MBuffOuranus",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_cyclops"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_LAVALEM",
+  "name": "Pebble of Lavalem",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Lavalem • لافاليم محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_LAVALEM",
+  "art": "Rune_01_MBuffLavalem",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_lavalem"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_DEAN",
+  "name": "Pebble of Dean",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Dean • دين محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_DEAN",
+  "art": "Rune_01_MBuffDean",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "human"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_NOIGLE",
+  "name": "Pebble of Noigle",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Noigle • نويغل محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_NOIGLE",
+  "art": "Rune_01_MBuffNoigle",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_noigle"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_SHAQ",
+  "name": "Pebble of Shaq",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Shaq • شاك محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_SHAQ",
+  "art": "Rune_01_MBuffShaq",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_korma"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_BONEYARD",
+  "name": "Pebble of Boneyard",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Boneyard • بونيارد محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_BONEYARD",
+  "art": "Rune_01_MBuffBoneyard",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_boneyard"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_WOOMPH",
+  "name": "Pebble of Silvanus",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Silvanus • سيلفانوس محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_WOOMPH",
+  "art": "Rune_01_MBuffSilvanus",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_woomph"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_ALPHEDIA",
+  "name": "Pebble of Alphedia",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Alphedia • ألفيديا محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_ALPHEDIA",
+  "art": "Rune_01_MBuffAlphedia",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_alphedia"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_KONGE",
+  "name": "Pebble of Raeynor",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Raeynor • راينور محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_KONGE",
+  "art": "Rune_01_MBuffRaeynor",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "elf"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_QUEENY",
+  "name": "Pebble of Hyssta",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Hyssta • هيستا محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_QUEENY",
+  "art": "Rune_01_MBuffHyssta",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_queeny"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_STUNK",
+  "name": "Pebble of Clank",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Clank • كلانك محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_STUNK",
+  "art": "Rune_01_MBuffClank",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_stunk"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_ERNOLD",
+  "name": "Pebble of Ernold",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Ernold • إرنولد محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_ERNOLD",
+  "art": "Rune_01_MBuffErnold",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_ernold"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_MAMBO",
+  "name": "Pebble of Mambo",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Mambo • مامبو محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_MAMBO",
+  "art": "Rune_01_MBuffMambo",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_mambo"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_MACHLI",
+  "name": "Pebble of Machli",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Machli • ماتشلي محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_MACHLI",
+  "art": "Rune_01_MBuffMachli",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_machli"
+   }
+  }
+ },
+ {
+  "id": "NR_R_RNOAFF_FIRE",
+  "name": "Rune of Null Flame",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل الوحوش محمية من الاشتعال",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RNOAFF_FIRE",
+  "art": "Rune_01_NoFireAll",
+  "effect": {
+   "noAff": {
+    "who": "all",
+    "names": [
+     "flame"
+    ],
+    "monstersOnly": true
+   }
+  }
+ },
+ {
+  "id": "NR_R_RNOAFF_ICE",
+  "name": "Rune of Null Ice",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل الوحوش محمية من التجميد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RNOAFF_ICE",
+  "art": "Rune_01_NoIceAll",
+  "effect": {
+   "noAff": {
+    "who": "all",
+    "names": [
+     "ice"
+    ],
+    "monstersOnly": true
+   }
+  }
+ },
+ {
+  "id": "NR_R_RNOAFF_DM",
+  "name": "Rune of Null Death Mark",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل الوحوش محمية من علامة الموت",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RNOAFF_DM",
+  "art": "Rune_01_NoDMAll",
+  "effect": {
+   "noAff": {
+    "who": "all",
+    "names": [
+     "deathmark"
+    ],
+    "monstersOnly": true
+   }
+  }
+ },
+ {
+  "id": "NR_R_RNOAFF_STUN",
+  "name": "Rune of Null Dazed",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل الوحوش محمية من الذهول",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RNOAFF_STUN",
+  "art": "Rune_01_NoStunAll",
+  "effect": {
+   "noAff": {
+    "who": "all",
+    "names": [
+     "stun"
+    ],
+    "monstersOnly": true
+   }
+  }
+ },
+ {
+  "id": "NR_R_RNOAFF_SNARE",
+  "name": "Rune of Null Snared",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل الوحوش محمية من التقييد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RNOAFF_SNARE",
+  "art": "Rune_01_NoSnareAll",
+  "effect": {
+   "noAff": {
+    "who": "all",
+    "names": [
+     "snare"
+    ],
+    "monstersOnly": true
+   }
+  }
+ },
+ {
+  "id": "NR_R_NOAFF_BERSERK",
+  "name": "Rune of No Berserk",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "مخلوقاتك محمية من الهياج",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_NOAFF_BERSERK",
+  "art": "Rune_01_NoBerserk",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "berserk"
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_RNOAFF_BERSERK",
+  "name": "Rune of Null Berserk",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل الوحوش محمية من الهياج",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RNOAFF_BERSERK",
+  "art": "Rune_01_NoBerserkAll",
+  "effect": {
+   "noAff": {
+    "who": "all",
+    "names": [
+     "berserk"
+    ],
+    "monstersOnly": true
+   }
+  }
+ },
+ {
+  "id": "NR_R_MIGHTY",
+  "name": "Rune of Mighty",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك تدخل الساحة وعليها القوة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_MIGHTY",
+  "art": "Rune_01_Mighty",
+  "effect": {
+   "enterAfflict": [
+    "mighty"
+   ]
+  }
+ },
+ {
+  "id": "NR_R_GETORFMYLAND",
+  "name": "Rune of Private Property",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "ما أحد يقدر يحط رون على قواعدك",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_GETORFMYLAND",
+  "art": "Rune_01_PrivateProperty",
+  "effect": {
+   "guardDais": true
+  }
+ },
+ {
+  "id": "NR_R_EXTRA2CARDS",
+  "name": "Rune of Draw Mavenage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "اسحب 2 بطاقات إضافية في بداية كل دور",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_EXTRA2CARDS",
+  "art": "Rune_01_ExtraCard2",
+  "effect": {
+   "draw": 2
+  }
+ },
+ {
+  "id": "NR_R_EXTRA3CARDS",
+  "name": "Rune of Draw Supremacy",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 6,
+  "text": "اسحب 3 بطاقات إضافية في بداية كل دور",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_EXTRA3CARDS",
+  "art": "Rune_01_ExtraCard3",
+  "effect": {
+   "draw": 3
+  }
+ },
+ {
+  "id": "NR_R_OPENSEASON",
+  "name": "Rune of Open Season",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "تقدر تحط رونات على قواعد الخصم (تشتغل كأنها له)",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_OPENSEASON",
+  "art": "Rune_01_OpenSeason",
+  "effect": {
+   "openSeason": true
+  }
+ },
+ {
+  "id": "NR_R_DRAW_ONSPELL",
+  "name": "Rune of Rapid Spells",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تلعب تعويذة: تسحب بطاقة وقائدك يخسر 2 صحة وقائد الخصم يكسب 2 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_DRAW_ONSPELL",
+  "art": "Rune_01_rapid_spells",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "spell",
+     "draw": 1,
+     "heroLose": 2,
+     "enemyHeroGain": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_DRAW_ONRUNE",
+  "name": "Rune of Rapid Runes",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تلعب رون: تسحب بطاقة وقائدك يخسر 2 صحة وقائد الخصم يكسب 2 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_DRAW_ONRUNE",
+  "art": "Rune_01_rapid_runes",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "rune",
+     "draw": 1,
+     "heroLose": 2,
+     "enemyHeroGain": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_DRAW_ONEQUIP",
+  "name": "Rune of Rapid Equips",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تلعب عتاد: تسحب بطاقة وقائدك يخسر 2 صحة وقائد الخصم يكسب 2 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_DRAW_ONEQUIP",
+  "art": "Rune_01_rapid_equips",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "equip",
+     "draw": 1,
+     "heroLose": 2,
+     "enemyHeroGain": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_DRAW_ONMONSTER",
+  "name": "Rune of Rapid Monsters",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل ما تلعب وحش: تسحب بطاقة وقائدك يخسر 2 صحة وقائد الخصم يكسب 2 صحة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_DRAW_ONMONSTER",
+  "art": "Rune_01_rapid_monsters",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "unit",
+     "draw": 1,
+     "heroLose": 2,
+     "enemyHeroGain": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_REFUND_ONSPELL",
+  "name": "Rune of Spell Refundage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تلعب تعويذة: تكسب 1 موجو وقائدك يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_REFUND_ONSPELL",
+  "art": "Rune_01_refund_spells",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "spell",
+     "mojo": 1,
+     "heroLose": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_REFUND_ONRUNE",
+  "name": "Rune of Rune Refundage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تلعب رون: تكسب 1 موجو وقائدك يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_REFUND_ONRUNE",
+  "art": "Rune_01_refund_runes",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "rune",
+     "mojo": 1,
+     "heroLose": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_REFUND_ONEQUIP",
+  "name": "Rune of Equip Refundage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تلعب عتاد: تكسب 1 موجو وقائدك يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_REFUND_ONEQUIP",
+  "art": "Rune_01_refund_equips",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "equip",
+     "mojo": 1,
+     "heroLose": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_REFUND_ONMONSTER",
+  "name": "Rune of Monster Refundage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما تلعب وحش: تكسب 1 موجو وقائدك يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_REFUND_ONMONSTER",
+  "art": "Rune_01_refund_monsters",
+  "effect": {
+   "onPlay": [
+    {
+     "kind": "unit",
+     "mojo": 1,
+     "heroLose": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_MONSTER_HUNT",
+  "name": "Rune of the Monster Hunt",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الوحوش تكلف الجميع 2 موجو زيادة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_MONSTER_HUNT",
+  "art": "Rune_01_monsterhunt",
+  "effect": {
+   "hunt": [
+    {
+     "kind": "unit",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_EQUIP_HUNT",
+  "name": "Rune of the Equip Hunt",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل العتاد تكلف الجميع 2 موجو زيادة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_EQUIP_HUNT",
+  "art": "Rune_01_equiphunt",
+  "effect": {
+   "hunt": [
+    {
+     "kind": "equip",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_CARD_HUNT",
+  "name": "Rune of Super Tax",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل البطاقات تكلف الجميع 1 موجو زيادة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_CARD_HUNT",
+  "art": "Rune_01_cardhunt",
+  "effect": {
+   "hunt": [
+    {
+     "kind": "all",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_ABUNDANCE",
+  "name": "Rune of Abundance",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل اللاعبين يسحبون 1 بطاقة إضافية كل دور",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_ABUNDANCE",
+  "art": "Rune_01_abund",
+  "effect": {
+   "drawAll": 1
+  }
+ },
+ {
+  "id": "NR_R_OVERABUNDANCE",
+  "name": "Rune of Over Abundance",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل اللاعبين يسحبون 2 بطاقات إضافية كل دور",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_OVERABUNDANCE",
+  "art": "Rune_01_overabund",
+  "effect": {
+   "drawAll": 2
+  }
+ },
+ {
+  "id": "NR_R_MONSTER_PUNISHMENT",
+  "name": "Rune of Monster Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما الخصم يلعب وحش قائده يخسر 2 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_MONSTER_PUNISHMENT",
+  "art": "Rune_01_MonsterPunish",
+  "effect": {
+   "punish": [
+    {
+     "kind": "unit",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_MONSTER_PUNISHMENTMINI",
+  "name": "Mini Monster Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل ما الخصم يلعب وحش قائده يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_MONSTER_PUNISHMENTMINI",
+  "art": "Rune_01_MonsterPunishMini",
+  "effect": {
+   "punish": [
+    {
+     "kind": "unit",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_EQUIP_PUNISHMENT",
+  "name": "Rune of Equip Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل ما الخصم يلعب عتاد قائده يخسر 2 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_EQUIP_PUNISHMENT",
+  "art": "Rune_01_EquipPunish",
+  "effect": {
+   "punish": [
+    {
+     "kind": "equip",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_EQUIP_PUNISHMENTMINI",
+  "name": "Mini Equip Backfireage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل ما الخصم يلعب عتاد قائده يخسر 1 صحة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_EQUIP_PUNISHMENTMINI",
+  "art": "Rune_01_EquipPunishMini",
+  "effect": {
+   "punish": [
+    {
+     "kind": "equip",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
   "id": "NR_R_SBUFF_HUMAN",
   "name": "Rune of Human Pumping",
   "race": "neutral",
@@ -2625,6 +4416,2014 @@
   }
  },
  {
+  "id": "NR_R_WBUFF_HUMAN",
+  "name": "Word of Human ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل البشر: +2 هجوم، كل الوحوش من غير البشر: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_HUMAN",
+  "art": "Rune_01_BuffHuman3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "human"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "human"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_ELF",
+  "name": "Word of Elf ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الجان: +2 هجوم، كل الوحوش من غير الجان: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_ELF",
+  "art": "Rune_01_BuffElf3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "elf"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "elf"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_ORC",
+  "name": "Word of Orc ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الأورك: +2 هجوم، كل الوحوش من غير الأورك: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_ORC",
+  "art": "Rune_01_BuffOrc3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "orc"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "orc"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_UNDEAD",
+  "name": "Word of Zombie ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الزومبي: +2 هجوم، كل الوحوش من غير الزومبي: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_UNDEAD",
+  "art": "Rune_01_BuffZombie3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "zombie"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "zombie"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_LIZARD",
+  "name": "Word of Lizard ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل السحالي: +2 هجوم، كل الوحوش من غير السحالي: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_LIZARD",
+  "art": "Rune_01_BuffLizard3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "lizard"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "lizard"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_DWARF",
+  "name": "Word of Dwarf ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الأقزام: +2 هجوم، كل الوحوش من غير الأقزام: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_DWARF",
+  "art": "Rune_01_BuffDwarf3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "dwarf"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "dwarf"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_MINOTAUR",
+  "name": "Word of Minotaur ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل المينوتور: +2 هجوم، كل الوحوش من غير المينوتور: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_MINOTAUR",
+  "art": "Rune_01_BuffMinotaur3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "minotaur"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "minotaur"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_WEREWOLF",
+  "name": "Word of Werewolf ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل المستذئبين: +2 هجوم، كل الوحوش من غير المستذئبين: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_WEREWOLF",
+  "art": "Rune_01_BuffWerewolf3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "werewolf"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "werewolf"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_GOLEM",
+  "name": "Word of Golem ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الغولم: +2 هجوم، كل الوحوش من غير الغولم: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_GOLEM",
+  "art": "Rune_01_BuffGolem3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "golem"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "golem"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_ELEMENTAL",
+  "name": "Word of Elemental ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل العناصر: +2 هجوم، كل الوحوش من غير العناصر: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_ELEMENTAL",
+  "art": "Rune_01_BuffElemental3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "elemental"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "elemental"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_CYCLOPS",
+  "name": "Word of Cyclops ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل السايكلوب: +2 هجوم، كل الوحوش من غير السايكلوب: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_CYCLOPS",
+  "art": "Rune_01_BuffCyclops3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "cyclops"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "cyclops"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_SKELETON",
+  "name": "Word of Skeleton ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الهياكل: +2 هجوم، كل الوحوش من غير الهياكل: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_SKELETON",
+  "art": "Rune_01_BuffSkeleton3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "skeleton"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "skeleton"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_ROBOT",
+  "name": "Word of Robot ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الروبوتات: +2 هجوم، كل الوحوش من غير الروبوتات: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_ROBOT",
+  "art": "Rune_01_BuffRobot3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "robot"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "robot"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_IMP",
+  "name": "Word of Imp ",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل العفاريت: +2 هجوم، كل الوحوش من غير العفاريت: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_IMP",
+  "art": "Rune_01_BuffImp3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "imp"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "imp"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_SPECTRE",
+  "name": "Word of Spectre",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الأطياف: +2 هجوم، كل الوحوش من غير الأطياف: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_SPECTRE",
+  "art": "Rune_01_BuffSpectre3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "spectre"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "spectre"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_HUMAN",
+  "name": "Rule of Human",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل البشر اللي لك: +2 هجوم، كل الوحوش من غير البشر: -1 هجوم و-1 صحة، كل البشر اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_HUMAN",
+  "art": "Rune_01_BuffHuman4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "human"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "human"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "human"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "human"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "human"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_ELF",
+  "name": "Rule of Elf",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الجان اللي لك: +2 هجوم، كل الوحوش من غير الجان: -1 هجوم و-1 صحة، كل الجان اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_ELF",
+  "art": "Rune_01_BuffElf4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "elf"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "elf"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "elf"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "elf"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "elf"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_ORC",
+  "name": "Rule of Orc",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الأورك اللي لك: +2 هجوم، كل الوحوش من غير الأورك: -1 هجوم و-1 صحة، كل الأورك اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_ORC",
+  "art": "Rune_01_BuffOrc4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "orc"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "orc"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "orc"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "orc"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "orc"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_UNDEAD",
+  "name": "Rule of Zombie",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الزومبي اللي لك: +2 هجوم، كل الوحوش من غير الزومبي: -1 هجوم و-1 صحة، كل الزومبي اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_UNDEAD",
+  "art": "Rune_01_BuffZombie4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "zombie"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "zombie"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "zombie"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "zombie"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "zombie"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_LIZARD",
+  "name": "Rule of Lizard",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل السحالي اللي لك: +2 هجوم، كل الوحوش من غير السحالي: -1 هجوم و-1 صحة، كل السحالي اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_LIZARD",
+  "art": "Rune_01_BuffLizard4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "lizard"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "lizard"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "lizard"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "lizard"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "lizard"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_DWARF",
+  "name": "Rule of Dwarf",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الأقزام اللي لك: +2 هجوم، كل الوحوش من غير الأقزام: -1 هجوم و-1 صحة، كل الأقزام اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_DWARF",
+  "art": "Rune_01_BuffDwarf4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "dwarf"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "dwarf"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "dwarf"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "dwarf"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "dwarf"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_MINOTAUR",
+  "name": "Rule of Minotaur",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل المينوتور اللي لك: +2 هجوم، كل الوحوش من غير المينوتور: -1 هجوم و-1 صحة، كل المينوتور اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_MINOTAUR",
+  "art": "Rune_01_BuffMinotaur4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "minotaur"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "minotaur"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "minotaur"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "minotaur"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "minotaur"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_WEREWOLF",
+  "name": "Rule of Werewolf",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل المستذئبين اللي لك: +2 هجوم، كل الوحوش من غير المستذئبين: -1 هجوم و-1 صحة، كل المستذئبين اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_WEREWOLF",
+  "art": "Rune_01_BuffWerewolf4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "werewolf"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "werewolf"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "werewolf"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "werewolf"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "werewolf"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_GOLEM",
+  "name": "Rule of Golem",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الغولم اللي لك: +2 هجوم، كل الوحوش من غير الغولم: -1 هجوم و-1 صحة، كل الغولم اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_GOLEM",
+  "art": "Rune_01_BuffGolem4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "golem"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "golem"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "golem"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "golem"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "golem"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_ELEMENTAL",
+  "name": "Rule of Elemental",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل العناصر اللي لك: +2 هجوم، كل الوحوش من غير العناصر: -1 هجوم و-1 صحة، كل العناصر اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_ELEMENTAL",
+  "art": "Rune_01_BuffElemental4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "elemental"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "elemental"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "elemental"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "elemental"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "elemental"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_CYCLOPS",
+  "name": "Rule of Cyclops",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل السايكلوب اللي لك: +2 هجوم، كل الوحوش من غير السايكلوب: -1 هجوم و-1 صحة، كل السايكلوب اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_CYCLOPS",
+  "art": "Rune_01_BuffCyclops4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "cyclops"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "cyclops"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "cyclops"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "cyclops"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "cyclops"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_SKELETON",
+  "name": "Rule of Skeleton",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الهياكل اللي لك: +2 هجوم، كل الوحوش من غير الهياكل: -1 هجوم و-1 صحة، كل الهياكل اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_SKELETON",
+  "art": "Rune_01_BuffSkeleton4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "skeleton"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "skeleton"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "skeleton"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "skeleton"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "skeleton"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_ROBOT",
+  "name": "Rule of Robot",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الروبوتات اللي لك: +2 هجوم، كل الوحوش من غير الروبوتات: -1 هجوم و-1 صحة، كل الروبوتات اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_ROBOT",
+  "art": "Rune_01_BuffRobot4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "robot"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "robot"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "robot"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "robot"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "robot"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_IMP",
+  "name": "Rule of Imp",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل العفاريت اللي لك: +2 هجوم، كل الوحوش من غير العفاريت: -1 هجوم و-1 صحة، كل العفاريت اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_IMP",
+  "art": "Rune_01_BuffImp4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "imp"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "imp"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "imp"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "imp"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "imp"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_SPECTRE",
+  "name": "Rule of Spectre",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الأطياف اللي لك: +2 هجوم، كل الوحوش من غير الأطياف: -1 هجوم و-1 صحة، كل الأطياف اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_SPECTRE",
+  "art": "Rune_01_BuffSpectre4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "spectre"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "spectre"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "spectre"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "spectre"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "spectre"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_BOMB_OPPDMG1",
+  "name": "Bomb of Minor Damage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل الوحوش اللي لأعدائه: 5 ضرر",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_BOMB_OPPDMG1",
+  "art": "Rune_02_oppdmg1",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "damage",
+      "g": {
+       "who": "enemy"
+      },
+      "n": 5
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_OPPDMG2",
+  "name": "Bomb of Major Damage",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل الوحوش اللي لأعدائه: 8 ضرر",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_BOMB_OPPDMG2",
+  "art": "Rune_02_oppdmg2",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "damage",
+      "g": {
+       "who": "enemy"
+      },
+      "n": 8
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_OPPLIFE1",
+  "name": "Bomb of Minor Sufferance",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل الوحوش اللي لأعدائه تخسر 3 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_BOMB_OPPLIFE1",
+  "art": "Rune_02_opplife1",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "lose",
+      "g": {
+       "who": "enemy"
+      },
+      "n": 3
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_OPPLIFE2",
+  "name": "Bomb of Major Sufferance",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل الوحوش اللي لأعدائه تخسر 5 صحة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_BOMB_OPPLIFE2",
+  "art": "Rune_02_opplife2",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "lose",
+      "g": {
+       "who": "enemy"
+      },
+      "n": 5
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_SWINDLE",
+  "name": "Bomb of Enemy Swindle",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي لأعدائه تفقد كل عتادها",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_BOMB_SWINDLE",
+  "art": "Rune_02_swindle",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "unequip",
+      "g": {
+       "who": "enemy",
+       "both": true
+      },
+      "which": "all"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_GOODNEWS",
+  "name": "Bomb of Good News",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي له: يكسب القوة، كل المخلوقات (وحوش وقادة) اللي له: يكسب التجدد، كل المخلوقات (وحوش وقادة) اللي له: يكسب الحاجز السحري",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_BOMB_GOODNEWS",
+  "art": "Rune_02_good",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "afflict",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "name": "mighty"
+     },
+     {
+      "op": "afflict",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "name": "regen"
+     },
+     {
+      "op": "afflict",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "name": "shield"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_HEAL1",
+  "name": "Bomb of Minor Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي له: علاج 5",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_BOMB_HEAL1",
+  "art": "Rune_02_heal1",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "heal",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "n": 5
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_HEAL2",
+  "name": "Bomb of Major Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي له: علاج 10",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_BOMB_HEAL2",
+  "art": "Rune_02_heal2",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "heal",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "n": 10
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_PWR1",
+  "name": "Bomb of Minor Power",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي له: +2 هجوم",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_BOMB_PWR1",
+  "art": "Rune_02_power1",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "stat",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "stat": "attack",
+      "n": 2
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_PWR2",
+  "name": "Bomb of Major Power",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي له: +4 هجوم",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_BOMB_PWR2",
+  "art": "Rune_02_power2",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "stat",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "stat": "attack",
+      "n": 4
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_BADNEWS",
+  "name": "Bomb of Bad News",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي لأعدائه: يصيبه الذهول، كل المخلوقات (وحوش وقادة) اللي لأعدائه: يصيبه التقييد، كل المخلوقات (وحوش وقادة) اللي لأعدائه: يصيبه علامة الموت",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_BOMB_BADNEWS",
+  "art": "Rune_02_bad",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "afflict",
+      "g": {
+       "who": "enemy",
+       "both": true
+      },
+      "name": "stun"
+     },
+     {
+      "op": "afflict",
+      "g": {
+       "who": "enemy",
+       "both": true
+      },
+      "name": "snare"
+     },
+     {
+      "op": "afflict",
+      "g": {
+       "who": "enemy",
+       "both": true
+      },
+      "name": "deathmark"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_MOJO1",
+  "name": "Bomb of Mojo +5",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: اكسب 5 موجو",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_BOMB_MOJO1",
+  "art": "Rune_02_mojo1",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "mojo",
+      "n": 5
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_MOJO2",
+  "name": "Bomb of Mojo +8",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: اكسب 8 موجو",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_BOMB_MOJO2",
+  "art": "Rune_02_mojo2",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "mojo",
+      "n": 8
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_MOJO3",
+  "name": "Bomb of Mojo +12",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 6,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: اكسب 12 موجو",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_BOMB_MOJO3",
+  "art": "Rune_02_mojo3",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "mojo",
+      "n": 12
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_DRAW1",
+  "name": "Bomb of Cards +3",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: اسحب 3 بطاقات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_BOMB_DRAW1",
+  "art": "Rune_02_draw1",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "draw",
+      "n": 3
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_DRAW2",
+  "name": "Bomb of Cards +5",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: اسحب 5 بطاقات",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_BOMB_DRAW2",
+  "art": "Rune_02_draw2",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "draw",
+      "n": 5
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_DRAW3",
+  "name": "Bomb of Cards +7",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: اسحب 7 بطاقات",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_BOMB_DRAW3",
+  "art": "Rune_02_draw3",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "draw",
+      "n": 7
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_BOMB_REVENGE",
+  "name": "Bomb of Revenge",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "قنبلة — اللي يدمّرها ينفّذ: كل المخلوقات (وحوش وقادة) اللي له: 5 ضرر",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_BOMB_REVENGE",
+  "art": "Rune_02_revenge",
+  "effect": {
+   "bomb": {
+    "ops": [
+     {
+      "op": "damage",
+      "g": {
+       "who": "mine",
+       "both": true
+      },
+      "n": 5
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_MINOTRIX",
+  "name": "Rock of Minotrix",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Minotrix • مينوتريكس محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_MINOTRIX",
+  "art": "Rune_01_BuffMinotrix",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_minotrix"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_MINOTRIX",
+  "name": "Pebble of Minotrix",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Minotrix • مينوتريكس محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_MINOTRIX",
+  "art": "Rune_01_MBuffMinotrix",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_minotrix"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_BOOGA",
+  "name": "Rock of Booga",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Booga • بوغا محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_BOOGA",
+  "art": "Rune_01_BuffBooga",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_slime"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_BOOGA",
+  "name": "Pebble of Booga",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Booga • بوغا محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_BOOGA",
+  "art": "Rune_01_MBuffBooga",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_slime"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_TUT",
+  "name": "Rock of Tut",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Tut • توت محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_TUT",
+  "art": "Rune_01_BuffTut",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "zombie"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_TUT",
+  "name": "Pebble of Tut",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Tut • توت محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_TUT",
+  "art": "Rune_01_MBuffTut",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "zombie"
+   }
+  }
+ },
+ {
+  "id": "NR_R_RBUFF_VAMPIRE",
+  "name": "Rule of Vampire",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل مصاصي الدماء اللي لك: +2 هجوم، كل الوحوش من غير مصاصي الدماء: -1 هجوم و-1 صحة، كل مصاصي الدماء اللي للخصم: -1 هجوم و-1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_RBUFF_VAMPIRE",
+  "art": "Rune_01_BuffVampire4",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "vampire"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "vampire"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "vampire"
+     },
+     "stat": "health",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "vampire"
+     },
+     "stat": "attack",
+     "n": -1
+    },
+    {
+     "g": {
+      "who": "enemy",
+      "race": "vampire"
+     },
+     "stat": "health",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_WBUFF_VAMPIRE",
+  "name": "Word of Vampire",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل مصاصي الدماء: +2 هجوم، كل الوحوش من غير مصاصي الدماء: -1 هجوم ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_WBUFF_VAMPIRE",
+  "art": "Rune_01_BuffVampire3",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "all",
+      "race": "vampire"
+     },
+     "stat": "attack",
+     "n": 2
+    },
+    {
+     "g": {
+      "who": "all",
+      "notRace": "vampire"
+     },
+     "stat": "attack",
+     "n": -1
+    }
+   ]
+  }
+ },
+ {
   "id": "NR_R_SBUFF_VAMPIRE",
   "name": "Rune of Vampire Pumping",
   "race": "neutral",
@@ -2702,6 +6501,726 @@
      "n": 1
     }
    ]
+  }
+ },
+ {
+  "id": "NR_R_MYBUFF_VAMPIRE",
+  "name": "Rune of My Vampire Buffing",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل مصاصي الدماء اللي لك: +1 هجوم و+1 درع و+1 صحة ما دام الرون قائمًا",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MYBUFF_VAMPIRE",
+  "art": "Rune_01_MBuffVampire",
+  "effect": {
+   "auras": [
+    {
+     "g": {
+      "who": "mine",
+      "race": "vampire"
+     },
+     "stat": "attack",
+     "n": 1
+    },
+    {
+     "g": {
+      "who": "mine",
+      "race": "vampire"
+     },
+     "stat": "armor",
+     "n": 1
+    },
+    {
+     "g": {
+      "who": "mine",
+      "race": "vampire"
+     },
+     "stat": "health",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_MY_NOSMASH",
+  "name": "Rune of Runic Tranquility",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "روناتك ما تتأثر بتعاويذ تدمير الرونات",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_MY_NOSMASH",
+  "art": "Rune_01_MyNoSmash",
+  "effect": {
+   "noSmash": "mine"
+  }
+ },
+ {
+  "id": "NR_R_NOSMASH",
+  "name": "Rune of Runic Peace",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل الرونات ما تتأثر بتعاويذ تدمير الرونات",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_NOSMASH",
+  "art": "Rune_01_NoSmash",
+  "effect": {
+   "noSmash": "all"
+  }
+ },
+ {
+  "id": "NR_R_HEALTH_REAPER",
+  "name": "Rune of Health Reaping",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "قائدك يكسب 1 صحة كل ما يموت أي وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HEALTH_REAPER",
+  "art": "Rune_01_HealthReaper",
+  "effect": {
+   "deathHeal": {
+    "who": "all",
+    "n": 1
+   }
+  }
+ },
+ {
+  "id": "NR_R_MY_HEALTH_REAPER",
+  "name": "Rune of My Health Reaping",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك يكسب 2 صحة كل ما يموت وحش من وحوشك",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_MY_HEALTH_REAPER",
+  "art": "Rune_01_MyHealthReaper",
+  "effect": {
+   "deathHeal": {
+    "who": "mine",
+    "n": 2
+   }
+  }
+ },
+ {
+  "id": "NR_R_DEBOUNCE_ALL",
+  "name": "Rune of Rebound",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الوحوش ما ترجع لليد بالتعاويذ",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_DEBOUNCE_ALL",
+  "art": "Rune_01_DebounceAll",
+  "effect": {
+   "debounce": "all"
+  }
+ },
+ {
+  "id": "NR_R_DEBOUNCE_THIERS",
+  "name": "Rune of Sly Rebound",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوش الخصم ما ترجع لليد بالتعاويذ",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_DEBOUNCE_THIERS",
+  "art": "Rune_01_DebounceEnemy",
+  "effect": {
+   "debounce": "enemy"
+  }
+ },
+ {
+  "id": "NR_R_DEBOUNCE_MINE",
+  "name": "Rune of My Rebound",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "وحوشك ما ترجع لليد بالتعاويذ",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_DEBOUNCE_MINE",
+  "art": "Rune_01_DebounceMine",
+  "effect": {
+   "debounce": "mine"
+  }
+ },
+ {
+  "id": "NR_R_DISCARD_PENALTY",
+  "name": "Rune of Discard Penalty",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل ما أحد يخليك ترمي بطاقة، قائده يخسر 3 صحة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_DISCARD_PENALTY",
+  "art": "Rune_01_Undiscard",
+  "effect": {
+   "discardPenalty": 3
+  }
+ },
+ {
+  "id": "NR_R_HEX",
+  "name": "Rune of Hexed Monsters",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل الوحوش تخسر 1 صحة في بداية دور صاحبها، قائدك تخسر 2 صحة في بداية دورك",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_HEX",
+  "art": "Rune_01_Hex",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "lose",
+     "when": "any",
+     "who": "all",
+     "heroes": false,
+     "n": 1
+    },
+    {
+     "op": "lose",
+     "when": "mine",
+     "who": "mine",
+     "heroes": true,
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_CURSE",
+  "name": "Rune of Cursed Monsters",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الوحوش تاخذ 1 ضرر في بداية دور صاحبها، قائدك تاخذ 2 ضرر في بداية دورك",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_CURSE",
+  "art": "Rune_01_Curse",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "damage",
+     "when": "any",
+     "who": "all",
+     "heroes": false,
+     "n": 1
+    },
+    {
+     "op": "damage",
+     "when": "mine",
+     "who": "mine",
+     "heroes": true,
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_SLYHEX",
+  "name": "Rune of Sly Hexed Monsters",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 6,
+  "text": "الوحوش اللي للخصم تخسر 1 صحة في بداية دور صاحبها، قائدك تخسر 5 صحة في بداية دورك",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_SLYHEX",
+  "art": "Rune_01_SlyHex",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "lose",
+     "when": "any",
+     "who": "enemy",
+     "heroes": false,
+     "n": 1
+    },
+    {
+     "op": "lose",
+     "when": "mine",
+     "who": "mine",
+     "heroes": true,
+     "n": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_SLYCURSE",
+  "name": "Rune of Sly Cursed Monsters",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "الوحوش اللي للخصم تاخذ 1 ضرر في بداية دور صاحبها، قائدك تاخذ 5 ضرر في بداية دورك",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_SLYCURSE",
+  "art": "Rune_01_SlyCurse",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "damage",
+     "when": "any",
+     "who": "enemy",
+     "heroes": false,
+     "n": 1
+    },
+    {
+     "op": "damage",
+     "when": "mine",
+     "who": "mine",
+     "heroes": true,
+     "n": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_HERO_HEX",
+  "name": "Rune of Hexed Heroes",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل القادة تخسر 1 صحة في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_HERO_HEX",
+  "art": "Rune_01_HeroHex",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "lose",
+     "when": "any",
+     "who": "all",
+     "heroes": true,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_HERO_CURSE",
+  "name": "Rune of Cursed Heroes",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل القادة تاخذ 1 ضرر في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_HERO_CURSE",
+  "art": "Rune_01_HeroCurse",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "damage",
+     "when": "any",
+     "who": "all",
+     "heroes": true,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_SLYHERO_HEX",
+  "name": "Rune of Sly Hexed Heroes",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "القادة اللي للخصم تخسر 1 صحة في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_SLYHERO_HEX",
+  "art": "Rune_01_SlyHeroHex",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "lose",
+     "when": "any",
+     "who": "enemy",
+     "heroes": true,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_SLYHERO_CURSE",
+  "name": "Rune of Sly Cursed Heroes",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "القادة اللي للخصم تاخذ 1 ضرر في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_SLYHERO_CURSE",
+  "art": "Rune_01_SlyHeroCurse",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "damage",
+     "when": "any",
+     "who": "enemy",
+     "heroes": true,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_HEALING",
+  "name": "Rune of Major Monster Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "كل الوحوش تكسب 2 صحة في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HEALING",
+  "art": "Rune_01_Healing",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "any",
+     "who": "all",
+     "heroes": false,
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_RESTORE",
+  "name": "Rune of Minor Monster Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "كل الوحوش تكسب 1 صحة في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_RESTORE",
+  "art": "Rune_01_Restore",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "any",
+     "who": "all",
+     "heroes": false,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_MYHEALING",
+  "name": "Rune of Major My Monster Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "وحوشك تكسب 2 صحة في بداية دورك",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_MYHEALING",
+  "art": "Rune_01_MyHealing",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "mine",
+     "who": "mine",
+     "heroes": false,
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_MYRESTORE",
+  "name": "Rune of Minor My Monster Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "وحوشك تكسب 1 صحة في بداية دورك",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_MYRESTORE",
+  "art": "Rune_01_MyRestore",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "mine",
+     "who": "mine",
+     "heroes": false,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_HERO_HEALING",
+  "name": "Rune of Major Hero Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "كل القادة تكسب 2 صحة في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_HERO_HEALING",
+  "art": "Rune_01_HeroHealing",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "any",
+     "who": "all",
+     "heroes": true,
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_HERO_RESTORE",
+  "name": "Rune of Minor Hero Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "كل القادة تكسب 1 صحة في بداية دور صاحبها",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "R_HERO_RESTORE",
+  "art": "Rune_01_HeroRestore",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "any",
+     "who": "all",
+     "heroes": true,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_MYHERO_HEALING",
+  "name": "Rune of Major My Hero Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "قائدك تكسب 2 صحة في بداية دورك",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_MYHERO_HEALING",
+  "art": "Rune_01_MyHeroHealing",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "mine",
+     "who": "mine",
+     "heroes": true,
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_MYHERO_RESTORE",
+  "name": "Rune of Minor My Hero Boon",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 3,
+  "text": "قائدك تكسب 1 صحة في بداية دورك",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MYHERO_RESTORE",
+  "art": "Rune_01_MyHeroRestore",
+  "effect": {
+   "upkeep": [
+    {
+     "op": "heal",
+     "when": "mine",
+     "who": "mine",
+     "heroes": true,
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NR_R_GRIMREAPER",
+  "name": "Rune of the Grim Reaper",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 5,
+  "text": "كل ما تقتل وحش: تسحب بطاقة وتكسب 1 موجو وقائدك يكسب 1 صحة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "R_GRIMREAPER",
+  "art": "Rune_01_GrimReaper",
+  "effect": {
+   "killDraw": 1,
+   "killMojo": 1,
+   "killHeal": 1
+  }
+ },
+ {
+  "id": "NR_R_NEGLECT",
+  "name": "Rune of Neglect",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 4,
+  "text": "دروع الكل ما تتجدد في بداية الدور",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_NEGLECT",
+  "art": "Rune_01_Neglect",
+  "effect": {
+   "neglect": "all"
+  }
+ },
+ {
+  "id": "NR_R_HB_OCULARUS",
+  "name": "Rock of Ocularus",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Ocularus • أوكيولاروس محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_OCULARUS",
+  "art": "Rune_01_BuffOcularus",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_artil1"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_KARGADAN",
+  "name": "Rock of Kargadan",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Kargadan • كارغادان محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_KARGADAN",
+  "art": "Rune_01_BuffKargadan",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "hero_artil2"
+   }
+  }
+ },
+ {
+  "id": "NR_R_HB_GRUMSNIK",
+  "name": "Rock of Grumsnik",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 2,
+  "text": "قائدك إذا كان Grumsnik • غرومسنيك محمي من الحالات السيئة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "R_HB_GRUMSNIK",
+  "art": "Rune_01_BuffGrumsnik",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "bad"
+    ],
+    "hero": "orc"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_OCULARUS",
+  "name": "Pebble of Ocularus",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Ocularus • أوكيولاروس محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_OCULARUS",
+  "art": "Rune_01_MBuffOcularus",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_artil1"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_KARGADAN",
+  "name": "Pebble of Kargadan",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Kargadan • كارغادان محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_KARGADAN",
+  "art": "Rune_01_MBuffKargadan",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "hero_artil2"
+   }
+  }
+ },
+ {
+  "id": "NR_R_MHB_GRUMSNIK",
+  "name": "Pebble of Grumsnik",
+  "race": "neutral",
+  "type": "rune",
+  "cost": 1,
+  "text": "قائدك إذا كان Grumsnik • غرومسنيك محمي من كل الحالات",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "R_MHB_GRUMSNIK",
+  "art": "Rune_01_MBuffGrumsnik",
+  "effect": {
+   "noAff": {
+    "who": "mine",
+    "names": [
+     "all"
+    ],
+    "hero": "orc"
+   }
   }
  },
  {
@@ -3264,6 +7783,54 @@
   }
  },
  {
+  "id": "NS_SP_SEPARATE",
+  "name": "Sly Strip",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل المخلوقات (وحوش وقادة) اللي للخصم تفقد دروعها وتروسها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SEPARATE",
+  "art": "spell_01_lose_armour",
+  "effect": {
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "enemy",
+      "both": true
+     },
+     "which": "defence"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_CORROSION",
+  "name": "Amnesty",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل المخلوقات (وحوش وقادة) تفقد أسلحتها",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_CORROSION",
+  "art": "spell_01_lose_weapon",
+  "effect": {
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "all",
+      "both": true
+     },
+     "which": "weapon"
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SP_CRUMBLE",
   "name": "Sly Amnesty",
   "race": "neutral",
@@ -3282,6 +7849,27 @@
       "who": "enemy"
      },
      "which": "weapon"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_TORNADO",
+  "name": "Tornado",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "انقل وحش عشوائي للخصم لمكان عشوائي يبعد 2 خانات",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_TORNADO",
+  "art": "spell_tornado",
+  "effect": {
+   "ops": [
+    {
+     "op": "moveMonster",
+     "min": 2,
+     "max": 2
     }
    ]
   }
@@ -3394,6 +7982,30 @@
      "op": "tornado",
      "min": 2,
      "max": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SWINDLE",
+  "name": "Hero Swindle",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "قائد الخصم تفقد كل عتادها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SWINDLE",
+  "art": "spell_01_lose_weapon",
+  "effect": {
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "enemy",
+      "heroes": true
+     },
+     "which": "all"
     }
    ]
   }
@@ -4105,6 +8717,186 @@
   }
  },
  {
+  "id": "NS_SP_RUNEFULLRAND",
+  "name": "All Change",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "وزّع الرونات بين اللاعبين عشوائيًا",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_RUNEFULLRAND",
+  "art": "spell_swaprunes",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeOwners",
+     "which": "random"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNESLEFT",
+  "name": "Runes Clockwise",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "بدّل الرونات بينك وبين الخصم",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_RUNESLEFT",
+  "art": "spell_swaprunes",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeOwners",
+     "which": "swap"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNESRIGHT",
+  "name": "Runes Counter Clockwise",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "بدّل الرونات بينك وبين الخصم",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_RUNESRIGHT",
+  "art": "spell_swaprunes",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeOwners",
+     "which": "swap"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_NEXTSPELL",
+  "name": "Draw Next Spell",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "اسحب أول تعويذة في مجموعتك (إذا فيه)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_NEXTSPELL",
+  "art": "spell_nextspell",
+  "effect": {
+   "ops": [
+    {
+     "op": "drawKind",
+     "which": "spell"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_NEXTRUNE",
+  "name": "Draw Next Rune",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "اسحب أول رون في مجموعتك (إذا فيه)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_NEXTRUNE",
+  "art": "spell_nextspell",
+  "effect": {
+   "ops": [
+    {
+     "op": "drawKind",
+     "which": "rune"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_NEXTMONSTER",
+  "name": "Draw Next Monster",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "اسحب أول وحش في مجموعتك (إذا فيه)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_NEXTMONSTER",
+  "art": "spell_nextspell",
+  "effect": {
+   "ops": [
+    {
+     "op": "drawKind",
+     "which": "unit"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_NEXTWEAPON",
+  "name": "Draw Next Weapon",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "اسحب أول سلاح في مجموعتك (إذا فيه)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_NEXTWEAPON",
+  "art": "spell_nextspell",
+  "effect": {
+   "ops": [
+    {
+     "op": "drawKind",
+     "which": "weapon"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_NEXTARMOUR",
+  "name": "Draw Next Armour",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "اسحب أول درع في مجموعتك (إذا فيه)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_NEXTARMOUR",
+  "art": "spell_nextspell",
+  "effect": {
+   "ops": [
+    {
+     "op": "drawKind",
+     "which": "armor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_NEXTSHIELD",
+  "name": "Draw Next Shield",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "اسحب أول ترس في مجموعتك (إذا فيه)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_NEXTSHIELD",
+  "art": "spell_nextspell",
+  "effect": {
+   "ops": [
+    {
+     "op": "drawKind",
+     "which": "shield"
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SP_MINIHEALMYTEAM",
   "name": "Mini Blessing",
   "race": "neutral",
@@ -4123,6 +8915,771 @@
       "who": "mine"
      },
      "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ALLDISC_RUNES",
+  "name": "Discard Runes",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل اللاعبين يرمي كل الرونات من يده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_ALLDISC_RUNES",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "all",
+     "which": "rune"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ALLDISC_SPELLS",
+  "name": "Discard Spells",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل اللاعبين يرمي كل التعاويذ من يده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_ALLDISC_SPELLS",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "all",
+     "which": "spell"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ALLDISC_MONSTERS",
+  "name": "Discard Monsters",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل اللاعبين يرمي كل الوحوش من يده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_ALLDISC_MONSTERS",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "all",
+     "which": "unit"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ALLDISC_EQUIPMENT",
+  "name": "Discard Equipment",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل اللاعبين يرمي كل العتاد من يده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_ALLDISC_EQUIPMENT",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "all",
+     "which": "equip"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ALLDISC_ALL",
+  "name": "Discard All",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل اللاعبين يرمي يده كاملة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_ALLDISC_ALL",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "all",
+     "which": "all"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYDISC_RUNES",
+  "name": "Sly Discard Runes",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "الخصم يرمي كل الرونات من يده، وقائدك يخسر 1 صحة عن كل بطاقة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYDISC_RUNES",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "enemy",
+     "which": "rune",
+     "selfPer": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYDISC_SPELLS",
+  "name": "Sly Discard Spells",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "الخصم يرمي كل التعاويذ من يده، وقائدك يخسر 1 صحة عن كل بطاقة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYDISC_SPELLS",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "enemy",
+     "which": "spell",
+     "selfPer": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYDISC_MONSTERS",
+  "name": "Sly Discard Monsters",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "الخصم يرمي كل الوحوش من يده، وقائدك يخسر 1 صحة عن كل بطاقة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYDISC_MONSTERS",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "enemy",
+     "which": "unit",
+     "selfPer": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYDISC_EQUIPMENT",
+  "name": "Sly Discard Equipment",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "الخصم يرمي كل العتاد من يده، وقائدك يخسر 1 صحة عن كل بطاقة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYDISC_EQUIPMENT",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "enemy",
+     "which": "equip",
+     "selfPer": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYDISC_ALL",
+  "name": "Sly Discard All",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 9,
+  "text": "الخصم يرمي يده كاملة، وقائدك يخسر 1 صحة عن كل بطاقة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_SLYDISC_ALL",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "enemy",
+     "which": "all",
+     "selfPer": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_DISCARD1",
+  "name": "Discard 1",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل اللاعبين يرمي 1 بطاقة عشوائية",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_DISCARD1",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "all",
+     "which": "random",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_DISCARD3",
+  "name": "Discard 3",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل اللاعبين يرمي 3 بطاقات عشوائية",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_DISCARD3",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "all",
+     "which": "random",
+     "n": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYDISCARD1",
+  "name": "Sly Discard 1",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "الخصم يرمي 1 بطاقة عشوائية، وقائدك يخسر 1 صحة عن كل بطاقة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYDISCARD1",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "enemy",
+     "which": "random",
+     "n": 1,
+     "selfPer": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYDISCARD3",
+  "name": "Sly Discard 3",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "الخصم يرمي 3 بطاقات عشوائية، وقائدك يخسر 1 صحة عن كل بطاقة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYDISCARD3",
+  "art": "spell_discard",
+  "effect": {
+   "ops": [
+    {
+     "op": "discard",
+     "who": "enemy",
+     "which": "random",
+     "n": 3,
+     "selfPer": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_STUN",
+  "name": "All Dazed",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يصيبه الذهول",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_STUN",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "stun"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_MIGHTY",
+  "name": "All Mighty",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يكسب القوة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_MIGHTY",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "mighty"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_BERSERK",
+  "name": "All Berserk",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يكسب الهياج",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_BERSERK",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "berserk"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_SNARED",
+  "name": "All Snared",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يصيبه التقييد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_SNARED",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "snare"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_REGEN",
+  "name": "All Regen",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يكسب التجدد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_REGEN",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "regen"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_DEATHMARK",
+  "name": "All Death Mark",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يصيبه علامة الموت",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_DEATHMARK",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "deathmark"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_ICEBLOCK",
+  "name": "All Ice Block",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يصيبه التجميد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_ICEBLOCK",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "ice"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_FLAME",
+  "name": "All Flame",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يصيبه الاشتعال",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_M_AFF_FLAME",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "flame"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_VENGEANCE",
+  "name": "All Vengeance",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يصيبه الانتقام",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_VENGEANCE",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "vengeance"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_M_AFF_MAGICSHIELD",
+  "name": "All Shield",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الوحوش: يكسب الحاجز السحري",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_M_AFF_MAGICSHIELD",
+  "art": "spell_afflict_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "all"
+     },
+     "name": "shield"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_STUN",
+  "name": "Sly Dazed",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يصيبه الذهول",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_STUN",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "stun"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_MIGHTY",
+  "name": "Sly Mighty",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يكسب القوة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_MIGHTY",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "mighty"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_BERSERK",
+  "name": "Sly Berserk",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يكسب الهياج",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_BERSERK",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "berserk"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_SNARED",
+  "name": "Sly Snared",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يصيبه التقييد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_SNARED",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "snare"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_REGEN",
+  "name": "Sly Regen",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يكسب التجدد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_REGEN",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "regen"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_DEATHMARK",
+  "name": "Sly Death Mark",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يصيبه علامة الموت",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_DEATHMARK",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "deathmark"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_ICEBLOCK",
+  "name": "Sly Ice Block",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يصيبه التجميد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_ICEBLOCK",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "ice"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_FLAME",
+  "name": "Sly Flame",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يصيبه الاشتعال",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_FLAME",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "flame"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_VENGEANCE",
+  "name": "Sly Vengeance",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يصيبه الانتقام",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_VENGEANCE",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "vengeance"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SM_AFF_MAGICSHIELD",
+  "name": "Sly Shield",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الوحوش اللي للخصم: يكسب الحاجز السحري",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SM_AFF_MAGICSHIELD",
+  "art": "spell_afflict_sly_monsters",
+  "effect": {
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "enemy"
+     },
+     "name": "shield"
     }
    ]
   }
@@ -6260,6 +11817,466 @@
   }
  },
  {
+  "id": "NS_SP_KILL_AFF_STUN",
+  "name": "Dazed Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها الذهول",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_STUN",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "stun"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_MIGHTY",
+  "name": "Mighty Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها القوة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_MIGHTY",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "mighty"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_BERSERK",
+  "name": "Berserk Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها الهياج",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_BERSERK",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "berserk"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_SNARED",
+  "name": "Snared Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها التقييد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_SNARED",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "snare"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_REGEN",
+  "name": "Regen Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها التجدد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_REGEN",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "regen"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_DEATHMARK",
+  "name": "Deathmark Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها علامة الموت",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_DEATHMARK",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "deathmark"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_FLAME",
+  "name": "Flame Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها الاشتعال",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_FLAME",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "flame"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_VENGEANCE",
+  "name": "Vengeance Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها الانتقام",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_VENGEANCE",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "vengeance"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_MAGICSHIELD",
+  "name": "Shield Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها الحاجز السحري",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_MAGICSHIELD",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "shield"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_ALL",
+  "name": "Afflicted Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "دمّر كل الوحوش المصابة بأي حالة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_KILL_AFF_ALL",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "any"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_STUN",
+  "name": "Sly Dazed Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها الذهول",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_STUN",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "stun"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_MIGHTY",
+  "name": "Sly Mighty Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها القوة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_MIGHTY",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "mighty"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_BERSERK",
+  "name": "Sly Berserk Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها الهياج",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_BERSERK",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "berserk"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_SNARED",
+  "name": "Sly Snared Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها التقييد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_SNARED",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "snare"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_REGEN",
+  "name": "Sly Regen Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها التجدد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_REGEN",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "regen"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_DEATHMARK",
+  "name": "Sly Deathmark Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها علامة الموت",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_DEATHMARK",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "deathmark"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_FLAME",
+  "name": "Sly Flame Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها الاشتعال",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_FLAME",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "flame"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_VENGEANCE",
+  "name": "Sly Vengeance Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها الانتقام",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_VENGEANCE",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "vengeance"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_MAGICSHIELD",
+  "name": "Sly Shield Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها الحاجز السحري",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_MAGICSHIELD",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "shield"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_ALL",
+  "name": "Sly Afflicted Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 9,
+  "text": "دمّر كل الوحوش اللي للخصم المصابة بأي حالة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_SLYKILL_AFF_ALL",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "any"
+     }
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SP_SHATTER_IMP",
   "name": "Shatter all Imps",
   "race": "neutral",
@@ -6592,6 +12609,325 @@
   }
  },
  {
+  "id": "NS_SP_FIZZLE",
+  "name": "Fizzle",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 0,
+  "text": "ما يسوي شي",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_FIZZLE",
+  "art": "spell_refresh",
+  "effect": {
+   "ops": [],
+   "blank": true
+  }
+ },
+ {
+  "id": "NS_SP_WISH_MONSTER",
+  "name": "Monstrous Desire",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "خذ وحش عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_WISH_MONSTER",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "unit"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISH_SPELL",
+  "name": "Mind's Desire",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "خذ تعويذة عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_WISH_SPELL",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "spell"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISH_RUNE",
+  "name": "Runic Desire",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "خذ رون عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_WISH_RUNE",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "rune"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISH_ARMOUR",
+  "name": "Armorial Desire",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "خذ درع عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_WISH_ARMOUR",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "armor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISH_SHIELD",
+  "name": "Deflective Desire",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "خذ ترس عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_WISH_SHIELD",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "shield"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISH_WEAPON",
+  "name": "Violent Desire",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "خذ سلاح عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_WISH_WEAPON",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "weapon"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_MONSTER",
+  "name": "Monstrous Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ وحش عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_MONSTER",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "unit"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_SPELL",
+  "name": "Mind's Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ تعويذة عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_SPELL",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "spell"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_RUNE",
+  "name": "Runic Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ رون عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_RUNE",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "rune"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_ARMOUR",
+  "name": "Armorial Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ درع عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_ARMOUR",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "armor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_SHIELD",
+  "name": "Deflective Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ ترس عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_SHIELD",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "shield"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_WEAPON_ANY",
+  "name": "Violent Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ سلاح عشوائي من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_WEAPON_ANY",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "weapon"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_WEAPON_WARRIOR",
+  "name": "Violent Warrior Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ سلاح عشوائي لـالمحاربين من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_WEAPON_WARRIOR",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "weapon",
+     "name": "warrior"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_WEAPON_ARCHER",
+  "name": "Violent Archer Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ سلاح عشوائي لـالرماة من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_WEAPON_ARCHER",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "weapon",
+     "name": "archer"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_WISHRAND_WEAPON_MAGE",
+  "name": "Violent Mage Musing",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "خذ سلاح عشوائي لـالسحرة من كل بطاقات اللعبة لليد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_WISHRAND_WEAPON_MAGE",
+  "art": "spell_wish",
+  "effect": {
+   "ops": [
+    {
+     "op": "wish",
+     "which": "weapon",
+     "name": "mage"
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SP_MOJO_6FOR3",
   "name": "Mojo 6 for 3",
   "race": "neutral",
@@ -6883,6 +13219,46 @@
   }
  },
  {
+  "id": "NS_SP_MOJO_DOUBLER",
+  "name": "Mojo Doubler",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "ضاعف الموجو اللي باقي معك، وقائدك يخسر صحة بقدر الموجو المكتسب",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_MOJO_DOUBLER",
+  "art": "spell_mojo_boost",
+  "effect": {
+   "ops": [
+    {
+     "op": "mojoMult",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_MOJO_TRIPLER",
+  "name": "Mojo Tripler",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "ثلّث الموجو اللي باقي معك، وقائدك يخسر صحة بقدر الموجو المكتسب",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_MOJO_TRIPLER",
+  "art": "spell_mojo_boost",
+  "effect": {
+   "ops": [
+    {
+     "op": "mojoMult",
+     "n": 3
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SP_HERO_HEALTH_3",
   "name": "Mini Hero Boon",
   "race": "neutral",
@@ -6958,6 +13334,48 @@
     {
      "op": "heroHeal",
      "n": 12
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_HERO_HEALTH_M1",
+  "name": "Hero Mojo Boon",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "قائدك يكسب 1 صحة عن كل موجو باقي (حدها 8 موجو)",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_HERO_HEALTH_M1",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "heroPerMojo",
+     "n": 1,
+     "max": 8
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_HERO_HEALTH_M2",
+  "name": "Great Hero Mojo Boon",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "قائدك يكسب 2 صحة عن كل موجو باقي (حدها 12 موجو)",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_HERO_HEALTH_M2",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "heroPerMojo",
+     "n": 2,
+     "max": 12
     }
    ]
   }
@@ -7599,6 +14017,29 @@
      "g": {
       "who": "mine",
       "race": "lizard"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCE_YOU_DWARF",
+  "name": "Bounce my Dwarves",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الأقزام اللي لك ترجع ليد صاحبها مع عتادها",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_BOUNCE_YOU_DWARF",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "mine",
+      "race": "dwarf"
      }
     }
    ]
@@ -8861,6 +15302,297 @@
      },
      "n": 3,
      "heroPerDeath": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ABSORB_YOU_1",
+  "name": "Absorb",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "قائدك يمتص 1 صحة من كل وحش لك",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_ABSORB_YOU_1",
+  "art": "spell_absorb",
+  "effect": {
+   "ops": [
+    {
+     "op": "absorb",
+     "g": {
+      "who": "mine"
+     },
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ABSORB_YOU_2",
+  "name": "Great Absorb",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "قائدك يمتص 2 صحة من كل وحش لك",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_ABSORB_YOU_2",
+  "art": "spell_absorb",
+  "effect": {
+   "ops": [
+    {
+     "op": "absorb",
+     "g": {
+      "who": "mine"
+     },
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_ABSORB_YOU_3",
+  "name": "Epic Absorb",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "قائدك يمتص 3 صحة من كل وحش لك",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_ABSORB_YOU_3",
+  "art": "spell_absorb",
+  "effect": {
+   "ops": [
+    {
+     "op": "absorb",
+     "g": {
+      "who": "mine"
+     },
+     "n": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SPIKE1",
+  "name": "Minor Spike",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل وحش لك يسحب 2 صحة من قائدك ويكسب +1 هجوم",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_SPIKE1",
+  "art": "spell_spike",
+  "effect": {
+   "ops": [
+    {
+     "op": "spike",
+     "g": {
+      "who": "mine"
+     },
+     "n": 2,
+     "gain": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SPIKE2",
+  "name": "Major Spike",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل وحش لك يسحب 1 صحة من قائدك ويكسب +1 هجوم",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_SPIKE2",
+  "art": "spell_spike",
+  "effect": {
+   "ops": [
+    {
+     "op": "spike",
+     "g": {
+      "who": "mine"
+     },
+     "n": 1,
+     "gain": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SPIKE3",
+  "name": "Mega Spike",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل وحش لك يسحب 3 صحة من قائدك ويكسب +2 هجوم",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SPIKE3",
+  "art": "spell_spike",
+  "effect": {
+   "ops": [
+    {
+     "op": "spike",
+     "g": {
+      "who": "mine"
+     },
+     "n": 3,
+     "gain": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNE_MUNGE1",
+  "name": "Rune Leveller",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "كل الرونات صحتها تصير 1",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_RUNE_MUNGE1",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeSet",
+     "who": "all",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNE_MUNGE2",
+  "name": "Sly Rune Leveller",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 9,
+  "text": "كل رونات الخصم صحتها تصير 1",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_RUNE_MUNGE2",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeSet",
+     "who": "enemy",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNE_MUNGE3",
+  "name": "Rune Boon",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل روناتك: +10 صحة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_RUNE_MUNGE3",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeSet",
+     "who": "mine",
+     "which": "add",
+     "n": 10
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNE_MUNGE4",
+  "name": "All Rune Boon",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الرونات: +10 صحة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_RUNE_MUNGE4",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeSet",
+     "who": "all",
+     "which": "add",
+     "n": 10
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNE_MUNGE5",
+  "name": "Great Rune Boon",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "كل روناتك: +25 صحة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_RUNE_MUNGE5",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeSet",
+     "who": "mine",
+     "which": "add",
+     "n": 25
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_RUNE_MUNGE6",
+  "name": "All Great Rune Boon",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل الرونات: +25 صحة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_RUNE_MUNGE6",
+  "art": "spell_01_heal",
+  "effect": {
+   "ops": [
+    {
+     "op": "runeSet",
+     "who": "all",
+     "which": "add",
+     "n": 25
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_MYRUNESMASH",
+  "name": "My Rune Smash",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "دمّر كل روناتك",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SP_MYRUNESMASH",
+  "art": "spell_rune_smash",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroyRunes",
+     "who": "mine"
     }
    ]
   }
@@ -10850,6 +17582,98 @@
   }
  },
  {
+  "id": "NS_SP_KILLMONS_BIG",
+  "name": "Survival of the Unfittest",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي صحتها 8 أو أكثر",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILLMONS_BIG",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "minHealth": 8
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILLMONS_SMALL",
+  "name": "Survival of the Fittest",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي صحتها 2 أو أقل",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILLMONS_SMALL",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "maxHealth": 2
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_KILL_AFF_ICEBLOCK",
+  "name": "Ice Block Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش اللي عليها التجميد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_KILL_AFF_ICEBLOCK",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "aff": "ice"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SLYKILL_AFF_ICEBLOCK",
+  "name": "Sly Ice Block Purge",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 8,
+  "text": "دمّر كل الوحوش اللي للخصم اللي عليها التجميد",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SLYKILL_AFF_ICEBLOCK",
+  "art": "spell_01_kill_all",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "enemy",
+      "aff": "ice"
+     }
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SP_HEALMYART",
   "name": "Artillery Boon",
   "race": "neutral",
@@ -11110,6 +17934,124 @@
   }
  },
  {
+  "id": "NS_SPT_TERMINATE",
+  "name": "Exterminate",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "دمّر الهدف",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SPT_TERMINATE",
+  "art": "spell_destroy",
+  "effect": {
+   "target": "enemy",
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "target"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_BOUNCE",
+  "name": "Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف ترجع ليد صاحبها مع عتادها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SPT_BOUNCE",
+  "art": "spell_bounce",
+  "effect": {
+   "target": "enemy",
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "target"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_DISMANTLE",
+  "name": "Strip",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش تفقد دروعها وتروسها",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_DISMANTLE",
+  "art": "spell_01_lose_armour",
+  "effect": {
+   "target": "enemy",
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "target"
+     },
+     "which": "defence"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CORROSION",
+  "name": "Amnesty",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل وحوش الخصم تفقد أسلحتها",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_CORROSION",
+  "art": "spell_01_lose_weapon",
+  "effect": {
+   "target": "enemy",
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "target"
+     },
+     "which": "weapon"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_DENUDE",
+  "name": "Denude",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف تفقد كل عتادها",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SPT_DENUDE",
+  "art": "spell_01_lose_weapon",
+  "effect": {
+   "target": "enemy",
+   "ops": [
+    {
+     "op": "unequip",
+     "g": {
+      "who": "target"
+     },
+     "which": "all"
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SPT_MAFF_STUN",
   "name": "Dazed Monster",
   "race": "neutral",
@@ -11351,6 +18293,486 @@
   }
  },
  {
+  "id": "NS_SPT_HAFF_STUN",
+  "name": "Dazed Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائد الخصم): يصيبه الذهول",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_STUN",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "enemyHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "stun"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_MIGHTY",
+  "name": "Mighty Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائدك): يكسب القوة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_MIGHTY",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "mineHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "mighty"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_BERSERK",
+  "name": "Berserk Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائدك): يكسب الهياج",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_BERSERK",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "mineHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "berserk"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_SNARED",
+  "name": "Snared Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائد الخصم): يصيبه التقييد",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_SNARED",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "enemyHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "snare"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_REGEN",
+  "name": "Regen Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائدك): يكسب التجدد",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_REGEN",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "mineHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "regen"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_DEATHMARK",
+  "name": "Death Mark Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائد الخصم): يصيبه علامة الموت",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_DEATHMARK",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "enemyHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "deathmark"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_ICEBLOCK",
+  "name": "Ice Block Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائد الخصم): يصيبه التجميد",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_ICEBLOCK",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "enemyHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "ice"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_FLAME",
+  "name": "Flame Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائد الخصم): يصيبه الاشتعال",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_FLAME",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "enemyHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "flame"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_VENGEANCE",
+  "name": "Vengeance Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائدك): يكسب الانتقام",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_VENGEANCE",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "mineHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "vengeance"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_HAFF_MAGICSHIELD",
+  "name": "Shield Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (قائدك): يكسب الحاجز السحري",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_HAFF_MAGICSHIELD",
+  "art": "spell_afflict_heroes",
+  "effect": {
+   "target": "mineHero",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "shield"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_STUN",
+  "name": "Dazed Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق للخصم): يصيبه الذهول",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_STUN",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "enemyAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "stun"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_MIGHTY",
+  "name": "Mighty Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق لك): يكسب القوة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_MIGHTY",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "mineAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "mighty"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_BERSERK",
+  "name": "Berserk Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق لك): يكسب الهياج",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_BERSERK",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "mineAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "berserk"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_SNARED",
+  "name": "Snared Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق للخصم): يصيبه التقييد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_SNARED",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "enemyAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "snare"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_REGEN",
+  "name": "Regen Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق لك): يكسب التجدد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_REGEN",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "mineAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "regen"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_DEATHMARK",
+  "name": "Death Mark Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق للخصم): يصيبه علامة الموت",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_DEATHMARK",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "enemyAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "deathmark"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_ICEBLOCK",
+  "name": "Ice Block Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق للخصم): يصيبه التجميد",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_ICEBLOCK",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "enemyAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "ice"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_FLAME",
+  "name": "Flame Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق للخصم): يصيبه الاشتعال",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_FLAME",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "enemyAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "flame"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_VENGEANCE",
+  "name": "Vengeance Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق لك): يكسب الانتقام",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_VENGEANCE",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "mineAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "vengeance"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_CAFF_MAGICSHIELD",
+  "name": "Shield Creature",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف (مخلوق لك): يكسب الحاجز السحري",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_CAFF_MAGICSHIELD",
+  "art": "spell_afflict_creatures",
+  "effect": {
+   "target": "mineAny",
+   "ops": [
+    {
+     "op": "afflict",
+     "g": {
+      "who": "target"
+     },
+     "name": "shield"
+    }
+   ]
+  }
+ },
+ {
   "id": "NS_SPT_HEAL1",
   "name": "Boon",
   "race": "neutral",
@@ -11396,6 +18818,121 @@
      },
      "stat": "health",
      "n": 10
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_SMASH",
+  "name": "Smash",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 4,
+  "text": "دمّر الرون المستهدف",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SPT_SMASH",
+  "art": "spell_rune_smash",
+  "effect": {
+   "target": "rune",
+   "ops": [
+    {
+     "op": "smashRune"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_2NDWIND",
+  "name": "Rejuvenate",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 6,
+  "text": "الهدف تتحرك وتهاجم مرة ثانية هالدور",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SPT_2NDWIND",
+  "art": "spell_refresh",
+  "effect": {
+   "target": "mine",
+   "ops": [
+    {
+     "op": "refresh",
+     "g": {
+      "who": "target"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_SLYCURE",
+  "name": "Cure",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (مخلوق لك) يتخلص من كل الحالات السيئة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_SLYCURE",
+  "art": "spell_cure",
+  "effect": {
+   "target": "mineAny",
+   "ops": [
+    {
+     "op": "cleanse",
+     "g": {
+      "who": "target"
+     },
+     "which": "bad"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_UNCURE",
+  "name": "Deny",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (مخلوق للخصم) يتخلص من كل الحالات الجيدة",
+  "keywords": [],
+  "rarity": "C",
+  "nativeTag": "SPT_UNCURE",
+  "art": "spell_afflict_deny",
+  "effect": {
+   "target": "enemyAny",
+   "ops": [
+    {
+     "op": "cleanse",
+     "g": {
+      "who": "target"
+     },
+     "which": "good"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_SHATTER",
+  "name": "Shatter",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "الهدف (أي مخلوق) يتخلص من كل الحالات",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SPT_SHATTER",
+  "art": "spell_shatter",
+  "effect": {
+   "target": "any",
+   "ops": [
+    {
+     "op": "cleanse",
+     "g": {
+      "who": "target"
+     },
+     "which": "all"
     }
    ]
   }
@@ -11467,6 +19004,797 @@
      "g": {
       "who": "target"
      },
+     "n": 3
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_ABSORB",
+  "name": "Absorb",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "قائدك يكسب صحة بقدر صحة الهدف",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SPT_ABSORB",
+  "art": "spell_absorb",
+  "effect": {
+   "target": "mine",
+   "ops": [
+    {
+     "op": "absorb",
+     "g": {
+      "who": "target"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_SPIKE",
+  "name": "Spike",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "الهدف يسحب 5 صحة من قائدك ويكسب +5 هجوم",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SPT_SPIKE",
+  "art": "spell_spike",
+  "effect": {
+   "target": "mine",
+   "ops": [
+    {
+     "op": "spike",
+     "g": {
+      "who": "target"
+     },
+     "n": 5,
+     "gain": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_EXPUNGE_ALL",
+  "name": "Expunge All",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 9,
+  "text": "دمّر كل الوحوش الواقفة على أي خانة مميزة",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SP_EXPUNGE_ALL",
+  "art": "spell_destroy",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "tile": "any"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_EXPUNGE_MOJO",
+  "name": "Expunge Mojo",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "دمّر كل الوحوش الواقفة على خانة موجو",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_EXPUNGE_MOJO",
+  "art": "spell_destroy",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "tile": "mojo"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_EXPUNGE_PWR",
+  "name": "Expunge Power",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش الواقفة على خانة قوة",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_EXPUNGE_PWR",
+  "art": "spell_destroy",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "tile": "power"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_EXPUNGE_ARM",
+  "name": "Expunge Armour",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش الواقفة على خانة درع",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_EXPUNGE_ARM",
+  "art": "spell_destroy",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "tile": "armour"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_EXPUNGE_DRAW",
+  "name": "Expunge Draw",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش الواقفة على خانة سحب بطاقة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_EXPUNGE_DRAW",
+  "art": "spell_destroy",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "tile": "draw"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_EXPUNGE_REGEN",
+  "name": "Expunge Regen",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "دمّر كل الوحوش الواقفة على خانة علاج",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_EXPUNGE_REGEN",
+  "art": "spell_destroy",
+  "effect": {
+   "ops": [
+    {
+     "op": "destroy",
+     "g": {
+      "who": "all",
+      "tile": "regen"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SHATTER_HERO_ALL",
+  "name": "Shatter Heroes",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "كل القادة تتخلص من كل الحالات",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_SHATTER_HERO_ALL",
+  "art": "spell_shatter",
+  "effect": {
+   "ops": [
+    {
+     "op": "cleanse",
+     "g": {
+      "who": "all",
+      "heroes": true
+     },
+     "which": "all"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SHATTER_HERO_ENEMYGOOD",
+  "name": "Deny Heroes",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "قائد الخصم تتخلص من كل الحالات الجيدة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_SHATTER_HERO_ENEMYGOOD",
+  "art": "spell_afflict_deny",
+  "effect": {
+   "ops": [
+    {
+     "op": "cleanse",
+     "g": {
+      "who": "enemy",
+      "heroes": true
+     },
+     "which": "good"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_SHATTER_HERO_MYBAD",
+  "name": "Cure Hero",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "قائدك تتخلص من كل الحالات السيئة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_SHATTER_HERO_MYBAD",
+  "art": "spell_cure",
+  "effect": {
+   "ops": [
+    {
+     "op": "cleanse",
+     "g": {
+      "who": "mine",
+      "heroes": true
+     },
+     "which": "bad"
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_REGEN",
+  "name": "Regen Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها التجدد يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_REGEN",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "regen"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_VENGEANCE",
+  "name": "Vengeance Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها الانتقام يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_VENGEANCE",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "vengeance"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_FLAME",
+  "name": "Flame Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها الاشتعال يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_FLAME",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "flame"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_STUN",
+  "name": "Dazed Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها الذهول يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_STUN",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "stun"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_MIGHTY",
+  "name": "Mighty Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها القوة يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_MIGHTY",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "mighty"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_BERSERK",
+  "name": "Berserk Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها الهياج يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_BERSERK",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "berserk"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_SNARED",
+  "name": "Snared Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها التقييد يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_SNARED",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "snare"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_ICEBLOCK",
+  "name": "Ice Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها التجميد يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_ICEBLOCK",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "ice"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_DEATHMARK",
+  "name": "Deathmark Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها علامة الموت يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_DEATHMARK",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "deathmark"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCEALL_MAGICSHIELD",
+  "name": "Shield Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 2,
+  "text": "كل الوحوش اللي عليها الحاجز السحري يرجع ليد صاحبه مع عتاده",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SP_BOUNCEALL_MAGICSHIELD",
+  "art": "spell_bounce_mine",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "all",
+      "aff": "shield"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_REGEN",
+  "name": "Sly Regen Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها التجدد يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_REGEN",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "regen"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_VENGEANCE",
+  "name": "Sly Vengeance Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها الانتقام يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_VENGEANCE",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "vengeance"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_FLAME",
+  "name": "Sly Flame Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها الاشتعال يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_FLAME",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "flame"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_STUN",
+  "name": "Sly Dazed Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها الذهول يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_STUN",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "stun"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_MIGHTY",
+  "name": "Sly Mighty Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها القوة يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_MIGHTY",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "mighty"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_BERSERK",
+  "name": "Sly Berserk Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها الهياج يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_BERSERK",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "berserk"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_SNARED",
+  "name": "Sly Snared Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها التقييد يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_SNARED",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "snare"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_ICEBLOCK",
+  "name": "Sly Ice Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها التجميد يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_ICEBLOCK",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "ice"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_DEATHMARK",
+  "name": "Sly Deathmark Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها علامة الموت يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_DEATHMARK",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "deathmark"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SP_BOUNCESLY_MAGICSHIELD",
+  "name": "Sly Shield Bounce",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "كل الوحوش اللي للخصم اللي عليها الحاجز السحري يرجع ليد صاحبه مع عتاده، وقائد صاحبه يكسب 2 صحة عن كل وحش",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SP_BOUNCESLY_MAGICSHIELD",
+  "art": "spell_bounce_enemy",
+  "effect": {
+   "ops": [
+    {
+     "op": "bounce",
+     "g": {
+      "who": "enemy",
+      "aff": "shield"
+     },
+     "heroPerBounce": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_DRAW1",
+  "name": "Draw 1 Card",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 3,
+  "text": "القائد المستهدف يسحب 1 بطاقة",
+  "keywords": [],
+  "rarity": "U",
+  "nativeTag": "SPT_DRAW1",
+  "art": "spell_01_morecards",
+  "effect": {
+   "target": "anyHero",
+   "ops": [
+    {
+     "op": "drawFor",
+     "n": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_DRAW2",
+  "name": "Draw 2 Cards",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 5,
+  "text": "القائد المستهدف يسحب 2 بطاقات",
+  "keywords": [],
+  "rarity": "R",
+  "nativeTag": "SPT_DRAW2",
+  "art": "spell_01_morecards",
+  "effect": {
+   "target": "anyHero",
+   "ops": [
+    {
+     "op": "drawFor",
+     "n": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "NS_SPT_DRAW3",
+  "name": "Draw 3 Cards",
+  "race": "neutral",
+  "type": "spell",
+  "cost": 7,
+  "text": "القائد المستهدف يسحب 3 بطاقات",
+  "keywords": [],
+  "rarity": "L",
+  "nativeTag": "SPT_DRAW3",
+  "art": "spell_01_morecards",
+  "effect": {
+   "target": "anyHero",
+   "ops": [
+    {
+     "op": "drawFor",
      "n": 3
     }
    ]

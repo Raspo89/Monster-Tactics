@@ -7,8 +7,8 @@ const races=Object.keys(raceData as any);
 const isArt=(id:string)=>retiredIds.has(id);
 describe('artillery is out of the game (7.26)',()=>{
  it('retires every artillery monster and every artillery weapon, and nothing else',()=>{
-  expect(retiredIds.size).toBe(384+24+2);                       // + the two legacy artillery cards O03 and Z07
-  for(const id of retiredIds){const c=cardById[id];expect(c.type==='unit'?(c.combatClass==='artillery'||id==='O03'||id==='Z07'):c.forClass==='artillery').toBe(true);}
+  expect(retiredIds.size).toBe(384+24+2+11);                    // + the two legacy artillery cards O03 and Z07, + 11 spells that only touch artillery (7.28)
+  for(const id of retiredIds){const c=cardById[id];expect(c.type==='unit'?(c.combatClass==='artillery'||id==='O03'||id==='Z07'):c.type==='spell'?JSON.stringify(c.effect).includes('"cls":"artillery"'):c.forClass==='artillery').toBe(true);}
   expect(cards.some(c=>isArt(c.id))).toBe(false);
  });
  it('old ids still resolve so saves load, but no deck with them is legal',()=>{

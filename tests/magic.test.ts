@@ -26,7 +26,7 @@ describe('imported original runes',()=>{
  it('the seven original runes keep their behaviour',()=>{let s=g();const u=add(s,firstOf('human','warrior'),0,3,3);const atk=effectiveStats(s,u).attack;s=rune(s,'R01');expect(effectiveStats(s,find(s,u)!).attack).toBe(atk+1);});
 });
 it('every imported card can be played in every legal way without breaking the game',()=>{
- for(const c of magic as any[]){let s=g();add(s,firstOf('human','warrior'),0,3,3);add(s,firstOf('orc','mage'),1,5,3);add(s,firstOf('orc','warrior'),1,4,4);s.players[0].hand=[c.id];
+ for(const c of magic as any[]){let s=g();add(s,firstOf('human','warrior'),0,3,3);add(s,firstOf('orc','mage'),1,5,3);add(s,firstOf('orc','warrior'),1,4,4);s.players[0].hand=[c.id];if(c.effect?.target==='rune'){const st=s.runeStands!.find(r=>r.owner===1)!;st.cardId=byTag('R_MINORHEALTH');st.health=15;}
   const acts=legalActions(s).filter(a=>a.kind==='playCard');expect(acts.length,c.id).toBeGreaterThan(0);
   for(const a of acts){const n=applyAction(s,a);expect(n,c.id).not.toBe(s);expect(n.units.every(u=>Number.isFinite(u.health)),c.id).toBe(true);expect(n.players[0].hand).not.toContain(c.id);}}
 });
