@@ -118,3 +118,5 @@ body:has(#battle) #card-detail{left:auto;right:20px;width:390px}@media(max-width
 @media(min-width:900px){.de-tools{grid-template-columns:repeat(8,90px)}.de-strip .game-card{width:130px;height:196px}.de-cogs{grid-template-columns:repeat(3,1fr)}}
 .de-count{top:auto;bottom:20px}.de-deck .de-count{bottom:-6px}
 .de-strip{padding-bottom:22px}
+.de-sub{font-size:12px;color:#5a2d0c;text-align:center;margin:10px 0 2px}
+.de-classes span{font-size:13px;background:#7a2a1c2e}
