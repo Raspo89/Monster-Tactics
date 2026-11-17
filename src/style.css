@@ -120,3 +120,6 @@ body:has(#battle) #card-detail{left:auto;right:20px;width:390px}@media(max-width
 .de-strip{padding-bottom:22px}
 .de-sub{font-size:12px;color:#5a2d0c;text-align:center;margin:10px 0 2px}
 .de-classes span{font-size:13px;background:#7a2a1c2e}
+.sync-box{border-color:#7fb7ff66}.sync-box p{font-size:12px}.sync-on{color:#a7e3a0}.sync-err{color:#f0a49a}
+.sync-code{background:#0006;border-radius:8px;padding:10px;text-align:center}.sync-code b{display:block;font-size:34px;letter-spacing:6px;color:#f2d79b;direction:ltr}.sync-code small{display:block}
+.sync-join{display:flex;gap:6px}.sync-join input{flex:1;min-width:0;padding:10px;font-size:18px;letter-spacing:3px;text-align:center;border-radius:6px;border:1px solid #a68b5b;background:#1d2030;color:#eee;direction:ltr}.sync-or{margin:10px 0 4px}
