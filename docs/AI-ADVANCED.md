@@ -85,3 +85,19 @@ fixed (`tempoScore`: value per Mojo, never a 0-attack monster, cost-1 cards allo
 
 The new ranking is now the default, and skirmish has an enemy-deck option «⚡ الأفضل من كل الأعراق» that builds from
 every race at once. This single change is worth far more than everything tried on the search and the evaluation.
+
+# Handicap, not intelligence (7.24)
+
+A strong human player beats the computer easily whatever deck it holds, and nothing in the search or the evaluation
+closed that gap. What does close it is material. Setup → «أفضلية الخصم» gives the computer extra Mojo every turn
+(expert still defaults to +1). Mirror match, the same deck on both sides, 100 games each:
+
+| extra Mojo per turn | win rate against the same deck with none |
+| --- | --- |
+| +1 | 59 / 100 |
+| +2 | 71 / 100 |
+| +3 | 79 / 100 |
+
+Roughly ten percentage points per Mojo. Deck matchups for reference, both sides played by the original-style AI at
+2,500 nodes, expert tier, 100 games: robots beat lizards 85/100 and humans 66/100 — so the robot deck is strong against
+*the computer*; against a good human its 2–5 health bodies die one per turn.
